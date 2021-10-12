@@ -14,8 +14,14 @@ public class ForSemenar : MonoBehaviour
 ```
 
 <iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
-        controlsList="nodownload:hidden" style="display">
+        controlsList="nodownload" style="display">
 </iframe> 
+
+audio::-internal-media-controls-download-button {
+
+display:none !important;
+
+}
 
 //allow="autoplay" position="relative" width="100%"
 
