@@ -106,6 +106,7 @@ void one()
 //단순하다면 단순한 설계에 목적지는 준비되어 있으며 누구나 각자의 재능과 기질에 따라 몇 차례 맴돌아 도착할 것이다. 
     }
 ```
+![image](https://user-images.githubusercontent.com/90887934/136983460-d1fa25f2-2df2-4c22-9a40-f74c39e23631.png)
 
 ```c#
 void two()
