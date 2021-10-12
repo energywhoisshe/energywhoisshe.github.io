@@ -199,7 +199,6 @@ void 불가살이()
 
 ---
 
-![image](https://user-images.githubusercontent.com/90887934/136990459-5d53a40d-e0b2-4827-bbc5-2c25a32ca3c4.png)
 
 
 
