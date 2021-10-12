@@ -7,6 +7,13 @@ using UnityEngine.UI;
 ```
 
 ``` c#
+public class ForSemenar : MonoBehaviour
+{
+    Text Unkillable;
+    AudioSource Stxrfish;
+```
+
+``` c#
 void Awake()
     {
         //안녕하세요.
@@ -22,3 +29,39 @@ void Awake()
         Debug.Log("이렇게 말을 하면 해당 함수가 실행히 되었을 때 이 말이 출력이 되게 되는데, 아무런 효과를 불러오지는 않습니다. 실행이 되는지 확인하는 용도이지요.");
 
 ```
+
+``` c#
+//IEnumerator loop()
+        {
+            string 불가살이정원 = "혹은 이것은 문자열이라고 하는데";
+            string 멋진사랑을위하여 = "여기에 말을 해도";
+            string 집을지키는사람들 = "이 문자열을 어딘가에 사용하지 않는 이상";
+
+            string 불조심 = "잠재적인 채로 남아있게 되겠네요.";
+            string 화가살이정원 = "제가 작업에 사용하는 장치들도";
+            string 불가사리에게자유를 = "많은 것이 잠재태로 남아있습니까";
+        }
+
+        bool 많은것이;
+        bool 잠재태로;
+        bool 살아있습니까 = true;
+
+        //IEnumerator sos()
+        {
+            int 엄마 = 1;
+            int 딸 = 2;
+            int 딸의여자친구 = 3;
+
+            int 아빠 = 4;
+            int 오빠 = 5;
+            int 불가사리 = 6;
+        }
+
+        StartCoroutine("loop");  //그리고 여기에는 코루틴이라는 별도의 루프가 적용되어있습니다. 그러니까 이 6개의 채널은 순차적으로 순환합니다.
+        StartCoroutine("sos");  //그러니까 이 6개의 친족, 친척 혹은 천적들은 같은 곳을 돌고 있습니다. 
+
+
+        // ...
+```
+
+
