@@ -81,6 +81,8 @@ void Awake()
     }
 ```
 
+![image](https://user-images.githubusercontent.com/90887934/136981358-df2e3cdb-dcc1-4a24-b0f4-1fe7c69ffd81.png)
+
 ``` c#
 void one()
     {
@@ -169,7 +171,6 @@ void four()
         //친족성폭력 특별법 / 인용문 (EMDR 특히)
     }
 ```
-![image](https://user-images.githubusercontent.com/90887934/136980203-c46428eb-569d-4123-b93c-717f9105211e.png)
     
 ```c#
 void 불가살이()
@@ -190,6 +191,8 @@ void 불가살이()
         //프리소스 및 프로토타입 플레이화면에 대한 몇장의 이미지 소스를 별도로 첨부하며 - 주석을 마칩니다.
     }
 ```
+![image](https://user-images.githubusercontent.com/90887934/136980203-c46428eb-569d-4123-b93c-717f9105211e.png)
+
 
 
 
