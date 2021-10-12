@@ -13,9 +13,9 @@ public class ForSemenar : MonoBehaviour
     AudioSource Stxrfish;
 ```
 
-<audio autoplay loop>
-    <source src='https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4'>
-</audio>
+<iframe src="https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
+
 
 ``` c#
 void Awake()
