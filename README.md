@@ -13,7 +13,7 @@ public class ForSemenar : MonoBehaviour
     AudioSource Stxrfish;
 ```
 
-<iframe src="https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" allow="autoplay" style="display" id="iframeAudio" width="200px" height="100px">
+<iframe src="https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" allow="autoplay" style="display" id="iframeAudio" width="300px" height="100px">
 </iframe> 
 
 
