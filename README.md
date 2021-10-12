@@ -51,7 +51,7 @@ void Awake()
         bool 살아있습니까 = true;
 
         StartCoroutine("sos");  //그리고 여기에는 코루틴이라는 별도의 루프가 적용되어있습니다. 그러니까 이 6개의 채널은 순차적으로 순환합니다.
-
+    }
 IEnumerator sos()
         {
             int 엄마 = 1;
@@ -67,6 +67,8 @@ IEnumerator sos()
 ```
 
 ``` c#
+void Update()
+    {
         //자, void로 구분되는 것을 함수라고 하는데 아마 맞을 겁니다. 저는 문단을 그렇게 나누었습니다. 아래는 목차입니다.
         one();
         two();
