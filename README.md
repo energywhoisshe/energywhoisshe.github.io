@@ -53,14 +53,24 @@ void Awake()
         
 ``` c#
 IEnumerator sos()
-        {
-            int 엄마 = 1;
-            int 딸 = 2;
-            int 딸의여자친구 = 3;
-
-            int 아빠 = 4;
-            int 오빠 = 5;
-            int 불가사리 = 6;
+        {   
+            if (int =< 6)
+            {
+                int households = 3;
+                int ++;
+            }
+            
+            if (int > 6)
+            {
+                int = 0
+            }
+            
+            if(int = 1) { print = "엄마"; }
+            if(int = 2) { print = "딸"; }
+            if(int = 3) { print = "딸의 여자친구"; }
+            if(int = 4) { print = "아빠"; }
+            if(int = 5) { print = "오빠"; }
+            if(int = 6) { print = "불가살이"; }
             //그러니까 이 6개의 친족, 친척 혹은 도무지 서로간에 낯선 이들은 같은 곳을 돌고 있습니다. 
         }
         // ...
