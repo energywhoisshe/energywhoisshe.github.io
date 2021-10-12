@@ -12,7 +12,11 @@ public class ForSemenar : MonoBehaviour
     Text Unkillable;
     AudioSource Stxrfish;
 ```
-https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4
+audio source
+
+<audio controls>
+    <source src='https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4'>
+</audio>
 
 ``` c#
 void Awake()
