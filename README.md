@@ -11,6 +11,7 @@ public class ForSemenar : MonoBehaviour
 {
     Text Unkillable;
     AudioSource Stxrfxsh;
+    int garden = 3;
 ```
 
 <iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
@@ -54,23 +55,22 @@ void Awake()
 ``` c#
 IEnumerator sos()
         {   
-            if (int =< 6)
+            if (garden =< 6)
             {
-                int households = 3;
-                int ++;
+                garden ++;
             }
             
-            if (int > 6)
+            if (garden > 6)
             {
-                int = 0
+                garden = 0
             }
             
-            if(int = 1) { print = "엄마"; }
-            if(int = 2) { print = "딸"; }
-            if(int = 3) { print = "딸의 여자친구"; }
-            if(int = 4) { print = "아빠"; }
-            if(int = 5) { print = "오빠"; }
-            if(int = 6) { print = "불가살이"; }
+            if(garden = 1) { print = "엄마"; }
+            if(garden = 2) { print = "딸"; }
+            if(garden = 3) { print = "딸의 여자친구"; }
+            if(garden = 4) { print = "아빠"; }
+            if(garden = 5) { print = "오빠"; }
+            if(garden = 6) { print = "불가살이"; }
             //그러니까 이 6개의 친족, 친척 혹은 도무지 서로간에 낯선 이들은 같은 곳을 돌고 있습니다. 
         }
         // ...
