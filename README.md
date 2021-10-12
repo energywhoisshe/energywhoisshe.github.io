@@ -82,6 +82,8 @@ void Awake()
 ```
 
 ![image](https://user-images.githubusercontent.com/90887934/136981358-df2e3cdb-dcc1-4a24-b0f4-1fe7c69ffd81.png)
+![image](https://user-images.githubusercontent.com/90887934/136987854-04eb899c-bad8-4618-85b9-2382e36f84d7.png)
+![image](https://user-images.githubusercontent.com/90887934/136987901-ae295ee3-2893-4f1d-b39e-0dbc48496f4e.png)
 
 ``` c#
 void one()
