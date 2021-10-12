@@ -187,8 +187,8 @@ void 불가살이()
         //우리가 별도의 협업을 통해 녹음한 목소리를 제외하면
         //가사는 두 줄입니다, 들리십니까?
 
-        Unkillable.text = "죽일 수가 없는";
-        Unkillable.text = "불로도 죽일 수 없는 것";
+        Unkillable.text = "죽일 수가 없다는 것";
+        Unkillable.text = "불로도 죽일 수 없는";
 
         //주석을 마칩니다.
     }
