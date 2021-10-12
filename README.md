@@ -12,7 +12,6 @@ public class ForSemenar : MonoBehaviour
     Text Unkillable;
     AudioSource Stxrfish;
 ```
-
 audio source
 
 ``` c#
