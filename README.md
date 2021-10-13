@@ -10,12 +10,12 @@ using UnityEngine.UI;
 public class ForSemenar : MonoBehaviour
 {
     public Text Unkillable = "죽일 수가 없다는 것";
-    public AudioSource Stxrfxsh = "불로도 죽일 수 없는";
+    public AudioSource Stxrfxsh = "energywhoisshe.github.io";
     static int garden = 3;
 ```
 
 <iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
-        style="display" allow="autoplay" position="relative" width="100%" controlsList="nodownload">
+        allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
 </iframe> 
 <br>
 <br>
