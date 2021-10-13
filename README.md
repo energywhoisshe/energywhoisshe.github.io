@@ -9,7 +9,7 @@ using UnityEngine.UI;
 ``` c#
 public class ForSemenar : MonoBehaviour
 {
-    Text Unkillable;
+    public Text Unkillable;
     AudioSource Stxrfxsh;
     int garden = 3;
 ```
