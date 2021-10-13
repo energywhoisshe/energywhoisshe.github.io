@@ -11,7 +11,7 @@ public class ForSemenar : MonoBehaviour
 {
     public Text Unkillable;
     public AudioSource Stxrfxsh;
-    int garden = 3;
+    static int garden = 3;
 ```
 
 <iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
