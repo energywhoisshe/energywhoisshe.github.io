@@ -248,7 +248,7 @@ void 불가살이()
 
 ###### * 구묘진, 방철환 옮김, 몽마르트 유서, 움직씨출판사, 2021, 220쪽
 ###### *이 글은 작업이 완성되기 약 1~2달 전에 쓰여집니다. 스크롤을 상하좌우로 움직일 필요가 있습니다. 플레이화면은 세부적인 UI 와 레벨디자인에 있어 가변한 프로토타입 단계입니다. (energywhoisshe@gmail.com)*
-###### *시각예술 웹저널 SEMINAR ISSUE09 <http://www.zineseminar.com/wp/>*
+###### *Commission by 시각예술 웹저널 SEMINAR ISSUE09 <http://www.zineseminar.com/wp/>*
 
 
 
