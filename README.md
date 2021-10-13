@@ -113,6 +113,9 @@ void Update()
         //신호등 앞에서 가만히 서있는 일은 얼마나 어려운 일입니까?
     }
 ```
+<br>
+<br>
+<br>
 
 ![image](https://user-images.githubusercontent.com/90887934/136981358-df2e3cdb-dcc1-4a24-b0f4-1fe7c69ffd81.png)
 ![image](https://user-images.githubusercontent.com/90887934/136987854-04eb899c-bad8-4618-85b9-2382e36f84d7.png)
@@ -144,6 +147,9 @@ void one()
     }
 ```
 ![image](https://user-images.githubusercontent.com/90887934/136983460-d1fa25f2-2df2-4c22-9a40-f74c39e23631.png)
+<br>
+<br>
+<br>
 
 ```c#
 void two()
@@ -202,6 +208,9 @@ void three()
     }
 ```
 ![image](https://user-images.githubusercontent.com/90887934/136979388-d9de674e-e881-4ad6-913f-a79bdd65d346.png)
+<br>
+<br>
+<br>
 
 ```c#
 void four()
@@ -231,6 +240,9 @@ void 불가살이()
 ```
 ![image](https://user-images.githubusercontent.com/90887934/136980203-c46428eb-569d-4123-b93c-717f9105211e.png)
 ![image](https://user-images.githubusercontent.com/90887934/136985439-55ffea49-b56b-4edf-8817-3deb98c13dd6.png)
+<br>
+<br>
+<br>
 
 ---
 
