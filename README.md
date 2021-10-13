@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class ForSemenar : MonoBehaviour
 {
     public Text Unkillable = "죽일 수가 없다는 것";
-    public AudioSource Stxrfxsh;
+    public AudioSource Stxrfxsh = "energywhoisshe.github.io";
     static int garden = 3;
 ```
 
