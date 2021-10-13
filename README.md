@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class ForSemenar : MonoBehaviour
 {
     public Text Unkillable;
-    AudioSource Stxrfxsh;
+    public AudioSource Stxrfxsh;
     int garden = 3;
 ```
 
