@@ -221,14 +221,40 @@ void three()
 
 ```c#
 void four()
-    {   
-        string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        //선택 함수입니다. 이 중 하나를 선택할 수 있습니까?
+    {   int index = dropdown.value;
+    
+        if (index != 0)
+        {
+            string 친족성폭력공소시효폐지 = Names[index];
+            Debug.Log(친족성폭력공소시효폐지);
+        }
+        
+        if (index != 1)
+        {
+            string 아동학대진상조사특별법 = Names[index];
+            Debug.Log(아동학대진상조사특별법);
+        }
+        
+        if (index != 2)
+        {
+            string 차별금지법 = Names[index];
+            Debug.Log(차별금지법);
+        }
+        
+        if (index != 3)
+        {
+            string 생활동반자법 = Names[index];
+            Debug.Log(생활동반자법);
+        }
+        
+        //선택 함수입니다. 드롭다운 메뉴에서 네 가지 선택지가 내려옵니다.
+        //이 중 하나를 선택할 수 있습니까?
         
         
         
         //불가능한 질문으로 느껴집니까?
         //혹은 마치 당사자성을 선택하는 것으로 느껴집니까?
+        //...
         
         string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string randomName = for[Random.Range(0, for.Length)];
