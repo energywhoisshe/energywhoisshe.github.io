@@ -248,6 +248,8 @@ void four()
         Debug.Log("익명의 당신에게는 마치 당사자성을 선택하는 것으로 느껴집니까?")
         //...
         
+        
+        
         string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string randomName = for[Random.Range(0, for.Length)];
         print(randomName);
