@@ -141,6 +141,7 @@ void Update()
 ```
 
 ![image](https://user-images.githubusercontent.com/90887934/136981358-df2e3cdb-dcc1-4a24-b0f4-1fe7c69ffd81.png)
+![image](https://user-images.githubusercontent.com/90887934/136983460-d1fa25f2-2df2-4c22-9a40-f74c39e23631.png)
 ![image](https://user-images.githubusercontent.com/90887934/136987901-ae295ee3-2893-4f1d-b39e-0dbc48496f4e.png)
 <br>
 <br>
@@ -171,7 +172,9 @@ void one()
 //단순하다면 단순한 설계에 목적지는 준비되어 있으며 누구나 각자의 재능과 기질에 따라 몇 차례 맴돌아 도착할 것이다. 
     }
 ```
-![image](https://user-images.githubusercontent.com/90887934/136983460-d1fa25f2-2df2-4c22-9a40-f74c39e23631.png)
+
+![image](https://user-images.githubusercontent.com/90887934/137367718-3b40348a-d2e0-4066-bc33-cf98ba9a7be4.png)
+
 <br>
 <br>
 <br>
