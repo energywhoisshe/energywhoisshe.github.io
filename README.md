@@ -252,8 +252,8 @@ void four()
         Names.Add("아동학대진상조사특별법");
         Names.Add("차별금지법");
         Names.Add("생활동반자법";
-        
         //이 중 하나를 선택할 수 있습니까?
+        
         dropdown.AddOptions(Names);
 
         int index = dropdown.value;
