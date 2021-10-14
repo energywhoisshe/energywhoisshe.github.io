@@ -223,25 +223,25 @@ void three()
 void four()
     {   int index = dropdown.value;
     
-        if (index != 0)
+        if (index == 0)
         {
             string 친족성폭력공소시효폐지 = Names[index];
             Debug.Log(친족성폭력공소시효폐지);
         }
         
-        if (index != 1)
+        if (index == 1)
         {
             string 아동학대진상조사특별법 = Names[index];
             Debug.Log(아동학대진상조사특별법);
         }
         
-        if (index != 2)
+        if (index == 2)
         {
             string 차별금지법 = Names[index];
             Debug.Log(차별금지법);
         }
         
-        if (index != 3)
+        if (index == 3)
         {
             string 생활동반자법 = Names[index];
             Debug.Log(생활동반자법);
