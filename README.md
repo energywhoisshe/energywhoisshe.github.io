@@ -17,6 +17,8 @@ public class ForSemenar : MonoBehaviour
 <iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
         allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
 </iframe> 
+
+> 이 글은 작업이 완성되기 약 1~2달 전에 쓰여집니다. PC 기기에 최적화된 아티클로, 스크롤을 상하좌우로 움직일 필요가 있습니다. 자동 재생이 되지 않았다면 플레이 버튼을 클릭해주십시오.
 <br>
 <br>
 <br>
