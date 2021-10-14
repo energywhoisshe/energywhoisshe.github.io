@@ -221,8 +221,6 @@ void three()
 ```c#
 void four()
     {   
-        Debug.Log("프로필 생성기 샘플 작동합니다.");
-        
         string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         // 선택 함수입니다. 이 중 하나를 선택할 수 있습니까?
         
@@ -230,6 +228,10 @@ void four()
         string randomName = for[Random.Range(0, for.Length)];
         print(randomName);
         // 한편, 랜덤 함수입니다.
+        
+        // 이 두 가지 함수는 플레이어 및 논플레이어(NPC) 프로필 생성기에 사용되었습니다. 
+        // 저의 프로젝트 안에서 당신의 플레이는 순차적으로 순환하고, 
+        // 그 과정
         
         / 인용문 (내적가족체계 / EMDR 치료)
     }
