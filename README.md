@@ -215,10 +215,12 @@ void three()
 ```c#
 void four()
     {   
-        public string[] = {친족성폭력 공소시효 폐지, 아동학대 진상조사특별법, 차별금지법, 생활동반자법} 
+        string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사특별법", "차별금지법", "생활동반자법"};
         // 선택 함수입니다. 이 중 하나를 선택할 수 있습니까?
         
-        public string[] = {친족성폭력 공소시효 폐지, 아동학대 진상조사특별법, 차별금지법, 생활동반자법} 
+        string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사특별법", "차별금지법", "생활동반자법"};
+        string randomName = for[Random.Range(0, for.Length)];
+        print(randomName);
         // 한편, 랜덤 함수입니다.
         
         / 인용문 (내적가족체계 / EMDR 치료)
