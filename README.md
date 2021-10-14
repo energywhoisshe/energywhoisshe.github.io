@@ -121,7 +121,6 @@ void Update()
 ```
 
 ![image](https://user-images.githubusercontent.com/90887934/136981358-df2e3cdb-dcc1-4a24-b0f4-1fe7c69ffd81.png)
-![image](https://user-images.githubusercontent.com/90887934/136987854-04eb899c-bad8-4618-85b9-2382e36f84d7.png)
 ![image](https://user-images.githubusercontent.com/90887934/136987901-ae295ee3-2893-4f1d-b39e-0dbc48496f4e.png)
 <br>
 <br>
@@ -214,6 +213,7 @@ void three()
     }
 ```
 ![image](https://user-images.githubusercontent.com/90887934/136979388-d9de674e-e881-4ad6-913f-a79bdd65d346.png)
+![image](https://user-images.githubusercontent.com/90887934/136987854-04eb899c-bad8-4618-85b9-2382e36f84d7.png)
 <br>
 <br>
 <br>
@@ -224,12 +224,15 @@ void four()
         string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         //선택 함수입니다. 이 중 하나를 선택할 수 있습니까?
         
+        //불가능한 것을 묻는 것으로 느껴지십니까?
+        //혹은 마치 당사자성을 선택하는 것으로 느껴집니까?
+        
         string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string randomName = for[Random.Range(0, for.Length)];
         print(randomName);
         //한편, 랜덤 함수입니다.
         
-        //이 두 가지 함수는 플레이어 및 논플레이어(non-player) 프로필 생성기에 사용되었습니다. 
+        //이 두 가지 함수는 플레이어 및 논플레이어(non-player) 프로필 생성기에 사용된 것과 다소간 동일합니다.
         //플레이어 프로필은 한번 생성하면 선택한 조건만을 가져갑니다. 
         //하지만 논플레이어 프로필은 랜덤하게 조합되어 무한한 군상을 만듭니다. 
         
