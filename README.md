@@ -314,14 +314,14 @@ void four()
         
         //와중 당신의 선택은 그대로 가져갑니다.
         //그간 논플레이어 프로필은 복수의 문자열이 랜덤하게 조합되어 무한한 군상을 만듭니다. 
-        string[] forH = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string[] forH1 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string[] forH2 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string[] forH3 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string randomName = forH[Random.Range(0, forH.Length)];
-        string randomName1 = forH1[Random.Range(0, forH1.Length)];
-        string randomName2 = forH2[Random.Range(0, forH2.Length)];
-        string randomName3 = forH3[Random.Range(0, forH3.Length)];
+        string[] for_H = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
+        string[] for_H1 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
+        string[] for_H2 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
+        string[] for_H3 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
+        string randomName = for_H[Random.Range(0, for_H.Length)];
+        string randomName1 = for_H1[Random.Range(0, for_H1.Length)];
+        string randomName2 = for_H2[Random.Range(0, for_H2.Length)];
+        string randomName3 = for_H3[Random.Range(0, for_H3.Length)];
         print(randomName0 + "," + randomName1 + "," + randomName2 + "," + randomName3);
         
         
