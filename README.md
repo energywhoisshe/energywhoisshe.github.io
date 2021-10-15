@@ -246,18 +246,17 @@ void four()
     {   
         public Dropdown dropdown
         private List<string> Names = new List<string>();
-        //선택 함수입니다. 드롭다운 메뉴에서 네 가지 선택지가 내려옵니다.
 
         Names.Add("친족성폭력공소시효폐지");
         Names.Add("아동학대진상조사특별법");
         Names.Add("차별금지법");
-        Names.Add("생활동반자법";
-        //이 중 하나를 선택할 수 있습니까?
-        
+        Names.Add("생활동반자법";        
         dropdown.AddOptions(Names);
+        //선택 함수입니다. 드롭다운 메뉴에서 네 가지 선택지가 내려옵니다.
 
         int index = dropdown.value;
-    
+        //이 중 하나를 선택할 수 있습니까?
+
         if (index != 0)
         {
             string selectedName = Names[index];
