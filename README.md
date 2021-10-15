@@ -247,8 +247,8 @@ void four()
         public Dropdown dropdown
         private List<string> Names = new List<string>();
 
-        Names.Add("친족성폭력공소시효폐지");
-        Names.Add("아동학대진상조사특별법");
+        Names.Add("친족성폭력 공소시효 폐지");
+        Names.Add("아동학대 진상조사 특별법");
         Names.Add("차별금지법");
         Names.Add("생활동반자법");        
         dropdown.AddOptions(Names);
