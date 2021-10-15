@@ -318,10 +318,10 @@ void four()
         string[] forH1 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string[] forH2 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string[] forH3 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string randomName = for[Random.Range(0, forH.Length)];
-        string randomName1 = for[Random.Range(0, forH1.Length)];
-        string randomName2 = for[Random.Range(0, forH2.Length)];
-        string randomName3 = for[Random.Range(0, forH3.Length)];
+        string randomName = forH[Random.Range(0, forH.Length)];
+        string randomName1 = forH1[Random.Range(0, forH1.Length)];
+        string randomName2 = forH2[Random.Range(0, forH2.Length)];
+        string randomName3 = forH3[Random.Range(0, forH3.Length)];
         print(randomName0 + "," + randomName1 + "," + randomName2 + "," + randomName3);
         
         
