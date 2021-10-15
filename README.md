@@ -322,7 +322,7 @@ void four()
         string randomName1 = for[Random.Range(0, forH1.Length)];
         string randomName2 = for[Random.Range(0, forH2.Length)];
         string randomName3 = for[Random.Range(0, forH3.Length)];
-        print(randomName0 + randomName1 + randomName2 + randomName3);
+        print(randomName0 + "," + randomName1 + "," + randomName2 + "," + randomName3);
         
         
         
