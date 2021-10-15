@@ -77,6 +77,7 @@ IEnumerator sos()
             if (garden =< 6)
             {
                 garden ++;
+                sos()
             }
             
             if (garden > 6)
