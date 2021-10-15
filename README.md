@@ -253,13 +253,13 @@ void three()
 ```c#
 void four()
     {   
-        public Dropdown dropdown
-        private List<string> Names = new List<string>();
+        Dropdown dropdown
+        List<string> Names = new List<string>();
 
-        Names.Add("친족성폭력 공소시효 폐지");
-        Names.Add("아동학대 진상조사 특별법");
-        Names.Add("차별금지법");
-        Names.Add("생활동반자법");        
+        Names.Add("친족성폭력 공소시효 폐지"); //선택지를 추가합니다.
+        Names.Add("아동학대 진상조사 특별법"); //선택지를 추가합니다.
+        Names.Add("차별금지법"); //선택지를 추가합니다.
+        Names.Add("생활동반자법"); //선택지를 추가합니다.
         dropdown.AddOptions(Names);
         //선택 함수입니다. 드롭다운 메뉴에서 네 가지 선택지가 내려옵니다.
 
