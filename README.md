@@ -9,8 +9,8 @@ using UnityEngine.UI;
 ``` c#
 public class ForSemenar : MonoBehaviour
 {
-    public Text Unkillable = "죽일 수가 없다는 것";
-    public AudioSource Stxrfxsh = "https://soundcloud.com/stxrfxsh";
+    public Text Unkillable;
+    public AudioSource Stxrfxsh;
     static int garden = 3;
 ```
 
