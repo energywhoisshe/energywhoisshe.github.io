@@ -308,6 +308,11 @@ void four()
         string[] for1 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string[] for2 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string[] for3 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
+        string randomName0 = for[Random.Range(0, for0.Length)];
+        string randomName1 = for[Random.Range(0, for1.Length)];
+        string randomName2 = for[Random.Range(0, for2.Length)];
+        string randomName3 = for[Random.Range(0, for3.Length)];
+        print(randomName0 + randomName1 + randomName2 + randomName3);
         
         //저의 프로젝트 안에서 당신의 플레이는 순차적으로 순환하고, 
         //그 과정에서 루틴은 조금씩 변화합니다. 그러니까 사실은 당신은 제자리를 돌고 있지 않습니다. 
