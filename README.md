@@ -316,6 +316,8 @@ void four()
         string randomName3 = for[Random.Range(0, for3.Length)];
         print(randomName0 + randomName1 + randomName2 + randomName3);
         
+        
+        
         //저의 프로젝트 안에서 당신의 플레이는 순차적으로 순환하고, 
         //그 과정에서 루틴은 조금씩 변화합니다. 그러니까 사실은 당신은 제자리를 돌고 있지 않습니다. 
         //또, 매번 찾아오는 엔딩에는 죽음보다 즐거운 것이 기다리고 있으며,
