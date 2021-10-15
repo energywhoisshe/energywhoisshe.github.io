@@ -274,7 +274,8 @@ void four()
         string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string randomName = for[Random.Range(0, for.Length)];
         print(randomName);
-        //한편, 랜덤 함수입니다.
+        //한편, 랜덤 함수입니다. 
+        //
         
         
         
