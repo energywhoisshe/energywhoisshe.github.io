@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class ForSemenar : MonoBehaviour
 {
     public Text Unkillable;
-    public AudioSource Stxrfxsh; //https://soundcloud.com/stxrfxsh
+    public AudioSource Stxrfxsh;
     static int garden = 3;
 ```
 
@@ -350,7 +350,7 @@ void 불가살이()
         //스스로 컴퓨터음악을 시도해보고 있읍지요.
 
         //이상화는 밥풀에서 태어나 활활 타올랐다는 불가살이 민담을 좋아합니다.
-        Stxrfxsh.Play();
+        Stxrfxsh.Play(); //https://soundcloud.com/stxrfxsh
 
         //우리가 별도의 협업을 통해 녹음한 목소리를 제외하면
         //가사는 두 줄입니다, 들리십니까?
