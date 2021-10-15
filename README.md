@@ -245,7 +245,9 @@ void three()
     }
 ```
 ![image](https://user-images.githubusercontent.com/90887934/136979388-d9de674e-e881-4ad6-913f-a79bdd65d346.png)
+![image](https://user-images.githubusercontent.com/90887934/137467860-5b2d19dc-406c-46cf-a9f0-c0e6af88de6d.png)
 ![image](https://user-images.githubusercontent.com/90887934/136987854-04eb899c-bad8-4618-85b9-2382e36f84d7.png)
+
 <br>
 <br>
 <br>
@@ -341,6 +343,7 @@ void four()
         Debug.Log("그 어린아이는 당신에게 낯선 형상이 아닐 것입니다.");
     }
 ```
+
     
 ```c#
 void 불가살이()
