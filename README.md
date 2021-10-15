@@ -319,11 +319,11 @@ void four()
         string[] for_H1 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string[] for_H2 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
         string[] for_H3 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string randomName = for_H[Random.Range(0, for_H.Length)];
-        string randomName1 = for_H1[Random.Range(0, for_H1.Length)];
-        string randomName2 = for_H2[Random.Range(0, for_H2.Length)];
-        string randomName3 = for_H3[Random.Range(0, for_H3.Length)];
-        print(randomName0 + "," + randomName1 + "," + randomName2 + "," + randomName3);
+        string randomName_H = for_H[Random.Range(0, for_H.Length)];
+        string randomName_H1 = for_H1[Random.Range(0, for_H1.Length)];
+        string randomName_H2 = for_H2[Random.Range(0, for_H2.Length)];
+        string randomName_H3 = for_H3[Random.Range(0, for_H3.Length)];
+        print(randomName_H + "," + randomName_H1 + "," + randomName_H2 + "," + randomName_H3);
         
         print = "안녕,";
         print = "실례합니다.";
