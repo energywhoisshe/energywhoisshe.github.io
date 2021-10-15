@@ -324,12 +324,12 @@ void four()
         string randomName3 = for_H3[Random.Range(0, for_H3.Length)];
         print(randomName0 + "," + randomName1 + "," + randomName2 + "," + randomName3);
         
-        //안녕, 
-        //실례합니다.
-        //나이는 이제 만으로 9세가 되었습니다.
-        //정직한 경향이 있는 어린이 답게 지내고 있습니다.
-        //이곳에 온 이유는 산만함 때문입니다.
-        //우리 집에서 가장 안전하게 느껴지던 것은 천장 였습니다.
+        Unkillable.text = "안녕,";
+        Unkillable.text = "실례합니다.";
+        Unkillable.text = "나이는 이제 만으로 9세가 되었습니다.";
+        Unkillable.text = "정직한 경향이 있는 어린이 답게 지내고 있습니다.";
+        Unkillable.text = "이곳에 온 이유는 산만함 때문입니다.";
+        Unkillable.text = "우리 집에서 가장 안전하게 느껴지던 것은 천장 였습니다.";
         
         
         
