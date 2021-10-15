@@ -20,7 +20,7 @@ public class ForSemenar : MonoBehaviour
 
 
 
-> `3 Households, arthouse game on computer, controller, and projector, playtime about 15'00", 2021.11 - 이 글은 작업이 공간에 설치되기 약 1~2달 전에 쓰여집니다. PC 기기에 최적화된 로, 스크롤을 상하좌우로 움직일 필요가 있습니다. 자동 재생이 되지 않았다면 플레이 버튼을 클릭해주세요. 작고 자라서 얼마간 큰 소리가 포함되어있으니 볼륨 조절에 유의하십시오.`
+> `3 Households, arthouse game on computer, controller, and projector, playtime about 15'00", 2021.11 - 이 글은 작업이 공간에 설치되기 약 1~2달 전에 쓰여집니다. PC 기기에 최적화된 문서로, 스크롤을 상하좌우로 움직일 필요가 있습니다. 자동 재생이 되지 않았다면 플레이 버튼을 클릭해주세요. 작고 자라서 얼마간 큰 소리가 포함되어있으니 볼륨 조절에 유의하십시오.`
 
 
 <br>
