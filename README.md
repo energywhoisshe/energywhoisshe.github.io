@@ -275,6 +275,7 @@ void four()
         string randomName = for[Random.Range(0, for.Length)];
         print(randomName);
         //한편, 랜덤 함수입니다. 
+        //네 가지 선택지는 4차원의 우주로 등차하게 존재해있으리라 가정해봅니다.
         //
         
         
