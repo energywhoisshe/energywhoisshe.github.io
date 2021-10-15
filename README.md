@@ -282,8 +282,8 @@ void four()
         
         
         
-        string[] for = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string randomName = for[Random.Range(0, for.Length)];
+        string[] for_ = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
+        string randomName = for_[Random.Range(0, for_.Length)];
         print(randomName);
         //한편, 랜덤 함수입니다. 
         //네 가지 선택지 중 하나가 법제화된 세계는 다중 우주로 등차하게 존재해있으리라 가정해봅니다.
