@@ -262,6 +262,8 @@ void four()
             string selectedName = Names[index];
             Debug.Log(selectedName);
         }
+        //문서가 아니라 게임 속이었다면
+        //당신의 선택은 고정변수로 입력되었겠지요.
         //...
         
         
