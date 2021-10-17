@@ -327,7 +327,7 @@ void four()
         string randomName_H3 = for_H3[Random.Range(0, for_H3.Length)];
         print(randomName_H + "," + randomName_H1 + "," + randomName_H2 + "," + randomName_H3);
         
-        //소개합니다. 이 자는 H111입니다?
+        //소개합니다. 이 자는 H...
         print = "안녕,";
         print = "실례합니다.";
         print = "나이는 이제 만으로 9세가 되었습니다.";
@@ -336,7 +336,7 @@ void four()
         print = "우리 집에서 가장 안전하게 느껴지던 것은 천장 였습니다.";
         
         // ... H112입니다.
-        // ... H119입니다.
+        // ... H119입니다?
         
         // ... H123입니다.
         // ... H321이 되기도 합니다.
