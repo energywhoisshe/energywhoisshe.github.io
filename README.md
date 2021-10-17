@@ -266,13 +266,14 @@ void four()
         //선택 함수입니다. 드롭다운 메뉴에서 네 가지 선택지가 내려옵니다.
 
         int index = dropdown.value;
-        //이 중 한 가지를 선택할 수 있습니까?
+        //이 중 하나 만을 선택할 수 있습니까?
 
         if (index != 0)
         {
             string selectedName = Names[index];
             Debug.Log(selectedName);
         }
+        //이것이 무슨 말입니까?
         //문서가 아니라 게임 속이었다면
         //당신의 선택은 고정변수로 입력되었겠지요.
         //...
