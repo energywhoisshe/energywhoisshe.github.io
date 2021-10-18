@@ -271,7 +271,7 @@ void four()
         if (index != 0)
         {
             string selectedName = Names[index];
-            Debug.Log(selectedName);
+            print(selectedName);
         }
         //이것이 무슨 말입니까?
         //문서가 아니라 게임 속이었다면
