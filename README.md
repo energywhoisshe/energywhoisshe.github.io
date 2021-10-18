@@ -325,10 +325,10 @@ void four()
         
         //와중 당신의 선택은 그대로 가져갑니다.
         //그간 논플레이어 프로필은 복수의 문자열이 랜덤하게 조합되어 무한한 군상을 만듭니다. 
-        string[] for_H = new string[] {"Names.Add", "Names.Add", "Names.Add", "Names.Add"};
-        string[] for_H1 = new string[] {"Names.Add", "Names.Add", "Names.Add", "Names.Add"};
-        string[] for_H2 = new string[] {"Names.Add", "Names.Add", "Names.Add", "Names.Add"};
-        string[] for_H3 = new string[] {"Names.Add", "Names.Add", "Names.Add", "Names.Add"};
+        string[] for_H = new string[] {"친족성폭력 공소시효 폐지", "Names.Add", "Names.Add", "Names.Add"};
+        string[] for_H1 = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "Names.Add", "Names.Add"};
+        string[] for_H2 = new string[] {"Names.Add", "Names.Add", "Names.Add", "생활동반자법"};
+        string[] for_H3 = new string[] {"Names.Add", "차별금지법", "Names.Add", "Names.Add"};
         string randomName_H = for_H[Random.Range(0, for_H.Length)];
         string randomName_H1 = for_H1[Random.Range(0, for_H1.Length)];
         string randomName_H2 = for_H2[Random.Range(0, for_H2.Length)];
