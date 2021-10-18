@@ -76,21 +76,22 @@ void Awake()
 ``` c#
 IEnumerator sos()
         {   
-            while(true){
-                print = "엄마";
+            while(true)
+            {
+                Unkillable.text = "엄마";
                 yield return new WaitForSeconds(1);
-                print = "딸";
+                Unkillable.text = "딸";
                 yield return new WaitForSeconds(2);
-                print = "딸의 여자친구";
+                Unkillable.text = "딸의 여자친구";
                 yield return new WaitForSeconds(3);
-                print = "아빠"; 
+                Unkillable.text = "아빠"; 
                 yield return new WaitForSeconds(4);
-                print = "오빠"; 
+                Unkillable.text = "오빠"; 
                 yield return new WaitForSeconds(5);
-                print = "불가살이";
+                Unkillable.text = "불가살이";
                 yield return new WaitForSeconds(6);
                 Debug.Log("그러니까 이 6개의 친족, 친척 혹은 도무지 서로간에 낯선 이들은 같은 곳을 돌고 있습니다.");
-                }
+            }
         }
         // ...
         //사실 비슷하다면, 게임 프로젝트 상에서 6개의 별, 육성(六星)이 공전하는데 - 본 아티클에서는 아주 단순한 개념적 회전을 만들어 보았습니다.
