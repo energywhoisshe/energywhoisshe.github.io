@@ -328,12 +328,12 @@ void four()
         print(randomName_H + "," + randomName_H1 + "," + randomName_H2 + "," + randomName_H3);
         
         //이를테면 이 자는 randomName_H...
-        print = "안녕,";
-        print = "실례합니다.";
-        print = "나이는 이제 만으로 9세가 되었습니다.";
-        print = "정직한 경향이 있는 어린이 답게 지내고 있습니다.";
-        print = "이곳에 온 이유는 산만함 때문입니다.";
-        print = "우리 집에서 가장 안전하게 느껴지던 것은 천장 였습니다.";
+        Unkillable.text = "안녕,";
+        Unkillable.text = "실례합니다.";
+        Unkillable.text = "나이는 이제 만으로 9세가 되었습니다.";
+        Unkillable.text = "정직한 경향이 있는 어린이 답게 지내고 있습니다.";
+        Unkillable.text = "이곳에 온 이유는 산만함 때문입니다.";
+        Unkillable.text = "우리 집에서 가장 안전하게 느껴지던 것은 천장 였습니다.";
         
         // ... H112입니다.
         // ... H119입니다?
