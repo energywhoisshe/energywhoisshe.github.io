@@ -366,6 +366,10 @@ void four()
     }
 ```
 
+![image](https://user-images.githubusercontent.com/90887934/137732045-2fe2b693-6048-4a24-bd23-bdf98cda1ae0.png)
+![image](https://user-images.githubusercontent.com/90887934/136985439-55ffea49-b56b-4edf-8817-3deb98c13dd6.png)
+![image](https://user-images.githubusercontent.com/90887934/137734711-015294aa-5a50-4fb4-b568-450cb294b210.png)
+
     
 ```c#
 void 불가살이()
@@ -386,9 +390,7 @@ void 불가살이()
         //주석을 마칩니다.
     }
 ```
-![image](https://user-images.githubusercontent.com/90887934/137734711-015294aa-5a50-4fb4-b568-450cb294b210.png)
-![image](https://user-images.githubusercontent.com/90887934/136985439-55ffea49-b56b-4edf-8817-3deb98c13dd6.png)
-![image](https://user-images.githubusercontent.com/90887934/137732045-2fe2b693-6048-4a24-bd23-bdf98cda1ae0.png)
+
 <br>
 <br>
 <br>
