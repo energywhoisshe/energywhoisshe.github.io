@@ -346,6 +346,28 @@ void four()
         //또, 매번 찾아오는 엔딩에는 죽음보다 즐거운 것이 기다리고 있으며,
         Debug.Log("정말로, 정말로 마지막인 끝자락에서는 평화롭고 들뜬 이가 당신을 기다리고 있습니다.");
         Debug.Log("그 어린아이는 당신에게 낯선 얼굴이 아닐 것입니다.");
+    }
+```
+
+![image](https://user-images.githubusercontent.com/90887934/137732045-2fe2b693-6048-4a24-bd23-bdf98cda1ae0.png)
+![image](https://user-images.githubusercontent.com/90887934/136985439-55ffea49-b56b-4edf-8817-3deb98c13dd6.png)
+![image](https://user-images.githubusercontent.com/90887934/137734711-015294aa-5a50-4fb4-b568-450cb294b210.png)
+    
+```c#
+void 불가살이()
+    {
+        //사운드트랙은 이상화가 맡았습니다.
+        //응급구조사로서 화재를 진압하고 생명을 다루며 죽음을 수습했고
+        //스스로 컴퓨터음악을 시도해보고 있읍지요.
+
+        //이상화는 밥풀에서 태어나 활활 타올랐다는 불가살이 민담을 좋아합니다.
+        Stxrfxsh.Play(); //https://soundcloud.com/stxrfxsh
+
+        //우리가 별도의 협업을 통해 녹음한 목소리를 제외하면
+        //가사는 두 줄입니다, 들리십니까?
+
+        Unkillable.text = "죽일 수가 없다는 것";
+        Unkillable.text = "불로도 죽일 수 없는";
         
         
         
@@ -367,33 +389,11 @@ void four()
         
         RQuote.text = "그들은 그대의 수호신이니 무서워하지 말라.";
         RTitle.text = "티벳 사자의 서, p.327";
-    }
-```
-
-![image](https://user-images.githubusercontent.com/90887934/137732045-2fe2b693-6048-4a24-bd23-bdf98cda1ae0.png)
-![image](https://user-images.githubusercontent.com/90887934/136985439-55ffea49-b56b-4edf-8817-3deb98c13dd6.png)
-![image](https://user-images.githubusercontent.com/90887934/137734711-015294aa-5a50-4fb4-b568-450cb294b210.png)
-
-    
-```c#
-void 불가살이()
-    {
-        //사운드트랙은 이상화가 맡았습니다.
-        //응급구조사로서 화재를 진압하고 생명을 다루며 죽음을 수습했고
-        //스스로 컴퓨터음악을 시도해보고 있읍지요.
-
-        //이상화는 밥풀에서 태어나 활활 타올랐다는 불가살이 민담을 좋아합니다.
-        Stxrfxsh.Play(); //https://soundcloud.com/stxrfxsh
-
-        //우리가 별도의 협업을 통해 녹음한 목소리를 제외하면
-        //가사는 두 줄입니다, 들리십니까?
-
-        Unkillable.text = "죽일 수가 없다는 것";
-        Unkillable.text = "불로도 죽일 수 없는";
-
+        
         //주석을 마칩니다.
     }
 ```
+
 
 <br>
 <br>
