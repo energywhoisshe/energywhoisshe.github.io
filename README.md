@@ -79,14 +79,19 @@ IEnumerator sos()
             {
                 Unkillable.text = "엄마";
                 yield return new WaitForSeconds(1);
+                
                 Unkillable.text = "딸";
                 yield return new WaitForSeconds(2);
+                
                 Unkillable.text = "딸의 여자친구";
                 yield return new WaitForSeconds(3);
+                
                 Unkillable.text = "아빠"; 
                 yield return new WaitForSeconds(4);
+                
                 Unkillable.text = "오빠"; 
                 yield return new WaitForSeconds(5);
+                
                 Unkillable.text = "불가살이";
                 yield return new WaitForSeconds(6);
                 Debug.Log("그러니까 이 6개의 친족, 친척 혹은 도무지 서로간에 낯선 이들은 같은 곳을 돌고 있습니다.");
