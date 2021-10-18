@@ -175,8 +175,7 @@ void one()
 `그렇게도 번역할 수 없는 물건들 — 집을 지키는 사람들(3 Households)의 스테이지들은 특히, 선택하거나 선택하지 않은 가족 관계, 심리적 화상, 돌연한 사고 그리고 장례와 추모에 겨냥해있다. 굳이 신뢰하는 혐오스러운 나날들의 총합, 지옥같은 천국 혹은 천국같은 지옥, 불안 속에서 기억해내는 사물의 감각, 그리고 ... 단순하다면 단순한 설계에 목적지는 준비되어 있으며 누구나 각자의 재능과 기질에 따라 몇 차례 맴돌아 도착할 것이다.`
 
 
-
-![image](https://user-images.githubusercontent.com/90887934/137367718-3b40348a-d2e0-4066-bc33-cf98ba9a7be4.png)
+<img src = "https://user-images.githubusercontent.com/90887934/137367718-3b40348a-d2e0-4066-bc33-cf98ba9a7be4.png" width = "100%">
 
 <br>
 <br>
@@ -238,9 +237,9 @@ void three()
 
     }
 ```
-![image](https://user-images.githubusercontent.com/90887934/136979388-d9de674e-e881-4ad6-913f-a79bdd65d346.png)
-![image](https://user-images.githubusercontent.com/90887934/137467860-5b2d19dc-406c-46cf-a9f0-c0e6af88de6d.png)
-![image](https://user-images.githubusercontent.com/90887934/136987854-04eb899c-bad8-4618-85b9-2382e36f84d7.png)
+<img src = "https://user-images.githubusercontent.com/90887934/136979388-d9de674e-e881-4ad6-913f-a79bdd65d346.png" width = "100%">
+<img src = "https://user-images.githubusercontent.com/90887934/137467860-5b2d19dc-406c-46cf-a9f0-c0e6af88de6d.png" width = "100%">
+<img src = "https://user-images.githubusercontent.com/90887934/136987854-04eb899c-bad8-4618-85b9-2382e36f84d7.png" width = "100%">
 
 <br>
 <br>
