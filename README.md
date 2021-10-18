@@ -263,17 +263,21 @@ void four()
     {   
         Dropdown dropdown
         List<string> Names = new List<string>();
-
-        Names.Add("친족성폭력 공소시효 폐지"); //선택지를 추가합니다.
-        Names.Add("아동학대 진상조사 특별법"); //선택지를 추가합니다.
-        Names.Add("차별금지법"); //선택지를 추가합니다.
-        Names.Add("생활동반자법"); //선택지를 추가합니다.
+        //플레이어 캐릭터를 생성합니다.
+        
+        Names.Add("친족성폭력 공소시효 폐지");
+        Names.Add("아동학대 진상조사 특별법");
+        Names.Add("차별금지법");
+        Names.Add("생활동반자법");
+        
         dropdown.AddOptions(Names);
         //선택 함수입니다. 드롭다운 메뉴에서 네 가지 선택지가 내려옵니다.
-
+        
         int index = dropdown.value;
         //이 중 하나 만을 선택할 수 있습니까?
         //이 중 한 가지 탯줄을 잡으십시오.
+        
+        //두 손으로 밧줄을 잡아 당기십시오.
 
         if (index != 0)
         {
@@ -288,7 +292,7 @@ void four()
         
         
         Debug.Log("불가능한 질문으로 느껴집니까?")
-        Debug.Log("익명의 당신에게는 마치 당사자성을 선택하는 것으로 느껴집니까?")
+        Debug.Log("익명의 당신에게는 마치 당사자성을 선택하는 것으로도 느껴집니까?")
         //...
         
         
