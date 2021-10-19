@@ -400,9 +400,9 @@ void 불가살이()
         //다양한 출처에서 발췌된 총 21세트의 인용구가 삽입되어있습니다.
         //좌우로 번갈아 점멸하는 인용구입니다. 자세한 코드는 생각보다 이 자리가 길어져서 생략했습니다.
 
-        TMP_Text LQuote;
+        TMP_Text LQuote; //왼쪽입니다.
         TMP_Text LTitle;
-        TMP_Text RQuote;
+        TMP_Text RQuote; //오른쪽입니다.
         TMP_Text RTitle;
         
         LQuote.text = "사자를 맞이하기 위해 ... 불꽃에 싸인 58명이 분노의 신들이 나타날 것이다. 그들은 피를 마시는 신들이다.";
