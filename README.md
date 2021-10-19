@@ -262,12 +262,13 @@ void four()
     {   
         Dropdown dropdown
         List<string> Names = new List<string>();
-        //플레이어 캐릭터를 설계합니다.
+        //플레이어 캐릭터 생성기를 설계합니다.
+        //이제는 비로소 플레이어 당신을 생성합니다.
         
         Names.Add("친족성폭력 공소시효 폐지"); //라는 선택지를 추가하고 ... 
-        Names.Add("아동학대 진상조사 특별법");
-        Names.Add("차별금지법");
-        Names.Add("생활동반자법"); 
+        Names.Add("아동학대 진상조사 특별법"); //라는 선택지를 추가하고 ... 
+        Names.Add("차별금지법"); //라는 선택지를 추가하고 ... 
+        Names.Add("생활동반자법"); //라는 선택지를 추가하고 ... 
         
         dropdown.AddOptions(Names);
         //선택 함수가 준비되었습니다. 드롭다운 메뉴에서 네 가지 선택지가 내려옵니다.
