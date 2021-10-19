@@ -329,8 +329,12 @@ void four()
         
         //와중 당신의 선택은 그대로 가져갑니다.
         //그간 논플레이어 프로필은 복수의 문자열이 랜덤하게 조합되어 무한한 군상을 만듭니다. 
+        string[] for_H = new string[]
+        string[] for_H1 = new string[]
+        string[] for_H2 = new string[]
+        string[] for_H3 = new string[]
        
-        //이를테면 이 자는 익명의 H... 예약 시간에 맞춰 문을 열고 들어옵니다.
+        //이를테면 이 자는 익명의 H3... 예약 시간에 맞춰 문을 열고 들어옵니다.
         Unkillable.text = "안녕,";
         Unkillable.text = "실례합니다.";
         Unkillable.text = "나이는 이제 만으로 9세가 되었습니다.";
