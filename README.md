@@ -419,8 +419,8 @@ void 불가살이()
 ```
 
 ![image](https://user-images.githubusercontent.com/90887934/138020296-1d7aaf80-23fe-4aa4-88a6-40101c127a74.png)
-![image](https://user-images.githubusercontent.com/90887934/138560903-7df254f4-5648-4e3a-a464-745aa55f9ca0.png)
-![image](https://user-images.githubusercontent.com/90887934/138560904-22b8e9aa-511b-4428-823a-357319a60f8a.png)
+![image](https://user-images.githubusercontent.com/90887934/138560976-b3ab904b-adbb-4813-85c4-4f78e14fbfb0.png)
+![image](https://user-images.githubusercontent.com/90887934/138560981-6a940856-97c7-45f9-a374-17697a32c2aa.png)
 
 
 <br>
