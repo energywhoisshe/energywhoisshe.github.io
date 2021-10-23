@@ -1,9 +1,5 @@
 # { "파괴적인 엄마의 마음", "생산적인 딸의 양자파동장", "잠재적인 딸의 여자친구의 물리적인 구조육체" };<!-- 트라우마 치료 세션, 레즈비언 실천, 친족 성폭력, 양자 에너지, 죽음 명상 -->
 
-![image](https://user-images.githubusercontent.com/90887934/138553192-50ccad2f-5874-4aad-9cd2-22a1221339da.png)
-
-
-
 <iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
         allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
 </iframe> 
