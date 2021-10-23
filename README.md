@@ -1,4 +1,4 @@
-<a href='https://energywhoisshe.github.io/' target='_blank'>energywhoisshe.github.io</a>
+<!-- <a href='https://energywhoisshe.github.io/' target='_blank'>energywhoisshe.github.io</a> -->
 
 # { "파괴적인 엄마의 마음", "생산적인 딸의 양자파동장", "잠재적인 딸의 여자친구의 물리적인 구조육체" };<!-- 트 라우마 치료 세션, 레즈비언 실천, 친족 성폭력, 양자 에너지, 죽음 명상 -->
 ``` c#
