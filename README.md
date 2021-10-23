@@ -2,6 +2,25 @@
 ### 3 Households 집을 지키는 사람들
 <br>
 
+
+![image](https://user-images.githubusercontent.com/90887934/138553192-50ccad2f-5874-4aad-9cd2-22a1221339da.png)
+
+
+
+<iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
+        allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
+</iframe> 
+
+
+
+
+> `3 Households 집을 지키는 사람들, arthouse game on computer, controller, and projector, playtime about 15'00", 2021.11 - 이 글은 작업이 공간에 설치되기 약 1~3달 전에 쓰여집니다. PC에 최적화된 문서로, 모바일 기기는 스크롤을 상하좌우로 움직일 필요가 있습니다. 자동 재생이 되지 않았다면 플레이 버튼을 클릭해주세요. 작고 자라서 얼마간 큰 소리가 포함되어있으니 볼륨 조절에 유의하십시오.`
+
+
+<br>
+<br>
+<br>
+
 ``` c#
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,19 +33,6 @@ public class ForSemenar : MonoBehaviour
     public Text Unkillable;
     public AudioSource Stxrfxsh;
 ```
-
-<iframe src = "https://user-images.githubusercontent.com/90887934/137000312-04b749b9-af00-405a-b07c-09c565e16196.mp4" id="iframeAudio" 
-        allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
-</iframe> 
-
-
-
-> `3 Households 집을 지키는 사람들, arthouse game on computer, controller, and projector, playtime about 15'00", 2021.11 - 이 글은 작업이 공간에 설치되기 약 1~3달 전에 쓰여집니다. PC에 최적화된 문서로, 모바일 기기는 스크롤을 상하좌우로 움직일 필요가 있습니다. 자동 재생이 되지 않았다면 플레이 버튼을 클릭해주세요. 작고 자라서 얼마간 큰 소리가 포함되어있으니 볼륨 조절에 유의하십시오.`
-
-
-<br>
-<br>
-<br>
 
 ``` c#
 void Awake()
