@@ -36,7 +36,7 @@ public class ForSemenar : MonoBehaviour
 <br>
 <br>
 <br>
-
+<img src = "https://user-images.githubusercontent.com/90887934/136981358-df2e3cdb-dcc1-4a24-b0f4-1fe7c69ffd81.png" width = "100%">
 
 ``` c#
 void Awake()
@@ -167,16 +167,8 @@ void Update()
         //신호등 앞에서 가만히 서있는 일은 얼마나 힘겨운 일입니까?
     }
 ```
-<img src = "https://user-images.githubusercontent.com/90887934/136981358-df2e3cdb-dcc1-4a24-b0f4-1fe7c69ffd81.png" width = "100%">
 <img src = "https://user-images.githubusercontent.com/90887934/136983460-d1fa25f2-2df2-4c22-9a40-f74c39e23631.png" width = "100%">
 <img src = "https://user-images.githubusercontent.com/90887934/136987901-ae295ee3-2893-4f1d-b39e-0dbc48496f4e.png" width = "100%">
-
-<br>
-<br>
-<br>
-
-
-
 <img src = "https://user-images.githubusercontent.com/90887934/137367718-3b40348a-d2e0-4066-bc33-cf98ba9a7be4.png" width = "100%">
 
 <br>
