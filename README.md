@@ -154,9 +154,6 @@ void Update()
         
         
         three();
-        
-        
-        four();
         //혹시 익숙한 길을 산책하며 신호를 기다리고 있습니까? 그 신호는 소리입니까 빛입니까?
 
         Debug.Log("3 Households는 세 여성 간의 관계로부터 출발한 가상의 가족 단위 혹은 신체 구조를 시뮬레이션한다.");
@@ -178,14 +175,6 @@ void Update()
 <br>
 <br>
 
-``` c#
-void one()
-    {
-        Debug.Log("3 Households 집을 지키는 사람들");
-        Debug.Log("arthouse game on computer, controller, and projector, playtime about 15'00\", 2021.11");
-    }
-```
-
 
 
 <img src = "https://user-images.githubusercontent.com/90887934/137367718-3b40348a-d2e0-4066-bc33-cf98ba9a7be4.png" width = "100%">
@@ -195,7 +184,7 @@ void one()
 <br>
 
 ```c#
-void two()
+void one()
     {
         Debug.Log("천애고아가 되지 않는 법");
         string 선물 = {"홀로인 적 없고 앞으로도 그럴 일 없을 고아들을 위하여"};
@@ -244,7 +233,7 @@ void two()
 ```
 
 ```c#
-void three()
+void two()
     {
         GameObject 하; //하... 하고 기록된 ...
         GameObject 허; //허... 하고 기억된 ...
@@ -271,7 +260,7 @@ void three()
 <br>
 
 ```c#
-void four()
+void three()
     {   
         Dropdown dropdown
         List<string> Names = new List<string>();
@@ -310,8 +299,8 @@ void four()
         
         
         
-        string[] for_ = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
-        string randomName = for_[Random.Range(0, for_.Length)];
+        string[] for_Households = new string[] {"친족성폭력 공소시효 폐지", "아동학대 진상조사 특별법", "차별금지법", "생활동반자법"};
+        string randomName = for_Households[Random.Range(0, for_Households.Length)];
         print(randomName);
         //한편, 랜덤 함수입니다. 
         //이 글을 쓰고 있는 저는 혹 뉴우스에 실린다면 차모 씨(23)라 익명되는 사람으로,
