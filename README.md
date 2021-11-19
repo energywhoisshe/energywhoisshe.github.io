@@ -16,10 +16,11 @@ public class ForSemenar : MonoBehaviour
 ```
 
 <iframe src = "https://user-images.githubusercontent.com/90887934/142335252-fbbc5440-b0f4-4f7c-8cd4-33613d6f0ca7.mp4" id="iframeAudio" 
-        allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
+        allow="autoplay" style="display" controlsList="nodownload">
 </iframe> 
-
-
+<!-- <iframe src = "https://user-images.githubusercontent.com/90887934/142335252-fbbc5440-b0f4-4f7c-8cd4-33613d6f0ca7.mp4" id="iframeAudio" 
+        allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
+</iframe> -->
 
 
 <!-- `<3 Households 집을 지키는 사람들> 프로젝트는 아트센터나비에서 게임으로 개발되었고, 웹진세미나에서 기사로 발행되며, 부천아트벙커에서 미디어파사드로 설치된다. 세 개의 시리즈는 모두 유니티 게임 엔진 내에서 C# 언어로 기술되었다.` -->
