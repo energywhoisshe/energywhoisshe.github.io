@@ -16,7 +16,7 @@ public class ForSemenar : MonoBehaviour
 ```
 
 <iframe src = "https://user-images.githubusercontent.com/90887934/142335252-fbbc5440-b0f4-4f7c-8cd4-33613d6f0ca7.mp4" id="iframeAudio" 
-        allow="autoplay" style="display" controls controlsList="nodownload" position="relative" width="100%">
+        style="display" autoplay controls controlsList="nodownload" position="relative" width="100%">
 </iframe> 
 <!-- <iframe src = "https://user-images.githubusercontent.com/90887934/142335252-fbbc5440-b0f4-4f7c-8cd4-33613d6f0ca7.mp4" id="iframeAudio" 
         allow="autoplay" style="display" controlsList="nodownload" position="relative" width="100%">
