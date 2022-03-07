@@ -1,7 +1,5 @@
 ##### 3 Households
 2022.02.28 ~
-<br>
-AMAZE
 
 <https://energywhoisshe.github.io/3>
 
