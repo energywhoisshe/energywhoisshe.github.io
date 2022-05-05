@@ -85,7 +85,18 @@ History
 ![151186708-48f9045d-62a1-4f4e-98f8-a8b8fbc5ef61](https://user-images.githubusercontent.com/90887934/166875570-983bab1b-b7f6-4a59-b9e3-6df80f65275d.jpeg)
 
 ```
-captions
+- Mosquitojuice, 소금 + 빛 + 교회가 아님, 29분 19초 순환재생, 퍼포머 제공, 2022
+  - 강예빈, Sad family, Oil on canvas, 72.7x90.9cm, 2021
+  - 박주현, Beside eggs, Digital print on paper, 21x29.7cm, 9 pages, 2022
+  - 김해영, Premature greying, quickening, 김찬휘 카메라, 잉크젯 프린트, 디지털 프린트, 2021
+  - 이상화, Injury, digital sound(2’36”), 2021, 인식표, EMT 가위, 태극기패치, 2017
+  - 이솔엽, 해군아 클럽가자, digital sound(5’05”), 2021, 군번줄, 제76기 해군사관생도 수양록, 2018
+  - 박민영, 만날 뻔해서 반갑습니다, 싱글채널비디오, 조각, 향료, 가변크기, 9분 10초, 2021
+  - 임다울, 뒷오른팔 (장미 문신) Hind Right Arm (Rose Tattoo), 혼합 매체 & 스마트 디바이스 Mixed Media & Smart Device, 가변 크기 Dimensions Variable, 2019-2022
+  - 유명민, Care Instruction of Silky Dream, 실크, 나일론에 실크스크린, 가변설치, 2021 / 무지개가 있는 집(Rainbow in the house), 캔버스에 유리(유명민/2021), 캔버스에 아크릴(이윤수/2022), 크레용, 60.6 x 90.9(2ea)
+  - 이윤수, 무지개가 있는 집(Rainbow in the house), 캔버스에 유리(유명민/2021), 캔버스에 아크릴(이윤수/2022), 크레용, 60.6 x 90.9(2ea)
+  - 안현진, Consolidation 1, 백자토, 가압성형, 산화번조, 부분시유 33x33x1.5(h)cm, 2021 / Consolidation 2, 백자토, 가압성형, 산화번조, 부분시유 6x6x1(h)cm, 2021
+  - 최혜라,
 ```
 
 <br>
