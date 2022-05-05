@@ -34,6 +34,7 @@ energywhoisshe@gmail.com
 - Juicy mosquito_trailer/ performance film, 17’11” single-channel video / 퍼포머 12인, 오큘러스 퀘스트x3, 퍼셉션뉴론x1, 1 channel 프로젝션, 랜드서프보드*2, 30m led strip/ 2020.10
 - Juicy mosquito_behind / sound with image, playbar and drawing / 2020.10~12
 - Juicy mosquito_sketches / 38 pages of digital images / 2020.10~12 Juicy mosquito_mic / sound with image, single-channel video / 2020.12
+<img src = "https://user-images.githubusercontent.com/90887934/166870583-06a8fe4f-7345-437f-9dc6-198d462933f8.jpeg" width = 50%>
 
 ###### 
 <br>
