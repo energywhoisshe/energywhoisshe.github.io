@@ -15,17 +15,17 @@ energywhoisshe@gmail.com
 
 ###### 2022 
 
-[3 Households](#3-households)
+[3 Households](#3-households) `game` `interative random fiction`
 
-[Every mosquito feels the same](#every-mosquito-feels-the-same)
+[Every mosquito feels the same](#every-mosquito-feels-the-same) `collective solo show` `video` `game`
 
 ###### 2021 
 
-[Juicy Mosquito](#juicy-mosquito)
+[Juicy Mosquito](#juicy-mosquito) `online exhibition` `live performance` `video`
 
 ###### 2020 
 
-[크게 슬플 일인가요](#크게-슬플-일인가요)
+[크게 슬플 일인가요](#크게-슬플-일인가요) `two-person exhibition`
 
 <br>
 <br>
@@ -65,11 +65,12 @@ energywhoisshe@gmail.com
 ## Juicy Mosquito
 #### documentation video: https://player.vimeo.com/video/500678760?h=086f16e22b
 #### 크라운샤이니스 Crown Shyness, 2020.12.21 - 2021.01.21, 한국예술종합학교 미술원 & crownshyness.online - 2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시 K'arts BFA Show Archive: https://kartsfaa.cargo.site/
-- [x] Juicy Mosquito_performance film/ 6-channel video (24'25") on website/ 퍼포머 14인, 오큘러스퀘스트x3, 퍼셉션뉴론x1, 3 channel 리얼타임 프로젝션, 랜드서프보드*2, 50m led strip, 스탠딩 마이크, Unity, Max/MSP 외 / 2020.12
-- [x] Juicy mosquito_trailer/ performance film, 17’11” single-channel video / 퍼포머 12인, 오큘러스 퀘스트x3, 퍼셉션뉴론x1, 1 channel 프로젝션, 랜드서프보드*2, 30m led strip/ 2020.10`
-- [x] Juicy mosquito_behind / sound with image, playbar and drawing / 2020.10~12
-- [x] Juicy mosquito_sketches / 38 pages of digital images / 2020.10~12 Juicy mosquito_mic / sound with image, single-channel video / 2020.12
-
+```
+- Juicy Mosquito_performance film/ 6-channel video (24'25") on website/ 퍼포머 14인, 오큘러스퀘스트x3, 퍼셉션뉴론x1, 3 channel 리얼타임 프로젝션, 랜드서프보드*2, 50m led strip, 스탠딩 마이크, Unity, Max/MSP 외 / 2020.12
+- Juicy mosquito_trailer/ performance film, 17’11” single-channel video / 퍼포머 12인, 오큘러스 퀘스트x3, 퍼셉션뉴론x1, 1 channel 프로젝션, 랜드서프보드*2, 30m led strip/ 2020.10`
+- Juicy mosquito_behind / sound with image, playbar and drawing / 2020.10~12
+- Juicy mosquito_sketches / 38 pages of digital images / 2020.10~12 Juicy mosquito_mic / sound with image, single-channel video / 2020.12
+```
 <img src = "https://user-images.githubusercontent.com/90887934/166872404-d858be72-8835-4a0d-84be-79dd4cdab5e6.png" width = "70%">
 
 <br>
@@ -96,10 +97,13 @@ energywhoisshe@gmail.com
 
 ## 크게 슬플 일인가요
 #### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
-- [x] Far For Trangle / 단채널 비디오(48'20")/ 2020
-- [x] HOW DARE I FEEL SAD WHEN I THINK OF YOU / A4 프린트 제본 (210x297mm x 5, 187x103mm x 1), VHS 테이프 케이스, 보헴시가 쿠바나 1mg 곽, 홈매트 리필, 촬영용 조명, 3x6m 블루스크린 원단 / 2020
-- [x] 폴폴 시트 / 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020
-- [x] 폴폴 스크린샷/ 210x297mm ohp 필름 프린트, 시아노타입/ 2020
+
+```
+- Far For Trangle / 단채널 비디오(48'20")/ 2020 *
+- HOW DARE I FEEL SAD WHEN I THINK OF YOU / A4 프린트 제본 (210x297mm x 5, 187x103mm x 1), VHS 테이프 케이스, 보헴시가 쿠바나 1mg 곽, 홈매트 리필, 촬영용 조명, 3x6m 블루스크린 원단 / 2020
+- 폴폴 시트 / 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020
+- 폴폴 스크린샷/ 210x297mm ohp 필름 프린트, 시아노타입/ 2020
+```
 
 <img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = "80%" >
 
