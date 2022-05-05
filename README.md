@@ -23,7 +23,7 @@ energywhoisshe@gmail.com
 
 
 ## Every mosquito feels the same
-###### 개인전, 2022.1.19 ~ 2022.1.29, TINC <https://energywhoisshe.github.io/119>
+###### 2022.1.19 ~ 2022.1.29, TINC <https://energywhoisshe.github.io/119>
 - Mosquitojuice
 <br>
 <br>
@@ -36,7 +36,7 @@ energywhoisshe@gmail.com
 <br>
 
 ## 크게 슬플 일인가요
-###### 2인전(박주영 Park Juyeong 차연서 Cha Yeonså), 2020.6.26 ~ 2020.7.9, Gallery175
+###### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175
 - Far For Trangle / 단채널 비디오(48'20")/ 2020
 - HOW DARE I FEEL SAD WHEN I THINK OF YOU / A4 프린트 제본 (210x297mm x 5, 187x103mm x 1), VHS 테이프 케이스, 보헴시가 쿠바나 1mg 곽, 홈매트 리필, 촬영용 조명, 3x6m 블루스크린 원단 / 2020
 - 폴폴 시트 / 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020
