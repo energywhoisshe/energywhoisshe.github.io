@@ -41,10 +41,11 @@ energywhoisshe@gmail.com
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
 ```
-history
-2022.1.19 ~ 1.30 개인전 'Every mosquito feels the same'(TINC)에서 아이맥 설치
-2021.11.24 ~ 12.19 단체전 '칠전방울, 펌프, 불가사리'(부천아트벙커B39)에서 맥미니 & 프로젝션 설치
-2021.06 ~ 11 한국콘텐츠진흥원 창의인재동반사업 지원, 주관: 아트센터나비, 멘토: 조호연(룹앤테일), 그룹: 게임크루(박지혜 연구원)
+History
+  2022.02 ~ 한글판/영문판 병행 개발 및 웹페이지 오픈
+  2022.1.19 ~ 1.30 개인전 'Every mosquito feels the same'(TINC)에서 아이맥 설치
+  2021.11.24 ~ 12.19 단체전 '칠전방울, 펌프, 불가사리'(부천아트벙커B39)에서 맥미니 & 프로젝션 설치
+  2021.06 ~ 11 한국콘텐츠진흥원 창의인재동반사업 지원, 주관: 아트센터나비, 멘토: 조호연(룹앤테일), 그룹: 게임크루(박지혜 연구원)
 ```
 
 #### 2021.11 웹진세미나 Issue09 http://www.zineseminar.com/wp/issue09/chayeonseo/
