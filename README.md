@@ -30,6 +30,10 @@ energywhoisshe@gmail.com
 ## Juicy Mosquito
 ###### 크라운샤이니스Crown Shyness (2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시), 2020.12.21 - 2021.01.21, crownshyness.online
 ` K'arts BFA Show Archive: https://kartsfaa.cargo.site/ `
+- Juicy Mosquito_performance film/ 6-channel video (24'25") on website/ 퍼포머 14인, 오큘러스퀘스트x3, 퍼셉션뉴론x1, 3 channel 리얼타임 프로젝션, 랜드서프보드*2, 50m led strip, 스탠딩 마이크, Unity, Max/MSP 외 / 2020.12
+- Juicy mosquito_trailer/ performance film, 17’11” single-channel video / 퍼포머 12인, 오큘러스 퀘스트x3, 퍼셉션뉴론x1, 1 channel 프로젝션, 랜드서프보드*2, 30m led strip/ 2020.10
+- Juicy mosquito_behind / sound with image, playbar and drawing / 2020.10~12
+- Juicy mosquito_sketches / 38 pages of digital images / 2020.10~12 Juicy mosquito_mic / sound with image, single-channel video / 2020.12
 
 ###### 
 <br>
