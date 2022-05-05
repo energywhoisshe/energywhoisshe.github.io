@@ -28,7 +28,7 @@ energywhoisshe@gmail.com
 <br>
 
 ## Juicy Mosquito
-
+###### 크라운샤이니스Crown Shyness (2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시), 2020.12.21 - 2021.01.21, https://kartsfaa.cargo.site/
 <br>
 <br>
 <br>
