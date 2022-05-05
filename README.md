@@ -12,8 +12,8 @@ energywhoisshe@gmail.com
 <br>
 
 ## 3 Households
+###### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed.
 2022.02.28 ~
-
 <https://energywhoisshe.github.io/3>
 
 <br>
@@ -25,9 +25,7 @@ energywhoisshe@gmail.com
 ## Every mosquito feels the same
 2022.1.19 ~ 2022.1.29
 <br>
-TINC
-
-<https://energywhoisshe.github.io/119>
+TINC <https://energywhoisshe.github.io/119>
 
 <br>
 <br>
