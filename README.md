@@ -55,6 +55,8 @@ energywhoisshe@gmail.com
 <br>
 <br>
 
+`Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)
+
 ## 크게 슬플 일인가요
 ###### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
 - Far For Trangle / 단채널 비디오(48'20")/ 2020
@@ -64,7 +66,7 @@ energywhoisshe@gmail.com
 
 <img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = 50% >
 
-`Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호: 영원히 익숙해지지 않는 건 없다 (조윤지 기자)`
+`Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
 
 <br>
 <br>
