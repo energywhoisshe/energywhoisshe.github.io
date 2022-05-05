@@ -26,7 +26,7 @@ energywhoisshe@gmail.com
 
 
 ## Every mosquito feels the same
-#### 2022.1.19 ~ 2022.1.29, TINC <https://energywhoisshe.github.io/119>
+#### 2022.1.19 ~ 2022.1.29, TINC & <https://energywhoisshe.github.io/119>
 ###### 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 간접 협력 최효정, 공간디자인 김혜정, 미디어 설치 올미디어, 미디어 지원 이상화, 박민영, 오승은, 사진 기록 김해영, 영상 기록 곽소진, Special Thanks to Team JUICY MOSQUITO(2020)
 ###### 2021 K-Arts ON-Road 창작공모사업 선정작 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터
 
@@ -49,21 +49,28 @@ energywhoisshe@gmail.com
 <br>
 
 ## Juicy Mosquito
-###### 크라운샤이니스Crown Shyness (2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시), 2020.12.21 - 2021.01.21, crownshyness.online / documentation video: https://player.vimeo.com/video/500678760?h=086f16e22b
-
-` K'arts BFA Show Archive: https://kartsfaa.cargo.site/ `
-- Juicy Mosquito_performance film/ 6-channel video (24'25") on website/ 퍼포머 14인, 오큘러스퀘스트x3, 퍼셉션뉴론x1, 3 channel 리얼타임 프로젝션, 랜드서프보드*2, 50m led strip, 스탠딩 마이크, Unity, Max/MSP 외 / 2020.12
-- Juicy mosquito_trailer/ performance film, 17’11” single-channel video / 퍼포머 12인, 오큘러스 퀘스트x3, 퍼셉션뉴론x1, 1 channel 프로젝션, 랜드서프보드*2, 30m led strip/ 2020.10
-- Juicy mosquito_behind / sound with image, playbar and drawing / 2020.10~12
-- Juicy mosquito_sketches / 38 pages of digital images / 2020.10~12 Juicy mosquito_mic / sound with image, single-channel video / 2020.12
+#### documentation video: https://player.vimeo.com/video/500678760?h=086f16e22b
+#### 크라운샤이니스 Crown Shyness, 2020.12.21 - 2021.01.21, 한국예술종합학교 미술원 & crownshyness.online - 2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시 K'arts BFA Show Archive: https://kartsfaa.cargo.site/
+- [x] Juicy Mosquito_performance film/ 6-channel video (24'25") on website/ 퍼포머 14인, 오큘러스퀘스트x3, 퍼셉션뉴론x1, 3 channel 리얼타임 프로젝션, 랜드서프보드*2, 50m led strip, 스탠딩 마이크, Unity, Max/MSP 외 / 2020.12
+- [x] Juicy mosquito_trailer/ performance film, 17’11” single-channel video / 퍼포머 12인, 오큘러스 퀘스트x3, 퍼셉션뉴론x1, 1 channel 프로젝션, 랜드서프보드*2, 30m led strip/ 2020.10`
+- [x] Juicy mosquito_behind / sound with image, playbar and drawing / 2020.10~12
+- [x] Juicy mosquito_sketches / 38 pages of digital images / 2020.10~12 Juicy mosquito_mic / sound with image, single-channel video / 2020.12
 
 <img src = "https://user-images.githubusercontent.com/90887934/166872404-d858be72-8835-4a0d-84be-79dd4cdab5e6.png" width = "70%">
 
-###### Juicy Mosquito, live performance 2020.11.21(sat) 19:00-19:30, 한국예술종합학교 산학협력단 (연출 차연서 / 조연출 원예나 / 예산 & 스크립트 자문 조영명 / 사운드 김은준 / 그래픽 자문 & 촬영 오세아 최희윤 임지수 / 기술 지원 STUDIO AR+Tech / 제작&지도 조충연 교수님) 외 교내외 협력 23인, 코로나19 방역지침으로 인해 관계자만 참석 가능한 무관객 공연으로 진행되었습니다.
+<br>
+<br>
+
+#### Juicy Mosquito (live)
+##### live performance 2020.11.21(sat) 19:00-19:30, 한국예술종합학교 산학협력단 (연출 차연서 / 조연출 원예나 / 예산 & 스크립트 자문 조영명 / 사운드 김은준 / 그래픽 자문 & 촬영 오세아 최희윤 임지수 / 기술 지원 STUDIO AR+Tech / 제작&지도 조충연 교수님) 외 교내외 협력 23인, 코로나19 방역지침으로 인해 관계자만 참석 가능한 무관객 공연으로 진행되었습니다.
 
 <img src = "https://user-images.githubusercontent.com/90887934/166870583-06a8fe4f-7345-437f-9dc6-198d462933f8.jpeg" width = "70%">
 
-###### Blind-folding in Aria / Credit ⌇Director, Project Manager, Art Directing 차연서 ⌇ Play Script, Producer 조영명 ⌇ Music 김은준 / Ars Electronica: Garden in Third Life: https://www.artcollider.kr/garden-of-third-life/at-education-program/immersive-performance / Trailer Film: <https://youtu.be/Yqih7IsivWs>
+<br>
+<br>
+
+#### Blind-folding in Aria
+##### Credit ⌇Director, Project Manager, Art Directing 차연서 ⌇ Play Script, Producer 조영명 ⌇ Music 김은준 / Ars Electronica: Garden in Third Life: https://www.artcollider.kr/garden-of-third-life/at-education-program/immersive-performance / Trailer Film: <https://youtu.be/Yqih7IsivWs>
 
 <img src = "https://user-images.githubusercontent.com/90887934/166871400-dc971b43-0421-4892-b884-9a03ff4d401f.jpeg" width = "70%" >
 
@@ -74,14 +81,11 @@ energywhoisshe@gmail.com
 <br>
 
 ## 크게 슬플 일인가요
-###### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
-` Far For Trangle / 단채널 비디오(48'20")/ 2020 `
-
-` HOW DARE I FEEL SAD WHEN I THINK OF YOU / A4 프린트 제본 (210x297mm x 5, 187x103mm x 1), VHS 테이프 케이스, 보헴시가 쿠바나 1mg 곽, 홈매트 리필, 촬영용 조명, 3x6m 블루스크린 원단 / 2020 `
-
-` 폴폴 시트 / 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020 `
-
-` 폴폴 스크린샷/ 210x297mm ohp 필름 프린트, 시아노타입/ 2020 `
+#### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
+- [x] Far For Trangle / 단채널 비디오(48'20")/ 2020
+- [x] HOW DARE I FEEL SAD WHEN I THINK OF YOU / A4 프린트 제본 (210x297mm x 5, 187x103mm x 1), VHS 테이프 케이스, 보헴시가 쿠바나 1mg 곽, 홈매트 리필, 촬영용 조명, 3x6m 블루스크린 원단 / 2020
+- [x] 폴폴 시트 / 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020
+- [x] 폴폴 스크린샷/ 210x297mm ohp 필름 프린트, 시아노타입/ 2020
 
 <img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = "80%" >
 
