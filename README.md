@@ -14,7 +14,7 @@ energywhoisshe@gmail.com
 ## 3 Households
 ###### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed. <https://energywhoisshe.github.io/3>
 
-<img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = 50%><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = 50%>
+<img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = 50%><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
 <br>
 <br>
@@ -27,7 +27,7 @@ energywhoisshe@gmail.com
 - Mosquitojuice, Salt + Light + Not a church, 29 min 19 sec Loop, Offerings, 2022
 - 모스키토쥬스, 소금 + 빛 + 교회가 아님, 29분 19초 순환재생, 퍼포머 제공, 2022
 
-<img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = 50%><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = 50%>
+<img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = 50%><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = "50%">
 
 ![151186708-48f9045d-62a1-4f4e-98f8-a8b8fbc5ef61](https://user-images.githubusercontent.com/90887934/166875570-983bab1b-b7f6-4a59-b9e3-6df80f65275d.jpeg)
 
@@ -45,15 +45,15 @@ energywhoisshe@gmail.com
 - Juicy mosquito_behind / sound with image, playbar and drawing / 2020.10~12
 - Juicy mosquito_sketches / 38 pages of digital images / 2020.10~12 Juicy mosquito_mic / sound with image, single-channel video / 2020.12
 
-<img src = "https://user-images.githubusercontent.com/90887934/166872404-d858be72-8835-4a0d-84be-79dd4cdab5e6.png" width = 50%>
+<img src = "https://user-images.githubusercontent.com/90887934/166872404-d858be72-8835-4a0d-84be-79dd4cdab5e6.png" width = "50%">
 
 ###### Juicy Mosquito, live performance 2020.11.21(sat) 19:00-19:30, 한국예술종합학교 산학협력단 (연출 차연서 / 조연출 원예나 / 예산 & 스크립트 자문 조영명 / 사운드 김은준 / 그래픽 자문 & 촬영 오세아 최희윤 임지수 / 기술 지원 STUDIO AR+Tech / 제작&지도 조충연 교수님) 외 교내외 협력 23인, 코로나19 방역지침으로 인해 관계자만 참석 가능한 무관객 공연으로 진행되었습니다.
 
-<img src = "https://user-images.githubusercontent.com/90887934/166870583-06a8fe4f-7345-437f-9dc6-198d462933f8.jpeg" width = 50%>
+<img src = "https://user-images.githubusercontent.com/90887934/166870583-06a8fe4f-7345-437f-9dc6-198d462933f8.jpeg" width = "50%">
 
 ###### Blind-folding in Aria / Credit ⌇Director, Project Manager, Art Directing 차연서 ⌇ Play Script, Producer 조영명 ⌇ Music 김은준 / Ars Electronica: Garden in Third Life: https://www.artcollider.kr/garden-of-third-life/at-education-program/immersive-performance / Trailer Film: <https://youtu.be/Yqih7IsivWs>
 
-<img src = "https://user-images.githubusercontent.com/90887934/166871400-dc971b43-0421-4892-b884-9a03ff4d401f.jpeg" width = 50% >
+<img src = "https://user-images.githubusercontent.com/90887934/166871400-dc971b43-0421-4892-b884-9a03ff4d401f.jpeg" width = "50%" >
 
 `Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)`
 
@@ -68,7 +68,7 @@ energywhoisshe@gmail.com
 - 폴폴 시트 / 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020
 - 폴폴 스크린샷/ 210x297mm ohp 필름 프린트, 시아노타입/ 2020
 
-<img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = 100% >
+<img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = "100%" >
 
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
 
