@@ -13,6 +13,7 @@ energywhoisshe@gmail.com
 <br>
 <br>
 
+#### Selected Projects
 ###### 2022 
 
 [3 Households](#3-households) `game` `interative random fiction`
@@ -30,16 +31,23 @@ energywhoisshe@gmail.com
 <br>
 <br>
 <br>
+<br>
+<br>
 
 ## 3 Households
 #### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed. <https://energywhoisshe.github.io/3>
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
-<br>
-<br>
-<br>
+```
+history
+```
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 ## Every mosquito feels the same
@@ -57,7 +65,12 @@ energywhoisshe@gmail.com
 
 ![151186708-48f9045d-62a1-4f4e-98f8-a8b8fbc5ef61](https://user-images.githubusercontent.com/90887934/166875570-983bab1b-b7f6-4a59-b9e3-6df80f65275d.jpeg)
 
+```
+captions
+```
 
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -94,6 +107,8 @@ energywhoisshe@gmail.com
 <br>
 <br>
 <br>
+<br>
+<br>
 
 ## 크게 슬플 일인가요
 #### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
@@ -109,6 +124,8 @@ energywhoisshe@gmail.com
 
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
 
+<br>
+<br>
 <br>
 <br>
 <br>
