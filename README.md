@@ -42,10 +42,13 @@ energywhoisshe@gmail.com
 
 ```
 history
-2022.1.19 ~ 2022.1.30 개인전 'Every mosquito feels the same' 데스크탑 설치
-2021.11 웹진세미나 Issue09 http://www.zineseminar.com/wp/issue09/chayeonseo/
-2021.06 ~ 2021.11 한국콘텐츠진흥원 창의인재동반사업 지원, 주관: 아트센터나비 Creative Mentoring Program for Young Professionals 2021
+2022.1.19 ~ 1.30 개인전 'Every mosquito feels the same'(TINC)에서 아이맥 설치
+2021.11.24 ~ 12.19 단체전 '칠전방울, 펌프, 불가사리'(부천아트벙커B39)에서 맥미니 & 프로젝션 설치
+2021.06 ~ 11 한국콘텐츠진흥원 창의인재동반사업 지원, 주관: 아트센터나비, 멘토: 조호연(룹앤테일), 그룹: 게임크루(박지혜 연구원)
 ```
+
+#### 2021.11 웹진세미나 Issue09 http://www.zineseminar.com/wp/issue09/chayeonseo/
+
 
 <br>
 <br>
