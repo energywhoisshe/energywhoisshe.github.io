@@ -27,7 +27,10 @@ energywhoisshe@gmail.com
 - Mosquitojuice, Salt + Light + Not a church, 29 min 19 sec Loop, Offerings, 2022
 - 모스키토쥬스, 소금 + 빛 + 교회가 아님, 29분 19초 순환재생, 퍼포머 제공, 2022
 
-<img src = "" width = 50%>
+<img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = 50%><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = 50%>
+
+![151186708-48f9045d-62a1-4f4e-98f8-a8b8fbc5ef61](https://user-images.githubusercontent.com/90887934/166875570-983bab1b-b7f6-4a59-b9e3-6df80f65275d.jpeg)
+
 
 <br>
 <br>
