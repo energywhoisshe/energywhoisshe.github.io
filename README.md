@@ -16,17 +16,17 @@ energywhoisshe@gmail.com
 #### Selected Projects
 ###### 2022 
 
-[3 Households](#3-households) `game` `interative random fiction`
+[3 Households { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };](#3-households) `game` `interative random fiction`
 
-[Every mosquito feels the same](#every-mosquito-feels-the-same) `collective solo show` `video` `game`
+[Every mosquito feels the same 모스키토쥬스](#every-mosquito-feels-the-same) `collective solo show` `video` `game`
 
 ###### 2021 
 
-[Juicy Mosquito](#juicy-mosquito) `online exhibition` `live performance` `video`
+[Juicy Mosquito 모기를 죽이려면 뺨을 때려라](#juicy-mosquito) `online exhibition` `live performance` `video`
 
 ###### 2020 
 
-[크게 슬플 일인가요](#크게-슬플-일인가요) `two-person exhibition`
+[Far For Triangle 크게 슬플 일인가요](#크게-슬플-일인가요) `two-person exhibition`
 
 <br>
 <br>
