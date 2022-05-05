@@ -7,6 +7,9 @@ energywhoisshe@gmail.com
 ```
 
 ###### Cha Yeonså (b.1997, Seoul) works on performance, video, game, or writing. They are interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant beings.
+
+###### 차연서는 서울을 기반으로 활동하며 퍼포먼스, 영상, 게임을 만들거나 글을 씁니다. 일탈적 존재 안에 생존하는 다중적 몸과 마음, 에너지 등의 개별적인 성숙도와 연결망을 관찰하고 서로 돌보게 하는 데에 관심을 두고 있습니다.
+
 <br>
 <br>
 <br>
