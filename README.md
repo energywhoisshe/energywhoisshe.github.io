@@ -6,7 +6,7 @@ Last updated on 2022-05
 energywhoisshe@gmail.com
 ```
 
-###### 차연서 Cha Yeonså (b.1997, Seoul)
+###### Cha Yeonså (b.1997, Seoul) works on performance, video, game, or writing. They are interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant beings.
 <br>
 <br>
 <br>
@@ -54,11 +54,12 @@ energywhoisshe@gmail.com
 ###### Blind-folding in Aria / Credit ⌇Director, Project Manager, Art Directing 차연서 ⌇ Play Script, Producer 조영명 ⌇ Music 김은준 / Ars Electronica: Garden in Third Life: https://www.artcollider.kr/garden-of-third-life/at-education-program/immersive-performance / Trailer Film: <https://youtu.be/Yqih7IsivWs>
 
 <img src = "https://user-images.githubusercontent.com/90887934/166871400-dc971b43-0421-4892-b884-9a03ff4d401f.jpeg" width = 50% >
-<br>
-<br>
-<br>
 
-`Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)
+`Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)`
+
+<br>
+<br>
+<br>
 
 ## 크게 슬플 일인가요
 ###### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
