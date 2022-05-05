@@ -14,7 +14,7 @@ energywhoisshe@gmail.com
 ## 3 Households
 ###### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed. <https://energywhoisshe.github.io/3>
 
-<img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = 50%><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
+<img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
 <br>
 <br>
@@ -27,7 +27,7 @@ energywhoisshe@gmail.com
 - Mosquitojuice, Salt + Light + Not a church, 29 min 19 sec Loop, Offerings, 2022
 - 모스키토쥬스, 소금 + 빛 + 교회가 아님, 29분 19초 순환재생, 퍼포머 제공, 2022
 
-<img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = 50%><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = "50%">
+<img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = "50%">
 
 ![151186708-48f9045d-62a1-4f4e-98f8-a8b8fbc5ef61](https://user-images.githubusercontent.com/90887934/166875570-983bab1b-b7f6-4a59-b9e3-6df80f65275d.jpeg)
 
@@ -68,7 +68,7 @@ energywhoisshe@gmail.com
 - 폴폴 시트 / 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020
 - 폴폴 스크린샷/ 210x297mm ohp 필름 프린트, 시아노타입/ 2020
 
-<img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = "100%" >
+<img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = "50%" >
 
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
 
