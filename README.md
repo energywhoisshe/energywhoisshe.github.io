@@ -32,6 +32,10 @@ TINC <https://energywhoisshe.github.io/119>
 <br>
 
 ## 크게 슬플 일인가요
+###### 《크게 슬플 일인가요》, 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175
+###### 〈Far For Trangle〉
+###### 〈How dare I feel sad when I think of you〉
+<img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = 50% >
 
 <br>
 <br>
