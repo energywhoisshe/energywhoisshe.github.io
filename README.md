@@ -38,9 +38,10 @@ energywhoisshe@gmail.com
 
 ###### Juicy Mosquito, live performance 2020.11.21(sat) 19:00-19:30, 한국예술종합학교 산학협력단 (연출 차연서 / 조연출 원예나 / 예산 & 스크립트 자문 조영명 / 사운드 김은준 / 그래픽 자문 & 촬영 오세아 최희윤 임지수 / 기술 지원 STUDIO AR+Tech / 제작&지도 조충연 교수님) 외 교내외 협력 23인, 코로나19 방역지침으로 인해 관계자만 참석 가능한 무관객 공연으로 진행되었습니다.
 
-###### Blind-folding in Aria / Credit ⌇Director, Project Manager, Art Directing 차연서 ⌇ Play Script, Producer 조영명 ⌇ Music 김은준 /  https://www.artcollider.kr/garden-of-third-life/at-education-program/immersive-performance
+###### Blind-folding in Aria / Credit ⌇Director, Project Manager, Art Directing 차연서 ⌇ Play Script, Producer 조영명 ⌇ Music 김은준
+Ars Electronica: Garden in Third Life: https://www.artcollider.kr/garden-of-third-life/at-education-program/immersive-performance / 
+Trailer Film: <https://youtu.be/Yqih7IsivWs>
 <img src = "https://user-images.githubusercontent.com/90887934/166871400-dc971b43-0421-4892-b884-9a03ff4d401f.jpeg" width = 50% >
-
 <br>
 <br>
 <br>
