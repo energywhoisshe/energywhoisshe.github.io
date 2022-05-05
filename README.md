@@ -37,7 +37,7 @@ TINC <https://energywhoisshe.github.io/119>
 ###### 〈HOW DARE I FEEL SAD WHEN I THINK OF YOU〉 / A4 프린트 제본 (210x297mm x 5, 187x103mm x 1), VHS 테이프 케이스, 보헴시가 쿠바나 1mg 곽, 홈매트 리필, 촬영용 조명, 3x6m 블루스크린 원단 / 2020
 <img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = 50% >
 
-`Review - PUBLIC ART 월간 퍼플릭아트 (2020년 08월호)`
+`Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호: 영원히 익숙해지지 않는 건 없다 (조윤지 기자)`
 
 <br>
 <br>
