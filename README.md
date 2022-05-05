@@ -97,6 +97,8 @@ History
   - 이윤수, 무지개가 있는 집(Rainbow in the house), 캔버스에 유리(유명민/2021), 캔버스에 아크릴(이윤수/2022), 크레용, 60.6 x 90.9(2ea)
   - 안현진, Consolidation 1, 백자토, 가압성형, 산화번조, 부분시유 33x33x1.5(h)cm, 2021 / Consolidation 2, 백자토, 가압성형, 산화번조, 부분시유 6x6x1(h)cm, 2021
   - 최혜라, Danse 1, steel, paper, dimensions variable, 2022
+  - 김호정, light survival, 방수천에 디지털프린트, 150 x 350 (cm), 2021
+  - 차연서, { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Interactive Random Fiction on PC, Unity game engine, 두 개의 스테이지, 2022
 ```
 
 <br>
