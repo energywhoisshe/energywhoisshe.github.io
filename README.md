@@ -36,12 +36,15 @@ energywhoisshe@gmail.com
 
 ## 3 Households
 #### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed. <https://energywhoisshe.github.io/3>
-###### 
+###### 기획/개발 차연서, 사운드 이상화(stxrfxsh)
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
 ```
 history
+2022.1.19 ~ 2022.1.30 개인전 'Every mosquito feels the same' 데스크탑 설치
+2021.11 웹진세미나 Issue09 http://www.zineseminar.com/wp/issue09/chayeonseo/
+2021.06 ~ 2021.11 한국콘텐츠진흥원 창의인재동반사업 지원, 주관: 아트센터나비 Creative Mentoring Program for Young Professionals 2021
 ```
 
 <br>
