@@ -1,0 +1,9 @@
+details{
+  width: 100%;
+  max-width: 750px;
+  text-align: justify;
+  padding: 1em;
+  box-sizing: border-box;
+  background-color: #11111;
+  color: grey;
+}
