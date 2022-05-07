@@ -123,7 +123,7 @@ History
 
 ### Juicy Mosquito 
 `online exhibition` `performance film` `live performance` `VR` `MoCap`  
-2021, 온라인 단체전 및 무관객 라이브 공연, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원
+###### 2021, 온라인 단체전 및 무관객 라이브 공연, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원
 <details>
   <div markdown="1">
 
