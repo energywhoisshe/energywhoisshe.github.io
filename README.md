@@ -1,11 +1,4 @@
-
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fenergywhoisshe.github.io&count_bg=%2333333333&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Welcome+to+our+project+archive&edge_flat=false)](https://hits.seeyoufarm.com)
-
-```
-Last updated on 2022-05
-Fisrt listed on 2022-05
-energywhoisshe@gmail.com
-```
 
 ###### Cha Yeonså (b.1997, Seoul) works on performance, video, game, or writing. They are interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant beings.
 
@@ -14,20 +7,12 @@ energywhoisshe@gmail.com
 <br>
 <br>
 
-#### Selected Projects
-###### 2022 
-
-[3 Households { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };](#3-households) `game` `interative random fiction` `quotes`
-
-[Every mosquito feels the same 모스키토쥬스](#every-mosquito-feels-the-same) `collaborative solo show` `performance film & installation` `game`
-
-###### 2021 
-
-[Juicy Mosquito 모기를 죽이려면 뺨을 때려라](#juicy-mosquito) `online exhibition` `live performance` `performance film`
-
-###### 2020 
-
-[Far For Triangle 크게 슬플 일인가요](#크게-슬플-일인가요) `two-person exhibition` `performance film & installation`
+#### Selected Projects (2022 ~ 2020)
+```
+Last updated on 2022-05
+Fisrt listed on 2022-05
+energywhoisshe@gmail.com
+```
 
 <br>
 <br>
@@ -36,6 +21,7 @@ energywhoisshe@gmail.com
 <br>
 
 ## 3 Households
+`game` `interative random fiction` `quotes`
 #### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed.  <https://energywhoisshe.github.io/3>
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
@@ -79,6 +65,7 @@ History
 
 
 ## Every mosquito feels the same
+`collaborative solo show` `performance film & installation` `game`
 #### 2022.1.19 ~ 2022.1.30, TINC & <https://energywhoisshe.github.io/119> / Archive: <https://energywhoisshe.github.io/130>
 ###### 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 간접 협력 최효정, 공간디자인 김혜정, 미디어 설치 올미디어, 미디어 지원 이상화, 박민영, 오승은, 사진 기록 김해영, 영상 기록 곽소진, Special Thanks to Team JUICY MOSQUITO(2020)
 ###### 2021 K-Arts ON-Road 창작공모사업 선정작 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터
@@ -117,6 +104,7 @@ History
 <br>
 
 ## Juicy Mosquito
+`online exhibition` `live performance` `performance film`
 #### documentation video: https://player.vimeo.com/video/500678760?h=086f16e22b
 #### 크라운샤이니스 Crown Shyness, 2020.12.21 - 2021.01.21, 한국예술종합학교 미술원 & crownshyness.online - 2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시 K'arts BFA Show Archive: https://kartsfaa.cargo.site/
 ```
@@ -194,6 +182,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ## 크게 슬플 일인가요
+`two-person exhibition` `performance film & installation`
 #### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
 
 ```
