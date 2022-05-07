@@ -7,3 +7,12 @@ details{
   background-color: #11111;
   color: grey;
 }
+summary{
+  font-weight: 900;
+  border: fuchsia 1px solid;
+  border-radius: 50%;
+  list-style: none;
+  width: 49px;
+  text-align: center;
+  cursor: pointer;
+}
