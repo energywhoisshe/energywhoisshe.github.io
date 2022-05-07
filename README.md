@@ -23,7 +23,7 @@ energywhoisshe@gmail.com
 ### 3 Households 
 ### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
 `game` `interative random fiction` `quotes`  
-한국콘텐츠진흥원 및 아트센터나비 지원
+###### 2021~2022, 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, 개인전 및 단체전에서 전시, 웹진세미나에 아티클 기고 
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
@@ -76,7 +76,7 @@ History
 
 ### Every mosquito feels the same 
 `collaborative solo show` `performance film & installation` `game`  
-2022, 한국예술종합학교 전시공연센터 지원
+###### 2022, TINC에서 개인전, 한국예술종합학교 전시공연센터 지원
 
   <img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = "50%">
 
@@ -123,7 +123,7 @@ History
 
 ### Juicy Mosquito 
 `online exhibition` `performance film` `live performance` `VR` `MoCap`  
-2021, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원
+2021, 온라인 단체전 및 무관객 라이브 공연, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원
 <details>
   <div markdown="1">
 
@@ -210,8 +210,8 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ### 크게 슬플 일인가요 
-`two-person exhibition` `performance film & installation`
-2020, Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원
+`two-person exhibition` `performance film & installation`  
+###### 2020, Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원
 <details>
 <div markdown="1">
 
