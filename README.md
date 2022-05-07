@@ -28,7 +28,7 @@ energywhoisshe@gmail.com
 
 <details>
 <div markdown="1">
-
+  
 #### 3 Households
 #### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed.  <https://energywhoisshe.github.io/3>
   
@@ -62,7 +62,7 @@ History
         Debug.Log("정말로, 정말로 마지막인 끝자락에서는 평화롭고 들뜬 이가 당신을 기다리고 있습니다.");
         Debug.Log("그 어린아이는 당신에게 낯선 얼굴이 아닐 것입니다.");
 ```
-
+---
   </div>
 </details>
 
@@ -109,6 +109,8 @@ History
   - 김호정, light survival, 방수천에 디지털프린트, 150 x 350 (cm), 2021
   - 차연서, { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Interactive Random Fiction on PC, Unity game engine, 두 개의 스테이지, 2022
 ```
+  ---
+  
   </div>
   </details>
 <br>
@@ -195,6 +197,8 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 `Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)`
 
+    ---
+    
   </div>
   </details>
 <br>
@@ -222,6 +226,8 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = "80%" >
     
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
+  
+  ---
   
   </div>
   </details>
