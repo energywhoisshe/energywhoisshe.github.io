@@ -21,9 +21,9 @@ energywhoisshe@gmail.com
 
 ### 3 Households 
 ### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
-2021-2022, Game, Interactive randome fiction, Quotation, Web Article / Supported by KOCCA(Korea Creative Content Agency) & Art Center Nabi, Exhibited at TINC(This is not a church) & Bucheon Art Bunker B39, Contributed on ZineSeminar issue09.  
+2021-2022, Game, Interactive randome fiction, Quotation, Web Article / Supported by _KOCCA(Korea Creative Content Agency)_ & _Art Center Nabi_, Exhibited at _TINC(This is not a church)_ & _Bucheon Art Bunker B39_, Contributed on _ZineSeminar_ issue09.  
 
-2021-2022, 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, TINC 및 부천아트벙커B39에서 전시, 웹진세미나 Issue09에 기고 
+2021-2022, 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / _한국콘텐츠진흥원_ 및 _아트센터나비_에서 제작 지원, _TINC_ 및 _부천아트벙커B39_에서 전시, _웹진세미나_ Issue09에 기고 
 
 <details>
 <div markdown="1">
@@ -75,9 +75,9 @@ History
 
 
 ### Every mosquito feels the same 
-2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at TINC, Supported by K'arts(Korea National University of Seoul).   
+2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at _TINC_, Supported by _PE Center_(Performance & Exhibition Center) in K'arts(Korea National University of Seoul).   
   
-2022, 협력적 개인전, 퍼포먼스 필름 및 설치, 게임 / TINC에서 개인전, 한국예술종합학교 전시공연센터 지원.
+2022, 협력적 개인전, 퍼포먼스 필름 및 설치, 게임 / _TINC_에서 개인전, _한국예술종합학교 전시공연센터_ 지원.
 
 <details>
 <div markdown="1">
@@ -215,9 +215,9 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ### 크게 슬플 일인가요 
-2020, Performance film & installation/ Two-person exhibition at Gallery175, Supported by Center for Visual Studies in K'arts(Korea National University of Arts) / Reviewed on _Public Art_ 2020.08
+2020, Performance film & installation/ Two-person exhibition at _Gallery175_, Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art_ 2020.08
     
-2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원 / 월간 퍼블릭하드 2020년 08월호에서 리뷰.
+2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원 / 월간 _퍼블릭아트_ 2020년 08월호에서 리뷰.
 
 <details>
 <div markdown="1">
