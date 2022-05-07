@@ -37,7 +37,6 @@ energywhoisshe@gmail.com
 
 ## 3 Households
 #### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed. <https://energywhoisshe.github.io/3>
-###### 기획/개발 차연서, 사운드 이상화(stxrfxsh)
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
@@ -48,10 +47,15 @@ History
   2021.11.24 ~ 12.19 단체전 '칠전방울, 펌프, 불가사리'(부천아트벙커B39)에서 맥미니 & 프로젝션 설치
   2021.11.20 웹진세미나 Issue09에 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” }; 기고
   2021.06 ~ 11 한국콘텐츠진흥원 창의인재동반사업에서 프로토타입 제작 (주관: 아트센터나비, 멘토: 조호연(룹앤테일), Game Crew 담당 연구원: 박지혜)
+  
+  기획/개발 차연서, 음악 이상화(stxrfxsh)
 ```
 <img src = "https://user-images.githubusercontent.com/90887934/167236078-165741f3-3f5d-482e-b7d6-b6f3e4f696fe.jpeg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/167236244-61d1ca75-1acf-4023-89c4-cbea687e959c.jpg" width = "50%"> 
 
 ###### Installation view of (left) B39  / (right) TINC
+
+<br>
+<br>
 
 #### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” }; http://www.zineseminar.com/wp/issue09/chayeonseo/
 ``` c++
