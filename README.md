@@ -119,7 +119,7 @@ History
 <br>
 
 ### Juicy Mosquito 
-`online exhibition` `live performance` `performance film` 
+`online exhibition` `performance film` `live performance` `VR` `MoCap`
 
 <details>
   <div markdown="1">
@@ -206,7 +206,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 ### 크게 슬플 일인가요 
     
-`two-person exhibition` `performance film & installation`
+`two-person exhibition` `performance film` `installation` `live performance`
 <details>
 <div markdown="1">
 
