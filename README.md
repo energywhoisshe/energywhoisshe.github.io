@@ -20,7 +20,8 @@ energywhoisshe@gmail.com
 <br>
 <br>
 
-## 3 Households
+### 3 Households 
+### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
 `game` `interative random fiction` `quotes`
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
@@ -72,7 +73,7 @@ History
 <br>
 
 
-## Every mosquito feels the same
+### Every mosquito feels the same 
 `collaborative solo show` `performance film & installation` `game`
   
 <details>
@@ -117,7 +118,8 @@ History
 <br>
 <br>
 
-## Juicy Mosquito
+### Juicy Mosquito 
+### 모기를 죽이려면 뺨을 때려라 
 `online exhibition` `live performance` `performance film` 
 
 <details>
@@ -188,7 +190,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 <br>
 
-#### Blind-folding in Aria
+### Blind-folding in Aria
 ##### Credit ⌇Director, Project Manager, Art Directing 차연서 ⌇ Play Script, Producer 조영명 ⌇ Music 김은준 / Ars Electronica: Garden in Third Life: https://www.artcollider.kr/garden-of-third-life/at-education-program/immersive-performance / Trailer Film: <https://youtu.be/Yqih7IsivWs>
 
 <img src = "https://user-images.githubusercontent.com/90887934/166871400-dc971b43-0421-4892-b884-9a03ff4d401f.jpeg" width = "70%" >
@@ -203,7 +205,8 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 <br>
 
-## 크게 슬플 일인가요
+### 크게 슬플 일인가요 
+    
 `two-person exhibition` `performance film & installation`
 <details>
 <div markdown="1">
