@@ -209,7 +209,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 ### 크게 슬플 일인가요 
     
-`two-person exhibition` `performance film` `installation`
+`two-person exhibition` `performance film & installation`
 <details>
 <div markdown="1">
 
