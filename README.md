@@ -111,6 +111,10 @@ History
 
 ## Juicy Mosquito
 `online exhibition` `live performance` `performance film`
+
+<details>
+  <summery></summery>
+  
 #### documentation video: <https://player.vimeo.com/video/500678760?h=086f16e22b>
 #### 크라운샤이니스 Crown Shyness, 2020.12.21 - 2021.01.21, 한국예술종합학교 미술원 & crownshyness.online - 2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시 K'arts BFA Show Archive: <https://kartsfaa.cargo.site/>
 ```
@@ -181,6 +185,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 `Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)`
 
+  </details>
 <br>
 <br>
 <br>
@@ -189,7 +194,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 ## 크게 슬플 일인가요
 `two-person exhibition` `performance film & installation`
-#### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 <https://energywhoisshe.github.io/2>
+#### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 
 
 ```
 - Far For Trangle / 단채널 비디오(48'20")/ 2020 *
@@ -200,8 +205,11 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 <img src = "https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg" width = "80%" >
 
+  <details>
+    
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
-
+  
+  </details>
 <br>
 <br>
 <br>
