@@ -50,6 +50,10 @@ History
   
   기획/개발 차연서, 음악 이상화(stxrfxsh)
 ```
+
+<br>
+<br>
+
 <img src = "https://user-images.githubusercontent.com/90887934/167236078-165741f3-3f5d-482e-b7d6-b6f3e4f696fe.jpeg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/167236244-61d1ca75-1acf-4023-89c4-cbea687e959c.jpg" width = "50%"> 
 
 ###### Installation view of (left) B39  / (right) TINC
