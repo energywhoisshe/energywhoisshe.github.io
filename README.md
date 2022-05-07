@@ -23,7 +23,7 @@ energywhoisshe@gmail.com
 ### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
 2021-2022, Game, Interactive randome fiction, Quotation, Web Article / Supported by _KOCCA(Korea Creative Content Agency)_ & _Art Center Nabi_, Exhibited at _TINC(This is not a church)_ & _Bucheon Art Bunker B39_, Contributed on _ZineSeminar_ issue09.  
 
-2021-2022, 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / _한국콘텐츠진흥원_ 및 _아트센터나비_에서 제작 지원, _TINC_ 및 _부천아트벙커B39_에서 전시, _웹진세미나_ Issue09에 기고 
+2021-2022, 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / _한국콘텐츠진흥원_ 및 _아트센터나비_ 에서 제작 지원, _TINC_ 및 _부천아트벙커B39_ 에서 전시, _웹진세미나_ Issue09에 기고 
 
 <details>
 <div markdown="1">
@@ -75,9 +75,9 @@ History
 
 
 ### Every mosquito feels the same 
-2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at _TINC_, Supported by _PE Center_(Performance & Exhibition Center) in K'arts(Korea National University of Seoul).   
+2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at _TINC_ , Supported by _PE Center_ (Performance & Exhibition Center) in K'arts(Korea National University of Seoul).   
   
-2022, 협력적 개인전, 퍼포먼스 필름 및 설치, 게임 / _TINC_에서 개인전, _한국예술종합학교 전시공연센터_ 지원.
+2022, 협력적 개인전, 퍼포먼스 필름 및 설치, 게임 / _TINC_ 에서 개인전, _한국예술종합학교 전시공연센터_ 지원.
 
 <details>
 <div markdown="1">
@@ -123,7 +123,7 @@ History
 <br>
 
 ### Juicy Mosquito 
-2021, Online exhibition, Performance film, Live Performance, VR, MoCap / Supported by School of Visual Arts, School of Film, TV & Multimedia and Art Collider Lab in K'arts(Korea National University of Arts).  
+2021, Online exhibition, Performance film, Live Performance, VR, MoCap / Supported by _School of Visual Arts_ , _School of Film , TV & Multimedia_ and _Art Collider Lab_ in K'arts(Korea National University of Arts).  
   
 2021, 온라인 단체전 및 무관객 라이브 공연, 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원.
 <details>
