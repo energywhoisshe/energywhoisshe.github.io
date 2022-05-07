@@ -27,8 +27,9 @@ energywhoisshe@gmail.com
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
 <details>
-<summery></summery>
-
+<summery>details</summery>
+<div markdown="1">
+  
 ```
 History
   2022.02 ~ 한글판/영문판 병행 개발 및 웹페이지 오픈
@@ -59,6 +60,8 @@ History
         Debug.Log("정말로, 정말로 마지막인 끝자락에서는 평화롭고 들뜬 이가 당신을 기다리고 있습니다.");
         Debug.Log("그 어린아이는 당신에게 낯선 얼굴이 아닐 것입니다.");
 ```
+
+  </div>
 </details>
 
 <br>
