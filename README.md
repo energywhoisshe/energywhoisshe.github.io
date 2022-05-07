@@ -28,7 +28,6 @@ energywhoisshe@gmail.com
 
 <details>
 <summery></summery>
-<div markdown="1">
 
 ```
 History
