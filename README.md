@@ -23,7 +23,7 @@ energywhoisshe@gmail.com
 ### 3 Households 
 ### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
 `game` `interative random fiction` `quotes`  
-###### 2021~2022, 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, 개인전 및 단체전에서 전시, 웹진세미나에 아티클 기고 
+###### 2021~2022, 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, 개인전 및 단체전에서 전시, 웹진세미나에 기고 
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
