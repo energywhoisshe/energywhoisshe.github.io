@@ -22,12 +22,14 @@ energywhoisshe@gmail.com
 
 ## 3 Households
 `game` `interative random fiction` `quotes`
-#### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed.  <https://energywhoisshe.github.io/3>
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
 <details>
 <div markdown="1">
+
+#### 3 Households
+#### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed.  <https://energywhoisshe.github.io/3>
   
 ```
 History
@@ -72,12 +74,14 @@ History
 
 ## Every mosquito feels the same
 `collaborative solo show` `performance film & installation` `game`
+  
+<details>
+<div markdown="1">
+#### Every mosquito feels the same
 #### 2022.1.19 ~ 2022.1.30, TINC & <https://energywhoisshe.github.io/119> / Archive: <https://energywhoisshe.github.io/130>
 ###### 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 간접 협력 최효정, 공간디자인 김혜정, 미디어 설치 올미디어, 미디어 지원 이상화, 박민영, 오승은, 사진 기록 김해영, 영상 기록 곽소진, Special Thanks to Team JUICY MOSQUITO(2020)
 ###### 2021 K-Arts ON-Road 창작공모사업 선정작 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터
 
-<details>
-<div markdown="1">
   
 #### Mosquitojuice
 ###### Mosquitojuice 는 2020.11.21(19:00-19:30) 코로나19 방역 지침에 따라 무관객으로 공연되었던 라이브 퍼포먼스 Juicy Mosquito 의 커튼콜이자 애프터파티이다. 연출자는 리마스터링 비디오를 제단에 올리고, 퍼포머들은 무대/카메라에 노출했던 신체 대신으로 느슨히 배역이 할당된 자신의 물건들을 각자의 파트너, 움직임, 시선, 태도, 선언과 연계하여 여섯 구역으로 가져온다. 쥬시 모스키토가 젖은 모기들이 변형해낸 가위치기 체위의 연합으로서의 오페라였다면 도치된 말장난으로 만들어진 모스키토쥬스는 모기 퇴치, 혹은 극심한 간지러움에 도움이 되는 화학약제에도 쉽게 붙을 따끔한 이름, 그럼에도 한겨울에 호명한다면 퇴장한 모기들을 흔들고 휘젓고 띄워 만든 칵테일로 도수를 높여보기로 한다. 묽은 레몬이 구역질에 특효가 있다는 것을 아는가? 이것은 유태인 여성과 독일인 여성이 교회에서 만나 한국어로 비명을 지르며 뿜어낸 오줌이다.
@@ -116,8 +120,9 @@ History
 `online exhibition` `live performance` `performance film` 
 
 <details>
-  <summery></summery>
   <div markdown="1">
+
+#### Juicy Mosquito 모기를 죽이려면 뺨을 때려라
     
 #### documentation video: <https://player.vimeo.com/video/500678760?h=086f16e22b>
 #### 크라운샤이니스 Crown Shyness, 2020.12.21 - 2021.01.21, 한국예술종합학교 미술원 & crownshyness.online - 2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시 K'arts BFA Show Archive: <https://kartsfaa.cargo.site/>
@@ -130,7 +135,6 @@ History
 ```
 <img src = "https://user-images.githubusercontent.com/90887934/166872404-d858be72-8835-4a0d-84be-79dd4cdab5e6.png" width = "70%">
 
-#### Juicy Mosquito 모기를 죽이려면 뺨을 때려라
 ###### 편향된 시야로 마주 보는 교착의 순간 — 가상의 신체 두 구는 교착하고, 눈 가린 채 대칭을 찾는 현실의 몸들은 레즈비언 심볼의 선언과 변형으로 흐른다. 시각과 촉각의 괴리 속 너무 가까운 접촉, ‘쥬시 모스키토'는 불쾌한 초월의 순간을 VR 헤드기어의 1인칭 시점을 활용한 XR 퍼포먼스를 통해 소환해보길 시도한다.
 
 ###### ‘파트너와 대칭을 맞추어 노이즈에 움직이고 사이렌에 멈춘다. 다섯 개의 움직임, 그 중 마지막은 가위치기 변형 자세로 버티거나 휴식하거나 마찰한다.’ 노이즈와 사이렌 간의 교차에서 길게 늘여진 아리아(’Der Hölle Rache kocht in meinem Herzen 지옥의 복수심이 내 마음에 끓어오르고')로 이어지는 사운드 속에서, 퍼포머들은 연출자가 제시하는 규칙을 인지한 채 파트너와 대칭을 이루어 접촉하는 방식에 대한 각자의 해석 혹은 새로운 소규칙을 발견하는 대화와 워크샵을 가진다. 각 쌍의 움직임은 그들의 전공, 관심사, 사적 취향, 정치적 태도 등에서 비늘 하나 정도를 떼어온 듯 만들어진다. 그들은 대련하고, 배신하고, 눈 맞춘다. 서로의 무게를 받치거나 이명을 듣는다. 의자, 침대, 캐노피의 상태를 연구한다. 혹은 보이지 않는 서로를 기다리며 느리게 다가간다.
@@ -200,11 +204,11 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 ## 크게 슬플 일인가요
 `two-person exhibition` `performance film & installation`
-#### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 
+<details>
+<div markdown="1">
 
-  <details>
-  <div markdown="1">
-
+  #### 크게 슬플 일인가요 Be Sad I Dare You
+  #### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 
       
 ```
 - Far For Trangle / 단채널 비디오(48'20")/ 2020 *
