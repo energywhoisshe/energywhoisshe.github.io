@@ -36,7 +36,7 @@ energywhoisshe@gmail.com
 <br>
 
 ## 3 Households
-#### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed. <https://energywhoisshe.github.io/3>
+#### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed.  <https://energywhoisshe.github.io/3>
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
@@ -79,7 +79,7 @@ History
 
 
 ## Every mosquito feels the same
-#### 2022.1.19 ~ 2022.1.30, TINC & <https://energywhoisshe.github.io/119>
+#### 2022.1.19 ~ 2022.1.30, TINC & <https://energywhoisshe.github.io/119> / Archive: <https://energywhoisshe.github.io/130>
 ###### 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 간접 협력 최효정, 공간디자인 김혜정, 미디어 설치 올미디어, 미디어 지원 이상화, 박민영, 오승은, 사진 기록 김해영, 영상 기록 곽소진, Special Thanks to Team JUICY MOSQUITO(2020)
 ###### 2021 K-Arts ON-Road 창작공모사업 선정작 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터
 
