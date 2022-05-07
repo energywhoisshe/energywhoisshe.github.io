@@ -57,6 +57,7 @@ History
         Debug.Log("그 어린아이는 당신에게 낯선 얼굴이 아닐 것입니다.");
 ```
 
+---
 <br>
 <br>
 <br>
@@ -97,6 +98,7 @@ History
   - 차연서, { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Interactive Random Fiction on PC, Unity game engine, 두 개의 스테이지, 2022
 ```
 
+---
 <br>
 <br>
 <br>
@@ -175,6 +177,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 `Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)`
 
+---
 <br>
 <br>
 <br>
@@ -196,6 +199,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
 
+---
 <br>
 <br>
 <br>
