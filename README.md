@@ -22,8 +22,9 @@ energywhoisshe@gmail.com
 
 ### 3 Households 
 ### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
-`game` `interative random fiction` `quotes`  
-###### 2021~2022, 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, 개인전 및 단체전에서 전시, 웹진세미나에 기고 
+2021-2022, Game, Interactive randome fiction, Quotation, Web Article / Supported by KOCCA(Korea Creative Content Agency) & Art Center Nabi, Exhibited in Solo Show & Group show, Contributed on ZineSeminar.  
+
+2021-2022, 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, 개인전 및 단체전에서 전시, 웹진세미나에 기고 
 
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
@@ -75,8 +76,9 @@ History
 
 
 ### Every mosquito feels the same 
-`collaborative solo show` `performance film & installation` `game`  
-###### 2022, TINC에서 개인전, 한국예술종합학교 전시공연센터 지원
+2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at TINC, Supported by K'arts(Korea National University of Seoul).   
+  
+2022, 협력적 개인전, 퍼포먼스 필름 및 설치, 게임 / TINC에서 개인전, 한국예술종합학교 전시공연센터 지원.
 
   <img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = "50%">
 
@@ -122,8 +124,9 @@ History
 <br>
 
 ### Juicy Mosquito 
-`online exhibition` `performance film` `live performance` `VR` `MoCap`  
-###### 2021, 온라인 단체전 및 무관객 라이브 공연, 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원
+2021, Online exhibition, Performance film, Live Performance, VR, MoCap / Supported by K'arts(Korea National University of Arts).  
+  
+2021, 온라인 단체전 및 무관객 라이브 공연, 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원.
 <details>
   <div markdown="1">
 
@@ -210,8 +213,10 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ### 크게 슬플 일인가요 
-`two-person exhibition` `performance film & installation`  
-###### 2020, Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원
+2020, Performance film & installation/ Two-person exhibition at Gallery175, Supported by K'arts(Korea National University of Arts).  
+    
+2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원.
+
 <details>
 <div markdown="1">
 
