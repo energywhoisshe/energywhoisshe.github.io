@@ -125,7 +125,7 @@ History
 ### Juicy Mosquito 
 2021, Online exhibition, Performance film, Live Performance, VR, MoCap / Supported by _School of Visual Arts_ , _School of Film , TV & Multimedia_ and _Art Collider Lab_ in K'arts(Korea National University of Arts). / Mentioned in _AVP Quarterly issue05 2021.winter_ .
   
-2021, 온라인 단체전 및 무관객 라이브 공연, 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원 / _계간 시청각 5호 2021.겨울_ 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)에 언급.
+2021, 온라인 단체전 및 무관객 라이브 공연, 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원 / _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
 <details>
   <div markdown="1">
 
@@ -217,7 +217,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 ### 크게 슬플 일인가요 
 2020, Performance film & installation/ Two-person exhibition at _Gallery175_, Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art 2020.08_ .
     
-2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호_ 영원히 익숙해지지 않는 건 없다(조윤지 기자)에서 리뷰.
+2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰.
 
 <details>
 <div markdown="1">
