@@ -80,7 +80,7 @@ History
 <div markdown="1">
   
 #### Every mosquito feels the same
-#### 2022.1.19 ~ 2022.1.30, TINC & <https://energywhoisshe.github.io/119> / Archive: <https://energywhoisshe.github.io/130>
+#### 2022.1.19 ~ 2022.1.30, TINC <https://energywhoisshe.github.io/119>
 ###### 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 간접 협력 최효정, 공간디자인 김혜정, 미디어 설치 올미디어, 미디어 지원 이상화, 박민영, 오승은, 사진 기록 김해영, 영상 기록 곽소진, Special Thanks to Team JUICY MOSQUITO(2020)
 ###### 2021 K-Arts ON-Road 창작공모사업 선정작 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터
 
@@ -126,7 +126,7 @@ History
 
 #### Juicy Mosquito 모기를 죽이려면 뺨을 때려라
     
-#### documentation video: <https://player.vimeo.com/video/500678760?h=086f16e22b>
+#### documentation video : <https://player.vimeo.com/video/500678760?h=086f16e22b>
 #### 크라운샤이니스 Crown Shyness, 2020.12.21 - 2021.01.21, 한국예술종합학교 미술원 & crownshyness.online - 2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시 K'arts BFA Show Archive: <https://kartsfaa.cargo.site/>
     
 ```
