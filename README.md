@@ -27,7 +27,6 @@ energywhoisshe@gmail.com
 <img src = "https://user-images.githubusercontent.com/90887934/166874135-06c4dd75-0d7a-4bab-a794-850e2f352014.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166874128-3e387de7-3e9a-4e21-bc8d-8ee2c85d33db.png" width = "50%">
 
 <details>
-<summery>details</summery>
 <div markdown="1">
   
 ```
@@ -78,7 +77,7 @@ History
 ###### 2021 K-Arts ON-Road 창작공모사업 선정작 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터
 
 <details>
-  <summery></summery>
+<div markdown="1">
   
 #### Mosquitojuice
 ###### Mosquitojuice 는 2020.11.21(19:00-19:30) 코로나19 방역 지침에 따라 무관객으로 공연되었던 라이브 퍼포먼스 Juicy Mosquito 의 커튼콜이자 애프터파티이다. 연출자는 리마스터링 비디오를 제단에 올리고, 퍼포머들은 무대/카메라에 노출했던 신체 대신으로 느슨히 배역이 할당된 자신의 물건들을 각자의 파트너, 움직임, 시선, 태도, 선언과 연계하여 여섯 구역으로 가져온다. 쥬시 모스키토가 젖은 모기들이 변형해낸 가위치기 체위의 연합으로서의 오페라였다면 도치된 말장난으로 만들어진 모스키토쥬스는 모기 퇴치, 혹은 극심한 간지러움에 도움이 되는 화학약제에도 쉽게 붙을 따끔한 이름, 그럼에도 한겨울에 호명한다면 퇴장한 모기들을 흔들고 휘젓고 띄워 만든 칵테일로 도수를 높여보기로 한다. 묽은 레몬이 구역질에 특효가 있다는 것을 아는가? 이것은 유태인 여성과 독일인 여성이 교회에서 만나 한국어로 비명을 지르며 뿜어낸 오줌이다.
@@ -105,6 +104,7 @@ History
   - 김호정, light survival, 방수천에 디지털프린트, 150 x 350 (cm), 2021
   - 차연서, { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Interactive Random Fiction on PC, Unity game engine, 두 개의 스테이지, 2022
 ```
+  </div>
   </details>
 <br>
 <br>
@@ -117,6 +117,7 @@ History
 
 <details>
   <summery></summery>
+  <div markdown="1">
   
 #### documentation video: <https://player.vimeo.com/video/500678760?h=086f16e22b>
 #### 크라운샤이니스 Crown Shyness, 2020.12.21 - 2021.01.21, 한국예술종합학교 미술원 & crownshyness.online - 2020 한국예술종합학교 조형예술과 제21 회 온라인 졸업전시 K'arts BFA Show Archive: <https://kartsfaa.cargo.site/>
@@ -188,6 +189,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 `Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)`
 
+  </div>
   </details>
 <br>
 <br>
@@ -200,6 +202,8 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 #### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175 
 
   <details>
+  <div markdown="1">
+
       
 ```
 - Far For Trangle / 단채널 비디오(48'20")/ 2020 *
@@ -212,6 +216,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
     
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
   
+  </div>
   </details>
 <br>
 <br>
