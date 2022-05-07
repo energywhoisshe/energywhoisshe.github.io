@@ -215,9 +215,9 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ### 크게 슬플 일인가요 
-2020, Performance film & installation/ Two-person exhibition at _Gallery175_, Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art_ 2020.08
+2020, Performance film & installation/ Two-person exhibition at _Gallery175_, Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art 2020.08_ .
     
-2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원 / 월간 _퍼블릭아트_ 2020년 08월호에서 리뷰.
+2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호_ 에서 리뷰.
 
 <details>
 <div markdown="1">
