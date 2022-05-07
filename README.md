@@ -10,7 +10,7 @@
 #### Selected Projects (2022 ~ 2020)
 ```
 Last updated on 2022-05
-Fisrt listed on 2022-05
+Fisrt published on 2022-05
 energywhoisshe@gmail.com
 ```
 
