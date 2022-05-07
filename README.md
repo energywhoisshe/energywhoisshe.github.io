@@ -75,7 +75,7 @@ History
 
 
 ### Every mosquito feels the same 
-2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at _TINC_ , Supported by _PE Center_ (Performance & Exhibition Center) in K'arts(Korea National University of Seoul).   
+2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at _TINC_ , Supported by _Performance & Exhibition Center_ in K'arts(Korea National University of Seoul).   
   
 2022, 협력적 개인전, 퍼포먼스 필름 및 설치, 게임 / _TINC_ 에서 개인전, _한국예술종합학교 전시공연센터_ 지원.
 
