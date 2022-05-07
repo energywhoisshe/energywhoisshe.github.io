@@ -119,7 +119,6 @@ History
 <br>
 
 ### Juicy Mosquito 
-### 모기를 죽이려면 뺨을 때려라 
 `online exhibition` `live performance` `performance film` 
 
 <details>
