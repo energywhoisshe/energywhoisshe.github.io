@@ -199,6 +199,9 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 
 <img src = "https://user-images.githubusercontent.com/90887934/166871400-dc971b43-0421-4892-b884-9a03ff4d401f.jpeg" width = "70%" >
 
+<br>
+<br>
+   
 `Critic - 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)`
 
 ---
