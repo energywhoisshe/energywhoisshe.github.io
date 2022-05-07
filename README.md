@@ -124,7 +124,7 @@ History
 <br>
 
 ### Juicy Mosquito 
-2021, Online exhibition, Performance film, Live Performance, VR, MoCap / Supported by K'arts(Korea National University of Arts).  
+2021, Online exhibition, Performance film, Live Performance, VR, MoCap / Supported by School of Visual Arts, School of Film, TV & Multimedia and Art Collider Lab in K'arts(Korea National University of Arts).  
   
 2021, 온라인 단체전 및 무관객 라이브 공연, 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원.
 <details>
@@ -213,7 +213,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ### 크게 슬플 일인가요 
-2020, Performance film & installation/ Two-person exhibition at Gallery175, Supported by K'arts(Korea National University of Arts).  
+2020, Performance film & installation/ Two-person exhibition at Gallery175, Supported by Center for Visual Studies in K'arts(Korea National University of Arts).  
     
 2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원.
 
