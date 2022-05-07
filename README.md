@@ -21,9 +21,9 @@ energywhoisshe@gmail.com
 
 ### 3 Households 
 ### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
-2021-2022, Game, Interactive randome fiction, Quotation, Web Article / Supported by KOCCA(Korea Creative Content Agency) & Art Center Nabi, Exhibited in Solo Show & Group show, Contributed on ZineSeminar.  
+2021-2022, Game, Interactive randome fiction, Quotation, Web Article / Supported by KOCCA(Korea Creative Content Agency) & Art Center Nabi, Exhibited at TINC(This is not a church) & Bucheon Art Bunker B39, Contributed on ZineSeminar issue09.  
 
-2021-2022, 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, 개인전 및 단체전에서 전시, 웹진세미나에 기고 
+2021-2022, 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / 한국콘텐츠진흥원 및 아트센터나비에서 제작 지원, TINC 및 부천아트벙커B39에서 전시, 웹진세미나 Issue09에 기고 
 
 <details>
 <div markdown="1">
