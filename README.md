@@ -100,7 +100,7 @@ History
 <!-- <img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = "50%"> -->
 <img src = "https://user-images.githubusercontent.com/90887934/167280613-214c1500-f365-4e51-bb9e-463792325e19.jpg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/167280517-82dd8610-4652-40b6-a786-65f3dc7b8c8d.jpg" width = "50%">
 
-###### (left) 전시 전경 2022.1.19 ~ 1.29 / (right) 전시 전경 2022.1.30
+###### Installation view of (left) 2022.1.19 ~ 1.29 / (right) 2022.1.30
   <br>
   <br>
   
