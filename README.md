@@ -99,7 +99,10 @@ History
   
 <!-- <img src = "https://user-images.githubusercontent.com/90887934/166875523-c99176fc-9e5d-437d-8fa2-3ef16f5fb700.jpeg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/166875529-0f870d57-fdef-4253-9d4c-9513c6e4e6b5.jpeg" width = "50%"> -->
 <img src = "https://user-images.githubusercontent.com/90887934/167280613-214c1500-f365-4e51-bb9e-463792325e19.jpg" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/167280517-82dd8610-4652-40b6-a786-65f3dc7b8c8d.jpg" width = "50%">
-(left) 전시 전경 2022.1.19 ~ 1.29 / (right) 전시 전경 2022.1.30
+
+###### (left) 전시 전경 2022.1.19 ~ 1.29 / (right) 전시 전경 2022.1.30
+  <br>
+  <br>
   
 ![151186708-48f9045d-62a1-4f4e-98f8-a8b8fbc5ef61](https://user-images.githubusercontent.com/90887934/166875570-983bab1b-b7f6-4a59-b9e3-6df80f65275d.jpeg)
 
