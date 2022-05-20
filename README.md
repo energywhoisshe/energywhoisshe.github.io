@@ -6,8 +6,8 @@
 
 ###### 차연서는 일탈적 존재 안에 생존하는 다중적 몸과 마음, 에너지 등의 개별적인 성숙도와 연결망을 관찰하고 서로 돌보게 하는 데에 관심을 두고 있습니다.
 
-[CV](https://auck.me/CV-kor-eng)  
-[Welcome to our project archive](https://auck.me/)
+[CV](https://auck.me/CV-kor-eng)   
+[Welcome to our project archive](https://auck.me/) / [@energywhoisshe](http://instagram.com/energywhoisshe/)  
 
 <br>
 <br>
