@@ -251,7 +251,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
   
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
   
-  <img src = "[https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg](https://user-images.githubusercontent.com/90887934/169452526-7274eff6-0a7a-48ed-bf06-42668fa357e2.png)" width = "80%" >
+  <img src = "https://user-images.githubusercontent.com/90887934/169452526-7274eff6-0a7a-48ed-bf06-42668fa357e2.png" width = "80%" >
   
   ---
   
