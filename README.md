@@ -140,7 +140,7 @@ History
 ### Juicy Mosquito 
 **2021, Online exhibition, Performance film, Live Performance, VR, MoCap** / Screened on Ars Electronica Festival 2021 - Garden in Seoul, Supported by _School of Visual Arts_ , _School of Film , TV & Multimedia_ and _Art Collider Lab_ in K'arts(Korea National University of Arts). / Mentioned in _AVP Quarterly issue05 2021.winter_ .
   
-**2021, 온라인 단체전 및 무관객 라이브 공연** / 2021 아르스일렉트로니카 페스티벌에 트레일러 영상으로 참여, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원 / _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
+**2021, 온라인 단체전 및 무관객 라이브 공연** / 2021 아르스일렉트로니카 페스티벌 서울에 트레일러 영상으로 참여, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원 / _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
 <details>
   <div markdown="1">
 
