@@ -237,9 +237,9 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <details>
 <div markdown="1">
 
-  #### 크게 슬플 일인가요 Be Sad I Dare You   
-  #### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175   
-  차연서와 박주영은 영상, 설치 및 퍼포먼스 기록으로 '크게 슬플 일인가요', 이 익숙한 한마디가 편안해지길 기다린다. (- 서문에서)
+#### 크게 슬플 일인가요 Be Sad I Dare You   
+#### 박주영 Park Juyeong 차연서 Cha Yeonså, 2020.6.26 ~ 2020.7.9, Gallery175   
+차연서와 박주영은 영상, 설치 및 퍼포먼스 기록으로 '크게 슬플 일인가요', 이 익숙한 한마디가 편안해지길 기다린다. (- 서문에서)
   
 <img src = "https://user-images.githubusercontent.com/90887934/169452928-6241cfa4-9f41-4494-b3d2-0566e152a69b.jpg" width = "80%" >
 <img src = "https://user-images.githubusercontent.com/90887934/169453241-d9928ce5-0c4d-41d8-86de-c966d666e74f.jpg" width = "40%" ><img src = "https://user-images.githubusercontent.com/90887934/169452927-2621e1b1-3b59-4bdb-8c05-a5dab548356a.jpg" width = "40%" >
