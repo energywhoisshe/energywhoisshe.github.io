@@ -1,5 +1,7 @@
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fenergywhoisshe.github.io&count_bg=%2333333333&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=energy&edge_flat=false)](https://hits.seeyoufarm.com)
 
+<meta name="google-site-verification" content="tEMnDX4Al9LJXo_Wq4zhZKvJzSwSJrUR2qQp6q-AQoA" />
+
 ###### Cha Yeonså (b.1997, Seoul) works on performance, video, game, or writing. They are interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant beings.
 
 ###### 차연서는 일탈적 존재 안에 생존하는 다중적 몸과 마음, 에너지 등의 개별적인 성숙도와 연결망을 관찰하고 서로 돌보게 하는 데에 관심을 두고 있습니다.
