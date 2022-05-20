@@ -24,10 +24,10 @@ energywhoisshe@gmail.com
 
 ### 3 Households 
 ### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };
-2022 Arthouse Game / Supported by ARKO(Arts Council Korea). 
+**2022 Arthouse Game** / Supported by ARKO(Arts Council Korea). 
 2021-2022, Arthouse Game, Interactive randome fiction, Quotation, Web Article / Supported by _KOCCA(Korea Creative Content Agency)_ & _Art Center Nabi_, Exhibited at _TINC(This is not a church)_ & _Bucheon Art Bunker B39_, Contributed on _ZineSeminar Issue09_.  
 
-2022 아트하우스 게임 / 한국문화예술위원회(ARKO)에서 온라인 출시 지원.  
+**2022 아트하우스 게임** / 한국문화예술위원회(ARKO)에서 온라인 출시 지원.  
 2021-2022, 아트하우스 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / _한국콘텐츠진흥원_ 및 _아트센터나비_ 창의인재동반사업 선정으로 미디어아트 교육 수혜 및 제작 지원, _TINC_ 및 _부천아트벙커B39_ 에서 전시, _웹진세미나 Issue09 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };(글 차연서 사운드트랙 이상화)_ 기고. 
 
 <details>
@@ -80,9 +80,9 @@ History
 
 
 ### Every mosquito feels the same 
-2022, Collaborative solo show, Performance film & installtion, Game / Solo Show at _TINC_ , Supported by _Performance & Exhibition Center_ in K'arts(Korea National University of Seoul).   
+**2022, Collaborative solo show at _This is not a church(Seoul, KR)_** , Performance film & installtion, Game / Supported by _Performance & Exhibition Center_ in K'arts(Korea National University of Seoul).   
   
-2022, 협력적 개인전, 퍼포먼스 필름 및 설치, 게임 / _TINC_ 에서 개인전, _한국예술종합학교 전시공연센터_ 지원.
+**2022, _TINC(삼선동4가37 (구)명성교회)_ 에서 협력적 개인전** , 퍼포먼스 필름 및 설치, 게임 / _한국예술종합학교 전시공연센터_ 지원.
 
 <details>
 <div markdown="1">
@@ -136,9 +136,9 @@ History
 <br>
 
 ### Juicy Mosquito 
-2021, Online exhibition, Performance film, Live Performance, VR, MoCap / Supported by _School of Visual Arts_ , _School of Film , TV & Multimedia_ and _Art Collider Lab_ in K'arts(Korea National University of Arts). / Mentioned in _AVP Quarterly issue05 2021.winter_ .
+**2021, Online exhibition, Performance film, Live Performance, VR, MoCap** / Supported by _School of Visual Arts_ , _School of Film , TV & Multimedia_ and _Art Collider Lab_ in K'arts(Korea National University of Arts). / Mentioned in _AVP Quarterly issue05 2021.winter_ .
   
-2021, 온라인 단체전 및 무관객 라이브 공연, 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원 / _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
+**2021, 온라인 단체전 및 무관객 라이브 공연** , 아르스일렉트로니카 페스티벌 참가, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원 / _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
 <details>
   <div markdown="1">
 
@@ -228,9 +228,9 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ### 크게 슬플 일인가요 
-2020, Performance film & installation/ Two-person exhibition at _Gallery175_, Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art 2020.08_ .
+**2020, Two-person exhibition at _Gallery175_, Performance film & installation** / Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art 2020.08_ .
     
-2020, 퍼포먼스 필름 및 설치 / Gallery175에서 2인전, 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰.
+**2020, Gallery175에서 2인전, 퍼포먼스 필름 및 설치** / 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰.
 
 <details>
 <div markdown="1">
