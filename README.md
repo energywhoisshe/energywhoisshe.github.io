@@ -228,9 +228,9 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
 
 ### 크게 슬플 일인가요 
-**2020, Two-person exhibition at _Gallery175_, Performance film & installation** / Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art 2020.08_ .
+**2020, Two-person exhibition at _Gallery175_, Performance film & installation** / Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art 2020.08_ , Mentioned in _AVP Quarterly issue05 2021.winter_ .
     
-**2020, Gallery175에서 2인전, 퍼포먼스 필름 및 설치** / 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰.
+**2020, Gallery175에서 2인전, 퍼포먼스 필름 및 설치** / 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타) 에 언급.
 
 <details>
 <div markdown="1">
