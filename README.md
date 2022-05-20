@@ -230,7 +230,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 ### 크게 슬플 일인가요 
 **2020, Two-person exhibition at _Gallery175_, Performance film & installation** / Supported by _Center for Visual Studies_ in K'arts(Korea National University of Arts) / Reviewed on _Public Art 2020.08_ , Mentioned in _AVP Quarterly issue05 2021.winter_ .
     
-**2020, Gallery175에서 2인전, 퍼포먼스 필름 및 설치** / 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타) 에 언급.
+**2020, Gallery175에서 2인전, 퍼포먼스 필름 및 설치** / 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰, _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
 
 <details>
 <div markdown="1">
@@ -250,6 +250,8 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 <br>
   
 `Review - PUBLIC ART 월간 퍼플릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)`
+  
+  <img src = "[https://user-images.githubusercontent.com/90887934/166868220-12cf5fc4-e700-4a52-9e1f-37f5df1fd734.jpeg](https://user-images.githubusercontent.com/90887934/169452526-7274eff6-0a7a-48ed-bf06-42668fa357e2.png)" width = "80%" >
   
   ---
   
