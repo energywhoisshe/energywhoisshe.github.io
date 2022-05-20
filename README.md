@@ -27,7 +27,7 @@ energywhoisshe@gmail.com
 2022 Arthouse Game / Supported by ARKO(Arts Council Korea). 
 2021-2022, Arthouse Game, Interactive randome fiction, Quotation, Web Article / Supported by _KOCCA(Korea Creative Content Agency)_ & _Art Center Nabi_, Exhibited at _TINC(This is not a church)_ & _Bucheon Art Bunker B39_, Contributed on _ZineSeminar Issue09_.  
 
-2022 아트하우스 게임 / 한국문화예술위원회(ARKO) 아트체인지업에서 온라인 퍼블리쉬 지원  
+2022 아트하우스 게임 / 한국문화예술위원회(ARKO) 아트체인지업에서 온라인 출시 지원  
 2021-2022, 아트하우스 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / _한국콘텐츠진흥원_ 및 _아트센터나비_ 창의인재동반사업 선정으로 미디어아트 교육 수혜 및 제작 지원, _TINC_ 및 _부천아트벙커B39_ 에서 전시, _웹진세미나 Issue09 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };(글 차연서 사운드트랙 이상화)_ 기고. 
 
 <details>
