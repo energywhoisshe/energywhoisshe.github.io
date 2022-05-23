@@ -128,7 +128,10 @@ History
   - 차연서, { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Interactive Random Fiction on PC, Unity game engine, 두 개의 스테이지, 2022
 ```
   
-###### This project motivated from Evelyn Taocheng Wang’s Drawing ‘Quotes 3’(ink on rice paper, 90 x 96.5cm, 2019), which from the novel Lady Chatterley’s Lover(page 356, chapter 16) by D. H. Lawrence in 1928  
+###### This project motivated from Evelyn Taocheng Wang’s Drawing ‘Quotes 3’(ink on rice paper, 90 x 96.5cm, 2019), which from the novel Lady Chatterley’s Lover(page 356, chapter 16) by D. H. Lawrence in 1928
+  
+###### "I suppose every mosquito feels the same. Do you think it does? How nice for it."
+
 <img src = "https://user-images.githubusercontent.com/90887934/169758078-e476030d-3552-4fa3-a05e-62319db832fd.png" width = "50%"><img src = "https://user-images.githubusercontent.com/90887934/169758081-2ce3cef7-68f3-4754-bf22-060b2402373f.png" width = "50%">
   
   ---
