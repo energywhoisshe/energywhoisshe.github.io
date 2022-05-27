@@ -23,12 +23,19 @@
 #### Two-person Show
 - **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
 
-#### Group Show, Installation, Screening, Performance
+#### Group Show, Screening, Performance, Publication
 - 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR) `LED, Projection mapping`
+- 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea) `C++ poetic computation article`
 - 2020.12.21 - 2021.01.21 ╱ Group show as a student, in 《Crown Shyness》 BFA Show, Korea National University of Arts `Performance film, Web installation `
 - 2020.11.21 19:00-19:30 ╱ Live Performance as a director, <Juicy Mosquito>, Gallery, Korea National University of Arts (Support: Korea National University of Arts) `VR head gear, MoCap suit, Projection mapping, Live Performance` 
 - 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping, Performance film`
 
+#### Grants
+- 2022.06 - 2022.12 ╱ ART CHANGE UP, Supported ARKO(Arts Council Korea)
+- 2021.09 - 2022.01 ╱ K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts
+- 2021.05 - 2022.11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Support by Art Center Nabi & KOCCA(Korea Creative Content Agency)
+
+<!--
 <br>
 <details>
 <summary>more</summary>
@@ -44,13 +51,7 @@
   
 </div>
 </details>
-
-#### Publication
-- 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea) `C++ poetic computation article`
-
-#### Grants
-- 2021.04 - 11 ╱ Supported as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency) `UNITY game engine`
-
+-->
   
   <br>
   <br>
@@ -81,6 +82,12 @@
 - 2020.11.21 19:00-19:30 ╱ 《Juicy Mosquito》 기획/연출/미술 차연서, 음악 김은준 최하린, 촬영 오세아 최희윤 임지수 김해영, 기술 스튜디오아텍, 퍼포머 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 박주현 강예빈 한기장 김해나 송유진 원예나, 이하 생략 / 라이브 퍼포먼스 20’00”, 한국예술종합학교 본관갤러리 M103 (한국예술종합학교 영상원 첨단기술 산학협력 프로그램 지원)
 - 2020.9.9~9.13 ╱ 《Blind-folding in Aria》 기획/연출/미술 차연서, 극본 조영명, 음악 김은준, 기술 스튜디오아텍, 움직임 이토명 이솔엽 유명민 이윤수 박민영 임다울 안현진 최혜라, 무용 박주현 강예빈, 연극 김해나 한기장, 이하 생략 / 한국예술종합학교 지하갤러리 B102, 아르스일렉트로니카 가든 서울 <서드라이프의 정원> A&T Education Immersive Performance 부문 온라인 전시 참여
 
+#### 기금
+- 2022.06 - 2022.12 ╱ ART CHANGE UP, ARKO(Arts Council Korea)
+- 2021.09 - 2022.01 ╱ K-ARTS ON ROAD: ON STAGE, 한국예술종합학교
+- 2021.05 - 2022.11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), 아트센터나비 & 한국콘텐츠진흥원
+  
+<!--
   <br>
   
 <details>
@@ -100,7 +107,7 @@
 
 </div>
 </details>
-  
+-->
   <br>
   <br>
   <br>
