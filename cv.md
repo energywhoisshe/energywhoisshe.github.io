@@ -23,7 +23,7 @@
 #### Two-person Show
 - **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery 175 (Support: Center for Visual Studies, Korea National University of Arts)** 
 
-#### Group Show, Screening, Performance, Publication, and so on
+#### Group Show, Screening, Performance, Publication, Workshop, and so on
 - 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39 `Media Facade (LED, Projection mapping)`
 - 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea)
 - 2021.04 - 11 ╱ Supported as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency) `UNITY game engine`
@@ -65,7 +65,7 @@
 #### 2인전
 - **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/참여 박주영 차연서, 175갤러리 (한국예술종합학교 조형연구소 지원)**
   
-#### 그룹전, 스크리닝, 퍼포먼스, 출판 등
+#### 그룹전, 스크리닝, 퍼포먼스, 출판, 워크샵 등
 - **2021.04 - 11 ╱ CREATIVE + : Art & Tech 콘텐츠 크리에이터 양성 (Creative Mentoring Program for Young Professionals 2021 / 아트센터나비 미술관 및 한국콘텐츠진흥원 창의인재동반사업)** `유니티 게임엔진`
 - 2021.11.24~12.19 ╱ 《칠전방울,펌프, 불가사리》 / 참여 고경민, 김다솜, 차연서 /미디어파사드 교육 Arthod Studio (김찬기, 정준희) /부천아트벙커B39 2F (유인송풍실, 크레인조종실, 중앙제어실)/ 주관 부천아트벙커
   
@@ -76,10 +76,10 @@
 - 2020.9.9~9.13 ╱ 아르스일렉트로니카 가든 서울 <서드라이프의 정원> A&T Education Immersive Performance 부문 온라인 전시 참여
 
   <br>
-  
+- 2020.08 - 09 ╱ 공공 창작 워크샵(온라인) 《기부어북》, 공동 기획/교육 차연서, 주관 PACO
 - 2020.4.24 ~ 4.28 ╱ 《21st WHITE NOISE: 모놀리스, 바이러스 Monolith, Viruse》 기획 조정민, 참여 가리미룽, 김소마, 경송안, 메이지, 박현지, 쇼타 츠기야마, 이해란, 오가영, 조정민, 제시 드 니즈, 차연서, 최나영, 키세와, 허지인, 허자윤, 홍세민, 화이트노이즈 White Noise Seoul
 - 2020.4.1 - 4.11 ╱ 《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 기획 차연서 참여 김혜인 외 4명, 복도갤러리 (한국예술종합학교 미술원 2F, 미술이론과 지원)
-- 2020.02 ╱ 《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》 공공 워크샵 결과전, 교육/기획 차연서 참여 김혜인 외 12명, 아트업서울 갤러리 서울혁신파크 상상청 5층 (공공예술협동체 PACO 주관)
+- 2020.02 ╱ 공공 창작 워크샵 및 결과전《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 교육/기획 차연서 참여 김혜인 외 12명, 아트업서울 갤러리 서울혁신파크 상상청 5층 (공공예술협동체 PACO 주관)
 
   <br>
   
