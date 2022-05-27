@@ -23,36 +23,34 @@
 #### Two-person Show
 - **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
 
-#### Group Show, Screening, Performance, Publication, Workshop, and so on
+#### Group Show, Installation, Screening, Performance
 - 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR) `LED, Projection mapping`
-- 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea) `C++ poetic computation article`
-- 2021.04 - 11 ╱ Supported as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency) `UNITY game engine`
-
-<br>
-
 - 2020.12.21 - 2021.01.21 ╱ Group show as a student, in 《Crown Shyness》 BFA Show, Korea National University of Arts `Performance film, Web installation `
 - 2020.11.21 19:00-19:30 ╱ Live Performance as a director, <Juicy Mosquito>, Gallery, Korea National University of Arts (Support: Korea National University of Arts) `VR head gear, MoCap suit, Projection mapping, Live Performance` 
 - 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping, Performance film`
-  
+
 <br>
-  
 <details>
 <summary>more</summary>
 <div markdown="1">
-
+  
 - 2020.08 - 09 ╱ Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO `Picturebook making tutorial`
 - 2020.4.24 - 4.28 ╱ Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(Seoul, KR)
 - 2020.4.1 - 4.11 ╱ Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory) `Sculptural installation`
 - 2019.11 - 2020.02 ╱ Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO) `Feminism research based Sculpture making tutorial`
-    
-<br>
-  
 - 2019.5.17 - 5.26 ╱ Group show as a student, ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, (Project fee support: Malmö Art Academy, Sweden Malmö) `3D rendering video and Soft sculpture,`
 - 2018.10.5 - 10.13  ╱ Group show as a student, New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2 (Malmö, SE) `Sculptural installation`
 - 2018.8.18 - 8.22 ╱ Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul(Seoul, KR) `Sculptural installation, Painting, Drawing, and Writing`
   
 </div>
 </details>
+
+#### Publication
+- 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea) `C++ poetic computation article`
+
+#### Grants
+- 2021.04 - 11 ╱ Supported as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency) `UNITY game engine`
+
   
   <br>
   <br>
