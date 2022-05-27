@@ -38,8 +38,8 @@
 
 
 #### Artist Support Program  
-- 2021.11.24 - 12.19 ╱ Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39   
-- **2021.04 - 11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency)**   
+- 2021.11.24 - 12.19 ╱ Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39 `Media Facade (LED, Projection mapping)`
+- **2021.04 - 11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency)** `UNITY game engine`
   
   <br>
   <br>
@@ -72,8 +72,9 @@
 - 2018 ╱ 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, White Noise Seoul
 
 #### 아티스트 창작/교육 프로그램 참여
-- 2021.11.24~12.19 ╱ 《칠전방울,펌프, 불가사리》 / 참여 고경민, 김다솜, 차연서 /교육 Arthod Studio (김찬기, 정준희) /부천아트벙커B39 2F (유인송풍실, 크레인조종실, 중앙제어실)/ 주관 부천아트벙커
-- **2021.04 - 11 ╱ CREATIVE + : Art & Tech 콘텐츠 크리에이터 양성 (Creative Mentoring Program for Young Professionals 2021 / 아트센터나비 미술관 및 한국콘텐츠진흥원 창의인재동반사업)**
+- 
+- 2021.11.24~12.19 ╱ 《칠전방울,펌프, 불가사리》 / 참여 고경민, 김다솜, 차연서 /교육 Arthod Studio (김찬기, 정준희) /부천아트벙커B39 2F (유인송풍실, 크레인조종실, 중앙제어실)/ 주관 부천아트벙커 `미디어파사드 (LED, 프로젝션맵핑)`
+- **2021.04 - 11 ╱ CREATIVE + : Art & Tech 콘텐츠 크리에이터 양성 (Creative Mentoring Program for Young Professionals 2021 / 아트센터나비 미술관 및 한국콘텐츠진흥원 창의인재동반사업)** `유니티 게임엔진`
   
   
   <br>
