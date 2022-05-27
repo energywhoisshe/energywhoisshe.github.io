@@ -23,7 +23,7 @@
 #### Two-person Show
 - **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
 
-#### Group Show, Screening, Performance, Publication
+#### Selected Group Show, Screening, Performance, Publication
 - 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR) `LED, Projection mapping`
 - 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea) `C++ poetic computation article`
 - 2020.12.21 - 2021.01.21 ╱ Group show as a student, in 《Crown Shyness》 BFA Show, Korea National University of Arts `Performance film, Web installation `
@@ -76,7 +76,7 @@
 #### 2인전
 - **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/전시 박주영 차연서, 공간 175갤러리 (한국예술종합학교 조형연구소 지원)**
   
-#### 그룹전, 스크리닝, 퍼포먼스, 출판, 워크샵 등
+#### 그룹전, 스크리닝, 퍼포먼스, 출판, 워크샵 (선별)
 - 2021.04 - 11 ╱ 아트센터나비 2021 Art & Tech 콘텐츠 크리에이터 양성: CREATIVE+ / 멘토 배재혁(teamVOID), 송준봉(TeamVOID), 신원백(LOVOT LAB), 홍현수(LOVOT LAB), 김영주, 조호연, 오영진, 신원정, 선윤아(릴리쿰), 박지은(릴리쿰), 장성균, 이혜리, 허신영 / 멘티 김찬기, 김예진, 황선정, 김근욱, 조현서, 고은, 최지원, 정성진, 임지연, 박설하, 신하라, 장윤영, 차연서, 정준희, 박예나, 조송희, 윤하얀, 임희주, 오주영, 임민재, 신민광, 강은정, 김다은, 정윤수, 김다솜, 변유열 / 아트센터나비 미술관 & 한국콘텐츠진흥원 지원
 - 2021.11.22 ╱ 웹진세미나 9호: burn the spell*, 기획 *Agrafa Society*, 필진 Agrafa Society(김진주, 이연숙, 이진실), 오혜진, 이우연, 장한길, 이정식, 류한솔, 밀사, 차연서/ 한국문화예술위원회 시각예술 창작산실 비평지원
 - 2021.11.24~12.19 ╱ 《칠전방울,펌프, 불가사리》 / 참여 고경민, 김다솜, 차연서 / 미디어파사드 교육 Arthod Studio(김찬기, 정준희) / 부천아트벙커B39 2F (유인송풍실, 크레인조종실, 중앙제어실)/ 주관 부천아트벙커
