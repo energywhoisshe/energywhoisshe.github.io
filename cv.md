@@ -34,8 +34,8 @@
 - 2022 Online Publication Grant, ART CHANGE UP, Supported by ARKO(Arts Council Korea)
 - 2021 Research Grant, Suppoted by S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture
 - 2021 Exhibition Grant, K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts
-- 2021 Project Grant, CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Supported by Art Center Nabi & KOCCA(Korea Creative Content Agency)
-- 2020 Live Performance Grant, Supported by Korea National University of Arts
+- 2021 ART&TECH Project Grant, CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Supported by Art Center Nabi & KOCCA(Korea Creative Content Agency)
+- 2020 ART&TECH Live Performance Grant, Supported by Korea National University of Arts
 - 2020 Exhibition Grant, Supported by Center for Visual Studies, Korea National University of Arts
 - 2020 Exhibition Grant, Supported by Korea National University of Arts
 - 2019 Project Grant, Supported by Malmo Art Academy
