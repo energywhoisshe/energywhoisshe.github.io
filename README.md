@@ -33,7 +33,8 @@ energywhoisshe@gmail.com
 2021-2022, 아트하우스 게임, 인터렉티브 랜덤 픽션, 인용, 웹 아티클 / _한국콘텐츠진흥원_ 및 _아트센터나비_ 창의인재동반사업 선정으로 미디어아트 교육 수혜 및 제작 지원, _TINC_ 및 _부천아트벙커B39_ 에서 전시, _웹진세미나 Issue09 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };(글 차연서 사운드트랙 이상화)_ 기고. 
 
 <details>
-<div markdown="1">
+  <summary>more</summary>
+  <div markdown="1">
   
 #### 3 Households
 #### This project simulates a fractal family unit or a revolving home structure between mom, daughter and daughter’s girlfriend. Days and Nights are so yellow conceived from their 49 days cohabitation after the funeral. You look after new pattern with 21 boxes quoting trauma transforming techniques. Let the record desensitized and reprocessed.  <https://energywhoisshe.github.io/3>
@@ -133,6 +134,7 @@ History
 **2022, _TINC(삼선동4가37 (구)명성교회)_ 에서 협력적 개인전** , 퍼포먼스 필름 및 설치, 게임 / _한국예술종합학교 전시공연센터_ 지원.
 
 <details>
+<summary>more</summary>
 <div markdown="1">
   
 #### Every mosquito feels the same
@@ -194,7 +196,9 @@ History
 **2021, Online exhibition, Performance film, Live Performance, VR, MoCap** / Screened on Ars Electronica Festival 2021 - Garden in Seoul(Linz, AT - Seoul,  KR), Supported by _School of Visual Arts_ , _School of Film , TV & Multimedia_ and _Art Collider Lab_ in K'arts(Korea National University of Arts). / Mentioned in _AVP Quarterly issue05 2021.winter_ .
   
 **2021, 온라인 단체전 및 무관객 라이브 공연** / 2021 아르스일렉트로니카 페스티벌 서울에 트레일러 영상으로 참여, 한국예술종합학교 미술원, 영상원, 융합예술센터 지원 / _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
-<details>
+
+  <details>
+  <summary>more</summary>
   <div markdown="1">
 
 #### Juicy Mosquito 모기를 죽이려면 뺨을 때려라
@@ -288,6 +292,7 @@ Outro. 모기를 죽이려면 뺨을 때려라 Slap them to kill mosquito 3 [P.4
 **2020, Gallery175에서 2인전, 퍼포먼스 필름 및 설치** / 한국예술종합학교 조형연구소 지원 / _월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)_ 에서 리뷰, _계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)_ 에 언급.
 
 <details>
+<summary>more</summary>
 <div markdown="1">
 
 #### 크게 슬플 일인가요 Be Sad I Dare You   
