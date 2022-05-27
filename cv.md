@@ -43,9 +43,9 @@
 
 <br>
 
-#### Artist Support Program  
-- 2021.11.24 - 12.19 ╱ Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39 `Media Facade (LED, Projection mapping)`
+#### Artist Support Program 
 - **2021.04 - 11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency)** `UNITY game engine`
+- 2021.11.24 - 12.19 ╱ Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39 `Media Facade (LED, Projection mapping)`
   
   <br>
   <br>
@@ -81,6 +81,8 @@
 - 2019.5.17 - 5.26 ╱ ÅRSUTSTÄLLNING (Malmö Art Academy Annual Show) 참여, (Malmö Art Academy 프로젝트비 지원), Sweden Malmö
 - 2018.10.5 - 10.13 ╱ New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
 - 2018.8.18 - 8.22 ╱ 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, 화이트노이즈 White Noise Seoul  
+  
+  <br>
   
 #### 창작 지원 프로그램 참여
 - **2021.04 - 11 ╱ CREATIVE + : Art & Tech 콘텐츠 크리에이터 양성 (Creative Mentoring Program for Young Professionals 2021 / 아트센터나비 미술관 및 한국콘텐츠진흥원 창의인재동반사업)** `유니티 게임엔진`
