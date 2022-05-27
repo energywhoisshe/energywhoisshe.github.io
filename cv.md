@@ -21,7 +21,7 @@
 - **2022.1.19 - 1.30 ╱ Solo show as an artist & director, 《Every mosquito feels the same》, TINC(This is not a church) (Support: Korea National University of Arts)**     
 
 #### Two-person Show
-- **2020.6.29 - 7.9 ╱ Two-person show as an artist & director, 《Be Sad I Dare You》, Gallery 175 (Support: Center for Visual Studies, Korea National University of Arts)** 
+- **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery 175 (Support: Center for Visual Studies, Korea National University of Arts)** 
 
 #### Group Show, Screening, Performance, Publication, and so on
 - 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39 `Media Facade (LED, Projection mapping)`
@@ -36,15 +36,16 @@
   
 <br>
   
-- 2020.4.24 ~ 4.28 ╱ Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(KR)
+- 2020.08 - 09 ╱ Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO
+- 2020.4.24 - 4.28 ╱ Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(KR)
 - 2020.4.1 - 4.11 ╱ Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory)   
-- 2020.02 ╱ Group show as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》 Public Workshop Exhibition, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support: PACO)   
+- 2019.11 - 2020.02 ╱ Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO)   
 
 <br>
   
 - 2019.5.17 - 5.26 ╱ Group show as a student, ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, (Project fee support: Malmö Art Academy, Sweden Malmö)
 - 2018.10.5 - 10.13  ╱ Group show as a student, New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
-- 2018.8.18 - 8.22 ╱ Three-person show as an artist & director,  《Too Much I (TMI Group)》, White Noise Seoul
+- 2018.8.18 - 8.22 ╱ Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul
   
   <br>
   <br>
