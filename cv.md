@@ -31,14 +31,14 @@
 - 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping, Performance film`
 
 #### Grants
-- 2022 Online Publication Grant, ART CHANGE UP, Supported by ARKO(Arts Council Korea)
-- 2021 Research Grant, Suppoted by S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture
-- 2021 Exhibition Grant, K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts
-- 2021 ART&TECH Project Grant, CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Supported by Art Center Nabi & KOCCA(Korea Creative Content Agency)
-- 2020 ART&TECH Live Performance Grant, Supported by Korea National University of Arts
-- 2020 Exhibition Grant, Supported by Center for Visual Studies, Korea National University of Arts
-- 2020 Exhibition Grant, Supported by Korea National University of Arts
-- 2019 Project Grant, Supported by Malmo Art Academy
+- 2022 Online Publication Grant, ART CHANGE UP, Supported by ARKO(Arts Council Korea), KR
+- 2021 Research Grant, Suppoted by S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture, KR
+- 2021 Exhibition Grant, K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts, KR
+- 2021 ART&TECH Project Grant, CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Supported by Art Center Nabi & KOCCA(Korea Creative Content Agency), KR
+- 2020 ART&TECH Live Performance Grant, Supported by Korea National University of Arts, KR
+- 2020 Exhibition Grant, Supported by Center for Visual Studies, Korea National University of Arts, KR
+- 2020 Exhibition Grant, Supported by Korea National University of Arts, KR
+- 2019 Project Grant, Supported by Malmo Art Academy, SE
 
 <!--
 <br>
@@ -95,7 +95,7 @@
 - 2020 기술예술 융합 공연 지원, 한국예술종합학교 영상원 & 융합예술센터
 - 2020 기획전시 지원, 한국예술종합학교 조형연구소
 - 2020 기획전시 지원, 한국예술종합학교 복도갤러리
-- 2019 프로젝트 지원, Malmo Art Academy
+- 2019 프로젝트 지원, Malmo Art Academy, 스웨덴
   
 <!--
   <br>
