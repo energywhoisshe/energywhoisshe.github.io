@@ -18,10 +18,10 @@
 
 
 #### Solo Show
-- **2022.1.19 - 1.30 ╱ Solo show as an artist & director, 《Every mosquito feels the same》, TINC(Seoul, KR) (Support: Korea National University of Arts)**     
+- **2022.1.19 - 1.30 ╱ Solo show as an artist & director, 《Every mosquito feels the same》, TINC(Seoul, KR) (Support: Korea National University of Arts)** `Cooperative Scenary Installation`     
 
 #### Two-person Show
-- **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** 
+- **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
 
 #### Group Show, Screening, Performance, Publication, Workshop, and so on
 - 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR) `LED, Projection mapping`
