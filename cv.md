@@ -71,7 +71,7 @@
 - 2018 ╱ New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
 - 2018 ╱ 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, White Noise Seoul
 
-#### 아티스트 교육 프로그램 참여
+#### 아티스트 창작/교육 프로그램 참여
 - 2021.11.24~12.19 ╱ 《칠전방울,펌프, 불가사리》 / 참여 고경민, 김다솜, 차연서 /교육 Arthod Studio (김찬기, 정준희) /부천아트벙커B39 2F (유인송풍실, 크레인조종실, 중앙제어실)/ 주관 부천아트벙커
 - **2021.04 - 11 ╱ CREATIVE + : Art & Tech 콘텐츠 크리에이터 양성 (Creative Mentoring Program for Young Professionals 2021 / 아트센터나비 미술관 및 한국콘텐츠진흥원 창의인재동반사업)**
   
