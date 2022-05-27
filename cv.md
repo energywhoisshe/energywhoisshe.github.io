@@ -18,34 +18,34 @@
 
 
 #### Solo Show
-- **2022.1.19 - 1.30 ╱ Solo show as an artist & director, 《Every mosquito feels the same》, TINC(This is not a church) (Support: Korea National University of Arts)**     
+- **2022.1.19 - 1.30 ╱ Solo show as an artist & director, 《Every mosquito feels the same》, TINC(Seoul, KR) (Support: Korea National University of Arts)**     
 
 #### Two-person Show
-- **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery 175 (Support: Center for Visual Studies, Korea National University of Arts)** 
+- **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** 
 
 #### Group Show, Screening, Performance, Publication, Workshop, and so on
-- 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39 `Media Facade (LED, Projection mapping)`
+- 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR)
 - 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea)
-- 2021.04 - 11 ╱ Supported as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency) `UNITY game engine`
+- 2021.04 - 11 ╱ Supported as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency)
 
 <br>
 
-- 2020.12.21 - 2021.01.21 ╱ Group show as a student, in 《Crown Shyness》 BFA Show, Korea National University of Arts `Performance film, Web installation` 
+- 2020.12.21 - 2021.01.21 ╱ Group show as a student, in 《Crown Shyness》 BFA Show, Korea National University of Arts
 - 2020.11.21 19:00-19:30 ╱ Live Performance as a director, <Juicy Mosquito>, Gallery, Korea National University of Arts (Support: Korea National University of Arts) `VR head gear, MoCap suit, Projection mapping`
 - 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping`
   
 <br>
   
 - 2020.08 - 09 ╱ Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO
-- 2020.4.24 - 4.28 ╱ Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(KR)
+- 2020.4.24 - 4.28 ╱ Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(Seoul, KR)
 - 2020.4.1 - 4.11 ╱ Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory)   
 - 2019.11 - 2020.02 ╱ Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO)   
 
 <br>
   
 - 2019.5.17 - 5.26 ╱ Group show as a student, ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, (Project fee support: Malmö Art Academy, Sweden Malmö)
-- 2018.10.5 - 10.13  ╱ Group show as a student, New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
-- 2018.8.18 - 8.22 ╱ Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul
+- 2018.10.5 - 10.13  ╱ Group show as a student, New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2 (Malmö, SE)
+- 2018.8.18 - 8.22 ╱ Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul(Seoul, KR)
   
   <br>
   <br>
@@ -60,10 +60,10 @@
 - 2013.03 - 2016.02 ╱ 서울예술고등학교, 서양화
 
 #### 개인전
-- **2022.1.19~1.30  ╱ 《Every mosquito feels the same》, TINC(This is not a church) (주관: 한국예술종합학교, 한국예술종합학교 공연전시센터)**
+- **2022.1.19~1.30  ╱ 《Every mosquito feels the same》, 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, TINC(This is not a church) (2021 K-Arts ON-Road 창작공모사업 선정작, 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터)**
   
 #### 2인전
-- **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/참여 박주영 차연서, 175갤러리 (한국예술종합학교 조형연구소 지원)**
+- **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/전시 박주영 차연서, 175갤러리 (한국예술종합학교 조형연구소 지원)**
   
 #### 그룹전, 스크리닝, 퍼포먼스, 출판, 워크샵 등
 - **2021.04 - 11 ╱ 2021 창의인재동반사업 Creative+, Game Crew 분야 - 아트센터나비 교육팀 박지혜, 멘토 오영진, 김영주, 조호연, 멘티 박설하 박예나 장윤영 정준희 조송희 신하라 차연서 / 아트센터나비 미술관 & 한국콘텐츠진흥원 지원 **
