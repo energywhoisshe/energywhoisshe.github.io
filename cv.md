@@ -37,8 +37,7 @@
 <br>
   
 <details>
-<summery>more</summery>
-
+<summary>more</summary>
 <div markdown="1">
 
 - 2020.08 - 09 ╱ Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO
@@ -85,6 +84,11 @@
 - 2020.9.9~9.13 ╱ 《Blind-folding in Aria》 연출, 아르스일렉트로니카 가든 서울 <서드라이프의 정원> A&T Education Immersive Performance 부문 온라인 전시 참여
 
   <br>
+  
+<details>
+<summary>more</summary>
+<div markdown="1">
+  
 - 2020.08 - 09 ╱ 공공 창작 워크샵(온라인) 《기부어북》, 공동 기획/교육 차연서, 공동 기획/디자인 이다솔, 주관 PACO
 - 2020.4.24 ~ 4.28 ╱ 《21st WHITE NOISE: 모놀리스, 바이러스 Monolith, Viruse》 기획 조정민, 참여 가리미룽, 김소마, 경송안, 메이지, 박현지, 쇼타 츠기야마, 이해란, 오가영, 조정민, 제시 드 니즈, 차연서, 최나영, 키세와, 허지인, 허자윤, 홍세민, 화이트노이즈 White Noise Seoul
 - 2020.4.1 - 4.11 ╱ 《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 기획 차연서 참여 김혜인 외 4명, 복도갤러리 (한국예술종합학교 미술원 2F, 미술이론과 지원)
@@ -96,6 +100,9 @@
 - 2018.10.5 - 10.13 ╱ New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
 - 2018.8.18 - 8.22 ╱ 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, 화이트노이즈 White Noise Seoul  
 
+</div>
+</details>
+  
   <br>
   <br>
   <br>
