@@ -25,13 +25,13 @@
 
 #### Group Show, Screening, Performance, Publication, and so on
 - 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39 `Media Facade (LED, Projection mapping)`
-- 2021.11.22 ╱ Percitipated as a writer, in Web journal *Seminar Issue09: burn the spell*, published by *Agrafa Society*
-- 2021.04 - 11 ╱ Percitipated as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency) `UNITY game engine`
+- 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea)
+- 2021.04 - 11 ╱ Supported as a media artist, in CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency) `UNITY game engine`
 
 <br>
 
-- 2020.12.21 - 2021.01.21 ╱ Group show as a degree declaimer, in 《Crown Shyness》 BFA Show, Korea National University of Arts `Performance film, Web installation` 
-- 2020.11.21 19:00-19:30 ╱ Live Performace as a director, <Juicy Mosquito>, Gallery, Korea National University of Arts (Support: Korea National University of Arts) `VR head gear, MoCap suit, Projection mapping`
+- 2020.12.21 - 2021.01.21 ╱ Group show as a student, in 《Crown Shyness》 BFA Show, Korea National University of Arts `Performance film, Web installation` 
+- 2020.11.21 19:00-19:30 ╱ Live Performance as a director, <Juicy Mosquito>, Gallery, Korea National University of Arts (Support: Korea National University of Arts) `VR head gear, MoCap suit, Projection mapping`
 - 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping`
   
 <br>
