@@ -31,10 +31,14 @@
 - 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping, Performance film`
 
 #### Grants
-- 2022.06 - 2022.12 ╱ ART CHANGE UP, Supported by ARKO(Arts Council Korea)
-- 2021.10 - 2021.12 ╱ Suppoted by S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture
-- 2021.09 - 2022.01 ╱ K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts
-- 2021.05 - 2022.11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Support by Art Center Nabi & KOCCA(Korea Creative Content Agency)
+- 2022 Online Publication Grant, ART CHANGE UP, Supported by ARKO(Arts Council Korea)
+- 2021 Research Grant, Suppoted by S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture
+- 2021 Exhibition Grant, K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts
+- 2021 Project Grant, CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Supported by Art Center Nabi & KOCCA(Korea Creative Content Agency)
+- 2020 Live Performance Grant, Supported by Korea National University of Arts
+- 2020 Exhibition Grant, Supported by Center for Visual Studies, Korea National University of Arts
+- 2020 Exhibition Grant, Supported by Korea National University of Arts
+- 2019 Project Grant, Supported by Malmo Art Academy
 
 <!--
 <br>
@@ -84,9 +88,14 @@
 - 2020.9.9~9.13 ╱ 《Blind-folding in Aria》 기획/연출/미술 차연서, 극본 조영명, 음악 김은준, 기술 스튜디오아텍, 움직임 이토명 이솔엽 유명민 이윤수 박민영 임다울 안현진 최혜라, 무용 박주현 강예빈, 연극 김해나 한기장, 이하 생략 / 한국예술종합학교 지하갤러리 B102, 아르스일렉트로니카 가든 서울 <서드라이프의 정원> A&T Education Immersive Performance 부문 온라인 전시 참여
 
 #### 기금
-- 2022.06 - 2022.12 ╱ ART CHANGE UP, ARKO(Arts Council Korea)
-- 2021.09 - 2022.01 ╱ K-ARTS ON ROAD: ON STAGE, 한국예술종합학교
-- 2021.05 - 2022.11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), 아트센터나비 & 한국콘텐츠진흥원
+- 2022 온라인 발행 지원, 한국문화예술위원회(ARKO)
+- 2022 리서치 지원, 서울문화재단 예술청(S.A.P)
+- 2021 전시 지원, 한국예술종합학교 공연전시센터
+- 2021 프로젝트 지원, 아트센터나비 & 한국콘텐츠진흥원(KOCCA)
+- 2020 공연 지원, 한국예술종합학교 영상원 & 융합예술센터
+- 2020 전시 지원, 한국예술종합학교 조형연구소
+- 2020 전시 지원, 한국예술종합학교 복도갤러리
+- 2019 프로젝트 지원, Malmo Art Academy
   
 <!--
   <br>
