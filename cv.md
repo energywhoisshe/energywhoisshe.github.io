@@ -40,10 +40,10 @@
 <summary>more</summary>
 <div markdown="1">
 
-- 2020.08 - 09 ╱ Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO
+- 2020.08 - 09 ╱ Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO `Picturebook making`
 - 2020.4.24 - 4.28 ╱ Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(Seoul, KR)
 - 2020.4.1 - 4.11 ╱ Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory) `Sculpture`
-- 2019.11 - 2020.02 ╱ Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO)   
+- 2019.11 - 2020.02 ╱ Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO) `
     
 <br>
   
