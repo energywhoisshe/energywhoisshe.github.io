@@ -31,7 +31,8 @@
 - 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping, Performance film`
 
 #### Grants
-- 2022.06 - 2022.12 ╱ ART CHANGE UP, Supported ARKO(Arts Council Korea)
+- 2022.06 - 2022.12 ╱ ART CHANGE UP, Supported by ARKO(Arts Council Korea)
+- 2021.10 - 2021.12 ╱ Suppoted by S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture
 - 2021.09 - 2022.01 ╱ K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts
 - 2021.05 - 2022.11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021), Support by Art Center Nabi & KOCCA(Korea Creative Content Agency)
 
