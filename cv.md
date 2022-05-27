@@ -1,7 +1,6 @@
 ### CV
 
-[Cha Yeonså](#Cha-Yeonså)  
-[차연서](#차연서)  
+[ENG](#Cha-Yeonså) / [KOR](#차연서)  
 
   <br>
   <br>
