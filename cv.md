@@ -40,7 +40,7 @@
 #### Artist Support Program  
 - 2021.11.24 - 12.19 ╱ Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39   
 - **2021.04 - 11 ╱ CREATIVE + : Art & Tech (Creative Mentoring Program for Young Professionals 2021) / Support: Art Center Nabi & KOCCA(Korea Creative Content Agency)**   
-
+  
   <br>
   <br>
   <br>
@@ -49,8 +49,8 @@
   
 ### 차연서
   
-- 2016.03 - 2021.02 ╱ 한국예술종합학교, 조형예술, 예술사
-- 2018.08 - 2019.06 ╱ Malmö Art Academy, 교환학생 프로그램, 스웨덴 말뫼
+- **2016.03 - 2021.02 ╱ 한국예술종합학교, 조형예술, 예술사**
+- **2018.08 - 2019.06 ╱ Malmö Art Academy, 교환학생 프로그램, 스웨덴 말뫼**
 - 2013.03 - 2016.02 ╱ 서울예술고등학교, 서양화
 
 #### 개인전
