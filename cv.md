@@ -18,18 +18,19 @@
 
 
 #### Solo Show
-- **2022.1.19 - 1.30 ╱ Solo show as an artist & director, 《Every mosquito feels the same》, TINC(Seoul, KR) (Support: Korea National University of Arts)** `Performance Film based Cooperative Scenary Direction & Installation`     
+- **2022.1.19 - 1.30 《Every mosquito feels the same》 Solo show as an artist & director, TINC(Seoul, KR) (Support: Korea National University of Arts)** `Performance Film based Cooperative Scenary Direction & Installation`     
 
 #### Two-person Show
-- **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
+- **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
 
 #### Selected Group Show, Screening, Performance, Publication
-- 2021.11.24 - 12.19 ╱ Three-person show as a artist, Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR)
-- 2021.11.22 ╱ Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
+- 2022.06 - 11 〈3 Households〉 Arthouse game as a publisher, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea)
+- 2021.11.24 - 12.19 Three-person show as a artist, Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR)
+- 2021.11.22 Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
 - 2021.04 - 11 〈3 Households〉 Arthouse game as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
-- 2020.12.21 - 2021.01.21 ╱ BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
-- 2020.11.21 19:00-19:30 ╱ 〈Juicy Mosquito〉 Live performance as a director, Gallery, Korea National University of Arts
-- 2020.9.9 - 9.13 ╱ 〈Blind Folding in Aria〉 Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
+- 2020.12.21 - 2021.01.21 BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
+- 2020.11.21 19:00-19:30 〈Juicy Mosquito〉 Live performance as a director, Gallery, Korea National University of Arts
+- 2020.9.9 - 9.13 〈Blind Folding in Aria〉 Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
 
 #### Grants
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
@@ -48,13 +49,13 @@
 <summary>more</summary>
 <div markdown="1">
   
-- 2020.08 - 09 ╱ Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO `Picturebook making tutorial`
-- 2020.4.24 - 4.28 ╱ Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(Seoul, KR)
-- 2020.4.1 - 4.11 ╱ Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory) `Sculptural installation`
-- 2019.11 - 2020.02 ╱ Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO) `Feminism research based Sculpture making tutorial`
-- 2019.5.17 - 5.26 ╱ Group show as a student, ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, (Project fee support: Malmö Art Academy, Sweden Malmö) `3D rendering video and Soft sculpture,`
-- 2018.10.5 - 10.13  ╱ Group show as a student, New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2 (Malmö, SE) `Sculptural installation`
-- 2018.8.18 - 8.22 ╱ Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul(Seoul, KR) `Sculptural installation, Painting, Drawing, and Writing`
+- 2020.08 - 09 Public Creative Workshop Program (online) as an co-director & tutor, 《Give your own & Make your own》, Support by PACO `Picturebook making tutorial`
+- 2020.4.24 - 4.28 Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(Seoul, KR)
+- 2020.4.1 - 4.11 Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory) `Sculptural installation`
+- 2019.11 - 2020.02 Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO) `Feminism research based Sculpture making tutorial`
+- 2019.5.17 - 5.26 Group show as a student, ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, (Project fee support: Malmö Art Academy, Sweden Malmö) `3D rendering video and Soft sculpture,`
+- 2018.10.5 - 10.13  Group show as a student, New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2 (Malmö, SE) `Sculptural installation`
+- 2018.8.18 - 8.22 Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul(Seoul, KR) `Sculptural installation, Painting, Drawing, and Writing`
   
 </div>
 </details>
@@ -79,12 +80,12 @@
 - **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/전시 박주영 차연서, 공간 175갤러리 (한국예술종합학교 조형연구소 지원)**
   
 #### 단체전 및 프로젝트 (선별)
-- 2021.11.22 *웹진세미나 9호: burn the spell*, 기획 *Agrafa Society*, 필진 Agrafa Society(김진주, 이연숙, 이진실), 오혜진, 이우연, 장한길, 이정식, 류한솔, 밀사, 차연서/ 한국문화예술위원회 시각예술 창작산실 비평지원
-- 2021.11.24~12.19 《칠전방울,펌프, 불가사리》, 전시 고경민 김다솜 차연서, 미디어파사드 교육 Arthod Studio(김찬기 정준희), 부천아트벙커B39 2F (유인송풍실, 크레인조종실, 중앙제어실),  주관 부천아트벙커
-- 2021.04 - 11 아트센터나비 2021 Art & Tech 콘텐츠 크리에이터 양성: CREATIVE+ / 아트센터나비 미술관 & 한국콘텐츠진흥원 지원
-- 2020.12.21 - 2021.01.21 《크라운샤이니스 Crown Shyness》 한국예술종합학교 조형예술과 온라인 졸업 전시 / 주최/주관 한국예술종합학교 미술원
-- 2020.11.21 19:00-19:30 《Juicy Mosquito》 기획/연출/미술 차연서, 라이브 퍼포먼스, 한국예술종합학교 본관갤러리 M103 (한국예술종합학교 영상원 첨단기술 산학협력 프로그램 지원)
-- 2020.9.9~9.13 《Blind-folding in Aria》 기획/연출/미술 차연서, 트레일러 필름, 아르스일렉트로니카 가든 서울 <서드라이프의 정원> A&T Education Immersive Performance 부문 온라인 전시 참여
+- 2021.11.22 *웹진세미나 9호: burn the spell* 필진 참여 / *Agrafa Society*, 한국문화예술위원회 시각예술 창작산실 비평지원
+- 2021.11.24~12.19 《칠전방울,펌프, 불가사리》 단체전 참여, 부천아트벙커B39 2F, 주관 부천아트벙커
+- 2021.04 - 11 〈3 Households〉 기획/개발, 아트센터나비 2021 CREATIVE+, 주관 아트센터나비 미술관 & 한국콘텐츠진흥원
+- 2020.12.21 - 2021.01.21 《크라운샤이니스 Crown Shyness》 한국예술종합학교 조형예술과 온라인 졸업 전시, 주관 한국예술종합학교 미술원
+- 2020.11.21 19:00-19:30 《Juicy Mosquito》 기획/연출/미술, 라이브 퍼포먼스, 공간 한국예술종합학교 갤러리, 주관 한국예술종합학교 영상원 & 융합예술센터
+- 2020.9.9~9.13 《Blind-folding in Aria》 기획/연출/미술, 트레일러 필름, 아르스일렉트로니카 가든 서울 《서드라이프의 정원》 온라인 페스티벌 참여, 주관 한국예술종합학교 영상원 & 융합예술센터
 
 #### 기금
 - 2022 온라인 예술콘텐츠 제작 및 확산 지원, 문화체육관광부(MCST) & 한국문화예술위원회(ARKO)
