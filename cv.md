@@ -23,9 +23,8 @@
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
 
 #### Selected Group Show, Screening, Performance, Publication
-- 2022 〈3 Households〉, Arthouse game as a publisher, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea)
 - 2021 〈3 Households〉, Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
-- 2021 〈{ “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };〉, Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
+- 2021 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
 - 2021 〈3 Households〉, Arthouse game as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
 - 2020 〈Juicy Mosquito〉, BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
 - 2020 〈Juicy Mosquito〉, Live performance as a director, Gallery, Korea National University of Arts
@@ -76,18 +75,18 @@ energywhoisshe@gmail.com
 - 2013.03 - 2016.02 ╱ 서울예술고등학교, 서양화
 
 #### 개인전
-- **2022.1.19~1.30  ╱ 《Every mosquito feels the same》, 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 공간 TINC (2021 K-Arts ON-Road 창작공모사업 선정작, 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터)**
+- **2022.1.19~1.30  《Every mosquito feels the same》, TINC**
   
 #### 2인전
-- **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/전시 박주영 차연서, 공간 175갤러리 (한국예술종합학교 조형연구소 지원)**
+- **2020.6.29~7.9 《크게 슬플 일인가요》, 175갤러리**
   
 #### 단체전 및 프로젝트 (선별)
-- 2021.11.22 *웹진세미나 9호: burn the spell* 필진 참여 / *Agrafa Society*, 한국문화예술위원회 시각예술 창작산실 비평지원
-- 2021.11.24~12.19 《칠전방울,펌프, 불가사리》 단체전 참여, 부천아트벙커B39 2F, 주관 부천아트벙커
-- 2021.04 - 11 〈3 Households〉 기획/개발, 아트센터나비 2021 CREATIVE+, 주관 아트센터나비 미술관 & 한국콘텐츠진흥원
-- 2020.12.21 - 2021.01.21 《크라운샤이니스 Crown Shyness》 한국예술종합학교 조형예술과 온라인 졸업 전시, 주관 한국예술종합학교 미술원
-- 2020.11.21 19:00-19:30 《Juicy Mosquito》 기획/연출/미술, 라이브 퍼포먼스, 공간 한국예술종합학교 갤러리, 주관 한국예술종합학교 영상원 & 융합예술센터
-- 2020.9.9~9.13 《Blind-folding in Aria》 기획/연출/미술, 트레일러 필름, 아르스일렉트로니카 가든 서울 《서드라이프의 정원》 온라인 페스티벌 참여, 주관 한국예술종합학교 영상원 & 융합예술센터
+- 2021 〈3 Households〉, 단체전 《칠전방울,펌프, 불가사리》 참여, 부천아트벙커B39 2F
+- 2021 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, *웹진세미나 9호: burn the spell* 필진 참여
+- 2021 〈3 Households〉 기획/개발, 아트센터나비 2021 CREATIVE+, 주관 아트센터나비 미술관 & 한국콘텐츠진흥원
+- 2020 〈Juicy Mosquito〉, 한국예술종합학교 조형예술과 온라인 졸업 전시 《크라운샤이니스 Crown Shyness》
+- 2020 《Juicy Mosquito》 기획/연출/미술, 라이브 퍼포먼스, 한국예술종합학교 갤러리
+- 2020 《Blind-folding in Aria》 기획/연출/미술, 트레일러 필름, 아르스일렉트로니카 가든 서울 《서드라이프의 정원》 온라인 페스티벌 참여
 
 #### 기금
 - 2022 온라인 예술콘텐츠 제작 및 확산 지원, 문화체육관광부(MCST) & 한국문화예술위원회(ARKO)
