@@ -12,10 +12,9 @@
 
 
 #### Education
-- **2016.03 - 2021.02 ╱ Korea National University of Arts, School of Visual Art (BFA)**
-- **2018.08 - 2019.06 ╱ Malmö Art Academy, Exchange student program to Sweden**
-- 2013.03 - 2016.02 ╱ Seoul Arts High School, Department of Painting  
-
+- **2016.03 - 2021.02 BFA, Korea National University of Arts(School of Visual Art), KR**
+- **2018.08 - 2019.06 Malmö Art Academy, Exchange student program, SE**
+- 2013.03 - 2016.02 Seoul Arts High School(Department of Painting), KR
 
 #### Solo Show
 - **2022.1.19 - 1.30 《Every mosquito feels the same》 Solo show as an artist & director, TINC(Seoul, KR) (Support: Korea National University of Arts)** `Performance Film based Cooperative Scenary Direction & Installation`     
@@ -42,6 +41,9 @@
 - 2020 Exhibition Grant, Center for Visual Studies, Korea National University of Arts, KR
 - 2020 Exhibition Grant, Korea National University of Arts, KR
 - 2019 Project Grant, Malmo Art Academy, SE
+  
+#### Collection
+energywhoisshe@gmail.com
 
 <!--
 <br>
@@ -98,6 +100,10 @@
 - 2020 기획전시 지원, 한국예술종합학교 복도갤러리
 - 2019 프로젝트 제작 지원, Malmo Art Academy, 스웨덴
   
+  
+#### 소장
+energywhoisshe@gmail.com
+
 <!--
   <br>
   
