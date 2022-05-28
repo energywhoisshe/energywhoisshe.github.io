@@ -25,7 +25,7 @@
 
 #### Selected Group Show, Screening, Performance, Publication
 - 2021.11.24 - 12.19 ╱ Three-person show as a artist, Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR)
-- 2021.11.22 ╱ Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea) `C++ poetic computation article`
+- 2021.11.22 ╱ Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
 - 2020.12.21 - 2021.01.21 ╱ BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
 - 2020.11.21 19:00-19:30 ╱ Live performance as a director, 〈Juicy Mosquito〉, Gallery, Korea National University of Arts
 - 2020.9.9 - 9.13 ╱ Performance Trailer Film as a director, 〈Blind Folding in Aria〉 as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
@@ -72,7 +72,7 @@
 - 2013.03 - 2016.02 ╱ 서울예술고등학교, 서양화
 
 #### 개인전
-- **2022.1.19~1.30  ╱ 《Every mosquito feels the same》, 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 간접 협력 최효정, 공간 TINC (2021 K-Arts ON-Road 창작공모사업 선정작, 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터)**
+- **2022.1.19~1.30  ╱ 《Every mosquito feels the same》, 기획/전시 차연서, 직접 협력 강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정, 공간 TINC (2021 K-Arts ON-Road 창작공모사업 선정작, 주최/주관 : 한국예술종합학교 제작지원 : 한국예술종합학교 공연전시센터)**
   
 #### 2인전
 - **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/전시 박주영 차연서, 공간 175갤러리 (한국예술종합학교 조형연구소 지원)**
