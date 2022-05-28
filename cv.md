@@ -26,10 +26,10 @@
 #### Selected Group Show, Screening, Performance, Publication
 - 2021.11.24 - 12.19 ╱ Three-person show as a artist, Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR)
 - 2021.11.22 ╱ Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
-- 2021.04 - 11 2021 Arthouse game as a artist, 〈3 Households〉, Art Center Nabi & KOCCA(Korea Creative Content Agency)
+- 2021.04 - 11 〈3 Households〉 Arthouse game as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
 - 2020.12.21 - 2021.01.21 ╱ BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
-- 2020.11.21 19:00-19:30 ╱ Live performance as a director, 〈Juicy Mosquito〉, Gallery, Korea National University of Arts
-- 2020.9.9 - 9.13 ╱ Performance Trailer Film as a director, 〈Blind Folding in Aria〉 as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
+- 2020.11.21 19:00-19:30 ╱ 〈Juicy Mosquito〉 Live performance as a director, Gallery, Korea National University of Arts
+- 2020.9.9 - 9.13 ╱ 〈Blind Folding in Aria〉 Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
 
 #### Grants
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
