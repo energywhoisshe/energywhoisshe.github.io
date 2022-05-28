@@ -12,12 +12,12 @@
 
 
 #### Education
-- **2016.03 - 2021.02 BFA, Korea National University of Arts(School of Visual Art), KR**
-- **2018.08 - 2019.06 Malmö Art Academy, Exchange student program, SE**
+- 2016.03 - 2021.02 BFA, Korea National University of Arts(School of Visual Art), KR
+- 2018.08 - 2019.06 Malmö Art Academy, Exchange student program, SE
 - 2013.03 - 2016.02 Seoul Arts High School(Department of Painting), KR
 
 #### Solo Show
-- **2022.1.19 - 1.30 《Every mosquito feels the same》 Solo show as an artist & director, TINC(Seoul, KR) (Support: Korea National University of Arts)** `Performance Film based Cooperative Scenary Direction & Installation`     
+- **2022.1.19 - 1.30 《Every mosquito feels the same》 TINC(Seoul, KR) `Performance Film based Cooperative Scenary Direction & Installation`     
 
 #### Two-person Show
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
@@ -71,8 +71,8 @@ energywhoisshe@gmail.com
   
 ### 차연서
   
-- **2016.03 - 2021.02 ╱ 한국예술종합학교, 조형예술, 예술사**
-- **2018.08 - 2019.06 ╱ Malmö Art Academy, 교환학생 프로그램, 스웨덴 말뫼**
+- 2016.03 - 2021.02 ╱ 한국예술종합학교, 조형예술, 예술사
+- 2018.08 - 2019.06 ╱ Malmö Art Academy, 교환학생 프로그램, 스웨덴 말뫼
 - 2013.03 - 2016.02 ╱ 서울예술고등학교, 서양화
 
 #### 개인전
