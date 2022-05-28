@@ -23,13 +23,21 @@
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
 
 #### Selected Group Show, Screening, Performance, Publication
+
+<details>
+<summary>more</summary>
+<div markdown="1">
+  
 - 2021 〈3 Households〉, Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
 - 2021 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
 - 2021 〈3 Households〉, Arthouse game as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
 - 2020 〈Juicy Mosquito〉, BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
 - 2020 〈Juicy Mosquito〉, Live performance as a director, Gallery, Korea National University of Arts
 - 2020 〈Blind Folding in Aria〉, Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
-
+  
+</div>
+</details>
+  
 #### Grants
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
 - 2021 Research Grant, S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture, KR
@@ -79,14 +87,22 @@ energywhoisshe@gmail.com
   
 #### 2인전
 - **2020.6.29~7.9 《크게 슬플 일인가요》, 175갤러리**
-  
+
 #### 단체전 및 프로젝트 (선별)
+  
+<details>
+<summary>more</summary>
+<div markdown="1">
+  
 - 2021 〈3 Households〉, 단체전 《칠전방울,펌프, 불가사리》 참여, 부천아트벙커B39 2F
 - 2021 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, *웹진세미나 9호: burn the spell* 필진 참여
 - 2021 〈3 Households〉 기획/개발, 아트센터나비 2021 CREATIVE+, 주관 아트센터나비 미술관 & 한국콘텐츠진흥원
 - 2020 〈Juicy Mosquito〉, 한국예술종합학교 조형예술과 온라인 졸업 전시 《크라운샤이니스 Crown Shyness》
 - 2020 《Juicy Mosquito》 기획/연출/미술, 라이브 퍼포먼스, 한국예술종합학교 갤러리
 - 2020 《Blind-folding in Aria》 기획/연출/미술, 트레일러 필름, 아르스일렉트로니카 가든 서울 《서드라이프의 정원》 온라인 페스티벌 참여
+
+</div>
+</details>
 
 #### 기금
 - 2022 온라인 예술콘텐츠 제작 및 확산 지원, 문화체육관광부(MCST) & 한국문화예술위원회(ARKO)
