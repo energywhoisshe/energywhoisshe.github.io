@@ -24,11 +24,11 @@
 - **2020.6.29 - 7.9 ╱ Two-person show as an artist & co-director, 《Be Sad I Dare You》, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
 
 #### Selected Group Show, Screening, Performance, Publication
-- 2021.11.24 - 12.19 ╱ Three-person show as a media artist, in Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR) `LED, Projection mapping`
-- 2021.11.22 ╱ Web publication as a writer, in Web journal *Seminar Issue09: burn the spell*, by *Agrafa Society*, supported by ARKO(Arts Council Korea) `C++ poetic computation article`
-- 2020.12.21 - 2021.01.21 ╱ Group show as a student, in 《Crown Shyness》 BFA Show, Korea National University of Arts `Performance film, Web installation `
-- 2020.11.21 19:00-19:30 ╱ Live Performance as a director, <Juicy Mosquito>, Gallery, Korea National University of Arts (Support: Korea National University of Arts) `VR head gear, MoCap suit, Projection mapping, Live Performance` 
-- 2020.9.9 - 9.13 ╱ Performance Video as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’) `VR head gear, MoCap suit, Projection mapping, Performance film`
+- 2021.11.24 - 12.19 ╱ Three-person show as a artist, Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR)
+- 2021.11.22 ╱ Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea) `C++ poetic computation article`
+- 2020.12.21 - 2021.01.21 ╱ BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
+- 2020.11.21 19:00-19:30 ╱ Live performance as a director, 〈Juicy Mosquito〉, Gallery, Korea National University of Arts
+- 2020.9.9 - 9.13 ╱ Performance Trailer Film as a director, 〈Blind Folding in Aria〉 as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
 
 #### Grants
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
@@ -78,9 +78,9 @@
 - **2020.6.29~7.9 ╱ 《크게 슬플 일인가요》, 기획/전시 박주영 차연서, 공간 175갤러리 (한국예술종합학교 조형연구소 지원)**
   
 #### 단체전 및 프로젝트 (선별)
-- 2021.04 - 11 아트센터나비 2021 Art & Tech 콘텐츠 크리에이터 양성: CREATIVE+ / 아트센터나비 미술관 & 한국콘텐츠진흥원 지원
 - 2021.11.22 *웹진세미나 9호: burn the spell*, 기획 *Agrafa Society*, 필진 Agrafa Society(김진주, 이연숙, 이진실), 오혜진, 이우연, 장한길, 이정식, 류한솔, 밀사, 차연서/ 한국문화예술위원회 시각예술 창작산실 비평지원
 - 2021.11.24~12.19 《칠전방울,펌프, 불가사리》, 전시 고경민 김다솜 차연서, 미디어파사드 교육 Arthod Studio(김찬기 정준희), 부천아트벙커B39 2F (유인송풍실, 크레인조종실, 중앙제어실),  주관 부천아트벙커
+- 2021.04 - 11 아트센터나비 2021 Art & Tech 콘텐츠 크리에이터 양성: CREATIVE+ / 아트센터나비 미술관 & 한국콘텐츠진흥원 지원
 - 2020.12.21 - 2021.01.21 《크라운샤이니스 Crown Shyness》 한국예술종합학교 조형예술과 온라인 졸업 전시 / 주최/주관 한국예술종합학교 미술원
 - 2020.11.21 19:00-19:30 《Juicy Mosquito》 기획/연출/미술 차연서, 라이브 퍼포먼스, 한국예술종합학교 본관갤러리 M103 (한국예술종합학교 영상원 첨단기술 산학협력 프로그램 지원)
 - 2020.9.9~9.13 《Blind-folding in Aria》 기획/연출/미술 차연서, 트레일러 필름, 아르스일렉트로니카 가든 서울 <서드라이프의 정원> A&T Education Immersive Performance 부문 온라인 전시 참여
