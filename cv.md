@@ -36,6 +36,7 @@
 #### Collection
 energywhoisshe@gmail.com
 
+<!--
 #### Selected Group Show, Screening, Performance, Publication
 
 <details>
@@ -48,7 +49,9 @@ energywhoisshe@gmail.com
 - 2020 〈Juicy Mosquito〉, BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
 - 2020 〈Juicy Mosquito〉, Live performance as a director, Gallery, Korea National University of Arts
 - 2020 〈Blind Folding in Aria〉, Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
-  
+
+-->
+
 </div>
 </details>
   
@@ -103,6 +106,8 @@ energywhoisshe@gmail.com
 #### 소장
 energywhoisshe@gmail.com
 
+
+<!--
 #### 단체전 및 프로젝트 (선별)
   
 <details>
@@ -118,7 +123,8 @@ energywhoisshe@gmail.com
 
 </div>
 </details>
-  
+-- >
+
 <!--
   <br>
   
