@@ -65,6 +65,7 @@ History
 #### { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” }; http://www.zineseminar.com/wp/issue09/chayeonseo/
 
   ###### Commission by 시각예술 웹저널 SEMINAR ISSUE09 (글 차연서 사운드트랙 이상화)
+    
 ``` c++
 . . .
   
