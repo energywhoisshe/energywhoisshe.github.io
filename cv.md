@@ -17,19 +17,19 @@
 - 2013.03 - 2016.02 Seoul Arts High School(Department of Painting), KR
 
 #### Solo Show
-- **2022.1.19 - 1.30 《Every mosquito feels the same》 TINC(Seoul, KR) `Performance Film based Cooperative Scenary Direction & Installation`     
+- **2022.1.19 - 1.30 《Every mosquito feels the same》, Performance Film based Cooperative Scenary 〈Mosquitojuice〉 Direction & Installation, TINC(Seoul, KR)**     
 
 #### Two-person Show
-- **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Gallery175(Seoul, KR) (Support: Center for Visual Studies, Korea National University of Arts)** `Performance based video and installation`
+- **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
 
 #### Selected Group Show, Screening, Performance, Publication
-- 2022.06 - 11 〈3 Households〉 Arthouse game as a publisher, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea)
-- 2021.11.24 - 12.19 Three-person show as a artist, Media Facade Workshop Exhibition 2021 / Bucheon Art Bunker B39(Bucheon, KR)
-- 2021.11.22 Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
-- 2021.04 - 11 〈3 Households〉 Arthouse game as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
-- 2020.12.21 - 2021.01.21 BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
-- 2020.11.21 19:00-19:30 〈Juicy Mosquito〉 Live performance as a director, Gallery, Korea National University of Arts
-- 2020.9.9 - 9.13 〈Blind Folding in Aria〉 Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
+- 2022 〈3 Households〉, Arthouse game as a publisher, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea)
+- 2021 〈3 Households〉, Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
+- 2021 〈{ “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };〉, Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
+- 2021 〈3 Households〉, Arthouse game as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
+- 2020 〈Juicy Mosquito〉, BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
+- 2020 〈Juicy Mosquito〉, Live performance as a director, Gallery, Korea National University of Arts
+- 2020 〈Blind Folding in Aria〉, Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
 
 #### Grants
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
