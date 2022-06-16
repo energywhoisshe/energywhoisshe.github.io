@@ -27,8 +27,8 @@
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
 - 2021 Research Grant, S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture, KR
 - 2021 Exhibition Grant, K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts, KR
-- 2021 ART&TECH Education & Exhibition Grant, Bucheon Art Bunker B39, KR
-- 2021 ART&TECH Education & Project Grant, Art Center Nabi & KOCCA(Korea Creative Content Agency), KR
+- 2021 ART&TECH Education & Media Facade Exhibition Grant, Bucheon Art Bunker B39, KR
+- 2021 ART&TECH Education & Game Project Grant, Art Center Nabi & KOCCA(Korea Creative Content Agency), KR
 - 2020 ART&TECH Education & XR Live Performance Grant, Korea National University of Arts, KR
 - 2020 Exhibition Grant, Center for Visual Studies, Korea National University of Arts, KR
 - 2020 Exhibition Grant, Korea National University of Arts, KR
@@ -97,9 +97,9 @@ energywhoisshe@gmail.com
 - 2022 온라인 예술콘텐츠 제작 및 확산 지원, 문화체육관광부(MCST) & 한국문화예술위원회(ARKO)
 - 2022 리서치 지원, 서울문화재단 예술청(S.A.P)
 - 2021 개인전 지원, 한국예술종합학교 공연전시센터
-- 2021 기술예술 융합 교육 및 전시 지원, 부천아트벙커B39
-- 2021 기술예술 융합 교육 및 프로젝트 제작 지원, 아트센터나비 & 한국콘텐츠진흥원(KOCCA)
-- 2020 기술예술 융합 교육 및 공연 제작 지원, 한국예술종합학교 영상원 & 융합예술센터
+- 2021 기술예술 융합 교육 및 미디어파사드 전시 지원, 부천아트벙커B39
+- 2021 기술예술 융합 교육 및 게임 프로젝트 제작 지원, 아트센터나비 & 한국콘텐츠진흥원(KOCCA)
+- 2020 기술예술 융합 교육 및 XR 공연 제작 지원, 한국예술종합학교 영상원 & 융합예술센터
 - 2020 기획전시 지원, 한국예술종합학교 조형연구소
 - 2020 기획전시 지원, 한국예술종합학교 복도갤러리
 - 2019 프로젝트 제작 지원, Malmo Art Academy, 스웨덴
