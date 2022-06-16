@@ -2,6 +2,7 @@
 
 [ENG](#Cha-Yeonså) / [KOR](#차연서)  
 
+Selected Projects [energywhoisshe.github.io](httm://energywhoisshe.github.io)
   <br>
   <br>
   <br>
@@ -9,6 +10,7 @@
   <br>
 
 ### Cha Yeonså
+
 
 
 #### Education
@@ -36,6 +38,8 @@
   
 #### Collection
 energywhoisshe@gmail.com
+
+
 
 <!--
 #### Selected Group Show, Screening, Performance, Publication
