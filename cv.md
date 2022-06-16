@@ -23,12 +23,13 @@
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
   
 #### Grants
+- 2022 Research Grant, Korea National University of Arts, KR
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
 - 2021 Research Grant, S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture, KR
 - 2021 Exhibition Grant, K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts, KR
 - 2021 ART&TECH Education & Exhibition Grant, Bucheon Art Bunker B39, KR
 - 2021 ART&TECH Education & Project Grant, Art Center Nabi & KOCCA(Korea Creative Content Agency), KR
-- 2020 ART&TECH Education & Live Performance Grant, Korea National University of Arts, KR
+- 2020 ART&TECH Education & XR Live Performance Grant, Korea National University of Arts, KR
 - 2020 Exhibition Grant, Center for Visual Studies, Korea National University of Arts, KR
 - 2020 Exhibition Grant, Korea National University of Arts, KR
 - 2019 Project Grant, Malmo Art Academy, SE
