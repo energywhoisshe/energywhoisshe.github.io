@@ -2,7 +2,6 @@
 
 [ENG](#Cha-Yeonså) / [KOR](#차연서)  
 
-Selected Projects [energywhoisshe.github.io](httm://energywhoisshe.github.io)
   <br>
   <br>
   <br>
