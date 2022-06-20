@@ -31,8 +31,8 @@
 - 2020.4.1~4.11 《Dear Doll, Friend, Momument, Totem》, Theory Gallery(Seoul, KR)
 - 2020.02 《Dear Doll, Friend, Momument, Totem》 Public Workshop Exhibition, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F)
 
-- 2019 ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, (Project fee support: Malmö Art Academy, Sweden Malmö)
-- 2018 New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
+- 2019 ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, Malmö Art Academy(Malmö, SE)
+- 2018 New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2(Malmö, SE)
   
 - 2018 《Too Much I (TMI Group)》, White Noise Seoul
 
