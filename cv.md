@@ -23,6 +23,9 @@
 #### Two-person Show
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
 
+<br>
+<br>
+
 #### Group Show, Showcase, Screening, Performance, Publication
 
 <details>
@@ -91,6 +94,9 @@ energywhoisshe@gmail.com
 #### 2인전
 - **2020.6.29~7.9 《크게 슬플 일인가요》, 175갤러리**
 
+<br>
+<br>
+  
 #### 그룹전, 쇼케이스, 스크리닝, 퍼포먼스, 출판
 
 <details>
@@ -100,15 +106,22 @@ energywhoisshe@gmail.com
 - 2021 〈3 Households〉, 단체전 《칠전방울,펌프, 불가사리》 참여, 부천아트벙커B39 2F
 - 2021 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, *웹진세미나 9호: burn the spell* 필진 참여
 - 2021 〈3 Households〉 기획/개발, 아트센터나비 2021 CREATIVE+, 주관 아트센터나비 미술관 & 한국콘텐츠진흥원
+
+<br>
+  
 - 2020 〈Juicy Mosquito〉, 한국예술종합학교 조형예술과 온라인 졸업 전시 《크라운샤이니스 Crown Shyness》
 - 2020 《Juicy Mosquito》 기획/연출/미술, 라이브 퍼포먼스, 한국예술종합학교 갤러리
 - 2020 《Blind-folding in Aria》 기획/연출/미술, 트레일러 필름, 아르스일렉트로니카 가든 서울 《서드라이프의 정원》 온라인 페스티벌 참여
+  
+  <br>
   
 - 2020.08 - 09 공공 창작 워크샵(온라인) 《기부어북》, 공동 기획/교육 차연서, 공동 기획/디자인 이다솔, 주관 PACO
 - 2020.4.24 ~ 4.28 《21st WHITE NOISE: 모놀리스, 바이러스 Monolith, Viruse》 기획 조정민, 참여 가리미룽, 김소마, 경송안, 메이지, 박현지, 쇼타 츠기야마, 이해란, 오가영, 조정민, 제시 드 니즈, 차연서, 최나영, 키세와, 허지인, 허자윤, 홍세민, 화이트노이즈 White Noise Seoul
 - 2020.4.1 - 4.11 《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 기획 차연서 참여 김혜인 외 4명, 복도갤러리 (한국예술종합학교 미술원 2F, 미술이론과 지원)
 - 2020.02 공공 창작 워크샵 및 결과전《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 교육/기획 차연서 참여 김혜인 외 12명, 아트업서울 갤러리 서울혁신파크 상상청 5층 (공공예술협동체 PACO 주관)
 
+  <br>
+  
 - 2019.5.17 - 5.26 ÅRSUTSTÄLLNING (Malmö Art Academy Annual Show) 참여, (Malmö Art Academy 프로젝트비 지원), Sweden Malmö
 - 2018.10.5 - 10.13 New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
 - 2018.8.18 - 8.22 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, 화이트노이즈 White Noise Seoul  
