@@ -45,6 +45,9 @@
 </div>
 </details>
   
+  <br>
+  <br>
+  
 #### Grants
 - 2022 Research Grant, Korea National University of Arts, KR
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
@@ -105,9 +108,11 @@ energywhoisshe@gmail.com
 - 2019.5.17 - 5.26 ÅRSUTSTÄLLNING (Malmö Art Academy Annual Show) 참여, (Malmö Art Academy 프로젝트비 지원), Sweden Malmö
 - 2018.10.5 - 10.13 New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
 - 2018.8.18 - 8.22 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, 화이트노이즈 White Noise Seoul  
-
 </div>
 </details>
+  
+  <br>
+  <br>
   
 #### 기금
 - 2022 리서치 지원, 한국예술종합학교 공연전시센터
