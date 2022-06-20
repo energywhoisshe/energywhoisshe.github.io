@@ -33,7 +33,7 @@
 <div markdown="1">
   
 - 2021 Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
-- 2021 Web publication { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” }; as a writer, Web journal *Seminar Issue09: burn the spell* (Seoul, KR)
+- 2021 Web publication { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” }; as a writer, Web journal *Seminar Issue09: burn the spell* , http://www.zineseminar.com/ (KR)
 - 2021 Arthouse game 〈3 Households〉 as a director & developer, Art Center Nabi(Seoul, KR)
   
   <br>
