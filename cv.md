@@ -32,7 +32,7 @@
 <summary>more</summary>
 <div markdown="1">
   
-- 2021 Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
+- 2021 Media Facade Installation 〈3 Households〉 Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
 - 2021 Web publication { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” }; as a writer, Web journal *Seminar Issue09: burn the spell* , http://www.zineseminar.com/ (KR)
 - 2021 Arthouse game 〈3 Households〉 as a director & developer, Art Center Nabi(Seoul, KR)
   
@@ -110,25 +110,25 @@ energywhoisshe@gmail.com
 <summary>more</summary>
 <div markdown="1">
   
-- 2021 단체전 《칠전방울,펌프, 불가사리》, 부천아트벙커B39 2F
-- 2021 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, *웹진세미나 9호: burn the spell* 필진 참여, http://www.zineseminar.com/
-- 2021 아트센터나비 2021 CREATIVE+, 주관 아트센터나비 미술관 & 한국콘텐츠진흥원
+- 2021 미디어파사드 설치 〈3 Households〉, 단체전 《칠전방울,펌프, 불가사리》, 부천아트벙커B39 2F
+- 2021 웹 발행 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, *웹진세미나 9호: burn the spell* 필진 참여, http://www.zineseminar.com/
+- 2021 게임 프로젝트 〈3 Households〉, 아트센터나비 2021 CREATIVE+, 주관 아트센터나비 미술관 & 한국콘텐츠진흥원
 
 <br>
   
-- 2020 한국예술종합학교 조형예술과 온라인 졸업 전시 《크라운샤이니스 Crown Shyness》, crownshyness.online
+- 2020 웹 설치 〈Juicy Mosquito〉, 한국예술종합학교 조형예술과 온라인 졸업 전시 《크라운샤이니스 Crown Shyness》, crownshyness.online
 - 2020 라이브 퍼포먼스 〈Juicy Mosquito〉 (기획/연출/미술), 한국예술종합학교 갤러리
 - 2020 트레일러 필름 〈Blind-folding in Aria〉 (기획/연출/미술), 아르스일렉트로니카 가든 서울 《서드라이프의 정원》 온라인 페스티벌 참여
   
   <br>
   
-- 2020 《21st WHITE NOISE: 모놀리스, 바이러스 Monolith, Viruse》 기획 조정민, 참여 가리미룽, 김소마, 경송안, 메이지, 박현지, 쇼타 츠기야마, 이해란, 오가영, 조정민, 제시 드 니즈, 차연서, 최나영, 키세와, 허지인, 허자윤, 홍세민, 화이트노이즈 White Noise Seoul
-- 2020 《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 기획 차연서 참여 김혜인 외 4명, 복도갤러리 (한국예술종합학교 미술원 2F, 미술이론과 지원)
+- 2020 '친애하는 인형들께 Dear Doll, Friend, Momument, Totem' 스크리닝 및 텍스트로 참여, 《21st WHITE NOISE: 모놀리스, 바이러스 Monolith, Viruse》 기획 조정민, 참여 가리미룽, 김소마, 경송안, 메이지, 박현지, 쇼타 츠기야마, 이해란, 오가영, 조정민, 제시 드 니즈, 차연서, 최나영, 키세와, 허지인, 허자윤, 홍세민, 화이트노이즈 White Noise Seoul
+- 2020 전시기획 《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 기획 차연서 참여 김혜인 외 4명, 복도갤러리 (한국예술종합학교 미술원 2F, 미술이론과 지원)
 - 2020 공공 창작 워크샵 및 결과전《친애하는 인형들께 Dear Doll, Friend, Momument, Totem》, 교육/기획 차연서 참여 김혜인 외 12명, 아트업서울 갤러리 서울혁신파크 상상청 5층 (공공예술협동체 PACO 주관)
 
   <br>
   
-- 2018.8.18 - 8.22 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, 화이트노이즈 White Noise Seoul  
+- 2018 설치 및 텍스트 〈Lightened and Frightened〉, 《Too Much I (TMI Group)》, 기획/참여 김호정 차연서 황유경, 화이트노이즈 White Noise Seoul  
   
 </div>
 </details>
