@@ -22,7 +22,20 @@
 
 #### Two-person Show
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
+
+#### Group Show, Screening, Performance
+- 2020.12.21 - 2021.01.21 《Crown Shyness》 BFA Show, Korea National University of Arts
+- 2020.11.21 19:00-19:30 Live Performance  ⟨Juicy Mosquito⟩, Gallery, Korea National University of Arts
+- 2020.9.9~9.13 Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance (Trailer Film ’Blind Folding in Aria’)
   
+- 2020.4.1~4.11 《Dear Doll, Friend, Momument, Totem》, Theory Gallery(Seoul, KR)
+- 2020.02 《Dear Doll, Friend, Momument, Totem》 Public Workshop Exhibition, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F)
+
+- 2019 ÅRSUTSTÄLLNING Malmö Art Academy Annual Show, (Project fee support: Malmö Art Academy, Sweden Malmö)
+- 2018 New Student Exhibition, Malmö Art Academy, Gallery KHM1 & KHM2, Sweden Malmö
+  
+- 2018 《Too Much I (TMI Group)》, White Noise Seoul
+
 #### Grants
 - 2022 Research Grant, Korea National University of Arts, KR
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
