@@ -32,25 +32,25 @@
 <summary>more</summary>
 <div markdown="1">
   
-- 2021 〈3 Households〉, Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
-- 2021 { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Web publication as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
-- 2021 〈3 Households〉, Arthouse game as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
+- 2021 Three-person show 《칠전방울, 펌프, 불가사리: Media Facade Workshop Exhibition 2021》 / Bucheon Art Bunker B39(Bucheon, KR)
+- 2021 Web publication { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” }; as a writer, Web journal *Seminar Issue09: burn the spell*, *Agrafa Society*, ARKO(Arts Council Korea)
+- 2021 Arthouse game 〈3 Households〉 as a director & developer, Art Center Nabi & KOCCA(Korea Creative Content Agency)
   
   <br>
   
-- 2020 〈Juicy Mosquito〉, BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
-- 2020 〈Juicy Mosquito〉, Live performance as a director, Gallery, Korea National University of Arts
-- 2020 〈Blind Folding in Aria〉, Performance Trailer Film as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
+- 2020 Web Installation 〈Juicy Mosquito〉, BFA Group Show Online 《Crown Shyness》, Korea National University of Arts
+- 2020 Live performance 〈Juicy Mosquito〉 as a director, Gallery, Korea National University of Arts
+- 2020 Performance Trailer Film 〈Blind Folding in Aria〉 as a director, Ars Ellectronica Garden Seoul <The Garden of Third Life>, A&T Education Immersive Performance
   
   <br>
   
 - 2020 Group show as an artist, 《21st WHITE NOISE: Monolith, Viruse》, White Noise Seoul(Seoul, KR)
-- 2020 Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory) `Sculptural installation`
-- 2020 Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO) `Feminism research based Sculpture making tutorial`
+- 2020 Group show as a director & tutor, 《Dear Doll, Friend, Momument, Totem》, Theory Gallery (Support: Korea National University of Arts, Art Theory)
+- 2020 Public Creative Workshop Program as an an director & tutor, 《Dear Doll, Friend, Momument, Totem》, Artup Seoul Gallery(Seoul Innovation Center, Sangsangcheong 5F / Support by PACO)
   
   <br>
   
-- 2018 Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul(Seoul, KR) `Sculptural installation, Painting, Drawing, and Writing`
+- 2018 Three-person show as an artist & co-director,  《Too Much I (TMI Group)》, White Noise Seoul(Seoul, KR)
 
 </div>
 </details>
