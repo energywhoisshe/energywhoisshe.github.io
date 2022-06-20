@@ -23,6 +23,8 @@
 #### Two-person Show
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
 
+<!-- 
+
 <br>
 <br>
 
@@ -54,9 +56,11 @@
 
 </div>
 </details>
-  
+
   <br>
   <br>
+
+-->
   
 #### Grants
 - 2022 Research Grant, Korea National University of Arts, KR
@@ -101,6 +105,7 @@ energywhoisshe@gmail.com
 #### 2인전
 - **2020.6.29~7.9 《크게 슬플 일인가요》, 175갤러리**
 
+<!--
 <br>
 <br>
   
@@ -135,6 +140,8 @@ energywhoisshe@gmail.com
   
   <br>
   <br>
+  
+  -->
   
 #### 기금
 - 2022 리서치 지원, 한국예술종합학교 공연전시센터
