@@ -23,7 +23,7 @@
 #### Two-person Show
 - **2020.6.29 - 7.9 《Be Sad I Dare You》 Two-person show as an artist & co-director, Performance based video 〈Far For Triangle〉 and installation, Gallery175(Seoul, KR)**
 
-#### Group Show / Showcase / Screening / Performance / Publication
+#### Group Show, Showcase, Screening, Performance, Publication
 
 <details>
 <summary>more</summary>
