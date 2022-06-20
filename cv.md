@@ -60,6 +60,10 @@
 - 2020 Exhibition Grant, Korea National University of Arts, KR
 - 2019 Project Grant, Malmo Art Academy, SE
   
+#### Periodicals (Megazines and Webzines)
+- AVP Quarterly (2021. Winter) '109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)'
+- Public Art (2020.08), '영원히 익숙해지지 않는 건 없다(조윤지 기자)'
+  
 #### Collection
 energywhoisshe@gmail.com
 
@@ -125,10 +129,13 @@ energywhoisshe@gmail.com
 - 2020 기획전시 지원, 한국예술종합학교 조형연구소
 - 2020 기획전시 지원, 한국예술종합학교 복도갤러리
 - 2019 프로젝트 제작 지원, Malmo Art Academy, 스웨덴
+
+#### 작업에 대한 리뷰 및 언급 (정기간행물 및 보도물)
+- 계간 시청각 5호 2021.겨울, 109 없거나 또는 안 보이거나: 동시대 한국 레즈비언 미술이라는 곤란함에 관하여-이연숙(리타)
+- 월간 퍼블릭아트 2020년 08월호, 영원히 익숙해지지 않는 건 없다(조윤지 기자)
   
 #### 소장
 energywhoisshe@gmail.com
-
 
 <!--
   <br>
