@@ -65,7 +65,7 @@
 #### Grants
 - 2022 Research Grant, Korea National University of Arts, KR
 - 2022 Online Art Project & Publication Grant, MCST(Ministry of Culture, Sports and Tourism) & ARKO(Arts Council Korea), KR
-- 2021 Research Grant, S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture, KR
+- 2022 Research Grant, S.A.P(Seoul Artists' Platform), SFAC(Seoul Foundation for Arts and Culture, KR
 - 2021 Solo Exhibition Grant, K-ARTS ON ROAD: ON STAGE, Supported by Korea National University of Arts, KR
 - 2021 ART&TECH Education & Media Facade Exhibition Grant, Bucheon Art Bunker B39, KR
 - 2021 ART&TECH Education & Game Project Grant, Art Center Nabi & KOCCA(Korea Creative Content Agency), KR
