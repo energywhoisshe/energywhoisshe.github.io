@@ -8,7 +8,7 @@
 
 [CV](http://energywhoisshe.github.io/cv)   
 [@energywhoisshe](http://instagram.com/energywhoisshe/)  
-[Welcome to our project archive](http://) (In-Process for reopening on this summer, 2022)
+[Welcome to our project archive](http://) (In-Process for reopening in this summer, 2022)
 
 <br>
 <br>
