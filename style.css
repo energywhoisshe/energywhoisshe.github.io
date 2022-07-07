@@ -1,8 +1,18 @@
-html, body{
+body{
     font-family: sans-serif;
     line-height: 1.5;
-    background-color: white;
     padding:1em;
+    word-break: keep-all;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 details{
@@ -13,6 +23,8 @@ details{
   box-sizing: border-box;
   background-color: #EEEEEE;
   color: grey;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
 }
 summary{
   font-weight: 900;
@@ -24,18 +36,26 @@ summary{
 }
 
 .statement{
-  padding: 1em;
+  padding: 3em;
 }
 
 .history{
   background-color: #EEEEEE;
+  color: grey;
+  border-radius: 1px;
+  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
   padding: 1em;
 }
 
-.project{
+.content{
   padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .c++{
-  
+
+}
+
+.multi{
+  column-count: 2;
 }
