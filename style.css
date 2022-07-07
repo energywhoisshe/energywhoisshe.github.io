@@ -13,7 +13,8 @@ html {
   top: 0;
   bottom: 0;
   position: absolute;
-  background-color: whitesmoke;
+  background: whitesmoke;
+  /*background: linear-gradient(to left, whitesmoke 40%, HoneyDew 80%, white 85%, HoneyDew 100%);*/
 }
 
 footer{
@@ -24,7 +25,6 @@ footer{
   width: 100%;
   overflow: hidden;
   font-size: .75rem;
-  background-color: whitesmoke;
 }
 
 details{
@@ -41,6 +41,10 @@ details{
 }
 
 summary{
+  border: 1em;
+  border: black 1px solid;
+  border-radius: 50%;
+  width: 49px
   font-weight: 900;
   list-style: none;
   text-align: center;
@@ -48,12 +52,28 @@ summary{
   color: grey;
   padding-bottom: 1em;
 }
+summary::-webkit-details-marker{
+  display: none;
+}
 image, video{
   display: block;
   height: auto;
   max-width: 100%;
   border-radius:30%;
 }
+a:link{
+  color: black;
+}
+a:visited{
+  color: black;
+}
+a:hover{
+  color: black;
+}
+a:active{
+  color: black;
+}
+
 
 .statement{
   padding: 3em;
@@ -65,6 +85,7 @@ image, video{
   padding: 1em;
   padding: 1em;
   box-shadow: 0px 0px 20px #FFF;
+  background-color: white;
 }
 .content{
   padding-top: 3em;
