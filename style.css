@@ -1,18 +1,41 @@
+html, body{
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: white;
+    padding:1em;
+}
+
 details{
   width: 100%;
   max-width: 750px;
   text-align: justify;
   padding: 1em;
   box-sizing: border-box;
-  background-color: #11111;
+  background-color: #EEEEEE;
   color: grey;
 }
 summary{
   font-weight: 900;
-  border: fuchsia 1px solid;
-  border-radius: 50%;
   list-style: none;
-  width: 49px;
   text-align: center;
   cursor: pointer;
+  color: grey;
+  padding-bottom: 1em;
+}
+
+.statement{
+  padding: 1em;
+}
+
+.history{
+  background-color: #EEEEEE;
+  padding: 1em;
+}
+
+.project{
+  padding-top: 3em;
+}
+
+.c++{
+  
 }
