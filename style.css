@@ -18,26 +18,26 @@ html {
 }
 
 footer{
-  display: flex;
-  position: sticky;
+  /* display: flex; */
+  /* position: sticky; */
   z-index: 999;
   bottom: 0;
   width: 100%;
   overflow: hidden;
-  font-size: .75rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 details{
   width: 100%;
   max-width: 750px;
-  text-align: justify;
-  padding: 1em;
   box-sizing: border-box;
   border-radius: 10px;
   box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
   padding: 1em;
   box-shadow: 0px 0px 20px #FFF;
   background-color: white;
+  font-size: small;
 }
 
 summary{
@@ -55,11 +55,19 @@ summary{
 summary::-webkit-details-marker{
   display: none;
 }
+pre{
+  width: 100%;
+  max-width: 100%;
+  border: 1em;
+  border: black 1px solid;
+  border-radius: 100%;
+  width: 100px;
+}
 image, video{
   display: block;
   height: auto;
   max-width: 100%;
-  border-radius:30%;
+  border-radius: 30%;
 }
 a:link{
   color: black;
