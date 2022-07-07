@@ -13,6 +13,18 @@ html {
   top: 0;
   bottom: 0;
   position: absolute;
+  background-color: whitesmoke;
+}
+
+footer{
+  display: flex;
+  position: sticky;
+  z-index: 999;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: whitesmoke;
 }
 
 details{
@@ -21,11 +33,13 @@ details{
   text-align: justify;
   padding: 1em;
   box-sizing: border-box;
-  background-color: #EEEEEE;
-  color: grey;
-  border-radius: 1px;
+  border-radius: 10px;
   box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+  padding: 1em;
+  box-shadow: 0px 0px 20px #FFF;
+  background-color: white;
 }
+
 summary{
   font-weight: 900;
   list-style: none;
@@ -34,28 +48,49 @@ summary{
   color: grey;
   padding-bottom: 1em;
 }
+image, video{
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border-radius:30%;
+}
 
 .statement{
   padding: 3em;
-}
-
-.history{
-  background-color: #EEEEEE;
-  color: grey;
-  border-radius: 1px;
-  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
   padding: 1em;
 }
-
+.history{
+  font-weight: 900;
+  font-size: small;
+  padding: 1em;
+  padding: 1em;
+  box-shadow: 0px 0px 20px #FFF;
+}
 .content{
   padding-top: 3em;
   padding-bottom: 3em;
 }
-
+.content-header{
+  font-weight: 900;
+  padding-bottom: 1em;
+}
 .c++{
 
 }
-
 .multi{
   column-count: 2;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.tags a {
+  font-size: .75rem;
+  color: black;
+  background-color: gainsboro !important;
+}
+.tags a:hover {
+  background-color: silver !important;
 }
