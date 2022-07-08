@@ -60,7 +60,10 @@ pre{
   width: 100%;
   max-width: 100%;
   overflow: auto;
-  box-shadow: inset 5em 0em whitesmoke;
+  box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
+}
+iframe {
+  overflow: auto;
   box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
 }
 image, video{
