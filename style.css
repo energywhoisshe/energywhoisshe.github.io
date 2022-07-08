@@ -1,4 +1,4 @@
-body{
+body {
     font-family: sans-serif;
     line-height: 1.5;
     padding:1em;
@@ -56,12 +56,12 @@ summary::-webkit-details-marker{
   display: none;
 }
 pre{
+  /* 가로스크롤 */
   width: 100%;
   max-width: 100%;
-  border: 1em;
-  border: black 1px solid;
-  border-radius: 100%;
-  width: 100px;
+  overflow: auto;
+  box-shadow: inset 5em 0em whitesmoke;
+  box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
 }
 image, video{
   display: block;
