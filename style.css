@@ -3,6 +3,8 @@ body {
     line-height: 1.5;
     padding:1em;
     word-break: keep-all;
+    background: white;
+    border-radius: 0 60px 0 80px;
 }
 
 html {
@@ -13,7 +15,8 @@ html {
   top: 0;
   bottom: 0;
   position: absolute;
-  /*background: linear-gradient(to right, blue 5%, whitesmoke 20%, HoneyDew);*/
+  max-width: 800px;
+  padding-top: 100px;
 }
 
 hr {
@@ -94,6 +97,10 @@ a:active{
 .statement{
   padding: 3em;
   padding: 1em;
+  border-radius: 0px 0px 80px 0px;
+  /*background: black;*/
+  /*color: white;*/
+  /*max-width: 500px;*/
 }
 .history{
   font-weight: 900;
@@ -102,6 +109,11 @@ a:active{
   padding: 1em;
   box-shadow: 0px 0px 20px #FFF;
   background-color: white;
+  /* 가로스크롤 */
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
 }
 .content{
   padding-top: 3em;
@@ -152,4 +164,19 @@ a:active{
 
 .text{
   mix-blend-mode: difference;
+}
+
+button {
+  background-color: black;
+  border: none;
+  outline: black 1em;
+  border-radius: 0 0 80px 0;
+  weight: 10em;
+  width:5em;
+  height: 5em;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: white;
 }
