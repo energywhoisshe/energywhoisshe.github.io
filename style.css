@@ -110,12 +110,10 @@ a:active{
   /*max-width: 500px;*/
 }
 .history{
-  font-weight: 900;
   font-size: small;
   padding: 1em;
   box-shadow: 0px 0px 20px #FFF;
-  background-color: white;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  background-color: ;
   box-shadow: rgba(222, 222, 0, 0.45) 0px 25px 20px -20px;
 }
 .cv{
