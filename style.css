@@ -47,9 +47,10 @@ details{
   font-size: small;
   box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
   /*padding-bottom: 60px;*/
-  /* 넓은 그라데이션 그림 자 */
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-  }
+  /* 그림자 */
+  box-shadow: rgba(0, 0, 0, 0.4) -5px -10px 10px 1px, rgba(0, 0, 0, 0.4) 2px 1px 10px 1px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px!important;
+ }
 /* 접고 펼치는 버튼 */
 summary{
   border-radius: 0 0 0 80px;
@@ -59,7 +60,7 @@ summary{
   text-align: center;
   cursor: pointer;
   color: grey;
-  background: white;
+  background: rgba(0,0,0,0);
 }
 summary::-webkit-details-marker{
   display: none;
@@ -70,16 +71,20 @@ pre{
   max-width: 100%;
   overflow: auto;
   box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
+  border-radius: 0 0 0 80px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: inset 6px 6px 10px rgba(50, 50, 93, 0.25),
+    inset -6px -6px 10px rgba(0, 0, 0, 0.25)!important;
 }
 iframe {
   overflow: auto;
   box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
 }
-image, video{
-  display: block;
+img, video{
+  display: inline;
   height: auto;
   max-width: 100%;
-  border-radius: 30%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 a:link{
   color: black;
