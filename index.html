@@ -10,21 +10,40 @@
     <link href="https://fonts.google.com" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <div style="padding-bottom: 15em;">
-    <img src="https://github.com/energywhoisshe/energywhoisshe.github.io/blob/main/micro%20elephant.jpg?raw=true">
     </div>
+    <style>
+      .ca {text-transform: capitalize;}
+      .up {text-transform: uppercase;}
+      .lo {text-transform: lowercase;}
+      .va {font-variant: small-caps;}
+    </style>
+    <!-- 랜덤이미지 출력 1/2-->
+    <script language="javascript">
+    function random_img(){
+      num=Math.floor(Math.random()*6);//다섯개 이상의 파일을 출력하려면 5를 해당숫자로 수정.
+      document.randomImage.src="image"+num+".jpg";
+    }
+    </script>
+
   </head>
 
   <body>
+    <!-- 랜덤이미지 출력 2/2-->
+    <img name="randomImage">
+    <script>
+    random_img(); //위의 이미지태그 아래쪽에 반드시 추가
+    </script>
+
     <div style ="top: 100vh;, width: 85vw; position: relative; margin: 0 auto;">
     <img scr="" class="paper">
     </div>
     <meta name="google-site-verification" content="tEMnDX4Al9LJXo_Wq4zhZKvJzSwSJrUR2qQp6q-AQoA" />
-    <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fenergywhoisshe.github.io&count_bg=%23E7E7E7&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=energy&edge_flat=false"/></a>
 <!-- Main Statement and Contact -->
     <br>
     <div class="statement">
-          <p>Cha Yeonså (b.1997, Republic of Korea, live and work in Seoul) works on game, video, performance and writing. They are interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant beings.
-          </p><p>차연서는 일탈적 존재 안에 생존하는 다중적 몸과 마음, 에너지 등의 개별적인 성숙도와 연결망을 관찰하고 서로 돌보게 하는 데에 관심을 두고 있습니다.
+          <p class="ca">Welcome to our project archive</p><p class = "up" style="word-spacing: 2em;">Interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant beings.
+          </p>
+          <p>차연서는 일탈적 존재 안에 생존하는 다중적 몸과 마음, 에너지 등의 개별적인 성숙도와 연결망을 관찰하고 서로 돌보게 하는 데에 관심을 두고 있습니다.
           </p>
           <br>
           <a href="http://energywhoisshe.github.io/CV.html">CV</a>
@@ -41,6 +60,13 @@
           <dd>'3 Households' Online Publication on Fall 2022</dd>
           <dd>The Second Solo Show on Fall 2023 in Seoul</dd>
       </div>
+      <br>
+
+      <!-- hit counter -->
+      <div style="text-align: right;">
+        <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fenergywhoisshe.github.io&count_bg=%23555555&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=energy&edge_flat=false"/></a>
+      </div>
+
       <!-- Past -->
       <div style = "padding-top:10em;"
       Project Archive 2022 - 2020
