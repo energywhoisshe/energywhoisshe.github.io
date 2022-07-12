@@ -13,7 +13,12 @@ html {
   top: 0;
   bottom: 0;
   position: absolute;
-  background: whitesmoke;
+  /*background: linear-gradient(to right, blue 5%, whitesmoke 20%, HoneyDew);*/
+}
+
+hr {
+  background: black;
+  mix-blend-mode: difference;
 }
 
 footer{
@@ -38,11 +43,11 @@ details{
   background-color: white;
   font-size: small;
 }
-
+/* 접고 펼치는 버튼 */
 summary{
   border: 1em;
   border: black 1px solid;
-  border-radius: 50%;
+  border-radius: 100%;
   width: 49px
   font-weight: 900;
   list-style: none;
@@ -50,6 +55,7 @@ summary{
   cursor: pointer;
   color: grey;
   padding-bottom: 1em;
+  /*background: black;*/
 }
 summary::-webkit-details-marker{
   display: none;
@@ -142,4 +148,8 @@ a:active{
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.text{
+  mix-blend-mode: difference;
 }
