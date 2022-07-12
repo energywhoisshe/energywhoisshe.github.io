@@ -50,6 +50,7 @@ details{
   /* 그림자 */
   box-shadow: rgba(0, 0, 0, 0.4) -5px -10px 10px 1px, rgba(0, 0, 0, 0.4) 2px 1px 10px 1px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px!important;
+  box-shadow: rgba(0, 0, 0) 0px 20px 30px -10px!important;
  }
 /* 접고 펼치는 버튼 */
 summary{
