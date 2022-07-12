@@ -39,26 +39,27 @@ details{
   width: 100%;
   max-width: 750px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 0 0 0 80px;
   box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
   padding: 1em;
   box-shadow: 0px 0px 20px #FFF;
   background-color: white;
   font-size: small;
-}
+  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+  /*padding-bottom: 60px;*/
+  /* 넓은 그라데이션 그림 자 */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  }
 /* 접고 펼치는 버튼 */
 summary{
-  border: 1em;
-  border: black 1px solid;
-  border-radius: 100%;
-  width: 49px
-  font-weight: 900;
+  border-radius: 0 0 0 80px;
+  width: 100%;
+  height: 3em;
   list-style: none;
   text-align: center;
   cursor: pointer;
   color: grey;
-  padding-bottom: 1em;
-  /*background: black;*/
+  background: white;
 }
 summary::-webkit-details-marker{
   display: none;
@@ -109,11 +110,8 @@ a:active{
   padding: 1em;
   box-shadow: 0px 0px 20px #FFF;
   background-color: white;
-  /* 가로스크롤 */
-  width: 100%;
-  max-width: 100%;
-  overflow: auto;
-  box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgba(222, 222, 0, 0.45) 0px 25px 20px -20px;
 }
 .content{
   padding-top: 3em;
@@ -167,7 +165,7 @@ a:active{
 }
 
 button {
-  background-color: black;
+  background-color: white;
   border: none;
   outline: black 1em;
   border-radius: 0 0 80px 0;
@@ -178,5 +176,6 @@ button {
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  color: white;
+  color: black;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
