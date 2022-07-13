@@ -5,6 +5,9 @@ body {
     word-break: keep-all;
     background: white;
     border-radius: 0 60px 0 80px;
+    /* 프린트 문제 */
+    -webkit-print-color-adjust: exact;
+    -webkit-filter: blur(0);
 }
 
 html {
@@ -17,6 +20,9 @@ html {
   position: absolute;
   max-width: 800px;
   padding-top: 100px;
+  /* 프린트 문제 */
+  -webkit-print-color-adjust: exact;
+  -webkit-filter: blur(0);
 }
 
 hr {
