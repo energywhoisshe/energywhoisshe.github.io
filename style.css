@@ -43,13 +43,14 @@ details{
   max-width: 750px;
   box-sizing: border-box;
   border-radius: 0 0 0 80px;
-  box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+  /*box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);*/
   padding: 1em;
-  box-shadow: 0px 0px 20px #FFF;
+  /*box-shadow: 0px 0px 20px #FFF;*/
   background-color: white;
   font-size: small;
-  box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5);*/
   box-shadow: rgba(0, 0, 0) 0px 20px 30px -10px!important;
+  box-shadow: inset 11em 0 whitesmoke !important;
 }
 /* 열렸을 때 https://stackoverflow.com/questions/61292792/css-selector-for-details-element-when-opened*/
 /*
@@ -110,21 +111,29 @@ pre{
   width: 100%;
   max-width: 100%;
   overflow: auto;
-  box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
   border-radius: 0 0 0 80px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  /*box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;*/
+  /*box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;*/
+
+  /*인쇄 안되서 수정
   box-shadow: inset 6px 6px 10px rgba(50, 50, 93, 0.25),
-    inset -6px -6px 10px rgba(0, 0, 0, 0.25)!important;
+    inset -6px -6px 10px rgba(0, 0, 0, 0.25)!important;*/
+    box-shadow: inset 3em 0 white !important;
+
 }
 iframe {
   overflow: auto;
-  box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;
+
+  /*인쇄 안되서 수정
+  box-shadow: 2px 1px 10px 1px whitesmoke, -2px -1px 10px 1px whitesmoke;*/
 }
 img, video{
   display: inline;
   height: auto;
   max-width: 100%;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+  /*인쇄 안되서 수정
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;*/
 }
 a:link{
   color: black;
@@ -141,19 +150,16 @@ a:active{
 
 
 .statement{
-  padding: 3em;
-  padding: 1em;
   border-radius: 0px 0px 80px 0px;
   /*background: black;*/
   /*color: white;*/
   /*max-width: 500px;*/
 }
 .history{
-  font-size: small;
-  padding: 1em;
-  box-shadow: 0px 0px 20px #FFF;
   background-color: ;
-  box-shadow: rgba(222, 222, 0, 0.45) 0px 25px 20px -20px;
+
+  /*인쇄 안되서 수정
+  box-shadow: rgba(222, 222, 0, 0.45) 0px 25px 20px -20px;*/
 }
 .cv{
   font-size: small;
