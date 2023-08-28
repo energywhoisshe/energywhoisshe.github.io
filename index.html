@@ -110,7 +110,6 @@ Games, Comics and Things
 	      	/*margin-left: 3vw;
 	      	margin-right: 1vw;*/
 	      	/*margin-right: 20px;*/
-	      	margin-bottom: 4rem;
 	      	margin-top: 48px;
 	      	/*
 	      	margin: 2rem auto;*/
@@ -198,7 +197,6 @@ Games, Comics and Things
 	    }
 	    hr{
 	      	background-color: rgba(35,35,35,0.1);
-	      	background-color: #dddddd;
 	      	background-color: #121212;
 	      	border: solid 14px rgba(0,0,0,0); width: 100%;
 	      	border-radius: 100% 3px 3px 3px;
@@ -210,23 +208,32 @@ Games, Comics and Things
       		border-radius: 3px 100% 3px 3px;
 
       	}
-      	.hr, .hr-things {
+      	.hr, .hr-things, .hr-comics {
       		padding-right: 2rem;
+
       		width: 90vw;
 			max-width: 1000px;
       		background-color: rgba(35,35,35,0.1);
-	      	background-color: #dddddd;
 	      	background-color: #121212;
 	      	border: solid 14px rgba(0,0,0,0); width: 100%;
-	      	border-radius: 100% 0px 3px 3px;
+	      	border-radius: 100% 3px 3px 3px;
 	      	/* 이미지 넣는 용 */
 	      	background-size: 110%;
 	      	background-position: center;
 	      	background-repeat: none;
 	      	margin-top: 2rem;
+	      	/*중앙정렬*/
+		  	margin-right: auto;
+		  	margin-left:auto;
+      	}
+      	.hr-comics {
+      		/*중앙정렬*/
+		  	margin-right: auto;
+		  	margin-left:auto;
       	}
       	.hr-things {
-      		width: 90vw;
+      		width: 100vw;
+      		max-width: 1280px;
       		border-radius: 3px 100% 3px 3px;
       		background-color: whitesmoke;
       		border-width: 2px; 
@@ -336,10 +343,11 @@ Games, Comics and Things
 			padding-right: 3vw;
 		  max-width:600px;
 		  width: 100%;
-		  margin: 0 auto; 
 		  /*position:relative;*/
 		  font-family: 'Gothic A1', sans-serif; 
 	    	/*메뉴 사이즈*/
+	    	/*중앙정렬*/
+		  margin: 0 auto;
 		}
 		.tabmenu ul{
 		  position: relative;
@@ -387,6 +395,7 @@ Games, Comics and Things
 		  
 		  height:44vh;/* 고정높이 */
 		  overflow-y: scroll;
+		  overflow-x: scroll;
 
 		  border-style: ridge;
 		  border-width: 1px;
@@ -461,7 +470,8 @@ Games, Comics and Things
       		margin-bottom: 2rem;
       	}
       	.projects {
-      		padding-left: 5vw;
+      		padding-left: 1vw;/* 메인 텍스트 좌측 간격*/
+      		padding-right: 7vw;
       	}
       	.gamescomicsandthings{ margin-top: 430px; }
 		.games, .comics, .things {
@@ -471,12 +481,15 @@ Games, Comics and Things
       		padding-left: 1rem;
       		/*margin-top: 2rem;*/
 	    	padding-top: 5rem;
-	    	padding-right: 1rem;
+	    	/*padding-right: 1rem;*/
 	    	font-family: 'Gothic A1', sans-serif;
 	    	border-radius: 3px 3px 3px 3px;
+
+	    	/*중앙정렬*/
+		  	margin: 0 auto;
 	    }
 	    .games, .comics{
-	    	width: 89vw;
+	    	/* width: 89vw;*/
 			max-width: 1000px;
 			background-color: #121212;
 			color: #888888;
@@ -508,10 +521,11 @@ Games, Comics and Things
 	    	overflow-y: scroll;
 	    	padding: 1rem;
 	    	background-color: black;
-	    	border-color: dodgerblue;
+	    	border-color: grey;
 	    	border-width: 6px;
 	    	border-style: ridge;
 	    	border-radius: 3px 3px 3px 3px;
+	    	text-align: center;
 	    }
 	    .div-for-drawing:hover, .div-for-drawing:checked {
 	    	border-color: black;
@@ -520,13 +534,18 @@ Games, Comics and Things
 	    	width: 100%;
 	    	max-width: 400px;
 	    }
-
+	    table {
+	    	width: 100%;
+	    }
 	    
 	    .tablethings {
 	    	font-size: 0.85rem;
+	    	width: 100%;
 	    }
+	    
 	    .tablethings thead tr, .texts thead tr { 
-	    	/*프로젝트 표 총 너비*/
+	    	/*프로젝트 표 총 너비 - 아래에 직접 씀 */
+	    	
 	    }
 	    .tablethings thead tr th, .texts thead tr th { 
 	    	/*프로젝트 제목 칸*/
@@ -574,15 +593,9 @@ Games, Comics and Things
 	    	/*칸 높이제한*/
 	    	overflow-y: scroll;
 	    	max-height: 30vw;
-
-	    	/* 컬러 프레임
-	    	border-color: dodgerblue;
-	    	border-width: 6px;
-	    	border-style: ridge;
-	    	border-radius: 3px 3px 3px 3px;
-	    	width: 100%;
-	    	height: 100%;
-	    	padding:1rem;*/
+	    }
+	    .div-for-scroll:hover, .div-for-credit:hover{
+	    	border-style: inset;
 	    }
 	    .tablethings .div-for-scroll{
 	    	/* 프로젝트 세부내용 칸 */
@@ -595,17 +608,18 @@ Games, Comics and Things
 	    .texts tbody tr td{ /*글 내용 칸 */
 	    	border-width: 0px;
 	    	vertical-align : top;
-	    	font-size: 0.8rem;
+	    	font-size: 0.9rem;
 	    	font-weight: 500;
+
 	    }
 
 	    .tablethings tbody tr td:hover, .texts tbody tr td {
-	    	border-style: inset;
+	    	/*border-style: inset;*/
 	    }
 	    .tablethings .td-for-title {
 	    	border-style: none;
 		}
-		.tablethings tbody tr .td-for-title:hover,  {
+		.tablethings .td-for-title:hover {
 			border-style: none;
 		}
 
@@ -623,28 +637,36 @@ Games, Comics and Things
 
 	    }
 	    .tablethings details summary {
-	    	border-style: groove;
-	    	border-width: 1px;
+	    	border-width: 0px;
 	    	border-radius: 3px 3px 3px 3px;
 	    	padding: 1px;
 	    	marnin-left: 1rem;
+	    	/*border-style: groove;
+	    	border-width: 1px;
+	    	border-color: whitesmoke;*/
+	    }
+	    .things .projects .texts summary {
+	    	
+	    	background-color: #121212; 
+	    	color:#888888; 
+	    	/*텍스트 제목 배경색*/
+	    	/* */
+	    	
+	    }
+	    .things details summary:hover{
+	    	background-color: white;
 	    }
 	    .things .projects .texts details{
 	    	min-width: 350px; /*텍스트 읽는 최소 너비*/
 	    	width: 100%;
-	    	border-style: groove;
-	    	border-width: 1px;
 	    	border-radius: 3px 3px 3px 3px;
-	    	border-color: whitesmoke;
 	    	padding: 1px;
-	    	/*font-family: 'Noto Serif KR', serif;*/
 	    }
 	    .things .projects .texts details p{
 	    	padding-left: 2rem;
 	    }
 	    .things .projects .texts details summary{
-	    	border-style: groove;
-	    	border-width: 1px;
+	    	
 	    	border-radius: 3px 3px 3px 3px;
 	    	border-color: whitesmoke;
 	    	padding: 0.4rem;
@@ -653,9 +675,7 @@ Games, Comics and Things
 	    	margin-left: 2rem;
 	    	padding-left: 2rem;
 	    }
-	    .things details summary:hover{
-	    	background-color: white;
-	    }
+	    
 	    /*표에 이미지 채우기*/
 	    .image-box {
 		    width:380px;
@@ -682,10 +702,19 @@ Games, Comics and Things
 	    footer {
 	    	padding-top: 5rem; 
 	    	font-family: 'Gothic A1', sans-serif;
-	    	margin-bottom: 4rem;
 	    	text-align: center;
 	    	font-weight: bold;
 	    	width: 100vw;
+	    	background-color: #121212;
+	    	color: #888888;
+	    	margin-bottom: 0;
+	    	padding-bottom: 2rem;
+	    }
+	    .things .projects .texts details {
+	    	background-color: #1C1C1C;
+	    }
+	    .things .projects .texts summary  {
+	    	background-color: #121212;
 	    }
 	</style>
 </head>
@@ -720,11 +749,11 @@ Games, Comics and Things
 	      	
 		    </li>
 		    <li id="tab3" class="btnCon"><input type="radio" name="tabmenu" id="tabmenu3">
-		      <label for="tabmenu3"><H2>About</H2></label>
+		      <label for="tabmenu3"><H2>Welcome</H2></label>
 		      <div class="tabCon" style="background-color: whitesmoke;">
 				<article>
 				<p>
-					<a href="https://energywhoisshe.com">Energywhoisshe.com</a>에 오신 것을 환영합니다. 게임, 만화, 그리고 모든 것 - 여기 없는 친구들과 비인칭 복수의 스토리텔링. 기획/연출/개발/제작을 겸하는 창작자 차연서가 몸과 컴퓨터로 할 수 있는 이런저런 작업들을 돌보고 있습니다. Welcome to <a href="https://energywhoisshe.com">Energywhoisshe.com</a>. Games, Comics, and Things - impersonal plural storytelling and absent friends. Creator Cha Yeonså, who also plan/direct/develop/produce, is taking care of this and that with their bodies and computers.
+					<a href="https://energywhoisshe.com">Energywhoisshe.com</a>에 오신 것을 환영합니다. 게임, 만화, 그리고 모든 것. 기획/연출/개발/제작을 겸하는 창작자 차연서가 몸과 컴퓨터로 할 수 있는 이런저런 작업들을 돌보고 있습니다. Welcome to <a href="https://energywhoisshe.com">Energywhoisshe.com</a>. Games, Comics, and Things. Creator Cha Yeonså, who also plan/direct/develop/produce, is taking care of this and that with their bodies and computers.
 				</p>
 				</article>
 		      	<p>
@@ -790,14 +819,14 @@ Games, Comics and Things
 		</article>
 	</div>
 	</div>
-	<div class="hr"><h2 style="text-align: right; color: whitesmoke;">Comics</h2></div>
+	<div class="hr-comics"><h2 style="text-align: right; color: whitesmoke;">Comics</h2></div>
 	<div class="comics">
 		<article class="projects">
 			<p>
 				<div class="div-for-drawing">
-			      	<img src="img/drawing_festival1.jpg" alt="장승">
-			      	<img src="img/drawing_festival2.jpg" alt="장승">
-			      	<img src="img/drawing_scissoring.jpg" alt="가위눌림">
+			      	<img src="img/drawing_festival1.jpg" alt="장승"><br>
+			      	<img src="img/drawing_festival2.jpg" alt="장승"><br>
+			      	<img src="img/drawing_scissoring.jpg" alt="가위눌림"><br>
 			      	<img src="img/drawing_baby.jpg" alt="아기">
 			    </div>
 			</p>
@@ -816,11 +845,12 @@ Games, Comics and Things
 	</div>
 	<div class="hr-things">
 		<p>
-			<h2 style="text-align: left; margin-left: 2rem;">Things</h2>
+			<h2 style="text-align: left; margin-left: 2rem;">and Things</h2>
 		</p>
 	</div>
 	<div class="things">
-		<article class="projects" style="padding-left:0;">
+		<div style="font-size: 20px; padding-left: 2vw;"> → → → </div>
+		<article class="projects" style="padding-left:0; padding-right:0; margin-bottom: 0;">
 			<table class="tablethings">
 				<thead>
 					<tr>
@@ -829,7 +859,7 @@ Games, Comics and Things
 						<th>제목<br>Title</th>
 						<th>년도<br>Year</th>
 						<th>장르<br>Gerne</th>
-						<th style="width: 30vw;">무엇<br>Thing</th>
+						<th style="width: 100%;">무엇<br>Thing</th>
 
 						<th>함께<br>With</th>
 						<th>후원<br>Support</th>
@@ -1341,11 +1371,13 @@ Games, Comics and Things
 			</table>
 
 		<!--프로젝트 텍스트-->
+		<div class="things" style="background-color: #121212; color:#888888;">
+		<article class="projects" style="padding-left:0; padding-right:0;">
 		<table class="texts">
-				<thead>
+				<thead style="background-color: #121212; color:#888888;">
 					<tr>
-						<th>글<br>Texts</th>
-						<th>글<br>Texts</th>
+						<th style="border-width: 0px;">글<br>Texts</th>
+						<th style="border-width: 0px;">글<br>Texts</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -2234,11 +2266,19 @@ void 불가살이()
 				</tbody>
 		</table>
 	</div>
+	</article></div>
 	</section>
-
 	<footer>
-		<a href="https://energywhoisshe.com">Energywhoisshe.com</a>
-		<br>© 2023. Energywhoisshe Games & Comics
+		<a style="color: dodgerblue;" href="https://energywhoisshe.com">Energywhoisshe.com</a>
+		<br><a style="color: forestgreen;"href="https://energywhoisshe.com">Energywhoisshe.com</a>
+		<br><a style="color: DarkMagenta;"href="https://energywhoisshe.com">Energywhoisshe.com</a>
+
+		<br><a style="color: orangered;"href="https://energywhoisshe.com">Energywhoisshe.com</a>
+		<br><a style="color: gold;"href="https://energywhoisshe.com">Energywhoisshe.com</a>
+		
+		
+		<br>
+		<br>에너지후이쉬 Energywhoisshe © 2023.
 
 	</footer>
 </body>
