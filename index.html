@@ -534,188 +534,7 @@ Games, Comics and Things
 	    	width: 100%;
 	    	max-width: 400px;
 	    }
-	    table {
-	    	width: 100%;
-	    }
-	    
-	    .tablethings {
-	    	font-size: 0.85rem;
-	    	width: 100%;
-	    }
-	    
-	    .tablethings thead tr, .texts thead tr { 
-	    	/*프로젝트 표 총 너비 - 아래에 직접 씀 */
-	    	
-	    }
-	    .tablethings thead tr th, .texts thead tr th { 
-	    	/*프로젝트 제목 칸*/
-	    	font-size: 0.8rem;
-	    	padding-right: 1rem;
-	    	padding-left: 1rem;
-	    	border-style: groove;
-	    	border-width: 1px;
-	    	border-radius: 3px 3px 3px 3px;
-	    }
-	    .tablethings tbody tr .td-for-image { 
-	    	/*표 이미지 칸*/
-	    	padding: 0;
-	    	min-width: 120px;
-	    	/*표 안에서 수직 정렬*/
-			vertical-align: top;
-			max-height: 30vw;
-	    }
-		.tablethings tbody tr .td-for-image .div-for-image { 
-			/*표 이미지 칸*/
-			overflow-y: scroll;
-			min-height: 100px; 
-			max-height: 30vw;
-		}
-		.tablethings figure {
-			/*표 이미지 칸*/
-	    	line-height: 0px;
-	    	margin-bottom: 0.7rem;
-	    }
-	    .tablethings figure img{
-	    	/*표 이미지 칸*/
-	    	margin: 0;
-	    	padding: 0;
-	    }
-	    .tablethings tbody tr td { 
-	    	/*프로젝트 내용 칸*/
-	    	padding-left: 1rem;
-	    	background-color: whitesmoke;
-	    	/*border-style: groove;
-	    	border-width: 1px;
-	    	border-radius: 3px 3px 3px 3px;*/
-	    }
-	    .tablethings tbody tr td .div-for-scroll, .div-for-credit
-	    {
-	    	/*칸 높이제한*/
-	    	overflow-y: scroll;
-	    	max-height: 30vw;
-	    }
-	    .div-for-scroll:hover, .div-for-credit:hover{
-	    	border-style: inset;
-	    }
-	    .tablethings .div-for-scroll{
-	    	/* 프로젝트 세부내용 칸 */
-	    	font-size: 0.78rem;
-	    }
-	    .tablethings .div-for-credit{
-	    	/* 크레딧 칸 */
-	    	font-size: 0.7rem;
-	    }
-	    .texts tbody tr td{ /*글 내용 칸 */
-	    	border-width: 0px;
-	    	vertical-align : top;
-	    	font-size: 0.9rem;
-	    	font-weight: 500;
 
-	    }
-
-	    .tablethings tbody tr td:hover, .texts tbody tr td {
-	    	/*border-style: inset;*/
-	    }
-	    .tablethings .td-for-title {
-	    	border-style: none;
-		}
-		.tablethings .td-for-title:hover {
-			border-style: none;
-		}
-
-	    .tablethings tbody tr td dl dt, .texts tbody tr td { 	/*리스트*/
-	    	list-style-type: square;
-	    }
-	    .tablethings tbody tr td dl dd, .texts tbody tr td dl dd { /*리스트*/
-	    	list-style-type: square;
-	    }
-	    .tablethings details {
-	    	/*border-style: groove;
-	    	border-width: 0px;
-	    	border-radius: 3px 3px 3px 3px;*/
-	    	padding: 1px;
-
-	    }
-	    .tablethings details summary {
-	    	border-width: 0px;
-	    	border-radius: 3px 3px 3px 3px;
-	    	padding: 1px;
-	    	marnin-left: 1rem;
-	    	/*border-style: groove;
-	    	border-width: 1px;
-	    	border-color: whitesmoke;*/
-	    }
-	    .things .projects .texts summary {
-	    	
-	    	background-color: #121212; 
-	    	color:#888888; 
-	    	/*텍스트 제목 배경색*/
-	    	/* */
-	    	
-	    }
-	    .things details summary:hover{
-	    	background-color: white;
-	    }
-	    .things .projects .texts details{
-	    	min-width: 350px; /*텍스트 읽는 최소 너비*/
-	    	width: 100%;
-	    	border-radius: 3px 3px 3px 3px;
-	    	padding: 1px;
-	    }
-	    .things .projects .texts details p{
-	    	padding-left: 2rem;
-	    }
-	    .things .projects .texts details summary{
-	    	
-	    	border-radius: 3px 3px 3px 3px;
-	    	border-color: whitesmoke;
-	    	padding: 0.4rem;
-	    }
-	    .things .projects .texts ol, .things .projects .texts ul, .things .projects .texts pre {
-	    	margin-left: 2rem;
-	    	padding-left: 2rem;
-	    }
-	    
-	    /*표에 이미지 채우기*/
-	    .image-box {
-		    width:380px;
-		    height:220px;
-		    overflow:hidden;
-		    margin:0 auto;
-		}
-
-		.image-thumbnail {
-		    width:100%;
-		    height:100%;
-		    object-fit:cover;
-		}
-	    pre {
-	    	background-color: gainsboro;
-	    	border-radius: 3px 3px 3px 3px;
-	    	overflow-y: scroll;
-	    	margin-bottom: 1rem;
-	    	padding:1rem;
-	    }
-	    code {
-	    	/*font-family: 'Noto Serif KR', serif;*/
-	    }
-	    footer {
-	    	padding-top: 5rem; 
-	    	font-family: 'Gothic A1', sans-serif;
-	    	text-align: center;
-	    	font-weight: bold;
-	    	width: 100vw;
-	    	background-color: #121212;
-	    	color: #888888;
-	    	margin-bottom: 0;
-	    	padding-bottom: 2rem;
-	    }
-	    .things .projects .texts details {
-	    	background-color: #1C1C1C;
-	    }
-	    .things .projects .texts summary  {
-	    	background-color: #121212;
-	    }
 	</style>
 </head>
 <body>
@@ -843,6 +662,185 @@ Games, Comics and Things
 			</p>
 		</article>
 	</div>
+	<style>
+		figure .posters {
+			width: 95%; 
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			margin-left: 1rem;
+		}
+		table {
+	    	width: 100%;
+	    }
+	    
+	    .tablethings {
+	    	font-size: 0.85rem;
+	    	width: 100%;
+	    }
+	    
+	    .tablethings thead tr, .texts thead tr { 
+	    	/*프로젝트 표 총 너비 - 아래에 직접 씀 */
+	    	
+	    }
+	    .tablethings thead tr th, .texts thead tr th { 
+	    	/*프로젝트 제목 칸*/
+	    	font-size: 0.8rem;
+	    	padding-right: 1rem;
+	    	padding-left: 1rem;
+	    	border-style: groove;
+	    	border-width: 1px;
+	    	border-radius: 3px 3px 3px 3px;
+	    }
+	    .tablethings tbody tr .td-for-image { 
+	    	/*표 이미지 칸*/
+	    	padding: 0;
+	    	min-width: 120px;
+	    	/*표 안에서 수직 정렬*/
+			vertical-align: top;
+			max-height: 30vw;
+	    }
+		.tablethings tbody tr .td-for-image .div-for-image { 
+			/*표 이미지 칸*/
+			overflow-y: scroll;
+			min-height: 100px; 
+			max-height: 30vw;
+		}
+		.tablethings figure {
+			/*표 이미지 칸*/
+	    	line-height: 0px;
+	    	margin-bottom: 0.7rem;
+	    }
+	    .tablethings figure img{
+	    	/*표 이미지 칸*/
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    .tablethings tbody tr td { 
+	    	/*프로젝트 내용 칸*/
+	    	padding-left: 1rem;
+	    	background-color: whitesmoke;
+	    	/*border-style: groove;
+	    	border-width: 1px;
+	    	border-radius: 3px 3px 3px 3px;*/
+	    }
+	    .tablethings tbody tr td .div-for-scroll, .div-for-credit
+	    {
+	    	/*칸 높이제한*/
+	    	overflow-y: scroll;
+	    	max-height: 30vw;
+	    }
+	    .div-for-scroll:hover, .div-for-credit:hover{
+	    	border-style: inset;
+	    }
+	    .tablethings .div-for-scroll{
+	    	/* 프로젝트 세부내용 칸 */
+	    	font-size: 0.78rem;
+	    }
+	    .tablethings .div-for-credit{
+	    	/* 크레딧 칸 */
+	    	font-size: 0.7rem;
+	    }
+	    .texts tbody tr td{ /*글 내용 칸 */
+	    	border-width: 0px;
+	    	vertical-align : top;
+	    	font-size: 0.9rem;
+	    	font-weight: 500;
+
+	    }
+
+	    .tablethings tbody tr td:hover, .texts tbody tr td {
+	    	/*border-style: inset;*/
+	    }
+	    .tablethings .td-for-title {
+	    	border-style: none;
+		}
+		.tablethings .td-for-title:hover {
+			border-style: none;
+		}
+
+	    .tablethings tbody tr td dl dt, .texts tbody tr td { 	/*리스트*/
+	    	list-style-type: square;
+	    }
+	    .tablethings tbody tr td dl dd, .texts tbody tr td dl dd { /*리스트*/
+	    	list-style-type: square;
+	    }
+	    .tablethings details {
+	    	/*border-style: groove;
+	    	border-width: 0px;
+	    	border-radius: 3px 3px 3px 3px;*/
+	    	padding: 1px;
+
+	    }
+	    .tablethings details summary {
+	    	border-width: 0px;
+	    	border-radius: 3px 3px 3px 3px;
+	    	padding: 1px;
+	    	marnin-left: 1rem;
+	    	border-style: groove;
+	    	border-width: 1px;
+	    	border-color: whitesmoke;
+	    	padding-left:1rem;
+	    }
+	    .things .projects .texts summary {
+	    	
+	    	background-color: #121212; 
+	    	color:#888888; 
+	    	/*텍스트 제목 배경색*/
+	    	/* */
+	    	
+	    }
+	    .things details summary:hover{
+	    	background-color: white;
+	    }
+	    .things .projects .texts details{
+	    	min-width: 350px; /*텍스트 읽는 최소 너비*/
+	    	width: 100%;
+	    	border-radius: 3px 3px 3px 3px;
+	    	padding: 1px;
+	    }
+	    .things .projects .texts details p{
+	    	padding-left: 2rem;
+	    }
+	    .things .projects .texts details summary{
+	    	
+	    	border-radius: 3px 3px 3px 3px;
+	    	border-color: whitesmoke;
+	    	padding: 0.4rem;
+	    }
+	    .things .projects .texts ol, .things .projects .texts ul, .things .projects .texts pre {
+	    	margin-left: 2rem;
+	    	padding-left: 2rem;
+	    }
+	    
+	    /*표에 이미지 채우기*/
+	    .image-box {
+		    width:380px;
+		    height:220px;
+		    overflow:hidden;
+		    margin:0 auto;
+		}
+
+		.image-thumbnail {
+		    width:100%;
+		    height:100%;
+		    object-fit:cover;
+		}
+	    pre {
+	    	background-color: gainsboro;
+	    	border-radius: 3px 3px 3px 3px;
+	    	overflow-y: scroll;
+	    	margin-bottom: 1rem;
+	    	padding:1rem;
+	    }
+	    code {
+	    	/*font-family: 'Noto Serif KR', serif;*/
+	    }
+	    .things .projects .texts details {
+	    	background-color: #1C1C1C;
+	    }
+	    .things .projects .texts summary  {
+	    	background-color: #121212;
+	    }
+	</style>
 	<div class="hr-things">
 		<p>
 			<h2 style="text-align: left; margin-left: 2rem;">and Things</h2>
@@ -883,12 +881,10 @@ Games, Comics and Things
 								<figure>
 									<img src="img/unbelievable4.jpg" alt="축제 Festival">
 								</figure>
-								<figure>
-									<img src="img/unbelievable1.png" alt="이 기막힌 잠 This Unbelievable Sleep">
-								</figure>
-								<figure>
-									<img src="img/unbelievable-postcard1.png" alt="이 기막힌 잠 This Unbelievable Sleep">
-									<img src="img/unbelievable-postcard2.png" alt="이 기막힌 잠 This Unbelievable Sleep">
+								<figure style="text-align:center;">
+									<img class="posters" src="img/unbelievable1.png" alt="이 기막힌 잠 This Unbelievable Sleep">
+									<img class="posters" src="img/poster2_web.png">
+									<img class="posters" src="img/poster1_web.png">
 								</figure>
 							</div>
 						</td>
@@ -897,23 +893,28 @@ Games, Comics and Things
 						<td class=".td-for-title">온라인 개인전<br>Online Solo Show</td>
 
 						<td><div class="div-for-scroll">
-							<dl>
-								<dt><a href="energywhoisshe.github.io/this-unbelievable-sleep">이 기막힌 잠</a>, 웹사이트, 온라인(KR), 2023.06</dt>
-								<dd>축제(평면, 2023), 7 Elephants(게임, 2023), 모스키토라바쥬스(게임, AI사진, 2023), <a href="https://youtu.be/i2cnXF9Qrac">인터뷰</a>(비디오, 2023), <a href="https://youtu.be/QUkL0x6syOw">퇴거</a>(비디오, 2023)</dd>
-							</dl>
-							<dl>
-								<dt><a href="energywhoisshe.github.io/this-unbelievable-sleep">This Unbelievable Sleep</a>, Website, Online(KR), 2023.06.</dt>
-								<dd>Festival(Painting, 2023), 7 Elephants(Game. 2023), Mosquitolarvajuice(Game, AI Photography, 2023), <a href="https://youtu.be/i2cnXF9Qrac">Interview</a>(Video, 2023), <a href="https://youtu.be/QUkL0x6syOw">Deinstallation</a>(Video, 2023)</dd></dd>
-							</dl>
+							<p>
+								<dl>
+									<dt><a href="energywhoisshe.github.io/this-unbelievable-sleep">이 기막힌 잠</a>, 웹사이트, 온라인(KR), 2023.06</dt>
+									<dd>축제(평면, 2023), 7 Elephants(게임, 2023), 모스키토라바쥬스(게임, AI사진, 2023), <a href="https://youtu.be/i2cnXF9Qrac">인터뷰</a>(비디오, 2023), <a href="https://youtu.be/QUkL0x6syOw">퇴거</a>(비디오, 2023)</dd>
+								</dl>
+							</p>
+
+							<p>
+								<dl>
+									<dt><a href="energywhoisshe.github.io/this-unbelievable-sleep">This Unbelievable Sleep</a>, Website, Online(KR), 2023.06.</dt>
+									<dd>Festival(Painting, 2023), 7 Elephants(Game. 2023), Mosquitolarvajuice(Game, AI Photography, 2023), <a href="https://youtu.be/i2cnXF9Qrac">Interview</a>(Video, 2023), <a href="https://youtu.be/QUkL0x6syOw">Deinstallation</a>(Video, 2023)</dd></dd>
+								</dl>
+							</p>
+
+							<p>
+								<a href="Unbelievable.pdf">Postcard.pdf</a>
+							</p>
 						</div></td>
 
 						<td><div class="div-for-credit">[기획/전시] <b>차연서</b>, [협력/협업] <b>양효실 차동하 홍지영</b> [번역] 손나리, 이상민 [웹사이트] 차연서<br>Yang Hosil, Cha Dongha, Hongjiyoung / Sohn Nari, Lee Sangmin</div></td>
 						<td><div class="div-for-scroll">에너지후이쉬게임즈<br>Energywhoisshe Games</div></td>
-						<td><div class="div-for-scroll">게릴라 웹전시<br>Guerrilla Web-exhibition 
-							<br>
-							<a href="poster1_web.png">Poster1.png</a>
-							<a href="poster2_web.png">Poster2.png</a>
-							<a href="Unbelievable.pdf">Postcard.pdf</a>
+						<td><div class="div-for-scroll">게릴라 웹전시<br>Guerrilla Web-exhibition
 						</div></td>
 
 					</tr>
@@ -952,17 +953,22 @@ Games, Comics and Things
 						<td class=".td-for-title"><div class="div-for-scroll">서울에서 포스트레즈비언오페라 x 리퀴드컴퓨테이션, 라이브퍼포먼스<br>Post Lesbian Opera x Liquid Computation, Live Performance in Seoul</div></td>
 						<td>
 						<div class="div-for-scroll">
-							<dl>
+							<p><dl>
 								<dt>모스키토라바쥬스, 라이브 퍼포먼스, Les601, 서울</dt>
 								<dd>2022 12/30, 12/31, 11AM, 1 Hour.</dd>
 								<dd>천장 아래, 하늘 아래, 두 개의 방 사이로 통로.</dd>
-							</dl>
-							<dl>
+							</dl></p>
+							<p><dl>
 								<dt>Mosquitolarvajuice, Live Performance, Les601, Seoul(KR)</dt>
 								<dd>Under the ceiling, Under the sky, and Passage Between Two Rooms.</dd>
 								<br>
 								<dd>Perception Neuron MoCap Suit, Velodyne Lidar, Azure Kinect, LED Screen, Projection</dd>
-							</dl>
+							</dl></p>
+							<p>
+								<div class="div-for-scroll">
+							<a href="https://msqt.kr">Catalogue.web</a>
+						</div>
+							</p>
 							<p>
 								<details>
 									<summary>
@@ -985,12 +991,7 @@ Games, Comics and Things
 						</td>
 						<td><div class="div-for-scroll"><p>서울문화재단<br>SFAC</p>
 							<p>2022 Unfold X Planning Camp</p></div></td>
-						<td><div class="div-for-scroll">
-							Poster1.png
-							Poster2.png
-							Celebration Poster.pdf
-							<a href="https://msqt.kr">Catalogue.web</a>
-						</div></td>
+						<td></td>
 					</tr>
 				</tbody>
 				<tbody>
@@ -1022,27 +1023,34 @@ Games, Comics and Things
 						<td class=".td-for-title">게임 출시<br>Game Release</td>
 						<td>
 						<div class="div-for-scroll">
+							<p>
 							<dl>
 								
 								<dt><a href="https://store.steampowered.com/app/2217540/3_Households/">3 Households</a>, 게임 출시, 온라인(한/영), 2022.12.</dt>
 								<dd>{ “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };</dd>
 							</dl>
+							</p>
+							<p>
 							<dl>
 								<dt><a href="https://store.steampowered.com/app/2217540/3_Households/">3 Households</a>, Game Release on Steam, Online(Eng/Kor), 2022.12.</dt>
 								<dd>{“The Mind of a Destructive Mother”, “The Quantum Wave Field of a Productive Daughter”, “The Physical Constitution of the Daughter’s Potential Girlfriend” };</dd>
 								</p>
 							</dl>
+							</p>
+							<!--<p>
+								<li>Poster1.png</li>
+								<li>Poster2.png</li>
+								<li>Poster3.png</li>
+								<li>Promotion T-shirts Black.pdf</li>
+								<li>Promotion T-sherts White.pdf</li>
+							</p>-->
 						</div>
 						</td>
 						<td><div class="div-for-credit">[개발/배급] <b>Energywhoisshe Games</b>, [기획] 차연서, [게임디자인/사운드트랙] 차연서 이상화 / [프로모션 굿즈 일러스트레이션/디자인] 차연서, 젤리껌, 인현진 / [리뷰] 곽소진, 조혜영 / [에너지서포트] 김헤일로, 손나리 / [번역] 박재용, 류다연</div></td>
 						<td><div class="div-for-scroll"><p>한국문화예술위원회 & 문화체육관광부<br>ARCO & MCST</p><p>2022 Art Change Up</p>
 						</div></td>
 						<td><div class="div-for-scroll">
-							Poster1.png
-							Poster2.png
-							Poster3.png
-							Promotion T-shirts Black.pdf
-							Promotion T-sherts White.pdf
+							
 						</div></td>
 					</tr>
 				</tbody>
@@ -1084,7 +1092,15 @@ Games, Comics and Things
 								<dt>3 Households, 게임 소프트웨어 프로토타입, 2021.11.</dt>
 								<dd>
 								</dd>
-							</dl></p>
+								</dl>
+							</p>
+							<p>
+								<dl>
+								<dt>3 Households, game software prototype, 2021.11.</dt>
+								<dd>
+								</dd>
+								</dl>
+							</p>
 							<p>
 								<details>
 									<summary>History</summary>
@@ -1101,11 +1117,7 @@ Games, Comics and Things
 							<p>Art Center Nabi Creative+ 2021</p>
 						</div></td>
 						<td><div class="div-for-scroll">
-							Poster1.png
-							Poster2.png
-							Poster3.png
-							Promotion T-shirts Black.pdf
-							Promotion T-sherts White.pdf
+							
 						</div></td>
 					</tr>
 				</tbody>
@@ -1169,16 +1181,16 @@ Games, Comics and Things
 						<td class=".td-for-title">2022</td>
 						<td class=".td-for-title">협력적 개인전<br>Collaborative solo show</td>
 						<td><div class="div-for-scroll">
-							<dl>
+							<p><dl>
 								<dt>Every mosquito feels the same, TINC(서울 성북구), 2022.01.</dt>
 								<dd>Mosquitojuice, 소금 + 빛 + 교회가 아님, 29분 19초 순환재생, 퍼포머 제공. (설치된 풍경, 2022)</dd>
-							</dl>
-							<dl>
+							</dl></p>
+							<p><dl>
 								<dt>
 								Every mosquito feels the same, This is not a church(Seoul, KR), 2022.01.
 								</dt>
 								<dd>Mosquitojuice, Salt + Light + Not a church, 29min 19sec Looping, Performers' Offerings. (Installated Scenary, 2022)</dd>
-							</dl>
+							</dl></p>
 							</details>
 						</td></div>
 						<td><div class="div-for-credit">[기획/전시] <b>차연서</b> [직접협력] <b>강예빈 박주현 김해영 이상화 이솔엽 박민영 임다울 유명민 이윤수 안현진 최혜라 김호정</b><br>[간접협력] 최효정<br>[공간] NACA<br>[미디어]올미디어<br>[도움] 오승은 박민영<br>[기록] 김해영(사진) 곽소진(타임랩스)
@@ -1224,13 +1236,14 @@ Games, Comics and Things
 							<dl>
 							<dt>쥬시 모스키토, 라이브 퍼포먼스, 한국예술종합학교 본관갤러리(서울 성북구),  2020.11.</dt>
 							<dd>
-								
 							</dd>
+							</dl>
+							</p>
+
+							<p><dl>
 							<dt>Juicy Mosquito, Live Performance, K'arts Gallery(Seoul, KR), 2020.11.</dt>
 							<dd>
-								
 							</dd>
-
 							</dl>
 							</p>
 							<p>
@@ -1294,18 +1307,22 @@ Games, Comics and Things
 						<td class=".td-for-title">2020</td>
 						<td class=".td-for-title">2인전<br>Duo Show</td>
 						<td><div class="div-for-scroll">
-							<dt>크게 슬플 일인가요, 갤러리175, 서울</dt>
-							<dd>'폴폴 트라이앵글'(비디오, 2019-2020), 'HOW DARE I FEEL SAD WHEN I THINK OF YOU'(책, 2019-2020), '폴폴 시트'(조각, 2020), '폴폴 스크린샷'(사진, 2020)</dd>
-							<dt>Be Sad I Dare You, Gallery175, Seoul, KR</dt>
-							<dd>'Far For Triangle'(Video, 2019-2020), 'HOW DARE I FEEL SAD WHEN I THINK OF YOU'(Book, 2019-2020), 'Far For Sheet'(Sculpture, 2020), 'Far For Screenshot'(Photography, 2020)</dd>
+							<p>
+								<dt>크게 슬플 일인가요, 갤러리175, 서울</dt>
+								<dd>'폴폴 트라이앵글'(비디오, 2019-2020), 'HOW DARE I FEEL SAD WHEN I THINK OF YOU'(책, 2019-2020), '폴폴 시트'(조각, 2020), '폴폴 스크린샷'(사진, 2020)</dd>
+							</p>
+							<p>
+								<dt>Be Sad I Dare You, Gallery175, Seoul, KR</dt>
+								<dd>'Far For Triangle'(Video, 2019-2020), 'HOW DARE I FEEL SAD WHEN I THINK OF YOU'(Book, 2019-2020), 'Far For Sheet'(Sculpture, 2020), 'Far For Screenshot'(Photography, 2020)</dd>
+							</p>
+							<p>
+								Catalogue.pdf
+							</p>
 						</div></td>
 						<td><div class="div-for-credit">[공동기획/전시] <b>차연서, 박주영</b>, [리뷰] 박소영, [그래픽디자인] 인현진 / [설치 자문] 김혜정(NACA)<br>[Co-Curator/Artist] <b>Cha Yeonså, Park Juyeong</b> / [Reviewer] Park Soyoung, [Graphic Designer]In Hyunjin / [Installation Advisory] Kim Hyejyeong(NACA)</div></td>
 						<td><div class="div-for-scroll">한국예술종합학교 조형연구소<br>K'ARTS Center for Visual Studies</div></td>
 						<td><div class="div-for-scroll">
-							<p>
-								Poster.pdf
-								Catalogue.pdf
-							</p>
+							
 						</div></td>
 					</tr>
 				</tbody>
@@ -2270,6 +2287,19 @@ void 불가살이()
 	</div>
 	</article></div>
 	</section>
+	<style>
+	    footer {
+	    	padding-top: 5rem; 
+	    	font-family: 'Gothic A1', sans-serif;
+	    	text-align: center;
+	    	font-weight: bold;
+	    	width: 100vw;
+	    	background-color: #121212;
+	    	color: #888888;
+	    	margin-bottom: 0;
+	    	padding-bottom: 2rem;
+	    }
+	</style>
 	<footer>
 		<a style="color: dodgerblue;" href="https://energywhoisshe.com">Energywhoisshe.com</a>
 		<br><a style="color: forestgreen;"href="https://energywhoisshe.com">Energywhoisshe.com</a>
