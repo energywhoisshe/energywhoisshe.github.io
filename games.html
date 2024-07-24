@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko, en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html, body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		html {
+      		background-repeat: no-repeat;
+      		background-size: cover;
+      		background-attachment: fixed;
+      		font-size: 14px;
+      		background-color: #121212;
+      	}
+
+      	body {
+      		padding-top: 48px;
+      		padding-bottom: 48px;
+      		font-size: 1rem;
+      		line-height: 1.75;
+      		border-radius: 3px;
+      		word-break: keep-all;
+	      	/*max-width: 600px;*/
+	      	font-family: 'Noto Serif KR', serif;
+	      	margin: 0rem;
+      	}
+      	h1,h2,h3,h4,h5,h6 {
+      		font-size: 100%;
+		}
+		h1{
+			font-family: 'Noto Serif KR', serif;
+		}
+      	nav li{
+      		text-decoration: none;
+      	}
+      	nav a {
+      		color: whitesmoke;
+      		text-decoration-line: none;
+      	}
+      	img {
+      		border-radius: 3px;
+      		max-width: 100%;
+      	}
+      	
+      	dt {
+	      	font-weight: 700;
+	    }
+	    dd {
+	      	
+	    }
+	    p {
+	    	margin-bottom: 1rem;
+	    }
+	    figcaption {
+	    	font-size: 0.8rem;
+	    	line-height: 1.4rem;
+	    	font-color: grey;
+	    	text-align: right;
+	    }
+	    iframe {
+	    	width: 100%;
+	    	border: none;
+	    	height: 500px;
+	    	max-height: 500px;
+	    }
+	    hr{
+	      	background-color: rgba(35,35,35,0.1);
+	      	background-color: #121212;
+	      	border: solid 14px rgba(0,0,0,0); width: 100%;
+	      	border-radius: 100% 3px 3px 3px;
+	      	background-size: 110%;
+	      	background-position: center;
+	      	background-repeat: none;
+      	}
+      	.hr-left{
+      		border-radius: 3px 100% 3px 3px;
+
+      	}
+      	.hr, .hr-things, .hr-comics {
+      		width: 90vw;
+			max-width: 1000px;
+      		background-color: rgba(35,35,35,0.1);
+	      	background-color: #121212;
+	      	border: solid 14px rgba(0,0,0,0); width: 100%;
+	      	border-radius: 100% 3px 3px 3px;
+	      	/* 이미지 넣는 용 */
+	      	background-size: 110%;
+	      	background-position: center;
+	      	background-repeat: none;
+	      	/*중앙정렬*/
+		  	margin-right: auto;
+		  	margin-left:auto;
+      	}
+
+      	button {
+	      	border: none;
+	      	border-radius: 3px;
+	      	padding: 0.4rem;
+	      	font-size: small;
+	      	text-align: left;
+	      	color: blue;
+	      	background-color: lightsteelblue;
+	      	margin-bottom: 0.4rem;
+      	}
+      	.this-unbelievable-sleep{
+      		width: 100%;
+      		padding: 1rem;
+      		border-style: groove;
+      		border-color: whitesmoke;
+
+      		background-color: white;
+      		color: #121212;
+      		font-family: 'Noto Serif KR', serif;
+      		font-weight: bold;
+      	}
+      	
+      	details > summary {
+  			list-style: none;
+		}
+	    details > summary::-webkit-details-marker {
+	      	display: none;
+	    }
+	    details {
+	      	background-color: #dddddd;
+	      	background-color: white;
+
+	    }
+	    details p, details ul {
+	    	padding-left: 1rem;
+	    	padding-top: 0.6rem;
+	    	padding-bottom: 1rem;
+	    }
+	    summary {
+	    }
+	    summary:hover, a:hover, button:hover{
+	      	font-style: italic;
+	    }
+
+      	section {
+      		border-radius: 3px; 
+      		margin-bottom: 2rem;
+      		margin-top: 2rem;
+      	}
+		article {
+      		margin-bottom: 2rem;
+      	}
+      	.projects {
+      		padding-left: 1vw;/* 메인 텍스트 좌측 간격*/
+      		padding-right: 7vw;
+      	}
+		.games, .comics, .things {
+      		padding-left: 1rem;
+	    	padding-top: 5rem;
+	    	font-family: 'Gothic A1', sans-serif;
+	    	border-radius: 3px 3px 3px 3px;
+
+	    	/*중앙정렬*/
+		  	margin: 0 auto;
+	    }
+	    .games, .comics{
+	    	/* width: 89vw;*/
+			max-width: 1000px;
+			background-color: #121212;
+			color: #888888;
+	    }
+	    a:link{
+	    	color:royalblue;
+	    }
+	    a:visited, a:hover{
+	    	color:darkslateblue;
+	    }
+	    .comics a:link, .games a:link{
+	    	color:royalblue;
+	    }
+	    .comics a:hover, .comics a:visited, .games a:hover,.games a:visited {
+	    	color:darkslateblue;
+	    }
+	    .div-for-drawing {
+	    	height: 45vh;
+	    	overflow-y: scroll;
+	    	padding: 1rem;
+	    	background-color: black;
+	    	border-color: grey;
+	    	border-width: 6px;
+	    	border-style: ridge;
+	    	border-radius: 3px 3px 3px 3px;
+	    	text-align: center;
+	    }
+	    .div-for-drawing:hover, .div-for-drawing:checked {
+	    	border-color: black;
+	    }
+	    .div-for-drawing img {
+	    	width: 100%;
+	    	max-width: 400px;
+	    }
+
+	</style>
+</head>
+<div class="games">
+
+		<article class="projects">
+				<img src="img/7elephants.png">
+			<h3 style="text-align: right;">이 기막힌 잠 This Unbelievable Sleep (2023)</h3>
+			<p style="text-align: right;">
+				차연서 개인전 <a href="https://energywhoisshe.github.io/this-unbelievable-sleep">이 기막힌 잠</a>에 미발표 신작 게임 <i>Mosquitolarvajuice; Live Performance Game Archive</i>와 <i>7 Elephants</i>를 제작했으며, 오프라인 전시가 무산되어 일부 스틸이미지만 공개되었습니다. 온라인으로 전환된 게릴라 웹전시를 위해 미술관에서의 중도 철수 현장을 키넥트(Kinect)로 촬영한 비디오, <a href="https://youtu.be/i2cnXF9Qrac">인터뷰</a>와 <a href="https://youtu.be/QUkL0x6syOw">퇴거</a>를 제작했습니다.
+				<br>
+				We made new games for Cha Yeonså's solo show <a href="https://energywhoisshe.github.io/this-unbelievable-sleep">This Unbelievable Sleep</a>, which titles are <i>Mosquitolarvajuice; Live Performance Game Archive</i> and <i>7 Elephants</i> but they are not yet released.
+			</p>
+		</article>
+
+		<article class="projects">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/HyjPp1AaicI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<h3 style="text-align: right;">모스키토라바쥬스 Mosquitolarvajuice (2023)</h3>
+			
+			<p style="text-align: right;">
+				라이브 퍼포먼스 <a href="https://msqt.kr"> Mosquitolarvajuice</a> 프로덕션에서 무대와 연동하는 버츄얼 퍼포먼스 스크린을 연출하고 게임엔진, 키넥트, 라이다, 모션캡쳐 수트를 운용했습니다. 동명의 조각에 대한 디지털 오마쥬로서 게임 소프트웨어 <a href="https://youtu.be/HyjPp1AaicI">끝이 없는 집</a>을 개발/오퍼레이션 했으며, 양효실 미학자의 가상회의 강의 <a href="https://youtu.be/vrc7RqOuSJo">아글라야 페터라니 읽기</a>를 키넥트로 녹화하여 비디오를 제작/오퍼레이션 했습니다.
+				<br>
+				We produce the virtual performance screen interlocking with the live performance <a href="https://msqt.kr">Mosquitolarvajuice</a>. We   develop/operate/record with Unity game engine, Azure Kinect, Velodyne Lidar, MoCap suit. There were a game <a href="https://youtu.be/HyjPp1AaicI">Endless House</a> as a digital homage of Mire Lee's <i>Endless House: Holes and Drips</i>(2022), and a kinect recorded video of virtual-meeting lecture <a href="https://youtu.be/vrc7RqOuSJo">Reading Aglaja Veteranyi</a> by Yang Hyosil.</i>
+				
+			</p>
+		</article>
+		<article class="projects">
+				<img src="img/3Households.png">
+			<h3 style="text-align: right;">쓰리하우스홀즈 3 Households (2022)</h3>
+			<p style="text-align: right;">
+				시뮬레이션 퍼즐게임 <a href="https://store.steampowered.com/app/2217540/3_Households/?beta=1">3 Households</a>를 게임플랫폼 스팀에 출시했습니다. 장례식 이후 얼마간 한 지붕 아래에서 동거하게 된 엄마와 딸, 그리고 딸의 여자친구에 대한 이야기입니다. 그들의 몸과 마음, 그리고 에너지를 프렉탈 형태의 구조로 탐험하고, 랜덤하게 조합되는 문장으로 말미암은 서사를 퍼즐처럼 읽을 수 있도록 설계되어 있습니다.
+				<br>A simulation puzzle game <a href="https://store.steampowered.com/app/2217540/3_Households/?beta=1">3 Households</a> is released on Steam. This is about when mom, daughter, and daughter's girlfriend become a household for a while, after a funeral. Player explore their body, mind, and energy as a fractal structure, and read their narrative like a puzzle on randomly combined sentences.
+			</p>
+			</small>
+		</article>
+	</div>
+
+</html>

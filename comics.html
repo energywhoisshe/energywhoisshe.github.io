@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko, en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+	<link href='https://fonts.google.com' rel="stylesheet">
+
+<style>
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html, body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		html {
+			background-color: #121212;
+      		/* background-image: url('aono2.jpg'); */
+      		background-repeat: no-repeat;
+      		background-size: cover;
+      		background-attachment: fixed;
+      		font-size: 14px;
+      		/*font-size: clamp(16px, 1.5vw, 20px);*/
+      	}
+
+      	body {
+      		padding-top: 48px;
+      		padding-bottom: 48px;
+
+      		font-size: 1rem;
+      		line-height: 1.75;
+      		border-radius: 3px;
+      		word-break: keep-all;
+	      	font-family: 'Noto Serif KR', serif;
+	      	margin: 0rem;
+      	}
+      	h1,h2,h3,h4,h5,h6 {
+      		font-size: 100%;
+		}
+		h1{
+			font-family: 'Noto Serif KR', serif;
+		}
+      	img {
+      		border-radius: 3px;
+      		max-width: 100%;
+      	}
+      	
+      	dt {
+	      	font-weight: 700;
+	    }
+	    dd {
+	      	
+	    }
+	    p {
+	    	margin-bottom: 1rem;
+	    }
+	    figcaption {
+	    	font-size: 0.8rem;
+	    	line-height: 1.4rem;
+	    	font-color: grey;
+	    	text-align: right;
+	    }
+	    iframe {
+	    	width: 100%;
+	    	border: none;
+	    	height: 500px;
+	    	max-height: 500px;
+	    }
+	    hr {
+	      	background-color: rgba(35,35,35,0.1);
+	      	background-color: #121212;
+	      	border: solid 14px rgba(0,0,0,0); width: 100%;
+	      	border-radius: 100% 3px 3px 3px;
+	      	background-size: 110%;
+	      	background-position: center;
+	      	background-repeat: none;
+      	}
+      	button {
+	      	border: none;
+	      	border-radius: 3px;
+	      	padding: 0.4rem;
+	      	font-size: small;
+	      	text-align: left;
+	      	color: blue;
+	      	background-color: lightsteelblue;
+	      	margin-bottom: 0.4rem;
+      	}
+      	details > summary {
+  			list-style: none;
+		}
+	    details > summary::-webkit-details-marker {
+	      	display: none;
+	    }
+	    details {
+	      	background-color: #dddddd;
+	      	background-color: white;
+
+	    }
+	    details p, details ul {
+	    	padding-left: 1rem;
+	    	padding-top: 0.6rem;
+	    	padding-bottom: 1rem;
+	    }
+	    summary {
+	    }
+	    summary:hover, a:hover, button:hover{
+	      	font-style: italic;
+	    }
+      	section {
+      		border-radius: 3px; 
+      		margin-bottom: 2rem;
+      		margin-top: 2rem;
+      	}
+		article {
+      		margin-bottom: 2rem;
+      	}
+      	.projects {
+      		padding-left: 1vw;/* 메인 텍스트 좌측 간격*/
+      		padding-right: 7vw;
+      	}
+		.comics {
+      		padding-left: 1rem;
+	    	padding-top: 5rem;
+	    	font-family: 'Gothic A1', sans-serif;
+	    	border-radius: 3px 3px 3px 3px;
+
+	    	/*중앙정렬*/
+		  	margin: 0 auto;
+
+	    	/* width: 89vw;*/
+			max-width: 1000px;
+			background-color: #121212;
+			color: #888888;
+	    }
+
+	    a:link{
+	    	color:royalblue;
+	    }
+	    a:visited, a:hover{
+	    	color:darkslateblue;
+	    }
+	    .comics a:link, .games a:link{
+	    	color:royalblue;
+	    }
+	    .comics a:hover, .comics a:visited, .games a:hover,.games a:visited {
+	    	color:darkslateblue;
+	    }
+	    .div-for-drawing {
+	    	height: 45vh;
+	    	overflow-y: scroll;
+	    	padding: 1rem;
+	    	background-color: black;
+	    	border-color: grey;
+	    	border-width: 6px;
+	    	border-style: ridge;
+	    	border-radius: 3px 3px 3px 3px;
+	    	text-align: center;
+	    }
+	    .div-for-drawing:hover, .div-for-drawing:checked {
+	    	border-color: black;
+	    }
+	    .div-for-drawing img {
+	    	width: 100%;
+	    	max-width: 400px;
+	    }
+
+	</style>
+</head>
+<body>
+	<div class="comics">
+		<article class="projects">
+			<p>
+				<figure style="text-align: right;">
+					<img width=30% src="bouquet/Truck01.png"> <img width=30% src="bouquet/Truck02.png">
+				</figure>
+			</p>
+			<h3 style="text-align: right;">꽃다발은 아직 KKOCH-DA-BAL is still there (2024)</h3>
+			<p style="text-align: right;">법의학 책을 컷만화 형식으로 옮겨 그린 펜드로잉 시리즈입니다. 상업화랑에서 열린 차연서 개인전 《꽃다발은 아직》에서 나무벽에 스탠못으로 15페이지를 전시했습니다. 또한 같은 층에 해당 시리즈의 초기 드로잉 중 3페이지를 전시했습니다. 첫날 방문한 관객에게는 원하는 페이지 넘버와 주소, 성함을 적어 신청서를 작성하면 어느 날 재난처럼 우편으로 사본을 받아볼 수 있는 게릴라 오프닝 이벤트를 열었습니다.
+				<br>
+			There are pen drawing series that transcribes forensic science books into cut cartoon format. There are exhibited as new works for Cha Yeonså's solo show 《KKOCH-DA-BAL is still there》. There was a guerrilla opening event where you could write down the page number, address, and name you want, and get a copy by mail one day like a disaster, limited to the audience who visited on the first day.</p>
+			<p>
+				<img src="img/motel/a05.jpg">
+				<img src="img/motel/a04.jpg">
+			</p>
+			<h3 style="text-align: right;">モーテルでフェスティバル(모텔에서 축제) Festival in motel (2023)</h3>
+			<p style="text-align: right;">W/O F. 가 주최한 단체전 《모텔전: 눈 뜨고 꾸는 꿈》에 참여했습니다. 흑백만화 원고는 2024년도에 출간 예정인 팀 우프의 세번째 잡지, Without Frame! Vol.3 에 게재됩니다.
+				<br>
+			Participated in Group Show 《The Motel : Because I want to live there》 hosted by team W/O F. B&W comics pages will be published on 'Without Frame! Vol.3', the third magazine of team W O/F.</p>
+			<p>
+				<div class="div-for-drawing">
+			      	<img src="img/drawing_festival1.jpg" alt="장승"><br>
+			      	<img src="img/drawing_festival2.jpg" alt="장승"><br>
+			      	<img src="img/drawing_scissoring.jpg" alt="가위눌림"><br>
+			      	<img src="img/drawing_baby.jpg" alt="아기">
+			    </div>
+			</p>
+			<p>
+				<img src="img/unbelievable3.jpg">
+				<img src="img/kinect_empty.png">
+				<img src="img/festival2.png">
+			</p>
+			<h3 style="text-align: right;">이 기막힌 잠 This Unbelievable Sleep (2023)</h3>
+			<p style="text-align: right;">
+				차연서 개인전 "이 기막힌 잠"에 <i> 축제 </i> (한국화가 차동하 협력)와 <i>모스키토라바쥬스; 흑백사진 아카이브 </i> (사진가 홍지영 협업)를 제작했으며, 게릴라웹전시에서 일부 흑백이미지만 공개되었습니다.
+				<br>
+				There are new works for Cha Yeonså's solo show "This Unbelievable Sleep", which titles are <i>Mosquitolarvajuice; Live Performance Game Archive</i> and <i>Festival</i>. Because of the sudden cancellation of the offline exhibition, they are released as partial images in the guerrilla web-exhibition.
+			</p>
+		</article>
+	</div>
+</body>
+</html>
