@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<style>
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html, body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		html {
+      		background-repeat: no-repeat;
+      		background-size: cover;
+      		background-attachment: fixed;
+      		font-size: 14px;
+      	}
+      	body {
+      		color: grey;
+      		background-color: white;
+      		padding-top: 48px;
+      		padding-bottom: 48px;
+
+      		font-size: 1rem;
+      		line-height: 1.75;
+      		border-radius: 3px;
+      		word-break: keep-all;
+	      	font-family: 'Noto Serif KR', serif;
+      	}
+      	h1,h2,h3,h4,h5,h6 {
+      		font-size: 100%;
+		}
+		h1{
+			font-family: 'Noto Serif KR', serif;
+		}
+      	img {
+      		border-radius: 3px;
+      		max-width: 100%;
+      	}
+      	dt {
+	      	font-weight: 700;
+	    }
+	    p {
+	    	margin-bottom: 1rem;
+	    }
+	    figcaption {
+	    	font-size: 0.8rem;
+	    	line-height: 1.4rem;
+	    	font-color: grey;
+	    	text-align: right;
+	    }
+      	button {
+      		border-style: groove;
+      		border-color: whitesmoke;
+      		width: 100%;
+      		font-family: 'Noto Serif KR', serif;
+      		font-weight: bold;
+      		padding-left: 2rem;
+      		border-radius: 3px;
+      	}
+      	details > summary {
+  			list-style: none;
+		}
+	    details > summary::-webkit-details-marker {
+	      	display: none;
+	    }
+	    details {
+	      	background-color: #dddddd;
+	      	background-color: white;
+
+	    }
+	    details p, details ul {
+	    	padding-left: 1rem;
+	    	padding-top: 0.6rem;
+	    	padding-bottom: 1rem;
+	    }
+	    summary:hover, a:hover, button:hover{
+	      	font-style: italic;
+	    }
+      	section {
+      		border-radius: 3px; 
+      		margin-bottom: 2rem;
+      		margin-top: 2rem;
+      	}
+		article {
+      		margin-bottom: 2rem;
+      	}
+      	.projects {
+      		padding-left: 1vw;/* 메인 텍스트 좌측 간격*/
+      		padding-right: 7vw;
+      	}
+		.things {
+      		padding-left: 1rem;
+	    	padding-top: 5rem;
+	    	font-family: 'Gothic A1', sans-serif;
+	    	border-radius: 3px 3px 3px 3px;
+
+	    	/*중앙정렬*/
+		  	margin: 0 auto;
+
+	    	width: 100vw;
+	    	max-width: 1280px;
+			padding-left: 0;
+			padding-right: 0;
+	    	overflow-y: scroll; 
+	    }
+
+	    .things .projects .texts details {
+	    }
+	    .things .projects .texts summary  {
+	    }
+
+	    a:link{
+	    	color:royalblue;
+	    }
+	    a:visited, a:hover{
+	    	color:darkslateblue;
+	    }
+		figure .posters {
+			width: 95%; 
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+			margin-left: 1rem;
+		}
+		table {
+	    	width: 100%;
+	    }
+	    
+	    .tablethings {
+	    	font-size: 0.85rem;
+	    	width: 100%;
+	    }
+	    
+	    .tablethings thead tr, .texts thead tr { 
+	    	/*프로젝트 표 총 너비 - 아래에 직접 씀 */
+	    }
+	    .tablethings thead tr th, .texts thead tr th { 
+	    	/*프로젝트 제목 칸*/
+	    	font-size: 0.8rem;
+	    	padding-right: 1rem;
+	    	padding-left: 1rem;
+	    	border-radius: 3px 3px 3px 3px;
+	    }
+	    
+	    .tablethings tbody tr .td-for-image { 
+	    	/*표 이미지 칸*/
+	    	padding: 0;
+	    	min-width: 120px;
+	    	/*표 안에서 수직 정렬*/
+			vertical-align: top;
+			max-height: 20vw;
+			/*표 안에서 세로 정렬 - 가운데 정렬*/
+			vertical-align:middle
+	    }
+		.tablethings tbody tr .td-for-image .div-for-image { 
+			/*표 이미지 칸*/
+			overflow-y: scroll;
+			min-height: 100px; 
+			max-height: 20vw;
+		}
+		.tablethings figure {
+			/*표 이미지 칸*/
+	    	line-height: 0px;
+	    }
+	    .tablethings figure img{
+	    	/*표 이미지 칸*/
+	    	margin: 0;
+	    	padding: 0;
+	    }
+	    iframe 
+	    {
+			min-width: 120px;
+			max-height: 20vw;
+			width: 100%;
+			height: 20vw;
+			border: none;
+		}
+
+	    .tablethings tbody tr td { 
+	    	/*프로젝트 내용 칸*/
+	    	padding-left: 1rem;
+	    }
+	    .tablethings .div-for-scroll, .div-for-credit
+	    {
+	    	/*칸 높이제한*/
+	    	overflow-y: scroll;
+	    	max-height: 20vw;
+	    }
+	    .div-for-scroll:hover, .div-for-credit:hover{
+	    	border-style: inset;
+	    }
+	    .tablethings .div-for-scroll{
+	    	/* 프로젝트 세부내용 칸 */
+	    	font-size: 0.78rem;
+	    }
+	    .tablethings .div-for-credit{
+	    	/* 크레딧 칸 */
+	    	font-size: 0.7rem;
+	    }
+	    .texts tbody tr td{ /*글 내용 칸 */
+	    	border-width: 0px;
+	    	vertical-align : top;
+	    	font-size: 0.9rem;
+	    	font-weight: 500;
+
+	    }
+
+	    .tablethings tbody tr td:hover, .texts tbody tr td {
+	    	/*border-style: inset;*/
+	    }
+	    .tablethings .td-for-title {
+	    	border-style: none;
+		}
+		.tablethings .td-for-title:hover {
+			border-style: none;
+		}
+
+	    .tablethings tbody tr td dl dt, .texts tbody tr td { 	/*리스트*/
+	    	list-style-type: square;
+	    }
+	    .tablethings tbody tr td dl dd, .texts tbody tr td dl dd { /*리스트*/
+	    	list-style-type: square;
+	    }
+	    .tablethings details {
+	    	padding: 1px;
+
+	    }
+	    .tablethings details summary {
+	    	border-width: 0px;
+	    	border-radius: 3px 3px 3px 3px;
+	    	padding: 1px;
+	    	marnin-left: 1rem;
+	    	padding-left:1rem;
+	    }
+	    .things .projects .texts details{
+	    	min-width: 350px; /*텍스트 읽는 최소 너비*/
+	    	width: 100%;
+	    	border-radius: 3px 3px 3px 3px;
+	    	padding: 1px;
+	    }
+	    .things .projects .texts details p{
+	    	padding-left: 2rem;
+	    }
+	    .things .projects .texts details summary{
+	    	
+	    	border-radius: 3px 3px 3px 3px;
+	    	border-style: none;
+	    	padding: 0.4rem;
+	    }
+	    .things .projects .texts ol, .things .projects .texts ul, .things .projects .texts pre {
+	    	margin-left: 2rem;
+	    	padding-left: 2rem;
+	    }
+	    
+	    /*표에 이미지 채우기*/
+	    .image-box {
+		    width:380px;
+		    height:220px;
+		    overflow:hidden;
+		    margin:0 auto;
+		}
+		.image-thumbnail {
+		    width:100%;
+		    height:100%;
+		    object-fit:cover;
+		}
+	    pre {
+	    	background-color: gainsboro;
+	    	border-radius: 3px 3px 3px 3px;
+	    	overflow-y: scroll;
+	    	margin-bottom: 1rem;
+	    	padding:1rem;
+	    }
+	    .details-for-image {
+	    	/*표 이미지 칸*/
+	    	border:none;
+	    }
+	    .td-for-image{
+	    }
+	    .div-for-image{
+	    }
+	    .summary-for-image{
+	    	/*표 이미지 칸*/
+	    	background-color:none;
+	    	border-style: groove;
+	    	border-style: none;
+	    	border-width: 0px;
+	    	border-color: none;
+	    }
+	    .summary-for-image:hover{
+	    	background-color:none;
+	    }
+	</style>
+
+	<div class="things">
+		<article class="projects" style="padding-left:0; padding-right:0; margin-bottom: 0;">
+			<table class="tablethings">
+				<thead>
+					<tr>
+						<th style="min-width: 30vw;"></th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th style="width: 100%;"></th>
+
+						<th></th>
+						<th></th>
+						<!-- 표 설정 
+						<th style="min-width: 30vw;">이미지<br>Image</th>
+						<th>제목<br>Title</th>
+						<th>년도<br>Year</th>
+						<th>분류<br>Category</th>
+						<th style="width: 100%;">내용<br>Details</th>
+
+						<th>함께<br>With</th>
+						<th>지원<br>Support</th>
+						<th>비고<br>Note</th>-->
+					</tr>
+				</thead>
+				<!-- 새로운 프로젝트 -->
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="rain/rain21.jpg" alt="객석에서 <축제> 정면">
+
+								</figure>
+							</div>
+						</td>
+						<!-- 표 프로젝트 타이틀 -->
+						<td class=".td-for-title">
+							<p>
+								<a href="2024-tongue-of-rain.html"> 혀 달린 비<br>Tongue of Rain
+							</p>
+						</td>
+						<td class=".td-for-title">2024</td>
+						<td class=".td-for-title">
+							<p>단체전<br>Group Exhibition</p>
+						</td>
+
+						<!-- 표 프로젝트 내용 -->
+						<td><div class="div-for-scroll">
+							<p>
+								아트선재센터는 세 명의 여성주의 시인 세실리아 비쿠냐, 차학경, 김언희에게 영감을 받은 극장형 전시 《혀 달린 비》를 4월 4일부터 5월 5일까지 아트홀에서 개최합니다. 이번 전시는 세대를 가로질러 기억의 통로를 뚫어내고, 트라우마와 침묵으로부터 도주선을 발생시키는 시적 발화의 힘을 주목합니다. (기획/글. 문지윤, 전문: <a href="https://artsonje.org/exhibition/혀-달린-비/">https://artsonje.org/exhibition/혀-달린-비/</a>)
+							</p>
+							<p>
+								Tongue of Rain is a gray zone exhibition that explores the power of poetic utterances, drawing inspiration from three feminist poets Cecilia Vicuña, Theresa Hak Kyung Cha, and Kim Eon Hee. It employs the symbol of rain and tongue to illuminate the profound impact of poetic language, which pierces through the corridors of memory across generations. (Curated by Je Yun Moon, Full Text: <a href="https://artsonje.org/en/exhibition/tongue-of-rain-2/">https://artsonje.org/en/exhibition/tongue-of-rain-2/</a>)
+							</p>
+							<p>
+								차연서는 평면 연작 <축제>를 통해 무연고자들, 벌레들, 시어들을 자르고 그리며 그들이 매달릴 자리를 마련한다. 끝장난 다음에도 끝나지 않는 끝, 그 안에 허물어진 마침표들을 응시하는 과정은 저리고 가위눌리고 열리는 몸(들)을 돌본다.
+							</p>
+							<p><small>
+								<ul>
+									<li>차연서, ‹축제 23 #9; 수문지기›, 2023. 페이퍼컷 콜라주(닥종이에 채색; 차동하), 79x64cm ©차연서</li>
+									<li>차연서, ‹축제 23 #3-2; 떡두꺼비 손목›, 2023. 페이퍼컷 콜라주(닥종이에 채색; 차동하), 77x57cm ©차연서</li>
+									<li>차연서, ‹축제 23 #3-1; 세빗 딜도›, 2023. 페이퍼컷 콜라주(닥종이에 채색; 차동하), 77x57cm ©차연서</li>
+									<li>차연서, ‹축제 23 #4; 개가 된 여자›, 2023. 페이퍼컷 콜라주(닥종이에 채색; 차동하), 77x105cm ©차연서</li>
+									<li>차연서, ‹축제 23 #1; 꽃다발을 든 아이›, 2023. 페이퍼컷콜라주(닥종이에채색;차동하),110x90cm ©차연서</li>
+									<li>차연서, ‹축제 23 #8; 엉덩이 커튼›, 2023. 페이퍼컷 콜라주(닥종이에 채색; 차동하), 75x105cm ©차연서</li>
+								</ul>
+								</small>
+							</p>
+							<p>
+								<small>
+								<ul>
+									<li>Cha Yeonså, Festival 23 #9; Watergate, 2023. Papercut Collage (Color on Dak Paper; ChaDongha),79x64cm ©ChaYeonså</li>
+									<li>Cha Yeonså, Festival 23 #3-2; Toad, 2023. Papercut Collage (Color on Dak Paper; ChaDongha),77x57cm ©ChaYeonså</li>
+									<li>Cha Yeonså, Festival 23 #3-1 Dildo, 2023. Papercut Collage (Color on Dak Paper; ChaDongha),77x57cm ©ChaYeonså</li>
+									<li>Cha Yeonså, Festival 23 #4; Dog, 2023. Papercut Collage (Color on Dak Paper; ChaDongha),77x105cm ©ChaYeonså</li>
+									<li>Cha Yeonså, Festival 23 #1; Bouquet, 2023. Papercut Collage (Color on Dak Paper; ChaDongha),110x90cm ©ChaYeonså</li>
+									<li>Cha Yeonså, Festival 23 #8; Curtain, 2023. Papercut Collage (Color on Dak Paper; ChaDongha),75x105cm ©ChaYeonså</li>
+								</ul>
+								</small>
+							</p>
+							<p>
+								<a href="https://artsonje.org/wp-content/plugins/uploadingdownloading-non-latin-filename/download.php?id=12932">Tongue-of-Rain_Leaflet.pdf</a>
+							</p>
+						</div></td>
+
+						<td><div class="div-for-credit">
+							<p>
+								<b>세실리아 비쿠냐, 차연서, 제시 천, 나미라, 차학경</b>
+								<b>Cecilia Vicuña, Cha Yeonså, Jesse Chun, Na Mira, Theresa Hak Kyung Cha</b>
+							</p>
+							<details>
+								<summary>Exhibition</summary>
+								<p>
+									[기간] 2024. 4. 4. – 2024. 5. 5.
+									<br>[장소] 아트홀(B1)
+									<br>[참여작가] 세실리아 비쿠냐, 차연서, 제시 천, 나미라, 차학경
+									<br>[기획] 문지윤
+									<br> [진행] 남서원
+									<br> [주최] 아트선재센터
+								</p>
+								<p>
+									[Dates] 2024. 4. 4. – 2024. 5. 5.
+									<br>[Venue] Art Hall (B1)
+									<br>[Artists] Cecilia Vicuña, Cha Yeonså, Jesse Chun, Na Mira, Theresa Hak Kyung Cha
+									<br>[Curated by] Je Yun Moon
+									<br>[Assisted by] Seowon Nam, Hosted by Art Sonje Center
+									<br>[In collaboration with] Berkeley Art Museum and Pacific Film Archive
+								</p>
+							</details>
+							<details>
+								<summary>Reading List</summary>
+								<p>
+									<ul>
+									<li>차학경 <딕테>(김지승)</li>
+									<li>캐시 박 홍 <마이너 필링스>(성정혜)</li>
+									<li>김언희 <보고 싶은 오빠>, <트렁크>, <말라죽은 앵두나무 아래 잠자는 저 여자> 등 (양효실)</li>
+									<li>안드레아 롱 추 <피메일스> (이연숙)</li>
+									</ul>
+								</p>
+							</details>
+							<details>
+								<summary>Activation Day</summary>
+								<p>
+									<ul>
+									<li>제시 천 x 연희 (김향수리, 안유희), <탈언어화의 악보 (천지문 and cosmos)>: 활성 퍼포먼스</li>
+									
+									<li>살, 시, 똥: 김언희 유사-비평집 『미친, 사랑의 노래』 북토크 [기획/진행: 이연숙(리타), 패널: 『미친, 사랑의 노래』 필진 중 7인(밀사, 박수연, 성훈, 영이, 진송, 한초원, 홍지영)]</li>
+									</ul>
+								</p>
+							</details>
+						</div></td>
+						<td>
+							<div class="div-for-scroll">
+								<p>
+									아트선재센터<br>ASJC
+								</p>
+							</div></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="bouquet/bouquet04.jpg" alt="<꽃다발은 아직> 전시전경">
+								</figure>
+							</div>
+						</td>
+						<!-- 표 프로젝트 타이틀 -->
+						<td class=".td-for-title">
+							<p>
+								<a id="KKOCH-DA-BAL-is-still-there" href="2024-KKOCH-DA-BAL-is-still-there.html"> 꽃다발은 아직<br>KKOCH-DA-BAL is still there</a>
+							</p>
+						</td>
+						<td class=".td-for-title">2024</td>
+						<td class=".td-for-title">
+							<p>개인전<br>Solo Exhibition</p>
+						</td>
+
+						<!-- 표 프로젝트 내용 -->
+						<td><div class="div-for-scroll">
+							<p>
+								<dl>
+									<dt>
+										꽃다발은 아직
+									</dt>
+									<dd>
+										
+									</dd>
+								</dl>
+							</p>
+							<p>
+								<dl>
+									<dt>
+										KKOCH-DA-BAL is still there
+									</dt>
+									<dd>
+										
+									</dd>
+								</dl>
+							</p>
+							<p>
+								마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 끝났다, 말할 새도 없는 언젠가에, 아무 부검도 없이 끝, 흐린 눈 막은 입 벌린 다리, 끝, 머리카락 손톱발톱 자라나는, 끝, 끝장난 끝 매듭, 끝없이 끝 매듭, 절벽 비탈 철조망 한 그루 나무, 끝, 입술 항문, 끝, 불타는 절 검은 산등성이 지저귀는 소쩍새 충혈된 능소화, 끔뻑이는 눈먼 눈, 귀먼 귀, 손목 잘린 손, 발목 잘린 발, 저 멀리 던진, 끝, 유턴해서 돌아오는, 끝, 주차된, 끝, 초인종도 누르지 않고 현관을 넘는, 끝, 우두커니, 끝, 익숙한 표정으로, 끝, 집에 돌아온, 끝, 어디서, 끝, 하고 뱉는 이웃집 가래침 소리, 끝
+								<br><br>
+								이곳에 초대되는 것은 내내/아직/미처 여기 있는 몸들, 그리고 시간이 흐르지 않는 마음처럼 우두커니 생생한 꽃다발이다. 제도지, 닥종이, 순지, 배접지, 인화지로 꽃들이 매달릴 자리들을 준비한다. 언희님을 읊었고, 테레사를 읽었고, 토굴을 들인다.
+								<br><br>
+								글. 차연서
+							</p>
+							<p>
+								<a href="https://archivist.kr/show/show_scroll.php?idx=1710685400">archivist.kr</a>
+								<br><a href="https://sahngupgallery.com/360">sahngupgallery.com</a>
+							</p>
+						</div></td>
+
+						<td><div class="div-for-credit">
+							<p>
+								기획/전시 <b>차연서</b>
+								<br>그림쟁이 <b>토굴</b>
+								<br>시 습작생 <b>김정자</b>
+								<br>시인 <b>김언희 「꽃다발은 아직」</b>
+							</p>
+							<details>
+								<summary>프로젝트 크레딧</summary>
+								<p>
+									[기획/전시] <b>차연서</b>
+									<br>[협력전시] <b>그림쟁이 토굴 「토굴」 (2024), 시 습작생 김정자 「곰소 젓갈」 외 4편 (2017-2023)</b>
+									<br>[제목 및 전문 인용] <b>김언희 「꽃다발은 아직」 (『뜻밖의 대답』 민음사, 2005)</b>
+								</p>
+								<p>
+								[전시 연출﹒시공] <b>나카</b>
+								<br>[지켜보는 협력꾼] <b>나카, 백상, 토굴</b>
+								<br>[지켜보는 협잡꾼] <b>을지로의 도깨비들</b>
+								<br>[사진 기록] <b>스튜디오 아뉴스</b>
+									<br>[영상 기록] <b>백상</b>
+								</p>
+							</details>
+							<details>
+								<summary>전시 정보</summary>
+								<p>
+									[공간] <b>상업화랑 을지로</b></li>
+									<br>4층, 5층, 옥상 (계단으로만 접근이 가능합니다)</li>
+									<br>[날짜] <b>2024.3.9(토) ~ 3.30(토)</b></li>
+									<br>[열리는 시간] 화~토 1pm~7pm, 일~월 OFF</li>
+								</p>
+							</details>
+							
+						</div></td>
+						<td>
+							<div class="div-for-scroll">
+								<p>
+									상업화랑<br>SAHNG-UP Gallery
+								</p>
+							</div></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="img/msqt_metal/PACK_00003.jpg" alt="구멍">
+								</figure>
+							</div>
+						</td>
+						<!-- 표 프로젝트 타이틀 -->
+						<td class=".td-for-title">
+							<div class="div-for-scroll">
+								<p>
+									<a href="2023-MSQT-metal-archive.html" id="MSQT-metal-archive"><small>모스키토라바쥬스 금속 아카이브<br>Mosquitolarvajuice Metal Archive</small></a>
+								</p>
+								<p>
+									<small>PACK 이 주최한 아트페어 《PACK FAIR 23》에 참여. Participated in art fair 《PACK FAIR 23》 hosted by PACK.</small>
+								</p>
+							</div>
+						</td>
+						<td class=".td-for-title">2023</td>
+						<td class=".td-for-title">
+							<small><p>아카이브<br>Archive</p>
+							<p>아트페어<br>Alternative Art Fair</p></small>
+						</td>
+
+						<!-- 표 프로젝트 내용 -->
+						<td><div class="div-for-scroll">
+							<p>
+								<dl>
+									<dt>PACK FAIR 23</dt>
+									<dd>
+										모듈형 진열장을 최소단위 삼아 5회째 열리는 대안적 아트페어 An alternative art fair held for the 5th time using modular showcases as the minimum unit</dd>
+								</dl>
+							</p>
+							<p>
+								<dl>
+									<dt>
+										모스키토라바쥬스 금속 아카이브
+									</dt>
+									<dd>
+										500 * 500 * 2000(mm), 알루미늄, 스탠, 사진, 위스키, 커피, 2023
+									</dd>
+								</dl>
+							</p>
+							<p>
+								<dl>
+									<dt>
+										Mosquitolarvajuice Metal Archive
+									</dt>
+									<dd>
+										500 * 500 * 2000(mm), Aluminum, Stainless Steel, Gelatin Silver Print, AI Photography, Whisky, Coffee, 2023
+									</dd>
+								</dl>
+							</p>
+							<p>
+								포스트레즈비언오페라로 출현했던 지난 라이브 퍼포먼스 <i>모스키토라바쥬스</i> 이후, 금속을 주 매체로 기록하는 이번 아카이브는 2m의 체고를 가진 순회전시장, 혹은 박람회장으로서 알루미늄 진열대에 무의식적인 오줌을 흘리기 시작한다.
+							</p>
+
+							<p>
+								<details>
+									<summary>소개글(차연서)</summary>
+									<p>"포스트레즈비언오페라로 출현했던 지난 라이브 퍼포먼스 Mosquitolarvajuice (모스키토라바쥬스)의 호스트 차연서는 사후기록에 대한 공동기술자로서 김영광과 홍지영을 초대한다. 금속을 주 매체로 기록하는 이번 아카이브는 2m의 체고를 가진 순회전시장, 혹은 박람회장으로서 알루미늄 진열대에 무의식적인 오줌을 흘리기 시작한다.
+									<br><br>
+									김영광은 유기체의 분해, 왜곡, 재조합된 요소를 활용하여 즉흥적이고도 과장된 방식으로 금속을 성형한다. 홍지영은 보이지 않지만 실재하는 것들을 위해 셔터소리로 탑을 쌓고 펜으로 비석을 새기고 있다. 그리고 차연서는 몸과 컴퓨터로 할 수 있는 이런 저런 작업들을 무정한 마음으로 돌본다."(내부기획/글; 차연서, Internal-curating/Text; Cha Yeonså)</p>
+								</details>
+								<details>
+									<summary>큐레이션 서문(김얼터)</summary>
+									<p>
+										"일본의 철학자 이와우치 쇼타로는 거대 서사의 붕괴 후 우리에게 도달한 지금 여기를 멜랑콜리의 시대라고 의미화한다. 포스트모던의 니힐리즘이 욕망의 좌절을 내포했다면, 멜랑콜리는 욕망의 불활성, 욕망의 작동 불가능성을 뜻한다. 높이도 없고 넓이도 없는 시대, 아무것도 느껴지지 않고 아무것도 감각되지 않는 시대에 무엇을 할 수 있을까. 쇼타로는 동시대 철학이 놓인 지평을 이와 같이 진단하고, 다시 초월성을 모색하는 철학의 한 조류를 사변적 실재론이라 말한다. 황재민과 김얼터의 컬렉션은 이에 대한 하나의 화답으로, 약하거나 강한 사변성을 보여 주는 특정한 작품들을 선보인다. 그러나 이 작업에서도 문제가 되는 것은 바로 그 실재로, 이들의 작업은 아무것도 감각할 수 없게 된 멜랑콜리의 시대에 무엇을 할 것인지 묻는다.
+										<br><br>
+										김얼터의 콜렉션이 소개하는 다섯 명의 참여자들은 그간의 작업 속에서 멜랑콜리의 불활성, 불가능성을 전반적으로 또는 부분적으로 다루어 왔다. 잃어버린 것, 잊지 못하는 것, 그래서는 안 되는 것, 무엇을 잘라내고 무엇을 덧붙일지, 그리고 그것을 넘어서 이것으로 무엇을 할지, 완벽하게 서로를 이해하는 일이 불가능해진 세계에서 미술하기는 어떤 의미를 지니는가? 참여자들의 작업에서 마주할 수 있는 것은 단일한 사물이다. 그러나 그것은 결단코 단일한 사물이 아니다. 미술에 통용되던 몇 가지 관례적 질문을 무화하는 새로운 종류의 작업들, 그 출현으로 여러분을 초대한다." (협력기획; 김얼터, Cooperative-Curating; Kim Alter.)
+									</p>
+								</details>
+								<details>
+									<summary>PACK FAIR 23</summary>
+									<p>
+										"We Want a Deep Stack"
+										<br>2023.11.01.(수) - 11.05.(일)
+										<br>성수동 공간 와디즈
+										<br><a href="https://pack-fair.com">pack-fair.com</a>
+										<br><br>
+										"PACK FAIR는 예술가의 실험정신을 PACK에 담아 스트리밍하는 예술 축제입니다. 5회째 열리는 올해 행사는 슬로건 'We Want a Deep Stack'을 중심으로, 오늘날 인류가 마주한 수많은 문제에 접근하는 새롭고 깊은 지혜의 영역이 필요하다는 메세지를 송출합니다."(주최/주관; PACK, Hosting; PACK.)
+										<br><br>
+										PACKER 10; 
+										김동용, 김얼터, 모 희, 박시모, 송태용, 윤태균, 이지언, 주슬아, 정시우, 황재민.
+										<br>ARTIST 50;
+										ACS, Authentic Internet, EGNARTS, Kimberly DAOα, KKEKK, Lost Air Seoul, s.a.h, 고요손 x 장종훈, 기예림, 김무영, 김보원, 김신애, 김윤아, 김현진, 남다현, 모스키토라바쥬스, 문이삭, 민혜인, 박카로, 뿌리(안태원), 샴푸, 서민우, 서혜연, 선점원, 숏서킷, 신동철 x 하영지, 신하라, 오민수, 유로모, 유세은, 유지오, 이연석, 이용재, 이정근, 이종환, 이주영, 이준학, 이토명, 장영해, 정아사란, 정영호, 통신피뢰침, 한수지, 한지원, 한지훈, 한진, 한하예닮, 함성주, 허연화, 후지시로 우소.
+									</p>
+									<img src="img/msqt_metal/poster.jpg" alt="PACK FAIR 23 Main Poster">
+								</details>
+							</p>
+						</div></td>
+
+						<td><div class="div-for-credit">
+							<p>
+								<b>모스키토라바쥬스(김영광, 홍지영, 차연서)</b>
+								<b>Mosquitolarvajuice(Kim Youngkwang, Hong Jiyoung, Cha Yeonså)</b>
+								<a href="https://msqt.kr">MSQT.KR</a>
+								<details>
+									<summary>제작 크레딧</summary>
+									<small><ul>
+									<li><b>금속공예; 김영광, 알루미늄 변형 2023.10.</b></li>
+									<li><b>흑백사진; 홍지영, 공연 사후기록 2023.06.</b></li>
+									<li><b>내부기획/AI사진; 차연서, 2023.10 / 2023.03</b></li>
+									<div style="padding-left: 1rem;">
+										<li>퍼포머 자문; 백상 2023.10</li>
+										<li>비단재갈에 팔자매듭; 이토명 2023.10 (Special Thanks)</li>
+									</div>
+										<li>금속공예; 김영광, 알루미늄 성형 2022.12</li>
+										<li>흑백사진; 홍지영, 공연 기록 2022.12</li>
+										<li>관객용 칵테일지거; 차연서, 로고 디자인 2022.12</li>
+									<li><a href="https://msqt.kr">msqt.kr</a></li>
+									</ul></small>
+								</details>
+								<details>
+									<summary>Production Credits</summary>
+									<small><ul><li><b>Metal Craft; Kim Youngkwang, 2023.</b></li>
+									<li><b>B&W Photography; Hong Jiyoung, 2023.</b></li>
+									<li><b>Internal-curating/AI Photography; Cha Yeonså, 2023.</b></li></ul></small>
+								</details>
+							</p>
+							<p>
+								<b>PACK FAIR 2023</b>
+								<br><a href="https://pack-fair.com/">pack-fair.com</a>
+								<details>
+									<summary>행사 크레딧</summary>
+									<ul>[참여작가] 총 50인(팀) [협력기획자] 총 10인 [기획/주최] PACK(리사익) [후원] 문화체육관광부, (재)예술경영지원센터, 2023 작가미술장터 지원사업 [협력] WADIZ</ul>
+								</details>
+								<details>
+									<summary>Event Credits</summary>
+									<ul>[Artists] 50 Artists/Teams [Curators] 10 Curators [Planning/Hosting] PACK [Support] MCST(Ministry of Culture, Sports and Tourism), Korea Arts Management Service [Cooperation] WADIZ</ul>
+								</details>
+							</p>
+						</div></td>
+						<td>
+							<div class="div-for-scroll">
+								<p>PACK
+								</p>
+							</div></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="img/motel/a05.jpg" alt="모텔전 기록사진_화장실">
+								</figure>
+							</div>
+						</td>
+						<!-- 표 프로젝트 타이틀 -->
+						<td class="td-for-title">
+							<div class="div-for-scroll">
+								<p>
+									<a href="2023-festival-in-motel.html" id="festival-in-motel"><small>モーテルでフェスティバル(모텔에서 축제)
+									<br>Festival in motel</small></a>
+								</p>
+								<p>
+									<small>W/O F. 가 주최한 단체전 《모텔전: 눈 뜨고 꾸는 꿈》에 참여. Participated in Group Show 《The Motel : Because I want to live there》 hosted by team W/O F.</small>
+								</p>
+							</div>
+						</td>
+						<td>2023</td>
+						<td>
+							<div>
+								<small><p>한국화, 만화, 시, 사진, 설치<br>Korean painting, Comics, Poetry, Photography, Installation</p>
+								<p>단체전<br>Group Show</p></small>
+							</div>
+						</td>
+
+						<!-- 표 프로젝트 내용 -->
+						<td><div class="div-for-scroll">
+							<p>
+								<dt>모텔전: 눈 뜨고 꾸는 꿈 The Motel: I want to live there</dt>
+								<dd>할로윈밤 12시간 동안의 단체전 12-hour group show on Halloween night</dd>
+							</p>
+							<p>
+								<dl>
+									<dt>モーテルでフェスティバル(모텔에서 축제)</dt>
+									<dd>
+										축제, 페이퍼컷 콜라주 (닥종이에 채색; 차동하), 2023
+										<ul style="padding-left: 2rem;">
+											<li>축제 23 #3-1; 세빗 딜도</li>
+											<li>축제 23 #3-2; 떡두꺼비 손목</li>
+											<li>축제 23#4; 개가 된 여자</li>
+											<li>축제 23#9; 수문지기</li>
+											<li><s>축제 23 #1; 꽃다발을 든 아이</s></li>
+											<li><s>축제 23 #8; 엉덩이 커튼</s></li>
+											<li><s>축제 23#7; 벌레들의 수계식</s></li>
+										</ul>
+										モーテルでフェスティバル(모텔에서 축제), 종이에 단편만화, 홍대 미성장모텔 209호에서 혼합재료, 가변설치 (흑백사진; 홍지영, 복합기에 복사된 시집과 만화책; 김언희, 시이나 우미, 한-일 번역 검수; 김해영), 2023
+									</dd>
+								</dl>
+							</p>
+
+							<p>
+								<dl>
+									<dt>
+										Festival in motel
+									</dt>
+									<dd>
+										<i>Festvial</i>, Papercut Collage (Color on Dak Paper; Cha Dongha), 2023
+										<ul style="padding-left: 2rem;">
+					
+											<li>Festival 23 #3-1; Dildo</li>
+											<li>Festival 23 #3-2; Toad</li>
+											<li>Festival 23 #4; Dog</li>
+											<li>Festival 23 #9; Watergate</li>
+											<li><s>Festival 23 #1; Bouquet</s></li>
+											<li><s>Festival 23 #8; Curtain</s></li>
+											<li><s>Festival 23 #7; Precepts</s></li>
+										</ul>
+									</dd>
+									<dd>
+										<i>Festival in a motel</i>, Comics on paper, Mixed materials, Variable installation(Gelatin silver print; Hong Jiyoung), Copied poetry book and comic book through a multifunction printer; Kim Eon Hee, Shiina Umi, Korean-Japanese translation proofreading; Kim Hyeyoung) on room 209 in Hongdae Misungjang Motel, KR
+									</dd>
+								</dl>
+							</p>
+
+							<p>
+								<details>
+									<summary>서문(홍지영)</summary>
+									<p>"우리가 슬픔, 더러움에 대해서 이야기하는 내내 그 안에는 수많은 트라우마들이 숨어있었겠지만 이번 호는 트라우마에 대해 더욱 집요하게 이야기 합니다. 그 안으로 들어갑니다. 여기가 어딘지 모르겠는 꿈속, 동굴, 굿판, 암실, 창문이 없는 지하, 고시원, 화장실과 벽에서 계속해서 물이 흐르던 방, 습하고 폐쇄적인 자궁, 죽은 것도 산 것도 아닌 상태로 머무르는 곳, 장례식, 병실, 정신병자의 선형적이지 않고 조각난 머릿속, 집결지, 그리고 모텔. 모텔로 갑니다."(기획/글; 홍지영, 전문: linktr.ee/withoutframe_)</p>
+								</details>
+								<details>
+									<summary>Preface(Hong Jiyoung)</summary>
+									<p>"Of course, trauma was present all along in our previous work about sadness and filth. But this time, we face it head-on. We refuse to let it pass. We go deep—into dreams where we don’t know where we are; into the cave; into the shaman’s lair; into the darkroom; into the windowless basement; into the gosiwon room barely big enough to lie down in; into the apartment with the flooding bathroom and moldy walls; into the damp, cramped womb; into the place where we linger neither dead nor alive; into the funeral; into the hospital room; into the minds of the mad, littered with shards of memory and fantasy; into the red light district; and into the motel. Yes, the motel." (Curating/Text; Hong Jiyoung, Full text; linktr.ee/withoutframe_)</p>
+								</details>
+								<details>
+									<summary>《모텔전: 눈 뜨고 꾸는 꿈 The Motel : Because I want to live there》</summary>
+									<p>
+										참여작가; 곽예인, 김보람, 성재윤, 야광, 재훈, 차연서, 홍지영, 황선미, 황아림, 황예지, 일시; 10월 27일 오후 7시-10월 28일 오전 7시 (12시간), 장소; 홍대 미성장 모텔 (서울특별시 마포구 양화로19길 20), 티켓예약; 15,000원, 현매 20,000원 (프로필 상단 링크트리).
+									</p>
+									<p>
+										Aritsts; Kwak Yein, Keem Boram, Sung Jaeyun, YAGWANG, Jaehun, Cha Yeonså, Hong Jiyoung, Hwang Sunmi, Hwang Arim, Yezoi, Date; 10/27 19:00 ~ 10/28 7:00 (12 hour), Veneu; 미성장 모텔 Misungjang Motel (20, Yanghwa-ro 19-gil, Mapo-gu, Seoul, Republic of Korea), Ticket; Pre-booking ₩15,000 (Instagram Bio for link), On-site ₩20,000.
+									</p>
+									<figure>
+									<img src="img/motel/poster1.jpg" alt="Poster">
+									<img src="img/motel/poster2.jpg" alt="Poster">
+									<img src="img/motel/floormap.png" alt="Floormap">
+									</figure>
+								</details>
+							</p>
+						</div></td>
+
+						<td><div class="div-for-credit">
+							<p>
+								<b>곽예인, 김보람, 성재윤, 야광, 재훈, 차연서, 홍지영, 황선미, 황아림, 황예지</b></p>
+							<p>
+								<b>Kwak Yein, Keem Boram, Sung Jaeyun, YAGWANG, Jaehun, Cha Yeonså, Hong Jiyoung, Hwang Sunmi, Hwang Arim, Yezoi</b>
+							</p>
+						</div></td>
+					</tr>
+				</tbody>
+
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image">
+							<div class="div-for-image">
+								<figure>
+									<img src="img/unbelievable2.jpg" alt="축제 Festival">
+								</figure>
+							</div>
+						</td>
+						<!-- 표 프로젝트 타이틀 -->
+						<td class=".td-for-title">
+							<a href="2023-this-unbelievable-sleep.html"> 이 기막힌 잠<br>This Unbelievable Sleep</a>
+						</td>
+						<td class=".td-for-title">2023</td>
+						<td class=".td-for-title">온라인 개인전<br>Online Solo Show</td>
+
+						<!-- 표 프로젝트 내용 -->
+						<td><div class="div-for-scroll">
+							<p>
+								<dt>이 기막힌 잠 This Unbelievable Sleep</dt>
+								<dd>게릴라 웹전시<br>Guerrilla Web-exhibition</dd>
+							</p>
+							<p>
+								<dl>
+									<dt><a href="https://energywhoisshe.com/this-unbelievable-sleep/">이 기막힌 잠</a>, 웹사이트, 온라인(KR), 2023.06</dt>
+									<dd>축제(평면, 2023), 7 Elephants(게임, 2023), 모스키토라바쥬스(게임, AI사진, 2023), <a href="https://youtu.be/i2cnXF9Qrac">인터뷰</a>(비디오, 2023), <a href="https://youtu.be/QUkL0x6syOw">퇴거</a>(비디오, 2023)</dd>
+								</dl>
+							</p>
+
+							<p>
+								<dl>
+									<dt><a href="https://energywhoisshe.com/this-unbelievable-sleep/">This Unbelievable Sleep</a>, Website, Online(KR), 2023.06.</dt>
+									<dd>Festival(Painting, 2023), 7 Elephants(Game. 2023), Mosquitolarvajuice(Game, AI Photography, 2023), <a href="https://youtu.be/i2cnXF9Qrac">Interview</a>(Video, 2023), <a href="https://youtu.be/QUkL0x6syOw">Deinstallation</a>(Video, 2023)</dd></dd>
+								</dl>
+							</p>
+
+							<p>
+								<a href="Unbelievable.pdf">Postcard.pdf</a>
+							</p>
+						</div></td>
+
+						<td><div class="div-for-credit">[기획/전시] <b>차연서</b>, [비평] <b>양효실</b> [협력작가] <b>차동하</b> [협업작가] <b>홍지영</b> [번역] 손나리, 이상민 [웹사이트] 차연서
+							<br><br>
+							[Artist] <b>Cha Yeonså</b> [Critique] <b>Yang Hosil</b> [Cooperating-artist] <b>Cha Dongha</b> [Collaborating-artist] <b>Hong Jiyoung</b> [Kor-Eng Translator] Sohn Nari, Lee Sangmin [Website Developer] Cha Yeonså</div></td>
+						<td><div class="div-for-scroll">에너지후이쉬게임즈<br>Energywhoisshe Games</div></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>
+							<!--<img src="img/this-unbelievable-sleep/oci.jpg">-->
+						</td>
+						<td class=".td-for-title">이 기막힌 잠<br>This Unbelievable Sleep</td>
+						<td class=".td-for-title">2023</td>
+						<td class=".td-for-title">퇴거된 개인전<br>Deinstalled Solo Show</td>
+						<td><div class="div-for-scroll">
+							<p>
+								<dl>
+									<dt>이 기막힌 잠 This Unbelievable Sleep</dt>
+									<dd>오픈 일주일 전 전시 취소<br>Exhibition cancelation one week before opening</dd>
+								</dl>
+							</p>
+							<p>
+								<a href="https://energywhoisshe.com/this-unbelievable-sleep/">https://energywhoisshe.com/this-unbelievable-sleep/</a>
+							</p>
+						</div></td>
+
+						<td><small><p> </p>
+							<!--<p>[선정작가] 차연서 [담당큐레이터] 이영지 [관장] 이지현</p>--></small></td>
+						<td><div class="div-for-scroll"><p>OCI미술관<br>OCI Museum of Art</p><p>2023 OCI Young Creatives</p></div></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="2022-msqt/mom-and-daughter.png">
+									<img src="img/msqt_velo.jpg" alt="천장 아래">
+									<img src="img/msqt2.png" alt="하늘 아래">
+								</figure>
+							</div>
+						</td>
+						<td class=".td-for-title">
+							<a href="2022-mosquitolarvajuice.html">모스키토라바쥬스 Mosquitolarvajuice</a>
+						</td>
+						<td class=".td-for-title">2022</td>
+						<td class=".td-for-title"><div class="div-for-scroll">서울에서 포스트레즈비언오페라 x 리퀴드컴퓨테이션, 라이브퍼포먼스<br>Post Lesbian Opera x Liquid Computation, Live Performance in Seoul</div></td>
+						<td>
+						<div class="div-for-scroll">
+							<p><dl>
+								<dt>모스키토라바쥬스, 라이브 퍼포먼스, Les601, 서울</dt>
+								<dd>2022 12/30, 12/31, 11AM, 1 Hour.</dd>
+								<dd>천장 아래, 하늘 아래, 두 개의 방 사이로 통로.</dd>
+							</dl></p>
+							<p><dl>
+								<dt>Mosquitolarvajuice, Live Performance, Les601, Seoul(KR)</dt>
+								<dd>Under the ceiling, Under the sky, and Passage Between Two Rooms.</dd>
+								<br>
+								<dd>Perception Neuron MoCap Suit, Velodyne Lidar, Azure Kinect, LED Screen, Projection</dd>
+							</dl></p>
+							<p>
+								<div class="div-for-scroll">
+							<a href="https://msqt.kr">
+								msqt.kr
+							</a>
+						</div>
+							</p>
+							<p>
+								<details>
+									<summary>
+										History
+									</summary>
+									<li>Ryu Dayun, Cha Yeonså, Taking the pulse of digital(디지털의 맥박 짚기), artist talk related to the the publication of a translation book 『Glitch Feminism: A Menifesto(글리치 페미니즘 선언)』), The Book Society, Seoul ART-CHAEKBOGO(Seoul, KR). 2022.12</li>
+									<li>Digital Queerators(Isu Mignon Mignonne, Tandile Mbatsha, Cat Jugravu), The noise is always at fault, PAC(performing arts in context) Conference - Digital Soirées, Online(Zürich, CH)</li>
+								</details>
+							</p>
+						</div>
+						</td>
+						<td><div class="div-for-credit">
+							<p>
+							[기획/연출/개발/제작] <b>차연서</b>
+							[퍼포머] <b>손나리, 김금원, 이재훈, 차연서, 영안, 백상, 홍지영</b> [버츄얼퍼포머] <b>양효실, 이미래</b>
+							<br><br>
+							[Performers / VirtualPerformers] <b>YounAn, BaekSang, Sohn Nari, Kim Geumwon, Hong Jiyoung, Bernardo Lee, Yang Hyosil, Mire Lee</b>
+							</p>
+							<details>
+								<summary>프로젝트 크레딧</summary>
+								[기획/연출/개발/제작] 차연서
+							[퍼포머/버츄얼퍼포머] 손나리, 김금원, 이재훈, 차연서, 영안, 백상, 홍지영, 양효실, 이미래 [무대] 김영광, NACA, (주)스마트인터렉티브 / [포스터 일러스트레이션/디자인] Sibylle Ruppert, 인현진 / [번역] 류다연 / [기록] 홍지영, 박태영, (주)루미솔 / [작곡편곡] 영안, 백상 / [도어퍼슨] 이솔엽, 안현진 / [사운드 보조] 곽지원 / [자문] Isu Mignon Mignonne, 기획자캠프(현시원, 임익수)
+							</details>
+							<details>
+								<summary>Project Credits</summary>
+								[Performers / VirtualPerformers] YounAn, BaekSang, Sohn Nari, Kim Geumwon, Hong Jiyoung, Bernardo Lee, Yang Hyosil, Mire Lee [Stage] Kim YoungGyang, NACA, (Co.)Smart Interative / [Poster Design] Sibylle Ruppert, In Hyunjin / [Translation] Ryu Dayun / [Record] Hong Jiyoung, Park Tyeyoung, (Co.)Rumisol / [Music] YoungAn, BaekSang / [Doorperson] Lee Solyeop, An Hyunjin / [Sound Advice] Gwak Jiwon / [Metoring] Isu Mignon Mignonne, Planning Camp(Hyun Siwon, Im Iksu)
+							</details>
+						</div>
+						</td>
+						<td><div class="div-for-scroll"><p>서울문화재단<br>SFAC</p>
+							<p>2022 Unfold X Planning Camp</p></div></td>
+						<td></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="img/3H001.jpg" alt="Scene 2">
+									<img src="img/3H002.jpg" alt="Scene 1">
+								</figure>
+							</div>
+						</td>
+						<td class=".td-for-title"><a href="2022-3-households.html">쓰리하우스홀즈<br>3 Households</a></td>
+						<td class=".td-for-title">2022</td>
+						<td class=".td-for-title">게임 출시<br>Game Release</td>
+						<td>
+							<div class="div-for-scroll">
+							<p>
+							<dl>
+								<dt><a href="https://store.steampowered.com/app/2217540/3_Households/">3 Households</a>, 게임 출시, 온라인(한/영), 2022.12.</dt>
+								<dd>{ “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };</dd>
+							</dl>
+							</p>
+							<p>
+							<dl>
+								<dt><a href="https://store.steampowered.com/app/2217540/3_Households/">3 Households</a>, Game Release on Steam, Online(Eng/Kor), 2022.12.</dt>
+								<dd>{“The Mind of a Destructive Mother”, “The Quantum Wave Field of a Productive Daughter”, “The Physical Constitution of the Daughter’s Potential Girlfriend” };</dd>
+								</p>
+							</dl>
+							</p>
+							<!--<p>
+								<li>Poster1.png</li>
+								<li>Poster2.png</li>
+								<li>Poster3.png</li>
+								<li>Promotion T-shirts Black.pdf</li>
+								<li>Promotion T-sherts White.pdf</li>
+							</p>-->
+							</div>
+						</td>
+						<td><div class="div-for-credit">[개발/배급] <b>Energywhoisshe Games</b>, [기획] 차연서, [게임디자인/사운드트랙] 차연서 이상화 / [프로모션 굿즈 일러스트레이션/디자인] 차연서, 젤리껌, 인현진 / [리뷰] 곽소진, 조혜영 / [에너지서포트] 김헤일로, 손나리 / [번역] 박재용, 류다연</div></td>
+						<td><div class="div-for-scroll"><p>한국문화예술위원회 & 문화체육관광부<br>ARCO & MCST</p><p>2022 Art Change Up</p>
+						</div></td>
+						<td><div class="div-for-scroll">
+							
+						</div></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="img/every18.jpeg">
+								</figure>
+							</div>
+						</td>
+						<td class=".td-for-title">
+							<a href="2021-3-households.html">
+								쓰리하우스홀즈<br>3 Households
+							</a>
+						</td>
+						<td class=".td-for-title">2021</td>
+						<td class=".td-for-title">게임 소프트웨어 프로토타입 및 전시<br>Game Software and Exhibition</td>
+						<td>
+							<div class="div-for-scroll">
+							<p>
+								<dl>
+								<dt>3 Households, 게임 소프트웨어 프로토타입, 2021.11.</dt>
+								<dd>
+								</dd>
+								</dl>
+							</p>
+							<p>
+								<dl>
+								<dt>3 Households, game software prototype, 2021.11.</dt>
+								<dd>
+								</dd>
+								</dl>
+							</p>
+							<p>
+								<details>
+									<summary>History</summary>
+								<li>TINC(Seoul, KR), collaborative colo show, 2022.01.</li>
+								<li>Bucheon Art Bunker B39(Bucheon, KR), trio show 《칠전방울, 펌프, 불가사리(Seven-coin bell, Pump, Bulgasari)》, 2021.11.</li>
+								<li>Webzine Seminar(Online, KR), Poetic Computation Article, 2021.11.</li>
+								<li>Art Center Nabi(Seoul, KR), prototype presentation & interview, 2021.11</li>
+								<li>Art Center Nabi Creative+ 2021: Game Crew, study, workshop, metoring program, 2021.06-2021.11.</li>
+									</li>
+								</details>
+							</p>
+							</div>
+						</td>
+						<td><div class="div-for-credit">[기획]차연서<br>[게임디자인/사운드트랙] <b>차연서 이상화</b><br>[사진] 이명은<br>[자문] 룹앤테일(김영주, 조호연)</div></td>
+						<td><div class="div-for-scroll"><p>아트센터나비 & 한국콘텐츠진흥원<br>Art Center Nabi Museum & KOCCA</p>
+							<p>Art Center Nabi Creative+ 2021</p>
+						</div></td>
+						<td><div class="div-for-scroll">
+							
+						</div></td>
+					</tr>
+				</tbody>
+				<tbody>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<figure>
+									<img src="img/juicy_still.png">
+									<img src="img/blind_still.jpeg">
+								</figure>
+							</div>
+						</td>
+						<td class=".td-for-title">
+							<a href="2020-juicy-mosquito.html">쥬시 모스키토<br>Juicy Mosquito</a>
+						</td>
+						<td class=".td-for-title">2020</td>
+						<td class=".td-for-title">혼합현실 퍼포먼스<br>XR Performance</td>
+						<td><div class="div-for-scroll">
+							<p>
+							<dl>
+							<dt>쥬시 모스키토, 라이브 퍼포먼스, 한국예술종합학교 본관갤러리(서울 성북구),  2020.11.</dt>
+							<dd>
+							</dd>
+							</dl>
+							</p>
+
+							<p><dl>
+							<dt>Juicy Mosquito, Live Performance, K'arts Gallery(Seoul, KR), 2020.11.</dt>
+							<dd>
+							</dd>
+							</dl>
+							</p>
+							<p>
+								Perception Neuron MoCap suit, Unity game engine,  Oculus Quest VR HMD, head-mounted camera, projection.
+							</p>
+							<p>
+								<li>"모기를 죽이려면 뺨을 때려라", 웹사이트, <a href="https://kartsfaa.cargo.site/">졸업전시</a> "크라운샤이니스", 온라인(KR), 2020.12.</li>
+								<li>"블라인드 폴딩 인 아리아", 트레일러 비디오, 아르스일렉트로니카 서울, 온라인(KR-AU), 2020.09</li>
+								<li>Slap to kill the mosquito, 웹사이트, 온라인(KR), 2020.12.</li>
+								<li>Blind-folding in Aria,  Trailer Video, Online(KR-AU), 2020.09.</li>
+							</p>
+							<p>
+								코로나19로 인해 관계자만 입장 가능한 무관객공연 진행, 온라인으로 전시. Due to COVID-19, we should have set only related people enter the live performance without audiences, and then displayed the record online.
+							</p>
+						</div></td>
+						<td><div class="div-for-credit">
+							[기획/연출] <b>차연서</b><br>
+							[퍼포머] <b>김해영-박주현-강예빈 이솔엽-이상화(트레일러. 이토명)박민영-임다울 유명민-이윤수 안현진-최혜라 한기장-김해나 송유진-원예나</b>
+							<br>
+							[조연출/예산] 원예나 조영명 [음악] 김은준 최하린 [기록] 오세아 최희윤 임지수 김해영 이규원 [드라마대본 원작] 이우경(트레일러. 조영명) [헤어] 윤지아(트레일러. 이토명) [무대/조명] 차연서 김재식 윤혜진 [버츄얼바디] 김호정, 최효정 [기술] 스튜디오아텍(산학협력) [제작] 조충연(지도교수)</dd>
+							<details>
+								<summary>Credits</summary>
+								<b>Team Juicy Mosquito</b>
+							</details>
+						</td>
+						<td><div class="div-for-scroll">한국예술종합학교 산학협력프로그램 & 융합예술센터<br>K'Arts, 2020 Art&Technology Education Program, Immersive Performance & K'Arts Art Collider Lab</div></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<!-- 표 이미지 -->
+						<td class="td-for-image"> 
+							<div class="div-for-image">
+								<img src="img/besad2.jpeg">
+							</div>
+						</td>
+						<td class=".td-for-title"><a href="2020-be-sad-i-dare-you.html"> 크게 슬플 일인가요<br>Be Sad I Dare You</a></td>
+						<td class=".td-for-title">2020</td>
+						<td class=".td-for-title">2인전<br>Duo Show</td>
+						<td><div class="div-for-scroll">
+							<p>
+								<dt>크게 슬플 일인가요, 갤러리175, 서울</dt>
+								<dd>'폴폴 트라이앵글'(비디오, 2019-2020), 'HOW DARE I FEEL SAD WHEN I THINK OF YOU'(일기-교정교열본, 2019-2020), '폴폴 시트'(조각, 2020), '폴폴 스크린샷'(사진, 2020)</dd>
+							</p>
+							<p>
+								<dt>Be Sad I Dare You, Gallery175, Seoul, KR</dt>
+								<dd>'Far For Triangle'(Video, 2019-2020), 'HOW DARE I FEEL SAD WHEN I THINK OF YOU'(Diary-Proofreading Copy, 2019-2020), 'Far For Sheet'(Sculpture, 2020), 'Far For Screenshot'(Photography, 2020)</dd>
+							</p>
+							<p>
+								Catalogue.pdf
+							</p>
+						</div></td>
+						<td><div class="div-for-credit">[공동기획/전시] <b>차연서, 박주영</b>, [리뷰] 박소영, [그래픽디자인] 인현진 / [설치 자문] 김혜정(NACA)<br>[Co-Curator/Artist] <b>Cha Yeonså, Park Juyeong</b> / [Reviewer] Park Soyoung, [Graphic Designer]In Hyunjin / [Installation Advisory] Kim Hyejyeong(NACA)</div></td>
+						<td><div class="div-for-scroll">한국예술종합학교 조형연구소<br>K'ARTS Center for Visual Studies</div></td>
+						<td><div class="div-for-scroll">
+							
+						</div></td>
+					</tr>
+				</tbody>
+			</table>
+	
+	<!--프로젝트 텍스트-->
+	<div class="things">
+		<article class="projects" style="padding-left:0; padding-right:0;">
+		<table class="texts">
+				<thead style="color:#888888;">
+					<tr>
+						<th style="border-width: 0px;"><br></th>
+						<th style="border-width: 0px;"><br></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<details>
+								<summary>양효실, "웃는 여자, 보는 아이, 엮이는 유충들", 이 기막힌 잠. (비평, 2023)</summary>
+								<p>
+									<a href="energywhoisshe.com/this-unbelievable-sleep">energywhoisshe.com/this-unbelievable-sleep</a>
+								</p>
+								<p>
+									<b>웃는 여자, 보는 아이, 엮이는 유충들</b>
+								</p>
+								<p>
+									누가 법-상징의 언어를 훼손할까요? 누가 인간화(humanization)에 모른 채로 저항할까요? 누가 어린 아이의 감각을 거의/겨우 빼앗기지 않은 채 성인의 세계를 건너가는 비인간, 포스트인간일까요? 아이는 역순으로 할머니나 유령을 알아보잖아요. 닮았죠. 꺾어버리고 싶은 마음이 드는 여린 것들, 이란 표현은 쓰다듬어주고 싶은 아이, 란 표현과 같죠. 아이가 앞으로 볼 끔찍한 것들을 못 보게 하려면 아이를 꺾어버리거나 아이는 먼저 온 미래니까 고마워서 만지고 나누고 싶죠. 아이는 예술가나 광인, 아픈 사람처럼 사회적 효용성이 덜한 존재들을 닮았고 또 아이는 그런 사람이 안 될 수도 있으니 사회적 효용성이 있는 이름이기도 하고요. 그러고 보니 아이는 누구에게나 소중하군요.
+								</p>
+								<p>
+									이번에 연서의 작업에 대한 짧은 글을 의뢰받은 저는 저번 라이브 퍼포먼스 <모스키토라바쥬스>에 “유충(larva)”으로 초대받아서 페터라니 아글라야의 아이의 수난극을 읽는 강연 퍼포먼스를 찍혔더랬습니다. 연서의 유충 분류법에 따르면 저는 “나이와는 상관없이 영혼의 차원에서 더 어린” 유충이었나봐요. 연서의 대역을 맡은 김금원씨와 듀오로 등장해서 실비아 플라스의 시를 낭독한 연서의 어머니 손나리씨도 그런 유충이었죠. 이 글은 자신이 알아본 유충들을 위한 무대를 만들고 그들에게 합당한 역할을 맡기는 디렉터 연서에게 이미 환대를 받은 자의 글이고, 그래서 비평은 못될 것 같아요. 비평은 어쨌든 공적인 행위이고, 거리를 전제로 쓰이는 글인데, 저는 연서와 너무 가깝고 연결되어 있거든요. 한 방을 작업실로 쓰는 연서네 아파트에서 나와 제 집으로 갈 무렵의 저는 물렁물렁한 벌레, 오물오물한 입, 연성화된 뇌 같았죠. 젖고 감염된.
+								</p>
+								<p>
+									연서의 엄마 손나리 연구자는 자신이 전공한 실비아 플라스를 갖고 더 어린 연서와 대화를 했다고 했어요. 너무 약해서 도저히 살아남을 것 같지 않은 딸, 어쩌면 살기를 거의 거부하는 딸과 대화하려고 이 엄마는 불행했다는 여자의 예민하고 폭력적이고 정확한 시를 ‘모어(mother tongue)’로 사용했데요. 연서의 문장은 이제 여러분도 읽게 되겠지만 낯설고 아름다워요. 혹은 분별의 세계를 ‘응시하는’ 비-자아의 시죠. 지난 두 번의 라이브퍼포먼스의 제목이기도 했던 모기에 대해 연서는 “엄청 사적인 상징”, “레즈비언 같은 것”, “누구나 접속할 수 있는 몸”, “퍼포먼스 동작 같은 것”, “공격적이고 집착적인데 엄청 약한 사람들”, “제일 사람을 많이 죽이는 육식자”, “춤”이라고 묘사했어요. 예술가 연서는 자신의 무대를 “갓 태어난 모기들을 불러 모은 자리”로 상상합니다. 그리고 연서의 퍼포머-모기는 “채식주의자”인 수컷모기도 포함했더군요. 연서는 제-자리를 고수하려하는 퀴어도 ‘퀴어링(queering)’할 만큼 상투형들이 무너지는 자리네요. 아이는 이분법-규범을 모른다는 점에서, 분별의 세계를 퀴어링을 통해 몰수해 들인다는 점에서, 자아의 고정성을 뒤흔들 줄 안다는 점에서 소수자, 위반자, 비자아, 뭐 그런 이름과 연동하는 거죠.
+								</p>
+								<p>
+									이전 두 번의 라이브 퍼포먼스의 퍼포머들을 섭외하고 한 사람 한 사람 만나는 자리에서 연서는 그들의 트라우마나 성적 취향을 먼저 알아내려고 했다고 했어요. ‘비밀’로 곧장 직진하는 거죠. 곧 멸망인 것처럼, 절망 중에 사는 사람인 것처럼 그렇게 자신의 취약한 패를 보여주고 상대와 연결되는 빠르고 공격적인 방법인거죠. 한 여름의 모기들, 연서는 죽이지 못하기에 “허공에서 뺨을 때릴” 뿐인 이 목숨들 사이에서 곧장 일어나는 유대일 겁니다. 상처 입은 몸, 수치스러운 몸은 그러니 퍼포먼스에 얼마나 적절한 것인지요. 연서의 공연이나 작품은 앞으로도 묻어두었거나 잊었거나 말할 수 없었던 비밀들, 고통들을 꺼낼 수 있는 촉매제로 사용될 겁니다. 저도 그랬어요. 여러분도 그럴 겁니다. “한국인은 내가 아는 한 가장 심하게 트라우마를 겪은 민족에 속한다”고 시인 캐시 박 홍이 얘기하잖아요?
+								</p>
+								<p>
+									연서는 올해 초 있었던 김언희 시인의 시 낭독회를 다녀온 뒤 너무나 살고 싶어졌다고 했어요. 언희 언니의 목소리를 떠올리니, 죽지 않고 늙은 언니의 단호한 유쾌함을 떠올리니 왠지 이해할 것 같아요. 연서는 “부적”처럼 시집을 들고 다니면서 읽었다고 했지요. 그리고 이번 전시 제목 《기막힌 잠》은 시 「여느 날, 여느 아침을」에서, 살아있다는 착각, 고통, 분노를 반복하지 않아도 될 어느 아침 ‘시체’가 되어 있을 자신을 ‘보는’ 시에서 갖고 왔다고 해요. 불면이 심한 연서와 언희 언니가 연결되고, 낭창낭창한 시의 리듬으로 죽은 자신을 선매한 언니의 시에 넘쳐흐르는 웃는 구멍의 “헐, 헐, 헐”(「황혼이 질 때면」 중)을 연서는 페이퍼컷 콜라주에서 죽은 벌레들로 필사했어요.
+								</p>
+								<p>
+									게임이나 컴퓨터 영상 언어에 젬병인 제게는 이번 전시 중 《축제(festival)》 연작이 좀 읽고 다가갈 수 있는 작업들이네요. 연서는 아빠인 고(故) 차동하 작가의 작업실 유품, 여자친구 상화가 우연히 놓고 간 법의학 책의 차마 볼 수 없는 시신들 — 태반 째로 유기된 아이, 강에 빠진 남자, 굶어 죽은 여자, 강간당한 여자와 같은 — 을 찍은 사진, 위의 “헐, 헐, 헐”, 아빠 작업실에서 매번 마주치는 죽은 벌레들을 소재로 썼어요. 가깝고 좋아하고 피할 수 없는 것들이 사물, 이미지, 시의 목소리, 목숨들로서 연서에게 자기자신을 주장한 것이죠. 연서는 아빠를 “온갖 규칙 속에서 살았던 사람”으로 묘사합니다. 연서는 아빠의 죽음 이후 열린 한 전시회에 작가 차동하의 《축제》 연작에 대한 작가노트를 이렇게 대신 써서 보냈습니다. “인간의 희노애락을 구성하는 화려한 색채로 추상화한 꽃상여로 망자의 마지막 길을 배웅하는, 죽음과 생명의 축제.” 꽃과 상여는 문화적으로 가깝고 색은 죽음을 덮는 환영적-삶의 베일입니다. 연서는 차동하의 꽃상여의 무지개 색을 퀴어 프라이드의 엠블렘으로 전유했습니다. 연서는 규범 안에서 산 아빠, 차동하를 퀴어링함으로써 물렁물렁한 벌레나 유충으로 만들려는 것 같아요. 그리고 법의학서의 사체들, 일반인은 ‘보는’ 게 금지된 망자들의 몸-이미지를 아빠의 닥종이로 필사하는 작업을 진행했죠. 밑그림이나 드로잉 없이 재단사용 가위를 들고 수없는 실패 속에서 마침내 획득한 시각적 형상들, “페이퍼컷콜라주(닥종이에 채색, 차동하)”으로 분류된 《축제》 연작은 연서는 입에 올리지 않았던, 어른들을 위한 용어인 ‘애도’의 방식 같기도 합니다.
+								</p>
+								<p>
+									분별의 세계를 구성하는 적대적 자리인 삶과 죽음, 꽃과 시체, 벌레와 인간, 시체와 형상은 자세히 보면 하나입니다. 연서의 아빠와 작가 차동하가 한 사람인 것처럼. 아빠의 알레고리적 꽃 상여를 풀어헤치고, 그곳에 누워 있는 주검들을 응시하는 눈-연서의 무도덕적인 작업은 “살아있는 게 끔찍해서 계속 더 끔찍한 걸 보려고 들여다 본 책”이 곁에 있어서 이기도 했어요. 그러나 모든 것들이 연결되고 둘은 하나라는 것을 아이의 몸으로 체득할 뿐인 연서는 자신이 계속 열어본 책이 사실은 실비아 플라스나 페터라니 아글라야의 문학과 다르지 않다는 걸 발견합니다. 그래서인가 연서는 자신이 오린 주검들, 마침내 자신과 똑같이 ‘눈’을 갖고 자신을 응시한 죽은 몸들을 “친구들”이라고 불러요. 이건 유비를 통해서 접근할 수 없는 지독하고 집요한 응시의 증거라서 저는 필사하는 것 말고는 할 수 있는 게 없어요. 숱한 예술가들의 수난극을 번역하고 소개하고 있는 엄마 손나리씨는 “이렇게 시달릴 바에는 정면으로 돌파해보자”란 우리 연서의 고행을 그저 묵묵히 사랑하는 자로서 지켜보신 듯 하고요.
+								</p>
+								<p>
+									연서가 아빠의 “살점”으로 감각한 닥종이에 옮겨 놓은, 실제 사진 이미지와 연서의 어루만짐이 함께 보이는 형상들을 바라봅니다. 연서는 “결과물을 보면 몸들이 다 좀 웃기게 생긴 그림자 속에서 축제를 하고 있는 것처럼 보인다”고 읽었어요. 반복은 차이를 일으키죠. 차이는 ‘원본’의 힘을 빼앗으면서 두 번째에 새로운 힘을 넣죠. 연서의 “축제”는 아빠의 축제와 다르고 이번 축제는 옅은 웃음이기도 합니다. 카니발리즘이건 삶 자체이건, 상여가 나가고 있는 동네 장례식이건, 예술이건, 지금-이-순간이건 축제는 비극 속에 어른거리는 웃음을 포기하지 않는 것이니까요.
+								</p>
+								<p>
+									그리고 지난 번 퍼포먼스에 이어 이번 전시에도 참여한 홍지영 사진 작가와의 협업 등등에 대한 이야기는 지면상 불가능할 것 같습니다. 다음에 또 봐요.
+								</p>
+							</details>
+							<details>
+								<summary>곽소진, "두드려라 - 소리내라 - 반복해라 - 그것이 리듬이 될 때까지", 3 Households on Steam. (리뷰, 2023)</summary>
+								<p>
+									<a href="https://store.steampowered.com/app/2217540/3_Households/">store.steampowered.com/app/2217540/3_Households/</a>
+								</p>
+								<p>
+									<b>두드려라 - 소리내라 - 반복해라 - 그것이 리듬이 될 때까지</b>
+								</p>
+								<p>
+									유동적으로 움직이는 프랙탈 네트워크의 공간 속에서 누군가 인사를 건넨다. 화면의 왼쪽 창에 텍스트로 등장한 그는 ‘파괴적인 엄마'이거나, ‘생산적인 딸'이거나 ’잠재적인 딸의 여자친구'이거나, 혹은 우리의 인식 속에서 충분히 추상화 될 수 있을 정도로 구체적인 ‘더미 dummy’로서의 몸이다. 그는 자신의 직업과 성향을 변주하며 반복적으로 등장하는데, 이 무한한 몸(들)에 대해 우리가 포착할 수 있는 것은 다만 그가 일종의 병리적인 상황에 처해있다는 것이다. 그들은 "산만함", "스트레스", "피로", "불면", "소화불량", "불쾌감", "통증", " 불안", “분노”와 같은 증상으로 이곳에 오게 되었으며 자신이 집안에서 안전을 느낄 수 있었던 공간은 매우 국소적이었다고 서술한다. 그리고 중앙에 문자표가 있다. 이 문자표는 21개의 모음상자1)로 이루어져 있다. 이 글자들은 불완전하게 열려있는 상태로 마우스 커서를 활성화 시킨다 – 모음은 우리의 성대를 좁게, 혹은 닫히게 할 수 없다 – 이곳에서 우리에게 허용된 일은 모음상자를 위나 아래, 옆으로 옮기며 일종의 패턴을 만드는 것이다. 그럴 때마다 화면의 양측에서 ‘그 집안’에 대한 랜덤한 시가 생성된다. 이 시들은 왜 하필 그 일이 그곳에서 그런 식으로 일어나야 하는지 알 수 없는 상태로 메일함과, 침대, 쓰레기통과 바닥에서 생성되고, 폭식과 구역질, 비명과 떨림으로 나타난다. 
+								</p>
+								<p>
+									아직 그 내용물이 개봉되지 못한 채 회전하는 상자들은 서로 어떻게 관계하고 있으며, 관계 할 것인가? 시작도 끝도 없는 이 다시-쓰기의 한 가운데에서 우리는 언제까지 이 상자들을 열어보아야 하는가? 이 게임은 더 나은 다음이 있을 것이라는 무책임한 약속 대신 우리에게 시의 리듬과 운율을 학습하게 한다. 예측할 수 없고 알아볼 수 없는 일들의 잔인함, 패턴이 될 수 없는 시간 앞에서 다만 우리에게는 시가 있다. 그리고 시가 할 수 있는 일은 고통의 이름을 부르는 일로부터 가장 인간적인 방식의 리듬과 운율을 부여하는 일일 것이다. 그러니 두드리고 – 소리 내고 – 반복해라. 그것을 리듬으로 이해할 수 있을 때까지. 우리의 고통이 리듬이 될 때까지. 아주 오래전부터 우리가 그렇게 노래 해왔던 것처럼.
+									<br>
+									1) 한글의 표음문자를 활용한 모음 그래픽은 이 게임의 영문 버전에서도 동일하다.
+								</p>
+								<p>
+									곽소진 (시각예술가)
+								</p>
+							</details>
+							<details>
+								<summary>조혜영, "집을 지키는 사람들", 3 Households on Steam. (리뷰, 2023)</summary>
+								<p>
+									<a href="https://store.steampowered.com/app/2217540/3_Households/">store.steampowered.com/app/2217540/3_Households/</a>
+								</p>
+								<p>
+									<b>집을 지키는 사람들</b>
+								</p>
+								<p>
+									게임과 퀴어함의 공통적 미학은 끊이지 않는 ‘실패’다. 문제해결과 목표달성이 주요한 동력인 게임의 과정은 무수한 실패와 그것을 견뎌내는 고통으로 점철되어 있다. 그렇다면 성장은? 새로운 게임은 새로운 설정과 규칙을 제시하며, 매번 다시 학습할 것을 명령한다. ‘실패’는 게임에 필수적으로 내재해 있고, 단선적이고 연속적인 성장이란 불가능하다. 퀴어함은 ‘정상성’에 실패하고 주어진 견본 없는 삶을 산다는 점에서 해체와 생성을 동시에 반복한다. 집을 지키는 사람들은 ‘퀴어 건축 게임’으로서 이중의 실패의 미학을 보여준다. “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자 친구의 물리적인 구조육체”라는 행위소는 집을 건조하고 지킨다. 이들에게 집을 지키는 행동은 곧 기존의 이성애-가부장제 중심적인 집을 허무는 일이다. “너의 자리를 알라”라는 사회의 명령과 집(sweet home)은 따뜻하고 안전하며 안정을 보장해주는 장소라는 개념을 계속해서 파훼한다. 집만큼 트라우마를 유발하는 곳도 없다. 이 게임의 플레이를 통해 건축하는 불안정하고 퀴어한 집에서는 자식도 부모를 낳는다.
+								</p>
+								<p>
+									이 게임에서 플레이어는 21개의 한글모음으로 이뤄진 큐브들을 자리 이동하며 집을 건축한다. 주기율표의 모양을 따라 구성된 모음들은 전자음으로 만들어진 명상음악에 맞춰 우주를 여행하며 벽돌의 성분, 방의 위치, 집의 모양, 집이 기거하는 매트릭스를 계속 바꿔나간다. 모음 큐브의 이동은 마음의 상태를 알리는 형용사 스트링, 직업과 역할 스트링, 신체상태 스트링, 방의 역할 스트링, 가구와 장비 스트링, 가사노동 스트링 등과 연계해 명사와 형용사를 연신 대체하며 퀴어한 집과 부모와 자식들과 연인들을 낳는다. 여자들 셋은 가족을 꾸린다. 의자가 줄어들지 않는 자리 뺏기나 테트리스 게임처럼 셋의 자리와 역할은 계속해서 바뀌고 신체를 서로에게 맞춰가며 변형하고 스태킹(stacking)한다. 누군가는 집을 관리하고, 누군가는 절망에 빠지고, 다른 누군가는 불을 끈다. 쇠붙이를 집어 삼키는 불가살이처럼 서로의 고통과 절망을 소화시키며 상실과 애도 역시 연쇄적으로 일어난다. 엄마, 딸, 딸의 여자친구는 서로에게 어떻게 연결되고 무엇을 상속할 것인가? 21개의 모음, 21개의 상자, 21개의 유품, 21개의 관, 21개의 대피소.... 집을 지키는 사람들은 플레이어들이 숨바꼭질을 하며 안전한 공간을 찾아내고, 그 공간을 재장소화하고 파괴하며 재귀하지 않는 명상과 회복의 여행을 하도록 유도한다. 예술적 실천의 일부인 이 게임을 스팀이라는 게임 유통 플랫폼에 내놓는 것 또한 그러한 여행의 일부가 될 것이다.
+								</p>
+								<p>
+									조혜영(영상문화연구자)
+								</p>
+							</details>
+							<!-- <details>
+								<summary>리타/이연숙, "〈진격하는 저급들〉 6장: 레즈비언 황무지ㅡ비가시성에 대한 노트", 세마코랄. (비평연구에 언급, 2023)</summary>
+								<p>
+									전문: <a href="http://semacoral.org/features/yeonsooklee-advancing-of-low-6-lesbian-wasteland">semacoral.org/features/yeonsooklee-advancing-of-low-6-lesbian-wasteland</a>
+								</p>
+								<p>
+									<b>레즈비언 황무지ㅡ비가시성에 대한 노트</b>
+								</p>
+								<p>
+									"도대체 (여성) 성소수자-퀴어 시각 예술이 ‘덜’ 보인다거나 ‘안’ 보인다는 것은 무엇을 의미하는가? (출처: 〈진격하는 저급들〉 6장: 레즈비언 황무지ㅡ비가시성에 대한 노트) 4
+									<br><br>
+									4. 게다가 이것은 사실이 아니다. 서울에서 (여성) 성소수자-퀴어 정체성을 작업의 (주된) 주제로 삼는 작가들을 (내 능력 부족으로 인해) 전부 열거할 수 없겠지만, 올해 이들 중 일부가 올린 전시의 목록은 다음과 같다. 《차연서 개인전: 이 기막힌 잠 This Unbelievable Sleep》(온라인 전시, https://energywhoisshe.com/, 2023.6.15.-7.15.), 《리단 개인전: Being Boring》(스페이스 미라주, 2023.6.8.-2023.6.22.), 《임아진, 강우솔 2인전: (불)응하는 몸 (un)fortunately, (un)body》(스페이스 미라주, 2023.5.18.-2023.6.1.) 등. 물론 영화와 연극, 사진과 만화 같은 장르까지 아우른다면 이 목록은 더 늘어날 것이다.  (출처: 〈진격하는 저급들〉 6장: 레즈비언 황무지ㅡ비가시성에 대한 노트)"
+								</p>
+							</details>
+							<details>
+								<summary>리타/이연숙, '없거나 또는 안 보이거나-동시대 한국 레즈비언 미술', 계간 시청각 2021년 겨울. (크리틱-인터뷰에 언급, 2021)</summary>
+								<p>전문: 계간 시청각 2021년 겨울 pp.109-136.</p>
+								<p><b>없거나 또는 안 보이거나-동시대 한국 레즈비언 미술</b></p>
+								<p></p>
+							</details>-->
+							<details>
+								<summary>조윤지, '영원히 익숙해지지 않는 건 없다', 월간 퍼블릭아트 2020년 08월호. (리뷰, 2020)</summary>
+								<p>
+									
+								</p>
+								<p>
+									review> 04
+									<br><b>영원히 익숙해지지 않는 건 없다</b>
+									<br><크게 슬플 일인가요> 6.26-7.9 갤러리175
+								</p>
+								<p>
+									<ol>
+										<li>박주영 <유약한 것들> 2019 라이트 박스 위 3개의 유리 조각 </li>
+										<li>차연서 (HOW DARE I FEEL SADWHEN I THINK OF YOU> 2020복사용지 미색 80g/㎡ 프린트제본 297x210mmx5, 103x187mmx1</li>
+									</ol>
+								</p>
+								<p>
+									전시장에 도달하기 위해 오르는 계단 끝머리 벽에는 하얀 A4 종이가 붙어 있다. 뭔가 하고 유심히 들여다보면 '크게 크게 크게' 단 여섯 글자가 작게 적혀있다. 시작도 전에 제목의 앞머리를 계속해서 되뇌는 까닭은 무엇일까. 이 단어를 얼핏 떼어보면 '커져라'는 주문인가 싶지만, 전시를 본 후에는 '크게 슬플 일인가요' 그 한 문장을 내뱉기 위한 더듬거림의 연습이었음을 알 수 있다.
+								</p>
+								<p>
+									아주 개인적인, 때로는 감추고 싶은 슬픔의 순간들을 왜 두 명의 작가는 공유하는 걸까. 차연서와 박주영은 글과 영상, 설치, 필름 그리고 그것들의 신중한 배치를 통해서 전시장을 채운다. 이를 통해 그들의 작업이 하나의 매체에 관한 집요한 탐구라기보다 다양한 방식의 말하기를 실험했음을 짐작할 수 있다.
+								</p>
+								<p>
+									전시장에서 두 작가의 작품이 만나는 접점은 등을 기댄 채 맞붙어 있는 영상이다. 양면 스크린은 서로를 침범하지 않고 평행하게 플레이된다. 슬퍼할 일의 정량적 크기는 그 어디에도 정해져 있지 않음에도 불구하고 이를 질문하는 전시. 그와 동시에 어깨를 으쓱하며 그 크기란 어찌 됐듯 별것 아니라고, 비로소 그렇게 말할 수 있게 된 태도가 전시 전반을 흐른다. 자문자답하듯 펼쳐진 전시는 이제 존재도 모르는 누군가에게 그만 묻고, 직접 슬픔을 마주하기 위한 판을 함께 짜본다. 그렇기에 전시는 결국 슬픔이라는 감정이 아니라 그것을 다루는 태도, 작가들의 위치 설정에 대한 의지가 된다.
+								</p>
+								<p>
+									스크린을 기점으로 전시장 왼편은 차연서의 작품들이 차지했다. 50분에 육박하는 영상에는 과거 미인 대회에 나갔던 이의 회고, 그리고 서로의 움직임을 거울처럼 맞춰보려는 두 여성의 움직임 등 다양한 장면이 담겼다. 거울-대칭-균형'이라 이름 붙인 퍼포먼스는 크게 정리되지 않은 플롯으로 관계의 연습 과정 그자체를 보여준다. 편집을 길게 늘어뜨림으로써 일단 무엇이든 말해보는 것처럼 느껴지기도 한다. 이런 시행착오적 태도는 전시장 한편에 놓인 텍스트에서도 드러난다. 도시별로 묶인 글들은 편지와 일기 같은 작가의 개인적 기록이다. 가지런히 인쇄되어 정리된 글들은, 그러나 아직 더 수정될 부분이 남았다는 듯 종이 위에 교정되어 있다. 누군가의 죽음과 사회적 비극을 글로써 꼭꼭 씹고, 때로는 체해가며 배출해낸 결과물은 아직 완전한 제본의 형태가 아니다. 이 글은 언제든 꺼내져 다시 읽히고 편집될 영원의 기록이다. 그때가 되면 작가의 말에 나와 있듯, 과거는 비로소 현재를 도울 편지가 될 수 있을 것이다.
+								</p>
+								<p>
+									박주영은 비닐봉지를 소재로 사용하면서 이를 자신의 보호 체계라고 소개한다. 영상에는 서로 다른 모양의 집이 두 채 등장한다. 가상 디지털 좌표에 그린 비닐봉지 모양의 집과 실사 이미지의 집이다. 이들은 교차하면서 실제 기억에서 멀어졌다 가까워지기를 반복한다. 뒤이어 등장하는 기억의 추적과정에서 작가는 집에 들어가기 전 신발 위에 비닐봉지를 묶어버리거나 해가 뜨거워 선크림을 바르는 등 자신의 신체를 위험으로부터 보호하고자 한다. 제목인 <유약한 것들>에서 드러나듯 이 작업은 방패의 역할에 대한 의심을 품고 있다. 그러나 자신을 서툴게 보호했음을 후회하거나 자책하는 태도는 아니다. 피하고 싶으면서도 끝끝내 마주한 기억 앞에서, 이를 온전히 복원할 수 없다면 할 수 있는 만큼, 약할지라도 그 얇음이 방어막이 될 수 있을 정도로만 슬프게 마주하면 되는 것이다. 이 유약함에 대한 존중은 전시장에 있는 그의 다른 작품에서도 확실하게 드러난다. 작가는 유리 조각으로 비닐봉지의 형상을 만들고 라이트 박스 위에 배치함으로써 그 속성을 변화시켰다. 어설프게 보존된 기억처럼 겉모습만이 남은 비닐봉지는 이제 뾰족하고 딱딱해져 스스로 빛을 발하고 있다.
+								</p>
+								<p>
+									작가들은 무언가를 전복시키지도 그렇다고 크게 가공하지도않은 채로 사건을 마주해간다. 담담함으로부터 견고해진 전시는 슬픔을 마주하는 방식에는 확언의 형태도 정면승부도 필요 없다는 것을 말한다. 하나의 주장을 소리친다기보다 여러 순간을 파노라마처럼 펼쳐내는 태도는 무척 자연스러워 보인다. 그렇게 자연스레 기억의 시차를 견디다 보면 슬픔을 슬픔이라, 또는 아주다른 감정이라 불현듯 말할 수 있게 될 테다. ⏺ 조윤지 기자
+								</p>
+								<p>
+									118 August 2020
+								</p>
+							</details>
+							<!-- <details>
+								<summary>박소영, '비록 완벽하게 익숙해질 순 없을지라도', 크게 슬플 일인가요. (리뷰, 2020)</summary>
+								<p></p>
+								<p>
+									<b>비록 완벽하게 익숙해질 순 없을 지라도</b>
+								</p>
+								<p>
+									죽음은 낯설다. 사람은 모두 죽는다는 명제를 누구나 알고 있지만 죽음을 생각하는 일은 차후의 일이라 여기며 미루고 애써 외면하기에 십상이다. 익숙하지 않은 죽음을 근 몇 년 사이 직간접적으로 마주했다.
+								</p>
+								<p>
+								기억의 단층을 파헤쳐 보면 이제는 왜 축적된 상실의 데이터가 자리 잡고 있다. 진실은 바다 밑 어딘가로 흘러가 버린 건지 아직도 밝혀지지 않는 노란색 리본이 보일 때면 알 수 없는 죄책감과 부끄러운 슬픔을 마주했다. 알지 못하는 이들의 죽음에 슬퍼했지만, 누군가의 죽음 앞에선 오히려 그리 슬프지 않기도 했다.</p>
+								<p>본격적인 전시를 마주하기 전 계단을 오르며 하얀 A4용지 종이를 발견한다. 조그맣게 '크게, 크게, 크게' 여섯 글자가 적혀있다. 이 여섯 글자를 되뇌며 전시를 보다 보면 HOW I DARE' '내가 감히'라는 조심스러운 질문 뒤에는 느낌표와 물음표가 따라붙는다. 누군가의 죽음 앞에 내가 감히 이렇게 크게 슬퍼해도 되나? 크게 슬퍼하지 않아도 되나?</p>
+								<p>두 질문은 전시장 한가운데 팽팽히 매달린 스크린이 서로 등을 맞대듯, 두 영상을 타고 양분된다. 차연서는 직접적인 관계에 놓여 있진 않지만 어느 유명인의 죽음 앞에서, 그리고 박주영은 자신과 직접적인 관계에 놓인 지인의 죽음 앞에서 자신이 느낀 슬픔의 형태를 그려낸다.</p>
+
+								<p>‹HOW DARE I FEEL SAD WHEN I THINK OF YOU(2020)에서 관객은 그저 녹색 빛이 닿는 사물들을 쫓는다. VHS 테이프 케이스와 담뱃갑, 리옹에서부터 마요르카, 말뫼, 서울까지 - 시간의 흐름에 따라 네 도시에서 알게 된 이들과 나눈 편지, 사건을 기억하기 위한 일기와 같은 기록 등 그 빛은 일련의 물건들에 스며든다. 사적인 기록이 으레 그렇듯 정확히 언제, 어디서, 왜 어떠한 사건을 이야기하고 있고, 보내는 이와 어떠한 관계인지 무슨 일이 있었는지 투명하게 알 수는 없다. 맥락만을 짐작하고 따라잡을 뿐이다. 그저 작가는 받는 이를 향해 애정을 보이기도, 걱정을 쏟기도 혹은 자신 스스로 정의내리지 못한 고민과 자꾸만 들쳐오는 질문을 던지기도 한다.</p>
+								<p>녹색 빛은 파란 색감의 폴폴 트라이앵글(2020)로 이어진다. 약 48분. 단편도 장편도 아니고, 다큐멘터리도 허구도 아닌 영상은 장르를 넘나들고, 이미지와 음향은 자막과 합치되는지 불분명하다. 영상은 무언가 형태를 맞추어 정해놓은 틀에 애써 맞춰나가기보다는 자꾸 흐트러뜨린다. 현재 함께 미술을 하는 '예진'(홍예진)과 과거 함께 미술을 했던 '예진'(서예진)은 블루 스크린 앞에서 마주 선다. 블루 스크린이란 어디든 원하는 가상의 공간으로 교체될 수 있도록 비어있는 CG 장치이지만 예진과 예진에게는 파란색 배경 그 이상 그 이하도 아니다. 둘은 그 상태 그대로 파란 스크린 앞에서 퍼포먼스를 시작한다. <폴폴 트라이앵글(2020)> 속 작가는 관찰자 이상의 위치를 가지는 것처럼 보인다. 작가는 두 예진을 폴폴 전시 공간이 환히 보일 정도로 투명한 비닐 막을 트라이앵글 퍼포먼스를 통해 명등한 관계에 놓고자 하는 것처럼 보이지만 영상 속 주어진 (홍)예진에 대한 정보는 (서)예진과 비교해볼 때 상당히 적다. 미디어에 기억을 파헤친다. 영상은 가상의 디지털 공간을 노출된 미스코리아 예진. 차 안 인터뷰. 혹은 인터뷰 형식을 차용한 것처럼 보이는 사담. 작가는 다른 길을 손가락으로 계속 당기고 확대해도 픽셀이 깨지지않는 걷고 있는 그를 궁금해하기도 하는 것처럼 보이기도 우려하는 것처럼 보이기도 한다. 하지만 또 다른 예진에 존재했던, 지금은 사라진 어딘가로 데려간다. 집에 대해선 알 길이 없다. 그저 작가 자신이 일상에서 관찰한 예진의 모습을 촬영한 영상 소스 일부. 수업 중 흔들거리는 비닐봉지를 유약하지만, 자신을 보호할 수 작가 연구 발표를 하는 (홍)예진. 그 장면이 전부다.</p>
+								<p>빨리 감기를 통해 눈은 깜빡이고, 깜빡이는 눈과 주변 소음은 내레이션과 맞물리고, 음악이 흘러나온다. 유독 예진의 눈동자를 점점 클로즈업하는 것은 드러나 있지 않은 예진의 감정에 조심스럽게 공감하고자 하는 것일까? 혹은 스스로를 그런 예진에 일치하고자 하는 걸까? 작가가 유독 (홍) 예진에겐 크게 부여하지 않은 정보의 비대칭성으로 (홍)예진을 단순히 퍼포머 이상, (서)예진과 마주하고 함께 퍼포먼스를 하는 작가의 페르소나로 바라볼 수 있지는 않을까.</p>
+								<p>삼각형을 짓고 허무는 둘은 평등하고 대칭적인 관계를 이루어나가고자 하는 듯하다. 서로 등을 맞대고, 맞절을 작가는 얇고 약간의 바람에도 흔들리는 비닐봉지들 하고, 볼을 맞댄다. 팔씨름도 하고 껴안기도 한다. 하지만 폴폴 트라이앵글 운동은 자꾸만 흐트러진다. 퍼포먼스 사이엔 변칙적으로 약간의 공백이 생기기도 하고, 갑자기 자전거를 타고 퍼포머 주위를 뱅뱅 돌며 배회하는 인물이 프레임 속으로 들어오기도 한다. 마치 of the record와 같은 NG장면들은 폴폴 트라이앵글 퍼포먼스를 훼방 놓는다. 그럼에도 불구하고 두 예진은 폴폴트라이앵글 퍼포먼스를 반복한다. 그리고 돌고 돌아와 둘은 맨 처음 블루스크린 앞에 서 있다. 이건 첫 장면일까 아니면 마지막 장면일까? 주어진 영상은 끝이 났지만, 둘은 퍼포먼스를 계속한다. 과연 두 예진은 그들만의 균형을 찾아갈 수 있을까? 다만 예진의 삼각형은 자꾸만 무너지지만, 이들은 다시 마주하고 균형 잡기를 시도하는 것뿐이다.</p>
+
+								<p>전시 공간이 훤히 보일 정도로 투명한 비닐 막을 몸으로든 손으로든 밀치고 들어선다. 유약한 것들(2019)은 사라진 집과 관련한 켜켜이 쌓인 기억을 파헤친다. 가상의 디지털 공간을 시작으로 시작으로 그 집을 향해 2OOM-IN 해 나간다. 두 손가락으로 계속 당기고 확대해도 픽셀이 깨지지 않는 어느 삼성 갤럭시 광고처럼 작가는 디지털 공간 너머 존재했던, 지금은 사라진 어딘가로 데려간다. 집에 들어서기 전 신발 위에 '비닐'을 덧씌운다. 작가는 얇고 흔들거리는 비닐봉지를 유약하지만, 자신을 보호할 수 있는 수단으로 가져온다. 그리고 여기저기 정처 없이 집 내부를 헤맨다. 화면엔 작가의 개인적 추억이 담겨 찍은 것인지 혹 어쩌다 보니 그 자리에 있어서 찍힌 건지 알 수 없는 가구들이 스크린 속에서 보여진다. 이후 계속해 장소만 바뀐 채 작가는 비닐봉지를 쓰고 우두커니 서 있다. 어떠한 행동도 어떠한 말도 하지 않는다. 정지된 화면 속에서는 비닐 만이 바람에 흔들린다. 의미 파악이 되지 않는 이미지들. 그리고 나풀거리는 비닐, 작가는 기억을 당겨오고 다시 밀어버리기를 반복한다. 망자는 더는 말이 없고, 작가 자신만이 줄다리기를 하다 남은 파편만이 흩날릴 뿐이다. 이제 기억 속 그 집은 없다. 더 이상 그것(DAS)이 아니다. THE END</p>
+								<p>작가는 얇고 약간의 바람에도 흔들리는 비닐봉지를 자신의 어설픈 보호체계로 설정하고 슬픔을 반문한다. 기억의 파편 속에서 무엇이 옳았고 그른지 판단할 수 없을 정도로, 판단하고 싶지 않을 정도로 피하고만 싶지만, 비닐로나마 희미하게 슬픔을 마주한다. 흔들리는 바람에 같이 흔들거리고 말던 얇고 불투명한 보호막은 이제 단단하고 투명한 유리로 변성되어있다.무엇이 무엇을 보호할 수 있다는 건지, 잘 막아 주었는지 알 순 없다. 다만 더는 바람에 흔들리지 않는다. 비록 유리 작품은 비닐봉지와 같은 모습을 유지하고 있지만 꽤 단단해 보이기도 한다. 충분히 어느 정도 물리적 힘을 가한다면 또다시 깨질 테지만, 적어도 옆에서 '후'하고 불어도 날아가지 않을 것처럼, 자신의 자리를 지킬 수 있을 정도 만큼의 단단함이다.그리고 이는 강렬하진 않지만 희미한 빛을 내기 시작한다.</p>
+								<p>마주하고 있던 두 영상작업 사이에 관객은 답변을 찾았을까? 누군가의 죽음을 기꺼이 마주하면서도 다가오는 슬픔에 자꾸만 혼들리기도 하고 (•폴폴 트라이앵글>), 익숙한 애도에는 저항하기도 하기도 한다. (<유약한 것들>) 그리고 그저 그렇게 죽음이 익숙해질 수 있는 각자의 자연스러운 태도를 찾아간다.</p>
+								<p>전시장에 처음 들어섰을 때 녹색 이끼가 낀 듯한 답답함이 느껴졌다. 한여름 견딜 수 없는 습기 때문일까? 아니면 잡힐 듯 아직도 잡히지 않는 코로나 때문에 쓰고 있어야 하는 마스크 때문일까? 두 작가가 그 죽음을 마주했을 때 느꼈던 첫 감정에 알 수 없는 답답함이 있진 않았을까. 언제쯤 매번 다가오는 죽음에 괜찮을 수 있을까? 죽음이 주는 낯섦을 마주하고 매번 다른 슬픔의 형태를 가져가다 보면, 과연 익숙해질 순 있을까? 비록 완벽하게 익숙해질 순 없을지라도.</p>
+								<p>
+									<크게 슬플 일인가요> 후도록, pp.33-35.
+								</p>
+							</details>-->
+							<details>
+								<summary>차연서, "꽃다발은 아직", 꽃다발은 아직. (서문, 2023)</summary>
+								<p>
+									<b>꽃다발은 아직</b>
+								</p>
+								<p>
+									검은 상자 안에서, 도돌이표 콧노래, 끝나지 않고, 끝나지 않고, 끝나지 않고, 다가오는 이른 아침, 언젠가, 이 없는 아침, 혀 없는 아침, 팔 없는 아침, 털 없는 아침, 언젠가, 모든 게 없는 아침, 아침 없는 아침, 다시, 태어나고, 꿈에 오고, 그림에 오고, 다시, 겨울에 오고, 봄에 오고, 다시, 죽지 않고, 살지 않고, 잠들지 않고, 깨어나지 않고, 다시, 말하지 않고, 더듬지도 않고, 울지 않고, 우짖지 않고, 큰 눈으로, 담벼락을 타고, 아기울음소리로, 밤잠을 세우지 않고, 이제 아침을 일으키고, 아침을 매달고, 아침을 내려쳐라, 버려진 엉덩이, 동트는 엉덩이, 고놈의 작은 엉덩이, 그 척척한 구덩이를, 퍼올려라, 문드러질 때까지, 시반에 가득히 사인이 남을 때까지, 전기 담요 위에서 새파래질 때까지도, 얼음과자처럼 선선해질 때까지도, 슬픈 애벌레처럼 통통해질 때까지도, 이 가는 소리, 개가 잠꼬대하는 소리, 부드러운 개가 눈 감고 있는 소리, 영혼을 흘리는 소리, 털갈이로 너털너털하게, 존재를 흘리는 소리, 흘려도 흘려도 사라지지 않는, 뼈와 살의 평온함, 푸른 구슬처럼 도르르 흘리는 소리, 하늘이 터널처럼 내려앉는 소리, 바다가 빗물처럼 침수하는 소리, 봄에 때늦은, 함박눈 내리는 소리, 다시 한밤중에, 아이 찾는 소리, 싸고 핥고 걷고 기고, 걷고 기고 눕고 춥고,
+								</p>
+								<p>
+									배꼽 없는 배는 하늘 보이고, 하늘 보이고, 하늘 보이고, 하늘 아니고 천장이고, 마중 아니고 배웅이고, 묵주 아니고 염주고, 일기 아니고 편지, 편지 아니고 유서, 죽고, 다시, 이른 아침, 물렁거리고, 케이크처럼 푹 들어가고, 다시, 마,아,아,아,음은 여기에 썩지 않고, 푹 여태 이렇게, 다시 푹 미처 이렇게, 시간이 흐를 뿐이므로, 남겨진 아이, 찾는 소리, 영혼 찾는 소리, 여태 이렇게, 별 수 없게 이렇게, 죄송하게 이렇게, 무참하게 이렇게, 너털웃음으로 이렇게, 황당하게 이렇게, 죽은 사람들 노래, 아무도 부정타지 않는 옛날 노래, 꿈에서, 열린 문들만이 줄지어 입 벌린, 칸칸이 가부좌를 튼, 뻐끔 나앉은, 대문 앞의, 문지기들, 창문 두드려, 창문 죄다 두드려, 창문 없어, 창문 죄다 깨져서 없어, 다시 한밤중에, 아이 찾는 소리, 다리 떠는 소리, 마지막으로, 입 막아, 코 골지 않도록, 입술을 테이프로 막아, 쩝쩝 다시는 소리, 끝나지 않는 호소, 끝나지 않는 토로, 끝나지 않는 선잠, 끝나지 않는 줄바꾸기, 또 이렇게, 한밤중에, 살아있는, 네발 달린 침대, 네발 달린 욕조, 네발 달린 개, 숨 붙은 소리, 숨 붙어서 뛰노는 벼룩소리, 또 이렇게, 이번에야말로, 다시는, 이렇게는, 절대로,
+								</p>
+								<p>
+									마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 끝났다, 말할 새도 없는 언젠가에, 아무 부검도 없이 끝, 흐린 눈 막은 입 벌린 다리, 끝, 머리카락 손톱발톱 자라나는, 끝, 끝장난 끝 매듭, 끝없이 끝 매듭, 절벽 비탈 철조망 한 그루 나무, 끝, 입술 항문, 끝, 불타는 절 검은 산등성이 지저귀는 소쩍새 충혈된 능소화, 끔뻑이는 눈먼 눈, 귀먼 귀, 손목 잘린 손, 발목 잘린 발, 저 멀리 던진, 끝, 유턴해서 돌아오는, 끝, 주차된, 끝, 초인종도 누르지 않고 현관을 넘는, 끝, 우두커니, 끝, 익숙한 표정으로, 끝, 집에 돌아온, 끝, 어디서, 끝, 하고 뱉는 이웃집 가래침 소리, 끝
+								</p>
+								<p>
+									이곳에 초대되는 것은 내내/아직/미처 여기 있는 몸들, 그리고 시간이 흐르지 않는 마음<small>[1]</small>처럼 우두커니 생생한 꽃다발이다. 제도지, 닥종이, 순지, 배접지, 인화지로 꽃들이 매달릴 자리들을 준비한다. 언희님을 읊었고, 테레사를 읽었고, 토굴을 들인다.
+								</p>
+								<p>
+									2월은 졸업식이 많다. 대학원도 어린이집도 졸업식을 한다. 꽃들은 뿌리 잘린 몸으로 물을 빨아들이고, 통로는 점차 뭉그러진다. 시인은 꽃다발에서 시취를 맡는다. 개는 이른 아침마다 알람시계처럼 짖는다. 침대는 네 발로 서있다. 문은 네 모서리를 갖고 개폐된다. 창문에서 떨어지는 샛노란 빛의 그림자 또한 네 모서리를 가졌으나, 이탤릭체로 강조된 듯이 사선이다. 봄에도 눈이 온다.
+								</p>
+								<p>
+									시체현상, 손상, 신생아 및 소아 사망, 그리고 성범죄에 의한 사망을 먼저 들여다보았다. 질식사, 익사, 중독사, 기아사는 그 다음이다. 낯익은 챕터는 어느 페이지에 누가 들어있는지 선명히 외워지고, 와중에도 작업 되지 않은 구석진 창들이 드문드문 튀어나온다. 여러 번 그리게 되는 이들도 있다. 처음에는 그런 빈도수의 차이가 공평하지 않다는 생각까지도 들었지만, 원래 친구가 된다는 일은 친구가 아닌 다른 모든 것들보다 얼굴이 더 가까워지는 일이다. 법의학 책에 수록된 자료이미지가 대부분 작기 때문에, 반복해서 그리면 이전에는 뚜렷하지 않았던 형상이 조금씩 새롭게 발견된다. 이를테면 살인 줄 알았던 것이 눈이 되기도 하고, 등줄기인 줄 알았던 것이 탯줄이 되기도 한다. 나는 모든 페이지들을 그려야 한다는 이상한 의무감을 느낀다. 그들을 받아쓰는 작업에 밤낮으로 사로잡힐 때면, 수면은 더 이상 휴식이 아니라 어떤 무방비한 접속이 되어간다. 보이지 않고 들리지 않는 흰 개가 집에 오고, 그의 보호자가 되기로 결심한 시점부터 가위눌림은 거짓말처럼 멈췄다. 무연고로 태어난 알비노 소년의 흰 털이 집안 곳곳에서 터를 잡기 시작한다. 새카만 작업방 한켠에서도 그늘지지 않는 흰 빛으로 초연하게 낮잠을 잔다.
+								</p>
+								<p>
+									얼마 전에는 몸속 저수지<small>[2]</small>가 넘쳤다. 부산일보 온라인 기사<small>[3]</small>로 알게 된 “백양대로[4]”를 보러 갔을 때였다. 성매매 집결지의 쪽문들을 그린 박자현 작가의 드로잉 시리즈인데, 문들이 눈으로 보기에는 닫혀있지만 우두커니 쳐다보고 있으면 계속 열린다. 전시장에 온 지 얼마 되지 않아서 발에 쥐가 났다. 하이힐을 신는 것처럼 발꿈치를 들고 스트레칭을 해보는데 그날따라 우글거림은 멎지 않고 오히려 종아리 허벅지를 타고 올라와 손가락까지 휘감기 시작했다. 나 이제는 눈 뜬 채로 가위눌리는구나, 그런 몸 상태가 그날 이후 초봄 내내 계속되고 있다. 열 손가락은 우드럭대고, 양발은 뻐드럭대고, 머리는 겨우 하나뿐이고, 온몸에 힘이 들어간 채로 생생한 마비상태에 갇힌다. 이런 건 양효실 선생님 강의를 들을 때나 겪는 부작용이었는데 말이다. 생각한다. 이 정도로 손목발목이 무참하게 붙잡혀버린다면 무언가를 느끼는 일 자체를 그만하고 싶다고. 하지만 그런 것들은 언제나 거기에 있었을 뿐이다. 이내 사지말단에 보이지 않는 접촉의 형태를 상상이나 해본다. 발목 아래로 욱신거릴 때는 나 이렇게 곧서지 말라는 건가, 펜을 쥔 손가락 관절이 딱딱하게 뻗칠 때는 그리던 몸 그리지 말라는 건가, 아니면 더 선명히 그려달라고 누군가가 깍지 손을 꼭 겹쳐 쥐는 건가. 약을 좀 타 먹고, 두 팔과 두 다리로 지탱하며 실내암벽에 매달리고, 그러니까 상처 입은 근육들이 갖는 회복통이 마비통을 능가하면서 우글거림은 몸 속 깊숙한 곳으로 천천히 회향한다.
+								</p>
+								<p>
+									눈은 마음의 창이래. 눈을 마주치면 창들은 켜켜이 겹쳐 열리는 쪽문이 되고, 눈을 감으면 폐쇄된 거리에 수많은 대문이 늘어선 정경이 반복되는 꿈, 그것은 퇴거된 풍경이다. 그리고 이제는 목소리가 들린다. 여기서 목소리라는 건 일종의 콜라주이다. 그들은 오직 인용으로만 말한다. 이를테면 부검사진과 현장사진을 번갈아 그리고 있던 나에게, 자동재생 유투브는 그것이 임신거부증으로 아이 둘을 낳자마자 냉동보관한 사건이라는 것을 알려준다. 곧이어 시집을 읽다가 그들이 속삭이는 소리를 듣는다. “······태어나보니 냉장고 속이었어요<small>[5]</small>”. 혹은 이번 전시 제목을 “Le bouquet est toujours là” 불어로 옮겨 읽는 그 목소리의 낭랑함을 발견한다. 얼어있는 아이들은 돌장승처럼 단단하다. 그것은 딱딱함(dure)과 다르다. 이내 부드러운(doux), 무른(mou), 푹신한(moelleux), 베어먹힌<small>[6]</small> 얼굴을 한 친구들이 나를 굽어보면, 거기에는 내게 향하는 어떠한 비수나 적의도 없는데도 맞닿을 수 없는 차원이 맞닿았다는 이유로 온통 감전된다. 나는 그저 그들의 저릿저릿한 연민과 돌봄의 가위눌림 아래에서, 그들에게 죽은 아빠의 살이나 — 살아있는 딸의 시간 따위를 나눠주는 것이다. 모든 것이 시간의 문제라면, 뜨겁고 건조한 시간 따위를 견뎌내는 방법을 창안한다. 그 방법은 망자들과의 맞닿음으로 인해 배워가는 경계와 규칙 속에서 태어난다. 나는 모든 것이 너무 빠르지도 늦지도 않게 소거될 것을 기다린다.
+								</p>
+								<p>
+									한 묶음 해골다발 한 묶음 성기다발 꽃다발은
+									<br>아직 썩어줄 생각도 하지 않는다 피와 두부
+									<br>으깨어진 자가 엉겨 붙는 꿀떡과 피떡 누가
+									<br>시를 쓴다 쓸개에 돌로 누가 시를 쓰고 있다
+									<br>아스팔트에 창자로 누가 으득으득 분쇄기를
+									<br>돌리고 있다 너는 언어의 찌꺼기 구멍에서
+									<br>구멍으로 흘러가는 구멍의 찌꺼기 누가
+									<br>시를 쓰고 있다 눈동자에 바늘로 감을래야
+									<br>감을 수 없는 눈자위 피웃음을 문 충혈된
+									<br>물고기의 눈자위 한 묶음 해골다발 한 묶음
+									<br>성기다발을 들고 누가 천 년 동안 회전문
+									<br>속에서 돌고 있다 이십 리터 종량제 봉투 속
+									<br>꽃다발은 아직 썩어줄 생각도 하지 않는다
+									<br>─ 김언희. 「꽃다발은 아직」<small>[7]</small>. 전문 ─
+								</p>
+								<p>
+									내가 목격한 죽음은 아빠, 할아버지, 개, 참새, 비둘기, 뱀, 쥐, 그리고 수많은 고기와 벌레와 나무와 꽃들. 택시 안 라디오에서 흘러나오는 사건사고들에 이미 본 것처럼 구체적으로 그 현장이 그려지는 것을 보면, 열린 몸들을 받아쓰는 이 작업은 이전과 이후에 목격하는 모든 죽음에 대한 곱씹기이자 예행연습으로 기능하는 것처럼 보인다. 혹은 트라우마를 겪어내는 몸은 손상된 몸들에 어처구니없이 매혹된다는 진실을 누수 한다. 나는 요즘 길거리를 걸어 다니는 일면식 없는 사람들에게서 두 가지 모습을 음산하게 상상한다. 그것은 끝장난 모습, 그리고 누구도 알 수 없을 얼굴로 시 쓰는 모습이다.
+								</p>
+								<p><small>
+									[1] 차학경 『딕테』(김경년 옮김, 어문각, 2004)
+									<br>[2] “저수지, 프릴 달린 // 익사자의 / 물침대 // 물에 취한 시체, 시체에 취한 물, 시체에 / 취한 시체, 시체 속에서 / 다른 시체가 / 노래 / 부른다” 김언희 「저수지」(『말라죽은 앵두나무 아래 잠자는 저 여자』, 민음사, 2011)
+									<br>[3] [예술 영감] 박자현 작가 (부산일보, 오금아 기자, 2023)
+									<br>[4] 박자현 개인전 《나는 내 인생이 마음에 들어》 (기획 이진실, 합정지구, 2024)
+									<br>[5] “……태어나보니 / 냉장고 속이었어요 // 갈고리에 매달린 엉덩짱이 나를 / 낳았다는데 무엇의 / 엉덩짝인지 / 아무도 모르더군요”“김언희 「태어나 보니」(『트렁크』, 초판 1995, 문학동네, 개정판 2020)
+									<br>[6] “우리 노래 부르자 반쯤 베어먹은 / 베어먹힌 얼굴로 // 미친, 사랑의 노래” 김언희 「오지게, 오지게」(『말라죽은 앵두나무 아래 잠자는 저 여자』, 민음사, 2011)
+									<br>[7] 김언희, 『뜻밖의 대답』 민음사, 2005
+									</small>
+								</p>
+							</details>
+							<details>
+								<summary>차연서, "이 기막힌 잠", 이 기막힌 잠. (서문, 2023)</summary>
+								<p><a href="energywhoisshe.com/this-unbelievable-sleep">energywhoisshe.com/this-unbelievable-sleep</a></p>
+								<p><b>이 기막힌 잠</b></p>
+								<p>
+								 	소문이 사건으로부터 독립한다 / 악몽이 기억을 초과한다 / 거짓말이 가장 맛있다 // 바싹 말랐다는 것은 / 언젠가 푹 젖은 채 사로잡혔다는, / 가랑이 사이로 줄줄 흘렸다는 증거로 // 벌레들의 수계식 / 무지개살점 이제 향불에 타는 / 무연고자들과의 눈맞춤 // 축제 — 이 헛가위질, / 이 기막힌 잠…
+								</p>
+								<p><b>This Unbelievable Sleep</b></p>
+								<p>
+									Rumors become independent from incidents.
+									<br>Nightmares exceed memories. 
+									<br>To me, lies taste the best ever.
+								</p>
+								<p>
+									 Dried things telling how they were once 
+									 <br>gripped and soaked, how they were dripping 
+									 <br>through their crotches. 
+								</p>
+								<p>
+									 The houseworms taking the Buddhist precepts. 
+									 <br>The rainbow cuts of flesh now burning with incense. 
+									 <br>I get eye-kisses from unclaimed bodies. 
+								</p>
+								<p>
+									 Festival — this phantom scissoring, 
+									 <br>in this unbelievable sleep…
+								<br>(Co-translated with Sohn Nari.)</p>
+							</details>
+							<details>
+								<summary>차연서, "Mosquitolarvajuice", 모스키토라바쥬스. (서문, 2022)</summary>
+								<p>
+									<a href="https://msqt.kr">msqt.kr</a>
+								</p>
+								<p>
+									<b>Mosquitolarvajuice</b>
+								</p>
+								<p>
+									'말도로르'가 6개의 입술을 삽입하는 곳에서, 에테르 차원과 잠시간 중첩되는 두 겹의 바닥에 사치스러운 햇살이 기운다. 여기, '여느 날 여느 때의 아침을, 죽어서 맞는' 몸들. 그들은 무던히 창작을 경작하던 농부들이다. 
+								</p>
+								<p>
+									'끝이 없는 집'은 딸의 에너지 혈류를 짚는 생어머니의 몸짓에 느즈막히 정각을 알리는 오래된 뻐꾸기 시계처럼 경련한다. 그가 수직이 된 것은 다만 매달려 있기 때문이다. 소생을 거부하는 몸들이 박치의 메트로놈으로 음감을 맞추니, 요정의 외피를 쓴 작은 모터 마냥 예정된 방전을 향해 진동한다. 텅 빈 엄마와 거짓말 하는 딸, 낫을 든 천사와 헐벗은 소방대원은 기버(Giver)의 체위로 헌신한다. 
+								</p>
+								<p>
+									모든 것이 끝나고 망해버린, 그러니까 생사로부터 해방된 현장은 해체된 사랑의 오페라로서 잠시간 조직된다. 에널 플러그처럼 굴곡진 유충들의 호흡관으로 담궈낸 알코올은 초대된 이들 사이를 유동한다. 마비된 눈꺼풀이 무거워지고, 구역감이 들고, 단말마조차 허용되지 않도록 도핑된 에테르 칵테일. 매캐한 목넘김, 이 비린내 나는 잔. 붓고 편향된 눈을 감고 자랑스럽게 음미해보는, '이 기막힌 잠'…. 
+								</p>
+								<p>
+									일몰에도 선명한 오전 찰나의 직광처럼, 에너지는 손상되지 않는다는 믿음처럼, 시차를 두고 돌아온 사건들의 잔여물을 회수하고 너덜너덜한 신경의 숨겨진 주소들에 협박문을 반송하라. 과로한 몽유병자들은 이제 위태로웠던 몰입의 순간들을 부검대 위에 올린다. 
+								</p>
+								<p>
+									<ol type="a">
+										<li>김언희 Kim Eon Hee, 【여느 날, 여느 아침을】, 2019 (현대문학 2019.7)</li>
+										<li>시빌 루퍼트 Sibylle Ruppert, 【말도로르의 노래 Les Chant de Maldoror】, 105 x 85cm, 1978</li>
+										<li>이미래 Mire Lee, 【끝이 없는 집 Endless House: Holes and Drops】, multiple ceramic sculptures on a scaffold, lithium carbonate and iron oxide glaze liquid, pump, motor and other mixed media, 2022 베니스 비엔날레 '꿈의 우유 The Milk of Dreams' 본관에 설치, 2022</li>
+										<li>실비아 플라스 Sylvia Plath, 【레이디 라자러스 Lady Lazarus】, 1965/2022(손나리 역)</li>
+										<li>아글라야 페터라니 Aglaja Veteranyi, 【아이는 왜 폴란타 속에서 끓는가 Warum das Kind in der Polenta Kocht】, 1999/2021(배수아 역)</li>
+										<li>가에타노 도니체티 Gaetano Donizetti, 【아름다운 소리 Il Dolce Suono】, 오페라 '람모르무어의 루치아 Lucia di Lammermoor', 1835</li>
+										<li>가에티노 도니체티 Gaetano Donizetti, 【남 몰래 흐르는 눈물 Una Furtiva Lagrima】, 오페라 '사랑의 묘약 L'elisir d'amore', 1832</li>
+										<li>에릭 세라 Éric Serra, 【디바댄스 The Diva Dance】, 영화 '제 5원소 Le Cinquième élément', 1997</li>
+										<br>
+
+										<li>영안 YoungAn, 【밀과 보리가 자라네】 (원곡 작사 미상 번안 동요), 편곡, 연주와 노래, 2022</li>
+										<li>영안 YoungAn, 【해가 떠오르네】, 작곡, 연주와 노래, 2022</li>
+										<li>영안 YoungAn, 【진정제 아기천사】, 작곡, 노래, 2022</li>
+										<li>영안 YoungAn 【슬픈 자들의 목을 쳐】 (부분 인용 Erich Fried 'Die Maßnahmen(조치), 1957), 작곡, 연주와 노래, 2022</li>
+										<li>영안 YoungAn, 【천사】, 작곡, 연주와 노래, 2022</li>
+										<li>영안 YoungAn, 【어서 집으로 돌아오렴】, 작곡, 전자음악과 노래, 2022</li>
+										<li>백상 BaekSang, 화재대응능력2급 '공기호흡기 장착 및 비상호흡법', 라이브 퍼포먼스, 2017/2022</li>
+										<li>백상 BaekSang, 화재대응능력2급 '요구조자 검색 및 구조', 영안과 라이브 퍼포먼스, 2017/2022</li>
+										<li>백상 BaekSang, 화재대응능력2급 '소방호스 전개 및 회수', 라이브 퍼포먼스, 2017/2022</li>
+
+										<br>
+
+										<li>게임엔진 시뮬레이션(Unity)
+										<li>스크리닝(LED Panel 2m*4.5m, SamSung, LG)</li>
+										<li>센서 시스템(Perception Neuron, Kinect, Velodyne Lidar)</li>
+										<li>사운드 시스템(Logic, Presonar, GnS, Shure, KLOTZ, KORG)</li>
+
+										<br>
+
+										<li>기획/제작/연출/개발: 차연서(호스트) 이상화(어시스턴트 호스트)</li>
+										<li>퍼포머 - 천장 아래: 나리(에너지힐러 엄마) 금원(거짓말하는 딸) Bernardino(테너)</li>
+										<li>퍼포머 - 하늘 아래: 영안(노래) 백상(전자음악/어시스턴트호스트) 지영(사진) 연서(호스트)</li>
+										<li>버츄얼 바디: 이미래(암스테르담에서)</li>
+										<li>버츄얼 렉쳐: 양효실(서울에서)</li>
+										<li>Mosquitolarvajuice 2022</li>
+									</ol>
+								</p>
+							</details>
+							<details>
+								<summary>차연서, "Mosquitojuice", Every mosquito feels the same. (서문, 2022)</summary>
+								<p>
+									<a href="energywhoisshe.github.io/119">energywhoisshe.github.io/119</a>
+								</p>
+								<p><b>Mosquitojuice</b></p>
+								<p>
+									Mosquitojuice 는 2020.11.21(19:00-19:30) 코로나19 방역 지침에 따라 무관객으로 공연되었던 라이브 퍼포먼스 Juicy Mosquito 의 커튼콜이자 애프터파티이다. 연출자는 리마스터링 비디오를 제단에 올리고, 퍼포머들은 무대/카메라에 노출했던 신체 대신으로 느슨히 배역이 할당된 자신의 물건들을 각자의 파트너, 움직임, 시선, 태도, 선언과 연계하여 여섯 구역으로 가져온다. 쥬시 모스키토가 젖은 모기들이 변형해낸 가위치기 체위의 연합으로서의 오페라였다면 도치된 말장난으로 만들어진 모스키토쥬스는 모기 퇴치, 혹은 극심한 간지러움에 도움이 되는 화학약제에도 쉽게 붙을 따끔한 이름, 그럼에도 한겨울에 호명한다면 퇴장한 모기들을 흔들고 휘젓고 띄워 만든 칵테일로 도수를 높여보기로 한다. 묽은 레몬이 구역질에 특효가 있다는 것을 아는가? 이것은 유태인 여성과 독일인 여성이 교회에서 만나 한국어로 비명을 지르며 뿜어낸 오줌이다. 
+								</p>
+								<p>
+									수치심은 가장 낮은 파동의 마음 상태라고 한다. 재난 현장에서 비위가 약한 사람에게는 아주 멋진 소화기가 필요하다. ‘위험한 사람은 누구나 좋아’하는 기질을 드러내는 이는 불쾌감에 매료된다. 그러다 역겨움의 뺨을 가차없이 내려치고, 진동시키고, 방수 패드 위에서 발기한다. 죄책감의 반복적인 자극으로 몇번이고 부풀어오른 요도에서는 사정물이 나오고, 그것은 다시, 반쯤 눈감은 얼굴을 들이민 트라우마가 핥는다. 트라우마는 폐쇄적인 신경망을 창조해내고 그 안에서 무언가를 건져내고 빌려와서 배치하는 방식을 택한다면 — 마치 필치를 알아볼 수 없도록 신문을 오려만든 협박문처럼, 라디오에 전파되는 말마디를 믹싱했다는 귀신의 목소리처럼, 노이즈 속에서 누군가 노려보듯이, 애원하듯이, 발산하듯이. 그들은 끝없이 두 갈래로 갈라지는 길목에서 변조된 음성으로 이렇게 대화한다. “우리가 살아있고 창조의 바로 한가운데에 있다고 느낄 때, 사랑은 경이로운 것이 될 수 있어.” “세상의 모든 모기들도 똑같이 느낄거야.” “그것 참 모기들에게 좋은 일이구나.”
+								</p>
+								<p>
+									<b>Mosquitojuice, 소금 + 빛 + 교회가 아님, 29분 19초 순환재생, 퍼포머 제공, 2022</b>
+									<ol>
+										<li>강예빈, Sad family, Oil on canvas, 72.7x90.9cm, 2021</li>
+										<li>박주현, Beside eggs, Digital print on paper, 21x29.7cm, 9 pages, 2022</li>
+										<li>김해영, Premature greying, quickening, 잉크젯 프린트, 디지털 프린트, 2021 / 김찬휘 카메라, 잉크젯 프린트, 2021</li>
+										<li>이상화, Injury, digital sound(2’36”), 2021, 인식표, EMT 가위, 태극기패치, 2017</li>
+										<li>이솔엽, 해군아 클럽가자, digital sound(5’05”), 2021, 군번줄, 제76기 해군사관생도 수양록, 2018</li>
+										<li>박민영, 만날 뻔해서 반갑습니다, 싱글채널비디오, 조각, 향료, 가변크기, 9분 10초, 2021</li>
+										<li>임다울, 뒷오른팔 (장미 문신) Hind Right Arm (Rose Tattoo), 혼합 매체 & 스마트 디바이스 Mixed Media & Smart Device, 가변 크기 Dimensions Variable, 2019-2022</li>
+										<li>유명민, Care Instruction of Silky Dream, 실크, 나일론에 실크스크린, 가변설치, 2021 / 무지개가 있는 집(Rainbow in the house), 캔버스에 유리(유명민/2021), 캔버스에 아크릴(이윤수/2022), 크레용, 60.6 x 90.9(2ea)</li>
+										<li>이윤수, 무지개가 있는 집(Rainbow in the house), 캔버스에 유리(유명민/2021), 캔버스에 아크릴(이윤수/2022), 크레용, 60.6 x 90.9(2ea)</li>
+										<li>안현진, Consolidation 1, 백자토, 가압성형, 산화번조, 부분시유 33x33x1.5(h)cm, 2021 / Consolidation 2, 백자토, 가압성형, 산화번조, 부분시유 6x6x1(h)cm, 2021</li>
+										<li>최혜라, Danse 1, steel, paper, dimensions variable, 2022</li>
+										<li>김호정, light survival, 방수천에 디지털프린트, 150 x 350 (cm), 2021</li>
+										<li>차연서, { “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };, Interactive Random Fiction on PC, Unity game engine, 두 개의 스테이지, 2022</li>
+									</ol>
+								</p>
+							</details>
+							<details>
+								<summary>차연서, "{ “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };", 웹진세미나 Issue09 (2021)</summary>
+								<p><a href="http://www.zineseminar.com/wp/issue09/chayeonseo/">zineseminar.com/wp/issue09/chayeonseo/</a></p>
+							</details>
+							<details>
+								<!-- 글 -->
+								<summary>차연서, "모기를 죽이려면 뺨을 때려라", "Juicy Mosquito", Juicy Mosquito. (작업문 및 낭독시, 2020)</summary>
+								<p>
+									
+								</p>
+								<p>
+									<b>모기를 죽이려면 뺨을 때려라</b>
+								</p>
+								<p>편향된 시야로 마주 보는 불신의 순간 — 가상의 신체 두 구는 교착하고, 눈 가린 채 대칭을 찾는 현실의 몸들은 레즈비언 심볼의 선언과 변형으로 흐른다. 시각과 촉각의 괴리 속 너무 가까운 접촉, ‘쥬시 모스키토'는 불쾌한 초월의 순간을 VR 헤드기어의 1인칭 시점을 활용한 XR 퍼포먼스를 통해 소환해보길 시도한다.</p>
+								<p>‘파트너와 대칭을 맞추어 노이즈에 움직이고 사이렌에 멈춘다. 다섯 개의 움직임, 그 중 마지막은 가위치기 변형 자세로 버티거나 휴식하거나 마찰한다.’ 노이즈와 사이렌 간의 교차에서 길게 늘여진 아리아(’Der Hölle Rache kocht in meinem Herzen 지옥의 복수심이 내 마음에 끓어오르고')로 이어지는 사운드 속에서, 퍼포머들은 연출자가 제시하는 규칙을 인지한 채 파트너와 대칭을 이루어 접촉하는 방식에 대한 각자의 해석 혹은 새로운 소규칙을 발견하는 대화와 워크샵을 가진다. 각 쌍의 움직임은 그들의 전공, 관심사, 사적 취향, 정치적 태도 등에서 비늘 하나 정도를 떼어온 듯 만들어진다. 그들은 대련하고, 배신하고, 눈 맞춘다. 서로의 무게를 받치거나 이명을 듣는다. 의자, 침대, 캐노피의 상태를 연구한다. 혹은 보이지 않는 서로를 기다리며 느리게 다가간다.</p>
+								<p>1대1 관계 혹은 상태에 필요한 윤리에 대한 탐구로서 - 대칭성과 가위치기 변형 동작은 스코어 내에서 교차하는 와중 다즙한 모기의 구부러진 다리와 같은 체위 안에선 삼각형이 발견된다. 두명이서 만드는 삼각형은 바닥면이 빠져 있고, 다섯팀이 만드는 육각형 또한 그렇다. 그것에는 다소 균형을 잃어야 도달하며, 누락한 선분은 무대 주변부에 존재한다. 이를테면 오각 무대는 회전을 암시하며 배우들은 그 무대 밖에서 등대처럼 소리친다. 빌려온 대화는 별일 없이 최악을 향한다. 그들이 랜드 서퍼가 되어 퍼포머들의 공간 주위를 돌고 틈을 파고들며 경계를 구획하기 시작하면, 위협과 수호 사이에서 그들이 바퀴 굴리는 바닥은 수면이 된다. 무대 위 신체와 VR 속 신체가 그러하듯, 무대 안 각각의 역할과 요소마다 속하는 물의 차원은 내부와 외부 그리고 표면으로 서로간 조금씩 떠 있고 서로를 조금은 닮았으며 서로에게 얼마간 유해하다.</p>
+								<p>꼬부라져 늘어진 이끼는 새카맣게 젖었고 역전된 조명은 그것이 물구나무 선 얼굴에 달린, 혹은 천장으로 솟은 머리채라 한다. 가상 현실의 진공 상태가 사실은 물로 채워져 있는 것이라면, 그러니까 체액을 갖고 있다면? 우리가 서로에게 접속하려는 의지를 갖는 순간, 허공인 줄 알았던 모든 곳에는 액이 흐르고 있었음을 발견할 수 있을지 모른다. 어떤 약속된 시간에는 신체의 안밖으로 흐르는 그 물기가 끓는다. 복수도 비애도 용서도 아닌, 현실보다 조금 높거나 낮은 레이어들로 교차하는 다중 현실로서 - 오페라는 잠시간 일어난다.</p>
+								<p>불순한 불임의 물은 핏빛 없이, 미미한 점도를 갖는 명도로만 현상된다. 모기 댄스, 여름이 지나 늦가을까지도, 그들의 너무 많은 사체를 보고 있다보면 어쩐지 춤을 추고 있는 것만 같다. 깜찍하고 끔찍하게도 모기는 살인 동물로 1위다. 그들은 임신하지 않을 때 식물성 즙만을 마신다. 모기를 죽이려거든 뺨을 때려라. 우리, 같은 짐승에게 한결같이 숨과 피가 도는 증거로. Juicy Mosquito는 여성성에 대한, 피해자성에 대한, 불안에 대한, 또 끊이지 않을 대화와 애무에 대한 거짓말을 쫓는다.</p>
+
+								<p><b>Juicy Mosquito</b></p>
+								<p>
+									모기의 뺨과 내 손바닥이 잠시간 서로를 타격해요. 
+									<br>사실, 모기의 손바닥이 내 뺨을 갈겨요. 
+									<br>모기가 나에게 그의 여섯 개의 입술을 삽입하는 순간 우리는 
+									<br>잠시간 레즈비언 관계가 되는 거죠. 
+								</p>
+								<p>
+									삽입할 수 있는 건 오로지 나와 동일한 당신 뿐 
+									<br>당신의 그 편향된 눈은 평화롭기 때문에 
+									<br>당신의 부은 눈이 자랑스럽기 때문에 
+								</p>
+							</details>
+							<details>
+								<summary>차연서 & 박주영, 크게 슬플 일인가요. (서문 및 작업문, 2020)</summary>
+								<p></p>
+								<p>
+									<b>크게 슬플 일인가요</b>
+								</p>
+								<p>
+									이 전시에서 차연서와 박주영은 영상, 설치 및 퍼포먼스 기록으로 ‘크게 슬플 일인가요', 이 익숙한 한마디가 편안해지기를 기다린다.
+								</p>
+								<p>
+									어떤 사건과 죽음은 뭐가 그렇게 슬펐나. 사실 하나도 슬프지 않았던 일은 왜 그런가. 어떻게 그것을 넘어서 오늘을 살고 내일 을 바라볼 수 있나. 차연서와 박주영은 각자 작년 말 한번은 마무리되었던 각자의 작업을 마치 서로 등을 맞댄 듯 다시 불러내 어 한 공간에 연동시킨다. 다시 한번 거리 두기를 시도하는 것이다. 생일과 기일마다 자꾸만 고개를 쳐들 2019년을 끝내 애도 해낼 수 있을까. 매년 특정 날짜에 반복하는 수행적 회고, 그것이 강요하는 태도와 감정과는 다른 형태로. 그 사건들을 통과했던 신체적 감각이 섣불리 잊히지 않게, 너무 오래 남아 우리를 무너뜨리지도 않게.
+								</p>
+								<p>
+									‘내가 슬퍼해도 되나?', ‘내가 슬퍼하지 않아도 되나?', 두 작가의 관점은 언뜻 상반된 듯 보이나, 여성이 연민과 애도에 대해 그들 고유의 언어를 더듬으며 말하기 시작할 때 따라붙는 ‘How I Dare; 내가 어떻게 감히'라는 사족이 기반하는 출처는 같을 지 모른다. 사람은 확장할 때 기쁨을 느끼고 축소될 때 슬픔을 느낀다. 우리가 저항하려는 슬픔은 우리를 왜소히 만드는 사건 들에 기반해있다. 극복한다는 것은 무언가를 이겨내는 것이 아니라 다만 기꺼이 마주하는 것, 능히 견디거나 조정해 나간다는 것이다. 이 전시는 두 작가가 각자 통과한 그러한 사건들을 들여다보며 어떠한 극복의 맥락을 자아내는지에 관해 이야기한다.
+								</p>
+								<p>크게 슬플 일인가요 Be Sad I Dare You 차연서 박주영 2020년 6월 26일(금) ~ 7월 9일(목)갤러리175</p>
+								<br>
+								<p>
+									<ol>
+										<li>폴폴 트라이앵글/ 단채널 비디오(48’20’’)/ 2020</li>
+										<li>HOW DARE I FEEL SAD WHEN I THINK OF YOU/ 복사용지 미색 80g/m2 프린트 제본 (210x297mm x 5, 187x103mm x 1), VHS 테이프 케이스, 보헴시가 쿠바나 1mg 곽, 홈매트 리필, 촬영용 조명, 3x6m 블루스크린 원단/ 2020</li>
+										<li>폴폴 시트/ 750x1000x300mm x 4, 마블 스펀지, 투명 격자 방수포, 삼베 외/ 2020</li>
+										<li>폴폴 스크린샷/ 210x297mm ohp 필름 프린트, 시아노타입/ 2020</li>
+									</ol>
+								</p>
+								<p>
+									거울-대칭-균형 퍼포먼스, 파닉스 노래 만큼이나 기초적인 이 움직임들은 여성주의 실천으로서의 레즈비어니즘에서 보이는 새로운 관계를 연습하고 탐구할 수 있는 행위 틀을 만들어보는 데에서 출발했다. 지하 촬영장에서, 해 저문 중앙 정원에서, 그 리고 불 꺼진 미술관에서 마주 본 두 사람은 서로를 향한 모방을 요구하고 조정하고 겨루어 트라이앵글 그 비슷한 것에 도달 한다. 과정에선 자꾸만 실수가 나고, 편집은 자꾸만 말이 많고, 닮음의 연출로 필연 드러나는 차이까지 마주할 때 비로소, ‘크게 슬플 일인가요', 편하게 내뱉을 수 있을까.
+								</p>
+								<p>
+									강한 조명을 쏘여내지 않고도 어둠을 볼 수 있는 방법은 녹색 나이트샷 모드, 자전거는 제자리를 맴돌고 자동차는 집을 향하 는데, 유일하게 등장하는 낮(daytime)은 비행기 위에서 내려다본 하늘과 땅 뿐이다. 더 먼 곳으로 갈 때 거치는 구름들은 하늘나라가 아니라 비행 하는 풍경이 되었으면 했다. 더 먼 곳을 향하고 있거나, 좋은 것을 갖고 돌아오는 중이길 바란다.
+								</p>
+								<p>
+									리옹, 마요르카, 말뫼, 서울 — 도시 별로 챕터를 묶은 기록, 일기 및 편지 등을 재구성한 제본물은 — 표지와 목차 등은 어릴 때 영어를 배웠던 비디오테이프 케이스에 들어가는 크기로, 본문은 수정과 각주를 거듭하는 교열본의 형태로 자리한다. 미래 는 과거를 도울 수 있고 과거는 현재를 도울 수 있다. 구원의 가능성은 시차 안에 있는지 모른다. 날짜를 마지막에 덧붙이면 편지가 될 텐데 날짜가 첫 줄이면 일기가 된다. 예술은, 모든 물화된 기록물들은 혹 편지의 형식인 거라고. 사람은 이름따라 간다는 말이 참말일지도.
+								</p>
+								<p>
+									퍼포머들에게 추락과 뒷구르기를 위한 안전 매트를 주지 못했던 것에 대한 아쉬움은 감상자가 양면 스크린을 사이에 두고 마 주 앉을 수 있는 한 쌍의 의자로 전환했다. 마블 스펀지는 스펀지 찌꺼기를 압축한 것으로 이를 주로 덮어내는 것은 블루스크 린처럼 새파란 방수포 원단이다. 높이 뛰기 매트 도면을 바탕으로 하여 기꺼운 용기나 시원함, 혹은 서늘함을 감각하며 몇 가 지 재료를 조직했다. 지금 서울은 여름.
+								</p>
+								<p>차연서</p>
+								<br>
+								<p>
+									<ol start="5">
+									<li>유약한 것들/ 단채널 비디오 (1037*), 라이트 박스 위 3개의 유리 조각/ 2019
+									<br>The VulnerablenessA single channel video projection(10'36"), three glass sculptures on a light box/ 2019</li>
+									</ol>
+								</p>
+								<p>이 비디오는 개인적인 서사를 바탕으로, 유악함(vulnerableness)을 가지고 있지만, 보호 체계로 작동하는 것들에 관해서 이 야기한다. 이 유약함을 가지고 있는 것들의 형태는 말 그대로 굉장히 상처 입기 쉬운, 혹은 부서지기 쉬운 약한 존재들이다.</p>
+								<p>이 비디오에서 가장 중점적인 부분은 약한 존재들이 실제의 상황에서 어떻게 보호 의 수단으로 작용하는지, 그리고 보호 역할 을 수행할 때에 보호를 받는 주체들과 어떠한 관계를 맺는지이다.</p>
+								<p>관객이 가장 먼저 마주하게 되는 이미지는 XYZ 축과 지평선이 보이는 빈 디지털 세계이다. '집'은 기괴한 입체감을 가진 비닐 봉지로 포장된,디지털 이미지로 등장한다. 이는 외부와 내부의 구조와 모습을 보여주 지 않는다. 집과 같은 이미지로 등장하 는 이목구비가 없는 종이와 같이 납작한 이미지들의 인물들 또한 이 집의 내부에 기묘한 무언가가일어나고 있다는 인상을 강 화할 뿐이다. 뒤를 따라 보호 체계들에 대해 묘사하기 위해 등장하는 실사 이미지는 가상의 집과 괴리를 형성시킨다. 이 괴리 는 해소되지 않은 체 긴장을 유지하는 역할로 기능한다. 뒤의 실사로 구성된 기억의 추적 과정은 조금은 더 감각적인 층위로 관객을 초대한다.</p>
+								<p>기억의 파편들을 보여주기 이전에 그에 도달하기까지의 과정을 줄다리기에 비유한다. 이 줄다리기는 곧 고통스러운 기억을 마주하고 싶지 않은 자신과 스스로를 검열하며 이를 단순히 부정하려는 자신 그리고 이 모든 것을 마주하려는 자신 사이 간의 맞부딪힘이다.</p>
+								<p>박주영
+								</p>
+							</details>
+						</td>
+						<td>
+							<details>
+								<summary>Yang Hyosil, "Woman Laughing, Child Looking, Larvae Intertwined", This Unbelievable Sleep. (Critique, 2023)</summary>
+								<p>
+									<a href="https://energywhoisshe.com/this-unbelievable-sleep">energywhoisshe.com/this-unbelievable-sleep</a>
+								</p>
+								<p>
+									<b>Woman Laughing, Child Looking, Larvae Intertwined</b>
+								</p>
+								<p>Who might undo the law-symbolic language? Who resists humanization while being utterly unaware? Who crosses the world of adulthood without barely/narrowly losing the child-like senses as a non-human, post-human? A child recognizes a grandmother or ghosts in reverse order. They're alike. Feeling as though some things are so delicate that they make you want to break them—is akin to the expression of wanting to embrace a child. To prevent a child from seeing the terrible things yet to come, perhaps it would be necessary to break the child, or because children are a future that came early, I wish to touch them out of gratitude. A child is similar to an artist or a madman, or people who are sick and lack social utility—or because they may not grow up to be those types of people, they could prove to be socially useful. Come to think of it, a child is precious to everyone.</p>
+
+								<p>Asked to contribute a short piece of writing about Cha Yeonså's work for this exhibition, I should note that I had been invited to participate in their previous live performance called <i>Mosquitolarvajuice</i> and was filmed reading Aglaja Veteranyi's passion play about children. According to Yeonså's categorization, I guess I would be a larva with a "younger soul, regardless of age." Appearing as a duo during the performance, Kim Geumone, standing in as Yeonså, and Yeonså's mother, Sohn Nari, reciting Sylvia Plath's poem, were those types of larvae. Because this text has been produced by someone welcomed by Yeonså, the director, who provided a stage for the larvae they have recognized and assigned them roles they deserve—I don't think it can be considered a critique. In any case, critique is a public gesture written with the premise of a certain distance, but I am too close and connected to Yeonså. By the time I left Yeonså's apartment—where they use one room as a studio—I felt like a squishy bug, a munchy lip, a soft brain. Wet and infected.</p>
+
+								<p>Researcher Sohn Nari, Yeonså's mother, mentioned she used her studies on Sylvia Plath to talk to Yeonså when they were even younger. In hopes of conversing with her daughter, who seemed too weak to survive—perhaps almost refusing to live—she used the language of a so-called “unhappy” woman's sensitive, violent, accurate poem as her 'mother tongue.' Yeonså's sentences, which you will now read too, are unfamiliar and beautiful. Or, it's a poem of the non-ego 'staring' at the world of differentiation. Regarding the mosquito included in the titles of the past two live performances, Yeonså described them as "a very personal symbol," "lesbian-like," "a body that can access anyone," "something like a performance gesture," "aggressive and obsessive, but very weak," "a carnivore that kills the most people," "a dance." As an artist, Yeonså imagines their stage as a "place that summons newborn mosquitoes." Amongst their performer-mosquitoes, they also included a "vegetarian" male mosquito. Yeonså ‘queers' the queer, who attempt to stand their ground, creating a place where clichés crumble. Since children are unaware of the law of binaries, as they take in the world through queering, shaking the fixation of selfhood—they resonate with minorities, risk-takers, the non-ego or other names like that.</p>
+
+								<p>While casting performers for the previous two live performances, Yeonså mentioned that they tried to find out about their trauma or sexual preferences, one by one. Heading straight towards the 'secret.' As if the apocalypse is near, or to live amid despair–showing your vulnerable card is a quick and aggressive way to connect with one another. Because Yeonså cannot kill these midsummer mosquitoes, this must be the bond formed among those who "slap their cheeks in vain." The wounded body and the shamed body are therefore quite appropriate subjects for a performance. Yeonså's works and performances will continue to be a catalyst to bring forth secrets and pain that have been buried, forgotten, or unspeakable. That was the case for me. I'm sure it'd be the same for you. Even Cathy Park Hong said, "As far as I know, Koreans are among the most severely traumatized people."</p>
+
+								<p>After attending a poetry reading by poet Kim Eon Hee, Yeonså said it made them want to live. Thinking of Eon Hee's voice, assertive yet jubilant, not yet dead but aging, I could understand what Yeonså meant by that. Yeonså mentioned they carried around poetry books like a "talisman." And this exhibition's title, <i>This Unbelievable Sleep</i>, was derived from a poem called “One Day, One Morning (「여느 날, 여느 아침을」)”—a poem that imagines waking up and looking down at your corpse one morning, a morning when you needn't repeat the illusion, pain, and anger of living. A link forms between Eon Hee and Yeonså, who both struggle with insomnia. In the form of dead bugs in their papercut collage, Yeonså transcribed the phrase “heol, heol, heol (헐, 헐, 헐)”—the sound of laughter from a hole spread wide in Eon Hee’s poem “At Dusk (「황혼이 질 때면」)”—in which the poet imagines her death with a playful rhythm.</p>
+
+								<p>For someone inept in the language of games or computer-based videos like myself, I find the <i>Festival</i> series from this exhibition to be more readable and approachable. Yeonså used elements from her late father, Cha Dongha’s studio, such as his belongings and bugs that they often encounter there, as well as photos of corpses found in their girlfriend's book on forensic medicine that are unbearable to look at—like an abandoned baby still in the placenta, a man drowned in the river, a woman starved to death, a woman who had been raped, the phrase "heol, heol, heol (헐, 헐, 헐)" from the poem mentioned above.</p>
+
+								<p>Things that are close and inescapable come forth to Yeonså, claiming themselves through the forms of objects, images, the voice of poetry, and lives. Yeonså describes their father as "someone who lived under all sorts of rules." After their father's death, on behalf of the late artist, Yeonså wrote a statement for an exhibition on his <i>Festival</i> series. They wrote: "A funeral flower carriage, abstracted through spectacular colors that compose the joy and sorrow of life, accompanies the last road of the dead. A festival of death and life." Flowers and funeral bier are culturally close, and color is a ghostly veil that covers death.</p>
+
+								<p>Yeonså appropriates the rainbow colors of Cha Dongha's funeral flower carriage as the emblem of queer pride. By queering Cha Dongha, their own father who lived within the boundaries of social norms, it is as if Yeonså is making him into a soft bug or larva. Yeonså used their father's Mulberry paper (called Dak paper) to transcribe the corpses from the book of forensic medicine–the bodily images of the dead that ordinary people are banned from 'seeing.' The visual forms of the  <i>Festival</i> series, categorized as "Papercut collage (colored on Dak paper, Cha Dongha)," finally attained after countless failures of cutting paper with only scissors without sketches or drawings, perhaps mimic the act of 'mourning'—something Yesonså didn't mention, a word for grown-ups.</p>
+
+								<p>Upon close inspection, adversary places such as life and death, flower and corpse, bug and human, corpse and form, which constitute the world of differentiation, are actually one. Just like Yeonså's daddy and artist Cha Dongha are the same person. Yeonså's works with an amoral gaze dismantled their father's allegoric funeral flower-carriage, observing the corpses laying there—like "peering into the book to look at more terrible things, because being alive is so terrible." But through a child's body, Yeonså takes in that everything is connected—that two are in fact one—and recognizes that the book they kept returning to is no different from the literature of Sylvia Plath and Aglaja Veteranyi. Perhaps this is why Yeonså refers to their cut corpses and the dead bodies that finally stare back with their own 'eyes' as "friends." This is evidence of a persistent, tenacious gaze that can only be reached through analogy—and transcription is the only thing I can do. With love, Yeonså's mother Sohn Nari, who translates and introduces the passion plays of numerous artists, seems to quietly overwatch Yeonså's tribulation that seems to pledge: "Rather than suffer like this, let's face the suffering head on."</p> 
+
+								<p>I observe the photographic images and forms Yeonså transcribed onto paper with care, which they felt was their “daddy's flesh.” Yeonså thought, "the results seem as though bodies are having a festival in a funny-looking shadow." Repetition creates difference. Difference takes the power away from the 'original' and inserts a new force into the second. Yeonså's "festival" differs from their father's—and this festival is a mild laugh. Whether it be cannibalism, life itself, a neighborhood funeral carriage passing by, art, or this-very-moment–a festival is not losing the wavering laughter in the midst of tragedy.</p>
+
+								<p>And I've run out of space to discuss other things like the collaboration with photographer Hong Jiyoung, who also participated in this exhibition alongside the previous performance. See you next time.</p>
+
+								<p>Translation: Sangmin Lee</p>
+							</details>
+							<details>
+								<summary>Kwak Sojin, "So rattle – make noise – and repeat - Until it can be recognized as a rhythm", 3 Households on Steam. (Review, 2023)</summary>
+								<p><a href="https://store.steampowered.com/app/2217540/3_Households/">store.steampowered.com/app/2217540/3_Households</a></p>
+								<p>
+									<b>So rattle – make noise – and repeat – Until it can be recognized as a rhythm</b>
+								</p>
+								<p>Within the transmogrifying fractal network, we are greeted by someone. That someone, appearing as text on the left side of the screen, is ‘the destructive mother,’ ‘the productive daughter,’ ‘the daughter’s potential girlfriend,’ or the body as a ‘dummy’ that is specific enough to be imagined in our minds. The being repeatedly appears, each time with a different occupation and personality, and we can only be certain of the fact that these infinite bodies are in a pathological state of mind. They reveal they have arrived here as a result of experiencing symptoms such as “distraction,” “stress,” “fatigue,” “insomnia,” “indigestion,” “discomfort,” “pain,” “anxiety,” and “anger,” and that they felt safe in a very localized area of this household. There is also an alphabet chart in the center. The chart is composed of 21 vowel boxes1). The incomplete characters await to be activated by the mouse cursor – vowels cannot narrow nor close our vocal chords – here, we are tasked with moving the vowel boxes up, down, and side-to-side to create some kind of pattern. Once a pattern is established, a poem about ‘that household’ is randomly generated on both sides of the screen. Redacting information on why that event had to occur at that place in that manner, the poems manifest as gluttony and nausea, and screams and tremors that have spawned from the mailbox, the bed, the trash can, and the floor.</p>
+
+								<p>What are the connections between the rotating, unopened boxes, and how will they relate to each other? How much longer do we have to spend opening these boxes while suspended in this re-writing with no beginning or ending? Instead of making empty promises of a better next time, the game makes us learn the rhythm and cadence of poetry. We have but poetry when faced with the cruelty of unpredictable and unrecognizable events, as well as the times that cannot become a pattern. And what poetry can do is impart the most humane rhythm and cadence to the calling of pain. So rattle – make noise – and repeat. Until it can be recognized as a rhythm. Until our pain becomes a rhythm. Just like how we have been singing for a long time.
+								<br>1)The vowel graphics that use the Korean phonetic characters are the same in the English version of the game.</p>
+								<p>Kwak SoJin (Visual artist)</p>
+							</details>
+							<details>
+								<summary>Cho HyeYoung, "The people who are homebound", 3 Households on Steam. (Review, 2023)</summary>
+								<p><a href="https://store.steampowered.com/app/2217540/3_Households/">store.steampowered.com/app/2217540/3_Households</a></p>
+								<p><b>The people who are homebound</b></p>
+								<p>The common aesthetic between games and queerness is endless ‘failure.’ The experience of games, where problem solving and goal achievement are the main driving forces, is strung together by countless failures and the pain of enduring those failures. What about growth? A new game entails a new set of rules and context, commanding a re-learning to take place every time. ‘Failure’ is essentially inherent in games, and linear and continuous growth is impossible. Failing in ‘normality’ and living a life without a model, queerness simultaneously demolishes and constructs over and over again. 3 Households is a ‘queer architecture game’ that shows the aesthetics of this double failure. Actants such as “the Mind of a Destructive Mother,” “the Quantum Wave Field of a Productive Daughter,” and “the Physical Constitution of the Daughter’s Potential Girlfriend” build and protect the house. For them, tending to the house is an act of tearing down what used to be a heteropatriarchal home. It constantly undermines society's demand to “know one’s place” as well as the notion of a sweet home as a warm, safe and secure place. There is no place more traumatic than a home. In the unstable, queer house built in this game, children also give birth to parents.</p>
+								<p>In the game, the player constructs a house by arranging 21 cubes, each with a Korean vowel. Guided by the meditative music of electronic sounds, vowels formed according to the shape of the periodic table travel through space, continuously shifting the composition of the bricks, the location of the rooms, the shape of the house, and the matrix in which the house resides. The movement of the vowel cubes constantly replaces nouns and adjectives with the adjective string indicating the state of mind, occupation and role string, physical condition string, room role string, furniture and equipment string, housework string, and etc., giving birth to queer homes, parents, children, and lovers. The three women form a family. Like a game of musical chairs (except here, the number of chairs remain the same) or Tetris, the position and role of the women endlessly rotate; they transform and stack their bodies, adjusting to one another’s presence. Someone manages the house while someone else despairs and another turns off the lights. Like Bulgasari, an iron-eating creature in Korean mythology, they consume each other's pain and despair, and a sense of loss and mourning ensue. How will the mother, the daughter, and the daughter's girlfriend relate to one another, and what will they inherit from each other? 21 Vowels, 21 boxes, 21 keepsakes, 21 coffins, and 21 shelters… The people who are homebound encourage the players to hide and seek in order to discover a safe space, and to make and break that space into a place so as to embark on a one-way trip to meditation and healing. Sharing 3 Households, which is part of Cha’s artistic practice, on Steam, a video game distribution platform, will also play a part in that journey.</p>
+								<p>Cho HyeYoung (Media and cultural studies scholar)</p>
+							</details>
+							<details>
+								<summary>Cha Yeonså, "This Unbelievable Sleep", This Unbelievable Sleep. (Preface-Prelude, 2023)</summary>
+								<p>
+									<a href="https://energywhoisshe.com/this-unbelievable-sleep">energywhoisshe.com/this-unbelievable-sleep</a>
+								</p>
+								<p><b>This Unbelievable Sleep</b></p>
+								<p>
+									Rumors become independent from incidents.
+									<br>Nightmares exceed memories. 
+									<br>To me, lies taste the best ever.
+								</p>
+								<p>
+									 Dried things telling how they were once 
+									 <br>gripped and soaked, how they were dripping 
+									 <br>through their crotches. 
+								</p>
+								<p>
+									 The houseworms taking the Buddhist precepts. 
+									 <br>The rainbow cuts of flesh now burning with incense. 
+									 <br>I get eye-kisses from unclaimed bodies. 
+								</p>
+								<p>
+									 Festival — this phantom scissoring, 
+									 <br>in this unbelievable sleep…
+								<br>(Co-translated with Sohn Nari.)</p>
+							</details>
+							<details>
+								<summary>Cha Yeonså, "Mosquitolarvajuice", Mosquitolarvajuice. (Preface, 2023)</summary>
+								<p><a href="https://msqt.kr">msqt.kr</a></p>
+								<p>
+									<b>Mosquitolarvajuice</b>
+								</p>
+								<p>
+									Where ‘Maldoror’ penetrates its six lips, the lush sunshine tilts along the floor, briefly overlapping with the etheric plane. Here are the bodies that ‘greet another day, another morning after death.’ They were the farmers who tilled the soil of creativity. 
+									<br><br>
+									As the birth mother measures her daughter’s energy flow, ‘the endless house’ shudders like an old cuckoo clock that languorously announces every hour. She is vertical only because she is in suspension. Once the bodies that refuse resuscitation match the pitch of the off-beat metronome, the tiny, fairy-skinned motor vibrates toward its anticipated burnout. The empty mother and the lying daughter, the angel with a scythe and the naked firefighter devote themselves to the sexual act of the giver. 
+									<br><br>
+									The scene after everything is over and ruined; in other words, the scene freed of life and death is rearranged as a deconstructed opera for a short while. Brewed in the respiratory tube of larvae with the curvature of an anal plug, the alcohol undulates among the invited people. The etheric cocktail doped to droop numb eyelids, incite nausea, and disallow death throes. An acrid finish, this fishy-smelling glass. With swollen and biased eyes shut, proudly savor ‘this unbelievable sleep’...
+									<br><br>
+									Like the fleeting morning light that remains crisp even in the sunset or the belief that energy cannot be harmed, recollect remnants of the happenings that have returned in latency, and send the threats back to the hidden addresses of the tattered nerves. Overworked sleepwalkers now place moments of precarious immersion atop the autopsy table.  
+									<br><br>
+
+								<p>
+									<ol type="a">
+										<li>Kim Eon Hee, Another Day, Another Morning (여느 날, 여느 아침을), 2019. (Hyundae Munhak, July 2019)</li>
+										<li>Sibylle Ruppert, Les Chant de Maldoror, 1978. 105 x 85cm.</li>
+										<li>Mire Lee, Endless House: Holes and Drops, 2022. Multiple ceramic sculptures on a scaffold, lithium carbonate and iron oxide glaze liquid, pump, motor and other mixed media. Installed in The Arsenale at the Venice Biennale 2022: The Milk of Dreams.</li>
+										<li>Sylvia Plath, Lady Lazarus, 1965. Translated by Nari Sohn, 2022.</li>
+										<li>Aglaja Veteranyi, Warum das Kind in der Polenta Kocht, 1999. Translated by Suah Bae, 2021.</li>
+										<li>Gaetano Donizetti, “Il Dolce Suono” from the opera Lucia di Lammermoor, 1835. </li>
+										<li>Gaetano Donizetti, “Una Furtiva Lagrima” from the opera L'elisir d'amore, 1832.</li>
+										<li>Éric Serra, “The Diva Dance” from the film The Fifth Element, 1997.</li>
+										<br>
+
+										<li>Original songwriter unknown, “Wheat and Barley Grow (밀과 보리가 자라네).” Adapted children’s song. Arranged and performed by YoungAn.</li>
+										<li>YoungAn, “The sun rises (해가 떠오르네),” 2022. Written and performed by YoungAn.</li>
+										<li>YoungAn, “Cherub Sedative (진정제 아기천사),” written and performed by YoungAn, 2022.</li>
+										<li>YoungAn, “Cut the Throats of the Morose (슬픈 자들의 목을 쳐라 )” 2022. Written and performed by YoungAn. (Includes excerpt from Erich Fried’s “Die Maßnahmen,” 1957)</li>
+										<li>YoungAn, “Angel (천사),” 2022. Written and performed by YoungAn.</li>
+										<li>YoungAn, “Quickly Return Home (어서 집으로 돌아오렴),” 2022. Written and performed by YoungAn.</li>
+										<li>BaekSang, Fire Safety Training Level 2 Certificate ‘Breathing apparatus and emergency rescue breathing,’ 2017/2022. Live performance.</li>
+										<li>BaekSang, Fire Safety Training Level 2 Certificate ‘Search and rescue for the rescue requester,’ 2017/2022. Live performance with YoungAn.</li>
+										<li>BaekSang, Fire Safety Training Level 2 Certificate ‘Fire hose handling,’ 2017/2022. Llive performance.</li>
+
+										<br>
+
+										<li>Game engine simulation (Unity) 
+										<li>Screening (LED panel, 2 x 4.5m, Samsung, LG)</li>
+										<li>Sensor system (Perception Neuron, Kinect, Velodyne LiDAR)</li>
+										<li>Sound system (Logic, Presonar, GnS, Shure, KLOTZ, KORG)</li>
+
+										<br>
+
+										<li>Organization/Production/Direction/Development: Yeonså Cha (Host), Sanghwa Lee (Assistant host)</li>
+										<li>Performers - Under the Ceiling: Nari(mother), Geumwon(daughter), Bernardino(tenor)</li>
+										<li>Performers - Under the Sky: YoungAn (singing), BaekSang (electronic music), Jiyoung(photography), Yeonså(host)</li>
+										<li>Virtual body: Mire Lee (from Amsterdam)</li>
+										<li>Virtual lecture: Hyosil Yang (from Seoul)</li>
+										<li>Mosquitolarvajuice 2022</li>
+									</ol>
+								</p>
+							</details>
+						</td>
+					</tr>
+				</tbody>
+		</table>
+		</article>
+	</div>
+	
+</body>
+</html>
