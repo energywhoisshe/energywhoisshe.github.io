@@ -1,0 +1,366 @@
+<!-
+Energywhoisshe.com
+* 2023.09. ver. 3.0.1 Updated.
+* 2023.08. ver. 3.0.0 Released. The official website of Energywhoisshe.com.
+* 2023.06. ver. 2.0.0 Released. The official web museum for "This Unbelievable Sleep".
+* 2022.11. ver. 1.1.0 Released. The official website of Energywhoisshe Games for "3 Households".
+-->
+<!DOCTYPE html>
+<html lang="ko, en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	
+	<link href='https://fonts.google.com' rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <!-- 입구 페이지 -->
+    <title>Energywhoisshe.com</title>
+    <link rel="shortcut icon" href="energywhoisshe.ico" type="image/x-icon">
+
+	<meta name="description" content="Energywhoisshe.com">
+	<meta name="author" content="Energywhoisshe.com">
+	<meta nme="publisher" content="Energywhoisshe.com">
+	<meta name="keywords" content="차연서, Cha Yeonså, 차연서 개인전, 이 기막힌 잠, This Unbelievable Sleep, 에너지후이쉬, Energywhoisshe">
+	<meta name="date" content="2024-04-26">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+	<style>
+		*,
+		*::before,
+		*::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		html, body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		html {
+      		background-color: ;
+      		background-repeat: no-repeat;
+      		background-size: cover;
+      		background-attachment: fixed;
+      		font-size: 14px;
+      	}
+      	body {
+      		font-size: 1rem;
+      		line-height: 1.75;
+      		border-radius: 3px;
+      		word-break: keep-all;
+	      	/*max-width: 600px;*/
+	      	font-family: 'Noto Serif KR', serif;
+	      	margin: 0rem;
+	      	/*margin-left: 3vw;
+	      	margin-right: 1vw;*/
+	      	/*margin-right: 20px;*/
+	      	margin-top: 48px;
+	      	/*
+	      	margin: 2rem auto;*/
+      	}
+      	h1,h2,h3,h4,h5,h6 {
+      		font-size: 100%;
+		}
+		h1{
+			font-family: 'Noto Serif KR', serif;
+		}
+      	header{
+      		position: fixed;
+      		text-align: right;
+      		color: white;
+      		padding: 0rem;
+      		width: 600px;
+      		border-radius: 0 0 3px 3px;
+      		font-weight: bold;
+      		z-index: 1000;
+
+      		top:0;
+      		left: 2rem;
+      	}
+      	.nav-buttons {
+      		font-weight: bold;
+      		color: #121212;
+      		background-color: whitesmoke;
+      		border-style: ridge;
+      		border-width: 1px;
+
+		  	width:40px; 
+		  	height: 150px;
+
+		  	border-style: ridge;
+		  	border-width: 1px;
+      		border-color: whitesmoke;
+      		border-radius: 3px 3px 3px 100%;
+      		padding-left: 2rem;
+      		text-align: right;
+
+      		writing-mode: vertical-rl;
+      	}
+      	.nav-buttons:checked {
+      		background-color: white;
+      	}
+      	img {
+      		border-radius: 3px;
+      		max-width: 100%;
+      	}
+      	
+      	dt {
+	      	font-weight: 700;
+	    }
+	    dd {
+	      	
+	    }
+	    p {
+	    	margin-bottom: 1rem;
+	    }
+	    figcaption {
+	    	font-size: 0.8rem;
+	    	line-height: 1.4rem;
+	    	font-color: grey;
+	    	text-align: right;
+	    }
+      	button {
+	      	border: none;
+	      	border-radius: 3px;
+	      	padding: 0.4rem;
+	      	font-size: small;
+	      	text-align: left;
+	      	color: blue;
+	      	background-color: lightsteelblue;
+	      	margin-bottom: 0.4rem;
+      	}
+      	.this-unbelievable-sleep{
+      		width: 100%;
+      		padding: 1rem;
+      		border-style: groove;
+      		border-color: whitesmoke;
+
+      		background-color: white;
+      		color: #121212;
+      		font-family: 'Noto Serif KR', serif;
+      		font-weight: bold;
+      	}
+      	.project-buttons {
+      		background-color: whitesmoke;
+      		color: #121212;
+      		border-style: groove;
+      		border-color: whitesmoke;
+      		width: 100%;
+      		font-family: 'Noto Serif KR', serif;
+      		font-weight: bold;
+      		padding-left: 2rem;
+      	}
+      	.project-buttons:checked, .project-buttons:hover {
+      		background-color: white;
+      	}
+      	details > summary {
+  			list-style: none;
+		}
+	    details > summary::-webkit-details-marker {
+	      	display: none;
+	    }
+	    details {
+	      	background-color: #dddddd;
+	      	background-color: white;
+
+	    }
+	    details p, details ul {
+	    	padding-left: 1rem;
+	    	padding-top: 0.6rem;
+	    	padding-bottom: 1rem;
+	    }
+	    summary {
+	    }
+	    summary:hover, a:hover, button:hover{
+	      	font-style: italic;
+	    }
+
+	    a:link{
+	    	color:royalblue;
+	    }
+	    a:visited, a:hover{
+	    	color:darkslateblue;
+	    }
+	    .comics a:link, .games a:link{
+	    	color:royalblue;
+	    }
+	    .comics a:hover, .comics a:visited, .games a:hover,.games a:visited {
+	    	color:darkslateblue;
+	    }
+	    .div-for-drawing {
+	    	height: 45vh;
+	    	overflow-y: scroll;
+	    	padding: 1rem;
+	    	background-color: black;
+	    	border-color: grey;
+	    	border-width: 6px;
+	    	border-style: ridge;
+	    	border-radius: 3px 3px 3px 3px;
+	    	text-align: center;
+	    }
+	    .div-for-drawing:hover, .div-for-drawing:checked {
+	    	border-color: black;
+	    }
+	    .div-for-drawing img {
+	    	width: 100%;
+	    	max-width: 400px;
+	    }
+	</style>
+	<style>
+		nav {
+			font-size: 2vmax;
+      		position: relative;
+      		right:0;
+      		top: 0px; /*우측메뉴높이*/
+      	}
+      	nav li{
+      		text-decoration: none;
+      	}
+      	nav a {
+      		color: whitesmoke;
+      		text-decoration-line: none;
+      	}
+		#menu {
+			 height: 5vh; 
+			 width: 100%;
+			 text-align: center;
+			 vertical-align: middle;
+			 font-family: 'Gothic A1', sans-serif;
+		}
+		#menu ul li{
+			display: inline;
+			list-style: none;
+			vertical-align: middle;
+			text-align: center;
+			line-height: 30px;
+			margin-left: 1rem;
+		}
+		#menu ul li a {
+			text-decoration: none;
+			display: inline-block;
+		}
+	    iframe {
+	    	width: 100%;
+	    	border: none;
+	    	height: 500px;
+	    	max-height: 500px;
+
+			border-style: ridge;
+			border-width: 10px;
+			border-radius: 3px 3px 3px 3px;
+			height: 60vh;
+		}
+		footer {
+			height: 5vh;
+	    	font-family: 'Gothic A1', sans-serif;
+	    	text-align: right;
+	    	font-weight: bold;
+	    	color: #999999;
+	    	margin-bottom: 0;
+	    	margin-right: 1rem;
+	    	font-size: 0.8rem;
+	    }
+	    .logo {
+	    	font-size: 8vw;
+	    	font-weight: 300; 
+	    	border-radius: 3px 0 0 3px; 
+	    	padding-right: 3px; 
+	    	padding-left: 3px; 
+	    	/*background-color: white; */
+	    	/*border-style: inset; */
+	    	border-width: 0.4px;
+      		position: fixed;
+      		right:0;
+      		top: 2rem;
+      		text-decoration-line: none;
+      	}
+      	.button {
+      		color: whitesmoke;
+      		width: 10vmax; 
+      		height: 10vmin;
+      		border-style: inset;
+      		border-radius: 0 50% 0 50%;
+      		font-size: 1.5vmax;
+      		
+      		border-width: 8px;
+      		font-family: 'Gothic A1', sans-serif;
+      		font-weight: bold;
+      		border-style: groove;
+      		border-color: whitesmoke;
+      	}
+      	.button_3 {
+
+      		/* width: 20vmax; */
+      		font-size: 1.5vmax;
+      		padding-right: 3vmax;
+      		padding-left: 3vmax;
+      		height: 3vmax;
+      		background-color: whitesmoke;
+      		border-color: whitesmoke;
+      		border-style: groove;
+      		border-width: 5vmax;
+      		border-radius: 0 30px 0 30px;
+      		font-family: 'Gothic A1', sans-serif;
+      		font-weight: bold;
+      	}
+      	.button_4 {
+      		width: 5vmax; 
+      		height: 3vmax;
+      		background-color: whitesmoke;
+      		border-style: groove;
+      		border-radius: 0 30px 0 30px;
+      	}
+      	button {
+      		font-family: 'Gothic A1', sans-serif;
+      		font-weight: 900;
+
+	      	background-color: whitesmoke;
+      		color: #121212;
+      		border-style: groove;
+      		border-color: whitesmoke;
+      		width: 100%;
+      		padding-left: 2rem;
+      		border-radius: 3px;
+
+      		font-size: 0.8rem;
+      		text-align: center;
+      		line-height: 3px;
+      		color: darkslateblue;
+      	}
+      	button:checked, button:hover {
+      		background-color: darkslateblue;
+      		color: whitesmoke;
+      	}
+	</style>
+</head>
+<body>
+	<header>
+		<a class="logo" href="hi.html" target=iframe>𓆨</a>
+	</header>
+	<nav id="menu">
+		<ul>
+			<h1><a href="https://docs.google.com/document/d/e/2PACX-1vQ1Qpq_TBKT-QQIVmU8os4c1C-oWpHnrMJI_JcUOj-SFeookaZ34dEXYr0pJrIqVvuZiB78mhK1Ev1S/pub?embedded=true" target=iframe>Energywhoisshe.com</a></h1>
+			<li><a class="button" href="games.html" target=iframe>Games</a></li>
+			<li><a class="button" href="comics.html" target=iframe>Comics</a></li>
+			<li><a class="button_3" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" target=iframe>and Things</a></li>
+			<!--<li><a class="button_3" href="things.html" target=iframe>and Things</a></li>-->
+			<!--<li><a class="button_3" href="studies.html" target=iframe>Studies</a></li>-->
+			<!--<li><a class="button_3" href="texts.html" target=iframe>Texts</a></li>
+			<li><a class="button_3" href="videos.html" target=iframe>Videos</a></li>-->
+			<!--https://snskeyboard.com/specialfont/ 쐐기문자-->
+		</ul>
+	</nav>
+	<div style="margin-top: 100px;">
+		<iframe src="https://docs.google.com/document/d/e/2PACX-1vQ1Qpq_TBKT-QQIVmU8os4c1C-oWpHnrMJI_JcUOj-SFeookaZ34dEXYr0pJrIqVvuZiB78mhK1Ev1S/pub?embedded=true" name=iframe></iframe>
+	</div>
+
+	<footer>
+		© 차연서
+	</footer>
+</body>
+</html>
