@@ -351,14 +351,14 @@ body.dark-mode .dark-mode-toggle::before {
 </style>
 </head>
 <body>
-<div class="toolbar_title">양효실 – 아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합 (2025).hwp [읽기 전용]</div>
+<div class="toolbar_title">양효실 – 아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합 (2025).hwp</div>
 <div class="toolbar">
 <!--<select class="disabled">
 <option>새문서</option>
 </select>-->
-<select>
-<option>한국어</option>
-<option>English</option>
+<select id="docSelect">
+<option>불러오기</option>
+<option value="Father-and-Us.html">Father and Us: Assemblages of Non-Bodies and “Not-Me”s</option>
 </select>
 
 <select id="fontSizeSelect">
@@ -443,6 +443,16 @@ body.dark-mode .dark-mode-toggle::before {
 
   document.getElementById("printBtn").addEventListener("click", () => {
     window.print();
+  });
+
+  //option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
   });
 </script>
 <div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html</div>
