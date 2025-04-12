@@ -6,7 +6,11 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Father and Us: Assemblages of Non-Bodies and “Not-Me”s</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+</script>
 <style>
     body {
       font-family: 'Noto Serif KR', serif;
@@ -343,7 +347,6 @@ body.dark-mode .dark-mode-toggle::before {
 .print-footer {
   display: none;
 }
-
 </style>
 </head>
 <body>
@@ -394,52 +397,22 @@ body.dark-mode .dark-mode-toggle::before {
 </div>
 <div class="statusbar" id="statusBar">1/8 pages | Words: 3486 | Characters (with spaces): 21555</div>
 <div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
-
-<div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html</div>
-
-
 <script>
-document.addEventListener("DOMContentLoaded", () => {
+  const fontSizeSelect = document.getElementById("fontSizeSelect");
+  const container = document.getElementById("documentContainer");
+  const darkModeToggle = document.getElementById("darkModeToggle");
   const statusBar = document.getElementById("statusBar");
-  const paragraphs = Array.from(document.querySelectorAll("#documentContainer p"));
-  const total = 9;
 
-  function updateStatus() {
-    let current = 1;
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-    paragraphs.forEach((p, index) => {
-      const rect = p.getBoundingClientRect();
-      const offsetTop = window.scrollY + rect.top;
-      const offsetBottom = offsetTop + rect.height;
-      if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-        current = index + 1;
-      }
-    });
-
-    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
-      current = total;
-    }
-
-    statusBar.textContent = `${current}/${total} pages | Words: 3486 | Characters (with spaces): 21555`;
-  }
-
-  document.addEventListener("scroll", updateStatus);
-  window.addEventListener("load", updateStatus);
-});
-
-//option-select-새로운 페이지
-  const docSelect = document.getElementById("docSelect");
-
-  docSelect.addEventListener("change", function () {
-    const selected = this.value;
-    if (selected) {
-      window.location.href = selected;
-   }
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;
+    container.style.fontSize = newSize;
   });
-</script>
 
-<script>
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+//스크롤바 - 8페이지 기준
 document.addEventListener("DOMContentLoaded", () => {
   const statusBar = document.getElementById("statusBar");
   const paragraphs = Array.from(document.querySelectorAll("#documentContainer p")).slice(0, 8);
@@ -468,5 +441,22 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("scroll", updateStatus);
   window.addEventListener("load", updateStatus);
 });
+
+//프린트
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+});
+
+//option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
+  });
 </script>
+<div class="print-footer">https://energywhoisshe.com/Father-and-Us.html</div>
+
 </body></html>
