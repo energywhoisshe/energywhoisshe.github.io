@@ -91,6 +91,20 @@
       margin-bottom: 8em;
     }
 
+    .additional-document-container {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .additional-document-container p{
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
     .page {
       width: 794px;
       height: 1123px;
@@ -180,7 +194,7 @@
       color: #e0e3e7;
     }
 
-    body.dark-mode .page {
+    body.dark-mode .page{
       background-color: #37404a;
       color: #e0e3e7;
     }
@@ -212,6 +226,13 @@
 
     body.dark-mode .ruler {
       background: repeating-linear-gradient(90deg, #59626e, #59626e 1px, transparent 1px, transparent 10px);
+    }
+
+    /* 정보란 추가 */
+    body.dark-mode .additional-document-container {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
     }
 
 
@@ -347,7 +368,7 @@ body.dark-mode .dark-mode-toggle::before {
   }
 }
 .print-footer {
-  display: none !important; /* 웹에선 숨김 */
+  display: none; /* 웹에선 숨김 */
 }
 </style>
 </head>
@@ -358,7 +379,7 @@ body.dark-mode .dark-mode-toggle::before {
 <option>새문서</option>
 </select>-->
 <select id="docSelect">
-<option>불러오기</option>
+  <option>불러오기</option>
 <option value="Father-and-Us.html">Father and Us: Assemblages of Non-Bodies and “Not-Me”s</option>
 </select>
 
@@ -397,6 +418,11 @@ body.dark-mode .dark-mode-toggle::before {
 <section>
 <p>p.s 연서가 줄곧 인용하는 시인 김언희의 시, 전시 곳곳에 흩어져 있는 시들에 대해서는 이번에는 말을 안/못 하기로. 그곳은 연못이 아니라 ‘늪’이기에, 성인-여자-괴물의 세계는 안 건드리기로. 이번에는 여자애-“갓파”(연서가 자신과 가장 닮은 캐릭터로 인용한)의 세계만 연서와 함께 겪어내기로.</p>
 </section>
+</div>
+<div class="additional-document-container">
+  <p>
+    지난 전시: 차연서 개인전 《살도 뼈도 없는 나에게》, SAPY 그레이룸, 2024.9.3 ~ 9.13
+  </p>
 </div>
 <div class="statusbar" id="statusBar">1/5쪽 | 8878글자</div>
 <div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
