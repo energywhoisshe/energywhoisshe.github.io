@@ -165,13 +165,11 @@
       position: fixed;
       bottom: 0;
       right: 0;
-      width: 40%;
-      border-top: 1px solid #ccc;
+      text-align: right;
       padding: 6px 20px;
       font-size: 0.85rem;
       justify-content: space-between;
       font-family: 'Noto Serif KR', serif;
-      text-align: right;
     }
 
 
@@ -256,7 +254,6 @@ body.dark-mode .dark-mode-toggle::before {
     max-width: 100%;
   }
 
-@media screen and (max-width: 768px) {
   .toolbar {
     flex-wrap: wrap; /*줄바꿈 허용*/
     gap: 6px;
@@ -289,11 +286,6 @@ body.dark-mode .dark-mode-toggle::before {
   font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
-
-
-
-
 
 @media print {
   body.dark-mode {
@@ -355,7 +347,7 @@ body.dark-mode .dark-mode-toggle::before {
   }
 }
 .print-footer {
-  display: none;
+  display: none !important; /* 웹에선 숨김 */
 }
 </style>
 </head>
@@ -408,6 +400,7 @@ body.dark-mode .dark-mode-toggle::before {
 </div>
 <div class="statusbar" id="statusBar">1/5쪽 | 8878글자</div>
 <div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
+<div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html</div>
 <script>
   const fontSizeSelect = document.getElementById("fontSizeSelect");
   const container = document.getElementById("documentContainer");
@@ -466,6 +459,5 @@ body.dark-mode .dark-mode-toggle::before {
    }
   });
 </script>
-<div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html</div>
 
 </body></html>
