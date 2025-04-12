@@ -12,6 +12,9 @@
   });
 </script>
 <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Noto Serif KR', serif;
       background-color: #fdfdfd;
@@ -31,11 +34,11 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
-      overflow: hidden; /* 넘치는 텍스트를 숨김 */
-      text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
-      max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
-      flex-shrink: 1; /* 필요 시, 텍스트가 줄어들도록 설정 */
+      /*white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+      /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
+      /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
+      /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
+      /*flex-shrink: 1; /* 필요 시, 텍스트가 줄어들도록 설정 */
     }
 
     .toolbar {
@@ -48,6 +51,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
+      max-width: 100%;
     }
 
     .toolbar button, .toolbar select {
@@ -245,15 +249,21 @@ body.dark-mode .dark-mode-toggle::before {
 }
 
 
-@media screen and (max-width: 768px) {
-  .page, .document-container {
-    padding: 20px;
-    width: 100%;
-    max-width: none;
+  @media screen and (max-width: 768px) {
+    .page, .document-container {
+      padding: 16px;
+      width: 100%;
+      max-width: 100%;
+  }
+
+  @media screen and (max-width: 768px) {
+    .toolbar {
+      flex-wrap: wrap; /*줄바꿈 허용*/
+      gap: 6px;
   }
 
   .page p, .page h2, .page h1 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     line-height: 1.8;
     word-break: keep-all;
     letter-spacing: 0;
@@ -395,7 +405,7 @@ body.dark-mode .dark-mode-toggle::before {
 <p>Postscript: I decided that I would/could not comment this time on the scattered works of poetry found throughout the gallery by Kim Eonhee, someone whom Cha Yeonså often quotes. I felt I should not address the world of adult/female/monsters because it was not so much a pond as a mire. For this text, I would be joining Cha in experiencing only the world of the girl and “kappa” (cited by the artist as the character she most resembles).</p>
 </section>
 </div>
-<div class="statusbar" id="statusBar">1/8 pages | Words: 3486 | Characters (with spaces): 21555</div>
+<div class="statusbar" id="statusBar">1/8 pages | Words: 3486</div>
 <div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
 <script>
   const fontSizeSelect = document.getElementById("fontSizeSelect");
@@ -435,7 +445,7 @@ document.addEventListener("DOMContentLoaded", () => {
       current = total;
     }
 
-    statusBar.textContent = `${current}/${total} pages | Words: 3486 | Characters (with spaces): 21555`;
+    statusBar.textContent = `${current}/${total} pages | Words: 3486`;
   }
 
   document.addEventListener("scroll", updateStatus);
