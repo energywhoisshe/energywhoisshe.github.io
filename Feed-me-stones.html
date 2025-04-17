@@ -403,5 +403,64 @@ document.addEventListener("DOMContentLoaded", () => {
     else if (event.key === "Escape") closeModal();
   }
 });
-</script></body>
+</script>
+<script>
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const modal = document.getElementById("modal");
+
+  modal.addEventListener("touchstart", function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+
+  modal.addEventListener("touchend", function (e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+  }, false);
+
+  function handleGesture() {
+    const threshold = 50; // 최소 스와이프 거리
+    if (touchEndX < touchStartX - threshold) {
+      nextImage();
+    }
+    if (touchEndX > touchStartX + threshold) {
+      prevImage();
+    }
+  }
+</script>
+
+</body>
 </html>
+
+
+<script>
+  let fullscreenMode = false;
+
+  function toggleFullscreenMode() {
+    fullscreenMode = !fullscreenMode;
+    const modal = document.getElementById("modal");
+    const leftArrow = modal.children[0];
+    const rightArrow = modal.children[1];
+
+    if (fullscreenMode) {
+      modal.style.background = "black";
+      leftArrow.style.opacity = "0";
+      rightArrow.style.opacity = "0";
+      document.body.style.overflow = "hidden";
+    } else {
+      modal.style.background = "rgba(0,0,0,0.8)";
+      leftArrow.style.opacity = "";
+      rightArrow.style.opacity = "";
+      document.body.style.overflow = "";
+    }
+  }
+
+  document.addEventListener("keydown", function(event) {
+    if (event.code === "Space") {
+      event.preventDefault(); // prevent scroll
+      toggleFullscreenMode();
+    }
+  });
+</script>
+</body>
