@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KKOCH-DA-BAL is still there</title>
+<meta name="description" content="Cha Yeonså Solo Show: KKOCH-DA-BAL is still there">
+<meta name="author" content="Cha Yeonså">
+<meta name="keywords" content="Cha Yeonså, Solo Show, Solo Exhibition, 차연서, 차연서 개인전, 꽃다발은 아직">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { width: 100%; background-color: #f9f9f9; font-family: sans-serif; overflow-x: hidden; }
+
+    .top-bar, .header-bar { width: 100%; }
+
+    .top-bar {
+      background-color: #ffffff;
+      color: #202124;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+      font-size: 14px;
+    }
+
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      overflow: hidden;
+    }
+
+    .breadcrumbs span {
+      white-space: nowrap;
+      max-width: 180px;
+    }
+
+    option .span {
+      /*white-space: nowrap;
+      overflow: hidden;*/
+    }
+
+    .filters {
+      display: flex;
+      gap: 10px;
+    }
+
+    
+.filters select {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+    
+/* 기본: 넉넉한 너비 유지 */
+.filters select {
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+  width: auto;
+  max-width: none;
+}
+
+/* 모바일 화면에서만 줄이기 */
+@media (max-width: 768px) {
+  .filters select {
+    max-width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+/* */
+.info {
+  background: white;
+  font-family: 'Noto Serif KR', serif;
+  line-height: 1.8;
+  letter-spacing: 0;
+  text-align: left;
+  word-break: keep-all;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+.info div{
+  padding-top: 8px;
+}
+.footer {
+  background: white;
+  line-height: 1.8;
+  letter-spacing: 0;
+  text-align: center;
+  word-break: keep-all;
+  padding-left: 30px;
+  padding-top: 60px;
+  padding-bottom: 30px;
+  font-size: 0.8rem;
+  font-family: 'Noto Serif KR', serif;
+}
+/* */
+    .filters button {
+      padding: 4px 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: white;
+      cursor: pointer;
+      font-size: 13px;
+    }
+
+    .folder-list {
+      background: #fff;
+      color: #222;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    .folder-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 0;
+    }
+
+    .folder-item img {
+      width: 20px;
+      margin-right: 12px;
+    }
+    .folder-item .name { flex: 1; }
+    .folder-item .owner, .folder-item .date, .folder-item .size {
+      width: 100px;
+      text-align: center;
+    }
+    .folder-item .menu {
+      width: 30px;
+      text-align: right;
+    }
+
+    .inline-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px 20px;
+      background: #fff;
+    }
+    .inline-slider img {
+      height: 120px;
+      border-radius: 4px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-bar {
+      background-color: #2a2a2a;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 50px;
+    }
+
+    .header-bar .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-bar .left img { width: 20px; }
+
+    .header-bar .right button {
+      background-color: #1a73e8;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 20px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .viewer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      background: #0a0a0a;
+      position: relative;
+    }
+
+    .slide { display: none; position: absolute; text-align: center; }
+
+    .slide img {
+      max-width: 90vw;
+      max-height: 80vh;
+      box-shadow: 0 0 30px rgba(255, 200, 100, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .slide p {
+      color: #ccc;
+      margin-top: 12px;
+      font-size: 1rem;
+    }
+
+    .slide.active { display: block; }
+
+    .overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: white;
+      background: rgba(0,0,0,0.3);
+      padding: 10px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .prev { left: 20px; }
+    .next { right: 20px; }
+  
+.inline-slider img { cursor: pointer; }
+
+.inline-slider { display: none; }
+.inline-slider.active { display: flex; }
+
+/* 이미지 모달 그림자 */
+#modal-img {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+</style>
+</head>
+<body>
+<div class="top-bar">
+<div class="breadcrumbs">
+<span>›</span>
+<span lang="ko">꽃다발은 아직</span>
+</div>
+<div class="filters">
+<select onchange="if(this.value) window.location.href=this.value" title="Open">
+<option>Open</option>
+<option value="https://energywhoisshe.com/">Energywhoisshe.com</span></option>
+</select>
+</div>
+</div>
+
+<div class="info">
+  <div lan="ko">지난 전시: 차연서 개인전 《꽃다발은 아직》, 상업화랑 을지로, 2024.3.9 ~ 3. 30</div>
+  <div>Past Exhibition: Cha Yeonså Solo Show "KKOCH-DA-BAL is still there", Sahng-up Gallery Euljiro, March 9–30, 2024</div>
+</div>
+
+<div class="folder-list">
+
+<div class="folder-item">
+<div class="name">First Floor</div>
+<div class="owner"></div>
+<div class="date">2024. 3. 25.</div>
+<div class="size">—</div>
+<div class="menu">⋮</div>
+</div>
+<div class="inline-slider active">
+<img alt="Entrance" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet01.jpg"/>
+<img alt="Entrance" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet02.jpg"/>
+<img alt="1st Floor" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet03.jpg"/>
+<img alt="1st Floor" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet04.jpg"/>
+<img alt="1st Floor and Togul" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet05.jpg"/>
+<img alt="Togul-1" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet06.jpg"/>
+</div>
+
+<div class="folder-item">
+<div class="name">Second Floor</div>
+<div class="owner"></div>
+<div class="date">2024. 3. 25.</div>
+<div class="size">—</div>
+<div class="menu">⋮</div>
+</div>
+<div class="inline-slider active">
+<img alt="Togul-1" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet07.jpg"/>
+<img alt="Togul-2" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet08.jpg"/>
+<img alt="Togul-3" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet09.jpg"/>
+<img alt="2nd Floor and Togul" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet10.jpg"/>
+<img alt="2nd Floor and Kim" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet11.jpg"/>
+<img alt="Rooftop" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet12.jpg"/>
+<img alt="Stair and Comic" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet13.jpg"/>
+<img alt="Stair and Hong" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet14.jpg"/>
+<!--<img alt="1st Floor and the stair" onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/bouquet15.jpg"/>-->
+</div>
+
+<div class="folder-item">
+<div class="name">Works</div>
+<div class="owner"></div>
+<div class="date">2024. 3. 25.</div>
+<div class="size">—</div>
+<div class="menu">⋮</div>
+</div>
+<div class="inline-slider active">
+<img onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/Truck01.png"/>
+<img onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/Truck02.png"/>
+</div>
+</div>
+<div class="folder-list">
+<div class="folder-item">
+<div class="name">Poster</div>
+<div class="owner"></div>
+<div class="date">2024. 3. 9.</div>
+<div class="size">—</div>
+<div class="menu">⋮</div>
+</div>
+<div class="inline-slider active">
+<img onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/poster1.png"/>
+<img onclick="openModal(this.src)" src="https://energywhoisshe.com/Bouquet/poster2.png"/>
+</div>
+</div>
+<div class="folder-list">
+<div class="folder-item">
+<div class="name">Handout</div>
+<div class="owner"></div>
+<div class="date">2024. 3. 9.</div>
+<div class="size">—</div>
+<div class="menu">⋮</div>
+</div>
+<div class="pdfjs-container" style=" background-color: #000000;">
+<iframe height="400px" src="https://energywhoisshe.com/Bouquet/꽃다발은-아직.pdf" style="border: none; opacity: 1.00;" width="100%"></iframe>
+</div>
+</div>
+
+<div class="folder-list">
+  <div class="folder-item">
+    <div class="name">Video</div>
+    <div class="owner"></div>
+    <div class="date">—</div>
+    <div class="size">—</div>
+    <div class="menu">⋮</div>
+  </div>
+  <div class="folder-item">
+    <div class="name">꽃다발은 아직 KKOCH-DA-BAL is still there</div>
+    <div class="owner"></div>
+    <div class="date">Sketch Video</div>
+    <div class="size">00′ 00″</div>
+    <div class="menu">⋮</div>
+  </div>
+</div>
+
+<div class="footer">
+  © 2025 Cha Yeonså. All rights reserved.
+</div>
+
+<div id="modal" onclick="closeModal()" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:999;"><div onclick="event.stopPropagation(); prevImage();" style="position:absolute;left:20px;color:white;font-size:3rem;cursor:pointer;z-index:1000;">‹</div><div onclick="event.stopPropagation(); nextImage();" style="position:absolute;right:20px;color:white;font-size:3rem;cursor:pointer;z-index:1000;">›</div><img id="modal-img" style="max-width:90vw; max-height:90vh; box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);"/></div>
+
+<script>
+document.querySelectorAll('.folder-item').forEach((item) => {
+  const name = item.querySelector('.name')?.innerText.trim();
+  if (name === 'Talks' || name === 'Pre-presentation') {
+    item.addEventListener('click', () => {
+      const slider = item.nextElementSibling;
+      if (slider && slider.classList.contains('inline-slider')) {
+        slider.classList.toggle('active');
+      }
+    });
+  }
+});
+
+//**//
+
+    let current = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function changeSlide(step) {
+      slides[current].classList.remove('active');
+      current = (current + step + slides.length) % slides.length;
+      slides[current].classList.add('active');
+    }
+
+//**//
+let modalImages = [];
+let currentIndex = 0;
+
+document.addEventListener("DOMContentLoaded", () => {
+  modalImages = Array.from(document.querySelectorAll(".inline-slider img")).map(img => img.src);
+  const modal = document.getElementById("modal");
+  const modalImg = document.getElementById("modal-img");
+
+  window.openModal = function(src) {
+    currentIndex = modalImages.indexOf(src);
+    modalImg.src = src;
+    modal.style.display = "flex";
+    document.addEventListener("keydown", keyHandler);
+  };
+
+  window.closeModal = function() {
+    modal.style.display = "none";
+    document.removeEventListener("keydown", keyHandler);
+  };
+
+  window.nextImage = function() {
+    currentIndex = (currentIndex + 1) % modalImages.length;
+    modalImg.src = modalImages[currentIndex];
+  };
+
+  window.prevImage = function() {
+    currentIndex = (currentIndex - 1 + modalImages.length) % modalImages.length;
+    modalImg.src = modalImages[currentIndex];
+  };
+
+  function keyHandler(event) {
+    if (event.key === "ArrowRight") nextImage();
+    else if (event.key === "ArrowLeft") prevImage();
+    else if (event.key === "Escape") closeModal();
+  }
+});
+
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  const modal = document.getElementById("modal");
+
+  modal.addEventListener("touchstart", function (e) {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+
+  modal.addEventListener("touchend", function (e) {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+  }, false);
+
+  function handleGesture() {
+    const threshold = 50; // 최소 스와이프 거리
+    if (touchEndX < touchStartX - threshold) {
+      nextImage();
+    }
+    if (touchEndX > touchStartX + threshold) {
+      prevImage();
+    }
+  }
+
+  //**//
+  let fullscreenMode = false;
+
+  function toggleFullscreenMode() {
+    fullscreenMode = !fullscreenMode;
+    const modal = document.getElementById("modal");
+    const leftArrow = modal.children[0];
+    const rightArrow = modal.children[1];
+
+    if (fullscreenMode) {
+      modal.style.background = "black";
+      leftArrow.style.opacity = "0";
+      rightArrow.style.opacity = "0";
+      document.body.style.overflow = "hidden";
+    } else {
+      modal.style.background = "rgba(0,0,0,0.8)";
+      leftArrow.style.opacity = "";
+      rightArrow.style.opacity = "";
+      document.body.style.overflow = "";
+    }
+  }
+
+  document.addEventListener("keydown", function(event) {
+    if (event.code === "Space") {
+      event.preventDefault(); // prevent scroll
+      toggleFullscreenMode();
+    }
+  });
+</script>
+</body>
+</html>
