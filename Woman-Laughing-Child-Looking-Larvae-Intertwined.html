@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Woman Laughing, Child Looking, Larvae Intertwined</title>
+<meta name="description" content="Hyosil Yang, Father and Us: Assemblages of Non-Bodies and “Not-Me”s">
+<meta name="author" content="Hyosil Yang">
+<meta name="keywords" content="Hyosil Yang, Critique, Cha Yeonså, Solo Show, Solo Exhibition, Feed me stones, 양효실, 양효실 비평, 차연서, 차연서 개인전, 살도 뼈도 없는 나에게">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+</script>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background-color: #fdfdfd;
+      color: #000;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      word-break: keep-all;
+    }
+
+    .toolbar_title {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /*white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+      /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
+      /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
+      /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
+      /*flex-shrink: 1; /* 필요 시, 텍스트가 줄어들도록 설정 */
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      max-width: 100%;
+    }
+
+    .toolbar button, .toolbar select {
+      margin-right: 10px;
+      padding: 4px 8px;
+      border: 1px solid #bbb;
+      background: white;
+      cursor: pointer;
+      font-family: inherit;
+      height: 30px;
+    }
+
+    .toolbar button.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .toolbar select.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .ruler {
+      height: 20px;
+      background: repeating-linear-gradient(90deg, #ccc, #ccc 1px, transparent 1px, transparent 10px);
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .document-container {
+      max-width: 794px;
+      margin: 40px auto;
+      padding: 0 20px;
+      margin-top: 10em;
+      margin-bottom: 8em;
+    }
+
+    .additional-document-container {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .additional-document-container p{
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      margin: 0 auto 40px;
+      padding: 80px 100px 120px 100px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      position: relative;
+      transition: font-size 0.2s ease;
+      font-size: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3em;
+      margin-top: 0em;
+    }
+
+    h2 {
+      font-size: 1.0em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .spacer {
+      height: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 1em;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    .footer {
+      text-align: right;
+      font-size: 0.9rem;
+      color: #666;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+    }
+
+    .statusbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .homepage {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+
+    
+    
+    body.dark-mode {
+      background-color: #2b2f36;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .page {
+      background-color: #37404a;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: #4c5662;
+      color: #f0f0f0;
+      border: 1px solid #777;
+    }
+
+    body.dark-mode .homepage a, 
+    body.dark-mode a {
+      color: #a7c7ff;
+      text-decoration: underline;
+    }
+
+    body.dark-mode .statusbar {
+      color: #ffffff;
+    }
+
+    body.dark-mode .ruler {
+      background: repeating-linear-gradient(90deg, #59626e, #59626e 1px, transparent 1px, transparent 10px);
+    }
+
+    /* 정보란 추가 - 다크모드 */
+    body.dark-mode .additional-document-container {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+
+.dark-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 10px;
+}
+.dark-mode-toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s, background 0.3s;
+}
+body.dark-mode .dark-mode-toggle {
+  background: #4c5662;
+}
+body.dark-mode .dark-mode-toggle::before {
+  transform: translateX(16px);
+  background: #1c1c1c;
+}
+
+
+  @media screen and (max-width: 768px) {
+    .page, .document-container {
+      padding: 16px;
+      width: 100%;
+      max-width: 100%;
+  }
+    .toolbar {
+      flex-wrap: wrap; /*줄바꿈 허용*/
+      gap: 6px;
+  }
+
+  .page p, .page h2, .page h1 {
+    font-size: 1rem;
+    line-height: 1.8;
+    word-break: keep-all;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+/* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
+.page p,
+.page h1,
+.page h2 {
+  text-align: left;
+  word-break: keep-all;
+  line-height: 1.8;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+@media print {
+  body.dark-mode {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .page {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .toolbar,
+  body.dark-mode .toolbar_title,
+  body.dark-mode .statusbar,
+  body.dark-mode .homepage {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  body.dark-mode .toolbar button,
+  body.dark-mode .toolbar select {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #999 !important;
+  }
+
+  .no-print { display: none !important; }
+  body {
+    background: white !important;
+  }
+
+  .page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto !important;
+    padding: 40px !important;
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+  }
+
+  .toolbar,
+  .statusbar,
+  .dark-mode-toggle,
+  .ruler {
+    display: none !important;
+  }
+
+  .print-footer {
+    display: block !important;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 1.4;
+    padding: 8px 16px;
+  }
+}
+.print-footer {
+  display: none;
+}
+</style>
+</head>
+<body>
+<div class="toolbar_title">Hyosil Yang, Woman Laughing, Child Looking, Larvae Intertwined (2023, Translated by Sangmin Lee).docx</div>
+<div class="toolbar">
+<!--<select class="disabled">
+<option>새문서</option>
+</select>-->
+<select id="docSelect">
+<option>Open</option>
+<option value="Feed-me-stones.html">Cha Yeonså Solo Show: Feed me stones</option>
+<option value="Feed-me-stones.html">차연서 개인전: 살도 뼈도 없는 나에게</option>
+<option value="https://energywhoisshe.com/%E1%84%8B%E1%85%A1%E1%84%88%E1%85%A1%E1%84%8B%E1%85%AA-%E1%84%8B%E1%85%AE%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF.html">양효실 - 아빠와 우리들, 비-체 또는 나-아닌 것들의 회합</option>
+</select>
+<select id="fontSizeSelect">
+<option value="14px">10pt</option>
+<option value="15px">11pt</option>
+<option selected="" value="16px">12pt</option>
+<option value="18px">14pt</option>
+</select>
+<button id="printBtn">📄</button>
+<div class="dark-mode-toggle" id="darkModeToggle" title="다크모드 토글"></div>
+</div>
+<div class="ruler"></div>
+<div class="document-container" id="documentContainer">
+<h1>Woman Laughing, Child Looking, Larvae Intertwined</h1>
+<section>
+<p>Who might undo the law-symbolic language? Who resists humanization while being utterly unaware? Who crosses the world of adulthood without barely/narrowly losing the child-like senses as a non-human, post-human? A child recognizes a grandmother or ghosts in reverse order. They're alike. Feeling as though some things are so delicate that they make you want to break them—is akin to the expression of wanting to embrace a child. To prevent a child from seeing the terrible things yet to come, perhaps it would be necessary to break the child, or because children are a future that came early, I wish to touch them out of gratitude. A child is similar to an artist or a madman, or people who are sick and lack social utility—or because they may not grow up to be those types of people, they could prove to be socially useful. Come to think of it, a child is precious to everyone.</p>
+<p>Asked to contribute a short piece of writing about Cha Yeonså's work for this exhibition, I should note that I had been invited to participate in their previous live performance called Mosquitolarvajuice and was filmed reading Aglaja Veteranyi's passion play about children. According to Yeonså's categorization, I guess I would be a larva with a "younger soul, regardless of age." Appearing as a duo during the performance, Kim Geumone, standing in as Yeonså, and Yeonså's mother, Sohn Nari, reciting Sylvia Plath's poem, were those types of larvae. Because this text has been produced by someone welcomed by Yeonså, the director, who provided a stage for the larvae they have recognized and assigned them roles they deserve—I don't think it can be considered a critique. In any case, critique is a public gesture written with the premise of a certain distance, but I am too close and connected to Yeonså. By the time I left Yeonså's apartment—where they use one room as a studio—I felt like a squishy bug, a munchy lip, a soft brain. Wet and infected.</p>
+<p>Researcher Sohn Nari, Yeonså's mother, mentioned she used her studies on Sylvia Plath to talk to Yeonså when they were even younger. In hopes of conversing with her daughter, who seemed too weak to survive—perhaps almost refusing to live—she used the language of a so-called “unhappy” woman's sensitive, violent, accurate poem as her 'mother tongue.' Yeonså's sentences, which you will now read too, are unfamiliar and beautiful. Or, it's a poem of the non-ego 'staring' at the world of differentiation. Regarding the mosquito included in the titles of the past two live performances, Yeonså described them as "a very personal symbol," "lesbian-like," "a body that can access anyone," "something like a performance gesture," "aggressive and obsessive, but very weak," "a carnivore that kills the most people," "a dance." As an artist, Yeonså imagines their stage as a "place that summons newborn mosquitoes." Amongst their performer-mosquitoes, they also included a "vegetarian" male mosquito. Yeonså ‘queers' the queer, who attempt to stand their ground, creating a place where clichés crumble. Since children are unaware of the law of binaries, as they take in the world through queering, shaking the fixation of selfhood—they resonate with minorities, risk-takers, the non-ego or other names like that.</p>
+<h2>4. Low Pressure Sodium Lamps and Monochrome Painting</h2>
+<p>While casting performers for the previous two live performances, Yeonså mentioned that they tried to find out about their trauma or sexual preferences, one by one. Heading straight towards the 'secret.' As if the apocalypse is near, or to live amid despair–showing your vulnerable card is a quick and aggressive way to connect with one another. Because Yeonså cannot kill these midsummer mosquitoes, this must be the bond formed among those who "slap their cheeks in vain." The wounded body and the shamed body are therefore quite appropriate subjects for a performance. Yeonså's works and performances will continue to be a catalyst to bring forth secrets and pain that have been buried, forgotten, or unspeakable. That was the case for me. I'm sure it'd be the same for you. Even Cathy Park Hong said, "As far as I know, Koreans are among the most severely traumatized people."</p>
+<p>After attending a poetry reading by poet Kim Eon Hee, Yeonså said it made them want to live. Thinking of Eon Hee's voice, assertive yet jubilant, not yet dead but aging, I could understand what Yeonså meant by that. Yeonså mentioned they carried around poetry books like a "talisman." And this exhibition's title, This Unbelievable Sleep, was derived from a poem called “One Day, One Morning (「여느 날, 여느 아침을」)”—a poem that imagines waking up and looking down at your corpse one morning, a morning when you needn't repeat the illusion, pain, and anger of living. A link forms between Eon Hee and Yeonså, who both struggle with insomnia. In the form of dead bugs in their papercut collage, Yeonså transcribed the phrase “heol, heol, heol (헐, 헐, 헐)”—the sound of laughter from a hole spread wide in Eon Hee’s poem “At Dusk (「황혼이 질 때면」)”—in which the poet imagines her death with a playful rhythm.</p>
+<p>For someone inept in the language of games or computer-based videos like myself, I find the Festival series from this exhibition to be more readable and approachable. Yeonså used elements from her late father, Cha Dongha’s studio, such as his belongings and bugs that they often encounter there, as well as photos of corpses found in their girlfriend's book on forensic medicine that are unbearable to look at—like an abandoned baby still in the placenta, a man drowned in the river, a woman starved to death, a woman who had been raped, the phrase "heol, heol, heol (헐, 헐, 헐)" from the poem mentioned above.</p>
+<p>Things that are close and inescapable come forth to Yeonså, claiming themselves through the forms of objects, images, the voice of poetry, and lives. Yeonså describes their father as "someone who lived under all sorts of rules." After their father's death, on behalf of the late artist, Yeonså wrote a statement for an exhibition on his Festival series. They wrote: "A funeral flower carriage, abstracted through spectacular colors that compose the joy and sorrow of life, accompanies the last road of the dead. A festival of death and life." Flowers and funeral bier are culturally close, and color is a ghostly veil that covers death.</p>
+<p>Yeonså appropriates the rainbow colors of Cha Dongha's funeral flower carriage as the emblem of queer pride. By queering Cha Dongha, their own father who lived within the boundaries of social norms, it is as if Yeonså is making him into a soft bug or larva. Yeonså used their father's Mulberry paper (called Dak paper) to transcribe the corpses from the book of forensic medicine–the bodily images of the dead that ordinary people are banned from 'seeing.' The visual forms of the Festival series, categorized as "Papercut collage (colored on Dak paper, Cha Dongha)," finally attained after countless failures of cutting paper with only scissors without sketches or drawings, perhaps mimic the act of 'mourning'—something Yesonså didn't mention, a word for grown-ups.</p>
+<p>Upon close inspection, adversary places such as life and death, flower and corpse, bug and human, corpse and form, which constitute the world of differentiation, are actually one. Just like Yeonså's daddy and artist Cha Dongha are the same person. Yeonså's works with an amoral gaze dismantled their father's allegoric funeral flower-carriage, observing the corpses laying there—like "peering into the book to look at more terrible things, because being alive is so terrible." But through a child's body, Yeonså takes in that everything is connected—that two are in fact one—and recognizes that the book they kept returning to is no different from the literature of Sylvia Plath and Aglaja Veteranyi. Perhaps this is why Yeonså refers to their cut corpses and the dead bodies that finally stare back with their own 'eyes' as "friends." This is evidence of a persistent, tenacious gaze that can only be reached through analogy—and transcription is the only thing I can do. With love, Yeonså's mother Sohn Nari, who translates and introduces the passion plays of numerous artists, seems to quietly overwatch Yeonså's tribulation that seems to pledge: "Rather than suffer like this, let's face the suffering head on."</p>
+<p>I observe the photographic images and forms Yeonså transcribed onto paper with care, which they felt was their “daddy's flesh.” Yeonså thought, "the results seem as though bodies are having a festival in a funny-looking shadow." Repetition creates difference. Difference takes the power away from the 'original' and inserts a new force into the second. Yeonså's "festival" differs from their father's—and this festival is a mild laugh. Whether it be cannibalism, life itself, a neighborhood funeral carriage passing by, art, or this-very-moment–a festival is not losing the wavering laughter in the midst of tragedy.</p>
+<p>And I've run out of space to discuss other things like the collaboration with photographer Hong Jiyoung, who also participated in this exhibition alongside the previous performance. See you next time.</p>
+</section>
+</div>
+<div class="additional-document-container">
+  <p>
+    Written by Hyosil Yang at the request of Cha Yeonså, Feb 2025
+    Translated by Colin Mouat, with support from Doosan Art Center, Apr 2025
+
+    <a href="https://energywhoisshe.com/Feed-me-stones.html">Past Exhibition: Cha Yeonså Solo Show "Feed me stones", SAPY Gray Room, September 3–13, 2024</a>
+  </p>
+</div>
+<div class="statusbar" id="statusBar">1/8 pages | Words: 3486</div>
+<div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
+<div class="print-footer">https://energywhoisshe.com/Father-and-Us.html</div>
+<script>
+  const fontSizeSelect = document.getElementById("fontSizeSelect");
+  const container = document.getElementById("documentContainer");
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const statusBar = document.getElementById("statusBar");
+
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;
+    container.style.fontSize = newSize;
+  });
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+//스크롤바 - 8페이지 기준
+document.addEventListener("DOMContentLoaded", () => {
+  const statusBar = document.getElementById("statusBar");
+  const paragraphs = Array.from(document.querySelectorAll("#documentContainer p")).slice(0, 8);
+  const total = 8;
+
+  function updateStatus() {
+    let current = 1;
+    const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+    paragraphs.forEach((p, index) => {
+      const rect = p.getBoundingClientRect();
+      const offsetTop = window.scrollY + rect.top;
+      const offsetBottom = offsetTop + rect.height;
+      if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
+        current = index + 1;
+      }
+    });
+
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+      current = total;
+    }
+
+    statusBar.textContent = `${current}/${total} pages | Words: 3486`;
+  }
+
+  document.addEventListener("scroll", updateStatus);
+  window.addEventListener("load", updateStatus);
+});
+
+//프린트
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+});
+
+//option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
+  });
+</script>
+</body></html>
