@@ -10,245 +10,7 @@
 <meta name="keywords" content="Cha Yeonså, Solo Show, Solo Exhibition, 차연서, 차연서 개인전">
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { width: 100%; background-color: #f9f9f9; font-family: sans-serif; overflow-x: hidden; }
-
-    .top-bar, .header-bar { width: 100%; }
-
-    .top-bar {
-      background-color: #ffffff;
-      color: #202124;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 50px;
-      font-size: 14px;
-    }
-
-    .breadcrumbs {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      overflow: hidden;
-    }
-
-    .breadcrumbs span {
-      white-space: nowrap;
-      max-width: 180px;
-    }
-
-    option .span {
-      /*white-space: nowrap;
-      overflow: hidden;*/
-    }
-
-    .filters {
-      display: flex;
-      gap: 10px;
-    }
-
-    
-.filters select {
-  max-width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-    
-/* 기본: 넉넉한 너비 유지 */
-.filters select {
-  padding: 4px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: white;
-  font-size: 13px;
-  cursor: pointer;
-  width: auto;
-  max-width: none;
-}
-
-/* 모바일 화면에서만 줄이기 */
-@media (max-width: 768px) {
-  .filters select {
-    max-width: 160px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-/* */
-.info {
-  background: white;
-  font-family: 'Noto Serif KR', serif;
-  line-height: 1.8;
-  letter-spacing: 0;
-  text-align: left;
-  word-break: keep-all;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-.info div{
-  padding-top: 8px;
-}
-.footer {
-  background: white;
-  line-height: 1.8;
-  letter-spacing: 0;
-  text-align: center;
-  word-break: keep-all;
-  padding-left: 30px;
-  padding-top: 60px;
-  padding-bottom: 30px;
-  font-size: 0.8rem;
-  font-family: 'Noto Serif KR', serif;
-}
-/* */
-    .filters button {
-      padding: 4px 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background: white;
-      cursor: pointer;
-      font-size: 13px;
-    }
-
-    .folder-list {
-      background: #fff;
-      color: #222;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    .folder-item {
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      padding: 12px 0;
-    }
-
-    .folder-item img {
-      width: 20px;
-      margin-right: 12px;
-    }
-    .folder-item .name { flex: 1; }
-    .folder-item .owner, .folder-item .date, .folder-item .size {
-      width: 100px;
-      text-align: center;
-    }
-    .folder-item .menu {
-      width: 30px;
-      text-align: right;
-    }
-
-    .inline-slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 10px;
-      padding: 10px 20px;
-      background: #fff;
-    }
-    .inline-slider img {
-      height: 120px;
-      border-radius: 4px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .header-bar {
-      background-color: #2a2a2a;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 50px;
-    }
-
-    .header-bar .left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .header-bar .left img { width: 20px; }
-
-    .header-bar .right button {
-      background-color: #1a73e8;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 20px;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .viewer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 70vh;
-      background: #0a0a0a;
-      position: relative;
-    }
-
-    .slide { display: none; position: absolute; text-align: center; }
-
-    .slide img {
-      max-width: 90vw;
-      max-height: 80vh;
-      box-shadow: 0 0 30px rgba(255, 200, 100, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .slide p {
-      color: #ccc;
-      margin-top: 12px;
-      font-size: 1rem;
-    }
-
-    .slide.active { display: block; }
-
-    .overlay {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 2rem;
-      color: white;
-      background: rgba(0,0,0,0.3);
-      padding: 10px;
-      cursor: pointer;
-      z-index: 10;
-    }
-
-    .prev { left: 20px; }
-    .next { right: 20px; }
-  
-.inline-slider img { cursor: pointer; }
-
-.inline-slider { display: none; }
-.inline-slider.active { display: flex; }
-
-/* 이미지 모달 그림자 */
-#modal-img {
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
-}
-</style>
+<link rel="stylesheet" href="style-projects.css">
 </head>
 <body>
 <div class="top-bar">
@@ -299,8 +61,8 @@
 <img alt="차연서, AI 사진, 2023" onclick="openModal(this.src)" src="https://energywhoisshe.com/This-Unbelievable-Sleep/unbelievable6.jpg"/>
 <img alt="홍지영, 흑백 사진, 2023" onclick="openModal(this.src)" src="https://energywhoisshe.com/This-Unbelievable-Sleep/unbelievable7.jpg"/>
 </div>
-
-<div class="folder-item">
+</div>
+<!--<div class="folder-item">
 <div class="name">Stills</div>
 <div class="owner"></div>
 <div class="date">2023. 6. 15.</div>
@@ -310,7 +72,7 @@
 <div class="inline-slider active">
 <img onclick="openModal(this.src)" src="https://energywhoisshe.com/This-Unbelievable-Sleep/unbelievable8.png"/>
 </div>
-</div>
+</div>-->
 
 <div class="folder-list">
 <div class="folder-item">
@@ -334,6 +96,24 @@
 </div>
 
 <div class="folder-list">
+  <div class="folder-item">
+  <div class="name">Website</div>
+  <div class="owner"></div>
+  <div class="date">2023. 6. 15.</div>
+  <div class="size">442.7MB</div>
+  <div class="menu">⋮</div>
+</div>
+
+<div class="folder-item">
+  <div class="name"><a href="http://energywhoisshe.com/this-unbelievable-sleep">이 기막힌 잠 This Unbelievable Sleep</a></div>
+  <div class="owner"></div>
+  <div class="date">Web</div>
+  <div class="size">—</div>
+  <div class="menu">⋮</div>
+</div>
+</div>
+
+<div class="folder-list">
 <div class="folder-item">
 <div class="name">Postcard</div>
 <div class="owner"></div>
@@ -349,25 +129,6 @@
 <iframe height="400px" src="https://energywhoisshe.com/This-Unbelievable-Sleep/This-Unbelievable-Sleep.pdf" style="border: none; opacity: 1.00;" width="100%"></iframe>
 </div>
 </div>
-
-<div class="folder-list">
-<div class="folder-item">
-<div class="name">Website</div>
-<div class="owner"></div>
-<div class="date">2023. 6. 15.</div>
-<div class="size">442.7MB</div>
-<div class="menu">⋮</div>
-</div>
-<div class="folder-item">
-<div class="name"><a href="http://energywhoisshe.com/this-unbelievable-sleep">이 기막힌 잠 This Unbelievable Sleep</a></div>
-<div class="owner"></div>
-<div class="date">Web</div>
-<div class="size">—</div>
-<div class="menu">⋮</div>
-</div>
-
-</div>
-
 <div class="folder-list">
   <div class="folder-item">
     <div class="name">Video</div>
@@ -389,6 +150,33 @@
     <div class="size">04′ 56″</div>
     <div class="menu">⋮</div>
   </div>
+</div>
+
+<div class="credit" lang="kor">
+  <ul>
+    <li>웹 전시 기획/개발 | 차연서</li>
+    <li>서문/인터뷰사전대본/대화록 작성 | 차연서</li>
+    <li>기록사진 촬영 | 차연서 (장소. OCI미술관)</li>
+    <li>키넥트 녹화 / 유니티 게임 개발 | Energywhoisshe Games</li>
+    <li>평면 드로잉 제작 | 차연서</li>
+    <li>비평 | 양효실</li>
+    <li>모스키토라바쥬스 데이터 | 모스키토라바쥬스</li>
+    <li>모스키토라바쥬스 흑백사진 아카이브 공동작업 | 홍지영</li>
+    <li>닥종이/액자/창고/트라우마 제공 | 차동하</li>
+    <li>공간디자인 | NACA(도면작업 후 제작 직전 중단)</li>
+    <li>비평 번역 | 이상민</li>
+    <li>서문 및 웹사이트 번역 초안 | 차연서</li>
+    <li>서문 및 웹사이트 번역 검수 | 손나리</li>
+    <li>웹사이트 내 영상 사운드트랙</li>
+    <li>(1) 모스키토라바쥬스 게임 아카이브(효과음. Unity Technology)</li>
+    <li>(2) 7 Elephants(전자음악. 백상)</li>
+    <li>시인 | 김언희</li>
+    <li>친구들 | 법의학 아틀라스(고려의학, 2017), 법의학(정문각, 2018)</li>
+    <li>친구들을 위한 노래 | 이태원 참사 추모 위령법회(동환스님, BTN, 2022)</li>
+    <li>법의학 입문과 불교 입문 | 백상/이상화</li>
+    <li>The webpage is released on 2023-06-15.</li>
+    <li>The webpage is pdated on 2023-06-18, 2023-06-23, 2023-06-28.</li>
+  </ul>
 </div>
 
 <div class="footer">
