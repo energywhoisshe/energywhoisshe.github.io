@@ -76,9 +76,34 @@
   word-break: keep-all;
   padding-left: 30px;
   padding-top: 30px;
+  padding-right: 30px;
 }
 .info div{
   padding-top: 8px;
+}
+.credit {
+  background: white;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+  text-align: left;
+  word-break: keep-all;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+.info div{
+  padding-top: 8px;
+}
+.credit p{
+  padding-top: 8px;
+}
+.credit ul {
+  padding-top: 8px;
+}
+.credit li {
+  list-style-type: none;
 }
 .footer {
   background: white;
