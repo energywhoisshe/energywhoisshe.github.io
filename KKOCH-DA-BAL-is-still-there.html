@@ -10,246 +10,9 @@
 <meta name="keywords" content="Cha Yeonså, Solo Show, Solo Exhibition, 차연서, 차연서 개인전, 꽃다발은 아직">
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
-<style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { width: 100%; background-color: #f9f9f9; font-family: sans-serif; overflow-x: hidden; }
-
-    .top-bar, .header-bar { width: 100%; }
-
-    .top-bar {
-      background-color: #ffffff;
-      color: #202124;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 50px;
-      font-size: 14px;
-    }
-
-    .breadcrumbs {
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      overflow: hidden;
-    }
-
-    .breadcrumbs span {
-      white-space: nowrap;
-      max-width: 180px;
-    }
-
-    option .span {
-      /*white-space: nowrap;
-      overflow: hidden;*/
-    }
-
-    .filters {
-      display: flex;
-      gap: 10px;
-    }
-
-    
-.filters select {
-  max-width: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-    
-/* 기본: 넉넉한 너비 유지 */
-.filters select {
-  padding: 4px 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  background: white;
-  font-size: 13px;
-  cursor: pointer;
-  width: auto;
-  max-width: none;
-}
-
-/* 모바일 화면에서만 줄이기 */
-@media (max-width: 768px) {
-  .filters select {
-    max-width: 160px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-}
-/* */
-.info {
-  background: white;
-  font-family: 'Noto Serif KR', serif;
-  line-height: 1.8;
-  letter-spacing: 0;
-  text-align: left;
-  word-break: keep-all;
-  padding-left: 30px;
-  padding-top: 30px;
-}
-.info div{
-  padding-top: 8px;
-}
-.footer {
-  background: white;
-  line-height: 1.8;
-  letter-spacing: 0;
-  text-align: center;
-  word-break: keep-all;
-  padding-left: 30px;
-  padding-top: 60px;
-  padding-bottom: 30px;
-  font-size: 0.8rem;
-  font-family: 'Noto Serif KR', serif;
-}
-/* */
-    .filters button {
-      padding: 4px 12px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      background: white;
-      cursor: pointer;
-      font-size: 13px;
-    }
-
-    .folder-list {
-      background: #fff;
-      color: #222;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    .folder-item {
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      padding: 12px 0;
-    }
-
-    .folder-item img {
-      width: 20px;
-      margin-right: 12px;
-    }
-    .folder-item .name { flex: 1; }
-    .folder-item .owner, .folder-item .date, .folder-item .size {
-      width: 100px;
-      text-align: center;
-    }
-    .folder-item .menu {
-      width: 30px;
-      text-align: right;
-    }
-
-    .inline-slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 10px;
-      padding: 10px 20px;
-      background: #fff;
-    }
-    .inline-slider img {
-      height: 120px;
-      border-radius: 4px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .header-bar {
-      background-color: #2a2a2a;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 50px;
-    }
-
-    .header-bar .left {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .header-bar .left img { width: 20px; }
-
-    .header-bar .right button {
-      background-color: #1a73e8;
-      border: none;
-      padding: 6px 12px;
-      border-radius: 20px;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .viewer {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 70vh;
-      background: #0a0a0a;
-      position: relative;
-    }
-
-    .slide { display: none; position: absolute; text-align: center; }
-
-    .slide img {
-      max-width: 90vw;
-      max-height: 80vh;
-      box-shadow: 0 0 30px rgba(255, 200, 100, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .slide p {
-      color: #ccc;
-      margin-top: 12px;
-      font-size: 1rem;
-    }
-
-    .slide.active { display: block; }
-
-    .overlay {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 10px 16px;
-      border-radius: 8px;
-      font-size: 0.9rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 2rem;
-      color: white;
-      background: rgba(0,0,0,0.3);
-      padding: 10px;
-      cursor: pointer;
-      z-index: 10;
-    }
-
-    .prev { left: 20px; }
-    .next { right: 20px; }
-  
-.inline-slider img { cursor: pointer; }
-
-.inline-slider { display: none; }
-.inline-slider.active { display: flex; }
-
-/* 이미지 모달 그림자 */
-#modal-img {
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
-}
-</style>
+<link rel="stylesheet" href="style-projects.css">
 </head>
+
 <body>
 <div class="top-bar">
 <div class="breadcrumbs">
@@ -346,6 +109,31 @@
 
 <div class="folder-list">
   <div class="folder-item">
+    <div class="name">Writing</div>
+    <div class="owner"></div>
+    <div class="date">—</div>
+    <div class="size">—</div>
+    <div class="menu">⋮</div>
+  </div>
+
+  <div class="folder-item">
+    <div class="name">차연서&nbsp;&nbsp;&nbsp;&nbsp;꽃다발은 아직 (2024)</div>
+    <div class="owner"></div>
+    <div class="date">2024. 3. 9.</div>
+    <div class="size">—</div>
+    <div class="menu">⋮</div>
+  </div>
+  <div class="folder-item">
+    <div class="name">Cha Yeonså&nbsp;&nbsp;&nbsp;&nbsp;<a href="END.html">KKOCH-DA-BAL is still there (2024, Translated by Soje)</a></div>
+    <div class="owner"></div>
+    <div class="date">2024. 8. 30.</div>
+    <div class="size">—</div>
+    <div class="menu">⋮</div>
+  </div>
+</div>
+
+<div class="folder-list">
+  <div class="folder-item">
     <div class="name">Video</div>
     <div class="owner"></div>
     <div class="date">—</div>
@@ -361,6 +149,46 @@
   </div>
 </div>
 
+<div class="credit" lan="kor">
+  <p>마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 끝났다,
+말할 새도 없는 언젠가에, 아무 부검도 없이 끝, 흐린 눈 막은 입 벌린 다리, 끝, 머리카락 손톱발톱
+자라나는, 끝, 끝장난 끝 매듭, 끝없이 끝 매듭, 절벽 비탈 철조망 한 그루 나무, 끝, 입술 항문, 끝,
+불타는 절 검은 산등성이 지저귀는 소쩍새 충혈된 능소화, 끔뻑이는 눈먼 눈, 귀먼 귀, 손목 잘린 손,
+발목 잘린 발, 저 멀리 던진, 끝, 유턴해서 돌아오는, 끝, 주차된, 끝, 초인종도 누르지 않고 현관을 넘는,
+끝, 우두커니, 끝, 익숙한 표정으로, 끝, 집에 돌아온, 끝, 어디서, 끝, 하고 뱉는 이웃집 가래침 소리, 끝</p>
+<p>이곳에 초대되는 것은 내내/아직/미처 여기 있는 몸들, 그리고 시간이 흐르지 않는 마음처럼 우두커니 생생한 꽃다발이다. 제도지, 닥종이, 순지, 배접지, 인화지로 꽃들이 매달릴 자리들을 준비한다. 언희님을 읊었고,
+테레사를 읽었고, 토굴을 들인다.</p>
+</div>
+</div>
+<div class="credit" lang="kor">
+  <ul>
+    <li>기획 및 전시 - 차연서 
+    <li>협력전시 - 토굴 〈토굴〉 (2024), 김정자 「곰소 젓갈」 외 4편 (2017-2023), 홍지영 〈나무〉 (2023)</li>
+    <li>제목 및 전문 인용 - 김언희 「꽃다발은 아직」 (『뜻밖의 대답』 민음사, 2005)</li>
+    <li>전시 연출﹒시공 - 나카</li>
+    <li>지켜보는 협력꾼 - 나카, 백상, 토굴</li>
+    <li>지켜보는 협잡꾼 - 을지로의 도깨비들</li>
+  </ul>
+</div>
+<div class="credit">
+  <p>
+    A period, followed by a period END, period, followed by a period END, period, followed by a period END, period, followed by THE END, one day without warning, ends without an autopsy, cloudy eyes blocked mouth spread legs, END, hair fingernails toenails growing, END, ended end knot, endless end knot, cliff slope barbed wire single tree, END, lip anus, END, burning temple black ridge chirping owl, blinking blind eyes, deaf ears, hands cut at the wrist, feet cut at the ankle, thrown far away, END, returning with a U-turn, END, parked, END, climbing over the front gate without even ringing the doorbell, END, vacantly, END, with a familiar expression, END, returning home, END, from somewhere, END, the sound of a neighbor spitting sputum, END
+  </p>
+  <p>
+  <ul>
+    <li>Planning and Exhibition: Cha Yeonså</li>
+    <li>Co-exhibited works: Togul, 「Togul」, 2024. Kim Jeong Ja, 「Gomso Jeotgal(곰소 젓갈)」 and 4 more poems, 2017-2023. Hong Jiyoung, 「Tree」, 2023</li>
+    <li>Quoted Poem for the title and the exhibition: Kim Eon Hee 「(꽃다발은 아직)」 (2005)</li>
+    <li>Installation: NACA</li>
+    <li>Photo Record: Studio Anws</li>
+    <li>Video Record: BaekSang</li>
+    <li>Special Thanks for NACA, BaekSang, Togul, and the goblins of Euljiro</li>
+  </ul>
+  </p>
+</div>
+<div class="credit">
+  
+</div>
 <div class="footer">
   © 2025 Cha Yeonså. All rights reserved.
 </div>

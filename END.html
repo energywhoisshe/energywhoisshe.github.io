@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>KKOCH-DA-BAL is still there</title>
+<meta name="description" content="Hyosil Yang, Father and Us: Assemblages of Non-Bodies and “Not-Me”s">
+<meta name="author" content="Hyosil Yang">
+<meta name="keywords" content="Cha Yeonså, Solo Show, Solo Exhibition, Feed me stones, Soje, Soje Translation, 차연서, 차연서 개인전, 꽃다발은 아직">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+</script>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background-color: #fdfdfd;
+      color: #000;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      word-break: keep-all;
+    }
+
+    .toolbar_title {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /*white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+      /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
+      /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
+      /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
+      /*flex-shrink: 1; /* 필요 시, 텍스트가 줄어들도록 설정 */
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      max-width: 100%;
+    }
+
+    .toolbar button, .toolbar select {
+      margin-right: 10px;
+      padding: 4px 8px;
+      border: 1px solid #bbb;
+      background: white;
+      cursor: pointer;
+      font-family: inherit;
+      height: 30px;
+    }
+
+    .toolbar button.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .toolbar select.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .ruler {
+      height: 20px;
+      background: repeating-linear-gradient(90deg, #ccc, #ccc 1px, transparent 1px, transparent 10px);
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .document-container {
+      max-width: 794px;
+      margin: 40px auto;
+      padding: 0 20px;
+      margin-top: 10em;
+      margin-bottom: 8em;
+    }
+
+    .additional-document-container {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .additional-document-container p{
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      margin: 0 auto 40px;
+      padding: 80px 100px 120px 100px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      position: relative;
+      transition: font-size 0.2s ease;
+      font-size: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3em;
+      margin-top: 0em;
+    }
+
+    h2 {
+      font-size: 1.0em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .spacer {
+      height: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 1em;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    .footer {
+      text-align: right;
+      font-size: 0.9rem;
+      color: #666;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+    }
+
+    .statusbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .homepage {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+
+    
+    
+    body.dark-mode {
+      background-color: #2b2f36;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .page {
+      background-color: #37404a;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: #4c5662;
+      color: #f0f0f0;
+      border: 1px solid #777;
+    }
+
+    body.dark-mode .homepage a, 
+    body.dark-mode a {
+      color: #a7c7ff;
+      text-decoration: underline;
+    }
+
+    body.dark-mode .statusbar {
+      color: #ffffff;
+    }
+
+    body.dark-mode .ruler {
+      background: repeating-linear-gradient(90deg, #59626e, #59626e 1px, transparent 1px, transparent 10px);
+    }
+
+    /* 정보란 추가 - 다크모드 */
+    body.dark-mode .additional-document-container {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+
+.dark-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 10px;
+}
+.dark-mode-toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s, background 0.3s;
+}
+body.dark-mode .dark-mode-toggle {
+  background: #4c5662;
+}
+body.dark-mode .dark-mode-toggle::before {
+  transform: translateX(16px);
+  background: #1c1c1c;
+}
+
+
+  @media screen and (max-width: 768px) {
+    .page, .document-container {
+      padding: 16px;
+      width: 100%;
+      max-width: 100%;
+  }
+    .toolbar {
+      flex-wrap: wrap; /*줄바꿈 허용*/
+      gap: 6px;
+  }
+
+  .page p, .page h2, .page h1 {
+    font-size: 1rem;
+    line-height: 1.8;
+    word-break: keep-all;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+/* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
+.page p,
+.page h1,
+.page h2 {
+  text-align: left;
+  word-break: keep-all;
+  line-height: 1.8;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+@media print {
+  body.dark-mode {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .page {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .toolbar,
+  body.dark-mode .toolbar_title,
+  body.dark-mode .statusbar,
+  body.dark-mode .homepage {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  body.dark-mode .toolbar button,
+  body.dark-mode .toolbar select {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #999 !important;
+  }
+
+  .no-print { display: none !important; }
+  body {
+    background: white !important;
+  }
+
+  .page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto !important;
+    padding: 40px !important;
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+  }
+
+  .toolbar,
+  .statusbar,
+  .dark-mode-toggle,
+  .ruler {
+    display: none !important;
+  }
+
+  .print-footer {
+    display: block !important;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 1.4;
+    padding: 8px 16px;
+  }
+}
+.print-footer {
+  display: none;
+}
+</style>
+</head>
+<body>
+<div class="toolbar_title">Cha Yeonså, KKOCH-DA-BAL is still there (2024, Translated by Soje).docx</div>
+<div class="toolbar">
+<!--<select class="disabled">
+<option>새문서</option>
+</select>-->
+<select id="docSelect">
+<option>Open</option>
+<option value="KKOCH-DA-BAL-is-still-there.html">Cha Yeonså Solo Show: KKOCH-DA-BAL is still there</option>
+<option value="KKOCH-DA-BAL-is-still-there.html">차연서 개인전: 꽃다발은 아직</option>
+</select>
+<select id="fontSizeSelect">
+<option value="14px">10pt</option>
+<option value="15px">11pt</option>
+<option selected="" value="16px">12pt</option>
+<option value="18px">14pt</option>
+</select>
+<button id="printBtn">📄</button>
+<div class="dark-mode-toggle" id="darkModeToggle" title="다크모드 토글"></div>
+</div>
+<div class="ruler"></div>
+<div class="document-container" id="documentContainer">
+<h1>KKOCH-DA-BAL is still there</h1>
+<section style="padding-left: 30px;">
+<p>Inside a black box, humming on a loop, what does not end, does not end, does not end, approaches as dawn, someday, a morning without teeth, a morning without a tongue, a morning without arms, a morning without hair, someday, a morning without anything, a morning without morning, born, again, visits in dreams, visits in artworks, again, visits in winter, visits in spring, again, does not die, does not live, does not fall asleep, does not stir awake, again, does not speak, does not stutter, does not cry, does not warble, climbs a stone wall, with large eyes, does not lose sleep, over a crying baby, now raise the morning, hang the morning, and strike the morning, discarded buttocks, daybreaking buttocks, those tiny damn buttocks, that damp hole, keep digging, until they turn to pulp, until the cause of death remains in livor mortis, until they grow blue on the electric blanket, until they become cool like a popsicle, until they become plump like sad caterpillars, the sound of teeth grinding, the sound of a dog whining in its sleep, the sound of a soft dog closing its eyes, the sound of shedding one’s soul, shedding as if molting, the sound of shedding one's existence, endlessly shedding yet never disappearing, the tranquility of bones and flesh that remain intact, the sound of one spilling as smoothly as a blue marble rolling across a surface, the sound of the sky collapsing like a tunnel, the sound of the sea flooding like rain, the sound of large snowflakes falling, in late spring, the sound of searching for a child, again in the middle of the night, pissing and licking and walking and crawling, walking and crawling and resting and freezing,</p>
+<p>A midriff without a bellybutton sees clear skies, sees clear skies, sees clear skies, is not a sky but a ceiling, is not a greeting but a farewell, is not a Catholic rosary but a Buddhist mala, is not a diary but a letter, is not a letter but a will, dies, again, early morning, is mushy, collapses like a cake, again, ma, ah, ah, ah, melodies don’t rot here, collapses like this, collapses again unknowingly like this, as time flows by, the sound of searching, the child left behind, the sound of searching for a spirit, still like this, inevitably like this, apologetically like this, mercilessly like this, heartily like this, shockingly like this, a song of the dead, an old song that does not hex anyone, in a dream, the doors wide open all in a row, gatekeepers, in lotus position, one after another, sitting before the front gate, knock on the window, knock on every single window, there are no windows, all of the windows are shattered, again in the middle of the night, the sound of searching for a child, the sound of legs shaking, for the last time, shut your mouth, to prevent snoring, seal your mouth with tape, the sound of lips smacking, endless plea, endless talk, endless light sleep, endless line breaks, again like this, in the middle of the night, alive, a four-legged bed, a four-legged bathtub, a four-legged dog, the sound of breathlessness, the sound of a breathless flea bouncing around, again like this, but this time, never, again, like this,</p>
+<p>A period, followed by a period END, period, followed by a period END, period, followed by a period END, period, followed by THE END, one day without warning, ends without an autopsy, cloudy eyes blocked mouth spread legs, END, hair fingernails toenails growing, END, ended end knot, endless end knot, cliff slope barbed wire single tree, END, lip anus, END, burning temple black ridge chirping owl, blinking blind eyes, deaf ears, hands cut at the wrist, feet cut at the ankle, thrown far away, END, returning with a U-turn, END, parked, END, climbing over the front gate without even ringing the doorbell, END, vacantly, END, with a familiar expression, END, returning home, END, from somewhere, END, the sound of a neighbor spitting sputum, END</p>
+</section>
+<section>
+  <p>I invite into this space bodies still/yet/unknowingly here and a bouquet of flowers bursting with life like a MAH-UHM beyond time [1]. With drafting paper, dak paper, mulberry paper, backing paper, and photographic paper, I prepared places from which to suspend these flowers. I recited Eon Hee, read Theresa, and installed an underground tunnel.</p>
+</section>
+<section>
+  <p>February is a month of graduations. Both graduate schools and kindergartens hold graduation ceremonies. Flowers suck in water with their bodies cut at the root, as their passageways turn to pulp. The poet smells poetry from a bouquet of flowers. The dog barks early like an alarm clock every morning. The bed stands on all fours. The door, with its four corners, opens and closes. The bright yellow light from the window also has four corners to its shadow, but it falls diagonally as if italicized. Snow falls in spring, too.</p>
+  <p>I first examined postmortem changes and damages, then specifically neonatal and pediatric deaths as well as deaths from sex crimes. Deaths from choking, drowning, addiction, and starvation followed. Even as I committed certain chapters to memory, small details would still appear from secluded windows. Some bodies I drew multiple times. Initially, I worried this was not fair to the others, but befriending someone means that their face draws closer than other faces. Given the small size of reference images in forensic books, I discovered new details each time I drew them. For example, what I thought was flesh turned out to be an eye, and a spine was in fact an umbilical cord. I felt a strange obligation to draw every page. As I obsessively took dictation of their deaths at all hours, sleep turned from a time of rest to that of spiritual connection. A deaf, blind white dog came to my doorstep, and as soon as I decided to take him under my care, I stopped suffering from sleep paralysis. The white fur of an orphaned albino boy begins to occupy my home. He naps emitting a white light that shines even in the pitch-dark corner of my studio. </p>
+  <p>Not long ago, the reservoir of my body [2] overflowed. I had read an online article in Busan Ilbo [3] about a drawing series by Park Jahyun called Baegyang-daero Road [4] and went to see the exhibition. The series depicts a red light district, where the side doors appear closed but slowly open if you keep looking. Soon after entering the exhibition hall, my feet began to cramp. I stretched on my toes as if I were wearing high heels, but the buzzing sensation persisted as it rose from my calves to my thighs, even curling around my fingers. Now I’m getting sleep paralysis awake, I thought. These symptoms continued throughout the early spring—stiff fingers, rigid feet, mind trapped in paralysis—side effects I had previously only experienced while listening to Professor Yang Hyo-sil's lectures on feminist aesthetics. Sometimes I wish to not feel anything if my wrists and ankles must continue to be paralyzed like this. But those who appear invisible to me have always existed in place. I began to imagine their invisible forms of contact on my extremities. When my ankle throbs, does it mean that I shouldn't stand straight? When my fingers can’t grip a pen, does it mean that I shouldn't keep drawing a certain body? Or is someone grabbing hold of my hand for me to draw more clearly? I take medicine and hang on to the indoor climbing wall so that the soreness of my limbs surpasses the feeling of paralysis and the buzzing slowly sinks into the depths of my body.</p>
+  <p>It’s said that eyes are the window to the soul. When eyes meet, the windows overlap and open into a side door, and when I close my eyes, I see a dream in which numerous gates line a closed street, and the abandoned landscape plays on a loop. Now I can hear a voice. Here, the voice is a kind of collage that speaks only through quotations. For example, while I was alternating between autopsy photos and crime scene photos to reference in a drawing, YouTube autoplay informed me that this particular incident involved a woman freezing her twins promptly after birth due to pregnancy denial. Soon after, while reading a poetry collection, I heard them whisper, ". . . At birth I found / Myself inside a fridge.”[5] Or I encountered a silvery voice reading the title of this exhibition in French: “Le bouquet est toujours là.” Frozen children are as solid as a stone totem. Being solid is different from being hard (dure). Soon, when my friends with soft (doux), runny (mou), pillowy (moelleux), and half-eaten[6] faces peer over me without any malice, I am electrocuted simply for brushing against an untouchable dimension. With this shock and sleep paralysis of care, I can share with them only the flesh of my dead father and the hours of a living daughter that is myself. If everything is indeed a matter of time, I have created a means to endure this period of dry heat, a means that emerges from rules learned from my interactions with the dead. I wait for everything to be eradicated neither too soon nor too late.
+  </p>
+</section>
+<section style="line-height: 1rem; padding-left: 30px;">
+  <p>A bouquet of skulls   A bouquet of genitals   The flower bouquet 
+    <br>has yet to even consider rotting   Blood and tofu
+    <br>What is crushed is what clings   Rice cake and blood clot   Someone
+    <br>is writing a poem   Someone is writing on a gallbladder with a rock
+    <br>Someone is grinding intestines with a mill   
+    <br>on the asphalt   You are the dregs of language, the dregs 
+    <br>of the hole that flows from hole to hole   Someone
+    <br>is writing a poem   Sclera that cannot be needled
+    <br>shut with the pupils   Bloodshot eyes of a fish 
+    <br>with a bloody smile   Someone with a bouquet of skulls 
+    <br>and a bouquet of genitals has been turning in a revolving door
+    <br>for a thousand years   Inside the twenty-liter plastic bag
+    <br>the flower bouquet has yet to even consider rotting 
+    <br>— Kim Eon Hee, “The Flower Bouquet Has Yet To” [7]
+  </p>
+</section>
+<section>
+  <p>I have witnessed the deaths of my father, my grandfather, a dog, a sparrow, a pigeon, a snake, and a mouse, in addition to the deaths of countless cows, pigs, chicken, insects, trees, and flowers. Given how I can visualize accidents overheard on the taxi radio (as if I’ve seen them firsthand), this practice of taking dictation from open bodies seemingly functions as both a rumination and a rehearsal for all the deaths I have witnessed and will witness throughout my life. Perhaps it intimates the truth that the body sustaining trauma is drawn to other damaged bodies. These days I imagine passersby in two scenarios: first, the stranger having met their end, and second, the stranger writing poetry with an unknowable expression.</p>
+</section>
+<section style="font-size: smaller; line-height: 1rem;">
+  <p>
+  [1] Theresa Hak Kyung Cha, Dictee (Translated by Kyung-Nyun Kim Richards, Eomungak, 2004)
+  <br>[2] “Reservoir, the frilly // water bed / of the drowned body // A corpse drunk on water, water drunk on the corpse, a corpse / drunk on a corpse, a corpse inside another corpse / sings / a song” — Kim Eon Hee, from “Reservoir” (The Woman Asleep Under a Cherry Tree Withered Dead, Minumsa, 2011)
+  <br>[3] “[Art Inspiration] Park Jahyun” (Reported by Oh Geum-ah, Busan Ilbo, 2023) 
+  <br>[4] A solo show by Park Jahyun, I Love My Life (Curated by Lee Jinshil, Hapjeongjigu, 2024)
+  <br>[5] “. . . At birth I found / Myself inside a fridge // I was told I was birthed by some buttocks / Hung on a hook but no one / Knew whose buttocks / They were” — Kim Eon Hee, from “At Birth” (Trunk, 1st edition published in 1995, Munhakdongne, republished in 2020)
+  <br>[6] “Let’s sing with a face that’s bitten half off / That’s half bitten off / A crazed, lovestruck song” — Kim Eon Hee, from “Mightily, Mightily” (The Woman Asleep Under a Cherry Tree Withered Dead, Minumsa, 2011)
+  <br>[7] Kim Eon Hee, An Unexpected Response, Minumsa, 2005
+  </p>
+</section>
+</div>
+<div class="additional-document-container">
+  <p>
+    Written by Cha Yeonså, April 2024
+    Translated by Soje, August 2024
+
+    <a href="https://energywhoisshe.com/KKOCH-DA-BAL-is-still-there.html">Past Exhibition: Cha Yeonså Solo Show "KKOCH-DA-BAL is still there", Sahng-up Gallery Euljiro, March 9–30, 2024</a>
+  </p>
+</div>
+<div class="statusbar" id="statusBar">1/6 pages | Words: 3486</div>
+<div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
+<div class="print-footer">https://energywhoisshe.com/Father-and-Us.html</div>
+<script>
+  const fontSizeSelect = document.getElementById("fontSizeSelect");
+  const container = document.getElementById("documentContainer");
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const statusBar = document.getElementById("statusBar");
+
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;
+    container.style.fontSize = newSize;
+  });
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  //스크롤바 - 5페이지 적용
+  function updatePageIndicatorBySection() {
+    const sections = document.querySelectorAll("#documentContainer section");
+    const total = sections.length;
+    const viewportMiddle = window.scrollY + window.innerHeight / 2;
+    let current = 1;
+
+    sections.forEach((sec, i) => {
+      const top = sec.offsetTop;
+      const bottom = top + sec.offsetHeight;
+      if (viewportMiddle >= top && viewportMiddle < bottom) {
+        current = i + 1;
+      }
+    });
+
+    // 스크롤이 거의 맨 아래에 도달했으면 마지막 페이지로 처리
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+      current = total;
+    }
+
+    const text = statusBar.textContent;
+    const charPart = text.includes("|") ? text.split("|")[1].trim() : "";
+    statusBar.textContent = `${current}/${total}쪽${charPart ? " | " + charPart : ""}`;
+  }
+
+  document.addEventListener("scroll", updatePageIndicatorBySection);
+  window.addEventListener("load", updatePageIndicatorBySection);
+
+  //프린트
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+
+  //option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
+  });
+</script>
+</body></html>
