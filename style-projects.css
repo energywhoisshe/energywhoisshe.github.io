@@ -81,17 +81,24 @@
 .info div{
   padding-top: 8px;
 }
+
 .credit {
-  background: white;
+  /* font style */
   font-family: 'Noto Serif KR', serif;
   font-size: 0.9rem;
+
   line-height: 1.6;
   letter-spacing: 0;
   text-align: left;
   word-break: keep-all;
-  padding-left: 30px;
   padding-top: 30px;
+  padding-left: 30px;
   padding-right: 30px;
+  background-color: white;
+
+  /* 스크롤
+  height: 160px;
+  overflow-y: auto;*/
 }
 .info div{
   padding-top: 8px;
