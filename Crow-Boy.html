@@ -243,151 +243,149 @@
 
 
 
-.dark-mode-toggle {
-  position: relative;
-  width: 40px;
-  height: 26px;
-  background: #ccc;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background 0.3s;
-  margin-left: 10px;
-}
-.dark-mode-toggle::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 3px;
-  left: 2px;
-  background: white;
-  border-radius: 50%;
-  transition: transform 0.3s, background 0.3s;
-}
-body.dark-mode .dark-mode-toggle {
-  background: #4c5662;
-}
-body.dark-mode .dark-mode-toggle::before {
-  transform: translateX(16px);
-  background: #1c1c1c;
-}
-
-
-@media screen and (max-width: 768px) {
-  .page, .document-container {
-    padding: 16px;
-    width: 100%;
-    max-width: 100%;
+  .dark-mode-toggle {
+    position: relative;
+    width: 40px;
+    height: 26px;
+    background: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 10px;
+  }
+  .dark-mode-toggle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 2px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s, background 0.3s;
+  }
+  body.dark-mode .dark-mode-toggle {
+    background: #4c5662;
+  }
+  body.dark-mode .dark-mode-toggle::before {
+    transform: translateX(16px);
+    background: #1c1c1c;
   }
 
-  .toolbar {
-    flex-wrap: wrap; /*줄바꿈 허용*/
-    gap: 6px;
+
+  @media screen and (max-width: 768px) {
+    .page, .document-container {
+      padding: 16px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .toolbar {
+      flex-wrap: wrap; /*줄바꿈 허용*/
+      gap: 6px;
+    }
+
+    .page p, .page h2, .page h1 {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      word-break: keep-all;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    body {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
   }
 
-  .page p, .page h2, .page h1 {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    word-break: keep-all;
-    letter-spacing: 0;
+
+  /* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
+  .page p,
+  .page h1,
+  .page h2 {
     text-align: left;
-  }
-
-  body {
-    font-size: 16px;
+    word-break: keep-all;
+    line-height: 1.8;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
     -webkit-font-smoothing: antialiased;
   }
-}
 
+  @media print {
+    body.dark-mode {
+      background-color: white !important;
+      color: black !important;
+    }
 
-/* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
-.page p,
-.page h1,
-.page h2 {
-  text-align: left;
-  word-break: keep-all;
-  line-height: 1.8;
-  letter-spacing: 0;
-  font-weight: 400;
-  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+    body.dark-mode .page {
+      background-color: white !important;
+      color: black !important;
+    }
 
-@media print {
-  body.dark-mode {
-    background-color: white !important;
-    color: black !important;
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: white !important;
+      color: black !important;
+      border-color: #ccc !important;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: white !important;
+      color: black !important;
+      border: 1px solid #999 !important;
+    }
+
+    .no-print { display: none !important; }
+    body {
+      background: white !important;
+    }
+
+    .page {
+      page-break-after: always;
+      page-break-inside: avoid;
+      margin: 0 auto !important;
+      padding: 40px !important;
+      box-shadow: none !important;
+      background: white !important;
+      border: none !important;
+    }
+
+    .toolbar,
+    .statusbar,
+    .dark-mode-toggle,
+    .ruler {
+      display: none !important;
+    }
+
+    .print-footer {
+      display: block !important;
+      text-align: right;
+      font-size: 0.9rem;
+      color: #000;
+      font-family: 'Noto Serif KR', serif;
+      line-height: 1.4;
+      padding: 8px 16px;
+    }
   }
-
-  body.dark-mode .page {
-    background-color: white !important;
-    color: black !important;
-  }
-
-  body.dark-mode .toolbar,
-  body.dark-mode .toolbar_title,
-  body.dark-mode .statusbar,
-  body.dark-mode .homepage {
-    background-color: white !important;
-    color: black !important;
-    border-color: #ccc !important;
-  }
-
-  body.dark-mode .toolbar button,
-  body.dark-mode .toolbar select {
-    background-color: white !important;
-    color: black !important;
-    border: 1px solid #999 !important;
-  }
-
-  .no-print { display: none !important; }
-  body {
-    background: white !important;
-  }
-
-  .page {
-    page-break-after: always;
-    page-break-inside: avoid;
-    margin: 0 auto !important;
-    padding: 40px !important;
-    box-shadow: none !important;
-    background: white !important;
-    border: none !important;
-  }
-
-  .toolbar,
-  .statusbar,
-  .dark-mode-toggle,
-  .ruler {
-    display: none !important;
-  }
-
   .print-footer {
-    display: block !important;
-    text-align: right;
-    font-size: 0.9rem;
-    color: #000;
-    font-family: 'Noto Serif KR', serif;
-    line-height: 1.4;
-    padding: 8px 16px;
+    display: none; /* 웹에선 숨김 */
   }
-}
-.print-footer {
-  display: none; /* 웹에선 숨김 */
-}
 </style>
 </head>
 <body>
-<div class="toolbar_title">차연서, 꽃다발은 아직 (2024).txt</div>
+<div class="toolbar_title">차연서, 까마귀 소년 (2025).txt</div>
 <div class="toolbar">
 <!--<select class="disabled">
 <option>새문서</option>
 </select>-->
 <select id="docSelect">
   <option>불러오기</option>
-  <option value="END.html">Cha Yeonså, KKOCH-DA-BAL is still there (2024, Translated by Soje)</option>
-  <option value="KKOCH-DA-BAL-is-still-there.html">Cha Yeonså Solo Show: KKOCH-DA-BAL is still there</option>
-  <option value="KKOCH-DA-BAL-is-still-there.html">차연서 개인전: 꽃다발은 아직</option>
+  <!--<option value="END.html"></option>-->
 </select>
 
 <select id="fontSizeSelect">
@@ -419,15 +417,12 @@ body.dark-mode .dark-mode-toggle::before {
 </div>
 <div class="additional-document-container">
   <p>
-    Written by Cha Yeonså, April 2024
-    Translated by Soje, August 2024
+    글 차연서, 2025
 
-    <a href="https://energywhoisshe.com/KKOCH-DA-BAL-is-still-there.html">Past Exhibition: Cha Yeonså Solo Show "KKOCH-DA-BAL is still there", Sahng-up Gallery Euljiro, March 9–30, 2024</a>
-  </p>
-</div>
-<div class="additional-document-container">
-  <p>
-    <a href="https://energywhoisshe.com/This-Unbelievable-Sleep.html">지난 전시: 차연서 온라인 개인전 《이 기막힌 잠》, 에너지후이쉬게임즈, 2023.6.15 ~ 7.15</a>
+    그림책 비평 모임 (서울시립 미술아카이브, 2025.2.6 ~ 2.27)
+    진행 및 교정/교열 도움 한윤아
+
+    <!--<a href="https://energywhoisshe.com/KKOCH-DA-BAL-is-still-there.html">Past Exhibition: Cha Yeonså Solo Show "KKOCH-DA-BAL is still there", Sahng-up Gallery Euljiro, March 9–30, 2024</a>-->
   </p>
 </div>
 <div class="statusbar" id="statusBar">1/5쪽 | 8878글자</div>
