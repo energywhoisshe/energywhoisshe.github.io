@@ -1,0 +1,494 @@
+<!D기CTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>까마귀 소년</title>
+<meta name="description" content="차연서 - 까마귀 소년">
+<meta name="author" content="차연서">
+<meta name="keywords" content="Cha Yeonså, Solo Show, Solo Exhibition, 차연서, 차연서 개인전">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+</script>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background-color: #fdfdfd;
+      color: #000;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      word-break: keep-all;
+    }
+
+    .toolbar_title {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /*white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+      /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
+      /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
+      /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
+      /*flex-shrink: 1; 필요 시, 텍스트가 줄어들도록 설정 */
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .toolbar button, .toolbar select {
+      margin-right: 10px;
+      padding: 4px 8px;
+      border: 1px solid #bbb;
+      background: white;
+      cursor: pointer;
+      font-family: inherit;
+      height: 30px;
+      max-width: 100%;
+    }
+
+    .toolbar button.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .toolbar select.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .ruler {
+      height: 20px;
+      background: repeating-linear-gradient(90deg, #ccc, #ccc 1px, transparent 1px, transparent 10px);
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .document-container {
+      max-width: 794px;
+      margin: 40px auto;
+      padding: 0 20px;
+      margin-top: 10em;
+      margin-bottom: 8em;
+    }
+
+    .additional-document-container {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .additional-document-container p{
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      margin: 0 auto 40px;
+      padding: 80px 100px 120px 100px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      position: relative;
+      transition: font-size 0.2s ease;
+      font-size: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3em;
+      margin-top: 0em;
+    }
+
+    h2 {
+      font-size: 1.0em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .spacer {
+      height: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 1em;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    .footer {
+      text-align: right;
+      font-size: 0.9rem;
+      color: #666;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+    }
+
+    .statusbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .homepage {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+
+    
+    
+    body.dark-mode {
+      background-color: #2b2f36;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .page{
+      background-color: #37404a;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: #4c5662;
+      color: #f0f0f0;
+      border: 1px solid #777;
+    }
+
+    body.dark-mode .homepage a,
+    body.dark-mode a {
+      color: #a7c7ff;
+      text-decoration: underline;
+    }
+
+    body.dark-mode .statusbar {
+      color: #ffffff;
+    }
+
+    body.dark-mode .ruler {
+      background: repeating-linear-gradient(90deg, #59626e, #59626e 1px, transparent 1px, transparent 10px);
+    }
+
+    /* 정보란 추가 - 다크모드 */
+    body.dark-mode .additional-document-container {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+
+
+
+.dark-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 10px;
+}
+.dark-mode-toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s, background 0.3s;
+}
+body.dark-mode .dark-mode-toggle {
+  background: #4c5662;
+}
+body.dark-mode .dark-mode-toggle::before {
+  transform: translateX(16px);
+  background: #1c1c1c;
+}
+
+
+@media screen and (max-width: 768px) {
+  .page, .document-container {
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .toolbar {
+    flex-wrap: wrap; /*줄바꿈 허용*/
+    gap: 6px;
+  }
+
+  .page p, .page h2, .page h1 {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    word-break: keep-all;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+/* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
+.page p,
+.page h1,
+.page h2 {
+  text-align: left;
+  word-break: keep-all;
+  line-height: 1.8;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media print {
+  body.dark-mode {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .page {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .toolbar,
+  body.dark-mode .toolbar_title,
+  body.dark-mode .statusbar,
+  body.dark-mode .homepage {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  body.dark-mode .toolbar button,
+  body.dark-mode .toolbar select {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #999 !important;
+  }
+
+  .no-print { display: none !important; }
+  body {
+    background: white !important;
+  }
+
+  .page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto !important;
+    padding: 40px !important;
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+  }
+
+  .toolbar,
+  .statusbar,
+  .dark-mode-toggle,
+  .ruler {
+    display: none !important;
+  }
+
+  .print-footer {
+    display: block !important;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 1.4;
+    padding: 8px 16px;
+  }
+}
+.print-footer {
+  display: none; /* 웹에선 숨김 */
+}
+</style>
+</head>
+<body>
+<div class="toolbar_title">차연서, 꽃다발은 아직 (2024).txt</div>
+<div class="toolbar">
+<!--<select class="disabled">
+<option>새문서</option>
+</select>-->
+<select id="docSelect">
+  <option>불러오기</option>
+  <option value="END.html">Cha Yeonså, KKOCH-DA-BAL is still there (2024, Translated by Soje)</option>
+  <option value="KKOCH-DA-BAL-is-still-there.html">Cha Yeonså Solo Show: KKOCH-DA-BAL is still there</option>
+  <option value="KKOCH-DA-BAL-is-still-there.html">차연서 개인전: 꽃다발은 아직</option>
+</select>
+
+<select id="fontSizeSelect">
+<option value="14px">10pt</option>
+<option value="15px">11pt</option>
+<option selected="" value="16px">12pt</option>
+<option value="18px">14pt</option>
+</select>
+<button id="printBtn">📄</button>
+<div class="dark-mode-toggle" id="darkModeToggle" title="다크모드 토글"></div>
+</div>
+<div class="ruler"></div>
+<div class="document-container" id="documentContainer">
+<h1>까마귀 소년</h1>
+<section style="padding-left: 30px;">
+<p></p>
+</section>
+<section>
+  <p></p>
+</section>
+<section>
+  <p>
+    
+  </p>
+</section>
+<section style="font-size: smaller; line-height: 1rem;">
+  <p></p>
+</section>
+</div>
+<div class="additional-document-container">
+  <p>
+    Written by Cha Yeonså, April 2024
+    Translated by Soje, August 2024
+
+    <a href="https://energywhoisshe.com/KKOCH-DA-BAL-is-still-there.html">Past Exhibition: Cha Yeonså Solo Show "KKOCH-DA-BAL is still there", Sahng-up Gallery Euljiro, March 9–30, 2024</a>
+  </p>
+</div>
+<div class="additional-document-container">
+  <p>
+    <a href="https://energywhoisshe.com/This-Unbelievable-Sleep.html">지난 전시: 차연서 온라인 개인전 《이 기막힌 잠》, 에너지후이쉬게임즈, 2023.6.15 ~ 7.15</a>
+  </p>
+</div>
+<div class="statusbar" id="statusBar">1/5쪽 | 8878글자</div>
+<div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
+<div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html<br>https://energywhoisshe.com/Father-and-Us.html</div>
+<script>
+  const fontSizeSelect = document.getElementById("fontSizeSelect");
+  const container = document.getElementById("documentContainer");
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const statusBar = document.getElementById("statusBar");
+
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;
+    container.style.fontSize = newSize;
+  });
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  //스크롤바 - 5페이지 적용
+  function updatePageIndicatorBySection() {
+    const sections = document.querySelectorAll("#documentContainer section");
+    const total = sections.length;
+    const viewportMiddle = window.scrollY + window.innerHeight / 2;
+    let current = 1;
+
+    sections.forEach((sec, i) => {
+      const top = sec.offsetTop;
+      const bottom = top + sec.offsetHeight;
+      if (viewportMiddle >= top && viewportMiddle < bottom) {
+        current = i + 1;
+      }
+    });
+
+    // 스크롤이 거의 맨 아래에 도달했으면 마지막 페이지로 처리
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+      current = total;
+    }
+
+    const text = statusBar.textContent;
+    const charPart = text.includes("|") ? text.split("|")[1].trim() : "";
+    statusBar.textContent = `${current}/${total}쪽${charPart ? " | " + charPart : ""}`;
+  }
+
+  document.addEventListener("scroll", updatePageIndicatorBySection);
+  window.addEventListener("load", updatePageIndicatorBySection);
+
+  //프린트
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+
+  //option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
+  });
+</script>
+</body></html>
