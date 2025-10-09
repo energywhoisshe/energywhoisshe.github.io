@@ -1,0 +1,523 @@
+<!D기CTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>꽃다발은 아직</title>
+<meta name="description" content="차연서 - 꽃다발은 아직">
+<meta name="author" content="차연서">
+<meta name="keywords" content="Cha Yeonså, Solo Show, Solo Exhibition, 차연서, 차연서 개인전">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+</script>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background-color: #fdfdfd;
+      color: #000;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      word-break: keep-all;
+    }
+
+    .toolbar_title {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /*white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+      /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
+      /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
+      /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
+      /*flex-shrink: 1; 필요 시, 텍스트가 줄어들도록 설정 */
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .toolbar button, .toolbar select {
+      margin-right: 10px;
+      padding: 4px 8px;
+      border: 1px solid #bbb;
+      background: white;
+      cursor: pointer;
+      font-family: inherit;
+      height: 30px;
+      max-width: 100%;
+    }
+
+    .toolbar button.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .toolbar select.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .ruler {
+      height: 20px;
+      background: repeating-linear-gradient(90deg, #ccc, #ccc 1px, transparent 1px, transparent 10px);
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .document-container {
+      max-width: 794px;
+      margin: 40px auto;
+      padding: 0 20px;
+      margin-top: 10em;
+      margin-bottom: 8em;
+    }
+
+    .additional-document-container {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .additional-document-container p{
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      margin: 0 auto 40px;
+      padding: 80px 100px 120px 100px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      position: relative;
+      transition: font-size 0.2s ease;
+      font-size: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3em;
+      margin-top: 0em;
+    }
+
+    h2 {
+      font-size: 1.0em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .spacer {
+      height: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 1em;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    .footer {
+      text-align: right;
+      font-size: 0.9rem;
+      color: #666;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+    }
+
+    .statusbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .homepage {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+
+    
+    
+    body.dark-mode {
+      background-color: #2b2f36;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .page{
+      background-color: #37404a;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: #4c5662;
+      color: #f0f0f0;
+      border: 1px solid #777;
+    }
+
+    body.dark-mode .homepage a,
+    body.dark-mode a {
+      color: #a7c7ff;
+      text-decoration: underline;
+    }
+
+    body.dark-mode .statusbar {
+      color: #ffffff;
+    }
+
+    body.dark-mode .ruler {
+      background: repeating-linear-gradient(90deg, #59626e, #59626e 1px, transparent 1px, transparent 10px);
+    }
+
+    /* 정보란 추가 - 다크모드 */
+    body.dark-mode .additional-document-container {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+
+
+
+.dark-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 10px;
+}
+.dark-mode-toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s, background 0.3s;
+}
+body.dark-mode .dark-mode-toggle {
+  background: #4c5662;
+}
+body.dark-mode .dark-mode-toggle::before {
+  transform: translateX(16px);
+  background: #1c1c1c;
+}
+
+
+@media screen and (max-width: 768px) {
+  .page, .document-container {
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .toolbar {
+    flex-wrap: wrap; /*줄바꿈 허용*/
+    gap: 6px;
+  }
+
+  .page p, .page h2, .page h1 {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    word-break: keep-all;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+/* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
+.page p,
+.page h1,
+.page h2 {
+  text-align: left;
+  word-break: keep-all;
+  line-height: 1.8;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media print {
+  body.dark-mode {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .page {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .toolbar,
+  body.dark-mode .toolbar_title,
+  body.dark-mode .statusbar,
+  body.dark-mode .homepage {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  body.dark-mode .toolbar button,
+  body.dark-mode .toolbar select {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #999 !important;
+  }
+
+  .no-print { display: none !important; }
+  body {
+    background: white !important;
+  }
+
+  .page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto !important;
+    padding: 40px !important;
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+  }
+
+  .toolbar,
+  .statusbar,
+  .dark-mode-toggle,
+  .ruler {
+    display: none !important;
+  }
+
+  .print-footer {
+    display: block !important;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 1.4;
+    padding: 8px 16px;
+  }
+}
+.print-footer {
+  display: none; /* 웹에선 숨김 */
+}
+</style>
+</head>
+<body>
+<div class="toolbar_title">차연서, 꽃다발은 아직 (2024).txt</div>
+<div class="toolbar">
+<!--<select class="disabled">
+<option>새문서</option>
+</select>-->
+<select id="docSelect">
+  <option>불러오기</option>
+  <option value="END.html">Cha Yeonså, KKOCH-DA-BAL is still there (2024, Translated by Soje)</option>
+  <option value="KKOCH-DA-BAL-is-still-there.html">Cha Yeonså Solo Show: KKOCH-DA-BAL is still there</option>
+  <option value="KKOCH-DA-BAL-is-still-there.html">차연서 개인전: 꽃다발은 아직</option>
+</select>
+
+<select id="fontSizeSelect">
+<option value="14px">10pt</option>
+<option value="15px">11pt</option>
+<option selected="" value="16px">12pt</option>
+<option value="18px">14pt</option>
+</select>
+<button id="printBtn">📄</button>
+<div class="dark-mode-toggle" id="darkModeToggle" title="다크모드 토글"></div>
+</div>
+<div class="ruler"></div>
+<div class="document-container" id="documentContainer">
+<h1>꽃다발은 아직</h1>
+<section style="padding-left: 30px;">
+<p>검은 상자 안에서, 도돌이표 콧노래, 끝나지 않고, 끝나지 않고, 끝나지 않고, 다가오는 이른 아침, 언젠가, 이 없는 아침, 혀 없는 아침, 팔 없는 아침, 털 없는 아침, 언젠가, 모든 게 없는 아침, 아침 없는 아침, 다시, 태어나고, 꿈에 오고, 그림에 오고, 다시, 겨울에 오고, 봄에 오고, 다시, 죽지 않고, 살지 않고, 잠들지 않고, 깨어나지 않고, 다시, 말하지 않고, 더듬지도 않고, 울지 않고, 우짖지 않고, 큰 눈으로, 담벼락을 타고, 아기울음소리로, 밤잠을 세우지 않고, 이제 아침을 일으키고, 아침을 매달고, 아침을 내려쳐라, 버려진 엉덩이, 동트는 엉덩이, 고놈의 작은 엉덩이, 그 척척한 구덩이를, 퍼올려라, 문드러질 때까지, 시반에 가득히 사인이 남을 때까지, 전기 담요 위에서 새파래질 때까지도, 얼음과자처럼 선선해질 때까지도, 슬픈 애벌레처럼 통통해질 때까지도, 이 가는 소리, 개가 잠꼬대하는 소리, 부드러운 개가 눈 감고 있는 소리, 영혼을 흘리는 소리, 털갈이로 너털너털하게, 존재를 흘리는 소리, 흘려도 흘려도 사라지지 않는, 뼈와 살의 평온함, 푸른 구슬처럼 도르르 흘리는 소리, 하늘이 터널처럼 내려앉는 소리, 바다가 빗물처럼 침수하는 소리, 봄에 때늦은, 함박눈 내리는 소리, 다시 한밤중에, 아이 찾는 소리, 싸고 핥고 걷고 기고, 걷고 기고 눕고 춥고,</p>
+<p>배꼽 없는 배는 하늘 보이고, 하늘 보이고, 하늘 보이고, 하늘 아니고 천장이고, 마중 아니고 배웅이고, 묵주 아니고 염주고, 일기 아니고 편지, 편지 아니고 유서, 죽고, 다시, 이른 아침, 물렁거리고, 케이크처럼 푹 들어가고, 다시, 마,아,아,아,음은 여기에 썩지 않고, 푹 여태 이렇게, 다시 푹 미처 이렇게, 시간이 흐를 뿐이므로, 남겨진 아이, 찾는 소리, 영혼 찾는 소리, 여태 이렇게, 별 수 없게 이렇게, 죄송하게 이렇게, 무참하게 이렇게, 너털웃음으로 이렇게, 황당하게 이렇게, 죽은 사람들 노래, 아무도 부정타지 않는 옛날 노래, 꿈에서, 열린 문들만이 줄지어 입 벌린, 칸칸이 가부좌를 튼, 뻐끔 나앉은, 대문 앞의, 문지기들, 창문 두드려, 창문 죄다 두드려, 창문 없어, 창문 죄다 깨져서 없어, 다시 한밤중에, 아이 찾는 소리, 다리 떠는 소리, 마지막으로, 입 막아, 코 골지 않도록, 입술을 테이프로 막아, 쩝쩝 다시는 소리, 끝나지 않는 호소, 끝나지 않는 토로, 끝나지 않는 선잠, 끝나지 않는 줄바꾸기, 또 이렇게, 한밤중에, 살아있는, 네발 달린 침대, 네발 달린 욕조, 네발 달린 개, 숨 붙은 소리, 숨 붙어서 뛰노는 벼룩소리, 또 이렇게, 이번에야말로, 다시는, 이렇게는, 절대로,</p>
+<p>마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 마침표 끝, 마침표, 뒤에 끝났다, 말할 새도 없는 언젠가에, 아무 부검도 없이 끝, 흐린 눈 막은 입 벌린 다리, 끝, 머리카락 손톱발톱 자라나는, 끝, 끝장난 끝 매듭, 끝없이 끝 매듭, 절벽 비탈 철조망 한 그루 나무, 끝, 입술 항문, 끝, 불타는 절 검은 산등성이 지저귀는 소쩍새 충혈된 능소화, 끔뻑이는 눈먼 눈, 귀먼 귀, 손목 잘린 손, 발목 잘린 발, 저 멀리 던진, 끝, 유턴해서 돌아오는, 끝, 주차된, 끝, 초인종도 누르지 않고 현관을 넘는, 끝, 우두커니, 끝, 익숙한 표정으로, 끝, 집에 돌아온, 끝, 어디서, 끝, 하고 뱉는 이웃집 가래침 소리, 끝</p>
+</section>
+<section>
+  <p>이곳에 초대되는 것은 내내/아직/미처 여기 있는 몸들, 그리고 시간이 흐르지 않는 마음[1]처럼 우두커니 생생한 꽃다발이다. 제도지, 닥종이, 순지, 배접지, 인화지로 꽃들이 매달릴 자리들을 준비한다. 언희님을 읊었고, 테레사를 읽었고, 토굴을 들인다.</p>
+</section>
+<section>
+  <p>2월은 졸업식이 많다. 대학원도 어린이집도 졸업식을 한다. 꽃들은 뿌리 잘린 몸으로 물을 빨아들이고, 통로는 점차 뭉그러진다. 시인은 꽃다발에서 시취를 맡는다. 개는 이른 아침마다 알람시계처럼 짖는다. 침대는 네 발로 서있다. 문은 네 모서리를 갖고 개폐된다. 창문에서 떨어지는 샛노란 빛의 그림자 또한 네 모서리를 가졌으나, 이탤릭체로 강조된 듯이 사선이다. 봄에도 눈이 온다.</p>
+  <p>시체현상, 손상, 신생아 및 소아 사망, 그리고 성범죄에 의한 사망을 먼저 들여다보았다. 질식사, 익사, 중독사, 기아사는 그 다음이다. 낯익은 챕터는 어느 페이지에 누가 들어있는지 선명히 외워지고, 와중에도 작업 되지 않은 구석진 창들이 드문드문 튀어나온다. 여러 번 그리게 되는 이들도 있다. 처음에는 그런 빈도수의 차이가 공평하지 않다는 생각까지도 들었지만, 원래 친구가 된다는 일은 친구가 아닌 다른 모든 것들보다 얼굴이 더 가까워지는 일이다. 법의학 책에 수록된 자료이미지가 대부분 작기 때문에, 반복해서 그리면 이전에는 뚜렷하지 않았던 형상이 조금씩 새롭게 발견된다. 이를테면 살인 줄 알았던 것이 눈이 되기도 하고, 등줄기인 줄 알았던 것이 탯줄이 되기도 한다. 나는 모든 페이지들을 그려야 한다는 이상한 의무감을 느낀다. 그들을 받아쓰는 작업에 밤낮으로 사로잡힐 때면, 수면은 더 이상 휴식이 아니라 어떤 무방비한 접속이 되어간다. 보이지 않고 들리지 않는 흰 개가 집에 오고, 그의 보호자가 되기로 결심한 시점부터 가위눌림은 거짓말처럼 멈췄다. 무연고로 태어난 알비노 소년의 흰 털이 집안 곳곳에서 터를 잡기 시작한다. 새카만 작업방 한켠에서도 그늘지지 않는 흰 빛으로 초연하게 낮잠을 잔다.</p>
+  <p>얼마 전에는 몸속 저수지[2]가 넘쳤다. 부산일보 온라인 기사[3]로 알게 된 “백양대로[4]”를 보러 갔을 때였다. 성매매 집결지의 쪽문들을 그린 박자현 작가의 드로잉 시리즈인데, 문들이 눈으로 보기에는 닫혀있지만 우두커니 쳐다보고 있으면 계속 열린다. 전시장에 온 지 얼마 되지 않아서 발에 쥐가 났다. 하이힐을 신는 것처럼 발꿈치를 들고 스트레칭을 해보는데 그날따라 우글거림은 멎지 않고 오히려 종아리 허벅지를 타고 올라와 손가락까지 휘감기 시작했다. 나 이제는 눈 뜬 채로 가위눌리는구나, 그런 몸 상태가 그날 이후 초봄 내내 계속되고 있다. 열 손가락은 우드럭대고, 양발은 뻐드럭대고, 머리는 겨우 하나뿐이고, 온몸에 힘이 들어간 채로 생생한 마비상태에 갇힌다. 이런 건 양효실 선생님 강의를 들을 때나 겪는 부작용이었는데 말이다. 생각한다. 이 정도로 손목발목이 무참하게 붙잡혀버린다면 무언가를 느끼는 일 자체를 그만하고 싶다고. 하지만 그런 것들은 언제나 거기에 있었을 뿐이다. 이내 사지말단에 보이지 않는 접촉의 형태를 상상이나 해본다. 발목 아래로 욱신거릴 때는 나 이렇게 곧서지 말라는 건가, 펜을 쥔 손가락 관절이 딱딱하게 뻗칠 때는 그리던 몸 그리지 말라는 건가, 아니면 더 선명히 그려달라고 누군가가 깍지 손을 꼭 겹쳐 쥐는 건가. 약을 좀 타 먹고, 두 팔과 두 다리로 지탱하며 실내암벽에 매달리고, 그러니까 상처 입은 근육들이 갖는 회복통이 마비통을 능가하면서 우글거림은 몸 속 깊숙한 곳으로 천천히 회향한다.</p>
+  <p>눈은 마음의 창이래. 눈을 마주치면 창들은 켜켜이 겹쳐 열리는 쪽문이 되고, 눈을 감으면 폐쇄된 거리에 수많은 대문이 늘어선 정경이 반복되는 꿈, 그것은 퇴거된 풍경이다. 그리고 이제는 목소리가 들린다. 여기서 목소리라는 건 일종의 콜라주이다. 그들은 오직 인용으로만 말한다. 이를테면 부검사진과 현장사진을 번갈아 그리고 있던 나에게, 자동재생 유투브는 그것이 임신거부증으로 아이 둘을 낳자마자 냉동보관한 사건이라는 것을 알려준다. 곧이어 시집을 읽다가 그들이 속삭이는 소리를 듣는다. “······태어나보니 냉장고 속이었어요[5]”. 혹은 이번 전시 제목을 “Le bouquet est toujours là” 불어로 옮겨 읽는 그 목소리의 낭랑함을 발견한다. 얼어있는 아이들은 돌장승처럼 단단하다. 그것은 딱딱함(dure)과 다르다. 이내 부드러운(doux), 무른(mou), 푹신한(moelleux), 베어먹힌[6] 얼굴을 한 친구들이 나를 굽어보면, 거기에는 내게 향하는 어떠한 비수나 적의도 없는데도 맞닿을 수 없는 차원이 맞닿았다는 이유로 온통 감전된다. 나는 그저 그들의 저릿저릿한 연민과 돌봄의 가위눌림 아래에서, 그들에게 죽은 아빠의 살이나 — 살아있는 딸의 시간 따위를 나눠주는 것이다. 모든 것이 시간의 문제라면, 뜨겁고 건조한 시간 따위를 견뎌내는 방법을 창안한다. 그 방법은 망자들과의 맞닿음으로 인해 배워가는 경계와 규칙 속에서 태어난다. 나는 모든 것이 너무 빠르지도 늦지도 않게 소거될 것을 기다린다.</p>
+</section>
+<section style="line-height: 1rem; padding-left: 30px;">
+  <p>한 묶음 해골다발 한 묶음 성기다발 꽃다발은
+    <br>아직 썩어줄 생각도 하지 않는다 피와 두부
+    <br>으깨어진 자가 엉겨 붙는 꿀떡과 피떡 누가
+    <br>시를 쓴다 쓸개에 돌로 누가 시를 쓰고 있다
+    <br>아스팔트에 창자로 누가 으득으득 분쇄기를
+    <br>돌리고 있다 너는 언어의 찌꺼기 구멍에서
+    <br>구멍으로 흘러가는 구멍의 찌꺼기 누가
+    <br>시를 쓰고 있다 눈동자에 바늘로 감을래야
+    <br>감을 수 없는 눈자위 피웃음을 문 충혈된
+    <br>물고기의 눈자위 한 묶음 해골다발 한 묶음
+    <br>성기다발을 들고 누가 천 년 동안 회전문
+    <br>속에서 돌고 있다 이십 리터 종량제 봉투 속
+    <br>꽃다발은 아직 썩어줄 생각도 하지 않는다
+    <br>— 김언희. 「꽃다발은 아직」[7]. 전문
+  </p>
+</section>
+<section>
+  <p>내가 목격한 죽음은 아빠, 할아버지, 개, 참새, 비둘기, 뱀, 쥐, 그리고 수많은 고기와 벌레와 나무와 꽃들. 택시 안 라디오에서 흘러나오는 사건사고들에 이미 본 것처럼 구체적으로 그 현장이 그려지는 것을 보면, 열린 몸들을 받아쓰는 이 작업은 이전과 이후에 목격하는 모든 죽음에 대한 곱씹기이자 예행연습으로 기능하는 것처럼 보인다. 혹은 트라우마를 겪어내는 몸은 손상된 몸들에 어처구니없이 매혹된다는 진실을 누수 한다. 나는 요즘 길거리를 걸어 다니는 일면식 없는 사람들에게서 두 가지 모습을 음산하게 상상한다. 그것은 끝장난 모습, 그리고 누구도 알 수 없을 얼굴로 시 쓰는 모습이다.</p>
+</section>
+<section style="font-size: smaller; line-height: 1rem;">
+  <p>[1] 차학경 『딕테』(김경년 옮김, 어문각, 2004)
+  <br>[2] “저수지, 프릴 달린 // 익사자의 / 물침대 // 물에 취한 시체, 시체에 취한 물, 시체에 / 취한 시체, 시체 속에서 / 다른 시체가 / 노래 / 부른다” 김언희 「저수지」(『말라죽은 앵두나무 아래 잠자는 저 여자』, 민음사, 2011)
+  <br>[3] [예술 영감] 박자현 작가 (부산일보, 오금아 기자, 2023)
+  <br>[4] 박자현 개인전 《나는 내 인생이 마음에 들어》 (기획 이진실, 합정지구, 2024)
+  <br>[5] “……태어나보니 / 냉장고 속이었어요 // 갈고리에 매달린 엉덩짱이 나를 / 낳았다는데 무엇의 / 엉덩짝인지 / 아무도 모르더군요”“김언희 「태어나 보니」(『트렁크』, 초판 1995, 문학동네, 개정판 2020)
+  <br>[6] “우리 노래 부르자 반쯤 베어먹은 / 베어먹힌 얼굴로 // 미친, 사랑의 노래” 김언희 「오지게, 오지게」(『말라죽은 앵두나무 아래 잠자는 저 여자』, 민음사, 2011)
+  <br>[7] 김언희, 『뜻밖의 대답』 민음사, 2005</p>
+</section>
+</div>
+<div class="additional-document-container">
+  <p>
+    Written by Cha Yeonså, April 2024
+    Translated by Soje, August 2024
+
+    <a href="https://energywhoisshe.com/KKOCH-DA-BAL-is-still-there.html">Past Exhibition: Cha Yeonså Solo Show "KKOCH-DA-BAL is still there", Sahng-up Gallery Euljiro, March 9–30, 2024</a>
+  </p>
+</div>
+<div class="additional-document-container">
+  <p>
+    <a href="https://energywhoisshe.com/This-Unbelievable-Sleep.html">지난 전시: 차연서 온라인 개인전 《이 기막힌 잠》, 에너지후이쉬게임즈, 2023.6.15 ~ 7.15</a>
+  </p>
+</div>
+<div class="statusbar" id="statusBar">1/5쪽 | 8878글자</div>
+<div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
+<div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html<br>https://energywhoisshe.com/Father-and-Us.html</div>
+<script>
+  const fontSizeSelect = document.getElementById("fontSizeSelect");
+  const container = document.getElementById("documentContainer");
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const statusBar = document.getElementById("statusBar");
+
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;
+    container.style.fontSize = newSize;
+  });
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  //스크롤바 - 5페이지 적용
+  function updatePageIndicatorBySection() {
+    const sections = document.querySelectorAll("#documentContainer section");
+    const total = sections.length;
+    const viewportMiddle = window.scrollY + window.innerHeight / 2;
+    let current = 1;
+
+    sections.forEach((sec, i) => {
+      const top = sec.offsetTop;
+      const bottom = top + sec.offsetHeight;
+      if (viewportMiddle >= top && viewportMiddle < bottom) {
+        current = i + 1;
+      }
+    });
+
+    // 스크롤이 거의 맨 아래에 도달했으면 마지막 페이지로 처리
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+      current = total;
+    }
+
+    const text = statusBar.textContent;
+    const charPart = text.includes("|") ? text.split("|")[1].trim() : "";
+    statusBar.textContent = `${current}/${total}쪽${charPart ? " | " + charPart : ""}`;
+  }
+
+  document.addEventListener("scroll", updatePageIndicatorBySection);
+  window.addEventListener("load", updatePageIndicatorBySection);
+
+  //프린트
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+
+  //option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
+  });
+</script>
+</body></html>
