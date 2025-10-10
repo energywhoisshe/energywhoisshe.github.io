@@ -375,6 +375,33 @@
   .print-footer {
     display: none; /* 웹에선 숨김 */
   }
+
+  /*2025-10-10 update 모바일*/
+      /* === [추가] 폰트 스케일을 변수로 제어 === */
+    #documentContainer {
+      /* 기본(데스크탑) = 16px (≈12pt) */
+      --base-font: 16px;
+      font-size: var(--base-font);
+    }
+
+    /* 모바일 기본값만 변수로 변경: 14px (≈10pt) */
+    @media screen and (max-width: 768px) {
+      #documentContainer { --base-font: 14px; }
+
+      /* 기존 모바일 규칙보다 '뒤'에 오므로 우선 적용됨 */
+      /* rem 대신 em로 묶어 컨테이너 스케일을 그대로 따르게 함 */
+      #documentContainer .page p,
+      #documentContainer .page h1,
+      #documentContainer .page h2 {
+        font-size: 1em;   /* 기존 1.05rem을 덮어씀(수정 아님, '뒤에서 추가 override') */
+        line-height: 1.8;
+      }
+
+      /* 필요시: .page 자체의 고정값도 컨테이너를 따르게 */
+      #documentContainer .page {
+        font-size: 1em;   /* 기존 16px을 '추가 규칙'으로 무효화 */
+      }
+    }
 </style>
 </head>
 <body>
@@ -490,6 +517,22 @@
     if (selected) {
       window.location.href = selected;
    }
+  });
+
+  //2025-10-10 update 모바일
+  // === [추가] 드롭다운 변경 시 CSS 변수도 함께 갱신 ===
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;          // "14px", "15px", "16px", "18px"
+    container.style.setProperty("--base-font", newSize);
+    // (기존 코드가 container.style.fontSize = newSize; 도 시행하지만, 변수도 같이 맞춰 둡니다)
+  });
+
+  // === [추가] 로드 시 현재 변수값에 맞춰 드롭다운 표시 동기화 ===
+  window.addEventListener("load", () => {
+    const currentVar = getComputedStyle(container).getPropertyValue("--base-font").trim();
+    if (currentVar) {
+      fontSizeSelect.value = currentVar;     // 모바일에서는 "14px"로 보이게 동기화
+    }
   });
 </script>
 </body></html>
