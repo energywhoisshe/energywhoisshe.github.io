@@ -1,0 +1,485 @@
+<!D기CTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>웃는 여자, 보는 아이, 엮이는 유충들</title>
+<meta name="description" content="양효실 - 웃는 여자, 보는 아이, 엮이는 유충들">
+<meta name="author" content="양효실">
+<meta name="keywords" content="Hyosil Yang, Critique, Cha Yeonså, Solo Show, Solo Exhibition, Feed me stones, 양효실, 양효실 비평, 차연서, 차연서 개인전, 살도 뼈도 없는 나에게">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+</script>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background-color: #fdfdfd;
+      color: #000;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      word-break: keep-all;
+    }
+
+    .toolbar_title {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /*white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+      /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
+      /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
+      /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
+      /*flex-shrink: 1; 필요 시, 텍스트가 줄어들도록 설정 */
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .toolbar button, .toolbar select {
+      margin-right: 10px;
+      padding: 4px 8px;
+      border: 1px solid #bbb;
+      background: white;
+      cursor: pointer;
+      font-family: inherit;
+      height: 30px;
+      max-width: 100%;
+    }
+
+    .toolbar button.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .toolbar select.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .ruler {
+      height: 20px;
+      background: repeating-linear-gradient(90deg, #ccc, #ccc 1px, transparent 1px, transparent 10px);
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .document-container {
+      max-width: 794px;
+      margin: 40px auto;
+      padding: 0 20px;
+      margin-top: 10em;
+      margin-bottom: 8em;
+    }
+
+    .additional-document-container {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .additional-document-container p{
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      margin: 0 auto 40px;
+      padding: 80px 100px 120px 100px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      position: relative;
+      transition: font-size 0.2s ease;
+      font-size: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3em;
+      margin-top: 0em;
+    }
+
+    h2 {
+      font-size: 1.0em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .spacer {
+      height: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 1em;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    .footer {
+      text-align: right;
+      font-size: 0.9rem;
+      color: #666;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+    }
+
+    .statusbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .homepage {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+
+    
+    
+    body.dark-mode {
+      background-color: #2b2f36;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .page{
+      background-color: #37404a;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: #4c5662;
+      color: #f0f0f0;
+      border: 1px solid #777;
+    }
+
+    body.dark-mode .homepage a,
+    body.dark-mode a {
+      color: #a7c7ff;
+      text-decoration: underline;
+    }
+
+    body.dark-mode .statusbar {
+      color: #ffffff;
+    }
+
+    body.dark-mode .ruler {
+      background: repeating-linear-gradient(90deg, #59626e, #59626e 1px, transparent 1px, transparent 10px);
+    }
+
+    /* 정보란 추가 - 다크모드 */
+    body.dark-mode .additional-document-container {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+
+
+
+.dark-mode-toggle {
+  position: relative;
+  width: 40px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-left: 10px;
+}
+.dark-mode-toggle::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 3px;
+  left: 2px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.3s, background 0.3s;
+}
+body.dark-mode .dark-mode-toggle {
+  background: #4c5662;
+}
+body.dark-mode .dark-mode-toggle::before {
+  transform: translateX(16px);
+  background: #1c1c1c;
+}
+
+
+@media screen and (max-width: 768px) {
+  .page, .document-container {
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .toolbar {
+    flex-wrap: wrap; /*줄바꿈 허용*/
+    gap: 6px;
+  }
+
+  .page p, .page h2, .page h1 {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    word-break: keep-all;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+
+/* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
+.page p,
+.page h1,
+.page h2 {
+  text-align: left;
+  word-break: keep-all;
+  line-height: 1.8;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media print {
+  body.dark-mode {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .page {
+    background-color: white !important;
+    color: black !important;
+  }
+
+  body.dark-mode .toolbar,
+  body.dark-mode .toolbar_title,
+  body.dark-mode .statusbar,
+  body.dark-mode .homepage {
+    background-color: white !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  body.dark-mode .toolbar button,
+  body.dark-mode .toolbar select {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid #999 !important;
+  }
+
+  .no-print { display: none !important; }
+  body {
+    background: white !important;
+  }
+
+  .page {
+    page-break-after: always;
+    page-break-inside: avoid;
+    margin: 0 auto !important;
+    padding: 40px !important;
+    box-shadow: none !important;
+    background: white !important;
+    border: none !important;
+  }
+
+  .toolbar,
+  .statusbar,
+  .dark-mode-toggle,
+  .ruler {
+    display: none !important;
+  }
+
+  .print-footer {
+    display: block !important;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #000;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 1.4;
+    padding: 8px 16px;
+  }
+}
+.print-footer {
+  display: none; /* 웹에선 숨김 */
+}
+</style>
+</head>
+<body>
+<div class="toolbar_title">양효실 – 웃는 여자, 보는 아이, 엮이는 유충들 (2023).hwp</div>
+<div class="toolbar">
+<!--<select class="disabled">
+<option>새문서</option>
+</select>-->
+<select id="docSelect">
+  <option>불러오기</option>
+  <option value="This-Unbelievable-Sleep.html">차연서 온라인 개인전: 이 기막힌 잠</option>
+  <option value="This-Unbelievable-Sleep.html">Cha Yeonså Online Solo Show: This Unbelievable Sleep</option>
+  <option value="Woman-Laughing-Child-Looking-Larvae-Intertwined.html">Hyosil Yang, Woman Laughing, Child-Looking, Larvae Intertwined</option>
+</select>
+
+<select id="fontSizeSelect">
+<option value="14px">10pt</option>
+<option value="15px">11pt</option>
+<option selected="" value="16px">12pt</option>
+<option value="18px">14pt</option>
+</select>
+<button id="printBtn">📄</button>
+<div class="dark-mode-toggle" id="darkModeToggle" title="다크모드 토글"></div>
+</div>
+<div class="ruler"></div>
+<div class="document-container" id="documentContainer">
+<h1>웃는 여자, 보는 아이, 엮이는 유충들</h1>
+<section>
+<p>누가 법-상징의 언어를 훼손할까요? 누가 인간화(humanization)에 모른 채로 저항할까요? 누가 어린 아이의 감각을 거의/겨우 빼앗기지 않은 채 성인의 세계를 건너가는 비인간, 포스트인간일까요? 아이는 역순으로 할머니나 유령을 알아보잖아요. 닮았죠. 꺾어버리고 싶은 마음이 드는 여린 것들, 이란 표현은 쓰다듬어주고 싶은 아이, 란 표현과 같죠. 아이가 앞으로 볼 끔찍한 것들을 못 보게 하려면 아이를 꺾어버리거나 아이는 먼저 온 미래니까 고마워서 만지고 나누고 싶죠. 아이는 예술가나 광인, 아픈 사람처럼 사회적 효용성이 덜한 존재들을 닮았고 또 아이는 그런 사람이 안 될 수도 있으니 사회적 효용성이 있는 이름이기도 하고요. 그러고 보니 아이는 누구에게나 소중하군요.</p>
+<p>이번에 연서의 작업에 대한 짧은 글을 의뢰받은 저는 저번 라이브 퍼포먼스 <모스키토라바쥬스>에 “유충(larva)”으로 초대받아서 페터라니 아글라야의 아이의 수난극을 읽는 강연 퍼포먼스를 찍혔더랬습니다. 연서의 유충 분류법에 따르면 저는 “나이와는 상관없이 영혼의 차원에서 더 어린” 유충이었나봐요. 연서의 대역을 맡은 김금원씨와 듀오로 등장해서 실비아 플라스의 시를 낭독한 연서의 어머니 손나리씨도 그런 유충이었죠. 이 글은 자신이 알아본 유충들을 위한 무대를 만들고 그들에게 합당한 역할을 맡기는 디렉터 연서에게 이미 환대를 받은 자의 글이고, 그래서 비평은 못될 것 같아요. 비평은 어쨌든 공적인 행위이고, 거리를 전제로 쓰이는 글인데, 저는 연서와 너무 가깝고 연결되어 있거든요. 한 방을 작업실로 쓰는 연서네 아파트에서 나와 제 집으로 갈 무렵의 저는 물렁물렁한 벌레, 오물오물한 입, 연성화된 뇌 같았죠. 젖고 감염된.</p>
+<p>연서의 엄마 손나리 연구자는 자신이 전공한 실비아 플라스를 갖고 더 어린 연서와 대화를 했다고 했어요. 너무 약해서 도저히 살아남을 것 같지 않은 딸, 어쩌면 살기를 거의 거부하는 딸과 대화하려고 이 엄마는 불행했다는 여자의 예민하고 폭력적이고 정확한 시를 ‘모어(mother tongue)’로 사용했데요. 연서의 문장은 이제 여러분도 읽게 되겠지만 낯설고 아름다워요. 혹은 분별의 세계를 ‘응시하는’ 비-자아의 시죠. 지난 두 번의 라이브퍼포먼스의 제목이기도 했던 모기에 대해 연서는 “엄청 사적인 상징”, “레즈비언 같은 것”, “누구나 접속할 수 있는 몸”, “퍼포먼스 동작 같은 것”, “공격적이고 집착적인데 엄청 약한 사람들”, “제일 사람을 많이 죽이는 육식자”, “춤”이라고 묘사했어요. 예술가 연서는 자신의 무대를 “갓 태어난 모기들을 불러 모은 자리”로 상상합니다. 그리고 연서의 퍼포머-모기는 “채식주의자”인 수컷모기도 포함했더군요. 연서는 제-자리를 고수하려하는 퀴어도 ‘퀴어링(queering)’할 만큼 상투형들이 무너지는 자리네요. 아이는 이분법-규범을 모른다는 점에서, 분별의 세계를 퀴어링을 통해 몰수해 들인다는 점에서, 자아의 고정성을 뒤흔들 줄 안다는 점에서 소수자, 위반자, 비자아, 뭐 그런 이름과 연동하는 거죠.</p>
+<p>이전 두 번의 라이브 퍼포먼스의 퍼포머들을 섭외하고 한 사람 한 사람 만나는 자리에서 연서는 그들의 트라우마나 성적 취향을 먼저 알아내려고 했다고 했어요. ‘비밀’로 곧장 직진하는 거죠. 곧 멸망인 것처럼, 절망 중에 사는 사람인 것처럼 그렇게 자신의 취약한 패를 보여주고 상대와 연결되는 빠르고 공격적인 방법인거죠. 한 여름의 모기들, 연서는 죽이지 못하기에 “허공에서 뺨을 때릴” 뿐인 이 목숨들 사이에서 곧장 일어나는 유대일 겁니다. 상처 입은 몸, 수치스러운 몸은 그러니 퍼포먼스에 얼마나 적절한 것인지요. 연서의 공연이나 작품은 앞으로도 묻어두었거나 잊었거나 말할 수 없었던 비밀들, 고통들을 꺼낼 수 있는 촉매제로 사용될 겁니다. 저도 그랬어요. 여러분도 그럴 겁니다. “한국인은 내가 아는 한 가장 심하게 트라우마를 겪은 민족에 속한다”고 시인 캐시 박 홍이 얘기하잖아요?</p>
+<p>연서는 올해 초 있었던 김언희 시인의 시 낭독회를 다녀온 뒤 너무나 살고 싶어졌다고 했어요. 언희 언니의 목소리를 떠올리니, 죽지 않고 늙은 언니의 단호한 유쾌함을 떠올리니 왠지 이해할 것 같아요. 연서는 “부적”처럼 시집을 들고 다니면서 읽었다고 했지요. 그리고 이번 전시 제목 《기막힌 잠》은 시 「여느 날, 여느 아침을」에서, 살아있다는 착각, 고통, 분노를 반복하지 않아도 될 어느 아침 ‘시체’가 되어 있을 자신을 ‘보는’ 시에서 갖고 왔다고 해요. 불면이 심한 연서와 언희 언니가 연결되고, 낭창낭창한 시의 리듬으로 죽은 자신을 선매한 언니의 시에 넘쳐흐르는 웃는 구멍의 “헐, 헐, 헐”(「황혼이 질 때면」 중)을 연서는 페이퍼컷 콜라주에서 죽은 벌레들로 필사했어요.</p>
+<p>게임이나 컴퓨터 영상 언어에 젬병인 제게는 이번 전시 중 《축제(festival)》 연작이 좀 읽고 다가갈 수 있는 작업들이네요. 연서는 아빠인 고(故) 차동하 작가의 작업실 유품, 여자친구 상화가 우연히 놓고 간 법의학 책의 차마 볼 수 없는 시신들 — 태반 째로 유기된 아이, 강에 빠진 남자, 굶어 죽은 여자, 강간당한 여자와 같은 — 을 찍은 사진, 위의 “헐, 헐, 헐”, 아빠 작업실에서 매번 마주치는 죽은 벌레들을 소재로 썼어요. 가깝고 좋아하고 피할 수 없는 것들이 사물, 이미지, 시의 목소리, 목숨들로서 연서에게 자기자신을 주장한 것이죠. 연서는 아빠를 “온갖 규칙 속에서 살았던 사람”으로 묘사합니다. 연서는 아빠의 죽음 이후 열린 한 전시회에 작가 차동하의 《축제》 연작에 대한 작가노트를 이렇게 대신 써서 보냈습니다. “인간의 희노애락을 구성하는 화려한 색채로 추상화한 꽃상여로 망자의 마지막 길을 배웅하는, 죽음과 생명의 축제.” 꽃과 상여는 문화적으로 가깝고 색은 죽음을 덮는 환영적-삶의 베일입니다. 연서는 차동하의 꽃상여의 무지개 색을 퀴어 프라이드의 엠블렘으로 전유했습니다. 연서는 규범 안에서 산 아빠, 차동하를 퀴어링함으로써 물렁물렁한 벌레나 유충으로 만들려는 것 같아요. 그리고 법의학서의 사체들, 일반인은 ‘보는’ 게 금지된 망자들의 몸-이미지를 아빠의 닥종이로 필사하는 작업을 진행했죠. 밑그림이나 드로잉 없이 재단사용 가위를 들고 수없는 실패 속에서 마침내 획득한 시각적 형상들, “페이퍼컷콜라주(닥종이에 채색, 차동하)”으로 분류된 《축제》 연작은 연서는 입에 올리지 않았던, 어른들을 위한 용어인 ‘애도’의 방식 같기도 합니다.</p>
+<p>분별의 세계를 구성하는 적대적 자리인 삶과 죽음, 꽃과 시체, 벌레와 인간, 시체와 형상은 자세히 보면 하나입니다. 연서의 아빠와 작가 차동하가 한 사람인 것처럼. 아빠의 알레고리적 꽃 상여를 풀어헤치고, 그곳에 누워 있는 주검들을 응시하는 눈-연서의 무도덕적인 작업은 “살아있는 게 끔찍해서 계속 더 끔찍한 걸 보려고 들여다 본 책”이 곁에 있어서 이기도 했어요. 그러나 모든 것들이 연결되고 둘은 하나라는 것을 아이의 몸으로 체득할 뿐인 연서는 자신이 계속 열어본 책이 사실은 실비아 플라스나 페터라니 아글라야의 문학과 다르지 않다는 걸 발견합니다. 그래서인가 연서는 자신이 오린 주검들, 마침내 자신과 똑같이 ‘눈’을 갖고 자신을 응시한 죽은 몸들을 “친구들”이라고 불러요. 이건 유비를 통해서 접근할 수 없는 지독하고 집요한 응시의 증거라서 저는 필사하는 것 말고는 할 수 있는 게 없어요. 숱한 예술가들의 수난극을 번역하고 소개하고 있는 엄마 손나리씨는 “이렇게 시달릴 바에는 정면으로 돌파해보자”란 우리 연서의 고행을 그저 묵묵히 사랑하는 자로서 지켜보신 듯 하고요.</p>
+<p>연서가 아빠의 “살점”으로 감각한 닥종이에 옮겨 놓은, 실제 사진 이미지와 연서의 어루만짐이 함께 보이는 형상들을 바라봅니다. 연서는 “결과물을 보면 몸들이 다 좀 웃기게 생긴 그림자 속에서 축제를 하고 있는 것처럼 보인다”고 읽었어요. 반복은 차이를 일으키죠. 차이는 ‘원본’의 힘을 빼앗으면서 두 번째에 새로운 힘을 넣죠. 연서의 “축제”는 아빠의 축제와 다르고 이번 축제는 옅은 웃음이기도 합니다. 카니발리즘이건 삶 자체이건, 상여가 나가고 있는 동네 장례식이건, 예술이건, 지금-이-순간이건 축제는 비극 속에 어른거리는 웃음을 포기하지 않는 것이니까요.</p>
+</section>
+<section>
+<p>p.s 그리고 지난 번 퍼포먼스에 이어 이번 전시에도 참여한 홍지영 사진 작가와의 협업 등등에 대한 이야기는 지면상 불가능할 것 같습니다. 다음에 또 봐요.</p>
+</section>
+</div>
+<div class="additional-document-container">
+  <p>
+    <a href="https://energywhoisshe.com/This-Unbelievable-Sleep.html">지난 전시: 차연서 온라인 개인전 《이 기막힌 잠》, 에너지후이쉬게임즈, 2023.6.15 ~ 7.15</a>
+  </p>
+</div>
+<div class="statusbar" id="statusBar">1/5쪽 | 8878글자</div>
+<div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
+<!--<div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html<br>https://energywhoisshe.com/Father-and-Us.html</div>-->
+<script>
+  const fontSizeSelect = document.getElementById("fontSizeSelect");
+  const container = document.getElementById("documentContainer");
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const statusBar = document.getElementById("statusBar");
+
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;
+    container.style.fontSize = newSize;
+  });
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  //스크롤바 - 5페이지 적용
+  function updatePageIndicatorBySection() {
+    const sections = document.querySelectorAll("#documentContainer section");
+    const total = sections.length;
+    const viewportMiddle = window.scrollY + window.innerHeight / 2;
+    let current = 1;
+
+    sections.forEach((sec, i) => {
+      const top = sec.offsetTop;
+      const bottom = top + sec.offsetHeight;
+      if (viewportMiddle >= top && viewportMiddle < bottom) {
+        current = i + 1;
+      }
+    });
+
+    // 스크롤이 거의 맨 아래에 도달했으면 마지막 페이지로 처리
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+      current = total;
+    }
+
+    const text = statusBar.textContent;
+    const charPart = text.includes("|") ? text.split("|")[1].trim() : "";
+    statusBar.textContent = `${current}/${total}쪽${charPart ? " | " + charPart : ""}`;
+  }
+
+  document.addEventListener("scroll", updatePageIndicatorBySection);
+  window.addEventListener("load", updatePageIndicatorBySection);
+
+  //프린트
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+
+  //option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
+  });
+</script>
+</body></html>
