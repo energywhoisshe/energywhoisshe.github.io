@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!D기CTYPE html>
 
-<html lang="en">
+<html lang="ko">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Father and Us: Assemblages of Non-Bodies and “Not-Me”s</title>
-<meta name="description" content="Hyosil Yang, Father and Us: Assemblages of Non-Bodies and “Not-Me”s">
-<meta name="author" content="Hyosil Yang">
+<title>아빠와 우리들, 비-체 또는 나-아닌 것들의 회합</title>
+<meta name="description" content="양효실 - 아빠와 우리들, 비-체 또는 나-아닌 것들의 회합">
+<meta name="author" content="양효실">
 <meta name="keywords" content="Hyosil Yang, Critique, Cha Yeonså, Solo Show, Solo Exhibition, Feed me stones, 양효실, 양효실 비평, 차연서, 차연서 개인전, 살도 뼈도 없는 나에게">
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
@@ -17,7 +17,7 @@
 </script>
 <style>
     * {
-      box-sizing: border-box;
+        box-sizing: border-box;
     }
     body {
       font-family: 'Noto Serif KR', serif;
@@ -42,7 +42,7 @@
       /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
       /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
       /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
-      /*flex-shrink: 1; /* 필요 시, 텍스트가 줄어들도록 설정 */
+      /*flex-shrink: 1; 필요 시, 텍스트가 줄어들도록 설정 */
     }
 
     .toolbar {
@@ -55,7 +55,6 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      max-width: 100%;
     }
 
     .toolbar button, .toolbar select {
@@ -66,6 +65,7 @@
       cursor: pointer;
       font-family: inherit;
       height: 30px;
+      max-width: 100%;
     }
 
     .toolbar button.disabled {
@@ -198,7 +198,7 @@
       color: #e0e3e7;
     }
 
-    body.dark-mode .page {
+    body.dark-mode .page{
       background-color: #37404a;
       color: #e0e3e7;
     }
@@ -219,7 +219,7 @@
       border: 1px solid #777;
     }
 
-    body.dark-mode .homepage a, 
+    body.dark-mode .homepage a,
     body.dark-mode a {
       color: #a7c7ff;
       text-decoration: underline;
@@ -239,6 +239,8 @@
       color: #f0f0f0;
       border-color: #59626e;
     }
+
+
 
 
 .dark-mode-toggle {
@@ -271,19 +273,20 @@ body.dark-mode .dark-mode-toggle::before {
 }
 
 
-  @media screen and (max-width: 768px) {
-    .page, .document-container {
-      padding: 16px;
-      width: 100%;
-      max-width: 100%;
+@media screen and (max-width: 768px) {
+  .page, .document-container {
+    padding: 16px;
+    width: 100%;
+    max-width: 100%;
   }
-    .toolbar {
-      flex-wrap: wrap; /*줄바꿈 허용*/
-      gap: 6px;
+
+  .toolbar {
+    flex-wrap: wrap; /*줄바꿈 허용*/
+    gap: 6px;
   }
 
   .page p, .page h2, .page h1 {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
     word-break: keep-all;
     letter-spacing: 0;
@@ -309,8 +312,6 @@ body.dark-mode .dark-mode-toggle::before {
   font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
-
-
 
 @media print {
   body.dark-mode {
@@ -372,22 +373,23 @@ body.dark-mode .dark-mode-toggle::before {
   }
 }
 .print-footer {
-  display: none;
+  display: none; /* 웹에선 숨김 */
 }
 </style>
 </head>
 <body>
-<div class="toolbar_title">Hyosil Yang, Father and Us: Assemblages of Non-Bodies and “Not-Me”s (2025, Translated by Colin Mouat).docx</div>
+<div class="toolbar_title">양효실 – 아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합 (2025).hwp</div>
 <div class="toolbar">
 <!--<select class="disabled">
 <option>새문서</option>
 </select>-->
 <select id="docSelect">
-<option>Open</option>
-<option value="Feed-me-stones.html">Cha Yeonså Solo Show: Feed me stones</option>
-<option value="Feed-me-stones.html">차연서 개인전: 살도 뼈도 없는 나에게</option>
-<option value="https://energywhoisshe.com/%E1%84%8B%E1%85%A1%E1%84%88%E1%85%A1%E1%84%8B%E1%85%AA-%E1%84%8B%E1%85%AE%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF.html">양효실 - 아빠와 우리들, 비-체 또는 나-아닌 것들의 회합</option>
+  <option>불러오기</option>
+  <option value="Feed-me-stones.html">차연서 개인전: 살도 뼈도 없는 나에게</option>
+  <option value="Feed-me-stones.html">Cha Yeonså Solo Show: Feed me stones</option>
+  <option value="Father-and-Us.html">Hyosil Yang, Father and Us: Assemblages of Non-Bodies and “Not-Me”s</option>
 </select>
+
 <select id="fontSizeSelect">
 <option value="14px">10pt</option>
 <option value="15px">11pt</option>
@@ -399,42 +401,39 @@ body.dark-mode .dark-mode-toggle::before {
 </div>
 <div class="ruler"></div>
 <div class="document-container" id="documentContainer">
-<h1>Father and Us: Assemblages of Non-Bodies and “Not-Me”s</h1>
+<h1>아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합</h1>
 <section>
-<h2>1. The Post-Life of Father/Painter Cha Dongha</h2>
-<p>The last project that the Korean painter Cha Dongha (1966–2021) worked on during his lifetime was entitled Festival (2006–2017). Using acrylic paints, he applied the obangsaek colors—the traditional Korean color spectrum of red, blue, white, black, and yellow—to mulberry paper, before trimming down the color fields to create something resembling monochrome painting. After creating a few works in his Festival series in 2017, he entered a hiatus lasting around four years before his sudden death. Described as being “arranged with a unique sense of balance within grid forms bearing clear monochrome colors,” Cha’s color field/monochrome paintings are elegant, serene, and beautiful. In an interview, the artist said he hoped that his work would help in “consoling and healing people in the suffering we experience in life—offering peace of mind and healing of emotional pain simply through the viewing of an image.” Cha Dongha—who would be roughly the same age as me today—created canvases of colors bearing cultural and regional significance, based on a process in which he applied paints directly to Korean hanji paper to form obangsaek fields and then used a knife to cut them down to suit his desired compositions. His style combined (practically invisible) painting-as-act and the application of acrylic paint to a surface with the (slightly visible) collage technique of layering color fields; the Festival title served as a clue that introduced the cultural context (referent) of the obangsaek colors. The culturally rooted image of the flowering colors becomes a flowered bier or a banner for the funeral cortège that follows. The traditional funeral that I witnessed as a child in my grandmother’s neighborhood was a festival consisting of the family of the deceased; professionals supervising the funeral rites; men bearing a coffin covered in multicolored paper flowers; villagers holding similarly colorful funeral streamers; and endless others following the procession. The individual’s death was signified as part of a ritual for the community/collective to which they belonged. For those who live on, the spectacle of shared grief and mourning contextualizes death as part of the collective/community and as something that can never be merely personal. We live today in a culture from which death has been almost entirely concealed and erased, existing as something unexpected or an object of fear. Yet within the beauty of the symbols of death as mourned by a community and the flowered bier passing through the heart of a village, there is a sense of continuity and collectivity, showing that we will be preserved and carried on even after our passing. Aesthetically structured in a way that avoids direct symbolism or the sense of cultural affiliation, Cha Dongha’s festivals of color fields, like his artistic process, seem to allude to his desire to evoke such relationships, emotions, and promises in a kind of monologue (I’m not sure if the reporter understood his explanation above). Cha Yeonså may not have been fully aware of her father’s work—paintinglike creations that seem almost not to resemble paintings. His death provided her with an opportunity/stage for observing his work as someone who was herself approaching the artistic world through such contemporary media as live performance, games, and cartoons. Cha Yeonså may never have directly witnessed the traditions that the obangsaek mulberry paper works denote/converge upon. Instead, she has experience with a different community of brilliantly colored banners and costumes. In her feather’s “festivals” and traditional Korean spectrum of colors, the younger Cha saw the rainbow hues of queer pride. She shows no interest in a return/identification process in which she learns from and establishes herself within her father’s culture and affiliations. Instead, she has shown her prowess at extracting the adult/male/mainstream/painter from within traditional patriarchal culture and applying them to the culture of the non-mainstream community to which she belongs. She insists that even for her father, there was “definitely a queer aspect to his being a man who used colors.” In that sense, the father Cha Dongha lives on in a different post-life from the context of his painting work. As someone who lives their life carrying, repressing, denying, and recognizing the not-me aspects—the excess—we truly resolve them through the self (me). Cha Dongha’s surviving works faintly referred to and latched onto cultural forms from a tradition that had nearly died away; now, a certain excess—a remainder that both is and is not “me”—is revealed through the parallax perspective of Cha Yeonså as someone who enjoys working in various peripheral/radical genres. What connects the past and present festivals is the use of brilliant colors, creating both similarity and difference as the superficial aspects render unstable the biological relationship between father and daughter. This is both a non-binary/queer person’s form of mourning for their father and a subcultural transformation of traditional/mainstream culture. Cha Yeonså’s re-appropriation and reuse of her father’s work becomes something either inevitable or moral. The time-honored/timeworn forms of death are “refreshed” by an artist who is more urgent and vital. Cha Dongha’s work Festival 09 #3 (2009, 103x180cm), which “clearly used colors representing the rainbow,” appears in the contemporary artist Cha Yeonså’s second solo exhibition as a keepsake, clue, difference, and hostage.</p>
+<h2>1. 아빠-화가 차동하의 포스트-라이프</h2>
+<p>한국화가 고(故) 차동하(1966~2021)가 생전에 마지막으로 진행 중이었던 프로젝트의 이름이  “축제(2006~2017)”다. 그는 ‘한국의 전통색’으로 알려진 오방색(적, 청, 백, 흑, 황)을 아크릴 물감을 이용해서 닥종이에 올리고, 색면들을 잘라 모노크롬 회화처럼 구성한 연작 《축제》의 2017년 작품 몇점을 만들고 4년여의 공백을 갖다가 급작스럽게 사망했다. “단색으로 선명히 채색된 그리드 형태에서 특유의 균형감을 갖고 배치되는” 차동하의 색면화 혹은 ‘단색화’는 우아하고 고요하고 화려하다. 생전 인터뷰에서 차동하는 “우리가 살아가면서 겪는 아픔을 위로하고 치유하는, 단순한 그림을 보면서 마음을 가라앉히고 감정적으로 아픈 부분을 치유받는” 데 자신의 작품이 일조하기를 바란다고 말한다. 나와 비슷한 연배인 차동하는 한지에 직접 물감을 발라 오방색 면을 만들고 원하는 컴포지션에 맞춰 칼로 종이를 자르는 공정을 거쳐 지역적/문화적 의미를 담지한 색들의 화면을 제작했다. 바탕 면에 아크릴 물감을 바르는 행위로서의 회화(거의 안 보이는)와 색면을 배접해서 붙인 ‘콜라주’ 기법(조금 보이는)이 중첩되었고, 제목 “축제”가 오방색의 문화적 맥락(지시체)을 끌어들이는 단서로 배치되었다. 오방색이 만개하는 문화적 장면은 꽃상여나 그 뒤를 따라가는 만장 행렬의 만장기이다. 전통적인 장례식은 어린 내가 외할머니네 동네에서 목격한 바로는 망자의 가족, 장례의 의례를 주관하는 전문가들, 형형색색의 꽃종이로 뒤덮인 관을 짊어진 남자들, 역시 형형색색의 만장기를 든 마을 사람들, 끝도 없이 그 뒤를 따라가는 기타 등등의 사람들이 만들어내는 축제였다. 개인의 죽음이 그가 소속된 집단-공동체의 의례에 맞춰 의미화되고, 공유되는 슬픔과 애도의 스펙타클 덕분에 이후로도 계속 살아갈 사람들에게 죽음은 단지 개인의 것일 수 없는 집단-공동체의 일부로 의미화된다. 오늘날처럼 거의 죽음이 은폐되고 지워진 문화에서 죽음은 예기치 못한 것이거나 두려운 것이지만 공동체가 애도하는 죽음의 상징들, 마을 한 가운데를 지나가는 꽃상여의 ‘아름다움’은 나의 죽음 이후에도 내가 계속 보존-전수될 연속성이나 집단성을 담지한다.  차동하는 직접적 상징성이나 문화적 소속감을 제거한, 미적으로 구조화된 색면들의 축제가 그런 관계들, 서정들, 약속들을 일으키길 원한다고, 혼잣말처럼(저 위의 설명을 기자가 알아들었을지 모르겠다), 작업과 마찬가지로 암시적으로 말한 것 같다. 거의 회화로는 안 보이면서 회화적인 아빠의 작업에 대해서는 잘 알지 못했을 차연서에게, 라이브 퍼포먼스, 게임, 만화와 같은 동시대 매체로 미술계에 진입하고 있었던 연서에게 아빠의 죽음은 차동하의 작업을 응시할 기회-무대를 제공했다. 연서는 아빠가 오방색 닥종이들이 가리키는-수렴하는 전통을 직접 본 적은 없을 것이다. 대신 연서에게는 화려한 색의 깃발과 의상이 난무하는 다른 공동체 경험이 있다. 아빠의 “축제들”에서, 아빠의 오방색에서 연서는 퀴어 프라이드의 무지개색을 읽어냈다. 연서는 아빠의 문화, 소속을 배우는, 그럼으로써 그 안에 안착하는 귀환, 동일시에는 일절 관심을 두지 않은 채 성인-남성-주류-화가를 가부장제 전통문화에서 빼내 자신이 속한 주변주 공동체 문화로 접목하는 데 유능했다. 아빠가 “색을 쓰는 남자라는 건 그에게도 분명 퀴어한 면이 있다”는 연서의 고집을 따라 아빠-차동하는 회화의 맥락에서와 다르게 포스트-라이프를 살아갈 것이다. 누구나 자기가 아닌 부분(not-me), 과잉을 품고/억압하고/부정하며 살고 그것을 알아보는 이가 그를 나(me)로부터 풀어내고 진짜로 해소해 줄 것이다. 거의 사멸된 전통의 문화 형식을 흐릿하게 가리키는, 그 형식의 흔적을 붙들었던 차동하의 유작은 이제 온갖 주변부적/급진적 장르들을 섭렵하며 즐기는 연서의 시차적 관점을 통해 어떤 과잉, 자신이면서 자신이 아닌 나머지를 드러낼 것이다. 그때의 축제와 지금의 축제를 잇는 것은 화려한 색채이고, 그런 표피성이 생물학적 부녀 관계를 불안정하게 만드는 방식으로 차이와 유사성을 만들어낼 것이다. 이것은 논바이너리 퀴어의 아빠에 대한 애도이고, 전통-주류문화의 하위문화적 변형이다. 연서의 차동하 작업에 대한 재전유-재활용은 필연적이거나 윤리적인 것이 된다. 더 긴급하고 더 생생한 작가에 의해 오래된-낡은 죽음의 형식들이 “싱싱해진다”. “명백히 무지개를 대표하는 색을 쓴 작품”인 차동하의 작품 〈축제Festival 09 #3, 2009, 103x180cm〉는 동시대 작가 차연서의 두 번의 개인전에 유품이자 단서이자 차이이자 볼모로 들어와 있게 된다.</p>
 </section>
 <section>
-<h2>2. Photographic Bodies in a Forensic Medicine Text and “Paper Cut Collage” as Technique</h2>
-<p>The starting point for Cha Yeonså’s work in which she used scissors to cut up her father’s “rainbow-colored” paper and “materials as things in between objects and artwork” came when she read through a forensic medicine text left behind by a girlfriend who has “studied emergency medicine and had a lot of experience removing dead bodies from a period working for the 119 [emergency] service.” A great many sheets of paper had been left behind in the studio. (How strenuous a process could it have been to arrange the paper on the canvas that Cha Dongha found it so difficult to move on the next stage after that long period of hesitation prior to beginning his work? In that sense it must have been a truly difficult execution!) There were stacks of mulberry sheets in different colors, and Cha Yeonså debated what to do with them—how to “consume” them. For her to shift the strict adult/male/artist to the periphery—the one who had used his ruler and knife to cut up the paper and create geometric structures—she would need to begin/intervene from the opposite side. Because of her astonishing/disjunctive skill with applying fabric scissors to paper for the first time in her life, her trimming of the mulberry sheets took place in a state where any intervention of the head/hand was nearly impossible. As a hostage/tool of the scissors, the younger Cha had an amateurish/random technique and excitement that ran counter to the normalcy/inertia of a father who had based his work on calculation and contemplation. The technique of “paper cut collage” was shared by both father and daughter, but there was also a large difference in that the former used a knife, while the latter cuts with scissors. The difference was quite large indeed: the obangsaek colors outside the coffin, covering a “meaningless” body with symbols of community and the afterlife, and the non-bodies that the community rejects: the pornographic objects used by doctors to identify the “cause” and things that are meaninglessness itself, unbearable to the untrained eye. The father painted the veil; the daughter actually ventured straight inside. Cha Yeonså writes that she “looked inside the book because being alive was so terrible, and I wanted to see more terrible things.” The natural outcome (price) came as she began applying her scissor skills to mulberry paper for the first time in 2023. The state of being conscious with paralyzed limbs—of having the consciousness separated from the body—ate away at a young, frail body that had seen what should not be seen. This was the price exacted—and, as she must have realized later, the gift granted—for passing the threshold and sharing the use of a studio that had also been a small room in their home, along with objects whose names, reasons for being, and affiliations had faded away. What Cha Yeonså received was a dead woman who had been assaulted and raped, with a comb thrust into her genitals; a fully matured, stillborn child discarded in a trash bin; pieces of flesh with all representational aspects stripped away; hands and feet without wrists or ankles. What the self saw became something that confronted, swept over, and ate away at the self. Off in the study, mother Sohn Nari turned a blind eye, as the house was left clammy with ghosts, phantoms, resentments, and sorrows that coexisted with all-too-clear scenes/memories of a father’s absence. This was the artistic style and survival tactic of a girl/body withstanding the awful fact that life went on even after the terror and grief of her father’s death—yet unable to follow or rely upon the social rituals for withstanding that. Cha Yeonså rejected compliance with the binaries of adult society, with its demands to restore day-to-day life in the wake of tragedy. She heightened tragedy into tragedy, into an ordeal and persecution of self-imposed suffering. This may explain why the solo exhibition This Unbelievable Sleep—which Cha was set to hold after being selected for OCI Young Creatives in 2023—never came to pass, due to a set of complex circumstances. When she created her collage works in 2023, they drifted placelessly and more or less namelessly, as she adopted the same system that her father had used to title his series with names such as Festival 23 #1.</p>
+<h2>2. 법의학서의 그 사진들의 몸들, 그리고 기법으로서의 페이퍼컷 콜라주</h2>
+<p>“응급구조학을 공부했고 한동안 119에서 일하면서 망자를 수습한 경험이 많은” 여자 친구가 우연히 놓고 간 법의학서를 펼쳐본 것이 아빠의 “무지개색” 종이들, 또는 “물건과 작업 사이의 존재인 재료”를 가위로 오리는 작업의 시작이었다. 작업실에 남겨진 종이가 제법 되었고(그는 작업을 위한 전단계에서 계속 망설이고 머뭇거린 듯하다, 종이를 화면에 배치하는 일-공정이 그게 얼마나 ‘힘든’ 일이길래 전-단계에서 다음 단계로 넘어가지 못했던 것일까? 그러니까 그건 정말 ‘힘든’ 수행이었던 것일게다!) 채색된 닥종이들이 제법 쌓여 있었고, 그걸로 무엇을 해야 하는지, 어떻게 소비해야 하는 지를 놓고 연서는 고심했다. 종이를 자를 대고 칼로 오려서 기하학적 구조를 만드는 엄정한 성인-남성-작가를 주변부로 옮겨놓으려면, ‘다른’ 쪽에서 시작-개입해야 한다. 연서는 처음 손에 거머쥔 재단용 가위가 종이를 다루는 놀라운/이접적인 솜씨 때문에 머리-손의 개입이 거의 불가능한 상태에서 닥종이를 오렸다. 계산하고 생각하면서 작업한 아빠의 정상성-권태(inertia)를 가위의 볼모-수단이 된 연서의 아마추어적-무작위적 기법-흥분이 위반한다. ‘페이퍼컷콜라주’는 아빠와 연서의 같은 기법이지만 아빠는 칼로 연서는 가위로 자른다는 큰 차이가 있다. ‘무의미한’ 시체를 온갖 공동체적-이승의 의미로 덮어버린 관 바깥의 오방색과 공동체가 수신을 거부한, 비-체들, 고작 의사들이 ‘그 원인’을 찾는 데 구실로 사용되는 포르노적 대상들, 훈련되지 않은 눈은 견딜 수 없을 무의미 그 자체인 사물들의 차이이니 어마어마한 차이이다. 아빠는 베일을 그렸고 연서는 실재로 직진했다. 연서는 “살아있는 게 너무 끔찍해서 계속 더 끔찍한 걸 보려고 들여다 본 책”이라고 적었다. 당연히/그 대가로 2023년 처음 닥종이를 노련한 가위로 오리기 시작하면서 가위눌림이 시작되었다. 사지가 마비된 채 의식은 살아있는, 몸과 의식이 분리되는 상태가 봐서는 안 되는 것을 본 약하고 어린 몸을 잠식했다. 문지방을 넘어가고, 이름도 이유도 소속도 사라진 사물들과 집안의 작은 방이기도 했던 작업실을 함께 쓴 데 대한 댓가이고 나중에서야 알게 되었을 선물이다. 성기에 세빗이 꽂힌 채 폭행-강간당하고 죽은 여자, 산달이 다 되어서 사산되고 쓰레기통에 버려진 아이, 아예 재현성이 사라진 살덩이, 손목이나 발목이 없는 손이나 발 같은 것을 연서는 수신했다. 내가 보는 것을 그것이 나를 응시하며 휩쓸어/먹어 버린 꼴이다. 저쪽(방-연구실)의 엄마 손나리는 묵인/모른 채했고, 집에는 너무나 선명한 아빠의 부재의 장면들/기억들과 현재하는 귀신들, 유령들, 원한들, 슬픔들이 흥건했다. 아빠의 죽음이라는 공포/슬픔(이후)에도 삶이 계속된다는 그 끔찍함을 견디는, 아니 그 끔찍함을 견디는 사회적 의례를 따를 수도 의지할 수도 없는 여자아이-몸의 생존법, 작업 스타일이다. 연서는 비극 이후에 회복되어야 할 일상이라는 성인 사회의 이분법을 따르기를 거부했고, 비극을 비극으로, 고통을 자처한 수난으로, 박해로 더 극화시켰다. 그래서였는지 OCI YOUNG CREATIVES(2023)에 선정되어 개최하기로 한 개인전 《이 기막힌 잠》이 복잡한 정황으로 인해 열리지 못했고 2023년에 만든 콜라주 작품들은 차동하의 연작의 명명하기를 따라 〈축제Festival 23 #1〉과 같은 방식으로 거의 무명(unnamed)이 이름인 채로 장소 없이 유랑했다.</p>
 </section>
 <section>
-<h2>3. “Their Names” and Post-Life</h2>
-<p>The names of the works in the Festival series began appearing over the course of the group exhibition Motel, the Art Sonje Center group exhibition Tongue of Rain, and this latest exhibition entitled Feed me stones. The title Bouquet was given to the first work from the series in 2023, which shows a cut-out image of a stillborn, fully matured child. Dildo was assigned as a title to work #3-1 from 2023, showing only the lower body of a dead woman found with a comb inserted inside her. Mandarava was given to work #10, showing the lower body of a dead woman with her legs spread wide. Cha Yeonså’s series Festival (2023–2024) represents a collaboration between her racing scissors and her own right hand, which acts as a kind of level controlling them; the stories placed after that title represent the horrors, hardships, and persecutions that the artist has brought center stage, but the relationships between the results and the names that she has assigned as a creator invoke the presence of a child. Through her cutting, aspects of violence as representation and the tactile qualities of “damp flesh” are stripped away almost completely, leaving something dominated by the sense of play and of “seeming like.” The stillborn child’s body with the placenta attached resembles a bouquet held by a child; indeed, that is the English title that has been assigned to the work. Cha’s perspective shifts toward flowers and things that begin to look like flowers—toward a certain beauty or brightness that overshadows the tragedy and “non-bodyness.” In the case of the murdered woman found with a comb inserted inside her, the object is replaced outright with a dildo—an object used for sexual gratification. The dead woman with her legs spread is given the name Mandarava, based on the redness of the color field created with mulberry paper. In Sanskrit, this word refers to the flower of heaven or to the devil’s trumpet; in Hinduism, it refers to a guru/deity. As a metonym for the color red, Mandarava loses its cultural associations and stability through its coupling with different signifiers; it becomes at once lighter, more connected, and more distant.</p>
-<p>Lingering in a coffinlike room; withstanding bodies with uncovered coffins and deaths of unclear causes (the hassles of the adult/male world); listening to their stories of grief and anger, and thereby ex-isting as a “not-me”—the underdeveloped child completes all these acts like homework lessons. Looking once again, she confronts the deaths and stories she has translated to paper. “When I looked at the results,” Chai said, “the bodies all seemed to be performing a festival in funny-looking shadows.” No longer objects from a forensic medicine text, they have gained shadows and engage in festivities, and thus they need a definite name. The difference/uniqueness of Cha Yeonså appears through the force of the shears within the disjunctive relationship with paper, having established a proficiency for improvisation and elusiveness; through the “freshness” of forms that gain new lives through “mulberry paper like patches of my father’s flesh”; and through a realm of persecution where there exists no other reason besides love. If a child that has been stillborn and abandoned is a bouquet, if the comb inserted in the genitals of a murdered woman is a dildo, and if another dead woman with her legs spread is a Mandarava, then tragedy can be said to harbor a humor, brightness, and power that is not reducible to tragedy. This may be described as the complexity, hybridity, and lightness of the world, which we bear witness to through the mediating presence of Cha Yeonså—an artist who is neither a shaman, strictly speaking, nor fully a child. Having first received Mandarava, a work intended as a text value or as an abundant gift, I observed it at home and thought that this woman, so tattered that she appeared as thin and light as a piece of paper, seemed to be masturbating. So what was responsible for making this slain body appear to be pleasuring itself—the artist Cha Yeonså, the scissors, or the situation? Seeing the words of the creator that appear before me, stating that this woman as a “flower with thick hair” is rubbing heartily at her clitoris, I sense that this is true for all the weights of the world. As a result, the image at once resembles religious art, erotica, sculpture, and a deadpan joke. The house is “lifted” by the red joke/play/laughter. Laughter is a spasm of the remaining body that has been fully through the tragedy, surviving while remaining faithful to the tragedy script. Laughter is the haze or dust that arises in the absurd situation of confronting of the self-evidentness of what is given. If beautiful things are fated to be found out as horrible, then the place where horrible things are found to be humorous is the threshold to life. Cha Yeonså has been through that hardship and persecution.</p>
+<h2>3. 얘네들의 이름들, 포스트-라이프</h2>
+<p>그룹전 《모텔전》, 아트선재 그룹전 《혀 달린 비》, 이번 개인전 《살도 뼈도 없는 나에게》를 거치면서 축제 연작의 작품들에 이름이 생겼다. 2023년의 연작에서 번호 1번이었던, 산달이 다되어 사산된 아이를 오린 작품은 〈꽃다발을 든 아이Bouquet〉로, 세빗이 꽂힌 채로 발견된 죽은 여자의 하체만 오린 2023년의 3-1번은 〈세빗 딜도Dildo〉로, 가랑이를 벌린 채 ‘죽은 여자의 하체’를 오린 연작 10번(#10)엔 〈맨드라미Mandarava〉란 이름이 붙여졌다. 가위의 질주와 그것을 제어하는 레버 같은 연서의 오른손의 협업인 연작 《축제Festival 2023~2024》의 뒤에 놓인 이야기는 연서가 무대에 올린 끔찍함과 수난과 박해에 대한 것이지만 결과물과 결과물에 일종의 창조자로서 이름을 수여한 연서의 관계는 다시 아이를 호출한다. 오려놓고 보니 재현성으로서의 폭력, “축축한 살덩이”의 촉각은 거의 탈각되고 대신에 “~처럼 보이기”의 유희가 압도한다. 사산된 아이의 몸과 연결된 태반은 아이가 들고 있는 꽃다발로 보이고, 심지어 작품의 ‘제목’/고정점은 영어 이름에 따르면 “부케(꽃다발)”이다. 연서의 시선은 꽃, 꽃처럼 보이기 시작한 것, 비극성이나 비체성을 덮는 아름다움이나 어떤 명랑을 말하는 쪽으로 넘어간다. 빗이 꽂힌 채 발견된 살해당한 여자에 대한 것은 아예 세빗이 딜도인, 성적 쾌락의 보조도구인 딜도로 바뀌어 있다. 가랑이를 벌린 죽은 여자에게는 색면이 담지한 붉음을 통해 맨드라미란 이름이 붙여졌다. 붉은 색 닥종이를 갖고 만든 이 “맨드라미”의 영어는 Mandarava이고, 이것은 범어로 천상의 꽃인 만다라화(曼茶羅華), 혹은 식물로는 흰독말풀을, 힌두교에서는 구루-신을 가리키는 이름이다. 붉음의 환유적 기표로서의 맨드라미는 다른 기표들과 연접하며 문화적 소속, 안정성을 잃는다. 더 가벼워지고 더 연결되고 더 멀리 간다.</p>
+<p>관 속 같은 방에 머무르면서, 관도 덮어주지 않으려는 주검들-원인불명의 죽음들(성인-남성 세계의 골칫거리들)을 견디면서, 그들의 슬픔과 분노를 들어주면서, 그래서 나-아님(not-me)으로 탈존하면서, 이 모든 것을 덜-발달된 아이가 숙제처럼 마침내 다 끝내고 그 다음에 다시 보았더니, 자신이 종이로 번역한 죽음들, 이야기들을 응시하니, 연서의 말에 의하면 “결과물을 보면 몸들이 다 좀 웃기게 생긴 그림자 속에서 축제를 하고 있는 것처럼 보였다.” 법의학서의 사물들이 아닌 이것들, 그림자를 얻고 축제를 하는 이것들에게는 그러므로 엄연한 이름이 필요하다. 즉흥과 탈주에 능하게 된, 종이와의 이접적 관계에서 역시 시달린 재단용 가위의 강도이고, “아빠의 살점 같은 닥종이”로 새 삶을 얻은 형상들의 “싱싱함”이고, 오직 사랑하는 것 외엔 다른 이유가 없는 그런 박해의 자리로서의 연서의 차이-특이성이다. 죽어서 태어나고 버림받은 아이가 꽃다발이고, 성기에 세빗이 꽂힌 채 죽임당한 여자의 하체가 딜도이고 역시 양다리를 벌린 채 죽은 여자가 맨드라미라면, 비극 속에 비극으로 다 환원되지 않는 웃김, 환함, 강렬함이 있다는 것인 게고, 그게 정확히 샤먼은 아닌, 완전히 아이는 아닌 예술가 연서를 매개로 우리가 목격하는 이 세상의 복잡성, 혼종성, 가벼움일지 모른다. 글값으로, 혹은 넘치는 선물로 받기로한 작품 〈맨드라미〉를 먼저 받고 집에서 가만히 들여다보니 이 여자-너덜너덜하니 종잇장처럼 얇고 가벼운 여자는 아무래도 자위를 하고 있는 것으로 보인다. 죽임을 당한 몸을 자위를 하는, 즐기고 있는 몸으로 만든 것은 연서일까, 가위일까, 상황일까? 내 앞에서 창작자 연서의 말로는 “두툼하게 털난 꽃”인 이 여자-꽃이 클리인지를 호방하게 문지르는 걸 보고 있자니, 세상 모든 무게가 다 참 그렇다. 결국 이 그림은 종교화 같고 에로티카 같고 조각 같고 진지한 농담 같다. 이 집이 붉은 색 농담-유희-웃음으로 조금 “들뜬다lifted”. 웃음은 비극을 온전히 횡단한, 비극의 스크립트에 충실한 채 살아남은 나머지-육체의 경련이다. 웃음은 주어진 것들의 자명성을 응시하는 허랑한 자리에서 피어오르는 아지랑이, 먼지이다. 아름다운 것이 결국 끔찍한 것으로 밝각된다면 끔찍한 것이 결국 웃긴 것으로 발각되는 곳이 삶의 문지방인 거다. 연서는 오롯이 그 시련, 박해를 통과했다.</p>
 </section>
 <section>
-<h2>4. Low Pressure Sodium Lamps and Monochrome Painting</h2>
-<p>The term “monochromatic light” refers to devices such as low pressure sodium lamps that are applied to limited uses in outdoor environments such as highways, tunnels, low-visibility roads, refrigerators, and other settings where difficulties distinguishing colors make the use of ordinary lighting unsuitable and where color rendering (a property of light sources that make the colors of an object appear distinct, with index values closer to 100 indicating lights that are most similar to natural or solar light) is not an issue. Room for One Colour, a 1998 monochrome light installation work by Olafur Eliasson (with a target color in between yellow and orange), overwhelmed the colors of the viewers’ clothing and shoes, which might have appeared “natural” from outside. This experience with an interior where only the yellow/orange spectrum remained was described by a critic who wrote, “The central element is the realization that the external reality is conditioned in large part by our perceptions of it. Through our understanding that vision is not inherently objective, we are able to see ourselves and the outside world through different colors/perspectives.” Cha Yeonså has explained that she became aware of Eliasson’s strategy while preparing for this solo exhibition at SAPY.</p>
-<p>Cha has introduced monochrome light to the gallery to mitigate a situation that she experienced when all the different emotions she experienced as she began her own Festival series in 2023—as a relay continuation of and intervention in her father’s series of the same name—disappeared in the next year, leaving only the practical functions and technique. (A major part of this had to do with her adoption of an exceedingly vulnerable dog named “Teto,” who could barely see or hear.) The artist had undermined normative prestige with her misreading of the obangsaek spectrum as a “rainbow,” and in her exhibition venue, those colors vanished performatively, losing all of their cultural force. Cha also made use of Olafur Eliasson’s monochrome light as a convenient means of “connecting myself with the dead bodies/phantoms/them.” In a gray room designed more for a performance than an exhibition, her “they” are exhibited sprawling over the floor. Like coffins, like “small, tender things” that one might easily fold, the works lie on mirror film that is modeled on reflective water, causing the ground to shimmer and reflect the viewer. The images are so blurry and blackened that one has to approach very closely to see what they have been cut out of, while the original color of the “material” is completely unknowable. The gallery installation creating something resembling an underwater environment is based on a pond outside Cha Dongha’s studio in Namyangju. Cha Yeonså has described the sense of feeling persecuted in her father’s studio—shunned there by the items collected by him during his lifetime, the lovingly cultivated trees and the insects that had grown up there. (Hearing and seeing to excess represents both a hardship and a gift of the younger Cha.) She also mentions having reconciled with the trees during a three-day stay to record sounds in her father’s garden with the exhibition’s sound designer and sound director Lee Solyoub. Explaining that Lee’s “spiritual clarity” was a source of great help, she has said that staying the night there evoked a sense of beauty that was the polar opposite of the setting’s aggressiveness. (Perhaps a setting where one can commune with ghosts, phantoms, trees, and the frogs in the pond is itself a queer, tender, vulnerable, open, and loving environment.)</p>
-<p>A suryukjae performed by the Buddhist monk Donghwan—a “religious ritual of reciting the Buddha’s dharma and offering food to comfort and appease spirits and hungry ghosts roaming the waters and land”—is followed by Lee Solyoub’s mastering of the song “Ongdalsaem” and a monochrome video showing Cha Dongha’s garden and pond. At this point, I grinned broadly. Here was a long-forgotten children’s song, an image of a deep valley pond providing a home to frogs—the places associated with the dead father, now presented as non-human/living things welcoming Cha Yeonså. The gallery was arranged/structured to resemble the inside of a pond, and while the artworks (and their associated stories) may be situated inside of that, so are we. Through the monochrome light-based stage installation, all the different presences invited into the exhibition “become gradually brighter through other means besides color—soaked, lifted, peeled.” Immersed in water and summoned like spirits, we begin to “peel” like loosely pasted paper. “We” disappear, entering a pseudo-experience of something more akin to the afterlife or a strange form of life. Donghwan conducts a ritual to bring an end to Cha Yeonså’s “festival,” to her persecution, her odyssey. This somber ritual of deliverance brings the artist to her next work, soothing her “them” and the non-human beings that exist under many other names. It operates as the work of scrubber-performers who cleanse grime that has been swollen with water. At the same time, these are words that can only be spoken by Cha as the one who has lived through all these experiences; the “unattended spirituals” and “festivals” are not mere recipients of the artist’s beneficence and care. She knows all the things that they have done for her. The same idea is expressed by Johanna Hedva as someone who has lived with all manner of illnesses and ailments: the idea that in caring for those who are suffering and weak, giving and receiving are one and the same. In the same way, Cha Yeonså shares how she has “learned that nightmares and sleep paralysis demons can sometimes be very welcome things.”</p>
-<p>Nothing in this world lives/appears with just one aspect or face. Things are the most beautiful because they are the ugliest, the most adept at welcoming us because they are the most aggressive, and the brightest because they represent the deepest darkness. We await the next work received/assumed by the vulnerability of Cha Yeonså(‘s body) as she alternates between the two extremes.</p>
+<h2>4. 단색광(Low Pressure Sodium Lamp)과 단색화</h2>
+<p>단색광은 색의 식별이 불가능해 일반 조명으로는 부적합하고 연색성(colorrendering: 물체의 색을 다르게 보이게 하는 조명광원의 성질, 연색지수가 100에 가까울수록 태양광-자연광과 가장 유사한 색-빛을 낸다)이 문제되지 않는 도로, 터널, 시계가 낮은 도로의 유도등, 냉동창고 등의 옥외 조명에 한정적으로 사용되는 저압나트륨등을 가리키는 말이다. 올라퍼 엘리아슨은 노랑과 주황 사이 어딘가를 겨냥한 단색광 설치작 〈Room For One Colour(1998)〉로 가령 바깥에서는 ‘자연스러운’ 것으로 보였던 관객들의 옷, 신발 등의 색을 압수해 들였고, 노랑이나 주황의 스펙트럼만 남은 실내에 대한 경험을 통해 한 비평가에 의하면 “외부 현실은 그것에 대한 우리의 지각에 의해 상당히 많은 부분 조건지어진다는 것을 깨닫는 것이 핵심이다. 시각은 그 자체 객관적이지 않다는 깨달음이 있음으로써 우리는 우리 자신과 바깥 세계를 다른 빛/시각을 통해 볼 수 있게 된다.” 연서는 청년 예술청(SAPY)에서 열린 이번 개인전을  준비하는 기간에 엘리아슨의 전략을 알게 되었다고 했다.</p>
+<p>2023년 아빠의 연작 《축제》의 릴레이이자 개입인 자신의 연작 《축제》를 시작할 때 겪은 온갖 정동들이 해가 바뀌면서 사라지고(눈은 거의 안 보이고 귀는 거의 안 들리는, 취약성에서 최강인 개 ‘테도’를 입양한 게 큰 역할을 했다) 마치 “실기”처럼 기능-기술만 남은 상태를 해소하고자 연서는 단색광을 전시장의 조명으로 끌어들였다. 오방색을 무지개색으로 오독하며 규범적 권위를 훼손한 연서의 전시장에서 오방색은 아예 문화적 힘을 잃고 수행적으로 사라졌다. 또 연서는 올라퍼 엘리아슨의 단색광을 “자신과 시체들-유령들-얘네들과의 접속”의 방편으로 차용했다. 전시보다는 공연에 특화된 그레이룸에서 연서의 “얘네들”은 바닥에 눕혀져 전시되었다. 반사되는 물을 참조한 바닥의 반짝이며 우리를 반영(reflection)으로 만들어버리는 미러 필름 위에 관처럼, 굽어보아도 될 ‘어리고 작은 것’처럼 작품들이 누워있었다. 무엇을 오린 것인지 알아내려면 가까이 다가가야 할 만큼 흐리고 검어져 있어서, ‘재료’로서의 원색은 정녕 알 수 없는 상태였다. 물 속과 비슷한 환경을 조성한 전시장 설치의 원본은 아빠의 남양주 작업실의 연못이다. 연서는 아빠의 작업실에서도 역시 자신이 박해받는다는, 아빠가 수집한 유물들, 정성스레 키운 나무들, 자라난 벌레들이 자신을 냉대한다는 느낌을 받았다고 했다(과잉의 듣기와 보기가 연서의 수난이고 재능이다). 전시의 사운드 디자이너이자 음향감독인 이솔엽과 아빠의 정원-바깥의 소리를 녹음하는 3일간의 체류 중에 나무들과는 화해를 했다고 한다. “영적으로 맑은 솔엽”의 도움이 컸다고도 하고, 그곳에서 날 밤을 새다보니 그곳의 공격성의 반대편인 아름다움도 왔다고 했다(귀신들, 유령들, 나무들, 연못의 개구리와 접속하는/할 수 있는 자리는 그 자체 퀴어한-어린-약한-열려있는-사랑하는 자리인 것이겠지?)</p>
+<p>동환스님의 수륙재(水陸齋), “물과 육지를 헤매는 영혼과 아귀(餓鬼)를 달래고 위로하기 위해 불법을 강설하고 음식을 베푸는 종교 의례” 이후에 솔엽이 마스터링해서 틀어준 “옹달샘”과 아빠의 정원-연못을 찍은 무채색 영상이 함께 등장할 때 나는 맑아진 사람으로 빙그레 웃었다. 오래 잊었던 동요였고 개구리가 사는 깊은 계곡 연못이 나왔고 죽은 아빠의 ‘현장’이었고 이제는 연서를 환대하는 비인간-살아있는 것들의 장소였다. 전시장은 연못 속처럼 설치/구조화되었고, 단지 작품들(과 그것의 이야기)만이 아닌 우리도 그 안에 있는 것이다. 단색광 기반의 무대 설치 덕분에 “전시에 초대된 모든 존재는 서서히 색이 아닌 다른 방식으로 선명해지고―잠기고soaked, 들리고lifted, 들뜨기peeled 시작한다.” 우리는 물에 잠기고 유령처럼 들리고 종이풀로 대충 붙여진 종이처럼 들뜨기 시작한다. 여기서 우리는 없어지고 이후의 삶이나 이상한 삶이나 가까운 삶을 유사-체험한다. 동환 스님은 어쨌든 연서의 “축제”, 연서의 박해, 연서의 유랑-오디세이의 “끝”을 위한 의례를 진행했다. 엄숙한 “천도재”가 연서를 다음 작업으로, 연서의 “얘네들”과 기타 많은 이름의 비인간들을 달래주고, 물에서 불은 때를 씻겨주는 “세신사”-퍼포머들의 작업으로 작동한다. 동시에 경험을 다 살아낸 연서만이 할 수 있는 말일 텐데, “무연고의 영가들”, “축제들”은 단지 연서의 베품, 돌봄을 받기만 한 게 아니다. 연서는 그들이 자신에게 해 준 것들을 다 안다. 아픈/약한 당사자들의 돌봄에서는 주기와 받기가 같은 것이라는, 온갖 질병-질환을 달고 사는 요하나 헤드바도 같은 이야기를 하는데, 연서도 “악몽이나 가위눌림이 엄청 반가운 걸 수도 있다는 걸 알게 되었다”고 들려준다.</p>
+<p>세상 어떤 것도 한 면만, 한 얼굴만 하고 살지/나타나지 않는다. 그것은 가장 끔찍한 것이기에 가장 아름답고, 가장 공격적인 것이기에 나를 환대하는 데 가장 유능하고 가장 깊고 어둡기에 가장 환하게 밝힌다. 그런 양극성 사이를 오가는 연서(의 몸)의 취약성이 수신하는/책임지는 다음 작업을 우리는 또 기다릴 것이다.</p>
 </section>
 <section>
-<p>Postscript: I decided that I would/could not comment this time on the scattered works of poetry found throughout the gallery by Kim Eonhee, someone whom Cha Yeonså often quotes. I felt I should not address the world of adult/female/monsters because it was not so much a pond as a mire. For this text, I would be joining Cha in experiencing only the world of the girl and “kappa” (cited by the artist as the character she most resembles).</p>
+<p>p.s 연서가 줄곧 인용하는 시인 김언희의 시, 전시 곳곳에 흩어져 있는 시들에 대해서는 이번에는 말을 안/못 하기로. 그곳은 연못이 아니라 ‘늪’이기에, 성인-여자-괴물의 세계는 안 건드리기로. 이번에는 여자애-“갓파”(연서가 자신과 가장 닮은 캐릭터로 인용한)의 세계만 연서와 함께 겪어내기로.</p>
 </section>
 </div>
 <div class="additional-document-container">
   <p>
-    Written by Hyosil Yang at the request of Cha Yeonså, Feb 2025
-    Translated by Colin Mouat, with support from Doosan Art Center, Apr 2025
-
-    <a href="https://energywhoisshe.com/Feed-me-stones.html">Past Exhibition: Cha Yeonså Solo Show "Feed me stones", SAPY Gray Room, September 3–13, 2024</a>
+    <a href="https://energywhoisshe.com/Feed-me-stones.html">지난 전시: 차연서 개인전 《살도 뼈도 없는 나에게》, SAPY 그레이룸, 2024.9.3 ~ 9.13</a>
   </p>
 </div>
-<div class="statusbar" id="statusBar">1/8 pages | Words: 3486</div>
+<div class="statusbar" id="statusBar">1/5쪽 | 8878글자</div>
 <div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
-<div class="print-footer">https://energywhoisshe.com/Father-and-Us.html</div>
+<div class="print-footer">https://energywhoisshe.com/아빠와-우리들.html<br>https://energywhoisshe.com/Father-and-Us.html</div>
 <script>
   const fontSizeSelect = document.getElementById("fontSizeSelect");
   const container = document.getElementById("documentContainer");
@@ -450,42 +449,40 @@ body.dark-mode .dark-mode-toggle::before {
     document.body.classList.toggle("dark-mode");
   });
 
-//스크롤바 - 8페이지 기준
-document.addEventListener("DOMContentLoaded", () => {
-  const statusBar = document.getElementById("statusBar");
-  const paragraphs = Array.from(document.querySelectorAll("#documentContainer p")).slice(0, 8);
-  const total = 8;
-
-  function updateStatus() {
+  //스크롤바 - 5페이지 적용
+  function updatePageIndicatorBySection() {
+    const sections = document.querySelectorAll("#documentContainer section");
+    const total = sections.length;
+    const viewportMiddle = window.scrollY + window.innerHeight / 2;
     let current = 1;
-    const scrollPosition = window.scrollY + window.innerHeight / 2;
 
-    paragraphs.forEach((p, index) => {
-      const rect = p.getBoundingClientRect();
-      const offsetTop = window.scrollY + rect.top;
-      const offsetBottom = offsetTop + rect.height;
-      if (scrollPosition >= offsetTop && scrollPosition < offsetBottom) {
-        current = index + 1;
+    sections.forEach((sec, i) => {
+      const top = sec.offsetTop;
+      const bottom = top + sec.offsetHeight;
+      if (viewportMiddle >= top && viewportMiddle < bottom) {
+        current = i + 1;
       }
     });
 
+    // 스크롤이 거의 맨 아래에 도달했으면 마지막 페이지로 처리
     if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
       current = total;
     }
 
-    statusBar.textContent = `${current}/${total} pages | Words: 3486`;
+    const text = statusBar.textContent;
+    const charPart = text.includes("|") ? text.split("|")[1].trim() : "";
+    statusBar.textContent = `${current}/${total}쪽${charPart ? " | " + charPart : ""}`;
   }
 
-  document.addEventListener("scroll", updateStatus);
-  window.addEventListener("load", updateStatus);
-});
+  document.addEventListener("scroll", updatePageIndicatorBySection);
+  window.addEventListener("load", updatePageIndicatorBySection);
 
-//프린트
+  //프린트
   document.getElementById("printBtn").addEventListener("click", () => {
     window.print();
-});
+  });
 
-//option-select-새로운 페이지
+  //option-select-새로운 페이지
   const docSelect = document.getElementById("docSelect");
 
   docSelect.addEventListener("change", function () {
