@@ -344,34 +344,78 @@ Energywhoisshe.com
 
 <!-- Open 드롭다운: 페이지 맨 위 고정 -->
 <div id="open-bar">
-  <select onchange="handleOpenSelect(this)">
+  <select class="legacySelect" onchange="handleOpenSelect(this)" style="display:none;">
     <option value="">Open</option>
+    <option value="Spring-Night.html">Performance: Spring Night (2025)</option>
+    <option value="Those-Cats.html">Performance: Those Cats!(2025)</option>   
+    <option value="sent-in-spun-found.html">Group Show: sent in spun found(2025)</option><!--수정중-->
     <option value="Hum-Bomb.html">Solo Show: Hum Bomb, Hum Bomb, Hum Bomb Hum (2025)</option>
     <option value="en/Father-and-Us.html">Critique: Hyosil Yang - Father and Us: Assemblages of Non-Bodies and “Not-Me”s (2025)</option>
+    <option value="heol-heol-heol.html">Performance: heol, heol, heol (2024)</option><!--수정중-->
     <option value="Feed-me-stones.html">Solo Show: Feed me stones (2024)</option>
+    <option value="Tongue-of-Rain.html">Group Show: Tongue of Rain(2024)</option><!--수정중-->
     <option value="KKOCH-DA-BAL-is-still-there.html">Solo Show: KKOCH-DA-BAL is still there (2024)</option>
-    <option value="en/END.html">Writing: Cha Yeonså - KKOCH-DA-BAL is still there</option>
+    <option value="en/END.html">Preface: Cha Yeonså - KKOCH-DA-BAL is still there</option>
+    <option value="Festival-in-the-Motel.html">Comic: Festival in Motel(2023)</option><!--수정중-->
+    <option value="The-Motel.html">Group Show: The Motel: because I want to live there(2023)</option><!--수정중-->
     <option value="This-Unbelievable-Sleep.html">Solo Show: This Unbelievable Sleep (2023)</option>
     <option value="en/Woman-Laughing-Child-Looking-Larvae-Intertwined.html">Critique: Hyosil Yang - Woman Laughing, Child Looking, Larvae Intertwined (2023)</option>
     <option value="Mosquitolarvajuice.html">Performance: Mosquitolarvajuice (2022)</option>
     <option value="3-Households.html">Game: 3 Households (2022)</option>
     <option value="Every-mosquito-feels-the-same.html">Solo Show: Every mosquito feels the same (2022)</option>
+    <option value="Juicy-Mosquito.html">Performance: Juicy Mosquito(2020)</option><!--수정중-->
+    <option value="Be-Sad-I-Dare_You.html">Group Show: Be Sad I Dare You(2020)</option><!--수정중-->
   </select>
-  <select onchange="handleOpenSelect(this)">
+  <select class="legacySelect" onchange="handleOpenSelect(this)" style="display:none;">
     <option value="">불러오기</option>
+    <!-- 세부 분류 업데이트 2026.02 -->
+
+    <option value="Spring-Night.html">퍼포먼스: 봄밤(2025)</option>
+    <option value="Those-Cats.html">퍼포먼스: 저 고양이들!(2025)</option>
+    <option value="sent-in-spun-found.html">단체전: sent in spun found(2025)</option><!--수정중-->
+    <option value="Daddy.html">비디오: 아빠(2025)</option><!--수정중-->
     <option value="Hum-Bomb.html">개인전: 거상거상 거상거(2025)</option>
-    <option value="ko/Walking-Form.html">글: 차연서 - 거상거상 걸어가는 모양(2025)</option>
-    <option value="ko/Garden-Funeral.html">서문: 재훈 - 정령들의 축제, 정원 장례식(2025)</option>
-    <option value="https://energywhoisshe.com/%E1%84%8B%E1%85%A1%E1%84%88%E1%85%A1%E1%84%8B%E1%85%AA-%E1%84%8B%E1%85%AE%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF.html">비평: 양효실 - 아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합(2025)</option>
+    <option value="ko/Walking-Form.html">서문: 차연서, 「거상거상 걸어가는 모양」(2025)</option>
+    <option value="ko/Garden-Funeral.html">서문: 재훈, 「정령들의 축제, 정원 장례식」(2025)</option>
+    <option value="https://energywhoisshe.com/%E1%84%8B%E1%85%A1%E1%84%88%E1%85%A1%E1%84%8B%E1%85%AA-%E1%84%8B%E1%85%AE%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF.html">비평: 양효실, 「아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합」(2025)</option>
+    <option value="heol-heol-heol.html">퍼포먼스: 황혼이 질 때면(2024)</option><!--수정중-->
     <option value="Feed-me-stones.html">개인전: 살도 뼈도 없는 나에게(2024)</option>
+    <option value="Tongue-of-Rain.html">단체전: 혀 달린 비(2024)</option><!--수정중-->
     <option value="KKOCH-DA-BAL-is-still-there.html">개인전: 꽃다발은 아직(2024)</option>
-    <option value="ko/KKEUT.html">서문: 차연서 - 꽃다발은 아직</option>
+    <option value="Festival-in-the-Motel.html">만화: 모텔에서 축제(2023)</option><!--수정중-->
+    <option value="The-Motel.html">단체전: 모텔전(2023)</option><!--수정중-->
+    <option value="ko/KKEUT.html">서문: 차연서, 「꽃다발은 아직」(2024)</option>
     <option value="This-Unbelievable-Sleep.html">개인전: 이 기막힌 잠(2023)</option>
-    <option value="ko/Woman-Laughing-Child-Looking-Larvae-Intertwined.html">비평: 양효실 - 웃는 여자, 보는 아이, 엮이는 유충들(2023)</option>
+    <option value="ko/Woman-Laughing-Child-Looking-Larvae-Intertwined.html">비평: 양효실, 「웃는 여자, 보는 아이, 엮이는 유충들」(2023)</option>
     <option value="Mosquitolarvajuice.html">퍼포먼스: 모스키토라바쥬스(2022)</option>
     <option value="3-Households.html">게임: 3 Households(2022)</option>
     <option value="Every-mosquito-feels-the-same.html">개인전: Every mosquito feels the same(2022)</option>
+    <option value="Juicy-Mosquito.html">퍼포먼스: 쥬시 모스키토(2020)</option><!--수정중-->
+    <option value="Be-Sad-I-Dare_You.html">단체전: 크게 슬플 일인가요(2020)</option><!--수정중-->
   </select>
+  <button class="open-select" type="button" onclick="toggleBrowsePanel('en')">Open</button>
+  <button class="open-select" type="button" onclick="toggleBrowsePanel('ko')">불러오기</button>
+
+
+  
+  <div id="browsePanel" aria-hidden="true">
+    
+
+    <div id="browseControls">
+      <input id="browseSearch" type="search" placeholder="Search" oninput="renderBrowse()" />
+      <div class="seg" role="tablist" aria-label="sort">
+        <button type="button" id="modeCat" class="active" onclick="setBrowseMode('cat')">Category</button>
+        <button type="button" id="modeDate" onclick="setBrowseMode('date')">Year</button>
+      </div>
+    </div>
+
+    <div id="browseList"></div>
+  </div>
+<label id="fsLabel" style="font-family: 'Gothic A1', sans-serif; font-size: 0.9rem; font-weight: bold; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.2rem 0.4rem; border-radius: 4px;">
+    <input type="checkbox" id="fullscreenToggle" style="transform: translateY(1px);">
+    full screen
+  </label>
+
 </div>
 
 <style>
@@ -407,15 +451,527 @@ Energywhoisshe.com
     /*min-width: 48%;
     flex: 1 1 auto;*/
   }
+
+  /*풀스크린 업데이트*/
+  #open-bar #fsLabel{
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+
+  /*풀스크린 업데이트*/
+
+
+  /* Browse panel + Open buttons */
+  #open-bar select.legacySelect{ display:none !important; }
+
+  #open-bar .open-select{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.4rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: pointer;
+    max-width: auto;
+    width: 20%; /* 불러오기 드롭다운 버튼 너비 42% -> 30% 수정. 2026.02*/
+    min-width: 20%; /* 불러오기 드롭다운 버튼 너비 42% -> 30% 수정. 2026.02*/
+    flex: 0 0 auto;
+    text-align: left;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 20 20'%3E%3Cpath d='M5 7l5 6 5-6' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 32px;
+  }
+  #open-bar .open-select:hover{ font-style: italic; }
+
+  #browsePanel{
+    position: fixed;
+    top: 3.2rem;
+    right: 1rem;
+    width: min(560px, calc(100vw - 2rem));
+    max-height: 70vh;
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+    z-index: 2500;
+    display: none;
+    font-family: 'Gothic A1', sans-serif;
+  }
+  #browsePanel.open{ display:block; }
+  #browseHeader{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:.5rem;
+    padding:.5rem .6rem;
+    background: whitesmoke;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 900;
+  }
+  #browseHeader .tabs{
+    display:inline-flex;
+    gap:.35rem;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+  #browseHeader button{
+    width:auto;
+    padding:.3rem .6rem;
+    border:1px solid #ccc;
+    border-radius:999px;
+    background:#fff;
+    color:#121212;
+    font-size:.9rem;
+    line-height:1.2;
+    cursor:pointer;
+    font-weight:900;
+  }
+  #browseHeader button.active{
+    background: darkslateblue;
+    border-color: darkslateblue;
+    color:#fff;
+  }
+  #browseHeader .close{
+    border-radius:4px;
+    padding:.3rem .5rem;
+  }
+
+  #browseControls{
+    display:flex;
+    gap:.5rem;
+    align-items:center;
+    padding:.5rem .6rem;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    flex-wrap:wrap;
+  }
+  #browseSearch{
+    flex: 1 1 260px;
+    min-width: 200px;
+    padding: .45rem .6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+  #browseControls .seg{
+    display: inline-flex;
+    gap: .75rem;
+    border: none;
+    background: transparent;
+  }
+  #browseControls .seg button{
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+    font-weight: 700; /* 카테고리, 연도 버튼 */
+    font-size: .9rem;
+    color: #999; 
+  }
+  #browseControls .seg button.active{
+    color: #121212;
+    font-weight: 700; /* 카테고리, 연도 버튼 */
+  }
+
+  #browseList{
+    overflow:auto;
+    max-height: calc(70vh - 110px);
+    padding: .25rem .5rem .6rem .5rem;
+  }
+  #browseList details{
+    border-top: 1px solid #f1f1f1;
+    padding-top: .25rem;
+    margin-top: .25rem;
+  }
+  #browseList summary{
+    padding: .4rem .2rem;
+    font-weight: 700; /* 프로젝트 분류 볼드 설정 */
+    cursor: pointer;
+    list-style: none;
+    color: #2f2f2f;
+  }
+  #browseList summary::-webkit-details-marker{ display:none; }
+  #browseList .item{
+    padding: .45rem .4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 400;
+    color: black; /* 프로젝트 제목 색깔 및 볼드 설정 */
+  }
+  #browseList .item:hover{
+    background: #f4f4f8;
+    font-style: italic;
+  }
+  #browseList .meta{
+    font-weight: 700; /* (숫자) 색깔 및 볼드 설정 */
+    color: #999;
+    font-size: .75rem;
+  }
+
+
+  /* 높이 통일 */
+  #open-bar{
+    align-items: center;
+  }
+  :root{
+    --openbar-control-height: 2.2rem;
+  }
+  #open-bar .open-select{ color: #2f2f2f; /*불러오기 드롭다운 폰트 색깔 */
+    height: var(--openbar-control-height);
+    line-height: calc(var(--openbar-control-height) - 2px);
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+  }
+  #open-bar .open-select:hover{ color: #2f2f2f; /* 불러오기 드롭다운 폰트 색깔 */}
+
+  #fsLabel{
+    height: var(--openbar-control-height);
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+  }
+  #fullscreenToggle{
+    transform: translateY(1px);
+  }
+
+  /* 항목 보조 텍스트 (연도/카테고리) */
+  #browseList .sub{
+    color: #999;
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-left: .35rem;
+  }
+
 </style>
 
 <script>
-  function handleOpenSelect(select) {
-    const value = select.value;
-    if (value) {
-      document.querySelector('iframe[name="iframe"]').src = value;
+  function openInNewWindowFullscreen(url){
+    const win = window.open(url, '_blank');
+    if(!win) return;
+
+    win.onload = () => {
+      try{
+        win.document.body.insertAdjacentHTML(
+          'afterbegin',
+          `<div id="fs-helper" style="
+            position:fixed;
+            top:1rem;
+            left:50%;
+            transform:translateX(-50%);
+            z-index:9999;
+            background:rgba(0,0,0,.6);
+            color:white;
+            padding:.5rem 1rem;
+            border-radius:4px;
+            font-size:.8rem;">
+            이 작업은 전체화면으로 보기를 권장합니다
+            <button id="fs-btn" style="margin-left:.5rem;">전체화면</button>
+          </div>`
+        );
+        const btn = win.document.getElementById('fs-btn');
+        btn.onclick = () => {
+          const el = win.document.documentElement;
+          if(el.requestFullscreen) el.requestFullscreen();
+        };
+      }catch(e){}
+    };
+  }
+
+  function openMenu(event, url){
+    if(event) event.preventDefault();
+    const fs = document.getElementById('fullscreenToggle')?.checked;
+    if(fs){
+      openInNewWindowFullscreen(url);
+    }else{
+      const frame = document.querySelector('iframe[name="iframe"]');
+      if(frame) frame.src = url;
     }
   }
+
+  function handleOpenSelect(select) {
+    const value = select.value;
+    if (!value) return;
+
+    const fs = document.getElementById('fullscreenToggle')?.checked;
+    if (fs) openInNewWindowFullscreen(value);
+    else {
+      const frame = document.querySelector('iframe[name="iframe"]');
+      if(frame) frame.src = value;
+    }
+
+    select.selectedIndex = 0;
+  }
+
+  // Browse panel logic
+  let browseLang = 'en';   // 'en' | 'ko' //영어인지 한글인지
+  let browseMode = 'cat';  // 'cat' | 'date' //카테고리 기준인지 날짜 기준인지 
+  let browseData = { en: [], ko: [] };
+
+  // 원하는 카테고리 표시 순서(없으면 마지막에 자동 정렬)
+  const CATEGORY_ORDER = {
+    en: [
+      "Solo Show",
+      "Performance",
+      "Game",
+      "Video",
+      "Comic",
+      "Group Show",
+      "Text",
+      "Preface",
+      "Critique",
+      "Other"
+    ],
+    ko: [
+      "개인전",
+      "퍼포먼스",
+      "게임",
+      "비디오",
+      "만화",
+      "단체전",
+      "글",
+      "서문",
+      "비평",
+      "기타"
+    ]
+  };
+
+  function sortCategories(keys){
+    const order = CATEGORY_ORDER[browseLang] || [];
+    const idx = (k) => {
+      const i = order.indexOf(k);
+      return i === -1 ? 1e9 : i;
+    };
+    return keys.sort((a,b) => {
+      const ia = idx(a), ib = idx(b);
+      if(ia !== ib) return ia - ib;
+      // 지정되지 않은 카테고리는 가나다/ABC로 정렬
+      return a.localeCompare(browseLang === 'ko' ? 'ko' : 'en');
+    });
+  }
+
+
+  function extractYear(label){
+    const m = label.match(/\((\d{4})\)/);
+    return m ? parseInt(m[1], 10) : 0;
+  }
+  function extractTitle(label){
+    // "카테고리: 제목(2025)" -> "제목"
+    let t = String(label || '').trim();
+    const idx = t.indexOf(':');
+    if(idx !== -1) t = t.slice(idx+1).trim();
+    t = t.replace(/\s*\(\d{4}\)\s*$/,'').trim();
+    return t;
+  }
+
+  function extractCategory(label){
+    const parts = label.split(':');
+    if(parts.length >= 2) return parts[0].trim();
+    return 'Other';
+  }
+  function buildBrowseData(){
+    const selects = document.querySelectorAll('#open-bar select');
+    const enSel = selects[0];
+    const koSel = selects[1];
+
+    const toArr = (sel) => {
+      const arr = [];
+      if(!sel) return arr;
+      for(const opt of sel.options){
+        const url = opt.value;
+        const label = (opt.textContent || '').trim();
+        if(!url || !label) continue;
+        arr.push({ url, label, year: extractYear(label), cat: extractCategory(label), title: extractTitle(label) });
+      }
+      return arr;
+    };
+
+    browseData.en = toArr(enSel);
+    browseData.ko = toArr(koSel);
+  }
+
+  function toggleBrowsePanel(lang){
+    const panel = document.getElementById('browsePanel');
+    if(!panel) return;
+    if(!panel.classList.contains('open')){
+      setBrowseLang(lang);
+      panel.classList.add('open');
+      panel.setAttribute('aria-hidden', 'false');
+      const s = document.getElementById('browseSearch');
+      if(s) s.focus();
+      renderBrowse();
+    } else {
+      setBrowseLang(lang);
+    }
+  }
+  function closeBrowsePanel(){
+    const panel = document.getElementById('browsePanel');
+    if(!panel) return;
+    panel.classList.remove('open');
+    panel.setAttribute('aria-hidden', 'true');
+  }
+
+  function setBrowseLang(lang){
+    browseLang = lang;
+
+    const tabEn = document.getElementById('tabEn');
+    const tabKo = document.getElementById('tabKo');
+    const title = document.getElementById('browseTitle');
+    const closeBtn = document.querySelector('#browseHeader .close');
+    const search = document.getElementById('browseSearch');
+    const modeCat = document.getElementById('modeCat');
+    const modeDate = document.getElementById('modeDate');
+
+    if(tabEn && tabKo){
+      tabEn.classList.toggle('active', lang === 'en');
+      tabKo.classList.toggle('active', lang === 'ko');
+    }
+    if(title) title.textContent = (lang === 'en') ? 'Open' : '불러오기';
+    if(closeBtn) closeBtn.textContent = (lang === 'en') ? 'Close' : '닫기';
+    if(search) search.placeholder = (lang === 'en') ? 'Search' : '검색';
+    if(modeCat) modeCat.textContent = (lang === 'en') ? 'Category' : '카테고리';
+    if(modeDate) modeDate.textContent = (lang === 'en') ? 'Year' : '연도';
+
+    renderBrowse();
+  }
+
+  function setBrowseMode(mode){
+    browseMode = mode;
+    const a = document.getElementById('modeCat');
+    const b = document.getElementById('modeDate');
+    if(a) a.classList.toggle('active', mode === 'cat');
+    if(b) b.classList.toggle('active', mode === 'date');
+    renderBrowse();
+  }
+
+  function openFromBrowse(url){
+    const fs = document.getElementById('fullscreenToggle')?.checked;
+    if(fs){
+      openInNewWindowFullscreen(url);
+    }else{
+      const frame = document.querySelector('iframe[name="iframe"]');
+      if(frame) frame.src = url;
+    }
+    closeBrowsePanel();
+  }
+
+  function escapeHtml(str){
+    return String(str)
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;');
+  }
+  function escapeAttr(str){
+    return String(str)
+      .replaceAll('&', '&amp;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#039;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;');
+  }
+
+  function renderBrowse(){
+    const list = document.getElementById('browseList');
+    if(!list) return;
+
+    const q = (document.getElementById('browseSearch')?.value || '').trim().toLowerCase();
+    let items = (browseData[browseLang] || []).slice();
+
+    if(q){
+      items = items.filter(it =>
+        it.label.toLowerCase().includes(q) ||
+        it.cat.toLowerCase().includes(q) ||
+        String(it.year).includes(q)
+      );
+    }
+
+    if(browseMode === 'date'){
+      // 연도별 그룹 (2025, 2024, ...)
+      const groups = new Map();
+      for(const it of items){
+        const y = it.year || 'Unknown';
+        if(!groups.has(y)) groups.set(y, []);
+        groups.get(y).push(it);
+      }
+      const years = Array.from(groups.keys())
+        .sort((a,b)=>Number(b)-Number(a));
+
+      list.innerHTML = years.map(y => {
+        const arr = groups.get(y)
+          .slice()
+          .sort((a,b)=> a.cat.localeCompare(b.cat) || a.label.localeCompare(b.label));
+        const inner = arr.map(it => `
+          <div class="item" data-url="${escapeAttr(it.url)}">${escapeHtml(it.title)}${it.cat ? `<span class="sub">${escapeHtml(it.cat)}</span>` : ''}</div>
+        `).join('');
+        return `
+          <details open>
+            <summary>${y}</summary>
+            ${inner}
+          </details>
+        `;
+      }).join('') || `<div style="padding:.8rem; color:#666; font-weight:800;">No results.</div>`;
+      return;
+    }
+
+    const groups = new Map();
+    for(const it of items){
+      const key = it.cat || 'Other';
+      if(!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(it);
+    }
+    const keys = sortCategories(Array.from(groups.keys()));
+
+    list.innerHTML = keys.map(k => {
+      const arr = groups.get(k).slice().sort((a,b)=> (b.year - a.year) || a.label.localeCompare(b.label));
+      const inner = arr.map(it => `
+        <div class="item" data-url="${escapeAttr(it.url)}">${escapeHtml(it.title)}${it.year ? `<span class="sub">${escapeHtml(it.year)}</span>` : ''}</div>
+      `).join('');
+      return `
+        <details open>
+          <summary>${escapeHtml(k)} <span class="meta">(${arr.length})</span></summary>
+          ${inner}
+        </details>
+      `;
+    }).join('');
+  }
+
+  // click delegation for items (no inline onclick)
+  function browseClickSetup(){
+    const list = document.getElementById('browseList');
+    if(!list) return;
+    list.addEventListener('click', (e) => {
+      const item = e.target.closest('.item');
+      if(!item) return;
+      const url = item.getAttribute('data-url');
+      if(!url) return;
+      openFromBrowse(url);
+    });
+  }
+
+  // close UX
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeBrowsePanel();
+  });
+  document.addEventListener('click', (e) => {
+    const panel = document.getElementById('browsePanel');
+    if(!panel || !panel.classList.contains('open')) return;
+    const openBar = document.getElementById('open-bar');
+    if(openBar && openBar.contains(e.target)) return;
+    if(panel.contains(e.target)) return;
+    closeBrowsePanel();
+  });
+
+  // init
+  buildBrowseData();
+  browseClickSetup();
 </script>
 
 	<header>
@@ -424,9 +980,9 @@ Energywhoisshe.com
 	<nav id="menu">
 		<ul>
 			<h1><a onClick="window.location.reload()" style="cursor: pointer;">Energywhoisshe.com</a></h1>
-			<li><a class="button" href="games.html" target=iframe>Games</a></li>
-			<li><a class="button" href="comics.html" target=iframe>Comics</a></li>
-			<li><a class="button_3" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" target=iframe>and Things</a></li>
+			<li><a class="button" href="games.html" onclick="openMenu(event, this.href)">Games</a></li>
+			<li><a class="button" href="comics.html" onclick="openMenu(event, this.href)">Comics</a></li>
+			<li><a class="button_3" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" onclick="openMenu(event, this.href)">and Things</a></li>
 			<!--<li><a class="button_3" href="things.html" target=iframe>and Things</a></li>-->
 			<!--<li><a class="button_3" href="texts.html" target=iframe>Texts</a></li>
 			<li><a class="button_3" href="videos.html" target=iframe>Videos</a></li>-->
