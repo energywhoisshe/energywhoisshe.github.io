@@ -55,15 +55,9 @@ Energywhoisshe.com
       		line-height: 1.75;
       		border-radius: 3px;
       		word-break: keep-all;
-	      	/*max-width: 600px;*/
 	      	font-family: 'Noto Serif KR', serif;
 	      	margin: 0rem;
-	      	/*margin-left: 3vw;
-	      	margin-right: 1vw;*/
-	      	/*margin-right: 20px;*/
 	      	margin-top: 88px;
-	      	/*
-	      	margin: 2rem auto;*/
       	}
       	h1,h2,h3,h4,h5,h6 {
       		font-size: 100%;
@@ -224,8 +218,8 @@ Energywhoisshe.com
       		text-decoration: none;
       	}
       	nav a {
-      		color: whitesmoke;
       		text-decoration-line: none;
+      		color: whitesmoke;
       	}
 		#menu {
 			 height: 5vh; 
@@ -246,15 +240,15 @@ Energywhoisshe.com
 			text-decoration: none;
 			display: inline-block;
 		}
-	    iframe {
+	  iframe {
 	    	width: 100%;
 	    	border: none;
 	    	height: 500px;
 	    	max-height: 500px;
-
+	    	/*본문 디자인*/
 			border-style: ridge;
 			border-width: 10px;
-			border-radius: 3px 3px 3px 3px;
+			border-radius: 3px 45px 10px 3px;
 			height: 60vh;
 		}
 		footer {
@@ -284,9 +278,9 @@ Energywhoisshe.com
       	.button {
       		color: whitesmoke;
       		width: 10vmax; 
-      		height: 10vmin;
+      		height: 8vmin;
       		border-style: inset;
-      		border-radius: 0 50% 0 50%;
+      		border-radius: 30% 50% 50% 40%;
       		font-size: 1.5vmax;
       		
       		border-width: 8px;
@@ -295,9 +289,7 @@ Energywhoisshe.com
       		border-style: groove;
       		border-color: whitesmoke;
       	}
-      	.button_3 {
-
-      		/* width: 20vmax; */
+      	.button_Things {
       		font-size: 1.5vmax;
       		padding-right: 3vmax;
       		padding-left: 3vmax;
@@ -305,7 +297,7 @@ Energywhoisshe.com
       		background-color: whitesmoke;
       		border-color: whitesmoke;
       		border-style: groove;
-      		border-width: 5vmax;
+      		border-width: 4vmax;
       		border-radius: 0 30px 0 30px;
       		font-family: 'Gothic A1', sans-serif;
       		font-weight: bold;
@@ -339,8 +331,30 @@ Energywhoisshe.com
       		color: whitesmoke;
       	}
 	</style>
+
+<style>
+#current-link {
+  position: fixed;
+  top: 0.6rem; /*0.6rem;*/
+  left: 0.8rem;
+  z-index: 3000;
+  font-family: monospace;
+  font-size: 0.7rem;
+}
+#current-link a {
+  color: darkslateblue;
+  text-decoration: none;
+}
+#current-link a:hover {
+  font-style: italic;
+}
+</style>
+
 </head>
 <body>
+
+<div id="current-link"><a href="#" target="_blank"></a></div>
+
 
 <!-- Open 드롭다운: 페이지 맨 위 고정 -->
 <div id="open-bar">
@@ -378,7 +392,7 @@ Energywhoisshe.com
     <option value="Hum-Bomb.html">개인전: 거상거상 거상거(2025)</option>
     <option value="ko/Walking-Form.html">서문: 차연서, 「거상거상 걸어가는 모양」(2025)</option>
     <option value="ko/Garden-Funeral.html">서문: 재훈, 「정령들의 축제, 정원 장례식」(2025)</option>
-    <option value="https://energywhoisshe.com/%E1%84%8B%E1%85%A1%E1%84%88%E1%85%A1%E1%84%8B%E1%85%AA-%E1%84%8B%E1%85%AE%E1%84%85%E1%85%B5%E1%84%83%E1%85%B3%E1%86%AF.html">비평: 양효실, 「아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합」(2025)</option>
+    <option value="https://energywhoisshe.com/ko/Father-and-Us.html">비평: 양효실, 「아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합」(2025)</option>
     <option value="heol-heol-heol.html">퍼포먼스: 황혼이 질 때면(2024)</option><!--수정중-->
     <option value="Feed-me-stones.html">개인전: 살도 뼈도 없는 나에게(2024)</option>
     <option value="Tongue-of-Rain.html">단체전: 혀 달린 비(2024)</option><!--수정중-->
@@ -412,10 +426,10 @@ Energywhoisshe.com
 
     <div id="browseList"></div>
   </div>
-<label id="fsLabel" style="font-family: 'Gothic A1', sans-serif; font-size: 0.9rem; font-weight: bold; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.2rem 0.4rem; border-radius: 4px;">
+<!--<label id="fsLabel" style="font-family: 'Gothic A1', sans-serif; font-size: 0.9rem; font-weight: bold; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.2rem 0.4rem; border-radius: 4px;">
     <input type="checkbox" id="fullscreenToggle" style="transform: translateY(1px);">
     Open in full screen
-  </label>
+  </label>-->
 
 </div>
 
@@ -460,8 +474,6 @@ Energywhoisshe.com
   }
 
   /*풀스크린 업데이트*/
-
-
   /* Browse panel + Open buttons */
   #open-bar select.legacySelect{ display:none !important; }
 
@@ -684,9 +696,34 @@ Energywhoisshe.com
       }catch(e){}
     };
   }
-
   function openMenu(event, url){
     if(event) event.preventDefault();
+
+    // Update top-left current link display.
+    // For top menu pages, show "(games)/(comics)/(things)" but keep iframe loading unchanged.
+    const a = document.querySelector('#current-link a');
+    if(a){
+      a.href = url;
+      a.target = '_blank';
+      a.rel = 'noopener';
+
+      const low = String(url).toLowerCase();
+      if(low.endsWith('games.html')){
+        a.textContent = '(games)';
+      }else if(low.endsWith('comics.html')){
+        a.textContent = '(comics)';
+      }else if(low.includes('docs.google.com') && low.includes('/spreadsheets/')){
+        a.textContent = '(things)';
+      }else{
+        try{
+          const u = new URL(url, window.location.origin);
+          a.textContent = u.pathname;
+        }catch(e){
+          a.textContent = url;
+        }
+      }
+    }
+
     const fs = document.getElementById('fullscreenToggle')?.checked;
     if(fs){
       openInNewWindowFullscreen(url);
@@ -696,15 +733,29 @@ Energywhoisshe.com
     }
   }
 
+
+
   function handleOpenSelect(select) {
-    const value = select.value;
-    if (!value) return;
+    const url = select.value;
+    if (!url) return;
+
+    // update top-left current link
+    const link = document.querySelector('#current-link a');
+    if(link){
+      link.href = url;
+      try{
+        const u = new URL(url, window.location.origin);
+        link.textContent = u.pathname;
+      }catch(e){
+        link.textContent = url;
+      }
+    }
 
     const fs = document.getElementById('fullscreenToggle')?.checked;
-    if (fs) openInNewWindowFullscreen(value);
+    if (fs) openInNewWindowFullscreen(url);
     else {
       const frame = document.querySelector('iframe[name="iframe"]');
-      if(frame) frame.src = value;
+      if(frame) frame.src = url;
     }
 
     select.selectedIndex = 0;
@@ -852,6 +903,19 @@ Energywhoisshe.com
   }
 
   function openFromBrowse(url){
+
+    // update top-left current link
+    const link = document.querySelector('#current-link a');
+    if(link){
+      link.href = url;
+      try{
+        const u = new URL(url, window.location.origin);
+        link.textContent = u.pathname;
+      }catch(e){
+        link.textContent = url;
+      }
+    }
+
     const fs = document.getElementById('fullscreenToggle')?.checked;
     if(fs){
       openInNewWindowFullscreen(url);
@@ -983,10 +1047,8 @@ Energywhoisshe.com
 			<h1><a onClick="window.location.reload()" style="cursor: pointer;">Energywhoisshe.com</a></h1>
 			<li><a class="button" href="games.html" onclick="openMenu(event, this.href)">Games</a></li>
 			<li><a class="button" href="comics.html" onclick="openMenu(event, this.href)">Comics</a></li>
-			<li><a class="button_3" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" onclick="openMenu(event, this.href)">and Things</a></li>
-			<!--<li><a class="button_3" href="things.html" target=iframe>and Things</a></li>-->
-			<!--<li><a class="button_3" href="texts.html" target=iframe>Texts</a></li>
-			<li><a class="button_3" href="videos.html" target=iframe>Videos</a></li>-->
+			<!--<li><a class="button" href="videos.html" target=iframe>Videos</a></li>-->
+			<li><a class="button_Things" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" onclick="openMenu(event, this.href)">and Things</a></li>
 			<!--https://snskeyboard.com/specialfont/ 쐐기문자-->
 		</ul>
 	</nav>
