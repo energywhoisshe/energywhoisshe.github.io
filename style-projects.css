@@ -1,5 +1,5 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
-    html, body { width: 100%; background-color: #f9f9f9; font-family: sans-serif; overflow-x: hidden; }
+    html, body { width: 100%; max-width: 1024px; margin: 0 auto; background-color: white; font-family: sans-serif; overflow-x: hidden; }
 
     .top-bar, .header-bar { width: 100%; }
 
@@ -82,7 +82,19 @@
   padding-top: 8px;
 }
 
-.credit {
+hr {
+  border: 0;
+  height: 1px;
+  margin: 56px auto;
+  max-width: 760px;      /* 너 wrapper 폭이랑 맞추기 */
+  background: linear-gradient(to right,
+    transparent,
+    rgba(0,0,0,.18),
+    transparent
+  );
+}
+
+.credit, .full-credit, .quote {
   /* font style */
   font-family: 'Noto Serif KR', serif;
   font-size: 0.9rem;
@@ -103,15 +115,33 @@
 .info div{
   padding-top: 8px;
 }
-.credit p{
+.credit p, .full-credit p{
   padding-top: 8px;
 }
-.credit ul {
+.credit ul, .full-credit ul, .quote ul{
   padding-top: 8px;
 }
-.credit li {
+.credit li, .full-credit li, .quote li {
   list-style-type: none;
 }
+
+.full-credit{
+  font-size: 0.85rem;
+  padding-left: 64px;
+  padding-top: 64px;
+  max-width: 640px;
+}
+
+.quote p {
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-bottom: 32px;
+}
+.quote figcaption {
+    padding-top: 16px;
+    font-size: 0.85rem;
+}
+
 .footer {
   background: white;
   line-height: 1.8;
