@@ -218,5 +218,20 @@
 			</p>
 		</article>
 	</div>
+	<script>
+		/* 이미지 우클릭 금지 */
+			document.addEventListener("contextmenu", (e) => {
+		  const img = e.target && e.target.closest ? e.target.closest("img") : null;
+		  if (img) e.preventDefault();
+		}, { capture: true });
+		document.addEventListener("dragstart", (e) => {
+		  const img = e.target && e.target.closest ? e.target.closest("img") : null;
+		  if (img) e.preventDefault();
+		}, { capture: true });
+		
+		document.addEventListener("DOMContentLoaded", () => {
+		  document.querySelectorAll("img").forEach(img => img.setAttribute("draggable", "false"));
+		});
+	</script>
 </body>
 </html>
