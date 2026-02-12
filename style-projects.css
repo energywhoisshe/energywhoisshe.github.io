@@ -293,7 +293,48 @@ hr {
 .inline-slider { display: none; }
 .inline-slider.active { display: flex; }
 
+/* 스페이스바 안내 */
+#space-hint{
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+
+  color: rgba(255,255,255,0.75);
+  background: rgba(0,0,0,0.4);
+
+  padding: 6px 10px;
+  border-radius: 2px;
+
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
 /* 이미지 모달 그림자 */
 #modal-img {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
+}
+
+/* === Image Protection (images only) === */
+
+img{
+  -webkit-user-drag: none;      /* 드래그 저장 방지 */
+  user-select: none;            /* 선택 방지 */
+  -webkit-touch-callout: none;  /* iOS 길게누르기 저장 방지 */
+}
+
+body, p, div, span{
+  user-select: text; /* 텍스트는 선택 가능하게 유지 */
+}
+
+
+/* 흑백 슬라이드로 바꾸기 */
+.inline-slider.grayscale img, 
+.inline-slider.grayscale #modal-img {
+    filter: grayscale(100%);
 }
