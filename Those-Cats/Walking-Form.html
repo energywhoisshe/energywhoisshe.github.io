@@ -1,0 +1,540 @@
+<!D기CTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>거상거상 걸어가는 모양</title>
+<meta name="description" content="차연서 - 거상거상 걸어가는 모양">
+<meta name="author" content="차연서">
+<meta name="keywords" content="Cha Yeonså, Solo Show, Solo Exhibition, 차연서, 차연서 개인전">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+</script>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+      font-family: 'Noto Serif KR', serif;
+      background-color: #fdfdfd;
+      color: #000;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      word-break: keep-all;
+    }
+
+    .toolbar_title {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      /*white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+      /*overflow: hidden; /* 넘치는 텍스트를 숨김 */
+      /*text-overflow: ellipsis; /* 넘치는 텍스트를 '...'으로 생략 */
+      /*max-width: 100%; /* 컨테이너의 최대 너비를 100%로 설정 */
+      /*flex-shrink: 1; 필요 시, 텍스트가 줄어들도록 설정 */
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      background: #f4f4f4;
+      border-bottom: 1px solid #ccc;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .toolbar button, .toolbar select {
+      margin-right: 10px;
+      padding: 4px 8px;
+      border: 1px solid #bbb;
+      background: white;
+      cursor: pointer;
+      font-family: inherit;
+      height: 30px;
+      max-width: 100%;
+    }
+
+    .toolbar button.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .toolbar select.disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      height: 30px;
+    }
+
+    .ruler {
+      height: 20px;
+      background: repeating-linear-gradient(90deg, #ccc, #ccc 1px, transparent 1px, transparent 10px);
+      position: relative;
+      margin-bottom: 10px;
+    }
+
+    .document-container {
+      max-width: 794px;
+      margin: 40px auto;
+      padding: 0 20px;
+      margin-top: 10em;
+      margin-bottom: 8em;
+    }
+
+    .additional-document-container {
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .additional-document-container p{
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    .page {
+      width: 794px;
+      height: 1123px;
+      margin: 0 auto 40px;
+      padding: 80px 100px 120px 100px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      box-sizing: border-box;
+      position: relative;
+      transition: font-size 0.2s ease;
+      font-size: 16px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    h1 {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3em;
+      margin-top: 0em;
+    }
+
+    h2 {
+      font-size: 1.0em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+
+    .spacer {
+      height: 1em;
+    }
+
+    p {
+      font-size: 1em;
+      margin-bottom: 1em;
+      text-align: justify;
+      white-space: pre-line;
+    }
+
+    section {
+      margin-bottom: 2em;
+    }
+
+    .footer {
+      text-align: right;
+      font-size: 0.9rem;
+      color: #666;
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+    }
+
+    .statusbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #f4f4f4;
+      border-top: 1px solid #ccc;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+    .homepage {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      text-align: right;
+      padding: 6px 20px;
+      font-size: 0.85rem;
+      justify-content: space-between;
+      font-family: 'Noto Serif KR', serif;
+    }
+
+
+    
+    
+    body.dark-mode {
+      background-color: #2b2f36;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .page{
+      background-color: #37404a;
+      color: #e0e3e7;
+    }
+
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: #4c5662;
+      color: #f0f0f0;
+      border: 1px solid #777;
+    }
+
+    body.dark-mode .homepage a,
+    body.dark-mode a {
+      color: #a7c7ff;
+      text-decoration: underline;
+    }
+
+    body.dark-mode .statusbar {
+      color: #ffffff;
+    }
+
+    body.dark-mode .ruler {
+      background: repeating-linear-gradient(90deg, #59626e, #59626e 1px, transparent 1px, transparent 10px);
+    }
+
+    /* 정보란 추가 - 다크모드 */
+    body.dark-mode .additional-document-container {
+      background-color: #3c4450;
+      color: #f0f0f0;
+      border-color: #59626e;
+    }
+
+
+
+
+  .dark-mode-toggle {
+    position: relative;
+    width: 40px;
+    height: 26px;
+    background: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-left: 10px;
+  }
+  .dark-mode-toggle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 2px;
+    background: white;
+    border-radius: 50%;
+    transition: transform 0.3s, background 0.3s;
+  }
+  body.dark-mode .dark-mode-toggle {
+    background: #4c5662;
+  }
+  body.dark-mode .dark-mode-toggle::before {
+    transform: translateX(16px);
+    background: #1c1c1c;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .page, .document-container {
+      padding: 16px;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .toolbar {
+      flex-wrap: wrap; /*줄바꿈 허용*/
+      gap: 6px;
+    }
+
+    .page p, .page h2, .page h1 {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      word-break: keep-all;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    body {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+
+
+  /* 데스크탑 환경 개선을 위한 기본 타이포그래피 설정 */
+  .page p,
+  .page h1,
+  .page h2 {
+    text-align: left;
+    word-break: keep-all;
+    line-height: 1.8;
+    letter-spacing: 0;
+    font-weight: 400;
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  @media print {
+    body.dark-mode {
+      background-color: white !important;
+      color: black !important;
+    }
+
+    body.dark-mode .page {
+      background-color: white !important;
+      color: black !important;
+    }
+
+    body.dark-mode .toolbar,
+    body.dark-mode .toolbar_title,
+    body.dark-mode .statusbar,
+    body.dark-mode .homepage {
+      background-color: white !important;
+      color: black !important;
+      border-color: #ccc !important;
+    }
+
+    body.dark-mode .toolbar button,
+    body.dark-mode .toolbar select {
+      background-color: white !important;
+      color: black !important;
+      border: 1px solid #999 !important;
+    }
+
+    .no-print { display: none !important; }
+    body {
+      background: white !important;
+    }
+
+    .page {
+      page-break-after: always;
+      page-break-inside: avoid;
+      margin: 0 auto !important;
+      padding: 40px !important;
+      box-shadow: none !important;
+      background: white !important;
+      border: none !important;
+    }
+
+    .toolbar,
+    .statusbar,
+    .dark-mode-toggle,
+    .ruler {
+      display: none !important;
+    }
+
+    .print-footer {
+      display: block !important;
+      text-align: right;
+      font-size: 0.9rem;
+      color: #000;
+      font-family: 'Noto Serif KR', serif;
+      line-height: 1.4;
+      padding: 8px 16px;
+    }
+  }
+  .print-footer {
+    display: none; /* 웹에선 숨김 */
+  }
+
+  /*2025-10-10 update*/
+      /* === [추가] 폰트 스케일을 변수로 제어 === */
+    #documentContainer {
+      /* 기본(데스크탑) = 16px (≈12pt) */
+      --base-font: 16px;
+      font-size: var(--base-font);
+    }
+
+    /* 모바일 기본값만 변수로 변경: 14px (≈10pt) */
+    @media screen and (max-width: 768px) {
+      #documentContainer { --base-font: 14px; }
+
+      /* 기존 모바일 규칙보다 '뒤'에 오므로 우선 적용됨 */
+      /* rem 대신 em로 묶어 컨테이너 스케일을 그대로 따르게 함 */
+      #documentContainer .page p,
+      #documentContainer .page h1,
+      #documentContainer .page h2 {
+        font-size: 1em;   /* 기존 1.05rem을 덮어씀(수정 아님, '뒤에서 추가 override') */
+        line-height: 1.8;
+      }
+
+      /* 필요시: .page 자체의 고정값도 컨테이너를 따르게 */
+      #documentContainer .page {
+        font-size: 1em;   /* 기존 16px을 '추가 규칙'으로 무효화 */
+      }
+    }
+</style>
+</head>
+<body>
+<div class="toolbar_title">차연서, 거상거상 걸어가는 모양 (2025)</div>
+<div class="toolbar">
+<select id="docSelect">
+  <option>불러오기</option>
+  <option value="https://energywhoisshe.com/Hum-Bomb.html">차연서 개인전: 거상거상 거상거</option>
+  <option value="https://energywhoisshe.com/Garden-Funeral.html">재훈 - 정령들의 축제, 정원 장례식</option>
+  <option value="https://energywhoisshe.com/Hum-Bomb.html">Cha Yeonså Solo Show: Hum Bomb, Hum Bomb, Hum Bomb Hum</option>
+</select>
+
+<select id="fontSizeSelect">
+<option value="14px">10pt</option>
+<option value="15px">11pt</option>
+<option selected="" value="16px">12pt</option>
+<option value="18px">14pt</option>
+</select>
+<button id="printBtn">📄</button>
+<div class="dark-mode-toggle" id="darkModeToggle" title="다크모드 토글"></div>
+</div>
+<div class="ruler"></div>
+<div class="document-container" id="documentContainer">
+<h1>거상거상 걸어가는 모양</h1>
+<section>
+<p>[거상거상 거상거]는 정원에서 내게 온 의성어이다. 작업을 시작하며, 처음 쥔 것은 ‘상’ 이라는 외글자 단어였다. ‘모양’이나 ‘본뜬다’는 뜻을 가진 象(코끼리 상)이다.
+</p>
+<p>작업을 갓 시작했을 때는 늦은 봄이었기 때문에 나는 선선하고도 발그스름한 날씨에서 남양주 정원과 대면했고 그 속에서 산들바람 같은 기분으로 작업을 해나가고 있었다. 루틴은 이렇다. 아침 일찍 간다. 대문은 닫고, 현관문과 뒷문은 모두 연다. 처음엔 여기까지만 열었지만, 오랫동안 방치되어 있었던 창틀을 청소한 이후부터는 커튼도 열고 창문도 연다. 제습을 위해 에어컨도 켠다. 집중하는 동안 휘휘 정원을 돌아다닐 흰 개의 네 다리에 방충용 옷을 끼워 입혀주고 벌레 퇴치 스프레이를 뿌려준다. 약 3시간 정도를 한 타임이라고 했을 때, 한 타임만 하고 서울로 돌아가기도 하고, 두 타임을 할 경우에는 해 지기 전에 반드시 돌아간다. 하루를 더 해야 할 때는 다음 날 아침에 돌아가고, 그건 점차 2박 3일, 3박 4일까지도 늘어났다. 해가 지기 시작하면 문을 다 닫는다. 해가 지고 나서 현관문이나 뒷문을 열 때는 실내를 소등한다. 커다란 날벌레가 뛰어 들어오기 때문이다. 해가 지고, 불도 끄면 이 집은 정말 까매진다. 어둠 속에서 산책하거나 담배를 피우려면 후레쉬를 켠다. 밤마다 연못으로 내려오는 산짐승들이 있다. 멧돼지 소리는 꼭 호랑이 소리 같다. 몇 발짝 떨어진 곳에서 불쑥 그르렁거리는 캄캄한 소리를 듣는다. 내게 몸 같은 게 없었더라면, 밤마다 어둠 속에 숨어 그 아름다운 소리를 더 가까이 더 자주 들었을 것이다. 지하실에는 물이 떨어진다. 폭우가 오는 날에는 콸콸 쏟아진다. 지하실 가장 깊은 천장에는 낙엽처럼 매달린 박쥐가 잠들어있다.</p>
+<p>‘6월은 결코 완성되지 않는다. 풀숲을 설설 기는 뱀 없이는 소스라치게 아름다워지지 않는다.’ 내가 집중하는 동안 홀로 허불허불 걸어 다니는 눈먼 개가 불현듯 매에 채여갈까봐, 뱀에 물릴까 봐, 벌에 쏘일까 봐, 멧돼지에 받힐까 봐 걱정이 될 때마다 이 시구를 떠올린다. 개는 정원 구석구석을 더듬어 탐험하던 시기를 지나 이제 작업하고 있는 위치로 정확히 찾아오고, 다시 집에 들어가 그늘 아래, 에어컨 바람 아래에서 잠든다. 연못을 지나갈 때에는 유심히 응시해야 한다. 흰뺨검둥오리, 왜가리, 백로, 그리고 붉고 큰 부리로 신의 소리를 내는 호반새가 자주 날아오기 때문이다. 작업은 여름 내내 이어졌다. 대부분 야외 작업이었기 때문에 날은 점점 뜨거워졌고 농사를 짓는 시간과 같은 이른 시간으로 남양주에 오갔다. 모기약이 찐득하게 땀에 섞인 몸을 리부팅하기 위해서 계속 샤워를 한다. 그동안은 거기서 샤워를 한 적이 전연 없었던 것 같다. 벌레 많은 집에서 살갗을 드러내기 싫었기 때문이다. 이제 한 타임을 마치면 땀과 열기로 젖은 몸을 돌보기 위해 물 샤워를 한다. 매번 새롭게 개운하다. 작업을 하면 할수록, 집도 나와 같이 씻는다.</p>
+<p>이번 전시에 글을 부탁한 재훈과 n/a 갤러리 대표인 오진혁 님을 남양주 작업실에 초대해서 정원을 보여준 날이 있었다. 서울에서 먼저 스튜디오 비짓을 한 후 그들을 차에 태우고 남양주로 이동하니 해가 다 저 있었고, 모처럼 무리 지어 돌아다닐 수 있는 어둠 속에서 신이 났다. 후레쉬 불빛을 켜면 나무가 나타나고, 탑이 나타나고, 대파꽃이 나타났다. 두 사람에게 작업하고 있는 곳곳의 장소들을 하나하나 도슨트 하듯이 짚어 안내해 주었다. 둘 다 내게 낯선 사람이기 때문에, 그렇게 열어 재낀 남양주의 세계는 자정 가까이에 서울로 돌아와 나를 온통 두들겼다. 온 몸을 감싸고 고치처럼 누워있을 수 밖에 없었다. 통증 속에서 잠드는 중에 마치 안개가 낀 듯이 새파란 창문 너머로 소나무들이 걸어다니는 것 같은 장면을 보았다. 내가 이번에 작업하는 나무는 그중 가장 작은 나무, 현관문 바로 앞에서 입구를 점차 가려가고 있는 - 그래서 풍수적으로 불길하고 불운하여 옮겨야 한다고 매번 지적을 받는 꼬맹이 나무이지만 남양주에는 더 큰 소나무들도 아주 많다. 그들이 성큼성큼 건들건들 걸어갔다. 뿌리를 뽑아 발가락처럼 딛고 걸었던 것인지 그 아래는 창틀에 가려져 보이지 않았다. 다음 날 나는 ‘상’ 작업파일을 켜고 ‘<b>거상거상거상거</b>’ 이렇게 적었다. 그게 나무들을 포함하여 모든 정원의 기물들이 밤마다 걸어 다니는 소리와 아주 비슷하다는 것을 곧 알았다. ‘ㅓ’와 ‘ㅏ’, 즉, 음의 소리와 양의 소리가 반복되는 구조라는 것을 또한 알았다.</p>
+<p>내게 나타난 이 의성어 혹은 의태어를 제목으로 삼으려, 한문으로 음차를 붙이고 (‘居喪居喪居喪居’)영문으로도 번역하는 작업을 거쳤다. 리듬을 주기 위해 4﹒3조로 띄워 《거상거상 거상거》로 한글 제목을 정리하기도 했다. 그것을 어떻게 번역할 수 있을까 고민하던 차에 나의 엄마, 조수석에 앉아 있던 영미시 연구자 손나리 님이 비슷한 리듬의 시가 떠오른다며 앨런 긴즈버그의  ‘Hum Bomb’을 알려주셨다. 나는 시를 읽어보고 무척 반가웠고 이것 또한 음·양의 소리를 반복할 수 있도록  — <i><b>Hum Bomb, Hum Bomb, Hum Bomb Hum</b></i> 으로 정리하는 것을 선택했다. 이 시는 누가 누구를 터뜨렸는지(폭격했는지) 말하는 반복적인 리듬으로 진행된다.  ‘Whom bomb?’하고 물으면 ‘우리가 그들을 터뜨렸지!’, ‘우리가 널 터뜨렸지!’, ‘너가 너를 터뜨렸지!(You bomb you!)’ 하는 질답이 건들건들 이어진다. 이 시는 폭탄, 폭격의 사건을 둘러싼 말들을 변주하며, 인터넷에서 시인의 낭독 녹음을 여러 버전으로 찾아 들을 수 있다.</p>
+<p>이번에 전시에 함께 놓으려는 텍스트 〈<b>무서워하는 까마귀-아이</b>〉(2025)는 SeMA 동화 비평 모임에서 쓴 글이다. 야시마 타로의 동화 《까마귀 소년》과 《수평선이 부른다(Horizon is Calling)》를 나의 ‘축제’ 시리즈와 함께 읽었던 기록이다.
+</p>
+</section>
+<section style="padding-top: 1rem;">
+  <p>2021년 여름의 기록을 보면 꼬맹이 나무는 올해인 2025년 지금에 비해 단정하고 자그마하다. 올봄은 그때 이후로 처음 맞는 봄과 같다. 정원의 모든 미물이 자신의 성기를 바깥으로 솟아내고 발기해 있는 봄. 꼬맹이 소나무의 노오랗고 붉그스름한 성기 다발이 새순으로 올라와 노출증자처럼 솟았다. 여름이 되자 금세 새파래져서는 끝마다 보라색 암꽃이 달리고, 그 아래로는 주황색 수꽃이 차례로 피고 지었다. 근친 수정을 피하고자 각각은 시차를 두고 맺힌다고 한다. 아빠를 수습하러 가던 날, 그러니까 아빠가 남긴 몸과 물건들을 찾으러 가던 그 새벽에 정원은 안개가 자욱했다. 모든 것이 파르스름하고 허이옇게 보였고, 그건 내게 정원이 처음으로 아름다웠던 순간이다. 꿈속에서 본 새파란 안개가 어쩌면 그때와 비슷한가? 하지만 아니다, 이것은 기억을 소화하는 종류의 꿈과는 다르다. 물안개는 정원을 이루는 정령들의 가장 진실한 기운으로서, 어느 날의 불현듯한 죽음과 꿈을 통해 출현하는 것이라고 나는 이해한다.</p>
+  <p>닥종이를 만들며 듣는 것은 종이도 듣는 것 같다. 종이는 소리를 먹는다. 그러나 정원에서, 문이란 문은 다 열어놓은 집에서 시간을 보내며 나는 아무 음악도 듣지 않는다. 이름 모르는 울음소리, 바람과 빗소리, 정적 속에 많은 소리들이 하나하나 찾아온다. 비어 있는 모든 곳에 가득 차 있다. 음악을 듣는 시간은 오로지 남양주를 오가는 차 안에서다. 영화 올란도(Orlando)의 사운드트랙, 그중에서도 ‘Coming(다가오는)’, ‘Garden(정원)’, ‘Kiss(키스)’, ‘Change of Sex(성전환)’을 들으면 내가 가는 정원은 여성스럽고 비밀스러워진다. 최근 자신의 개인전에 대해 ‘그리고 그들의 드레스’를 쓴 재훈은 내가 ‘버드나무 여신’ 혹은 ‘버드나무 여인’으로 부르는 셀프 포트레이트를 찍었다. 물가에 자란 듯 아래로 흐드러진 나무 앞에서 비치는 부드러운 옷을 입고 역광으로 서 있는 모습이다. 나는 재훈에게 그녀로서 남양주에 한 번 더 찾아와달라고 제안했고 우리는 그녀의 휴가 기간에 맞춰 남양주에서 촬영을 하기로 했다.</p>
+  <p>이번 야외 작업을 시작하는 데에 주요한 영향을 받았던 ‘땅설법’에서는 비슷한 시기에 지화(紙花) 전시를 하시는데 (민주화운동기념관, 2025.8.23~ 9.21), 나는 작업 마무리가 늦어지는 탓에 가보지 못하는 중이다. 남양주의 기물들을 종이로 옮기는 것은 여태 힘에 부친다. 나는 한 구의 사체보다 나무가 더 세다, 그러니까 그것을 옮기는 데 드는 품을 생각했을 때 그런 감각까지도 맞닥뜨렸다. ‘나무’, ‘탑’, 대파꽃’, ‘멧돼지’, ‘노루’, ‘바퀴’, ‘자동차’, ‘뱀’… 작업한 종이들을 처음으로 서울로 옮기는 날에 나는 멋쩍게 슬퍼졌다. 정원에서 뻗치고 살고/죽던 친구들을 도심 한가운데로 옮기는 일이 말이다. 내가 고작 들띄운 정원의 기물들은 갤러리 환경에 비해 작품 수가 많고 크기도 컸기 때문에 전시장에는 결국 축제와 흰 개, 그리고 꼬맹이 소나무만이 남았다. 그리고 어린 노루 사체를 호박넝쿨 아래로 옮기고 남겨진 연밭 가장자리에 움푹 들어간 진흙 — 코를 뭉개는 시취를 맡으며 그린 그림이 있다. 해체 도구가 된 바위, 마시는 풀들, 알을 깐 파리, 태어난 구더기들, 그 입장과 처지에 차례차례 접속하고 가장 마지막에야 나는 비로소 멧돼지가 될 수 있었다.</p>
+  <p>지화는 여러 가지 색이 있지만 그중 가장 높은 경지는 흰색이라고 들었다. 이번에는 채색되지 않은 닥종이, 흰 닥종이를 자르고 적시기도 하며 닥종이 본연의 힘에 기대어 나아가고 있다. 알게 된 것은 닥종이가 아주 질기고 유연하다는 것, 그리고 스스로 깨끗해지는 능력이 있다는 것이다. 올해 처음으로 작업실로 쓰기 시작한 여기를 둘러싼 야외 공간을 ‘정원’ 이라고 부르는 것도 정확하지는 않게 느껴진다. 여기는 죽은 것과 산 것, 마른 것과 젖은 것, 길들일 수 있는 것과 길들여지지 않는 것 사이에 중첩된 이상한 땅이다. 먼 미래와 먼 과거 또한 들뜨고 겹쳐져 있다. 재훈은 나를 ‘정원지기’라고도 불렀는데, 그렇다면 나는 정원지기로서, 그 안에 사는 모든 대립항들 — ‘3을 억압하는 2’들의 짝이자 맞수가 되어보고자 한다.</p>
+</section>
+<section style="font-size: smaller; line-height: 1rem; padding-top: 1.2rem;">
+  <p>[1]  김언희, ｢호랑말코｣ (『호랑말코』, 문학과지성사, 2024)
+  <br>[2]  “Allen Ginsberg - Hum Bomb”.  내가 들은 것은 Allen Ginsberg, Torino, Italy, Janurary 24th 1992 버전이다.
+  <br>[3]  그림책 비평 모임: '알아차림'의 읽기와 쓰기. 진행자: 한윤아, 서울시립미술아카이브, 2025.2.6~2.27.
+  <br>[4]  강원도 삼척 안정사에서 전승되는 ‘땅설법’에서 야외 그림자극을 보았다.
+  <br>[5] 민승기 선생님의 ‘잉여향유’ 강의에서. (대안연구공동체, 2025)
+  <br>[6]  김언희, ｢밤의 가두리에서｣. “비몽과 사몽의 가두리에서 // 나를 토막 쳐 / 나의 맞수 / 나의 짝을 낚고 있소” (『호랑말코』, 문학과지성사, 2025)
+</p>
+</section>
+</div>
+<div class="additional-document-container">
+  <p>
+    글 차연서, 2025
+    차연서 개인전 《거상거상 거상거》 비치
+
+    <a href="https://energywhoisshe.com/Hum-Bomb.html">저차연서 개인전 《거상거상 거상거》, N/A, 2025.9.1 ~ 10.12</a><!--<a href="https://energywhoisshe.com/Hum-Bomb.html">Ongoing Exhibition: Cha Yeonså Solo Show "Hum Bomb, Hum Bomb, Hum Bomb Hum", N/A, Sep 1 – Oct 30, 2025</a>-->
+  </p>
+</div>
+<div class="statusbar" id="statusBar">1/3쪽 | 4921글자</div>
+<div class="homepage no-print"><a href="https://energywhoisshe.com/">Energywhoisshe.com</a></div>
+<div class="print-footer"><!-- 프린트 시 노출 -->https://energywhoisshe.com/Walking-Form.html</div>
+<script>
+  const fontSizeSelect = document.getElementById("fontSizeSelect");
+  const container = document.getElementById("documentContainer");
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const statusBar = document.getElementById("statusBar");
+
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;
+    container.style.fontSize = newSize;
+  });
+
+  darkModeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+  });
+
+  //스크롤바 - 5페이지 적용
+  function updatePageIndicatorBySection() {
+    const sections = document.querySelectorAll("#documentContainer section");
+    const total = sections.length;
+    const viewportMiddle = window.scrollY + window.innerHeight / 2;
+    let current = 1;
+
+    sections.forEach((sec, i) => {
+      const top = sec.offsetTop;
+      const bottom = top + sec.offsetHeight;
+      if (viewportMiddle >= top && viewportMiddle < bottom) {
+        current = i + 1;
+      }
+    });
+
+    // 스크롤이 거의 맨 아래에 도달했으면 마지막 페이지로 처리
+    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight - 10) {
+      current = total;
+    }
+
+    const text = statusBar.textContent;
+    const charPart = text.includes("|") ? text.split("|")[1].trim() : "";
+    statusBar.textContent = `${current}/${total}쪽${charPart ? " | " + charPart : ""}`;
+  }
+
+  document.addEventListener("scroll", updatePageIndicatorBySection);
+  window.addEventListener("load", updatePageIndicatorBySection);
+
+  //프린트
+  document.getElementById("printBtn").addEventListener("click", () => {
+    window.print();
+  });
+
+  //option-select-새로운 페이지
+  const docSelect = document.getElementById("docSelect");
+
+  docSelect.addEventListener("change", function () {
+    const selected = this.value;
+    if (selected) {
+      window.location.href = selected;
+   }
+  });
+
+  //2025-10-10 update
+  // === [추가] 드롭다운 변경 시 CSS 변수도 함께 갱신 ===
+  fontSizeSelect.addEventListener("change", (e) => {
+    const newSize = e.target.value;          // "14px", "15px", "16px", "18px"
+    container.style.setProperty("--base-font", newSize);
+    // (기존 코드가 container.style.fontSize = newSize; 도 시행하지만, 변수도 같이 맞춰 둡니다)
+  });
+
+  // === [추가] 로드 시 현재 변수값에 맞춰 드롭다운 표시 동기화 ===
+  window.addEventListener("load", () => {
+    const currentVar = getComputedStyle(container).getPropertyValue("--base-font").trim();
+    if (currentVar) {
+      fontSizeSelect.value = currentVar;     // 모바일에서는 "14px"로 보이게 동기화
+    }
+  });
+</script>
+</body></html>
