@@ -143,6 +143,16 @@ hr {
 }
 
 /*주요 작품 이미지 캡션*/
+.figure {
+  background: white;
+  line-height: 1.8;
+  letter-spacing: 0;
+  text-align: left;
+  word-break: keep-all;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 30px;
+}
 figcaption {
   font-size: 0.82rem;
   color: #444;
