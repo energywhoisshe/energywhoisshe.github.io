@@ -142,6 +142,23 @@ hr {
     font-size: 0.85rem;
 }
 
+/*주요 작품 이미지 캡션*/
+figcaption {
+  font-size: 0.82rem;
+  color: #444;
+  margin-top: 0.5rem;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+}
+figcaption div{
+  margin-top: 0.12rem;
+  
+}
+figure{
+  margin-bottom: 3rem;
+}
+/*주요 작품 이미지 캡션*/
+
 .footer {
   background: white;
   line-height: 1.8;
