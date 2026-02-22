@@ -446,7 +446,7 @@ Energywhoisshe.com
     cursor: pointer;
     max-width: auto;
     width: 20%; /* 불러오기 드롭다운 버튼 너비 42% -> 30% 수정. 2026.02*/
-    min-width: 110px; /* 불러오기 드롭다운 버튼 너비 모바일 고려 42%->110px 수정 2026.02*/
+    min-width: 20%; /* 불러오기 드롭다운 버튼 너비 42% -> 30% 수정. 2026.02*/
     flex: 0 0 auto;
     text-align: left;
 
@@ -809,17 +809,33 @@ Energywhoisshe.com
   function toggleBrowsePanel(lang){
     const panel = document.getElementById('browsePanel');
     if(!panel) return;
-    if(!panel.classList.contains('open')){
-      setBrowseLang(lang);
-      panel.classList.add('open');
-      panel.setAttribute('aria-hidden', 'false');
-      const s = document.getElementById('browseSearch');
-      if(s) s.focus();
-      renderBrowse();
-    } else {
-      setBrowseLang(lang);
+
+    const isOpen = panel.classList.contains('open');
+
+    if(isOpen){
+      // 같은 버튼을 다시 누르면 닫기, 다른 버튼이면 언어만 전환
+      if(browseLang === lang){
+        closeBrowsePanel();
+      }else{
+        setBrowseLang(lang);
+        const s = document.getElementById('browseSearch');
+        if(s) s.focus();
+        renderBrowse();
+      }
+      return;
     }
+
+    // 닫혀 있으면 열기
+    setBrowseLang(lang);
+    panel.classList.add('open');
+    panel.setAttribute('aria-hidden', 'false');
+
+    const s = document.getElementById('browseSearch');
+    if(s) s.focus();
+
+    renderBrowse();
   }
+
   function closeBrowsePanel(){
     const panel = document.getElementById('browsePanel');
     if(!panel) return;
