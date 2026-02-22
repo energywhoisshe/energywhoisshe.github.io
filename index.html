@@ -1,5 +1,6 @@
 <!-
 Energywhoisshe.com
+* 2026.02. ver. 3.3.0 Updated.
 * 2025.02. ver. 3.2.0 Updated.
 * 2024.07. ver. 3.1.0 Updated.
 * 2023.09. ver. 3.0.1 Updated.
@@ -24,7 +25,7 @@ Energywhoisshe.com
 	<meta name="author" content="Energywhoisshe.com">
 	<meta nme="publisher" content="Energywhoisshe.com">
 	<meta name="keywords" content="차연서, Cha Yeonså, 차연서 개인전, 에너지후이쉬, Energywhoisshe">
-	<meta name="date" content="2025-02-12">
+	<meta name="date" content="2026">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -57,7 +58,8 @@ Energywhoisshe.com
       		word-break: keep-all;
 	      	font-family: 'Noto Serif KR', serif;
 	      	margin: 0rem;
-	      	margin-top: 88px;
+	      	margin-top: 52px; /*--open, 불러오기 바 아래 간격 88px-> 60px ---*/
+	      	background-color: whitesmoke;
       	}
       	h1,h2,h3,h4,h5,h6 {
       		font-size: 100%;
@@ -209,10 +211,11 @@ Energywhoisshe.com
 	</style>
 	<style>
 		nav {
-			font-size: 2vmax;
+					font-size: 2vmax;
       		position: relative;
       		right:0;
       		top: 0px; /*우측메뉴높이*/
+      		background-color: whitesmoke;
       	}
       	nav li{
       		text-decoration: none;
@@ -222,18 +225,18 @@ Energywhoisshe.com
       		color: whitesmoke;
       	}
 		#menu {
-			 height: 5vh; 
 			 width: 100%;
 			 text-align: center;
 			 vertical-align: middle;
 			 font-family: 'Gothic A1', sans-serif;
+			 background-color: transparent;
 		}
 		#menu ul li{
 			display: inline;
 			list-style: none;
 			vertical-align: middle;
 			text-align: center;
-			line-height: 30px;
+			line-height: 12px;
 			margin-left: 1rem;
 		}
 		#menu ul li a {
@@ -243,24 +246,38 @@ Energywhoisshe.com
 	  iframe {
 	    	width: 100%;
 	    	border: none;
-	    	height: 500px;
-	    	max-height: 500px;
+	    	height: 80vh;
+	    	/*max-height: 600px;*/
 	    	/*본문 디자인*/
 			border-style: ridge;
 			border-width: 10px;
-			border-radius: 3px 45px 10px 3px;
-			height: 60vh;
+			border-radius: 0 45px 0 0;
+
+			/* games, comics, and things 버튼 바로 아래 줄 */
+			 	border-style: solid;
+			 	border-color: #ccc;
+			 	border-width: 1px;
+			 	display: block;
 		}
 		footer {
-			height: 5vh;
+				height: auto;
 	    	font-family: 'Gothic A1', sans-serif;
 	    	text-align: right;
-	    	font-weight: bold;
 	    	color: #999999;
 	    	margin-bottom: 0;
-	    	margin-right: 1rem;
+
+	    	padding-right: 1rem;
 	    	font-size: 0.8rem;
+	    	padding-top: auto;
+	    	padding-bottom: 1.4rem;
+	    	position: fixed;
+	    	right:0;
+	    	bottom: 0;
+	    	width: 100%;
+
+	    	font-weight: 600;
 	    }
+
 	    .logo {
 	    	font-size: 8vw;
 	    	font-weight: 300; 
@@ -276,39 +293,42 @@ Energywhoisshe.com
       		text-decoration-line: none;
       	}
       	.button {
-      		color: whitesmoke;
-      		width: 10vmax; 
-      		height: 8vmin;
-      		border-style: inset;
+      		/*height: 8vmin;*/
       		border-radius: 30% 50% 50% 40%;
-      		font-size: 1.5vmax;
+      		/*font-size: 1.5vmax;*/
+      		font-size: 1rem;
       		
       		border-width: 8px;
       		font-family: 'Gothic A1', sans-serif;
-      		font-weight: bold;
-      		border-style: groove;
+      		
+      		font-weight: 600;
+      		/*font-weight: bold;*/
+      		/*border-style: groove;*/
+      		border-style: none;
       		border-color: whitesmoke;
+      		padding: 5px ;
+      		background-color: transparent;
       	}
       	.button_Things {
-      		font-size: 1.5vmax;
+      		font-size: 1rem;
+      		padding: 5px;
       		padding-right: 3vmax;
       		padding-left: 3vmax;
-      		height: 3vmax;
-      		background-color: whitesmoke;
+      		height: auto;
+      		border-width: 3vmax;
       		border-color: whitesmoke;
-      		border-style: groove;
-      		border-width: 4vmax;
-      		border-radius: 0 30px 0 30px;
+      		border-style: none;
+      		border-radius: 6px 18px 6px 6px;
+      		border-width: 16px;
       		font-family: 'Gothic A1', sans-serif;
-      		font-weight: bold;
+
+      		font-weight: 600;
+      		/*font-weight: bold;*/
+      		margin-left: 3vmax;
+      		background-color: transparent;
+
       	}
-      	.button_4 {
-      		width: 5vmax; 
-      		height: 3vmax;
-      		background-color: whitesmoke;
-      		border-style: groove;
-      		border-radius: 0 30px 0 30px;
-      	}
+      	
       	button {
       		font-family: 'Gothic A1', sans-serif;
       		font-weight: 900;
@@ -410,12 +430,9 @@ Energywhoisshe.com
   </select>
   <button class="open-select" type="button" onclick="toggleBrowsePanel('en')">Open</button>
   <button class="open-select" type="button" onclick="toggleBrowsePanel('ko')">불러오기</button>
-
-
   
   <div id="browsePanel" aria-hidden="true">
-    
-
+ 
     <div id="browseControls">
       <input id="browseSearch" type="search" placeholder="Search" oninput="renderBrowse()" />
       <div class="seg" role="tablist" aria-label="sort">
@@ -430,7 +447,6 @@ Energywhoisshe.com
     <input type="checkbox" id="fullscreenToggle" style="transform: translateY(1px);">
     Open in full screen
   </label>-->
-
 </div>
 
 <style>
@@ -448,7 +464,10 @@ Energywhoisshe.com
     justify-content: flex-end;
     padding: 0.5rem 1rem;
     gap: 0.5rem;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);*/
+    box-shadow: none;
+  	border-bottom: 1px solid #ccc;
+
   }
   #open-bar select {
     font-family: 'Gothic A1', sans-serif;
@@ -480,7 +499,11 @@ Energywhoisshe.com
   #open-bar .open-select{
     font-family: 'Gothic A1', sans-serif;
     font-size: 1rem;
-    font-weight: bold;
+
+    /*font-weight: bold;*/
+    /* Open, 불러오기 메뉴 */
+    font-weight: 600;
+
     padding: 0.4rem;
     border-radius: 4px;
     border: 1px solid #ccc;
@@ -582,13 +605,13 @@ Energywhoisshe.com
     background: transparent;
     padding: 0;
     cursor: pointer;
-    font-weight: 700; /* 카테고리, 연도 버튼 */
+    font-weight: 600; /* 카테고리, 연도 버튼 */
     font-size: .9rem;
     color: #999; 
   }
   #browseControls .seg button.active{
     color: #121212;
-    font-weight: 700; /* 카테고리, 연도 버튼 */
+    font-weight: 600; /* 카테고리, 연도 버튼 */
   }
 
   #browseList{
@@ -603,7 +626,7 @@ Energywhoisshe.com
   }
   #browseList summary{
     padding: .4rem .2rem;
-    font-weight: 700; /* 프로젝트 분류 볼드 설정 */
+    font-weight: 600; /* 프로젝트 분류 볼드 설정 */
     cursor: pointer;
     list-style: none;
     color: #2f2f2f;
@@ -1040,24 +1063,24 @@ Energywhoisshe.com
 </script>
 
 	<header>
-		<a class="logo" href="hi.html" target=iframe>𓆨</a>
+		<a class="logo" href="hi.html" target=iframe>❇</a>
+		<!--https://snskeyboard.com/specialfont/ 쐐기문자-->
 	</header>
 	<nav id="menu">
 		<ul>
-			<h1><a onClick="window.location.reload()" style="cursor: pointer;">Energywhoisshe.com</a></h1>
+			<!--<a onClick="window.location.reload()" style="cursor: pointer;">Energywhoisshe.com</a>-->
 			<li><a class="button" href="games.html" onclick="openMenu(event, this.href)">Games</a></li>
 			<li><a class="button" href="comics.html" onclick="openMenu(event, this.href)">Comics</a></li>
 			<!--<li><a class="button" href="videos.html" target=iframe>Videos</a></li>-->
 			<li><a class="button_Things" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" onclick="openMenu(event, this.href)">and Things</a></li>
-			<!--https://snskeyboard.com/specialfont/ 쐐기문자-->
 		</ul>
 	</nav>
-	<div style="margin-top: 100px;">
+	<div style="margin-top: 0px;">
 		<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" name=iframe></iframe>
 	</div>
 
 	<footer>
-		© 2025. 차연서
+		<a onClick="window.location.reload()" style="cursor: pointer;">Energywhoisshe.com</a> © 2026. 차연서
 	</footer>
 </body>
 </html>
