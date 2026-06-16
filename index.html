@@ -1,5 +1,6 @@
 <!-
 Energywhoisshe.com
+* 2026.06. ver. 3.4.0 Updated.
 * 2026.02. ver. 3.3.0 Updated.
 * 2025.02. ver. 3.2.0 Updated.
 * 2024.07. ver. 3.1.0 Updated.
@@ -13,173 +14,243 @@ Energywhoisshe.com
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
-	
 	<link href='https://fonts.google.com' rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css">
-
-    <!-- 입구 페이지 -->
-    <title>Energywhoisshe.com</title>
-    <link rel="shortcut icon" href="energywhoisshe.ico" type="image/x-icon">
-
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Energywhoisshe.com</title>
+  <link rel="shortcut icon" href="energywhoisshe.ico" type="image/x-icon">
 	<meta name="description" content="Energywhoisshe.com">
 	<meta name="author" content="Energywhoisshe.com">
 	<meta nme="publisher" content="Energywhoisshe.com">
-	<meta name="keywords" content="차연서, Cha Yeonså, 차연서 개인전, 에너지후이쉬, Energywhoisshe">
+	<meta name="keywords" content="차연서, Cha Yeonså">
 	<meta name="date" content="2026">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="current-link"><a href="#" target="_blank"></a></div>
 
-	<style>
-		*,
-		*::before,
-		*::after {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
-		html, body {
-			max-width: 100%;
-			overflow-x: hidden;
-		}
-		html {
-      		background-repeat: no-repeat;
-      		background-size: cover;
-      		background-attachment: fixed;
-      		font-size: 14px;
+<!-- Open 드롭다운: 페이지 맨 위 고정 -->
+<div id="open-bar">
+  <select class="legacySelect" onchange="handleOpenSelect(this)" style="display:none;">
+    <option value="">Open</option>
+    <option value="Spring-Night-2026-Berlin.html">Performance: Spring Night (2026)</option>
+    <option value="Spectrosynthesis-Seoul.html">Group Show: Spectrosynthesis Seoul (2026)</option>
+    <option value="Spring-Night.html">Performance: Spring Night (2025)</option>
+    <option value="Those-Cats.html">Performance: Those Cats!(2025)</option>   
+    <option value="sent-in-spun-found.html">Group Show: sent in spun found(2025)</option><!--수정중-->
+    <!--<option value="Daddy.html">Video: Daddy(2025)</option>수정중-->
+    <option value="Hum-Bomb.html">Solo Show: Hum Bomb, Hum Bomb, Hum Bomb Hum (2025)</option>
+    <option value="en/Father-and-Us.html">Critique: Hyosil Yang, "Father and Us: Assemblages of Non-Bodies and “Not-Me”s" (2025)</option>
+    <option value="heol-heol-heol.html">Performance: heol, heol, heol (2024)</option>
+    <option value="Feed-me-stones.html">Solo Show: Feed me stones (2024)</option>
+    <option value="Tongue-of-Rain.html">Group Show: Tongue of Rain(2024)</option><!--수정중-->
+    <option value="KKOCH-DA-BAL-is-still-there.html">Solo Show: KKOCH-DA-BAL is still there (2024)</option>
+    <option value="en/END.html">Preface: Cha Yeonså, "KKOCH-DA-BAL is still there" (2023)</option>
+    <!--<option value="Festival-in-the-Motel.html">Comic: Festival in Motel(2023)</option>수정중-->
+    <option value="The-Motel.html">Group Show: The Motel: because I want to live there (2023)</option>
+    <option value="This-Unbelievable-Sleep.html">Solo Show: This Unbelievable Sleep (2023)</option>
+    <option value="en/Woman-Laughing-Child-Looking-Larvae-Intertwined.html">Critique: Hyosil Yang, "Woman Laughing, Child Looking, Larvae Intertwined" (2023)</option>
+    <option value="Mosquitolarvajuice.html">Performance: Mosquitolarvajuice (2022)</option>
+    <option value="3-Households.html">Game: 3 Households (2022)</option>
+    <option value="Every-mosquito-feels-the-same.html">Solo Show: Every mosquito feels the same (2022)</option>
+    <option value="Juicy-Mosquito.html">Performance: Juicy Mosquito(2020)</option>
+    <option value="Be-Sad-I-Dare-You.html">Duo Show: Be Sad I Dare You (2020)</option>
+  </select>
+  <select class="legacySelect" onchange="handleOpenSelect(this)" style="display:none;">
+    <option value="">불러오기</option>
+    <!-- 세부 분류 업데이트 2026.06 -->
+    <option value="Spring-Night-2026-Berlin.html">퍼포먼스: 봄밤(2026)</option>
+    <option value="Spectrosynthesis-Seoul.html">단체전: 스펙트로신테시스 서울(2026)</option>
+    <option value="Spring-Night.html">퍼포먼스: 봄밤(2025)</option>
+    <option value="Those-Cats.html">퍼포먼스: 저 고양이들!(2025)</option>
+    <option value="sent-in-spun-found.html">단체전: sent in spun found(2025)</option><!--수정중-->
+    <!--<option value="Daddy.html">비디오: 아빠(2025)</option>수정중-->
+    <option value="Hum-Bomb.html">개인전: 거상거상 거상거(2025)</option>
+    <option value="ko/Walking-Form.html">서문: 차연서, 「거상거상 걸어가는 모양」(2025)</option>
+    <option value="ko/Garden-Funeral.html">서문: 재훈, 「정령들의 축제, 정원 장례식」(2025)</option>
+    <option value="https://energywhoisshe.com/ko/Father-and-Us.html">비평: 양효실, 「아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합」(2025)</option>
+    <option value="heol-heol-heol.html">퍼포먼스: 황혼이 질 때면(2024)</option><!--수정중-->
+    <option value="Feed-me-stones.html">개인전: 살도 뼈도 없는 나에게(2024)</option>
+    <option value="Tongue-of-Rain.html">단체전: 혀 달린 비(2024)</option><!--수정중-->
+    <option value="KKOCH-DA-BAL-is-still-there.html">개인전: 꽃다발은 아직(2024)</option>
+    <!--<option value="Festival-in-the-Motel.html">만화: 모텔에서 축제(2023)</option>수정중-->
+    <option value="The-Motel.html">단체전: 모텔전(2023)</option>
+    <option value="ko/KKEUT.html">서문: 차연서, 「꽃다발은 아직」(2024)</option>
+    <option value="This-Unbelievable-Sleep.html">개인전: 이 기막힌 잠(2023)</option>
+    <option value="ko/Woman-Laughing-Child-Looking-Larvae-Intertwined.html">비평: 양효실, 「웃는 여자, 보는 아이, 엮이는 유충들」(2023)</option>
+    <option value="Mosquitolarvajuice.html">퍼포먼스: 모스키토라바쥬스(2022)</option>
+    <option value="3-Households.html">게임: 3 Households(2022)</option>
+    <option value="Every-mosquito-feels-the-same.html">개인전: Every mosquito feels the same(2022)</option>
+    <option value="Juicy-Mosquito.html">퍼포먼스: 쥬시 모스키토(2020)</option>
+    <option value="Be-Sad-I-Dare-You.html">단체전: 크게 슬플 일인가요(2020)</option>
+  </select>
+  <button class="open-select" type="button" onclick="toggleBrowsePanel('en')">Open</button>
+  <button class="open-select" type="button" onclick="toggleBrowsePanel('ko')">불러오기</button>
+  
+  <div id="browsePanel" aria-hidden="true">
+ 
+    <div id="browseControls">
+      <input id="browseSearch" type="search" placeholder="Search" oninput="renderBrowse()" />
+      <div class="seg" role="tablist" aria-label="sort">
+        <button type="button" id="modeCat" class="active" onclick="setBrowseMode('cat')">Category</button>
+        <button type="button" id="modeDate" onclick="setBrowseMode('date')">Year</button>
+      </div>
+    </div>
+
+    <div id="browseList"></div>
+  </div>
+</div>
+
+<style>
+  *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    html {
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-attachment: fixed;
+          font-size: 14px;
     }
     body {
-      		font-size: 1rem;
-      		line-height: 1.75;
-      		border-radius: 3px;
-      		word-break: keep-all;
-	      	font-family: 'Noto Serif KR', serif;
-	      	margin: 0rem;
-	      	margin-top: 52px; /*--open, 불러오기 바 아래 간격 88px-> 60px ---*/
+          font-size: 1rem;
+          line-height: 1.75;
+          border-radius: 3px;
+          word-break: keep-all;
+          font-family: 'Noto Serif KR', serif;
+          margin: 0rem;
+          margin-top: 52px; /*--open, 불러오기 바 아래 간격 88px-> 60px ---*/
     }
     h1,h2,h3,h4,h5,h6 {
-      		font-size: 100%;
-		}
-		h1{
-			font-family: 'Noto Serif KR', serif;
-		}
-      	header{
-      		position: fixed;
-      		text-align: right;
-      		color: white;
-      		padding: 0rem;
-      		width: 600px;
-      		border-radius: 0 0 3px 3px;
-      		font-weight: bold;
-      		z-index: 1000;
+          font-size: 100%;
+    }
+    h1{
+      font-family: 'Noto Serif KR', serif;
+    }
+        header{
+          position: fixed;
+          text-align: right;
+          color: white;
+          padding: 0rem;
+          width: 600px;
+          border-radius: 0 0 3px 3px;
+          font-weight: bold;
+          z-index: 1000;
 
-      		top:0;
-      		left: 2rem;
-      	}
-      	
-      	img {
-      		border-radius: 3px;
-      		max-width: 100%;
-      	}
-      	
-      	dt {
-	      	font-weight: 700;
-	    }
-	    dd {
-	      	
-	    }
-	    p {
-	    	margin-bottom: 1rem;
-	    }
-	    figcaption {
-	    	font-size: 0.8rem;
-	    	line-height: 1.4rem;
-	    	text-align: right;
-	    }
-      	button {
-	      	border: none;
-	      	border-radius: 3px;
-	      	padding: 0.4rem;
-	      	font-size: small;
-	      	text-align: left;
-	      	color: blue;
-	      	background-color: lightsteelblue;
-	      	margin-bottom: 0.4rem;
-      	}
-      	
-      	details > summary {
-  			list-style: none;
-		}
-	    details > summary::-webkit-details-marker {
-	      	display: none;
-	    }
-	    details {
-	      	background-color: #dddddd;
-	      	background-color: white;
+          top:0;
+          left: 2rem;
+        }
+        
+        img {
+          border-radius: 3px;
+          max-width: 100%;
+        }
+        
+        dt {
+          font-weight: 700;
+      }
+      dd {
+          
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      figcaption {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        text-align: right;
+      }
+        button {
+          border: none;
+          border-radius: 3px;
+          padding: 0.4rem;
+          font-size: small;
+          text-align: left;
+          color: blue;
+          background-color: lightsteelblue;
+          margin-bottom: 0.4rem;
+        }
+        
+        details > summary {
+        list-style: none;
+    }
+      details > summary::-webkit-details-marker {
+          display: none;
+      }
+      details {
+          background-color: #dddddd;
+          background-color: white;
 
-	    }
-	    details p, details ul {
-	    	padding-left: 1rem;
-	    	padding-top: 0.6rem;
-	    	padding-bottom: 1rem;
-	    }
-	    summary {
-	    }
-	    summary:hover, a:hover, button:hover{
-	      	font-style: italic;
-	    }
-	    
-		nav {
-					font-size: 2vmax;
-      		position: relative;
-      		right:0;
-      		top: 0px; /*우측메뉴높이*/
-      		background-color: whitesmoke;
-      	}
-      	nav li{
-      		text-decoration: none;
-      	}
-      	nav a {
-      		text-decoration-line: none;
-      		color: whitesmoke;
-      	}
-		#menu {
-			 width: 100%;
-			 text-align: center;
-			 vertical-align: middle;
-			 font-family: 'Gothic A1', sans-serif;
-			 background-color: transparent;
-		}
-		#menu ul li{
-			display: inline;
-			list-style: none;
-			vertical-align: middle;
-			text-align: center;
-			line-height: 12px;
-			margin-left: 1rem;
-		}
-		#menu ul li a {
-			text-decoration: none;
-			display: inline-block;
-		}
-	  iframe {
-	    	width: 100%;
-	    	border: none;
-	    	height: 80vh;
-	    	/*max-height: 600px;*/
-	    	/*본문 디자인*/
-			border-style: ridge;
-			border-width: 10px;
-			border-radius: 0 45px 0 0;
+      }
+      details p, details ul {
+        padding-left: 1rem;
+        padding-top: 0.6rem;
+        padding-bottom: 1rem;
+      }
+      summary {
+      }
+      summary:hover, a:hover, button:hover{
+          font-style: italic;
+      }
+      
+    nav {
+          font-size: 2vmax;
+          position: relative;
+          right:0;
+          top: 0px; /*우측메뉴높이*/
+          background-color: whitesmoke;
+        }
+        nav li{
+          text-decoration: none;
+        }
+        nav a {
+          text-decoration-line: none;
+          color: whitesmoke;
+        }
+    #menu {
+       width: 100%;
+       text-align: center;
+       vertical-align: middle;
+       font-family: 'Gothic A1', sans-serif;
+       background-color: transparent;
+    }
+    #menu ul li{
+      display: inline;
+      list-style: none;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 12px;
+      margin-left: 1rem;
+    }
+    #menu ul li a {
+      text-decoration: none;
+      display: inline-block;
+    }
+    iframe {
+        width: 100%;
+        border: none;
+        height: 80vh;
+        /*max-height: 600px;*/
+        /*본문 디자인*/
+      border-style: ridge;
+      border-width: 10px;
+      border-radius: 0 45px 0 0;
 
-			/* games, comics, and things 버튼 바로 아래 줄 */
-			 	border-style: solid;
-			 	border-color: #ccc;
-			 	border-width: 1px;
-			 	display: block;
-		}
+      /* games, comics, and things 버튼 바로 아래 줄 */
+        border-style: solid;
+        border-color: #ccc;
+        border-width: 1px;
+        display: block;
+    }
     /* 모바일*/
     @media (max-width: 768px) {
     iframe {
@@ -187,98 +258,98 @@ Energywhoisshe.com
         }
       }
 
-		footer {
-				height: auto;
-	    	font-family: 'Gothic A1', sans-serif;
-	    	text-align: right;
-	    	color: #999999;
-	    	margin-bottom: 0;
+    footer {
+        height: auto;
+        font-family: 'Gothic A1', sans-serif;
+        text-align: right;
+        color: #999999;
+        margin-bottom: 0;
 
-	    	padding-right: 1rem;
-	    	font-size: 0.8rem;
-	    	padding-top: auto;
-	    	padding-bottom: 1.4rem;
-	    	position: fixed;
-	    	right:0;
-	    	bottom: 0;
-	    	width: 100%;
+        padding-right: 1rem;
+        font-size: 0.8rem;
+        padding-top: auto;
+        padding-bottom: 1.4rem;
+        position: fixed;
+        right:0;
+        bottom: 0;
+        width: 100%;
 
-	    	font-weight: 600;
+        font-weight: 600;
         background-color: white;
-	    }
+      }
 
-	    .logo {
-	    	font-size: 6vw;
-	    	font-weight: 300; 
-	    	border-radius: 3px 0 0 3px; 
-	    	padding-right: 3px; 
-	    	padding-left: 3px; 
-	    	/*background-color: white; */
-	    	/*border-style: inset; */
-	    	border-width: 0.4px;
-      		position: fixed;
-      		right:0;
-      		top: 40px;
-      		text-decoration-line: none;
-      	}
-      	.button {
-      		/*height: 8vmin;*/
-      		border-radius: 30% 50% 50% 40%;
-      		/*font-size: 1.5vmax;*/
-      		font-size: 1rem;
-      		
-      		border-width: 8px;
-      		font-family: 'Gothic A1', sans-serif;
-      		
-      		font-weight: 600;
-      		/*font-weight: bold;*/
-      		/*border-style: groove;*/
-      		border-style: none;
-      		border-color: whitesmoke;
-      		padding: 5px ;
-      		background-color: transparent;
-      	}
-      	.button_Things {
-      		font-size: 1rem;
-      		padding: 5px;
-      		padding-right: 3vmax;
-      		padding-left: 3vmax;
-      		height: auto;
-      		border-width: 3vmax;
-      		border-color: whitesmoke;
-      		border-style: none;
-      		border-radius: 6px 18px 6px 6px;
-      		border-width: 16px;
-      		font-family: 'Gothic A1', sans-serif;
+      .logo {
+        font-size: 6vw;
+        font-weight: 300; 
+        border-radius: 3px 0 0 3px; 
+        padding-right: 3px; 
+        padding-left: 3px; 
+        /*background-color: white; */
+        /*border-style: inset; */
+        border-width: 0.4px;
+          position: fixed;
+          right:0;
+          top: 40px;
+          text-decoration-line: none;
+        }
+        .button {
+          /*height: 8vmin;*/
+          border-radius: 30% 50% 50% 40%;
+          /*font-size: 1.5vmax;*/
+          font-size: 1rem;
+          
+          border-width: 8px;
+          font-family: 'Gothic A1', sans-serif;
+          
+          font-weight: 600;
+          /*font-weight: bold;*/
+          /*border-style: groove;*/
+          border-style: none;
+          border-color: whitesmoke;
+          padding: 5px ;
+          background-color: transparent;
+        }
+        .button_Things {
+          font-size: 1rem;
+          padding: 5px;
+          padding-right: 3vmax;
+          padding-left: 3vmax;
+          height: auto;
+          border-width: 3vmax;
+          border-color: whitesmoke;
+          border-style: none;
+          border-radius: 6px 18px 6px 6px;
+          border-width: 16px;
+          font-family: 'Gothic A1', sans-serif;
 
-      		font-weight: 600;
-      		/*font-weight: bold;*/
-      		margin-left: 3vmax;
-      		background-color: transparent;
+          font-weight: 600;
+          /*font-weight: bold;*/
+          margin-left: 3vmax;
+          background-color: transparent;
 
-      	}
-      	
-      	button {
-      		font-family: 'Gothic A1', sans-serif;
-      		font-weight: 900;
+        }
+        
+        button {
+          font-family: 'Gothic A1', sans-serif;
+          font-weight: 900;
 
-	      	background-color: whitesmoke;
-      		color: #121212;
-      		border-style: groove;
-      		border-color: whitesmoke;
-      		width: 100%;
-      		padding-left: 2rem;
-      		border-radius: 3px;
+          background-color: whitesmoke;
+          color: #121212;
+          border-style: groove;
+          border-color: whitesmoke;
+          width: 100%;
+          padding-left: 2rem;
+          border-radius: 3px;
 
-      		font-size: 0.8rem;
-      		text-align: center;
-      		line-height: 3px;
-      		color: darkslateblue;
-      	}
-      	button:checked, button:hover {
-      		background-color: darkslateblue;
-      		color: whitesmoke;
-      	}
+          font-size: 0.8rem;
+          text-align: center;
+          line-height: 3px;
+          color: darkslateblue;
+        }
+        button:checked, button:hover {
+          background-color: darkslateblue;
+          color: whitesmoke;
+        }
 
     #current-link {
       position: fixed;
@@ -302,88 +373,189 @@ Energywhoisshe.com
           a:visited, a:hover footer a:visited, footer a:hover{
             color:darkslateblue;
           }
-  </style>
 
-</head>
-<body>
-<div id="current-link"><a href="#" target="_blank"></a></div>
+  #contentArea{
+    width:100%;
+    height:80vh;
+    border:1px solid #ccc;
+    border-radius:0 45px 0 0;
+    overflow:hidden;
+  }
+  #homeContent,#frameWrap{
+    width:100%;
+    height:100%;
+  }
+  #homeContent{
+    padding:2rem;
+    overflow-y:auto;
+  }
 
-<!-- Open 드롭다운: 페이지 맨 위 고정 -->
-<div id="open-bar">
-  <select class="legacySelect" onchange="handleOpenSelect(this)" style="display:none;">
-    <option value="">Open</option>
-    <option value="Spectrosynthesis-Seoul.html">Group Show: Spectrosynthesis Seoul (2026)</option>
-    <option value="Spring-Night.html">Performance: Spring Night (2025)</option>
-    <option value="Those-Cats.html">Performance: Those Cats!(2025)</option>   
-    <option value="sent-in-spun-found.html">Group Show: sent in spun found(2025)</option><!--수정중-->
-    <!--<option value="Daddy.html">Video: Daddy(2025)</option>수정중-->
-    <option value="Hum-Bomb.html">Solo Show: Hum Bomb, Hum Bomb, Hum Bomb Hum (2025)</option>
-    <option value="en/Father-and-Us.html">Critique: Hyosil Yang, "Father and Us: Assemblages of Non-Bodies and “Not-Me”s" (2025)</option>
-    <option value="heol-heol-heol.html">Performance: heol, heol, heol (2024)</option>
-    <option value="Feed-me-stones.html">Solo Show: Feed me stones (2024)</option>
-    <option value="Tongue-of-Rain.html">Group Show: Tongue of Rain(2024)</option><!--수정중-->
-    <option value="KKOCH-DA-BAL-is-still-there.html">Solo Show: KKOCH-DA-BAL is still there (2024)</option>
-    <option value="en/END.html">Preface: Cha Yeonså, "KKOCH-DA-BAL is still there" (2023)</option>
-    <!--<option value="Festival-in-the-Motel.html">Comic: Festival in Motel(2023)</option>수정중-->
-    <option value="The-Motel.html">Group Show: The Motel: because I want to live there(2023)</option><!--수정중-->
-    <option value="This-Unbelievable-Sleep.html">Solo Show: This Unbelievable Sleep (2023)</option>
-    <option value="en/Woman-Laughing-Child-Looking-Larvae-Intertwined.html">Critique: Hyosil Yang, "Woman Laughing, Child Looking, Larvae Intertwined" (2023)</option>
-    <option value="Mosquitolarvajuice.html">Performance: Mosquitolarvajuice (2022)</option>
-    <option value="3-Households.html">Game: 3 Households (2022)</option>
-    <option value="Every-mosquito-feels-the-same.html">Solo Show: Every mosquito feels the same (2022)</option>
-    <!--<option value="Juicy-Mosquito.html">Performance: Juicy Mosquito(2020)</option>-->
-    <option value="Be-Sad-I-Dare_You.html">Group Show: Be Sad I Dare You(2020)</option><!--수정중-->
-  </select>
-  <select class="legacySelect" onchange="handleOpenSelect(this)" style="display:none;">
-    <option value="">불러오기</option>
-    <!-- 세부 분류 업데이트 2026.02 -->
 
-    <option value="Spectrosynthesis-Seoul.html">단체전: 스펙트로신테시스 서울 (2026)</option>
-    <option value="Spring-Night.html">퍼포먼스: 봄밤(2025)</option>
-    <option value="Those-Cats.html">퍼포먼스: 저 고양이들!(2025)</option>
-    <option value="sent-in-spun-found.html">단체전: sent in spun found(2025)</option><!--수정중-->
-    <option value="Daddy.html">비디오: 아빠(2025)</option><!--수정중-->
-    <option value="Hum-Bomb.html">개인전: 거상거상 거상거(2025)</option>
-    <option value="ko/Walking-Form.html">서문: 차연서, 「거상거상 걸어가는 모양」(2025)</option>
-    <option value="ko/Garden-Funeral.html">서문: 재훈, 「정령들의 축제, 정원 장례식」(2025)</option>
-    <option value="https://energywhoisshe.com/ko/Father-and-Us.html">비평: 양효실, 「아빠와 우리들, 비-체(非-體) 또는 나-아닌 것들의 회합」(2025)</option>
-    <option value="heol-heol-heol.html">퍼포먼스: 황혼이 질 때면(2024)</option><!--수정중-->
-    <option value="Feed-me-stones.html">개인전: 살도 뼈도 없는 나에게(2024)</option>
-    <option value="Tongue-of-Rain.html">단체전: 혀 달린 비(2024)</option><!--수정중-->
-    <option value="KKOCH-DA-BAL-is-still-there.html">개인전: 꽃다발은 아직(2024)</option>
-    <option value="Festival-in-the-Motel.html">만화: 모텔에서 축제(2023)</option><!--수정중-->
-    <option value="The-Motel.html">단체전: 모텔전(2023)</option><!--수정중-->
-    <option value="ko/KKEUT.html">서문: 차연서, 「꽃다발은 아직」(2024)</option>
-    <option value="This-Unbelievable-Sleep.html">개인전: 이 기막힌 잠(2023)</option>
-    <option value="ko/Woman-Laughing-Child-Looking-Larvae-Intertwined.html">비평: 양효실, 「웃는 여자, 보는 아이, 엮이는 유충들」(2023)</option>
-    <option value="Mosquitolarvajuice.html">퍼포먼스: 모스키토라바쥬스(2022)</option>
-    <option value="3-Households.html">게임: 3 Households(2022)</option>
-    <option value="Every-mosquito-feels-the-same.html">개인전: Every mosquito feels the same(2022)</option>
-    <!--<option value="Juicy-Mosquito.html">퍼포먼스: 쥬시 모스키토(2020)</option>수정중-->
-    <option value="Be-Sad-I-Dare_You.html">단체전: 크게 슬플 일인가요(2020)</option><!--수정중-->
-  </select>
-  <button class="open-select" type="button" onclick="toggleBrowsePanel('en')">Open</button>
-  <button class="open-select" type="button" onclick="toggleBrowsePanel('ko')">불러오기</button>
-  
-  <div id="browsePanel" aria-hidden="true">
- 
-    <div id="browseControls">
-      <input id="browseSearch" type="search" placeholder="Search" oninput="renderBrowse()" />
-      <div class="seg" role="tablist" aria-label="sort">
-        <button type="button" id="modeCat" class="active" onclick="setBrowseMode('cat')">Category</button>
-        <button type="button" id="modeDate" onclick="setBrowseMode('date')">Year</button>
-      </div>
-    </div>
+  /* Featured Work hero image */
+  .featured-work{
+    display:block;
+    position:relative;
+    margin-top:1rem;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+  }
+  .featured-work img{
+    width:100%;
+    height:min(80vh,900px);
+    object-fit:cover;
+    display:block;
+    border-radius:0;
+  }
+  .featured-work:hover img{
+    filter:contrast(1.03);
+  }
+  .featured-fallback{
+    display:none;
+    width:100%;
+    height:min(80vh,900px);
+    border:1px solid #ccc;
+    background:whitesmoke;
+    align-items:center;
+    justify-content:center;
+    font-family:'Gothic A1', sans-serif;
+    font-size:.9rem;
+    color:#777;
+  }
+  .featured-work.image-error img{
+    display:none;
+  }
+  .featured-work.image-error .featured-fallback{
+    display:flex;
+  }
 
-    <div id="browseList"></div>
-  </div>
-<!--<label id="fsLabel" style="font-family: 'Gothic A1', sans-serif; font-size: 0.9rem; font-weight: bold; display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.2rem 0.4rem; border-radius: 4px;">
-    <input type="checkbox" id="fullscreenToggle" style="transform: translateY(1px);">
-    Open in full screen
-  </label>-->
-</div>
+  /* Projects image cards + Texts auto list from Open menu */
+  .home-section{
+    margin-top:1.5rem;
+    padding-bottom:1rem;
+  }
+  .project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(180px, 1fr));
+    gap:1rem;
+    margin-top:.8rem;
+    padding-bottom:1rem;
+  }
+  .project-card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+    font-family:'Gothic A1', sans-serif;
+  }
+  .project-thumb{
+    width:100%;
+    aspect-ratio:3/2;
+    border:1px solid #ccc;
+    border-radius:3px;
+    overflow:hidden;
+    background:whitesmoke;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .project-thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:0;
+    display:block;
+    filter:grayscale(100%) brightness(0.92) contrast(1.05);
+    opacity:.88;
+    transition:filter .2s ease, opacity .2s ease;
+  }
+  .project-card:hover .project-thumb img{
+    filter:grayscale(100%) brightness(0.75) contrast(1.15);
+    opacity:1;
+  }
+  .project-thumb::after{
+    content:attr(data-fallback);
+    display:none;
+    padding:.8rem;
+    font-size:.8rem;
+    line-height:1.4;
+    text-align:center;
+    color:#777;
+    word-break:keep-all;
+  }
+  .project-thumb.image-error img{
+    display:none;
+  }
+  .project-thumb.image-error::after{
+    display:block;
+  }
+  .project-title{
+    display:block;
+    margin-top:.45rem;
+    font-size:.92rem;
+    line-height:1.35;
+    font-weight:600;
+  }
+  .project-meta{
+    display:block;
+    color:#999;
+    font-size:.75rem;
+    line-height:1.3;
+    font-weight:700;
+    margin-top:.15rem;
+  }
+  .text-list{
+    list-style:none;
+    padding-left:0;
+    margin-top:.6rem;
+    font-family:'Gothic A1', sans-serif;
+    font-size:.92rem;
+    line-height:1.55;
+  }
+  .text-list li{
+    border-top:1px solid #eee;
+    padding:.35rem 0;
+  }
+  .text-list a{
+    text-decoration:none;
+    color:inherit;
+  }
+  .text-list a:hover{
+    font-style:italic;
+  }
+  .text-list .sub,
+  .project-title .sub{
+    color:#999;
+    font-size:.82rem;
+    font-weight:700;
+    margin-left:.35rem;
+  }
+  .text-list .meta{
+    color:#999;
+    font-size:.78rem;
+    font-weight:700;
+    float:right;
+    margin-left:1rem;
+  }
+  @media (max-width:768px){
+    .project-grid{ grid-template-columns:repeat(2, minmax(0, 1fr)); }
+    .text-list .meta{
+      float:none;
+      display:block;
+      margin-left:0;
+      margin-top:.1rem;
+    }
+  }
+  #frameWrap iframe{
+    width:100%;
+    height:100%;
+    border:none;
+    border-radius:0;
+  }
+  @media (max-width:768px){
+    #contentArea{height:76vh;}
+  }
 
-<style>
+  /* =========================================================*/
   #open-bar {
     position: fixed;
     top: 0;
@@ -616,7 +788,6 @@ Energywhoisshe.com
     font-weight: 700;
     margin-left: .35rem;
   }
-
 </style>
 
 <script>
@@ -683,7 +854,12 @@ Energywhoisshe.com
     if(fs){
       openInNewWindowFullscreen(url);
     }else{
+      const home = document.getElementById('homeContent');
+      const frameWrap = document.getElementById('frameWrap');
       const frame = document.querySelector('iframe[name="iframe"]');
+
+      if(home) home.style.display = 'none';
+      if(frameWrap) frameWrap.style.display = 'block';
       if(frame) frame.src = url;
     }
   }
@@ -720,6 +896,57 @@ Energywhoisshe.com
   let browseLang = 'en';   // 'en' | 'ko' //영어인지 한글인지
   let browseMode = 'cat';  // 'cat' | 'date' //카테고리 기준인지 날짜 기준인지 
   let browseData = { en: [], ko: [] };
+
+  // Featured Work: 홈페이지의 큰 대표 이미지입니다.
+  // 유지보수는 아래 3줄만 바꾸면 됩니다.
+  // url은 Open/불러오기 메뉴의 option value와 맞추면 제목/연도/카테고리가 자동 연동됩니다.
+  const FEATURED_WORK = {
+    url: "Spring-Night-2026-Berlin.html",
+    image: "Spring-Night/2026/cover.jpg",
+    alt: "Spring Night"
+  };
+
+  /* =========================================================
+   PROJECT COVER RULES
+   ---------------------------------------------------------
+   기본 규칙:
+   ProjectName.html
+   → ProjectName/cover.jpg
+
+   예:
+   Feed-me-stones.html
+   → Feed-me-stones/cover.jpg
+
+   ---------------------------------------------------------
+   예외 규칙:
+   연도별 폴더를 사용하는 프로젝트만 아래에 추가.
+
+   예:
+   Spring-Night.html
+   → Spring-Night/2026/cover.jpg
+
+   새 프로젝트 추가 시:
+   1. 대부분은 cover.jpg만 만들면 끝
+   2. 연도별 구조면 COVER_OVERRIDES에 한 줄 추가
+   ========================================================= */
+
+  const COVER_OVERRIDES = {
+    "Spring-Night.html": "Spring-Night/2025/cover.jpg",
+    "Spring-Night-2026-Berlin.html": "Spring-Night/2026/cover.jpg",
+    "KKOCH-DA-BAL-is-still-there.html": "Bouquet/cover.jpg"
+  };
+
+  function getProjectCover(url){
+    if(COVER_OVERRIDES[url]){
+      return COVER_OVERRIDES[url];
+    }
+
+    const folder = url.replace('.html','');
+    return `${folder}/cover.jpg`;
+  }
+
+  const TEXT_CATEGORIES = ["Critique", "Preface", "Text", "Writing"];
+  const TEXT_CATEGORIES_KO = ["비평", "서문", "글", "라이팅"];
 
   // 원하는 카테고리 표시 순서(없으면 마지막에 자동 정렬)
   const CATEGORY_ORDER = {
@@ -891,7 +1118,12 @@ Energywhoisshe.com
     if(fs){
       openInNewWindowFullscreen(url);
     }else{
+      const home = document.getElementById('homeContent');
+      const frameWrap = document.getElementById('frameWrap');
       const frame = document.querySelector('iframe[name="iframe"]');
+
+      if(home) home.style.display = 'none';
+      if(frameWrap) frameWrap.style.display = 'block';
       if(frame) frame.src = url;
     }
     closeBrowsePanel();
@@ -913,6 +1145,90 @@ Energywhoisshe.com
       .replaceAll('<', '&lt;')
       .replaceAll('>', '&gt;');
   }
+
+  function findBrowseItemByUrl(url, lang='en'){
+    return (browseData[lang] || []).find(it => it.url === url) || null;
+  }
+
+  function renderFeaturedWork(){
+    const wrap = document.getElementById('featuredWork');
+    if(!wrap) return;
+
+    const work = FEATURED_WORK;
+    const en = findBrowseItemByUrl(work.url, 'en');
+    const ko = findBrowseItemByUrl(work.url, 'ko');
+    const item = en || ko || {
+      url: work.url,
+      title: work.alt || work.url.replace(/\.html$/,'').replaceAll('-', ' '),
+      year: '',
+      cat: ''
+    };
+
+    const title = item.title || work.alt || work.url;
+    const fallback = title + (item.year ? ` (${item.year})` : '');
+
+    wrap.innerHTML = `
+      <a class="featured-work" href="${escapeAttr(work.url)}" onclick="openMenu(event, this.href)">
+        <img src="${escapeAttr(work.image)}" alt="${escapeAttr(work.alt || title)}" loading="lazy" onerror="this.parentElement.classList.add('image-error')">
+        <span class="featured-fallback">${escapeHtml(fallback)}</span>
+      </a>
+    `;
+  }
+
+  function renderProjectsAndTexts(){
+    const projectWrap = document.getElementById('projectWorksGrid');
+    const textWrap = document.getElementById('textWorksList');
+    if(!projectWrap || !textWrap) return;
+
+    const enItems = (browseData.en || []).slice();
+    const koItems = (browseData.ko || []).slice();
+
+    const projects = enItems.filter(item => !TEXT_CATEGORIES.includes(item.cat));
+    const enTexts = enItems
+      .filter(item => TEXT_CATEGORIES.includes(item.cat))
+      .map(item => ({...item, langLabel: 'EN'}));
+
+    const koTexts = koItems
+      .filter(item => TEXT_CATEGORIES_KO.includes(item.cat))
+      .map(item => ({...item, langLabel: 'KO'}));
+
+    const texts = [...enTexts, ...koTexts];
+
+    projectWrap.innerHTML = projects.map(item => {
+      const ko = findBrowseItemByUrl(item.url, 'ko');
+      const koTitle = ko ? ko.title : '';
+      const metaBits = [item.cat, item.year].filter(Boolean).join(' · ');
+      const image = getProjectCover(item.url);
+      const fallback = item.title + (item.year ? ` (${item.year})` : '');
+
+      return `
+        <a class="project-card" href="${escapeAttr(item.url)}" onclick="openMenu(event, this.href)">
+          <span class="project-thumb" data-fallback="${escapeAttr(fallback)}">
+            <img src="${escapeAttr(image)}" alt="${escapeAttr(item.title)}" loading="lazy" onerror="this.parentElement.classList.add('image-error')">
+          </span>
+          <span class="project-title">${escapeHtml(item.title)}${koTitle ? `<span class="sub">${escapeHtml(koTitle)}</span>` : ''}</span>
+          ${metaBits ? `<span class="project-meta">${escapeHtml(metaBits)}</span>` : ''}
+        </a>
+      `;
+    }).join('');
+
+    textWrap.innerHTML = texts.map(item => {
+      const metaBits = [item.langLabel, item.cat, item.year].filter(Boolean).join(' · ');
+
+      return `
+        <li>
+          <a href="${escapeAttr(item.url)}" onclick="openMenu(event, this.href)">
+            ${escapeHtml(item.title)}
+            ${metaBits ? `<span class="meta">${escapeHtml(metaBits)}</span>` : ''}
+          </a>
+        </li>
+      `;
+    }).join('');
+  }
+
+
+
+
 
   function renderBrowse(){
     const list = document.getElementById('browseList');
@@ -1006,28 +1322,59 @@ Energywhoisshe.com
   });
 
   // init
+  // 이 스크립트는 homeContent보다 위에 있어서, Recent Works는 DOM이 다 만들어진 뒤 렌더링해야 보입니다.
   buildBrowseData();
   browseClickSetup();
+  document.addEventListener('DOMContentLoaded', () => {
+    buildBrowseData();
+    renderFeaturedWork();
+    renderProjectsAndTexts();
+  });
 </script>
 
-	<header>
-		<!--<a class="logo" href="hi.html" target=iframe>𖡅</a>-->
-		<!--https://snskeyboard.com/specialfont/ 쐐기문자-->
-    <!--https://snskeyboard.com/hieroglyph/ 상형문자-->
-	</header>
+<header>
+</header>
 	<nav id="menu">
 		<ul>
-			<!--<a onClick="window.location.reload()" style="cursor: pointer;">Energywhoisshe.com</a>-->
 			<li><a class="button" href="games.html" onclick="openMenu(event, this.href)">[Games]</a></li>
 			<li><a class="button" href="comics.html" onclick="openMenu(event, this.href)">[Comics]</a></li>
-			<!--<li><a class="button" href="videos.html" target=iframe>Videos</a></li>-->
 			<li><a class="button_Things" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" onclick="openMenu(event, this.href)">and [Things]</a></li>
 		</ul>
 	</nav>
-	<div style="margin-top: 0px;">
-		<!--<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" name=iframe></iframe>-->
-    <iframe src="https://energywhoisshe.com/hi.html" name=iframe></iframe>
-	</div>
+	<div id="contentArea">
+  <div id="homeContent">
+      
+    <section>
+      <div id="featuredWork"></div>
+    </section>
+
+    <p>
+      <h2>Current & Upcoming Exhibitions:</h2>
+      <ul style="font-size: small;">
+        <li><a href="https://artsonje.org/en/exhibition/spectrosynthesis-seoul/" onclick="openMenu(event, this.href)"><i>Spectrosynthesis Seoul</i></a>, Group Show, Art Sonje Center, Seoul, KR, March 20 – June 28, 2026</li>
+        <li><a href="https://www.hebbel-am-ufer.de/en/programme/pdetail/cha-yeonsaa-spring-night" onclick="openMenu(event, this.href)"><i>Spring Night</i></a>, Performance, <i>Being Alone</i>, HAU Hebbel am Ufer, Berlin, DE, May 31, 2026</li>
+      </ul>
+      <ul style="font-size: small;">
+        <li><a href="https://artsonje.org/exhibition/%ec%8a%a4%ed%8e%99%ed%8a%b8%eb%a1%9c%ec%8b%a0%ed%85%8c%ec%8b%9c%ec%8a%a4-%ec%84%9c%ec%9a%b8/" onclick="openMenu(event, this.href)"><i>스펙트로신테시스 서울</i></a>, 단체전, 2026. 3. 20. – 6. 28, 아트선재센터 전관, 서울</li>
+        <li><a href="https://www.hebbel-am-ufer.de/en/programme/pdetail/cha-yeonsaa-spring-night" onclick="openMenu(event, this.href)"><i>봄밤</i></a>, 퍼포먼스, <i>홀로 있음</i>, 2026 5. 31, HAU 헤벨 암 우퍼, 베를린</li>
+      </ul>
+    </p>
+
+    <section class="home-section">
+      <h2>Recent Works:</h2>
+      <div id="projectWorksGrid" class="project-grid"></div>
+    </section>
+
+    <section class="home-section">
+      <h2>Related Texts:</h2>
+      <ul id="textWorksList" class="text-list"></ul>
+    </section>
+  </div>
+
+  <div id="frameWrap" style="display:none;">
+    <iframe name="iframe"></iframe>
+  </div>
+</div>
 
 	<footer>
 		<a onClick="window.location.reload()" style="cursor: pointer;">Energywhoisshe.com</a> © 2026. 차연서
