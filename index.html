@@ -95,8 +95,10 @@ Energywhoisshe.com
       data-en="In the “circus” that, as Aglaja Veteranyi says, exists even in heaven, the “laughing women,” as Hyosil Yang calls them, read poetry. The heroines of horror films—whether cats, women, corpses, teenagers, monsters, children, mothers, or readers of poetry — begin the art of rolling their tongues over collaged words. They “send back” the prayers and ritual acrobatics they stitch together into the insult of the spinning world."
       data-credit="Text and Direction by Cha Yeonså / Part I 9 Lives — Performance by Sunhee Bae. / Part II Resurrected Mother — Translated and Read by Nari Sohn. / Excerpted poems from Those Cat! and 28 other poems by Kim Eon Hee, and from Lady Lazarus and several poems by Sylvia Plath.">Performance: Those Cats!(2025)</option>
     <option value="sent-in-spun-found.html"
-      data-en-work="Festival 25 Circus"
-      data-ko-work="축제 25 서커스"
+      data-en-work="Festival 25 Circus
+        Thirty-eight, Heaven (2022-2023 / 2025)"
+      data-ko-work="축제 25 서커스
+        서른여덟, 천국 (2022-2023 / 2025)"
       data-venue="DOOSAN Art Center DOOSAN Art Gallery"
       data-city="Seoul"
       data-ko="《sent in spun found》는 누군가에게 또는 어딘가로 보내지거나, 역으로 보내는 연쇄적 흐름에서 남겨지고 발견되는 것들에 주목한다. 차연서와 허지은(Gi (Ginny) Huo)은 각자의 사적인 경험에서 비롯된 가족, 종교, 사회적 현상과 그로부터 일어나는 정동을 독자적인 태도와 시각 언어로 이야기한다."
@@ -2475,7 +2477,7 @@ function getProjectScaleClass(cat, scale){
 
   function splitTrailingYearLabel(str){
     const text = String(str || '').trim();
-    const match = text.match(/^(.*?)(\s*\((?:19|20)\d{2}(?:\s*[–-]\s*(?:19|20)\d{2})?\))$/);
+    const match = text.match(/^(.*?)(\s*\((?:19|20)\d{2}(?:\s*[–-]\s*(?:19|20)\d{2})?(?:\s*\/\s*(?:19|20)\d{2}(?:\s*[–-]\s*(?:19|20)\d{2})?)*\))$/);
     if(!match){
       return { title:text, year:'' };
     }
