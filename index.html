@@ -2340,6 +2340,55 @@ Energywhoisshe.com
     }
   }
 
+
+
+  /* Archive: keep the original natural inline layout; only reduce image/card ratio as the window narrows */
+  @media (min-width:769px){
+    #archiveWorksGrid .project-card.project-empty.project-large{
+      width:min(360px, 27vw) !important;
+      max-width:min(360px, 27vw) !important;
+    }
+
+    #archiveWorksGrid .project-card.project-empty.project-medium,
+    #archiveWorksGrid .project-card.project-empty:not(.project-large):not(.project-small){
+      width:min(260px, 20vw) !important;
+      max-width:min(260px, 20vw) !important;
+    }
+
+    #archiveWorksGrid .project-card.project-empty.project-small{
+      width:min(170px, 13vw) !important;
+      max-width:min(170px, 13vw) !important;
+    }
+
+    #archiveWorksGrid .project-card.project-empty .project-thumb{
+      width:100% !important;
+      max-width:100% !important;
+    }
+  }
+
+  @media (max-width:768px){
+    #archiveWorksGrid .project-card.project-empty.project-large{
+      width:min(280px, 41vw) !important;
+      max-width:min(280px, 41vw) !important;
+    }
+
+    #archiveWorksGrid .project-card.project-empty.project-medium,
+    #archiveWorksGrid .project-card.project-empty:not(.project-large):not(.project-small){
+      width:min(220px, 34vw) !important;
+      max-width:min(220px, 34vw) !important;
+    }
+
+    #archiveWorksGrid .project-card.project-empty.project-small{
+      width:min(150px, 26vw) !important;
+      max-width:min(150px, 26vw) !important;
+    }
+
+    #archiveWorksGrid .project-card.project-empty .project-thumb{
+      width:100% !important;
+      max-width:100% !important;
+    }
+  }
+
 </style>
 
 <script>
