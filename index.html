@@ -857,11 +857,17 @@ Energywhoisshe.com
     border-radius:0 45px 0 0;
     overflow:hidden;
   }
-  #homeContent,#contactsContent,#frameWrap{
+  #homeContent,#archiveContent,#textsContent,#contactsContent,#frameWrap{
     width:100%;
     height:100%;
   }
   #homeContent{
+    padding:2rem;
+    overflow-y:auto;
+  }
+  #archiveContent,
+  #textsContent{
+    display:none;
     padding:2rem;
     overflow-y:auto;
   }
@@ -1489,6 +1495,10 @@ Energywhoisshe.com
     }
 
     #homeContent{
+      padding:1rem;
+    }
+    #archiveContent,
+    #textsContent{
       padding:1rem;
     }
 
@@ -2249,7 +2259,7 @@ Energywhoisshe.com
      Reduced navigation presence — 2026.07
      ========================================================= */
 
-  /* Homes / Contacts: keep them visible, but quieter */
+  /* Homes / Archive / Texts / Contacts: keep them visible, but quieter */
   #menu ul li{
     margin-left: .55rem;
   }
@@ -2463,30 +2473,103 @@ Energywhoisshe.com
     };
   }
   function setInternalHash(hash, replace = false){
-    if(window.location.hash === hash) return;
-    const nextUrl = window.location.pathname + window.location.search + hash;
+    const safeHash = String(hash || '');
+    if(window.location.hash === safeHash) return;
+
+    const nextUrl = window.location.pathname + window.location.search + safeHash;
     if(replace) history.replaceState(null, '', nextUrl);
     else history.pushState(null, '', nextUrl);
   }
 
-  function resetProjectCardsToDefault(){
+  // 메뉴에 보이는 이름을 그대로 내부 주소용 해시로 바꿉니다.
+  // 예: [Homes] → #homes / [Contact Me] → #contact-me
+  // 메뉴 텍스트만 바꾸면 href, id, 좌측 상단 표시가 자동으로 함께 바뀝니다.
+  function menuLabelToHash(label){
+    const slug = String(label || '')
+      .normalize('NFKC')
+      .trim()
+      .replace(/^[\[({]+|[\])}]+$/g, '')
+      .trim()
+      .toLowerCase()
+      .replace(/&/g, '-and-')
+      .replace(/[^a-z0-9가-힣]+/g, '-')
+      .replace(/^-+|-+$/g, '');
+
+    return slug ? `#${slug}` : '';
+  }
+
+  function syncMenuHashes(){
+    document.querySelectorAll('#menu a[data-view]').forEach(link => {
+      const hash = menuLabelToHash(link.textContent);
+      if(!hash) return;
+
+      const id = hash.slice(1);
+      link.href = hash;
+      link.id = id;
+      link.dataset.menuHash = hash;
+    });
+  }
+
+  function getMenuHash(view){
+    const link = document.querySelector(`#menu a[data-view="${view}"]`);
+    if(!link) return `#${view}`;
+    return link.dataset.menuHash || menuLabelToHash(link.textContent) || `#${view}`;
+  }
+
+  function clearCurrentLink(){
+    const current = document.querySelector('#current-link a');
+    if(!current) return;
+
+    current.textContent = '';
+    current.removeAttribute('href');
+    current.removeAttribute('target');
+    current.removeAttribute('rel');
+  }
+
+  function showInternalHash(hash){
+    const current = document.querySelector('#current-link a');
+    if(!current) return;
+
+    if(!hash){
+      clearCurrentLink();
+      return;
+    }
+
+    current.href = hash;
+    current.textContent = hash;
+    current.removeAttribute('target');
+    current.removeAttribute('rel');
+  }
+
+  function resetProjectCardsToDefault(preserveReturnHash = false){
     document.querySelectorAll('.project-card[data-default-expanded]').forEach(card => {
       const shouldExpand = card.getAttribute('data-default-expanded') === 'true';
       card.classList.toggle('project-empty', !shouldExpand);
       card.classList.toggle('project-collapsed', !shouldExpand);
       card.classList.toggle('project-expanded', shouldExpand);
+      if(!preserveReturnHash) delete card.dataset.returnHash;
     });
   }
 
-  function openHome(event, updateHistory = true){
+  function openHome(event, updateHistory = true, displayHash = true, preserveReturnHash = false){
     if(event) event.preventDefault();
 
-    resetProjectCardsToDefault();
+    resetProjectCardsToDefault(preserveReturnHash);
 
     const home = document.getElementById('homeContent');
+    const archive = document.getElementById('archiveContent');
+    const texts = document.getElementById('textsContent');
     const contacts = document.getElementById('contactsContent');
     const frameWrap = document.getElementById('frameWrap');
 
+    if(archive){
+      archive.style.display = 'none';
+      archive.setAttribute('aria-hidden', 'true');
+    }
+    if(texts){
+      texts.style.display = 'none';
+      texts.setAttribute('aria-hidden', 'true');
+    }
     if(contacts){
       contacts.style.display = 'none';
       contacts.setAttribute('aria-hidden', 'true');
@@ -2494,15 +2577,82 @@ Energywhoisshe.com
     if(frameWrap) frameWrap.style.display = 'none';
     if(home) home.style.display = 'block';
 
-    const current = document.querySelector('#current-link a');
-    if(current){
-      current.href = '#home';
-      current.textContent = '';
-      current.removeAttribute('target');
-      current.removeAttribute('rel');
+    const homeHash = getMenuHash('home');
+    if(displayHash) showInternalHash(homeHash);
+    else clearCurrentLink();
+
+    if(updateHistory) setInternalHash(homeHash);
+    if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+
+  function openArchive(event, updateHistory = true, displayHash = true, preserveReturnHash = false){
+    if(event) event.preventDefault();
+
+    resetProjectCardsToDefault(preserveReturnHash);
+
+    const home = document.getElementById('homeContent');
+    const archive = document.getElementById('archiveContent');
+    const texts = document.getElementById('textsContent');
+    const contacts = document.getElementById('contactsContent');
+    const frameWrap = document.getElementById('frameWrap');
+
+    if(home) home.style.display = 'none';
+    if(texts){
+      texts.style.display = 'none';
+      texts.setAttribute('aria-hidden', 'true');
+    }
+    if(contacts){
+      contacts.style.display = 'none';
+      contacts.setAttribute('aria-hidden', 'true');
+    }
+    if(frameWrap) frameWrap.style.display = 'none';
+    if(archive){
+      archive.style.display = 'block';
+      archive.setAttribute('aria-hidden', 'false');
+      archive.scrollTop = 0;
     }
 
-    if(updateHistory) setInternalHash('#home');
+    const archiveHash = getMenuHash('archive');
+    if(displayHash) showInternalHash(archiveHash);
+    else clearCurrentLink();
+
+    if(updateHistory) setInternalHash(archiveHash);
+    if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+
+  function openTexts(event, updateHistory = true){
+    if(event) event.preventDefault();
+
+    resetProjectCardsToDefault();
+
+    const home = document.getElementById('homeContent');
+    const archive = document.getElementById('archiveContent');
+    const texts = document.getElementById('textsContent');
+    const contacts = document.getElementById('contactsContent');
+    const frameWrap = document.getElementById('frameWrap');
+
+    if(home) home.style.display = 'none';
+    if(archive){
+      archive.style.display = 'none';
+      archive.setAttribute('aria-hidden', 'true');
+    }
+    if(contacts){
+      contacts.style.display = 'none';
+      contacts.setAttribute('aria-hidden', 'true');
+    }
+    if(frameWrap) frameWrap.style.display = 'none';
+    if(texts){
+      texts.style.display = 'block';
+      texts.setAttribute('aria-hidden', 'false');
+      texts.scrollTop = 0;
+    }
+
+    const textsHash = getMenuHash('texts');
+    showInternalHash(textsHash);
+
+    if(updateHistory) setInternalHash(textsHash);
     if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }
@@ -2511,10 +2661,20 @@ Energywhoisshe.com
     if(event) event.preventDefault();
 
     const home = document.getElementById('homeContent');
+    const archive = document.getElementById('archiveContent');
+    const texts = document.getElementById('textsContent');
     const contacts = document.getElementById('contactsContent');
     const frameWrap = document.getElementById('frameWrap');
 
     if(home) home.style.display = 'none';
+    if(archive){
+      archive.style.display = 'none';
+      archive.setAttribute('aria-hidden', 'true');
+    }
+    if(texts){
+      texts.style.display = 'none';
+      texts.setAttribute('aria-hidden', 'true');
+    }
     if(frameWrap) frameWrap.style.display = 'none';
     if(contacts){
       contacts.style.display = 'block';
@@ -2522,15 +2682,10 @@ Energywhoisshe.com
       contacts.scrollTop = 0;
     }
 
-    const current = document.querySelector('#current-link a');
-    if(current){
-      current.href = '#contacts';
-      current.textContent = '(contacts)';
-      current.removeAttribute('target');
-      current.removeAttribute('rel');
-    }
+    const contactsHash = getMenuHash('contacts');
+    showInternalHash(contactsHash);
 
-    if(updateHistory) setInternalHash('#contacts');
+    if(updateHistory) setInternalHash(contactsHash);
     if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
   }
 
@@ -2567,7 +2722,11 @@ Energywhoisshe.com
 
   function findProjectUrlByCardHash(hash){
     const normalized = String(hash || '').toLowerCase();
-    if(!normalized || normalized === '#home' || normalized === '#homes' || normalized === '#contacts') return '';
+    const menuHashes = new Set(
+      Array.from(document.querySelectorAll('#menu a[data-view]'))
+        .map(link => (link.dataset.menuHash || menuLabelToHash(link.textContent)).toLowerCase())
+    );
+    if(!normalized || menuHashes.has(normalized)) return '';
 
     const allItems = [...(browseData.en || []), ...(browseData.ko || [])];
     const matched = allItems.find(item =>
@@ -2595,15 +2754,48 @@ Energywhoisshe.com
     const projectUrl = findProjectUrlByCardHash(hash);
     if(!projectUrl) return false;
 
-    openHome(null, false);
-
     const cards = Array.from(document.querySelectorAll('.project-card[data-project-url]'))
       .filter(card => card.getAttribute('data-project-url') === projectUrl);
     if(!cards.length) return false;
 
-    const card = cards[0];
+    const isVisible = card => {
+      const view = card.closest('#homeContent, #archiveContent');
+      return view && window.getComputedStyle(view).display !== 'none';
+    };
+
+    // iframe을 열기 전 실제로 펼쳤던 카드가 있다면 그 카드를 우선합니다.
+    // Recent와 Archive에 같은 작업이 중복되어도 원래 있던 화면으로 정확히 돌아갑니다.
+    let card = cards.find(item => item.hasAttribute('data-return-hash'))
+      || cards.find(isVisible)
+      || null;
+
+    if(card && !isVisible(card)){
+      if(card.closest('#archiveContent')) openArchive(null, false, false, true);
+      else openHome(null, false, false, true);
+    }
+
+    if(!card){
+      const homeCard = cards.find(item => item.closest('#homeContent'));
+      const archiveCard = cards.find(item => item.closest('#archiveContent'));
+
+      if(homeCard){
+        // Recent에 있는 작업은 Homes에서 엽니다. 클릭하지 않은 Homes 해시는 표시하지 않습니다.
+        openHome(null, false, false, true);
+        card = homeCard;
+      }else if(archiveCard){
+        // Recent에 없는 작업은 별도 Archive 화면에서 엽니다.
+        openArchive(null, false, false, true);
+        card = archiveCard;
+      }
+    }
+    if(!card) return false;
+
+    // 직접 해시로 들어온 경우만 빈 복귀 경로를 만듭니다.
+    // 기존 카드가 기억한 #homes / #archive 경로는 덮어쓰지 않습니다.
+    if(!card.hasAttribute('data-return-hash')) card.dataset.returnHash = '';
     card.classList.remove('project-empty', 'project-collapsed');
     card.classList.add('project-expanded');
+    showInternalHash(hash);
 
     requestAnimationFrame(() => {
       card.scrollIntoView({ block: 'start', behavior: 'auto' });
@@ -2628,11 +2820,21 @@ Energywhoisshe.com
     }
 
     const home = document.getElementById('homeContent');
+    const archive = document.getElementById('archiveContent');
+    const texts = document.getElementById('textsContent');
     const contacts = document.getElementById('contactsContent');
     const frameWrap = document.getElementById('frameWrap');
     const frame = document.querySelector('iframe[name="iframe"]');
 
     if(home) home.style.display = 'none';
+    if(archive){
+      archive.style.display = 'none';
+      archive.setAttribute('aria-hidden', 'true');
+    }
+    if(texts){
+      texts.style.display = 'none';
+      texts.setAttribute('aria-hidden', 'true');
+    }
     if(contacts){
       contacts.style.display = 'none';
       contacts.setAttribute('aria-hidden', 'true');
@@ -2649,14 +2851,33 @@ Energywhoisshe.com
   }
 
   function applyInternalHashRoute(){
-    const hash = window.location.hash.toLowerCase();
+    syncMenuHashes();
 
-    if(hash === '#contacts'){
+    const hash = window.location.hash.toLowerCase();
+    const homeHash = getMenuHash('home').toLowerCase();
+    const archiveHash = getMenuHash('archive').toLowerCase();
+    const textsHash = getMenuHash('texts').toLowerCase();
+    const contactsHash = getMenuHash('contacts').toLowerCase();
+
+    if(hash === contactsHash || hash === '#contacts'){
       openContacts(null, false);
       return;
     }
-    if(hash === '#home' || hash === '#homes' || !hash){
-      openHome(null, false);
+    if(hash === archiveHash || hash === '#archive'){
+      openArchive(null, false, true);
+      return;
+    }
+    if(hash === textsHash || hash === '#text' || hash === '#texts'){
+      openTexts(null, false);
+      return;
+    }
+    if(!hash){
+      // 최초 접속처럼 아직 Homes를 누르지 않은 상태에서는 해시를 표시하지 않습니다.
+      openHome(null, false, false);
+      return;
+    }
+    if(hash === homeHash || hash === '#home' || hash === '#homes'){
+      openHome(null, false, true);
       return;
     }
 
@@ -2705,11 +2926,21 @@ Energywhoisshe.com
       openInNewWindowFullscreen(url);
     }else{
       const home = document.getElementById('homeContent');
+      const archive = document.getElementById('archiveContent');
+      const texts = document.getElementById('textsContent');
       const contacts = document.getElementById('contactsContent');
       const frameWrap = document.getElementById('frameWrap');
       const frame = document.querySelector('iframe[name="iframe"]');
 
       if(home) home.style.display = 'none';
+      if(archive){
+        archive.style.display = 'none';
+        archive.setAttribute('aria-hidden', 'true');
+      }
+      if(texts){
+        texts.style.display = 'none';
+        texts.setAttribute('aria-hidden', 'true');
+      }
       if(contacts){
         contacts.style.display = 'none';
         contacts.setAttribute('aria-hidden', 'true');
@@ -3125,9 +3356,20 @@ function getProjectScaleClass(cat, scale){
     const url = card.getAttribute('data-project-url') || el?.getAttribute?.('href') || '';
     const hash = projectUrlToHash(url);
     if(willExpand && hash){
+      // 카드를 닫을 때 돌아갈 실제 이전 경로를 기억합니다.
+      // 최초 홈 화면이었다면 빈 값, 사용자가 Homes를 눌렀다면 #homes가 저장됩니다.
+      const currentHash = window.location.hash;
+      card.dataset.returnHash = currentHash.toLowerCase() === hash ? '' : currentHash;
+
+      showInternalHash(hash);
       setInternalHash(hash);
     }else if(!willExpand && window.location.hash.toLowerCase() === hash){
-      setInternalHash('#home');
+      const returnHash = card.dataset.returnHash || '';
+      showInternalHash(returnHash);
+
+      // 닫기는 새로운 방문 경로를 추가하지 않고, 카드 직전 주소로 현재 항목을 되돌립니다.
+      setInternalHash(returnHash, true);
+      delete card.dataset.returnHash;
     }
   }
 
@@ -3790,6 +4032,17 @@ function getProjectScaleClass(cat, scale){
   buildBrowseData();
   browseClickSetup();
   document.addEventListener('DOMContentLoaded', () => {
+    syncMenuHashes();
+
+    const menu = document.getElementById('menu');
+    if(menu){
+      new MutationObserver(syncMenuHashes).observe(menu, {
+        childList: true,
+        subtree: true,
+        characterData: true
+      });
+    }
+
     buildBrowseData();
     renderFeaturedWork();
     renderProjectsAndTexts();
@@ -3801,10 +4054,12 @@ function getProjectScaleClass(cat, scale){
 </header>
 	<nav id="menu">
 		<ul>
-      <li><a class="button" href="#home" onclick="openHome(event);">[Homes]</a></li>
+      <li><a class="button" data-view="home" href="#" onclick="openHome(event);">[Home]</a></li>
+      <li><a class="button" data-view="archive" href="#" onclick="openArchive(event);">[Archive]</a></li>
+      <li><a class="button" data-view="texts" href="#" onclick="openTexts(event);">[Text]</a></li>
 			<!--<li><a class="button" href="games.html" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">[Games]</a></li>
 			<li><a class="button" href="comics.html" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">[Comics]</a></li>-->
-      <li><a class="button" href="#contacts" onclick="openContacts(event);">[Contacts]</a></li>
+      <li><a class="button" data-view="contacts" href="#" onclick="openContacts(event);">[Contact]</a></li>
 			<!--<li><a class="button_Things" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">and [Things]</a></li>-->
 		</ul>
 	</nav>
@@ -3831,15 +4086,17 @@ function getProjectScaleClass(cat, scale){
       <h2>Recent</h2>
       <div id="projectWorksGrid" class="project-grid"></div>
     </section>
+  </div>
 
+  <div id="archiveContent" aria-hidden="true">
     <section class="home-section archive-section">
-      <h2>Archive</h2>
       <div id="archiveTools" aria-label="Search and filter archive"></div>
       <div id="archiveWorksGrid" class="project-grid"></div>
     </section>
+  </div>
 
+  <div id="textsContent" aria-hidden="true">
     <section class="home-section">
-      <h2>Related Texts:</h2>
       <ul id="textWorksList" class="text-list"></ul>
     </section>
   </div>
