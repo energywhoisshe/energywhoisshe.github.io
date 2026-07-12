@@ -36,11 +36,14 @@ Energywhoisshe.com
   <select class="legacySelect" onchange="handleOpenSelect(this)" style="display:none;">
     <option value="">Open</option>
     <!--
-      Recent Works data fields:
-      data-scale="large|medium|small"  이미지 크기 예외 지정
-      data-event="프로그램/전시명"        예: Being Alone, Spectrosynthesis Seoul
-      data-venue="기관/공간명"           예: HAU Hebbel am Ufer, Art Sonje Center
-      data-city="도시"                  예: Berlin, Seoul
+      !예외!
+      data-scale="large|medium|small"  
+      link-is-not-ready="true"          html 링크 클릭 비활성화하기 
+
+      !기본 설정!
+      data-event="프로그램/전시명"        
+      data-venue="기관/공간명"           
+      data-city="도시"                
       data-ko="한국어 소개"
       data-en="English description"
       data-credit="Credits"
@@ -220,7 +223,8 @@ Energywhoisshe.com
       Video Record by: HONG Hyo Sook (UPPLACE)
       Photo Record by: KIM Zinho (SUSTAIN WORKS)
       Supported by: SFAC - Seoul Foundation for Arts and Culture">Solo Show: Feed me stones (2024)</option>
-    <option value="They-Them-and-Them.html"
+    <option value="they-them-and-them.html" 
+      link-is-not-ready="true"
       data-en-work="Sunshind Yellow (2024)"
       data-ko-work="선샤인 옐로우 (2024)"
       data-venue="CHOI&CHOI Gallery"
@@ -257,6 +261,7 @@ Energywhoisshe.com
       𝗽𝗼𝘀𝘁𝗲𝗿 𝗱𝗲𝘀𝗶𝗴𝗻 𝗯𝘆
       Jumyeong Lee">Group Show: They, Them and Them (2024)</option>
     <option value="Sad-Captions.html"
+      link-is-not-ready="true"
       data-ko-work="HOW DARE I FEEL SAD WHEN I THINK OF YOU (2020/2024)"
       data-en-work="HOW DARE I FEEL SAD WHEN I THINK OF YOU (2020/2024)"
       data-venue="SeMA Bunker"
@@ -343,7 +348,8 @@ Energywhoisshe.com
       data-en=""
       data-credit="">Preface: Cha Yeonså, "KKOCH-DA-BAL is still there" (2023)</option>
     <!--<option value="Festival-in-the-Motel.html">Comic: Festival in Motel(2023)</option>수정중-->
-    <option value="Pack-Fair-23.html"
+    <option value="msqt-metal-archive.html"
+      link-is-not-ready="true"
       data-scale="small"
       data-en-work="Mosquitolarvajuice Metal Archive (2023)"
       data-ko-work="모스키토라바쥬스 금속 아카이브 (2023)"
@@ -412,8 +418,8 @@ Energywhoisshe.com
     <option value="3-Households.html"
       data-scale="medium"
       data-event=""
-      data-venue=""
-      data-city=""
+      data-venue="Steam"
+      data-city="Online"
       data-ko=""
       data-en="{“The Mind of a Destructive Mother”, “The Quantum Wave Field of a Productive Daughter”, “The Physical Constitution of the Daughter’s Potential Girlfriend” };
 
@@ -464,7 +470,8 @@ Energywhoisshe.com
       Special Thanks to Team JUICY MOSQUITO (2020)
 
       Supported by 2021 K'arts On Road, Korea National University of Arts">Solo Show: Every mosquito feels the same (2022)</option>
-    <option value="Slap-to-kill-the-mosquitoes.html"
+    <option value="msqt-graduation-show.html"
+      link-is-not-ready="true"
       data-scale="medium"
       data-event="Crown Shyness: Korea National University of Arts dept. of Fine Arts BFA Graducation Show 2020"
       data-en=""
@@ -2471,6 +2478,13 @@ Energywhoisshe.com
     const url = select.value;
     if (!url) return;
 
+    const selectedOption = select.options[select.selectedIndex];
+    const linkIsNotReady = selectedOption?.getAttribute('link-is-not-ready') === 'true' || isLinkNotReady(url);
+    if(linkIsNotReady){
+      select.selectedIndex = 0;
+      return;
+    }
+
     // update top-left current link
     const link = document.querySelector('#current-link a');
     if(link){
@@ -2690,6 +2704,7 @@ function getProjectScaleClass(cat, scale){
           artwork: opt.dataset.artwork || '',
           credits: opt.dataset.credit || '',
           expanded: opt.getAttribute('expanded') === 'true',
+          linkIsNotReady: opt.getAttribute('link-is-not-ready') === 'true',
           slideImages: [1, 2, 3]
             .map(n => opt.getAttribute(`slide-image${n}`) || opt.getAttribute(`data-slide-image${n}`) || '')
             .map(v => String(v).trim())
@@ -2774,6 +2789,10 @@ function getProjectScaleClass(cat, scale){
   }
 
   function openFromBrowse(url){
+    if(isLinkNotReady(url)){
+      closeBrowsePanel();
+      return;
+    }
 
     // update top-left current link
     const link = document.querySelector('#current-link a');
@@ -2844,6 +2863,12 @@ function getProjectScaleClass(cat, scale){
     return (browseData[lang] || []).find(it => it.url === url) || null;
   }
 
+  function isLinkNotReady(url){
+    const en = findBrowseItemByUrl(url, 'en');
+    const ko = findBrowseItemByUrl(url, 'ko');
+    return en?.linkIsNotReady === true || ko?.linkIsNotReady === true;
+  }
+
 
   function toggleProjectCard(event, el){
     if(event) event.preventDefault();
@@ -2871,13 +2896,15 @@ function getProjectScaleClass(cat, scale){
 
     const title = item.title || work.alt || work.url;
     const fallback = title + (item.year ? ` (${item.year})` : '');
-
-    wrap.innerHTML = `
-      <a class="featured-work" href="${escapeAttr(work.url)}" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">
-        <img src="${escapeAttr(work.image)}" alt="${escapeAttr(work.alt || title)}" loading="eager" fetchpriority="high" onerror="this.parentElement.classList.add('image-error')">
-        <span class="featured-fallback">${escapeHtml(fallback)}</span>
-      </a>
+    const linkIsNotReady = isLinkNotReady(work.url);
+    const featuredContent = `
+      <img src="${escapeAttr(work.image)}" alt="${escapeAttr(work.alt || title)}" loading="eager" fetchpriority="high" onerror="this.parentElement.classList.add('image-error')">
+      <span class="featured-fallback">${escapeHtml(fallback)}</span>
     `;
+
+    wrap.innerHTML = linkIsNotReady
+      ? `<div class="featured-work">${featuredContent}</div>`
+      : `<a class="featured-work" href="${escapeAttr(work.url)}" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">${featuredContent}</a>`;
   }
 
 
@@ -3299,6 +3326,12 @@ function getProjectScaleClass(cat, scale){
       const scaleClass = getProjectScaleClass(item.cat, item.scale);
       const galleryClass = isExpandedProject ? ' project-featured project-expanded' : ' project-gallery project-empty project-collapsed';
       const typeClass = item.cat === 'Group Show' ? ' project-group' : '';
+      const linkIsNotReady = isLinkNotReady(item.url);
+      const projectHeading = `
+        <span class="project-title">${escapeHtml(makeDisplayTitle(item.title, koTitle))}</span>
+        ${renderProjectWork(item)}
+        ${metaBits ? `<span class="project-meta">${escapeHtml(metaBits)}</span>` : ''}
+      `;
 
       return `
         <article class="project-card ${escapeAttr(scaleClass)}${galleryClass}${typeClass}">
@@ -3306,11 +3339,9 @@ function getProjectScaleClass(cat, scale){
             ${thumbImages.html}
           </a>
           <div class="project-info">
-            <a href="${escapeAttr(item.url)}" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');" style="text-decoration:none; color:inherit;">
-              <span class="project-title">${escapeHtml(makeDisplayTitle(item.title, koTitle))}</span>
-              ${renderProjectWork(item)}
-              ${metaBits ? `<span class="project-meta">${escapeHtml(metaBits)}</span>` : ''}
-            </a>
+            ${linkIsNotReady
+              ? `<div style="text-decoration:none; color:inherit;">${projectHeading}</div>`
+              : `<a href="${escapeAttr(item.url)}" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');" style="text-decoration:none; color:inherit;">${projectHeading}</a>`}
             ${(detail.aboutKo || detail.aboutEn) ? `
             <div class="project-about">
               ${detail.aboutKo ? `<p><span class="lang">KR</span>${escapeHtml(detail.aboutKo)}</p>` : ''}
@@ -3387,12 +3418,16 @@ function getProjectScaleClass(cat, scale){
       const eventText = String(item.event || counterpart?.event || '').trim();
       const metaBits = [item.langLabel, item.cat, eventText, item.year].filter(Boolean).join(' · ');
 
+      const textContent = `
+        ${escapeHtml(item.title)}
+        ${metaBits ? `<span class="meta">${escapeHtml(metaBits)}</span>` : ''}
+      `;
+
       return `
         <li>
-          <a href="${escapeAttr(item.url)}" target="_blank" rel="noopener">
-            ${escapeHtml(item.title)}
-            ${metaBits ? `<span class="meta">${escapeHtml(metaBits)}</span>` : ''}
-          </a>
+          ${isLinkNotReady(item.url)
+            ? `<span>${textContent}</span>`
+            : `<a href="${escapeAttr(item.url)}" target="_blank" rel="noopener">${textContent}</a>`}
         </li>
       `;
     }).join('');
@@ -3409,7 +3444,11 @@ function getProjectScaleClass(cat, scale){
     if(!list) return;
 
     const q = (document.getElementById('browseSearch')?.value || '').trim().toLowerCase();
-    let items = (browseData[browseLang] || []).slice();
+    // 아직 HTML 링크가 준비되지 않은 항목은 상단 Open/불러오기 목록에서 숨깁니다.
+    // Archive 카드와 Archive 검색에는 계속 표시됩니다.
+    let items = (browseData[browseLang] || [])
+      .filter(it => it.linkIsNotReady !== true && !isLinkNotReady(it.url))
+      .slice();
 
     if(q){
       items = items.filter(it =>
