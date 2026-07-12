@@ -857,7 +857,7 @@ Energywhoisshe.com
     border-radius:0 45px 0 0;
     overflow:hidden;
   }
-  #homeContent,#frameWrap{
+  #homeContent,#contactsContent,#frameWrap{
     width:100%;
     height:100%;
   }
@@ -1204,6 +1204,32 @@ Energywhoisshe.com
       margin-top:.1rem;
     }
   }
+  /* Contacts: formerly loaded from hi.html, now kept inside this document */
+  #contactsContent{
+    display:none;
+    overflow-y:auto;
+    padding:48px 2rem 2rem 4rem;
+    color:gray;
+    font-family:'Noto Serif KR', serif;
+    font-weight:900;
+  }
+  #contactsContent article{
+    font-size:3vmax;
+    font-weight:900;
+    line-height:1.75;
+  }
+  #contactsContent p{
+    margin-bottom:1rem;
+  }
+  #contactsContent a:link,
+  #contactsContent a:visited,
+  #contactsContent a:hover{
+    color:royalblue;
+  }
+  #contactsContent a:hover{
+    font-style:italic;
+  }
+
   #frameWrap iframe{
     width:100%;
     height:100%;
@@ -1212,6 +1238,12 @@ Energywhoisshe.com
   }
   @media (max-width:768px){
     #contentArea{height:76vh;}
+    #contactsContent{
+      padding:36px 1.5rem 2rem 2rem;
+    }
+    #contactsContent article{
+      font-size:clamp(1.25rem, 6vw, 2rem);
+    }
   }
 
   /* =========================================================*/
@@ -2430,6 +2462,216 @@ Energywhoisshe.com
       }catch(e){}
     };
   }
+  function setInternalHash(hash, replace = false){
+    if(window.location.hash === hash) return;
+    const nextUrl = window.location.pathname + window.location.search + hash;
+    if(replace) history.replaceState(null, '', nextUrl);
+    else history.pushState(null, '', nextUrl);
+  }
+
+  function resetProjectCardsToDefault(){
+    document.querySelectorAll('.project-card[data-default-expanded]').forEach(card => {
+      const shouldExpand = card.getAttribute('data-default-expanded') === 'true';
+      card.classList.toggle('project-empty', !shouldExpand);
+      card.classList.toggle('project-collapsed', !shouldExpand);
+      card.classList.toggle('project-expanded', shouldExpand);
+    });
+  }
+
+  function openHome(event, updateHistory = true){
+    if(event) event.preventDefault();
+
+    resetProjectCardsToDefault();
+
+    const home = document.getElementById('homeContent');
+    const contacts = document.getElementById('contactsContent');
+    const frameWrap = document.getElementById('frameWrap');
+
+    if(contacts){
+      contacts.style.display = 'none';
+      contacts.setAttribute('aria-hidden', 'true');
+    }
+    if(frameWrap) frameWrap.style.display = 'none';
+    if(home) home.style.display = 'block';
+
+    const current = document.querySelector('#current-link a');
+    if(current){
+      current.href = '#home';
+      current.textContent = '';
+      current.removeAttribute('target');
+      current.removeAttribute('rel');
+    }
+
+    if(updateHistory) setInternalHash('#home');
+    if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+
+  function openContacts(event, updateHistory = true){
+    if(event) event.preventDefault();
+
+    const home = document.getElementById('homeContent');
+    const contacts = document.getElementById('contactsContent');
+    const frameWrap = document.getElementById('frameWrap');
+
+    if(home) home.style.display = 'none';
+    if(frameWrap) frameWrap.style.display = 'none';
+    if(contacts){
+      contacts.style.display = 'block';
+      contacts.setAttribute('aria-hidden', 'false');
+      contacts.scrollTop = 0;
+    }
+
+    const current = document.querySelector('#current-link a');
+    if(current){
+      current.href = '#contacts';
+      current.textContent = '(contacts)';
+      current.removeAttribute('target');
+      current.removeAttribute('rel');
+    }
+
+    if(updateHistory) setInternalHash('#contacts');
+    if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
+  }
+
+  function projectUrlToHash(url){
+    if(!url) return '';
+    try{
+      const parsed = new URL(url, window.location.href);
+      let path = decodeURIComponent(parsed.pathname || '')
+        .replace(/^\/+/, '')
+        .replace(/\.html?$/i, '')
+        .toLowerCase();
+
+      path = path
+        .replace(/[^a-z0-9가-힣]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+
+      return path ? `#${path}` : '';
+    }catch(e){
+      const path = String(url)
+        .split(/[?#]/)[0]
+        .replace(/^\/+/, '')
+        .replace(/\.html?$/i, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9가-힣]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+      return path ? `#${path}` : '';
+    }
+  }
+
+  function projectUrlToOpenHash(url){
+    const cardHash = projectUrlToHash(url);
+    return cardHash ? `#open-${cardHash.slice(1)}` : '';
+  }
+
+  function findProjectUrlByCardHash(hash){
+    const normalized = String(hash || '').toLowerCase();
+    if(!normalized || normalized === '#home' || normalized === '#homes' || normalized === '#contacts') return '';
+
+    const allItems = [...(browseData.en || []), ...(browseData.ko || [])];
+    const matched = allItems.find(item =>
+      item?.url && projectUrlToHash(item.url) === normalized
+    );
+    return matched?.url || '';
+  }
+
+  function findProjectUrlByOpenHash(hash){
+    const normalized = String(hash || '').toLowerCase();
+    if(!normalized.startsWith('#open-')) return '';
+
+    const cardHash = `#${normalized.slice(6)}`;
+    const allItems = [...(browseData.en || []), ...(browseData.ko || [])];
+    const matched = allItems.find(item =>
+      item?.url &&
+      item.linkIsNotReady !== true &&
+      !isLinkNotReady(item.url) &&
+      projectUrlToHash(item.url) === cardHash
+    );
+    return matched?.url || '';
+  }
+
+  function openProjectCardByHash(hash){
+    const projectUrl = findProjectUrlByCardHash(hash);
+    if(!projectUrl) return false;
+
+    openHome(null, false);
+
+    const cards = Array.from(document.querySelectorAll('.project-card[data-project-url]'))
+      .filter(card => card.getAttribute('data-project-url') === projectUrl);
+    if(!cards.length) return false;
+
+    const card = cards[0];
+    card.classList.remove('project-empty', 'project-collapsed');
+    card.classList.add('project-expanded');
+
+    requestAnimationFrame(() => {
+      card.scrollIntoView({ block: 'start', behavior: 'auto' });
+    });
+    return true;
+  }
+
+  function openProjectInFrame(url, updateHistory = true){
+    if(!url || isLinkNotReady(url)) return;
+
+    const link = document.querySelector('#current-link a');
+    if(link){
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener';
+      try{
+        const u = new URL(url, window.location.origin);
+        link.textContent = u.pathname;
+      }catch(e){
+        link.textContent = url;
+      }
+    }
+
+    const home = document.getElementById('homeContent');
+    const contacts = document.getElementById('contactsContent');
+    const frameWrap = document.getElementById('frameWrap');
+    const frame = document.querySelector('iframe[name="iframe"]');
+
+    if(home) home.style.display = 'none';
+    if(contacts){
+      contacts.style.display = 'none';
+      contacts.setAttribute('aria-hidden', 'true');
+    }
+    if(frameWrap) frameWrap.style.display = 'block';
+    if(frame && frame.getAttribute('src') !== url) frame.src = url;
+
+    if(updateHistory){
+      const hash = projectUrlToOpenHash(url);
+      if(hash) setInternalHash(hash);
+    }
+    if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+  }
+
+  function applyInternalHashRoute(){
+    const hash = window.location.hash.toLowerCase();
+
+    if(hash === '#contacts'){
+      openContacts(null, false);
+      return;
+    }
+    if(hash === '#home' || hash === '#homes' || !hash){
+      openHome(null, false);
+      return;
+    }
+
+    const openUrl = findProjectUrlByOpenHash(hash);
+    if(openUrl){
+      openProjectInFrame(openUrl, false);
+      return;
+    }
+
+    openProjectCardByHash(hash);
+  }
+
+  window.addEventListener('popstate', applyInternalHashRoute);
+  window.addEventListener('hashchange', applyInternalHashRoute);
+
   function openMenu(event, url){
     if(event) event.preventDefault();
 
@@ -2463,10 +2705,15 @@ Energywhoisshe.com
       openInNewWindowFullscreen(url);
     }else{
       const home = document.getElementById('homeContent');
+      const contacts = document.getElementById('contactsContent');
       const frameWrap = document.getElementById('frameWrap');
       const frame = document.querySelector('iframe[name="iframe"]');
 
       if(home) home.style.display = 'none';
+      if(contacts){
+        contacts.style.display = 'none';
+        contacts.setAttribute('aria-hidden', 'true');
+      }
       if(frameWrap) frameWrap.style.display = 'block';
       if(frame) frame.src = url;
     }
@@ -2497,12 +2744,12 @@ Energywhoisshe.com
       }
     }
 
+    const hash = projectUrlToOpenHash(url);
+    if(hash) setInternalHash(hash);
+
     const fs = document.getElementById('fullscreenToggle')?.checked;
-    if (fs) openInNewWindowFullscreen(url);
-    else {
-      const frame = document.querySelector('iframe[name="iframe"]');
-      if(frame) frame.src = url;
-    }
+    if(fs) openInNewWindowFullscreen(url);
+    else openProjectInFrame(url, false);
 
     select.selectedIndex = 0;
   }
@@ -2806,18 +3053,13 @@ function getProjectScaleClass(cat, scale){
       }
     }
 
-    const fs = document.getElementById('fullscreenToggle')?.checked;
-    if(fs){
-      openInNewWindowFullscreen(url);
-    }else{
-      const home = document.getElementById('homeContent');
-      const frameWrap = document.getElementById('frameWrap');
-      const frame = document.querySelector('iframe[name="iframe"]');
+    const hash = projectUrlToOpenHash(url);
+    if(hash) setInternalHash(hash);
 
-      if(home) home.style.display = 'none';
-      if(frameWrap) frameWrap.style.display = 'block';
-      if(frame) frame.src = url;
-    }
+    const fs = document.getElementById('fullscreenToggle')?.checked;
+    if(fs) openInNewWindowFullscreen(url);
+    else openProjectInFrame(url, false);
+
     closeBrowsePanel();
   }
 
@@ -2875,9 +3117,18 @@ function getProjectScaleClass(cat, scale){
     const card = el?.closest?.('.project-card');
     if(!card) return;
 
-    card.classList.toggle('project-empty');
-    card.classList.toggle('project-collapsed');
-    card.classList.toggle('project-expanded');
+    const willExpand = !card.classList.contains('project-expanded');
+    card.classList.toggle('project-empty', !willExpand);
+    card.classList.toggle('project-collapsed', !willExpand);
+    card.classList.toggle('project-expanded', willExpand);
+
+    const url = card.getAttribute('data-project-url') || el?.getAttribute?.('href') || '';
+    const hash = projectUrlToHash(url);
+    if(willExpand && hash){
+      setInternalHash(hash);
+    }else if(!willExpand && window.location.hash.toLowerCase() === hash){
+      setInternalHash('#home');
+    }
   }
 
   function renderFeaturedWork(){
@@ -3334,7 +3585,7 @@ function getProjectScaleClass(cat, scale){
       `;
 
       return `
-        <article class="project-card ${escapeAttr(scaleClass)}${galleryClass}${typeClass}">
+        <article class="project-card ${escapeAttr(scaleClass)}${galleryClass}${typeClass}" data-project-url="${escapeAttr(item.url)}" data-project-hash="${escapeAttr(projectUrlToHash(item.url))}" data-default-expanded="${isExpandedProject ? 'true' : 'false'}">
           <a class="project-thumb${thumbImages.hasSlides ? ' has-slides' : ''}" href="${escapeAttr(item.url)}" onclick="toggleProjectCard(event, this)" data-fallback="${escapeAttr(fallback)}">
             ${thumbImages.html}
           </a>
@@ -3542,6 +3793,7 @@ function getProjectScaleClass(cat, scale){
     buildBrowseData();
     renderFeaturedWork();
     renderProjectsAndTexts();
+    applyInternalHashRoute();
   });
 </script>
 
@@ -3549,10 +3801,10 @@ function getProjectScaleClass(cat, scale){
 </header>
 	<nav id="menu">
 		<ul>
-      <li><a class="button" href="#" onclick="window.location.reload(); return false;">[Homes]</a></li>
+      <li><a class="button" href="#home" onclick="openHome(event);">[Homes]</a></li>
 			<!--<li><a class="button" href="games.html" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">[Games]</a></li>
 			<li><a class="button" href="comics.html" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">[Comics]</a></li>-->
-      <li><a class="button" href="http://www.energywhoisshe.com/hi.html" onclick="openMenu(event, this.href);">[Contacts]</a></li>
+      <li><a class="button" href="#contacts" onclick="openContacts(event);">[Contacts]</a></li>
 			<!--<li><a class="button_Things" href="https://docs.google.com/spreadsheets/d/e/2PACX-1vR-fZUwT3QJTh8d2LQtp1PRBWgg-1SugmBngCL20Pz8MXuNcRROrj7tBXI2azUT2HpqLV3hMkvvclL_/pubhtml?widget=true&amp;headers=false" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">and [Things]</a></li>-->
 		</ul>
 	</nav>
@@ -3590,6 +3842,20 @@ function getProjectScaleClass(cat, scale){
       <h2>Related Texts:</h2>
       <ul id="textWorksList" class="text-list"></ul>
     </section>
+  </div>
+
+  <div id="contactsContent" aria-hidden="true">
+    <article>
+      <p>
+        <a target="_blank" rel="noopener" href="mailto:energywhoisshe@gmail.com">energywhoisshe@gmail.com</a>
+        <br>Instagram <a target="_blank" rel="noopener" href="https://www.instagram.com/energywhoisshe">instagram.com/energywhoisshe</a>
+        <br>Youtube <a target="_blank" rel="noopener" href="https://www.youtube.com/@energywhoisshe">youtube.com/@energywhoisshe</a>
+      </p>
+      <p>
+        차연서 Cha Yeonså
+        <br>Seoul, KR
+      </p>
+    </article>
   </div>
 
   <div id="frameWrap" style="display:none;">
