@@ -38,7 +38,8 @@ Energywhoisshe.com
     <!--
       !예외!
       data-scale="large|medium|small"  
-      link-is-not-ready="true"          html 링크 클릭 비활성화하기 
+      link-is-not-ready="true"          html 링크 클릭 비활성화하기
+      data="경로/파일명.pdf"             Text의 Read full text가 HTML 대신 PDF 열기
 
       !기본 설정!
       data-event="프로그램/전시명"        
@@ -74,6 +75,11 @@ Energywhoisshe.com
         "Text, direction, and paper artwork: Cha Yeonså / Performers: Sunhee Bae, Nari Sohn, Ven. Donghwan, Isu Mignon Mignonne, Tetokun, Jaehun, Cha Yeonså / Curatorial text: “At the Edge of the Hole: Spring Night” by Je Yun Moon / Graphic design: Hyunjin In / Local production support: Isu Kim Lee / Photo documentation: Jaehun / Video documentation: Asarela Orchidia Dewi with Hani Hamza / Audience Companion: Azul with Anajara Amarante / Field recording treatment: Solyoub Lee / Poetry translation: Nari Sohn, Soje, Sebastian Claren
         
         Part of “Being Alone - Artistic Perspectives from Central and East Asia and Beyond”, a project within “Solitude: Loneliness & Freedom,” an initiative of the Goethe-Institutes in East and Central Asia in cooperation with HAU Hebbel am Ufer. Curatorial contribution by Je Yun Moon. Commissioned by Goethe-Institut Korea.">Performance: Spring Night (2026)</option>
+    <option value="en/At-the-Edge-of-the-Hole.html"
+      link-is-not-ready="true"
+      data="Spring-Night/2026/pdf/Hole.pdf"
+      data-event="Cha Yeonså Performance: Spring Night"
+      data-en="The dead body has long been a central concern in Cha Yeonså's practice. In their earlier work, Cha created one-dimensional paper-cut collages from forensic photographs of criminal victims, using Dak paper (handmade mulberry paper, known as hanji) left behind by their late father - an act of offering, as they describe it, the body of their late father to comfort the dead. The starting point was the bodies encountered in forensic books, and the corpses that visited through sleep paralysis. Over time, a ritualistic dimension was added, and the collage expanded into performance. Turning to Buddhist practices, Cha began performing acts of mourning and consolation for those they had never known in life. This practice unfolded alongside a series of collective losses that marked their generation that came to coincide within the same temporal horizon. Cha was exactly the same age as the students of Danwon High School at the time of the Sewol ferry disaster, and shared the generational proximity to many of the victims of the Itaewon Halloween crowd crush.">Curatorial Text: Je Yun Moon, "At the Edge of the Hole: Spring Night" (2025)</option>
     <option value="Spectrosynthesis-Seoul.html"
       slide-image1="Spectrosynthesis-Seoul/web/daddy2.jpg"        slide-alt1="..."
       slide-image2="Spectrosynthesis-Seoul/web/pine2.jpg"        slide-alt2="..."
@@ -404,7 +410,8 @@ Energywhoisshe.com
       data-artwork="Cha Yeonså, This Unbelievable Sleep, Website, 2024"
       data-credit="">Solo Show: This Unbelievable Sleep (2023)</option>
     <option value="en/Woman-Laughing-Child-Looking-Larvae-Intertwined.html"
-      data-event="Cha Yeonså Solo Show: This Unbelievable Sleep">Critique: Hyosil Yang, "Woman Laughing, Child Looking, Larvae Intertwined" (2023)</option>
+      data-event="Cha Yeonså Solo Show: This Unbelievable Sleep"
+      data-en="Who might undo the law-symbolic language? Who resists humanization while being utterly unaware? Who crosses the world of adulthood without barely/narrowly losing the child-like senses as a non-human, post-human? A child recognizes a grandmother or ghosts in reverse order. They're alike. Feeling as though some things are so delicate that they make you want to break them—is akin to the expression of wanting to embrace a child. To prevent a child from seeing the terrible things yet to come, perhaps it would be necessary to break the child, or because children are a future that came early, I wish to touch them out of gratitude. A child is similar to an artist or a madman, or people who are sick and lack social utility—or because they may not grow up to be those types of people, they could prove to be socially useful. Come to think of it, a child is precious to everyone.">Critique: Hyosil Yang, "Woman Laughing, Child Looking, Larvae Intertwined" (2023)</option>
     <option value="Mosquitolarvajuice.html"
       data-event=""
       data-venue=""
@@ -1144,6 +1151,25 @@ Energywhoisshe.com
     color:#666;
   }
 
+  /* Recent Text uses the same visual rules as the Text section. */
+  #projectWorksGrid .recent-text-card{
+    display:block;
+    width:100%;
+    max-width:none;
+    margin-bottom:2.2rem;
+    border-top:1px solid #eee;
+    font-family:'Gothic A1', sans-serif;
+    font-size:.92rem;
+    line-height:1.55;
+    color:#000;
+  }
+  #projectWorksGrid .recent-text-card .text-title-line{
+    cursor:default;
+  }
+  #projectWorksGrid .recent-text-card .text-details{
+    display:block;
+  }
+
   .text-list{
     list-style:none;
     padding-left:0;
@@ -1157,8 +1183,8 @@ Energywhoisshe.com
     padding:0;
   }
   .text-card{
-    padding:.35rem 0;
-    cursor:zoom-in;
+    padding:.55rem 0 .7rem;
+    cursor:default;
   }
   .text-card::after{
     content:"";
@@ -1166,24 +1192,28 @@ Energywhoisshe.com
     clear:both;
   }
   .text-card.text-expanded{
-    cursor:zoom-out;
+    cursor:default;
   }
   .text-title-line{
     display:block;
+    line-height:1.45;
+    cursor:pointer;
   }
   #textsContent .text-title-link,
   #textsContent .text-title-link:link,
   #textsContent .text-title-link:visited,
   #textsContent .text-title-link:hover,
   #textsContent .text-title-link:active,
-  #textsContent .text-title-static{
+  #textsContent .text-title-static,
+  #projectWorksGrid .recent-text-card .text-title-static{
     color:#000 !important;
     text-decoration:none;
     font-weight:500;
     font-family:'Noto Serif KR', serif;
   }
-  .text-card.text-collapsed .text-title-link{
-    cursor:zoom-in;
+  .text-card.text-collapsed .text-title-link,
+  .text-card.text-collapsed .text-title-static{
+    cursor:pointer;
   }
   .text-card.text-expanded .text-title-link{
     cursor:pointer;
@@ -1197,35 +1227,52 @@ Energywhoisshe.com
   .text-details{
     display:none;
     clear:both;
-    padding:.55rem 0 .15rem 1rem;
+    padding:.8rem 0 .2rem;
   }
   .text-card.text-expanded .text-details{
     display:block;
   }
   .text-about{
     font-family:'Noto Serif KR', serif;
-    color:#555;
-    font-size:.82rem;
-    line-height:1.58;
+    color:#000;
+    font-size:.9rem;
+    line-height:1.72;
+    word-break:keep-all;
+    overflow-wrap:break-word;
+    cursor:text;
+    user-select:text;
+    -webkit-user-select:text;
+  }
+  .text-about p,
+  .text-about p *{
+    cursor:text;
+    user-select:text;
+    -webkit-user-select:text;
   }
   .text-about p{
-    margin-bottom:.55rem;
+    margin:0 0 .9rem;
     white-space:pre-line;
   }
   .text-about p:last-child{
     margin-bottom:0;
   }
   .text-about .lang{
-    color:#999;
+    display:inline-block;
+    min-width:2rem;
+    color:#888;
     font-family:'Gothic A1', sans-serif;
     font-weight:800;
     font-size:.7rem;
-    margin-right:.35rem;
+    margin-right:.25rem;
   }
   #textsContent .text-full-link,
   #textsContent .text-full-link:link,
   #textsContent .text-full-link:visited,
-  #textsContent .text-full-link:active{
+  #textsContent .text-full-link:active,
+  #projectWorksGrid .recent-text-card .text-full-link,
+  #projectWorksGrid .recent-text-card .text-full-link:link,
+  #projectWorksGrid .recent-text-card .text-full-link:visited,
+  #projectWorksGrid .recent-text-card .text-full-link:active{
     display:inline-block;
     margin-top:.15rem;
     color:royalblue !important;
@@ -1235,10 +1282,20 @@ Energywhoisshe.com
     font-weight:600;
     cursor:pointer;
   }
-  #textsContent .text-full-link:hover{
+  #textsContent .text-full-link:hover,
+  #projectWorksGrid .recent-text-card .text-full-link:hover{
     color:royalblue !important;
     text-decoration:underline;
     font-style:italic;
+  }
+  #textsContent .text-full-link-disabled,
+  #textsContent .text-full-link-disabled:hover,
+  #projectWorksGrid .recent-text-card .text-full-link-disabled,
+  #projectWorksGrid .recent-text-card .text-full-link-disabled:hover{
+    color:#000 !important;
+    text-decoration:none;
+    font-style:normal;
+    cursor:default;
   }
   .text-list .sub,
   .project-title .sub{
@@ -1247,7 +1304,8 @@ Energywhoisshe.com
     font-weight:700;
     margin-left:.35rem;
   }
-  .text-list .meta{
+  .text-list .meta,
+  #projectWorksGrid .recent-text-card .meta{
     color:#999;
     font-size:.78rem;
     font-weight:700;
@@ -1275,8 +1333,15 @@ Energywhoisshe.com
     .project-card{ grid-template-columns:1fr; gap:.65rem; margin-bottom:2rem; }
     .project-credits{ max-height:120px; }
     .text-details{
-      padding-left:.75rem;
-      font-size:.75rem;
+      padding:.7rem 0 .15rem;
+    }
+    .text-about{
+      max-width:none;
+      font-size:.88rem;
+      line-height:1.7;
+    }
+    .text-about p{
+      margin-bottom:.8rem;
     }
   }
   /* Contacts: formerly loaded from hi.html, now kept inside this document */
@@ -2161,18 +2226,45 @@ Energywhoisshe.com
     cursor: pointer;
   }
 
+  /* Every element that explicitly opens a new tab/window uses the shortcut-style cursor. */
+  a[target="_blank"],
+  a[target="_blank"] *,
+  [onclick*="window.open"],
+  [onclick*="window.open"] *,
+  [onclick*="openInNewWindowFullscreen"],
+  [onclick*="openInNewWindowFullscreen"] *,
+  .opens-new-window,
+  .opens-new-window *{
+    cursor:alias !important;
+  }
+
+  /* Recent: collapsed image expands the card; expanded image opens the project in a new window. */
+  #projectWorksGrid .project-card.project-collapsed .project-thumb{
+    cursor:pointer;
+  }
+  #projectWorksGrid .project-card.project-expanded:not(.project-link-not-ready) .project-thumb{
+    cursor:alias;
+  }
+  #projectWorksGrid .project-card.project-expanded.project-link-not-ready .project-thumb{
+    cursor:default;
+  }
+
 .project-artworks-wrap{margin:.45rem 0 .7rem;}
 .project-artworks{font-size:.72rem;line-height:1.4;}
 .project-artworks>div{margin-bottom:.28rem;}
 .project-artworks>div:last-child{margin-bottom:0;}
 
 
-/* Recent Works: gallery cards hide text only while collapsed.
-   When a photo is clicked and the card is expanded, all detail text appears again. */
+/* Collapsed project cards hide their detailed information.
+   This also applies after an initially expanded Recent card is manually closed. */
 .project-card.project-gallery.project-collapsed .project-about,
 .project-card.project-gallery.project-collapsed .project-artworks-wrap,
 .project-card.project-gallery.project-collapsed .project-credits-title,
-.project-card.project-gallery.project-collapsed .project-credits{
+.project-card.project-gallery.project-collapsed .project-credits,
+#projectWorksGrid .project-card.project-collapsed .project-about,
+#projectWorksGrid .project-card.project-collapsed .project-artworks-wrap,
+#projectWorksGrid .project-card.project-collapsed .project-credits-title,
+#projectWorksGrid .project-card.project-collapsed .project-credits{
   display:none !important;
 }
 .project-card.project-gallery .project-thumb,
@@ -2888,11 +2980,16 @@ Energywhoisshe.com
     return true;
   }
 
-  function isTextItem(item, lang){
-    if(!item) return false;
-    return lang === 'ko'
-      ? TEXT_CATEGORIES_KO.includes(item.cat)
-      : TEXT_CATEGORIES.includes(item.cat);
+  function isTextItem(item){
+    if(!item?.url) return false;
+
+    try{
+      const path = new URL(item.url, window.location.href).pathname;
+      return /\/(?:en|ko)\/[^?#]+\.html$/i.test(path);
+    }catch(e){
+      const path = String(item.url).split(/[?#]/, 1)[0];
+      return /^(?:\.\/)?(?:en|ko)\/[^?#]+\.html$/i.test(path);
+    }
   }
 
   function findTextUrlByCardHash(hash){
@@ -2900,8 +2997,8 @@ Energywhoisshe.com
     if(!normalized) return '';
 
     const textItems = [
-      ...(browseData.en || []).filter(item => isTextItem(item, 'en')),
-      ...(browseData.ko || []).filter(item => isTextItem(item, 'ko'))
+      ...(browseData.en || []).filter(item => isTextItem(item)),
+      ...(browseData.ko || []).filter(item => isTextItem(item))
     ];
     const matched = textItems.find(item =>
       item?.url && projectUrlToHash(item.url) === normalized
@@ -3088,7 +3185,13 @@ Energywhoisshe.com
     if (!url) return;
 
     const selectedOption = select.options[select.selectedIndex];
-    const linkIsNotReady = selectedOption?.getAttribute('link-is-not-ready') === 'true' || isLinkNotReady(url);
+    const inlinePdf = String(selectedOption?.getAttribute('data') || '').trim();
+    const openUrl = inlinePdf || getPreferredOpenUrl(url);
+    const linkIsNotReady =
+      !inlinePdf &&
+      !getTextPdfUrl(url) &&
+      (selectedOption?.getAttribute('link-is-not-ready') === 'true' || isLinkNotReady(url));
+
     if(linkIsNotReady){
       select.selectedIndex = 0;
       return;
@@ -3097,12 +3200,12 @@ Energywhoisshe.com
     // update top-left current link
     const link = document.querySelector('#current-link a');
     if(link){
-      link.href = url;
+      link.href = openUrl;
       try{
-        const u = new URL(url, window.location.origin);
+        const u = new URL(openUrl, window.location.origin);
         link.textContent = u.pathname;
       }catch(e){
-        link.textContent = url;
+        link.textContent = openUrl;
       }
     }
 
@@ -3110,8 +3213,8 @@ Energywhoisshe.com
     if(hash) setInternalHash(hash);
 
     const fs = document.getElementById('fullscreenToggle')?.checked;
-    if(fs) openInNewWindowFullscreen(url);
-    else openProjectInFrame(url, false);
+    if(fs) openInNewWindowFullscreen(openUrl);
+    else openProjectInFrame(openUrl, false);
 
     select.selectedIndex = 0;
   }
@@ -3132,7 +3235,7 @@ Energywhoisshe.com
 
   // Recent에 표시할 최신 작업 개수입니다.
   // 1, 3, 6처럼 숫자만 바꾸면 됩니다. Open 메뉴의 위쪽 작업부터 최신순으로 셉니다.
-  const RECENT_WORK_COUNT = 1;
+  const RECENT_WORK_COUNT = 3;
 
   
   /* =========================================================
@@ -3314,6 +3417,7 @@ function getProjectScaleClass(cat, scale){
           credits: opt.dataset.credit || '',
           expanded: opt.getAttribute('expanded') === 'true',
           linkIsNotReady: opt.getAttribute('link-is-not-ready') === 'true',
+          pdf: String(opt.getAttribute('data') || '').trim(),
           slideImages: [1, 2, 3]
             .map(n => opt.getAttribute(`slide-image${n}`) || opt.getAttribute(`data-slide-image${n}`) || '')
             .map(v => String(v).trim())
@@ -3398,20 +3502,22 @@ function getProjectScaleClass(cat, scale){
   }
 
   function openFromBrowse(url){
-    if(isLinkNotReady(url)){
+    if(!isPreferredOpenTargetReady(url)){
       closeBrowsePanel();
       return;
     }
 
+    const openUrl = getPreferredOpenUrl(url);
+
     // update top-left current link
     const link = document.querySelector('#current-link a');
     if(link){
-      link.href = url;
+      link.href = openUrl;
       try{
-        const u = new URL(url, window.location.origin);
+        const u = new URL(openUrl, window.location.origin);
         link.textContent = u.pathname;
       }catch(e){
-        link.textContent = url;
+        link.textContent = openUrl;
       }
     }
 
@@ -3419,8 +3525,8 @@ function getProjectScaleClass(cat, scale){
     if(hash) setInternalHash(hash);
 
     const fs = document.getElementById('fullscreenToggle')?.checked;
-    if(fs) openInNewWindowFullscreen(url);
-    else openProjectInFrame(url, false);
+    if(fs) openInNewWindowFullscreen(openUrl);
+    else openProjectInFrame(openUrl, false);
 
     closeBrowsePanel();
   }
@@ -3473,13 +3579,39 @@ function getProjectScaleClass(cat, scale){
     return en?.linkIsNotReady === true || ko?.linkIsNotReady === true;
   }
 
+  function getTextPdfUrl(url){
+    const en = findBrowseItemByUrl(url, 'en');
+    const ko = findBrowseItemByUrl(url, 'ko');
+    return String(en?.pdf || ko?.pdf || '').trim();
+  }
+
+  function getPreferredOpenUrl(url){
+    return isTextItem({ url }) ? (getTextPdfUrl(url) || url) : url;
+  }
+
+  function isPreferredOpenTargetReady(url){
+    return Boolean(getTextPdfUrl(url)) || !isLinkNotReady(url);
+  }
+
 
   function toggleProjectCard(event, el){
     if(event) event.preventDefault();
     const card = el?.closest?.('.project-card');
     if(!card) return;
 
-    const willExpand = !card.classList.contains('project-expanded');
+    const isRecentCard = Boolean(card.closest('#projectWorksGrid'));
+    const isAlreadyExpanded = card.classList.contains('project-expanded');
+
+    // Recent의 펼쳐진 이미지는 프로젝트를 새창으로 엽니다.
+    if(isRecentCard && isAlreadyExpanded){
+      const url = card.getAttribute('data-project-url') || el?.getAttribute?.('href') || '';
+      if(url && isPreferredOpenTargetReady(url)){
+        window.open(getPreferredOpenUrl(url), '_blank', 'noopener');
+      }
+      return;
+    }
+
+    const willExpand = !isAlreadyExpanded;
     card.classList.toggle('project-empty', !willExpand);
     card.classList.toggle('project-collapsed', !willExpand);
     card.classList.toggle('project-expanded', willExpand);
@@ -3505,6 +3637,13 @@ function getProjectScaleClass(cat, scale){
   }
 
   function toggleTextCard(event, el){
+    // Do not open/close a Text card while the user is selecting text.
+    const selection = window.getSelection?.();
+    if(selection && !selection.isCollapsed && selection.toString().trim()){
+      if(event) event.stopPropagation();
+      return;
+    }
+
     if(event){
       event.preventDefault();
       event.stopPropagation();
@@ -4000,6 +4139,7 @@ function getProjectScaleClass(cat, scale){
       const galleryClass = isExpandedProject ? ' project-featured project-expanded' : ' project-gallery project-empty project-collapsed';
       const typeClass = item.cat === 'Group Show' ? ' project-group' : '';
       const linkIsNotReady = isLinkNotReady(item.url);
+      const linkReadyClass = linkIsNotReady ? ' project-link-not-ready' : '';
       const projectHeading = `
         <span class="project-title">${escapeHtml(makeDisplayTitle(item.title, koTitle))}</span>
         ${renderProjectWork(item)}
@@ -4007,14 +4147,14 @@ function getProjectScaleClass(cat, scale){
       `;
 
       return `
-        <article class="project-card ${escapeAttr(scaleClass)}${galleryClass}${typeClass}" data-project-url="${escapeAttr(item.url)}" data-project-hash="${escapeAttr(projectUrlToHash(item.url))}" data-default-expanded="${isExpandedProject ? 'true' : 'false'}">
+        <article class="project-card ${escapeAttr(scaleClass)}${galleryClass}${typeClass}${linkReadyClass}" data-project-url="${escapeAttr(item.url)}" data-project-hash="${escapeAttr(projectUrlToHash(item.url))}" data-default-expanded="${isExpandedProject ? 'true' : 'false'}">
           <a class="project-thumb${thumbImages.hasSlides ? ' has-slides' : ''}" href="${escapeAttr(item.url)}" onclick="toggleProjectCard(event, this)" data-fallback="${escapeAttr(fallback)}">
             ${thumbImages.html}
           </a>
           <div class="project-info">
             ${linkIsNotReady
               ? `<div style="text-decoration:none; color:inherit;">${projectHeading}</div>`
-              : `<a href="${escapeAttr(item.url)}" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');" style="text-decoration:none; color:inherit;">${projectHeading}</a>`}
+              : `<a class="opens-new-window" href="${escapeAttr(item.url)}" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');" style="text-decoration:none; color:inherit;">${projectHeading}</a>`}
             ${(detail.aboutKo || detail.aboutEn) ? `
             <div class="project-about">
               ${detail.aboutKo ? `<p><span class="lang">KR</span>${escapeHtml(detail.aboutKo)}</p>` : ''}
@@ -4036,7 +4176,7 @@ function getProjectScaleClass(cat, scale){
   function getAllArchiveProjects(){
     return (browseData.en || [])
       .slice()
-      .filter(item => !TEXT_CATEGORIES.includes(item.cat));
+      .filter(item => !isTextItem(item));
   }
 
   function renderArchiveProjects(){
@@ -4056,6 +4196,45 @@ function getProjectScaleClass(cat, scale){
     initProjectGallerySlides();
   }
 
+  function renderRecentTextCard(item){
+    const counterpart = /^ko(?:\/|$)/i.test(String(item.url || ''))
+      ? findBrowseItemByUrl(item.url, 'en')
+      : findBrowseItemByUrl(item.url, 'ko');
+    const aboutKo = String(item.aboutKo || counterpart?.aboutKo || '').trim();
+    const aboutEn = String(item.aboutEn || counterpart?.aboutEn || '').trim();
+    const eventText = String(item.event || counterpart?.event || '').trim();
+    const metaBits = ['EN', item.cat, eventText, item.year].filter(Boolean).join(' · ');
+    const pdfUrl = String(item.pdf || counterpart?.pdf || getTextPdfUrl(item.url) || '').trim();
+    const openUrl = pdfUrl || item.url;
+    const linkIsNotReady = !pdfUrl && isLinkNotReady(item.url);
+    const readFullLabel = /^ko(?:\/|$)/i.test(String(item.url || ''))
+      ? '전문 읽기'
+      : 'Read full text';
+
+    return `
+      <article
+        class="text-card text-expanded recent-text-card"
+        data-text-url="${escapeAttr(item.url)}"
+        data-text-hash="${escapeAttr(projectUrlToHash(item.url))}"
+        aria-expanded="true">
+        <div class="text-title-line">
+          <span class="text-title-static">${escapeHtml(item.title)}</span>
+          ${metaBits ? `<span class="meta">${escapeHtml(metaBits)}</span>` : ''}
+        </div>
+        ${(aboutKo || aboutEn) ? `
+        <div class="text-details">
+          <div class="text-about">
+            ${aboutKo ? `<p><span class="lang">KR</span>${escapeHtml(aboutKo)}</p>` : ''}
+            ${aboutEn ? `<p><span class="lang">EN</span>${escapeHtml(aboutEn)}</p>` : ''}
+            ${linkIsNotReady
+              ? `<span class="text-full-link text-full-link-disabled" aria-disabled="true">${readFullLabel}</span>`
+              : `<a class="text-full-link" href="${escapeAttr(openUrl)}" target="_blank" rel="noopener">${readFullLabel}</a>`}
+          </div>
+        </div>` : ''}
+      </article>
+    `;
+  }
+
   function renderProjectsAndTexts(){
     const recentWrap = document.getElementById('recentFeaturedWork');
     const recentGrid = document.getElementById('projectWorksGrid');
@@ -4067,21 +4246,25 @@ function getProjectScaleClass(cat, scale){
     const enItems = (browseData.en || []).slice();
     const koItems = (browseData.ko || []).slice();
 
-    const allProjects = enItems
-      .filter(item => !TEXT_CATEGORIES.includes(item.cat));
+    // Recent에는 Text를 포함해 Open 메뉴의 위쪽부터 지정한 개수만 표시합니다.
+    // Text는 이미지 없이 제목 + data-en/data-ko 원문으로 표시합니다.
+    // Archive에는 Text를 제외한 전체 작업이 계속 표시됩니다.
+    const recentItems = enItems.slice(0, Math.max(0, RECENT_WORK_COUNT));
+    recentGrid.innerHTML = recentItems.map(item => {
+      if(isTextItem(item)){
+        return renderRecentTextCard(item);
+      }
 
-    // Recent에는 Open 메뉴의 위쪽부터 지정한 개수만 표시합니다.
-    // 가장 최신 1개만 자동으로 펼치고, 나머지는 expanded="true"일 때만 펼칩니다.
-    // Archive에는 아래와 관계없이 전체 작업이 계속 표시됩니다.
-    const recentProjects = allProjects.slice(0, Math.max(0, RECENT_WORK_COUNT));
-    recentGrid.innerHTML = renderProjectCards(recentProjects, { featuredCount: recentProjects.length ? 1 : 0 });
+      // Recent의 이미지형 프로젝트는 모두 기본 펼침 상태로 표시합니다.
+      return renderProjectCards([item], { featuredCount: 1 });
+    }).join('');
 
     const enTexts = enItems
-      .filter(item => TEXT_CATEGORIES.includes(item.cat))
+      .filter(item => isTextItem(item))
       .map(item => ({...item, langLabel: 'EN'}));
 
     const koTexts = koItems
-      .filter(item => TEXT_CATEGORIES_KO.includes(item.cat))
+      .filter(item => isTextItem(item))
       .map(item => ({...item, langLabel: 'KO'}));
 
     const texts = [...enTexts, ...koTexts];
@@ -4094,7 +4277,9 @@ function getProjectScaleClass(cat, scale){
       const metaBits = [item.langLabel, item.cat, eventText, item.year].filter(Boolean).join(' · ');
       const aboutKo = String(item.aboutKo || '').trim();
       const aboutEn = String(item.aboutEn || '').trim();
-      const linkIsNotReady = isLinkNotReady(item.url);
+      const pdfUrl = String(item.pdf || counterpart?.pdf || getTextPdfUrl(item.url) || '').trim();
+      const openUrl = pdfUrl || item.url;
+      const linkIsNotReady = !pdfUrl && isLinkNotReady(item.url);
       const readFullLabel = item.langLabel === 'KO' ? '전문 읽기' : 'Read full text';
 
       return `
@@ -4103,9 +4288,8 @@ function getProjectScaleClass(cat, scale){
             class="text-card text-collapsed"
             data-text-url="${escapeAttr(item.url)}"
             data-text-hash="${escapeAttr(projectUrlToHash(item.url))}"
-            aria-expanded="false"
-            onclick="toggleTextCard(event, this)">
-            <div class="text-title-line">
+            aria-expanded="false">
+            <div class="text-title-line" onclick="toggleTextCard(event, this)">
               <span class="text-title-static">${escapeHtml(item.title)}</span>
               ${metaBits ? `<span class="meta">${escapeHtml(metaBits)}</span>` : ''}
             </div>
@@ -4114,7 +4298,9 @@ function getProjectScaleClass(cat, scale){
               <div class="text-about">
                 ${aboutKo ? `<p><span class="lang">KR</span>${escapeHtml(aboutKo)}</p>` : ''}
                 ${aboutEn ? `<p><span class="lang">EN</span>${escapeHtml(aboutEn)}</p>` : ''}
-                ${linkIsNotReady ? '' : `<a class="text-full-link" href="${escapeAttr(item.url)}" target="_blank" rel="noopener" onclick="event.stopPropagation();">${readFullLabel}</a>`}
+                ${linkIsNotReady
+                  ? `<span class="text-full-link text-full-link-disabled" aria-disabled="true">${readFullLabel}</span>`
+                  : `<a class="text-full-link" href="${escapeAttr(openUrl)}" target="_blank" rel="noopener" onclick="event.stopPropagation();">${readFullLabel}</a>`}
               </div>
             </div>` : ''}
           </article>
@@ -4137,7 +4323,10 @@ function getProjectScaleClass(cat, scale){
     // 아직 HTML 링크가 준비되지 않은 항목은 상단 Open/불러오기 목록에서 숨깁니다.
     // Archive 카드와 Archive 검색에는 계속 표시됩니다.
     let items = (browseData[browseLang] || [])
-      .filter(it => it.linkIsNotReady !== true && !isLinkNotReady(it.url))
+      .filter(it =>
+        Boolean(it.pdf || getTextPdfUrl(it.url)) ||
+        (it.linkIsNotReady !== true && !isLinkNotReady(it.url))
+      )
       .slice();
 
     if(q){
