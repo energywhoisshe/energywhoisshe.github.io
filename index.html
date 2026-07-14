@@ -3209,8 +3209,30 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
 
   /* Archive search and filters: no selection = show the full archive */
   .archive-section{
+    position:relative;
     margin-top:4.6rem;
     padding-top:1.2rem;
+  }
+  .archive-language-filter{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:2;
+  }
+  .archive-section.archive-language-filter-active:not(.archive-read-ko) .project-language-ko,
+  .archive-section.archive-language-filter-active:not(.archive-read-en) .project-language-en{
+    display:none !important;
+  }
+  /* Archive only: center the inline gallery as a group without centering card copy. */
+  #archiveWorksGrid{
+    text-align:center;
+  }
+  #archiveWorksGrid .project-card{
+    text-align:left;
+  }
+  #archiveWorksGrid .project-card.project-empty{
+    margin-left:.6rem !important;
+    margin-right:.6rem !important;
   }
   #archiveTools{
     margin:.55rem 0 2.1rem;
@@ -3723,6 +3745,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
     else clearCurrentLink();
 
     if(updateHistory) setInternalHash(archiveHash);
+    if(typeof applyArchiveLanguageFilter === 'function') applyArchiveLanguageFilter();
     if(typeof closeBrowsePanel === 'function') closeBrowsePanel();
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
   }
@@ -5176,14 +5199,14 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
                 : `<a class="opens-new-window" href="${escapeAttr(item.url)}" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');" style="text-decoration:none; color:inherit;">${projectHeading}</a>`}
               ${(detail.aboutKo || detail.aboutEn) ? `
               <div class="project-about">
-                ${detail.aboutKo ? `<p><span class="lang">KR</span>${formatInlineText(detail.aboutKo)}</p>` : ''}
-                ${detail.aboutEn ? `<p><span class="lang">EN</span>${formatInlineText(detail.aboutEn)}</p>` : ''}
+                ${detail.aboutKo ? `<p class="project-language-ko"><span class="lang">KR</span>${formatInlineText(detail.aboutKo)}</p>` : ''}
+                ${detail.aboutEn ? `<p class="project-language-en"><span class="lang">EN</span>${formatInlineText(detail.aboutEn)}</p>` : ''}
               </div>` : ''}
               ${(detail.artworkEn || detail.artworkKo) ? `
               <div class="project-artworks-wrap">
                 <div class="project-artworks">
-                  ${detail.artworkEn ? `<div class="project-artworks-group">${renderArtworkLines(detail.artworkEn)}</div>` : ''}
-                  ${detail.artworkKo ? `<div class="project-artworks-group">${renderArtworkLines(detail.artworkKo)}</div>` : ''}
+                  ${detail.artworkEn ? `<div class="project-artworks-group project-language-en">${renderArtworkLines(detail.artworkEn)}</div>` : ''}
+                  ${detail.artworkKo ? `<div class="project-artworks-group project-language-ko">${renderArtworkLines(detail.artworkKo)}</div>` : ''}
                 </div>
               </div>` : ''}
               ${detail.credits ? `
@@ -5193,6 +5216,41 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
           </article>
         `;
       }).join('');
+    }
+
+    function getArchiveLanguageFilterState(){
+      const filter = document.querySelector('[data-archive-language-filter]');
+      if(!filter) return [];
+
+      return Array.from(filter.querySelectorAll('input[type="checkbox"]:checked'))
+        .map(input => input.value)
+        .filter(lang => lang === 'ko' || lang === 'en');
+    }
+
+    function applyArchiveLanguageFilter(){
+      const section = document.querySelector('#archiveContent .archive-section');
+      if(!section) return;
+
+      const selected = getArchiveLanguageFilterState();
+      const active = selected.length > 0;
+
+      section.classList.toggle('archive-language-filter-active', active);
+      section.classList.toggle('archive-read-ko', selected.includes('ko'));
+      section.classList.toggle('archive-read-en', selected.includes('en'));
+
+      section.querySelectorAll('#archiveWorksGrid .project-card').forEach(card => {
+        card.classList.toggle('project-empty', !active);
+        card.classList.toggle('project-collapsed', !active);
+        card.classList.toggle('project-expanded', active);
+      });
+    }
+
+    function setupArchiveLanguageFilter(){
+      const filter = document.querySelector('[data-archive-language-filter]');
+      if(!filter || filter.dataset.ready === 'true') return;
+
+      filter.dataset.ready = 'true';
+      filter.addEventListener('change', applyArchiveLanguageFilter);
     }
 
     function getAllArchiveProjects(){
@@ -5215,6 +5273,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         ? renderProjectCards(projects, { forceGallery:true })
         : '<div class="project-filter-empty">No matching works.</div>';
 
+      applyArchiveLanguageFilter();
       initProjectGallerySlides();
     }
 
@@ -5914,6 +5973,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
       renderFeaturedWork();
       renderProjectsAndTexts();
       setupCategoryLanguageFilters();
+      setupArchiveLanguageFilter();
       applyInternalHashRoute();
     });
 </script>
@@ -5958,6 +6018,10 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
 
   <div id="archiveContent" aria-hidden="true">
     <section class="home-section archive-section">
+      <div class="category-language-filter archive-language-filter" data-archive-language-filter aria-label="Archive language filter">
+        <label><input id="archiveReadKo" type="checkbox" value="ko"> 한국어로 읽기</label>
+        <label><input id="archiveReadEn" type="checkbox" value="en"> Reading in English</label>
+      </div>
       <div id="archiveTools" aria-label="Search and filter archive"></div>
       <div id="archiveWorksGrid" class="project-grid"></div>
     </section>
