@@ -50,9 +50,16 @@ Energywhoisshe.com
 
     (링크 - 예외 설정)
     data-en-link-is-not-ready="true"  영문 HTML 링크 비활성화
-    data-en-pdf 값이 있으면 Text의 Read full text가 HTML 대신 PDF를 열기 (Text에만 해당)
     data-ko-link-is-not-ready="true"이면 한국어 HTML 링크를 비활성화합니다.
-    data-ko-pdf 값이 있으면 Text의 전문 읽기가 HTML 대신 PDF를 엽니다.
+
+    (Text 링크 - 선택)
+    data-en-url / data-ko-url = HTML 또는 외부 링크
+    data-en-pdf / data-ko-pdf = PDF 링크
+    * Text에서는 url과 pdf가 둘 다 있으면 링크도 둘 다 표시합니다.
+    * 기본 라벨: PDF 또는 energywhoisshe.com 내부 링크 = 전문 읽기 / Read full text
+    * 기본 라벨: 외부 링크 = 출판물 보기 / View publication
+    * 예외 라벨은 data-en-url-label / data-ko-url-label,
+      data-en-pdf-label / data-ko-pdf-label로 직접 지정할 수 있습니다.
 
     (번역 - Text 예외 설정)
     data-translation-is-not-ready="true"
@@ -83,6 +90,10 @@ Energywhoisshe.com
     PDF가 있을 때만:
     data-en-pdf / data-ko-pdf
 
+    링크 라벨을 자동판단 대신 직접 지정할 때만:
+    data-en-url-label / data-ko-url-label
+    data-en-pdf-label / data-ko-pdf-label
+
     HTML 링크를 막을 때만:
     data-en-link-is-not-ready="true"
     data-ko-link-is-not-ready="true"
@@ -108,6 +119,8 @@ Energywhoisshe.com
     data-en-artwork="영문 작품 정보"
     data-en-credit="English credits"
     data-en-pdf="영문 PDF 경로"
+    data-en-url-label="영문 URL 링크 라벨 (선택)"
+    data-en-pdf-label="영문 PDF 링크 라벨 (선택)"
     data-en-link-is-not-ready="true|false"
 
     !한국어 데이터!
@@ -122,6 +135,8 @@ Energywhoisshe.com
     data-ko-artwork="한국어 작품 정보"
     data-ko-credit="한국어 크레딧"
     data-ko-pdf="한국어 PDF 경로"
+    data-ko-url-label="한국어 URL 링크 라벨 (선택)"
+    data-ko-pdf-label="한국어 PDF 링크 라벨 (선택)"
     data-ko-link-is-not-ready="true|false"
 
     !텍스트 입력!
@@ -1079,11 +1094,9 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   <option value="https://www.instagram.com/p/DXbsq_8k1mZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     data-ko-meta="KO · 아티스트북 · 2026"
     data-en-meta="EN · Artist’s Book · 2026"
-    data-ko="사진은 제가 작업 상에서 크로스드레싱을 시작하며 촬영 장소를 물색하다 동료인 차연서 작가가 자신의 남양주 정원을 촬영 장소로 열어주며 시작되었습니다. 군복, 한복, 웨딩 드레스 등의 복장을 입은 사람의 모습이 정원의 계절감에 스며들고 흐르며 또다른 사람들과 어울립니다. 
+    data-ko="재훈과의 첫 만남, 그리고 남양주 정원에서 진행된 작업이 사진과 글로 다뤄졌습니다.
 
-    글은 영국의 예술가이자 활동가 그리고 정원사인, 데릭 저먼과 배우 틸다 스윈턴의 이야기 그리고 저와 차연서의 이야기가 나란히 놓여 있습니다. 어딘가에 지속적으로 방문하고 그곳을 매만지는 행위를 저는 ‘정원’이라는 단어로 개념화했고 그 돌봄의 책임을 나누어 지는 행위를 우정이라고 적었습니다.
-
-    책에는 이수, 배선희, 차연서, 테토군 그리고 제 모습이 들어가 있으며 화장을 입은 모든 얼굴은 이수의 창작물입니다. 디자인은 박한슬 디자이너가 맡았고 글의 영역본 번역 검수는 호성님께서 도와주셨습니다. 선뜻 자신의 재능을 나눠준 위의 분들과, 함께한 시간을 싣도록 허락해준 곽예인 작가에게 감사의 말씀을 전합니다. (책 소개: 재훈 @small.but.jaehun)
+    사진은 제가 작업 상에서 크로스드레싱을 시작하며 촬영 장소를 물색하다 동료인 차연서 작가가 자신의 남양주 정원을 촬영 장소로 열어주며 시작되었습니다. 군복, 한복, 웨딩 드레스 등의 복장을 입은 사람의 모습이 정원의 계절감에 스며들고 흐르며 또다른 사람들과 어울립니다. 글은 영국의 예술가이자 활동가 그리고 정원사인, 데릭 저먼과 배우 틸다 스윈턴의 이야기 그리고 저와 차연서의 이야기가 나란히 놓여 있습니다. 어딘가에 지속적으로 방문하고 그곳을 매만지는 행위를 저는 ‘정원’이라는 단어로 개념화했고 그 돌봄의 책임을 나누어 지는 행위를 우정이라고 적었습니다. 책에는 이수, 배선희, 차연서, 테토군 그리고 제 모습이 들어가 있으며 화장을 입은 모든 얼굴은 이수의 창작물입니다. 디자인은 박한슬 디자이너가 맡았고 글의 영역본 번역 검수는 호성님께서 도와주셨습니다. 선뜻 자신의 재능을 나눠준 위의 분들과, 함께한 시간을 싣도록 허락해준 곽예인 작가에게 감사의 말씀을 전합니다. (출처: 재훈 @small.but.jaehun)
 
     제본 : 무선제본 / 세로형좌철
     규격 : 148mm x 210mm
@@ -1095,6 +1108,24 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
     Size: 148 × 210 mm
     Page count: 124 pages"
     data-en-link-label="View publication">재훈, 『그림자 정원사』 / Jaehun, *A Shadow Gardener*</option>
+  <!--------------------------------------------------------------------->
+  <option value="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=365057912&srsltid=AfmBOooHzB7rYGo5toBlMGhqOA2i8btZQYutRdUqgMO5oTaFT9n1r_A4"
+    data-ko-meta="KO · 출판 · 현실문화 · 2025"
+    data-en-meta="EN · Publication · Hyunsil Munhwa · 2025"
+    data-ko="2023년도 개인전 비평이 수록되었습니다.
+
+    비평가 양효실이 지난 10여 년간 시각예술 현장에서 직접 만난 작가들과의 ‘대화’를 바탕으로 써내려간 비평을 한 권으로 묶었다. 회화, 사진, 설치, 퍼포먼스, 퀴어 아트, 공동체 지향 작업 등 다양한 장르를 넘나드는 45인 작가의 세계를 섬세하게 풀어낸 이 책은, 단순한 평론집이 아니라 “이야기를 들어주는 비평가”가 예술가들과 함께 ‘함께 써낸 이야기’로 구성된다. 45인의 작가와 엮은 공동의 문장들이 나와 타자, 작가와 관객, 비평과 창작의 경계를 유연하고 흐릿하게 만들면서, 비평이란 이름의 감응적 나눔의 실천으로 탈바꿈시킨다. (책소개에서)
+
+    3부 비극에 시간을 더하면 웃음
+    임영주: 명랑 샤먼의 무차별적 평등론
+    최수련: 웃는 여자가 베낍디다
+    채프먼 형제: 《이성의 잠》—파괴를 위한 교정
+    이순종: 명랑착시낭비구멍실눈플레이어
+    배철: 당사자-유머리스트의 자기 재현
+    차연서: 웃는 여자, 보는 아이, 엮이는 유충들"
+    data-ko-link-label="출판물 보기"
+    data-en=""
+    data-en-link-label="View publication">양효실, 『대화 비평』</option>
 </select>
 
 
@@ -1191,16 +1222,96 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
     data-en=""
     data-ko-link-label="전문 읽기"
     data-en-link-label="Read Full Text">재훈, 「비 맞는 여자와 우산 없는 남자」</option>
-  <!--------------------------------------------------------------------->
-<option value="https://m.artinpost.co.kr/product/contents.html?product_no=127&cate_no=44"
-    data-ko-meta="KO · 리뷰 · 퍼블릭아트 2020년 8월호 · 2인전 《크게 슬플 일인가요》 이후 · 2020"
-    data-ko-event="2인전: 크게 슬플 일인가요"
-    data-ko="전시장에 도달하기 위해 오르는 계단 끌머리 벽에는 하얀 A4 종이가 붙어 있다. 뭔가 하고 유심히 들여다보면 ‘크게 크게 크게’ 단 여섯 글자가 작게 적혀있다. 시작도 전에 제목의 앞머리를 계속해서 되뇌는 까닭은 무엇일까. 이 단어를 얼핏 떼어보면 ‘커져라’는 주문인가 싶지만, 전시를 본 후에는 ‘크게 슬플 일인가요’ 그 한 문장을 내뱉기 위한 더듬거림의 연습이었음을 알 수 있다. 아주 개인적인, 때로는 감추고 싶은 슬픔의 순간들을 왜 두 명의 작가는 공유하는 걸까. 차연서와 박주영은 글과 영상, 설치, 필름 그리고 그것들의 신중한 배치를 통해서 전시장을 채운다. 이를 통해 그들의 작업이 하나의 매체에 관한 집요한 탐구라기보다 다양한 방식의 말하기를 실험했음을 짐작할 수 있다."
-    data-en-meta="Review · Public Art Issue 167, AUG 2020 · After the duo show *Be Sad I Dare You* · 2020"
-    data-en-event="Duo Show: Be Sad I Dare You"
-    data-en=""
-    data-ko-link-label="출판물 보기"
-    data-en-link-label="View publication">조윤지, 「영원히 익숙해지지 않는 것은 없다」</option>
+    <!--------------------------------------------------------------------->
+  <option value="http://semacoral.org/features/yeonsooklee-advancing-of-low-6-lesbian-wasteland"
+      data-ko-meta="KO · 미디어버스 · SeMA 비평연구 프로젝트 · 퍼포먼스 《모스키토라바쥬스》 이후 · 2023"
+      data-en-meta=""
+      data-ko="도판이 두 장 실렸습니다.
+      차연서, 하늘 아래 Under the sky. 《모스키토라바쥬스》 (서울: Lest601 선유, 2022) 라이브 퍼포먼스 장면
+      차연서, 텅 빈 엄마와 거짓말 하는 딸 The empty mother and the lying daughter. 《모스키토라바쥬스》 (서울: Lest601 선유, 2022) 라이브 퍼포먼스 장면
+
+      페미니즘과 퀴어 예술, 하위문화에서 발견되는 소수자의 저항적 형식에 관심을 두고 새로운 담론 세계를 축성하고 있는 평론가 이연숙의 첫 책 『진격하는 저급들』이 출간되었다. 이연숙은 하나금융그룹이 후원하는 제4회 SeMA-하나 평론상의 수상자인바, 특전으로 주어지는 연구 및 출판 지원 사업인 SeMA 비평연구 프로젝트의 결과로 이 책을 묶었다. (출처: 책 소개에서)
+
+      들어가며: ‘젠더 문제’
+
+      1장 슬픈 퀴어 초상
+      2장 단식 광대는 왜 춤추는가
+      3장 뉴플 스케치
+      4장 문제는 디자인이다
+      5장 한심하고 쓸모없는 트위터 중독자들
+      6장 레즈비언 황무지
+      7장 라운드테이블 “레즈비언 미술은 왜 구린가”
+      
+      감사의 말
+      2023 SeMA 비평연구 프로젝트: 에필로그"
+      data-en="">리타, 『진격하는 저급들: 퀴어 부정성과 시각문화』</option>
+      <!--------------------------------------------------------------------->
+  <option value="http://semacoral.org/features/yeonsooklee-advancing-of-low-6-lesbian-wasteland"
+      data-ko-meta="KO · SeMA Coral · SeMA 비평연구 프로젝트 · 온라인 개인전 《이 기막힌 잠》 이후 · 2023"
+      data-en-meta=""
+      data-ko="2023년도 온라인 개인전이 언급되었습니다.
+
+      게다가 이것은 사실이 아니다. 서울에서 (여성) 성소수자-퀴어 정체성을 작업의 (주된) 주제로 삼는 작가들을 (내 능력 부족으로 인해) 전부 열거할 수 없겠지만, 올해 이들 중 일부가 올린 전시의 목록은 다음과 같다. 《차연서 개인전: 이 기막힌 잠 This Unbelievable Sleep》(온라인 전시, https://energywhoisshe.com/, 2023.6.15.-7.15.), 《리단 개인전: Being Boring》(스페이스 미라주, 2023.6.8.-2023.6.22.), 《임아진, 강우솔 2인전: (불)응하는 몸 (un)fortunately, (un)body》(스페이스 미라주, 2023.5.18.-2023.6.1.) 등. 물론 영화와 연극, 사진과 만화 같은 장르까지 아우른다면 이 목록은 더 늘어날 것이다. (출처: 〈진격하는 저급들〉 6장: 레즈비언 황무지ㅡ비가시성에 대한 노트)"
+      data-en=""
+      data-ko-link-label="전문 읽기"
+      data-en-link-label="Read Full Text">리타, 「〈진격하는 저급들〉 6장: 레즈비언 황무지ㅡ비가시성에 대한 노트」</option>
+      <!--------------------------------------------------------------------->
+  <option value="http://audiovisualpavilion.org/avp-quarterly/avpquarterly05/"
+      data-ko-meta="KO · 계간 시청각 5호 · 2인전 《크게 슬플 일인가요》 및 퍼포먼스  〈쥬시 모스키토〉 이후 · 2022"
+      data-en-meta=""
+      data-ko="이연숙 (리타) 님의 기고글 내 문상훈 작가 및 이반지하 작가와의 인터뷰 중에서 2020년도 2인전 및 졸업 전시가 언급되었습니다. 〈블라인드-폴딩 인 아리아〉 (쥬시 모스키토) 도판이 두 페이지에 걸친 펼침면으로 인쇄되었습니다."
+      data-en=""
+      data-ko-link-label="전문 읽기"
+      data-en-link-label="Read Full Text">리타, 「없거나 또는 안보이거나-동시대 레즈비언 미술이라는 곤란함에 대하여」</option>
+      <!--------------------------------------------------------------------->
+  <option value="http://www.zineseminar.com/wp/issue09/chayeonseo/"
+      data-ko-meta="KO · 웹진 세미나 9호 · 게임 〈3 Households〉 연계 · 2021"
+      data-en-meta=""
+      data-ko="글. 차연서 / 사운드트랙. 이상화
+
+      3 Households는 세 여성 간의 관계로부터 출발한 가상의 가족 단위 혹은 신체 구조를 시뮬레이션 한다. 트라우마 치료 및 예방을 위한 임상적 방법론, '내적가족체계' 및 'EMDR' 기법에서 착안한 플레이 시스템 안에서 — 레즈비언 실천, 친족 성폭력, 양자 에너지, 죽음 명상 등에 관련한 인용문이 직조된다. 플레이어는 프랙탈 네트워크의 형태와 다중 시선으로 확장하는 환경을 순차적으로 이동하며, 불안 기억에 대한 양측성 자극을 수행한다.
+
+      대안 가족, 익명의 이름, 해리된 자아 — 3인 공동체로부터 출발한 세 겹의 차원은 질서 정연한 카오스로서 불타오른다. 죽일 수 없는 정원(불가살不可殺이 정원)에서 피해와 가해의 이분법은 불효하다. 삭제된 제 4의 차원으로의 경계는 불길 속에서 더한 광채를 갖는다.
+
+      그렇게도 번역할 수 없는 물건들 — 집을 지키는 사람들(3 Households)의 스테이지들은 특히, 선택하거나 선택하지 않은 가족 관계, 심리적 화상, 돌연한 사고 그리고 장례와 추모에 겨냥해있다. 굳이 신뢰하는 혐오스러운 나날들의 총합, 지옥같은 천국 혹은 천국같은 지옥, 불안 속에서 기억해내는 사물의 감각, 그리고 ... 단순하다면 단순한 설계에 목적지는 준비되어 있으며 누구나 각자의 재능과 기질에 따라 몇 차례 맴돌아 도착할 것이다.
+
+      IEnumerator sos()
+      {   
+            &nbsp;&nbsp;while(true)
+            &nbsp;&nbsp;{
+                &nbsp;&nbsp;&nbsp;&nbsp;Unkillable.text = “엄마”;
+                &nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds(1);
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;Unkillable.text = “딸”;
+                &nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds(2);
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;Unkillable.text = “딸의 여자친구”;
+                &nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds(3);
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;Unkillable.text = “아빠”; 
+                &nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds(4);
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;Unkillable.text = “오빠”; 
+                &nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds(5);
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;Unkillable.text = “불가살이”;
+                &nbsp;&nbsp;&nbsp;&nbsp;yield return new WaitForSeconds(6);
+                &nbsp;&nbsp;&nbsp;&nbsp;Debug.Log(“그러니까 이 6개의 친족, 친척 혹은 도무지 서로간에 낯선 이들은 같은 곳을 돌고 있습니다.”);
+            &nbsp;&nbsp;}
+        }"
+      data-en=""
+      data-ko-link-label="출판물 보기"
+      data-en-link-label="View publication">차연서, 「{ “파괴적인 엄마의 마음”, “생산적인 딸의 양자파동장”, “잠재적인 딸의 여자친구의 물리적인 구조육체” };」</option>
+      <!--------------------------------------------------------------------->
+  <option value="https://m.artinpost.co.kr/product/contents.html?product_no=127&cate_no=44"
+      data-ko-meta="KO · 리뷰 · 퍼블릭아트 2020년 8월호 · 2인전 《크게 슬플 일인가요》 이후 · 2020"
+      data-ko-event="2인전: 크게 슬플 일인가요"
+      data-ko="전시장에 도달하기 위해 오르는 계단 끌머리 벽에는 하얀 A4 종이가 붙어 있다. 뭔가 하고 유심히 들여다보면 ‘크게 크게 크게’ 단 여섯 글자가 작게 적혀있다. 시작도 전에 제목의 앞머리를 계속해서 되뇌는 까닭은 무엇일까. 이 단어를 얼핏 떼어보면 ‘커져라’는 주문인가 싶지만, 전시를 본 후에는 ‘크게 슬플 일인가요’ 그 한 문장을 내뱉기 위한 더듬거림의 연습이었음을 알 수 있다. 아주 개인적인, 때로는 감추고 싶은 슬픔의 순간들을 왜 두 명의 작가는 공유하는 걸까. 차연서와 박주영은 글과 영상, 설치, 필름 그리고 그것들의 신중한 배치를 통해서 전시장을 채운다. 이를 통해 그들의 작업이 하나의 매체에 관한 집요한 탐구라기보다 다양한 방식의 말하기를 실험했음을 짐작할 수 있다."
+      data-en-meta="Review · Public Art Issue 167, AUG 2020 · After the duo show *Be Sad I Dare You* · 2020"
+      data-en-event="Duo Show: Be Sad I Dare You"
+      data-en=""
+      data-ko-link-label="출판물 보기"
+      data-en-link-label="View publication">조윤지, 「영원히 익숙해지지 않는 것은 없다」</option>
 </select>
 
 <style>
@@ -1652,6 +1763,19 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   .project-card:hover .project-thumb.has-slides .project-slide-image.is-next.is-fading-in{
     opacity:1;
   }
+
+  /* Resize performance: keep loaded images in the DOM, but skip painting them while the viewport is moving. */
+  body.is-resizing-project-gallery #projectWorksGrid .project-thumb,
+  body.is-resizing-project-gallery #archiveWorksGrid .project-thumb{
+    background:#252525;
+    border-color:#2b2b2b;
+  }
+  body.is-resizing-project-gallery #projectWorksGrid .project-thumb img,
+  body.is-resizing-project-gallery #archiveWorksGrid .project-thumb img{
+    visibility:hidden !important;
+    transition:none !important;
+  }
+
   @media (prefers-reduced-motion: reduce){
     .project-thumb.has-slides .project-slide-image{
       transition:none !important;
@@ -2040,6 +2164,13 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
     font-weight:600;
     cursor:pointer;
   }
+  #textsContent .text-action-links,
+  #projectWorksGrid .recent-text-card .text-action-links{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    gap:.16rem .8rem;
+  }
   #textsContent .text-full-link:hover,
   #projectWorksGrid .recent-text-card .text-full-link:hover,
   .features-section .text-full-link:hover{
@@ -2163,8 +2294,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
     grid-row:2;
     width:100%;
   }
-  .combined-text-card .text-language-section .text-full-link,
-  .combined-text-card .text-language-section .text-full-link-disabled{
+  .combined-text-card .text-language-section .text-action-links{
     grid-column:1 / -1;
     grid-row:3;
     justify-self:start;
@@ -4431,6 +4561,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
           expanded: option.getAttribute('expanded') === 'true',
           linkIsNotReady: getContentDataValue(option, lang, 'link-is-not-ready') === 'true',
           pdf: getContentDataValue(option, lang, 'pdf'),
+          urlLabel: getContentDataValue(option, lang, 'url-label'),
+          pdfLabel: getContentDataValue(option, lang, 'pdf-label'),
           slideImages: [1, 2, 3]
             .map(number =>
               option.getAttribute(`slide-image${number}`)
@@ -4826,6 +4958,17 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
 
     let gallerySlideTimer = null;
     let lastGallerySlideThumb = null;
+    let galleryResizeActive = false;
+    let projectGalleryResizeEndTimer = null;
+
+    const PROJECT_GALLERY_SLIDE_SELECTOR = [
+      '#projectWorksGrid .project-thumb.has-slides',
+      '#archiveWorksGrid .project-thumb.has-slides'
+    ].join(', ');
+
+    function getProjectGallerySlideThumbs(){
+      return Array.from(document.querySelectorAll(PROJECT_GALLERY_SLIDE_SELECTOR));
+    }
 
     function randomBetween(min, max){
       return min + Math.random() * (max - min);
@@ -4900,7 +5043,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
     function transitionProjectSlide(thumb){
       return new Promise(resolve => {
         const images = Array.from(thumb.querySelectorAll('.project-slide-image'));
-        if(images.length < 2 || thumb.dataset.slidePaused === 'true'){
+        if(images.length < 2 || galleryResizeActive || thumb.dataset.slidePaused === 'true'){
           resolve();
           return;
         }
@@ -4909,7 +5052,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         const currentIndex = Math.max(0, images.indexOf(current));
         const nextIndex = (currentIndex + 1) % images.length;
         const next = images[nextIndex];
-        const fadeMs = Math.round(randomBetween(1500, 2000));
+        const fadeMs = Math.round(randomBetween(900, 1300));
 
         thumb.dataset.slideBusy = 'true';
         thumb.style.setProperty('--slide-fade-duration', `${fadeMs}ms`);
@@ -4931,12 +5074,17 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
       });
     }
 
-    function scheduleNextGallerySlide(thumbs){
+    function scheduleNextGallerySlide(thumbs, delayMs = Math.round(randomBetween(3000, 5000))){
       if(gallerySlideTimer){
         window.clearTimeout(gallerySlideTimer);
       }
 
       gallerySlideTimer = window.setTimeout(async () => {
+        if(galleryResizeActive){
+          gallerySlideTimer = null;
+          return;
+        }
+
         const available = thumbs.filter(thumb =>
           thumb.isConnected &&
           thumb.dataset.slidePaused !== 'true' &&
@@ -4953,7 +5101,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         }
 
         scheduleNextGallerySlide(thumbs);
-      }, Math.round(randomBetween(8000, 12000)));
+      }, delayMs);
     }
 
     function initProjectGallerySlides(){
@@ -4966,12 +5114,18 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         return;
       }
 
-      const thumbs = Array.from(document.querySelectorAll('#projectWorksGrid .project-thumb.has-slides'));
-      lastGallerySlideThumb = null;
+      const thumbs = getProjectGallerySlideThumbs();
+      if(lastGallerySlideThumb && !lastGallerySlideThumb.isConnected){
+        lastGallerySlideThumb = null;
+      }
 
       thumbs.forEach(thumb => {
-        thumb.dataset.slidePaused = 'false';
-        thumb.dataset.slideBusy = 'false';
+        if(!thumb.dataset.slidePaused) thumb.dataset.slidePaused = 'false';
+        if(!thumb.dataset.slideBusy) thumb.dataset.slideBusy = 'false';
+
+        if(thumb.dataset.slideControlsReady === 'true') return;
+        thumb.dataset.slideControlsReady = 'true';
+
         thumb.addEventListener('mouseenter', () => {
           thumb.dataset.slidePaused = 'true';
         });
@@ -4986,10 +5140,39 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         });
       });
 
-      if(thumbs.length){
+      if(thumbs.length && !galleryResizeActive){
         scheduleNextGallerySlide(thumbs);
       }
     }
+
+    function beginProjectGalleryResizeMode(){
+      galleryResizeActive = true;
+      document.body.classList.add('is-resizing-project-gallery');
+
+      if(gallerySlideTimer){
+        window.clearTimeout(gallerySlideTimer);
+        gallerySlideTimer = null;
+      }
+
+      if(projectGalleryResizeEndTimer){
+        window.clearTimeout(projectGalleryResizeEndTimer);
+      }
+
+      projectGalleryResizeEndTimer = window.setTimeout(() => {
+        galleryResizeActive = false;
+        document.body.classList.remove('is-resizing-project-gallery');
+        projectGalleryResizeEndTimer = null;
+
+        if(!window.matchMedia?.('(prefers-reduced-motion: reduce)').matches){
+          const thumbs = getProjectGallerySlideThumbs();
+          if(thumbs.length){
+            scheduleNextGallerySlide(thumbs, Math.round(randomBetween(2500, 4500)));
+          }
+        }
+      }, 140);
+    }
+
+    window.addEventListener('resize', beginProjectGalleryResizeMode, { passive:true });
 
 
     function getArchiveProjectCategories(projects){
@@ -5328,6 +5511,48 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         .sort((a, b) => a.sourceIndex - b.sourceIndex);
     }
 
+    function isTextFullTextLink(url){
+      const value = String(url || '').trim();
+      if(!value) return false;
+
+      // PDF는 위치와 관계없이 기본적으로 전문 링크로 취급합니다.
+      if(/\.pdf(?:[?#]|$)/i.test(value)) return true;
+
+      try{
+        const parsed = new URL(value, window.location.href);
+        const host = String(parsed.hostname || '').toLowerCase();
+        const currentHost = String(window.location.hostname || '').toLowerCase();
+
+        return !host
+          || host === currentHost
+          || host === 'energywhoisshe.com'
+          || host.endsWith('.energywhoisshe.com');
+      }catch(e){
+        // 상대경로는 이 사이트 내부 링크로 간주합니다.
+        return !/^[a-z][a-z0-9+.-]*:\/\//i.test(value);
+      }
+    }
+
+    function getTextLinkLabel(url, langCode, overrideLabel){
+      const override = String(overrideLabel || '').trim();
+      if(override) return override;
+
+      const fullText = isTextFullTextLink(url);
+      if(langCode === 'ko') return fullText ? '전문 읽기' : '출판물 보기';
+      return fullText ? 'Read full text' : 'View publication';
+    }
+
+    function renderTextActionLink(url, label, disabled = false){
+      const href = String(url || '').trim();
+      if(!href) return '';
+
+      if(disabled){
+        return `<span class="text-full-link text-full-link-disabled" aria-disabled="true">${formatInlineText(label)}</span>`;
+      }
+
+      return `<a class="text-full-link" href="${escapeAttr(href)}" target="_blank" rel="noopener" onclick="event.stopPropagation();">${formatInlineText(label)}</a>`;
+    }
+
     function renderTextLanguageSection(item, role, metaBits, canToggle){
       if(!item) return '';
 
@@ -5344,11 +5569,34 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
       const roleClass = translatorLabel
         ? 'text-language-role has-translator'
         : 'text-language-role';
-      const openUrl = String(item.pdf || item.url || '').trim();
-      const linkIsNotReady = !item.pdf && item.linkIsNotReady === true;
-      const readFullLabel = langCode === 'ko' ? '전문 읽기' : 'Read full text';
       const titleToggleClass = canToggle ? ' is-toggleable' : '';
       const titleToggle = canToggle ? ' onclick="toggleTextCard(event, this)"' : '';
+
+      const links = [];
+      const url = String(item.url || '').trim();
+      const pdf = String(item.pdf || '').trim();
+
+      // 기존 Text 규칙 유지: HTML이 준비되지 않았지만 PDF가 있으면
+      // 비활성 HTML 링크를 중복 표시하지 않고 PDF 링크만 보여줍니다.
+      if(url && !(item.linkIsNotReady === true && pdf)){
+        links.push(renderTextActionLink(
+          url,
+          getTextLinkLabel(url, langCode, item.urlLabel),
+          item.linkIsNotReady === true
+        ));
+      }
+
+      if(pdf && pdf !== url){
+        links.push(renderTextActionLink(
+          pdf,
+          getTextLinkLabel(pdf, langCode, item.pdfLabel),
+          false
+        ));
+      }
+
+      const linkMarkup = links.length
+        ? `<div class="text-action-links">${links.join('')}</div>`
+        : '';
 
       return `
         <section class="text-language-section text-language-${langCode}" data-text-role="${role}">
@@ -5357,11 +5605,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
             ${about
               ? `<p><span class="${roleClass}">${formatInlineText(roleLabel)}</span>${formatInlineText(about)}</p>`
               : `<div><span class="${roleClass}">${formatInlineText(roleLabel)}</span></div>`}
-            ${openUrl
-              ? (linkIsNotReady
-                ? `<span class="text-full-link text-full-link-disabled" aria-disabled="true">${readFullLabel}</span>`
-                : `<a class="text-full-link" href="${escapeAttr(openUrl)}" target="_blank" rel="noopener" onclick="event.stopPropagation();">${readFullLabel}</a>`)
-              : ''}
+            ${linkMarkup}
           </div>
           ${metaBits ? `<span class="meta text-language-meta">${formatInlineText(metaBits)}</span>` : ''}
         </section>
