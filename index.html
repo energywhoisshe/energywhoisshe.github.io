@@ -133,6 +133,52 @@ Energywhoisshe.com
   }
 </style>
 
+
+<style id="recent-project-subtitle-spacing-match-archive">
+  /* Recent project subtitles use the exact same spacing as Archive cards. */
+  @media (min-width:769px){
+    #projectWorksGrid .project-heading-static > .project-title + .project-work{
+      margin-top:.48rem !important;
+    }
+    #projectWorksGrid .project-heading-static > .project-work:not(:last-of-type){
+      margin-bottom:0 !important;
+    }
+    #projectWorksGrid .project-heading-static > .project-work + .project-work{
+      margin-top:.16rem !important;
+    }
+    #projectWorksGrid .project-heading-static > .project-work div + div{
+      margin-top:.06rem;
+    }
+    #projectWorksGrid .project-heading-static > .project-title + .project-meta{
+      margin-top:.44rem !important;
+    }
+  }
+
+  @media (max-width:768px){
+    #projectWorksGrid .project-heading-static > .project-work{
+      margin:0 0 0 .62rem !important;
+      padding:0;
+      font-size:.78em;
+      line-height:1.18 !important;
+    }
+    #projectWorksGrid .project-heading-static > .project-title + .project-work{
+      padding-top:.62rem;
+    }
+    #projectWorksGrid .project-heading-static > .project-work + .project-work{
+      padding-top:.16rem;
+    }
+    #projectWorksGrid .project-heading-static > .project-work:last-of-type{
+      padding-bottom:.68rem;
+    }
+    #projectWorksGrid .project-heading-static > .project-work div + div{
+      margin-top:.07rem;
+    }
+    #projectWorksGrid .project-heading-static > .project-title + .project-meta{
+      margin-top:.48rem !important;
+    }
+  }
+</style>
+
 </head>
 <body>
 <div id="current-link"><a href="#" target="_blank"></a></div>
@@ -4086,15 +4132,15 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   }
 
   /* Practice: dated studio notes.
-     Add more .studio-note elements in the HTML; the area scrolls as notes accumulate. */
+     Notes continue naturally in the page without a separate vertical scroll area. */
   .studio-works-notes{
     margin-top:.85rem;
     max-width:760px;
-    max-height:35vh;
-    overflow-y:auto;
-    padding-right:.45rem;
-    overscroll-behavior:contain;
-    -webkit-overflow-scrolling:touch;
+    max-height:none;
+    overflow-y:visible;
+    padding-right:0;
+    overscroll-behavior:auto;
+    -webkit-overflow-scrolling:auto;
   }
   .studio-note{
     padding:0 0 1.35rem;
@@ -4723,13 +4769,6 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
       grid-template-columns:1fr;
       gap:.65rem;
       margin-bottom:2rem !important;
-    }
-  }
-
-
-  @media (max-width:768px){
-    .studio-works-notes{
-      max-height:43vh;
     }
   }
 
@@ -10871,7 +10910,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   }
 </style>
 
-<style id="studio-notes-scroll-cue-style">
+<style id="studio-notes-flow-style">
   #inTheStudioSection .studio-works-notes-shell{
     position:relative;
     max-width:760px;
@@ -10881,82 +10920,11 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   #inTheStudioSection .studio-works-notes-shell .studio-works-notes{
     max-width:none;
     margin-top:0;
-    scrollbar-width:thin;
-    scrollbar-color:rgba(0,0,0,.28) transparent;
-  }
-
-  #inTheStudioSection .studio-works-notes::-webkit-scrollbar{
-    width:7px;
-  }
-
-  #inTheStudioSection .studio-works-notes::-webkit-scrollbar-track{
-    background:transparent;
-  }
-
-  #inTheStudioSection .studio-works-notes::-webkit-scrollbar-thumb{
-    background:rgba(0,0,0,.22);
-    border-radius:999px;
-  }
-
-  #inTheStudioSection .studio-works-notes-shell::after{
-    content:"";
-    position:absolute;
-    z-index:1;
-    left:0;
-    right:.45rem;
-    bottom:0;
-    height:2rem;
-    pointer-events:none;
-    background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.97));
-    opacity:1;
-    transition:opacity .18s ease;
-  }
-
-
-  #inTheStudioSection .studio-works-notes-shell.is-at-end::after,
-  #inTheStudioSection .studio-works-notes-shell.is-not-scrollable::after{
-    opacity:0;
+    max-height:none !important;
+    overflow-y:visible !important;
+    padding-right:0 !important;
   }
 </style>
-
-<script id="studio-notes-scroll-cue-script">
-  (function(){
-    function initStudioNotesScrollCue(){
-      const notes = document.getElementById('studioWorksNotes');
-      const shell = notes?.closest('.studio-works-notes-shell');
-      if(!notes || !shell) return;
-
-      const updateCue = () => {
-        const isScrollable = notes.scrollHeight > notes.clientHeight + 2;
-        const isAtEnd = notes.scrollTop + notes.clientHeight >= notes.scrollHeight - 4;
-
-        shell.classList.toggle('is-not-scrollable', !isScrollable);
-        shell.classList.toggle('is-at-end', isScrollable && isAtEnd);
-      };
-
-      notes.addEventListener('scroll', updateCue, { passive:true });
-      window.addEventListener('resize', updateCue, { passive:true });
-
-      if('ResizeObserver' in window){
-        const resizeObserver = new ResizeObserver(updateCue);
-        resizeObserver.observe(notes);
-      }
-
-      if('MutationObserver' in window){
-        const mutationObserver = new MutationObserver(() => requestAnimationFrame(updateCue));
-        mutationObserver.observe(notes, { childList:true, subtree:true, attributes:true });
-      }
-
-      requestAnimationFrame(() => requestAnimationFrame(updateCue));
-    }
-
-    if(document.readyState === 'loading'){
-      document.addEventListener('DOMContentLoaded', initStudioNotesScrollCue, { once:true });
-    }else{
-      initStudioNotesScrollCue();
-    }
-  })();
-</script>
 
 
 <style id="archive-credit-fade-and-title-size-style">
