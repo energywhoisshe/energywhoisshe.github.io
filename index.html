@@ -77,8 +77,11 @@ Energywhoisshe.com
 <style id="archive-default-english-meta-and-heading-gaps">
   /* Default all-view: bilingual titles / work names remain, but project
      metadata is shown once in English to keep the overview compact. */
-  #archiveContent:not(.archive-reading-mode) #archiveWorksGrid .project-meta.project-language-ko{
+  #archiveContent:not(.archive-reading-mode) #archiveWorksGrid .project-card .project-meta.project-language-ko{
     display:none !important;
+  }
+  #archiveContent:not(.archive-reading-mode) #archiveWorksGrid .project-card .project-meta.project-language-en{
+    display:block !important;
   }
 
   /* When there is no work subtitle, keep metadata from sticking to the title. */
@@ -113,6 +116,20 @@ Energywhoisshe.com
     .archive-section.archive-read-ko #archiveWorksGrid .project-heading-static > .project-work.project-language-ko{
       padding-top:.62rem !important;
     }
+  }
+</style>
+
+
+<style id="studio-note-location-meta">
+  /* Pair each place with its date: English first, then Korean. */
+  #inTheStudioSection .studio-note-date{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:baseline;
+    column-gap:0;
+  }
+  #inTheStudioSection .studio-note-meta-pair{
+    white-space:nowrap;
   }
 </style>
 
@@ -8086,6 +8103,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         note.classList.remove('studio-note-process-open');
         const dateEn = String(note.dataset.dateEn || '').trim();
         const dateKo = String(note.dataset.dateKo || '').trim();
+        const locationEn = String(note.dataset.locationEn || '').trim();
+        const locationKo = String(note.dataset.locationKo || '').trim();
         const ko = String(note.dataset.ko || '').trim();
         const processKo = String(note.dataset.processKo || '').trim();
         const processLabelKo = String(note.dataset.processLabelKo || '과정 보기').trim();
@@ -8094,10 +8113,19 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         const noteId = String(note.id || `note-${index + 1}`).trim();
         if(!note.id) note.id = noteId;
         const processId = `${noteId}-process`;
+        const enMetaParts = [locationEn, dateEn].filter(Boolean);
+        const koMetaParts = [locationKo, dateKo].filter(Boolean);
+        const enMetaPair = enMetaParts.length
+          ? `<span class="studio-note-meta-pair studio-note-meta-pair-en" lang="en">${enMetaParts.map(formatInlineText).join('<span class="studio-note-meta-dot" aria-hidden="true"> · </span>')}</span>`
+          : '';
+        const koMetaPair = koMetaParts.length
+          ? `<span class="studio-note-meta-pair studio-note-meta-pair-ko" lang="ko">${koMetaParts.map(formatInlineText).join('<span class="studio-note-meta-dot" aria-hidden="true"> · </span>')}</span>`
+          : '';
+        const noteMeta = `${enMetaPair}${enMetaPair && koMetaPair ? '<span class="studio-note-meta-language-separator" aria-hidden="true"> / </span>' : ''}${koMetaPair}`;
 
         note.innerHTML = [
-          dateEn || dateKo
-            ? `<div class="studio-note-date">${dateEn ? `<span class="studio-note-date-en" lang="en">${formatInlineText(dateEn)}</span>` : ''}${dateEn && dateKo ? '<span class="studio-note-date-separator" aria-hidden="true"> / </span>' : ''}${dateKo ? `<span class="studio-note-date-ko" lang="ko">${formatInlineText(dateKo)}</span>` : ''}</div>`
+          noteMeta
+            ? `<div class="studio-note-date">${noteMeta}</div>`
             : '',
           ko || hasProcess
             ? `<div class="studio-note-summary-row">
@@ -9443,6 +9471,9 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
       각 노트의 id="..." 값은 주소 해시로 사용되며 원하는 이름으로 수정할 수 있습니다.
       한 달짜리 기록: data-date-en="July 2026" / data-date-ko="2026년 7월"
       기간 기록: data-date-en="May–July 2026" / data-date-ko="2026년 5월–7월"
+      장소: data-location-en="Busan" / data-location-ko="부산"
+      * 메타는 장소 · 날짜 / 장소 · 날짜 순서로 표시됩니다.
+      * 예: Busan · June–July 2026 / 부산 · 2026년 6월–7월
 
       사진 한 장:
       data-image1="images/example-1.jpg"
@@ -9459,28 +9490,34 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="busan-residency"
           data-date-en="June–July 2026"
           data-date-ko="2026년 6월–7월"
+          data-location-en="Busan"
+          data-location-ko="부산"
           data-en=""
           data-ko="부산 망미동에서 셀프 레지던시를 보낸다."
           data-process-en=""
-          data-process-ko="돌아가신 할머니의 집과 정원에서 지낸다. 테토와 함께. 남양주의 첫 인상은 돈벌레들이 맡았는데, 망미동의 정원은 콩벌레가 많다. 매주 토요일에는 부산현대미술관에 가서, 권병준 작가의 로봇을 만든다."
+          data-process-ko="돌아가신 할머니의 집과 정원에서 지낸다. 테토와 함께. 남양주의 첫 인상은 돈벌레들이 맡았는데, 망미동의 정원은 콩벌레가 많다. 혼자 먹고, 일하고, 쉬는 방법을 익힌다. 매주 토요일에는 부산현대미술관에 가서, 멀리서 모인 사람들과 로봇을 만든다.
+
+          부산현대미술관에서는 4월 개최 예정인 《다원예술_몸, 실험 중》 전시의 일환으로 〈로보틱 사운드 워크숍〉을 진행합니다. 본 워크숍은 사운드를 기반으로 음악, 퍼포먼스, 미술을 넘나드는 미디어 아티스트 권병준 작가와 함께 로봇을 제작해보는 다회차 몰입형 메이킹 워크숍으로, 전시 공간을 하나의 실험실로 삼아 작품의 결과뿐 아니라 제작과 변화의 과정을 함께 공유하고자 합니다. 워크숍 실험 참가자는 다리 로봇 〈아해〉와 팔 로봇 〈GF3〉를 직접 제작하고, 완성된 로봇을 활용한 퍼포먼스 시연의 순간을 경험합니다. (출처: 부산현대미술관) "
           data-process-label-ko="과정 보기"
           data-process-label-en=""></div>
 
         <div class="studio-note" id="website-update"
           data-date-en="June–July 2026"
           data-date-ko="2026년 6월–7월"
+          data-location-en="Busan"
+          data-location-ko="부산"
           data-en=""
           data-ko="웹사이트를 업데이트 한다."
           data-process-en=""
-          data-process-ko="ver. 4.0.0. 'Archive' 문서를 서치하는 방식을 조금 더 편하게 만들었고, 지금 하고 있는 것에 대한 짤막한 노트들, 그리고 긴 호흡의 프로젝트들의 연관 자료를 모아 살필 수 있는 'In the Studio'를 추가했다. 웹사이트에 공개해놓은 자료는 쉽게 퍼날라지기 때문에 자료를 얼마나 웹사이트에 올릴 수 있을 지는 매번 선택의 문제가 되지만, 이안 쳉 (Ian Cheng)을 참고하고 있다. 그의 웹사이트는 오픈소스 정신이 있다. 프로젝트를 이해하는 데 필요한 거의 모든 자료를 공개하고 있다는 인상을 받았다. 누군가 나를 연구할 때, 이 웹사이트가 도움이 되기를 바란다. 
-
-          자료가 많아지면서, (그리고 너무 많은 재료와 매체에 가랑이를 걸치는 버릇 때문에) 웹사이트 구조가 점차 더 복잡해지고 있다. 그럼에도 불구하고, 단순해져라- 하고 바라본다."
+          data-process-ko="ver. 4.0.0. 'Archive' 문서를 서치하는 방식을 조금 더 편하게 만들었고, 지금 하고 있는 것에 대한 짤막한 노트들, 그리고 긴 호흡의 프로젝트들의 연관 자료를 모아 살필 수 있는 'In the Studio'를 추가했다. 웹사이트에 공개해놓은 자료는 쉽게 퍼날라지기 때문에 자료를 얼마나 웹사이트에 올릴 수 있을 지는 매번 선택의 문제가 되지만, 이안 쳉 (Ian Cheng)을 참고하고 있다. 그의 웹사이트는 오픈소스 정신이 있다. 프로젝트를 이해하는 데 필요한 거의 모든 자료를 공개하고 있다는 인상을 받았다."
           data-process-label-ko="과정 보기"
           data-process-label-en=""></div>
 
         <div class="studio-note" id="double-8mm"
           data-date-en="June–July 2026"
           data-date-ko="2026년 6월–7월"
+          data-location-en="Busan"
+          data-location-ko="부산"
           data-en=""
           data-ko="더블 8mm 필름을 다루기 시작한다."
           data-process-en=""
@@ -9491,6 +9528,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="barley-harvest"
           data-date-en="May–July 2026"
           data-date-ko="2026년 5월–7월"
+          data-location-en="Namyangju"
+          data-location-ko="남양주"
           data-en="In the garden, I grew barley for the first time."
           data-ko="정원에서 처음으로 보리농사를 짓고, 황금빛 보리를 수확한다."
           data-process-en=""
@@ -9501,6 +9540,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="return-from-berlin"
           data-date-en="May–June 2026"
           data-date-ko="2026년 5월–6월"
+          data-location-en="Berlin"
+          data-location-ko="베를린"
           data-en=""
           data-ko="베를린에서 봄밤을 마치고 돌아온다."
           data-process-en=""
@@ -9512,6 +9553,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="learning-gakja"
           data-date-en="February–April, June–December 2026"
           data-date-ko="2026년 2월–4월, 6월–12월"
+          data-location-en="Seoul"
+          data-location-ko="서울"
           data-en=""
           data-ko="보유자 선생님께 각자刻字를 배운다."
           data-process-en="Gakjajang refers to the skill of engraving calligraphic letters to be used for wood printing blocks or to an artisan with such a skill. The oldest existing print done with wood blocks is the Great Dharani Sutra of Immaculate and Pure Light made in the Silla Period (circa 57 BC – 935 AD), while the wood blocks of the Tripitaka Koreana, made between 1236 and 1251 during the Goryeo Period, are regarded as the most outstanding still in existence. It became common practice to use hanging boards containing engraved characters in royal palaces and temples, and even in private houses. Towards the late Joseon Period (1392–1910), this once exquisite skill went into decline, but the reliance on the traditional practice of wood block printing remained high until it was pushed aside with the introduction of modern photography and printing technology during the colonial period. (From: Korea Heritage Service"
@@ -9524,6 +9567,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="learning-buddhist-ritual"
           data-date-en="January–May, July–December 2026"
           data-date-ko="2026년 1월–5월, 7월–12월"
+          data-location-en="Sejong"
+          data-location-ko="세종"
           data-en=""
           data-ko="스님께 염불念佛, 바라무鉢羅舞, 법고法鼓를 배운다."
           data-process-en=""
@@ -9534,6 +9579,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="papercut-weaving"
           data-date-en="2025"
           data-date-ko="2025년"
+          data-location-en="Seoul"
+          data-location-ko="서울"
           data-en=""
           data-ko="'회전하는 뱀' 착시 연구를 기반으로 축제 페이퍼컷 위빙 도안을 만든다."
           data-process-en=""
@@ -9544,6 +9591,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="game-study"
           data-date-en="2025"
           data-date-ko="2025년"
+          data-location-en="Seoul"
+          data-location-ko="서울"
           data-en=""
           data-ko="게임 스터디에서, '프루이'를 비롯하여 여러가지 게임을 한다."
           data-process-en=""
@@ -9554,6 +9603,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
         <div class="studio-note" id="adopting-teto"
           data-date-en="October 2023"
           data-date-ko="2023년 10월"
+          data-location-en="Paju"
+          data-location-ko="파주"
           data-en=""
           data-ko="테토를 입양한다."
           data-process-en=""
