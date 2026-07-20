@@ -4132,15 +4132,15 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   }
 
   /* Practice: dated studio notes.
-     Notes continue naturally in the page without a separate vertical scroll area. */
+     Add more .studio-note elements in the HTML; the area scrolls as notes accumulate. */
   .studio-works-notes{
     margin-top:.85rem;
     max-width:760px;
-    max-height:none;
-    overflow-y:visible;
-    padding-right:0;
-    overscroll-behavior:auto;
-    -webkit-overflow-scrolling:auto;
+    max-height:35vh;
+    overflow-y:auto;
+    padding-right:.45rem;
+    overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
   }
   .studio-note{
     padding:0 0 1.35rem;
@@ -9470,8 +9470,8 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
 	<nav id="menu">
 		<ul>
       <li><a class="button" data-view="home" href="#" onclick="openHome(event);">[Home]</a></li>
-      <li><a class="button" data-view="works" href="#" onclick="openWorks(event);">[In the Studio]</a></li>
       <li><a class="button" data-view="archive" href="#" onclick="openArchive(event);">[Archive]</a></li>
+      <li><a class="button" data-view="works" href="#" onclick="openWorks(event);">[In the Studio]</a></li>
 			<!--<li><a class="button" href="games.html" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">[Games]</a></li>
 			<li><a class="button" href="comics.html" onclick="event.preventDefault(); window.open(this.href, '_blank', 'noopener');">[Comics]</a></li>-->
       <li><a class="button" data-view="contacts" href="#" onclick="openContacts(event);">[Contact]</a></li>
@@ -10910,7 +10910,7 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   }
 </style>
 
-<style id="studio-notes-flow-style">
+<style id="studio-notes-scroll-fade-style">
   #inTheStudioSection .studio-works-notes-shell{
     position:relative;
     max-width:760px;
@@ -10920,11 +10920,86 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   #inTheStudioSection .studio-works-notes-shell .studio-works-notes{
     max-width:none;
     margin-top:0;
-    max-height:none !important;
-    overflow-y:visible !important;
-    padding-right:0 !important;
+    max-height:35vh !important;
+    overflow-y:auto !important;
+    padding-right:.45rem !important;
+    overscroll-behavior:contain;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:thin;
+    scrollbar-color:rgba(0,0,0,.28) transparent;
+  }
+
+  #inTheStudioSection .studio-works-notes::-webkit-scrollbar{
+    width:7px;
+  }
+
+  #inTheStudioSection .studio-works-notes::-webkit-scrollbar-track{
+    background:transparent;
+  }
+
+  #inTheStudioSection .studio-works-notes::-webkit-scrollbar-thumb{
+    background:rgba(0,0,0,.22);
+    border-radius:999px;
+  }
+
+  #inTheStudioSection .studio-works-notes-shell::after{
+    content:"";
+    position:absolute;
+    z-index:1;
+    left:0;
+    right:.45rem;
+    bottom:0;
+    height:2rem;
+    pointer-events:none;
+    background:linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.97));
+    opacity:1;
+    transition:opacity .18s ease;
+  }
+
+  #inTheStudioSection .studio-works-notes-shell.is-at-end::after,
+  #inTheStudioSection .studio-works-notes-shell.is-not-scrollable::after{
+    opacity:0;
   }
 </style>
+
+<script id="studio-notes-scroll-fade-script">
+  (function(){
+    function initStudioNotesScrollFade(){
+      const notes = document.getElementById('studioWorksNotes');
+      const shell = notes?.closest('.studio-works-notes-shell');
+      if(!notes || !shell) return;
+
+      const updateFade = () => {
+        const isScrollable = notes.scrollHeight > notes.clientHeight + 2;
+        const isAtEnd = notes.scrollTop + notes.clientHeight >= notes.scrollHeight - 4;
+
+        shell.classList.toggle('is-not-scrollable', !isScrollable);
+        shell.classList.toggle('is-at-end', isScrollable && isAtEnd);
+      };
+
+      notes.addEventListener('scroll', updateFade, { passive:true });
+      window.addEventListener('resize', updateFade, { passive:true });
+
+      if('ResizeObserver' in window){
+        const resizeObserver = new ResizeObserver(updateFade);
+        resizeObserver.observe(notes);
+      }
+
+      if('MutationObserver' in window){
+        const mutationObserver = new MutationObserver(() => requestAnimationFrame(updateFade));
+        mutationObserver.observe(notes, { childList:true, subtree:true, attributes:true });
+      }
+
+      requestAnimationFrame(() => requestAnimationFrame(updateFade));
+    }
+
+    if(document.readyState === 'loading'){
+      document.addEventListener('DOMContentLoaded', initStudioNotesScrollFade, { once:true });
+    }else{
+      initStudioNotesScrollFade();
+    }
+  })();
+</script>
 
 
 <style id="archive-credit-fade-and-title-size-style">
@@ -11463,6 +11538,46 @@ Cha Yeonså, Far For Triangle, 2020. Single-channel video, color, sound, 48’20
   #archiveContent.archive-reading-mode .archive-text-record .text-title-line.archive-reading-title-static:active .text-title-link,
   #archiveContent.archive-reading-mode .archive-text-record .text-title-line.archive-reading-title-static:active .text-title-static{
     font-style:normal !important;
+  }
+</style>
+
+
+
+<style id="studio-centered-content-width">
+  /* Keep Studio content left-aligned internally, while centering its reading columns. */
+  @media (min-width:769px){
+    #inTheStudioSection .studio-works-notes-shell{
+      width:100%;
+      max-width:760px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:left;
+    }
+
+    #worksContent > #gardenSection,
+    #worksContent > #festivalSection,
+    #worksContent > #mosquitoSection,
+    #worksContent > #gameSection{
+      width:100%;
+      max-width:760px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:left;
+    }
+  }
+
+  @media (max-width:768px){
+    #inTheStudioSection .studio-works-notes-shell,
+    #worksContent > #gardenSection,
+    #worksContent > #festivalSection,
+    #worksContent > #mosquitoSection,
+    #worksContent > #gameSection{
+      width:100%;
+      max-width:none;
+      margin-left:0;
+      margin-right:0;
+      text-align:left;
+    }
   }
 </style>
 
